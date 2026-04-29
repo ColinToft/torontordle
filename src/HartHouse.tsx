@@ -28,10 +28,7 @@ export function HartHouse({ g }: { g: UseGame }) {
       <div className="tt-grid" style={styles.grid}>
         <section className="tt-card" style={styles.casePanel}>
           <div style={styles.caseHeader}>
-            <div>
-              <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>{caseLabel}</div>
-              <h2 style={styles.caseTitle}>Today's Diagnosis</h2>
-            </div>
+            <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>{caseLabel}</div>
           </div>
           <hr className="tt-rule" />
 
@@ -409,13 +406,6 @@ const styles: Record<string, CSSProperties> = {
     alignItems: 'baseline',
     marginBottom: 14,
     gap: 12,
-  },
-  caseTitle: {
-    margin: '6px 0 0',
-    fontSize: 28,
-    fontWeight: 700,
-    color: 'var(--uoft-navy)',
-    letterSpacing: '-0.3px',
   },
   clueList: {
     listStyle: 'none',
