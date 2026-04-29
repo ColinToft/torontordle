@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { DailyProgress, Guess, Stats, Status, TCase } from './types'
 import { pickDailyCase, todayET } from './dailyCase'
+import { normalizeAnswer } from './normalize'
 import {
   clearDailyProgress,
   loadDailyProgress,
@@ -11,8 +12,6 @@ import {
 } from './storage'
 
 export const MAX_GUESSES = 6
-
-const normalize = (s: string) => s.toLowerCase().trim().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ')
 
 export type UseGame = ReturnType<typeof useGame>
 
@@ -54,9 +53,9 @@ export function useGame(cases: TCase[]) {
     const trimmed = input.trim()
     if (!trimmed) return
 
-    const norm = normalize(trimmed)
-    const target = normalize(tCase.diagnosis)
-    const correct = norm === target || tCase.aliases.some((a) => normalize(a) === norm)
+    const norm = normalizeAnswer(trimmed)
+    const target = normalizeAnswer(tCase.diagnosis)
+    const correct = norm === target || tCase.aliases.some((a) => normalizeAnswer(a) === norm)
 
     const next = [...guesses, { text: trimmed, correct }]
     setGuesses(next)
@@ -95,6 +94,7 @@ export function useGame(cases: TCase[]) {
 
   return {
     dateStr,
+    cases,
     tCase,
     guesses,
     input,

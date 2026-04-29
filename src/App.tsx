@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { fetchCasesFromSheet } from './sheet'
 import type { TCase } from './types'
-import { HartHouse } from './HartHouse'
+import { GameView } from './GameView'
 import { useGame } from './useGame'
 
 type LoadState =
@@ -44,7 +44,7 @@ export default function App() {
 
 function Game({ cases }: { cases: TCase[] }) {
   const g = useGame(cases)
-  return <HartHouse g={g} />
+  return <GameView g={g} />
 }
 
 function Splash({ children, error }: { children: React.ReactNode; error?: boolean }) {

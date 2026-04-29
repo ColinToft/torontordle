@@ -1,12 +1,22 @@
-import { useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react'
-import type { Guess, Stats } from './types'
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+  type KeyboardEvent as ReactKeyboardEvent,
+  type MouseEvent,
+  type ReactNode,
+} from 'react'
+import type { Guess, Stats, TCase } from './types'
 import { dayNumber as computeDayNumber, formatHeaderDate } from './dailyCase'
+import { normalizeAnswer } from './normalize'
 import { buildShareText, copyShare } from './share'
 import type { UseGame } from './useGame'
 
 const SERIF = "'Source Serif Pro', Georgia, serif"
 
-export function HartHouse({ g }: { g: UseGame }) {
+export function GameView({ g }: { g: UseGame }) {
   const [showHowTo, setShowHowTo] = useState(false)
   const [showStats, setShowStats] = useState(false)
 
@@ -87,25 +97,7 @@ export function HartHouse({ g }: { g: UseGame }) {
 
           {g.status === 'playing' ? (
             <div style={{ marginTop: 16 }}>
-              <div style={styles.inputWrap}>
-                <input
-                  style={styles.input}
-                  placeholder="Enter a diagnosis"
-                  value={g.input}
-                  onChange={(e) => g.setInput(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
-                      e.preventDefault()
-                      g.submitGuess()
-                    }
-                  }}
-                  aria-label="Diagnosis guess"
-                  autoFocus
-                />
-                <button className="tt-submit" style={styles.submitBtn} onClick={g.submitGuess}>
-                  Submit →
-                </button>
-              </div>
+              <GuessCombobox g={g} />
               <div className="tt-monocaps" style={{ marginTop: 10, color: 'var(--ink-soft)' }}>
                 Each incorrect guess reveals one new clue.
               </div>
@@ -159,6 +151,154 @@ function Header({
         </span>
       </nav>
     </header>
+  )
+}
+
+function GuessCombobox({ g }: { g: UseGame }) {
+  const [open, setOpen] = useState(false)
+  const [highlighted, setHighlighted] = useState(0)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
+  const listRef = useRef<HTMLUListElement>(null)
+
+  const usedSet = useMemo(
+    () => new Set(g.guesses.map((gx) => normalizeAnswer(gx.text))),
+    [g.guesses],
+  )
+
+  const matches: TCase[] = useMemo(() => {
+    const q = g.input.trim().toLowerCase()
+    return g.cases
+      .filter((c) => !usedSet.has(normalizeAnswer(c.diagnosis)))
+      .filter((c) => {
+        if (!q) return true
+        if (c.diagnosis.toLowerCase().includes(q)) return true
+        return c.aliases.some((a) => a.toLowerCase().includes(q))
+      })
+  }, [g.cases, g.input, usedSet])
+
+  const isValid = useMemo(() => {
+    const norm = normalizeAnswer(g.input)
+    if (!norm) return false
+    return g.cases.some(
+      (c) =>
+        !usedSet.has(normalizeAnswer(c.diagnosis)) &&
+        (normalizeAnswer(c.diagnosis) === norm ||
+          c.aliases.some((a) => normalizeAnswer(a) === norm)),
+    )
+  }, [g.cases, g.input, usedSet])
+
+  // Keep highlight in range as the filter changes.
+  useEffect(() => {
+    setHighlighted((h) => Math.max(0, Math.min(h, matches.length - 1)))
+  }, [matches.length])
+
+  // Click outside closes the dropdown.
+  useEffect(() => {
+    if (!open) return
+    const onDown = (e: globalThis.MouseEvent) => {
+      if (!containerRef.current?.contains(e.target as Node)) setOpen(false)
+    }
+    document.addEventListener('mousedown', onDown)
+    return () => document.removeEventListener('mousedown', onDown)
+  }, [open])
+
+  // Scroll the highlighted option into view as it changes.
+  useEffect(() => {
+    if (!open || !listRef.current) return
+    const el = listRef.current.children[highlighted] as HTMLElement | undefined
+    el?.scrollIntoView({ block: 'nearest' })
+  }, [highlighted, open])
+
+  const select = (diagnosis: string) => {
+    g.setInput(diagnosis)
+    setOpen(false)
+    inputRef.current?.focus()
+  }
+
+  const onKeyDown = (e: ReactKeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'ArrowDown') {
+      e.preventDefault()
+      if (!open) {
+        setOpen(true)
+        return
+      }
+      setHighlighted((h) => Math.min(matches.length - 1, h + 1))
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault()
+      if (!open) return
+      setHighlighted((h) => Math.max(0, h - 1))
+    } else if (e.key === 'Enter') {
+      e.preventDefault()
+      if (open && matches.length > 0 && !isValid) {
+        select(matches[highlighted].diagnosis)
+      } else if (isValid) {
+        setOpen(false)
+        g.submitGuess()
+      }
+    } else if (e.key === 'Escape') {
+      setOpen(false)
+    } else if (e.key === 'Tab') {
+      setOpen(false)
+    }
+  }
+
+  return (
+    <div ref={containerRef} style={{ position: 'relative' }}>
+      <div style={styles.inputWrap}>
+        <input
+          ref={inputRef}
+          style={styles.input}
+          placeholder="Enter a diagnosis"
+          value={g.input}
+          onChange={(e) => {
+            g.setInput(e.target.value)
+            setOpen(true)
+          }}
+          onFocus={() => setOpen(true)}
+          onKeyDown={onKeyDown}
+          aria-label="Diagnosis guess"
+          aria-autocomplete="list"
+          aria-expanded={open}
+          autoComplete="off"
+          autoFocus
+        />
+        <button
+          className="tt-submit"
+          style={{ ...styles.submitBtn, opacity: isValid ? 1 : 0.5, cursor: isValid ? 'pointer' : 'not-allowed' }}
+          onClick={() => {
+            if (!isValid) return
+            setOpen(false)
+            g.submitGuess()
+          }}
+          disabled={!isValid}
+        >
+          Submit →
+        </button>
+      </div>
+      {open && matches.length > 0 && (
+        <ul ref={listRef} style={styles.suggestList} role="listbox">
+          {matches.map((c, i) => (
+            <li
+              key={c.id}
+              role="option"
+              aria-selected={i === highlighted}
+              style={{
+                ...styles.suggestItem,
+                ...(i === highlighted ? styles.suggestItemHighlighted : {}),
+              }}
+              onMouseDown={(e) => {
+                e.preventDefault()
+                select(c.diagnosis)
+              }}
+              onMouseEnter={() => setHighlighted(i)}
+            >
+              {c.diagnosis}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   )
 }
 
@@ -461,6 +601,33 @@ const styles: Record<string, CSSProperties> = {
     display: 'flex',
     border: '1px solid var(--uoft-navy)',
     background: '#fff',
+  },
+  suggestList: {
+    position: 'absolute',
+    top: '100%',
+    left: 0,
+    right: 0,
+    marginTop: -1,
+    listStyle: 'none',
+    padding: 0,
+    background: '#fff',
+    border: '1px solid var(--uoft-navy)',
+    maxHeight: 220,
+    overflowY: 'auto',
+    zIndex: 30,
+    boxShadow: '0 6px 18px rgba(20, 37, 60, 0.08)',
+  },
+  suggestItem: {
+    padding: '10px 14px',
+    fontFamily: SERIF,
+    fontSize: 15,
+    color: 'var(--ink)',
+    cursor: 'pointer',
+    borderTop: '1px solid var(--line)',
+  },
+  suggestItemHighlighted: {
+    background: 'rgba(30, 58, 95, 0.08)',
+    color: 'var(--uoft-navy)',
   },
   input: {
     flex: 1,
