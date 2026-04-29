@@ -45,6 +45,24 @@ export function clearDailyProgress(dateStr: string): void {
   }
 }
 
+// Wipes every stored daily progress entry plus aggregate stats.
+export function clearAll(): void {
+  try {
+    const toRemove: string[] = []
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i)
+      if (k && (k === STATS_KEY || k.startsWith(PROGRESS_PREFIX))) toRemove.push(k)
+    }
+    toRemove.forEach((k) => localStorage.removeItem(k))
+  } catch {
+    /* ignore */
+  }
+}
+
+export function emptyStats(): Stats {
+  return { ...EMPTY_STATS, distribution: [...EMPTY_STATS.distribution] }
+}
+
 export function loadStats(): Stats {
   const stored = safeRead<Stats>(STATS_KEY)
   if (!stored) return { ...EMPTY_STATS, distribution: [...EMPTY_STATS.distribution] }

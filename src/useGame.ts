@@ -3,7 +3,8 @@ import type { DailyProgress, Guess, Stats, Status, TCase } from './types'
 import { pickDailyCase, todayET } from './dailyCase'
 import { normalizeAnswer } from './normalize'
 import {
-  clearDailyProgress,
+  clearAll,
+  emptyStats,
   loadDailyProgress,
   loadStats,
   recordResult,
@@ -77,15 +78,15 @@ export function useGame(cases: TCase[]) {
     }
   }, [dateStr, guesses, input, stats, status, tCase])
 
-  // Clears today's gameplay so the same case can be replayed. Aggregate stats
-  // are left intact — recordResult is a no-op once today's outcome is logged,
-  // so replays after reset don't double-count.
-  const resetToday = useCallback(() => {
-    clearDailyProgress(dateStr)
+  // Wipes every shred of saved state — today's gameplay and the aggregate
+  // stats — and starts the player over from a clean slate.
+  const resetEverything = useCallback(() => {
+    clearAll()
     setGuesses([])
     setStatus('playing')
     setInput('')
-  }, [dateStr])
+    setStats(emptyStats())
+  }, [])
 
   const cluesRevealed =
     status === 'playing' ? Math.min(guesses.length + 1, tCase.clues.length) : tCase.clues.length
@@ -103,7 +104,7 @@ export function useGame(cases: TCase[]) {
     cluesRevealed,
     cluesLeft,
     submitGuess,
-    resetToday,
+    resetEverything,
     stats,
     winRate,
     MAX_GUESSES,

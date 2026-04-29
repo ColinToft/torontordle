@@ -118,7 +118,7 @@ export function GameView({ g }: { g: UseGame }) {
           stats={g.stats}
           winRate={g.winRate}
           onReset={() => {
-            g.resetToday()
+            g.resetEverything()
             setShowStats(false)
           }}
           onClose={() => setShowStats(false)}
@@ -483,15 +483,9 @@ function StatsModal({
         })}
       </div>
       <hr className="tt-rule" style={{ margin: '20px 0 14px' }} />
-      <div style={styles.resetRow}>
-        <div>
-          <div className="tt-monocaps" style={{ color: 'var(--ink-soft)' }}>Testing</div>
-          <p style={{ margin: '4px 0 0', fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.5 }}>
-            Replay today's case from scratch. Aggregate stats stay as they are.
-          </p>
-        </div>
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <button className="tt-secondary" style={styles.resetBtn} onClick={onReset}>
-          Reset today
+          Reset everything
         </button>
       </div>
     </Modal>
@@ -668,12 +662,6 @@ const styles: Record<string, CSSProperties> = {
     letterSpacing: '0.1em',
     textTransform: 'uppercase',
     fontWeight: 600,
-  },
-  resetRow: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    gap: 12,
   },
   resetBtn: {
     padding: '8px 14px',
