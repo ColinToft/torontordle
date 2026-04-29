@@ -28,7 +28,7 @@ export function HartHouse({ g }: { g: UseGame }) {
       <div className="tt-grid" style={styles.grid}>
         <section className="tt-card" style={styles.casePanel}>
           <div style={styles.caseHeader}>
-            <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>{caseLabel}</div>
+            <div className="tt-section-title" style={{ color: 'var(--uoft-navy)' }}>{caseLabel}</div>
           </div>
           <hr className="tt-rule" />
 
@@ -58,9 +58,8 @@ export function HartHouse({ g }: { g: UseGame }) {
         </section>
 
         <section className="tt-card" style={styles.guessPanel}>
-          <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Your diagnoses</div>
           <div style={styles.guessHeaderRow}>
-            <h3 style={styles.guessHeading}>{g.cluesLeft} guesses remaining</h3>
+            <div className="tt-section-title" style={{ color: 'var(--uoft-navy)' }}>Your diagnoses</div>
             <div style={styles.dotRow} aria-label="Guesses used">
               {Array.from({ length: g.MAX_GUESSES }).map((_, i) => {
                 const used = g.guesses[i]
@@ -69,6 +68,11 @@ export function HartHouse({ g }: { g: UseGame }) {
               })}
             </div>
           </div>
+          {g.status === 'playing' && (
+            <div className="tt-monocaps" style={{ color: 'var(--ink-soft)', marginTop: 6 }}>
+              {g.cluesLeft} guesses remaining
+            </div>
+          )}
           <hr className="tt-rule" style={{ margin: '14px 0' }} />
 
           <div style={styles.guessList}>
@@ -429,10 +433,8 @@ const styles: Record<string, CSSProperties> = {
   guessHeaderRow: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'baseline',
-    marginTop: 4,
+    alignItems: 'center',
   },
-  guessHeading: { margin: '4px 0 0', fontSize: 22, fontWeight: 700, color: 'var(--uoft-navy)' },
   dotRow: { display: 'flex', gap: 6 },
   guessList: { display: 'flex', flexDirection: 'column', gap: 8, minHeight: 200 },
   guessRow: {
