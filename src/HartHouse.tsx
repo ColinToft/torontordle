@@ -61,7 +61,7 @@ export function HartHouse({ g }: { g: UseGame }) {
         </section>
 
         <section className="tt-card" style={styles.guessPanel}>
-          <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Differential</div>
+          <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Your diagnoses</div>
           <div style={styles.guessHeaderRow}>
             <h3 style={styles.guessHeading}>{g.cluesLeft} guesses remaining</h3>
             <div style={styles.dotRow} aria-label="Guesses used">
