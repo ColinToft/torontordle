@@ -6,6 +6,7 @@ export type TCase = {
   aliases: string[]
   category: string
   clues: Clue[]
+  description?: string
 }
 
 export type Guess = { text: string; correct: boolean }

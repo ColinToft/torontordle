@@ -41,6 +41,7 @@ The parser locates the header row automatically (preamble rows above it are igno
 | `Clue 1` … `Clue 6`   | at least 1 | Clue body. Up to 8 clues supported. |
 | `Week` (or `Category`)| no       | Shown in the case header (e.g., `Immunology II`). Defaults to `General`. |
 | `Aliases`             | no       | Pipe- or semicolon-separated alternates accepted as correct guesses. |
+| `Description`         | no       | Short study note shown to the player after the case ends (win or lose). |
 | `Clue 1 type` … `Clue 6 type` | no | Optional small-caps label per clue (e.g., `Vitals`, `Imaging`). |
 
 Rows missing a diagnosis or all clues are skipped.

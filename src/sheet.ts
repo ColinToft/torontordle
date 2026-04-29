@@ -18,6 +18,7 @@ const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tq
  * Optional columns:
  *   - "Week" or "Category"           → grouping label (shown in case header)
  *   - "Aliases"                      → pipe- or semicolon-separated alternates
+ *   - "Description"                  → study note shown after the case ends
  *   - "Clue 1 type" … "Clue 6 type"  → optional small-caps label per clue
  */
 export async function fetchCasesFromSheet(): Promise<TCase[]> {
@@ -48,6 +49,7 @@ export function parseSheetCsv(text: string): TCase[] {
   const idxDiagnosis = findCol(['diagnosis?', 'diagnosis'])
   const idxAliases = findCol(['aliases', 'alias'])
   const idxCategory = findCol(['week', 'category', 'topic'])
+  const idxDescription = findCol(['description', 'study note', 'notes'])
   if (idxDiagnosis < 0) return []
 
   // Up to 8 clue columns. Each clue may also have an optional type column.
@@ -70,6 +72,7 @@ export function parseSheetCsv(text: string): TCase[] {
     const aliases = dedupe([...derivedAliases, ...sheetAliases])
 
     const category = (idxCategory >= 0 ? row[idxCategory] : '')?.trim() || 'General'
+    const description = (idxDescription >= 0 ? row[idxDescription] : '')?.trim() || undefined
 
     const clues = clueCols
       .map(({ typeIdx, textIdx }) => ({
@@ -80,7 +83,7 @@ export function parseSheetCsv(text: string): TCase[] {
 
     if (clues.length === 0) continue
 
-    cases.push({ id: r, diagnosis, aliases, category, clues })
+    cases.push({ id: r, diagnosis, aliases, category, clues, description })
   }
   return cases
 }

@@ -231,6 +231,15 @@ function ResultBlock({
         <button className="tt-submit" style={styles.primaryBtn} onClick={onShare}>{shareLabel}</button>
         <button className="tt-secondary" style={styles.secondaryBtn} onClick={onOpenStats}>View stats</button>
       </div>
+      {g.tCase.description && (
+        <>
+          <hr className="tt-rule" style={{ margin: '16px 0 12px' }} />
+          <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Study note</div>
+          <p style={{ fontSize: 14, color: 'var(--ink)', marginTop: 6, lineHeight: 1.55 }}>
+            {g.tCase.description}
+          </p>
+        </>
+      )}
     </div>
   )
 }
