@@ -27,7 +27,7 @@ npm run build # → dist/
 
 Cases are sourced live from a Google Sheet. Sheet ID is in `src/sheet.ts`.
 
-**Sharing requirement:** the sheet must be set to *Anyone with the link → Viewer* (or *Publish to web → CSV*) for the gviz CSV endpoint to be reachable from the browser. If it's private, the game silently falls back to the bundled vignettes in `src/cases.ts`.
+**Sharing requirement:** the sheet must be set to *Anyone with the link → Viewer* (or *Publish to web → CSV*) for the gviz CSV endpoint to be reachable from the browser. If it's private, the page shows a load error.
 
 The case shown on a given date is `hash(YYYY-MM-DD) % cases.length` — deterministic, so every visitor sees the same case that day.
 
@@ -41,7 +41,6 @@ The parser locates the header row automatically (preamble rows above it are igno
 | `Clue 1` … `Clue 6`   | at least 1 | Clue body. Up to 8 clues supported. |
 | `Week` (or `Category`)| no       | Shown in the case header (e.g., `Immunology II`). Defaults to `General`. |
 | `Aliases`             | no       | Pipe- or semicolon-separated alternates accepted as correct guesses. |
-| `Difficulty`          | no       | `MS1` / `MS2` / `MS3` / `MS4`. Defaults to `MS2`. |
 | `Clue 1 type` … `Clue 6 type` | no | Optional small-caps label per clue (e.g., `Vitals`, `Imaging`). |
 
 Rows missing a diagnosis or all clues are skipped.
@@ -54,4 +53,4 @@ The `base: '/torontordle/'` in `vite.config.ts` is what makes asset URLs resolve
 
 ## Credits
 
-Design handoff (look, layout, copy) by the Torontordle design team. Bundled fallback cases are fictional teaching vignettes from the handoff and should not be used clinically.
+Design handoff (look, layout, copy) by the Torontordle design team.

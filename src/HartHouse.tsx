@@ -32,7 +32,6 @@ export function HartHouse({ g }: { g: UseGame }) {
               <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>{caseLabel}</div>
               <h2 style={styles.caseTitle}>Today's Diagnosis</h2>
             </div>
-            <span style={styles.diffPill}>{g.tCase.difficulty}</span>
           </div>
           <hr className="tt-rule" />
 
@@ -384,17 +383,6 @@ const styles: Record<string, CSSProperties> = {
     fontWeight: 700,
     color: 'var(--uoft-navy)',
     letterSpacing: '-0.3px',
-  },
-  diffPill: {
-    fontFamily: SERIF,
-    fontSize: 11,
-    letterSpacing: '0.12em',
-    padding: '4px 10px',
-    border: '1px solid var(--uoft-navy)',
-    color: 'var(--uoft-navy)',
-    textTransform: 'uppercase',
-    fontWeight: 600,
-    flexShrink: 0,
   },
   clueList: {
     listStyle: 'none',

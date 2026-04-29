@@ -1,5 +1,5 @@
 import { parseCSV } from './csv'
-import type { Difficulty, TCase } from './types'
+import type { TCase } from './types'
 
 // Google Sheet ID for the diagnosis bank.
 // Sheet URL: https://docs.google.com/spreadsheets/d/1Zv5xSR3xmizLnblHl8pnTgwDZ2Coilp4dRd3GMuyD9o/
@@ -18,7 +18,6 @@ const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tq
  * Optional columns:
  *   - "Week" or "Category"           → grouping label (shown in case header)
  *   - "Aliases"                      → pipe- or semicolon-separated alternates
- *   - "Difficulty"                   → MS1 / MS2 / MS3 / MS4 (default MS2)
  *   - "Clue 1 type" … "Clue 6 type"  → optional small-caps label per clue
  */
 export async function fetchCasesFromSheet(): Promise<TCase[]> {
@@ -49,7 +48,6 @@ export function parseSheetCsv(text: string): TCase[] {
   const idxDiagnosis = findCol(['diagnosis?', 'diagnosis'])
   const idxAliases = findCol(['aliases', 'alias'])
   const idxCategory = findCol(['week', 'category', 'topic'])
-  const idxDifficulty = findCol(['difficulty', 'level'])
   if (idxDiagnosis < 0) return []
 
   // Up to 8 clue columns. Each clue may also have an optional type column.
@@ -72,7 +70,6 @@ export function parseSheetCsv(text: string): TCase[] {
     const aliases = dedupe([...derivedAliases, ...sheetAliases])
 
     const category = (idxCategory >= 0 ? row[idxCategory] : '')?.trim() || 'General'
-    const difficulty = normalizeDifficulty(idxDifficulty >= 0 ? row[idxDifficulty] : '')
 
     const clues = clueCols
       .map(({ typeIdx, textIdx }) => ({
@@ -83,7 +80,7 @@ export function parseSheetCsv(text: string): TCase[] {
 
     if (clues.length === 0) continue
 
-    cases.push({ id: r, diagnosis, aliases, category, difficulty, clues })
+    cases.push({ id: r, diagnosis, aliases, category, clues })
   }
   return cases
 }
@@ -130,10 +127,4 @@ function dedupe(values: string[]): string[] {
     out.push(v)
   }
   return out
-}
-
-function normalizeDifficulty(raw: string | undefined): Difficulty {
-  const v = (raw ?? '').trim().toUpperCase()
-  if (v === 'MS1' || v === 'MS2' || v === 'MS3' || v === 'MS4') return v
-  return 'MS2'
 }

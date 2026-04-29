@@ -1,34 +1,45 @@
 import { useEffect, useState } from 'react'
-import { FALLBACK_CASES } from './cases'
 import { fetchCasesFromSheet } from './sheet'
 import type { TCase } from './types'
 import { HartHouse } from './HartHouse'
 import { useGame } from './useGame'
 
-type Loaded = { cases: TCase[]; source: 'sheet' | 'fallback' }
+type LoadState =
+  | { kind: 'loading' }
+  | { kind: 'ready'; cases: TCase[] }
+  | { kind: 'error'; message: string }
 
 export default function App() {
-  const [loaded, setLoaded] = useState<Loaded | null>(null)
+  const [state, setState] = useState<LoadState>({ kind: 'loading' })
 
   useEffect(() => {
     let cancelled = false
     fetchCasesFromSheet()
       .then((cases) => {
         if (cancelled) return
-        if (cases.length === 0) setLoaded({ cases: FALLBACK_CASES, source: 'fallback' })
-        else setLoaded({ cases, source: 'sheet' })
+        if (cases.length === 0) {
+          setState({ kind: 'error', message: 'The diagnosis sheet has no cases yet. Add a row and try again.' })
+        } else {
+          setState({ kind: 'ready', cases })
+        }
       })
-      .catch(() => {
-        if (!cancelled) setLoaded({ cases: FALLBACK_CASES, source: 'fallback' })
+      .catch((err) => {
+        if (cancelled) return
+        const message =
+          err instanceof Error
+            ? `Couldn't load the diagnosis sheet (${err.message}). Make sure the sheet is shared "Anyone with the link → Viewer".`
+            : "Couldn't load the diagnosis sheet."
+        setState({ kind: 'error', message })
       })
     return () => {
       cancelled = true
     }
   }, [])
 
-  if (!loaded) return <SplashLoading />
+  if (state.kind === 'loading') return <Splash>Loading today's case…</Splash>
+  if (state.kind === 'error') return <Splash error>{state.message}</Splash>
 
-  return <Game cases={loaded.cases} />
+  return <Game cases={state.cases} />
 }
 
 function Game({ cases }: { cases: TCase[] }) {
@@ -36,7 +47,7 @@ function Game({ cases }: { cases: TCase[] }) {
   return <HartHouse g={g} />
 }
 
-function SplashLoading() {
+function Splash({ children, error }: { children: React.ReactNode; error?: boolean }) {
   return (
     <div
       style={{
@@ -44,13 +55,18 @@ function SplashLoading() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        padding: 32,
+        textAlign: 'center',
         fontFamily: "'Source Serif Pro', Georgia, serif",
-        color: 'var(--uoft-navy)',
-        fontSize: 18,
-        letterSpacing: '0.04em',
+        color: error ? 'var(--wrong)' : 'var(--uoft-navy)',
+        fontSize: 16,
+        lineHeight: 1.5,
+        letterSpacing: '0.02em',
+        maxWidth: 560,
+        margin: '0 auto',
       }}
     >
-      Loading today's case…
+      {children}
     </div>
   )
 }

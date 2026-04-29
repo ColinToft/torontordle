@@ -1,13 +1,10 @@
 export type Clue = { type: string; text: string }
 
-export type Difficulty = 'MS1' | 'MS2' | 'MS3' | 'MS4'
-
 export type TCase = {
   id: number
   diagnosis: string
   aliases: string[]
   category: string
-  difficulty: Difficulty
   clues: Clue[]
 }
 
