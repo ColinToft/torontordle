@@ -37,6 +37,14 @@ export function saveDailyProgress(dateStr: string, progress: DailyProgress): voi
   safeWrite(PROGRESS_PREFIX + dateStr, progress)
 }
 
+export function clearDailyProgress(dateStr: string): void {
+  try {
+    localStorage.removeItem(PROGRESS_PREFIX + dateStr)
+  } catch {
+    /* ignore */
+  }
+}
+
 export function loadStats(): Stats {
   const stored = safeRead<Stats>(STATS_KEY)
   if (!stored) return { ...EMPTY_STATS, distribution: [...EMPTY_STATS.distribution] }

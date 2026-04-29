@@ -120,7 +120,17 @@ export function HartHouse({ g }: { g: UseGame }) {
       </div>
 
       {showHowTo && <HowToModal onClose={() => setShowHowTo(false)} />}
-      {showStats && <StatsModal stats={g.stats} winRate={g.winRate} onClose={() => setShowStats(false)} />}
+      {showStats && (
+        <StatsModal
+          stats={g.stats}
+          winRate={g.winRate}
+          onReset={() => {
+            g.resetToday()
+            setShowStats(false)
+          }}
+          onClose={() => setShowStats(false)}
+        />
+      )}
     </div>
   )
 }
@@ -264,10 +274,12 @@ function HowToModal({ onClose }: { onClose: () => void }) {
 function StatsModal({
   stats,
   winRate,
+  onReset,
   onClose,
 }: {
   stats: Stats
   winRate: number
+  onReset: () => void
   onClose: () => void
 }) {
   const distribution = stats.distribution
@@ -320,6 +332,18 @@ function StatsModal({
             </div>
           )
         })}
+      </div>
+      <hr className="tt-rule" style={{ margin: '20px 0 14px' }} />
+      <div style={styles.resetRow}>
+        <div>
+          <div className="tt-monocaps" style={{ color: 'var(--ink-soft)' }}>Testing</div>
+          <p style={{ margin: '4px 0 0', fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.5 }}>
+            Replay today's case from scratch. Aggregate stats stay as they are.
+          </p>
+        </div>
+        <button className="tt-secondary" style={styles.resetBtn} onClick={onReset}>
+          Reset today
+        </button>
       </div>
     </Modal>
   )
@@ -477,6 +501,24 @@ const styles: Record<string, CSSProperties> = {
     letterSpacing: '0.1em',
     textTransform: 'uppercase',
     fontWeight: 600,
+  },
+  resetRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: 12,
+  },
+  resetBtn: {
+    padding: '8px 14px',
+    background: 'transparent',
+    color: 'var(--uoft-navy)',
+    border: '1px solid var(--uoft-navy)',
+    borderRadius: 2,
+    fontSize: 12,
+    letterSpacing: '0.1em',
+    textTransform: 'uppercase',
+    fontWeight: 600,
+    flexShrink: 0,
   },
 }
 

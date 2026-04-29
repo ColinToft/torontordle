@@ -1,7 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { DailyProgress, Guess, Stats, Status, TCase } from './types'
 import { pickDailyCase, todayET } from './dailyCase'
-import { loadDailyProgress, loadStats, recordResult, saveDailyProgress, saveStats } from './storage'
+import {
+  clearDailyProgress,
+  loadDailyProgress,
+  loadStats,
+  recordResult,
+  saveDailyProgress,
+  saveStats,
+} from './storage'
 
 export const MAX_GUESSES = 6
 
@@ -71,6 +78,16 @@ export function useGame(cases: TCase[]) {
     }
   }, [dateStr, guesses, input, stats, status, tCase])
 
+  // Clears today's gameplay so the same case can be replayed. Aggregate stats
+  // are left intact — recordResult is a no-op once today's outcome is logged,
+  // so replays after reset don't double-count.
+  const resetToday = useCallback(() => {
+    clearDailyProgress(dateStr)
+    setGuesses([])
+    setStatus('playing')
+    setInput('')
+  }, [dateStr])
+
   const cluesRevealed = Math.min(guesses.length + 1, tCase.clues.length)
   const cluesLeft = MAX_GUESSES - guesses.length
   const winRate = stats.played > 0 ? Math.round((stats.wins / stats.played) * 100) : 0
@@ -85,6 +102,7 @@ export function useGame(cases: TCase[]) {
     cluesRevealed,
     cluesLeft,
     submitGuess,
+    resetToday,
     stats,
     winRate,
     MAX_GUESSES,
