@@ -253,9 +253,8 @@ function GuessCombobox({ g }: { g: UseGame }) {
           value={g.input}
           onChange={(e) => {
             g.setInput(e.target.value)
-            setOpen(true)
+            setOpen(e.target.value.length > 0)
           }}
-          onFocus={() => setOpen(true)}
           onKeyDown={onKeyDown}
           aria-label="Diagnosis guess"
           aria-autocomplete="list"
