@@ -88,7 +88,8 @@ export function useGame(cases: TCase[]) {
     setInput('')
   }, [dateStr])
 
-  const cluesRevealed = Math.min(guesses.length + 1, tCase.clues.length)
+  const cluesRevealed =
+    status === 'playing' ? Math.min(guesses.length + 1, tCase.clues.length) : tCase.clues.length
   const cluesLeft = MAX_GUESSES - guesses.length
   const winRate = stats.played > 0 ? Math.round((stats.wins / stats.played) * 100) : 0
 
