@@ -1,5 +1,7 @@
 import { parseCSV } from './csv'
-import type { TCase } from './types'
+import { splitReference } from './references'
+import caseImages from './caseImages.json'
+import type { CaseImageManifest, TCase } from './types'
 
 // Google Sheet ID for the diagnosis bank.
 // Sheet URL: https://docs.google.com/spreadsheets/d/117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI/
@@ -26,15 +28,19 @@ const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tq
  *   - "Management?" or "Management"  → model answer for the post-case
  *                                     free-text management compare step
  *   - "Clue 1 type" … "Clue 6 type"  → optional small-caps label per clue
+ *   - a "drop down" description column → expandable detail + citation for the
+ *                                     clue immediately to its left (associated
+ *                                     by position; "Retrieved from <ref>" split
+ *                                     into detail + reference)
  */
 export async function fetchCasesFromSheet(): Promise<TCase[]> {
   const res = await fetch(SHEET_URL, { cache: 'no-store' })
   if (!res.ok) throw new Error(`Sheet fetch failed: ${res.status}`)
   const text = await res.text()
-  return parseSheetCsv(text)
+  return parseSheetCsv(text, caseImages as CaseImageManifest)
 }
 
-export function parseSheetCsv(text: string): TCase[] {
+export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCase[] {
   const rows = parseCSV(text)
   if (rows.length < 2) return []
 
@@ -74,14 +80,33 @@ export function parseSheetCsv(text: string): TCase[] {
   // parenthetical in the live sheet, e.g. "Clue 1 (most typical chief
   // complaint; broad)". An optional separate "Clue N type" column (older
   // sheets) supplies the small-caps label when present.
-  const clueCols: { typeIdx: number; textIdx: number }[] = []
+  const clueCols: { n: number; typeIdx: number; textIdx: number; detailIdx: number }[] = []
   for (let n = 1; n <= 8; n++) {
     const typeIdx = header.findIndex((h) => new RegExp(`^clue ?${n} type`).test(h))
     const textIdx = header.findIndex(
       (h, i) => i !== typeIdx && new RegExp(`^clue ?${n}\\b`).test(h),
     )
     if (textIdx < 0) continue
-    clueCols.push({ typeIdx, textIdx })
+    clueCols.push({ n, typeIdx, textIdx, detailIdx: -1 })
+  }
+
+  // A "drop-down" description column elaborates the clue immediately to its left
+  // (imaging after Clue 5, pathology after Clue 6). Associate by position — the
+  // header wording varies and contains typos ("Clue 5 (lmaging)"), so we match
+  // only the "drop down"/"drop-down"/"dropdown" marker and bind each to the
+  // first such column between its clue and the next clue (or the diagnosis).
+  const isDropdown = (h: string) => /drop\s*-?\s*down/.test(h)
+  const dropdownIdxs = header.map((h, i) => (isDropdown(h) ? i : -1)).filter((i) => i >= 0)
+  for (let k = 0; k < clueCols.length; k++) {
+    const start = clueCols[k].textIdx
+    const end =
+      k + 1 < clueCols.length
+        ? clueCols[k + 1].textIdx
+        : idxDiagnosis > start
+          ? idxDiagnosis
+          : Infinity
+    const d = dropdownIdxs.find((i) => i > start && i < end)
+    if (d !== undefined) clueCols[k].detailIdx = d
   }
 
   const cases: TCase[] = []
@@ -105,12 +130,22 @@ export function parseSheetCsv(text: string): TCase[] {
     const description = (idxDescription >= 0 ? row[idxDescription] : '')?.trim() || undefined
     const management = (idxManagement >= 0 ? row[idxManagement] : '')?.trim() || undefined
 
+    const caseImages = images[diagnosis] ?? {}
     const clues = clueCols
-      .map(({ typeIdx, textIdx }) => ({
-        type: typeIdx >= 0 ? (row[typeIdx] ?? '').trim() : '',
-        text: (row[textIdx] ?? '').trim(),
-      }))
-      .filter((c) => c.text.length > 0)
+      .map(({ n, typeIdx, textIdx, detailIdx }) => {
+        const rawDetail = detailIdx >= 0 ? (row[detailIdx] ?? '').trim() : ''
+        const { detail, reference } = splitReference(rawDetail)
+        return {
+          type: typeIdx >= 0 ? (row[typeIdx] ?? '').trim() : '',
+          text: (row[textIdx] ?? '').trim(),
+          image: caseImages[String(n)] || undefined,
+          detail: detail || undefined,
+          reference: reference || undefined,
+        }
+      })
+      // Keep a clue if it carries anything — an image- or caption-only clue has
+      // no text in the CSV (the cell holds an in-cell image) but is still real.
+      .filter((c) => c.text || c.image || c.detail || c.reference)
 
     if (clues.length === 0) continue
 

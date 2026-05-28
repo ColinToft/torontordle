@@ -22,7 +22,7 @@ const LIVE_SHEET = [
   // --- the real header (annotations after each title; matched by prefix) ---
   '"Week","Clue 1 (most typical chief complaint; broad)","Clue 2 (PMHx/risk factors)","Clue 3 (PEx findings)","Clue 4 (Labs)","Clue 5 (Imaging)","Imaging drop-down description. Include reference.","Clue 6 (pathology)","Pathology drop-down description. Include reference.","Diagnosis","Management? (free text, user will just compare to provided answer)","Description (includes pathophysiology, epidemiology, management)"',
   // Embryology block — first row carries the Week label, and is complete.
-  '"Embryology","A newborn girl has poor feeding and hypotonia","Mother was 39; elevated beta-hCG, low AFP","Flat facial profile, single palmar crease","","Echo shows an AVSD","","Karyotype shows trisomy 21","Retrieved from 10.1007/s13167-011-0080-3","Trisomy 21 (Down Syndrome)","Early developmental intervention and surveillance.","Most common survivable autosomal trisomy."',
+  '"Embryology","A newborn girl has poor feeding and hypotonia","Mother was 39; elevated beta-hCG, low AFP","Flat facial profile, single palmar crease","","Echo shows an AVSD","","Karyotype shows trisomy 21","Karyotype demonstrates trisomy 21. Retrieved from 10.1007/s13167-011-0080-3","Trisomy 21 (Down Syndrome)","Early developmental intervention and surveillance.","Most common survivable autosomal trisomy."',
   // Second row: Week BLANK (should inherit "Embryology"). Complete.
   '"","A 14 year old has short stature and no menses","Difficulty keeping up with peers","Webbed neck, broad chest","Elevated FSH and LH","","","Karyotype shows 45,X","Retrieved from 10.1186/x","Monosomy X (Turner Syndrome)","Growth hormone and estrogen replacement.","Loss of one X chromosome."',
   // Stub rows: diagnosis present but no clues at all → must be skipped.
@@ -79,6 +79,55 @@ describe('parseSheetCsv — live sheet structure', () => {
   it('captures the management model answer from the annotated header', () => {
     expect(cases[0].management).toBe('Early developmental intervention and surveillance.')
     expect(cases[1].management).toBe('Growth hormone and estrogen replacement.')
+  })
+
+  it('attaches a drop-down detail + reference to the clue it follows', () => {
+    const down = cases[0]
+    const pathologyClue = down.clues.find((c) => c.text === 'Karyotype shows trisomy 21')
+    expect(pathologyClue?.detail).toBe('Karyotype demonstrates trisomy 21')
+    expect(pathologyClue?.reference).toBe('10.1007/s13167-011-0080-3')
+  })
+
+  it('leaves detail/reference undefined for clues with no drop-down', () => {
+    const down = cases[0]
+    // The chief-complaint clue has no drop-down column beside it.
+    expect(down.clues[0].detail).toBeUndefined()
+    expect(down.clues[0].reference).toBeUndefined()
+    // The imaging clue's drop-down cell was blank → also undefined.
+    const imagingClue = down.clues.find((c) => c.text === 'Echo shows an AVSD')
+    expect(imagingClue?.detail).toBeUndefined()
+    expect(imagingClue?.reference).toBeUndefined()
+  })
+})
+
+describe('parseSheetCsv — image manifest merge', () => {
+  // Turner's Clue 5 (imaging) cell is blank in the CSV (an in-cell image lives
+  // there); the manifest supplies the synced asset path, keyed by diagnosis+clue.
+  const manifest = {
+    'Monosomy X (Turner Syndrome)': { '5': 'case-images/turner-clue5.jpg' },
+  }
+  const withImages = parseSheetCsv(LIVE_SHEET, manifest)
+  const withoutImages = parseSheetCsv(LIVE_SHEET)
+
+  // Deterministic order: [Down, Turner, DMD].
+  const turnerWith = withImages[1]
+  const turnerWithout = withoutImages[1]
+
+  it('includes an otherwise-empty clue when the manifest supplies an image', () => {
+    const imgClue = turnerWith.clues.find((c) => c.image)
+    expect(imgClue?.image).toBe('case-images/turner-clue5.jpg')
+    expect(imgClue?.text).toBe('') // image-only clue: no CSV text
+    // The same clue is dropped entirely when there's no image and no text/caption.
+    expect(turnerWithout.clues.length).toBe(turnerWith.clues.length - 1)
+  })
+
+  it('leaves image undefined for text clues with no manifest entry', () => {
+    expect(turnerWith.clues[0].text).toContain('14 year old')
+    expect(turnerWith.clues[0].image).toBeUndefined()
+  })
+
+  it('defaults to no images when no manifest is passed', () => {
+    expect(withoutImages.every((c) => c.clues.every((cl) => cl.image === undefined))).toBe(true)
   })
 })
 

@@ -44,11 +44,22 @@ The parser locates the header row automatically (any preamble or scratch tables 
 | `Aliases`             | no       | Pipe- or semicolon-separated alternates accepted as correct guesses. |
 | `Description`         | no       | Short study note shown to the player after the case ends (win or lose). |
 | `Management?` (or `Management`) | no | Model answer for the post-case management step. When present, the player is asked how they'd manage the patient (free text), then reveals this answer to self-compare. |
+| a `"drop down"` description column | no | Caption for the clue **immediately to its left** (associated by position — e.g. an imaging caption after `Clue 5`). Rendered as a collapsed "Show detail" disclosure. A trailing `Retrieved from <DOI\|URL>` is split off into an inline `Reference ↗` link (bare DOIs resolve via doi.org). |
 | `Clue 1 type` … `Clue 6 type` | no | Optional small-caps label per clue (e.g., `Vitals`, `Imaging`). |
 
 Rows missing a diagnosis or all clues are skipped (so diagnosis-only stub rows in a work-in-progress sheet are simply not yet playable).
 
-> **Not yet wired up:** the live sheet also has per-clue imaging/pathology "drop-down" description columns (with references). These are parsed-around for now; surfacing them as expandable clue references is the next phase.
+### Image clues (imaging / pathology)
+
+Some clue cells hold an **in-cell image** (a radiograph, karyotype, histology slide) rather than text. In-cell images can't be fetched via the gviz CSV or the Sheets API, so they're pulled in a build-time step:
+
+```bash
+npm run sync-images   # exports the sheet, extracts in-cell images, writes assets + manifest
+```
+
+This authenticates with Google (reads `token.json`; defaults to the `google-docs-mcp` creds path, override with `GOOGLE_OAUTH_TOKEN`), exports the sheet as XLSX, reads each image's anchor cell, and maps it to a **diagnosis + clue number**. It writes the images to `public/case-images/` and a manifest to `src/caseImages.json` (keyed `{ [diagnosis]: { [clueNumber]: path } }`), both committed.
+
+At runtime, text stays **live via CSV**; `parseSheetCsv` merges the committed manifest by diagnosis (stable across row reordering) and the app renders the image inline. A clue with no synced image just shows its text/caption — never a broken image. Re-run `npm run sync-images` and redeploy when images change.
 
 ## Deploy
 

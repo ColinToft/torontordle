@@ -11,6 +11,7 @@ import {
 import type { Guess, Stats, TCase } from './types'
 import { dayNumber as computeDayNumber, formatHeaderDate } from './dailyCase'
 import { normalizeAnswer } from './normalize'
+import { referenceHref } from './references'
 import { buildShareText, copyShare } from './share'
 import type { UseGame } from './useGame'
 
@@ -50,7 +51,22 @@ export function GameView({ g }: { g: UseGame }) {
                   {c.type && (
                     <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)', marginBottom: 4 }}>{c.type}</div>
                   )}
-                  <p style={{ ...styles.clueText, marginTop: c.type ? 0 : 2 }}>{c.text}</p>
+                  {c.text && <p style={{ ...styles.clueText, marginTop: c.type ? 0 : 2 }}>{c.text}</p>}
+                  {c.image && (
+                    <img
+                      src={import.meta.env.BASE_URL + c.image}
+                      alt="Clinical image for this case"
+                      style={styles.clueImage}
+                      loading="lazy"
+                    />
+                  )}
+                  {c.detail && (
+                    <details style={styles.clueDetails}>
+                      <summary className="tt-monocaps" style={styles.clueSummary}>Show detail</summary>
+                      <p style={styles.clueDetailText}>{c.detail}</p>
+                    </details>
+                  )}
+                  {c.reference && <ClueReference reference={c.reference} />}
                 </div>
               </li>
             ))}
@@ -320,6 +336,21 @@ function EmptyRow({ index, prompt }: { index: number; prompt: boolean }) {
       <span className="tt-monocaps" style={{ minWidth: 28, color: 'var(--ink-soft)' }}>{String(index + 1).padStart(2, '0')}</span>
       <span style={{ flex: 1, color: 'var(--ink-soft)' }}>{prompt ? 'Your turn…' : ''}</span>
     </div>
+  )
+}
+
+// Citation for an image/drop-down clue. Shown inline under the clue (a bare
+// DOI/URL isn't itself a spoiler — the interpretive caption stays collapsed
+// in the <details> above). DOIs resolve through doi.org; non-linkable refs
+// render as plain text.
+function ClueReference({ reference }: { reference: string }) {
+  const href = referenceHref(reference)
+  return href ? (
+    <a href={href} target="_blank" rel="noopener noreferrer" style={styles.refLink}>
+      Reference ↗
+    </a>
+  ) : (
+    <span style={styles.refPlain}>Reference: {reference}</span>
   )
 }
 
@@ -613,6 +644,47 @@ const styles: Record<string, CSSProperties> = {
   clueItem: { display: 'flex', gap: 14, paddingTop: 4 },
   clueNum: { fontFamily: SERIF, color: 'var(--uoft-navy)', fontSize: 13, fontWeight: 700, paddingTop: 2 },
   clueText: { margin: 0, fontSize: 15, lineHeight: 1.55, color: 'var(--ink)' },
+  clueImage: {
+    display: 'block',
+    marginTop: 8,
+    maxWidth: '100%',
+    maxHeight: 280,
+    width: 'auto',
+    height: 'auto',
+    border: '1px solid var(--line)',
+    borderRadius: 4,
+    background: 'var(--uoft-bone)',
+  },
+  clueDetails: {
+    marginTop: 8,
+    paddingLeft: 12,
+    borderLeft: '2px solid var(--line)',
+  },
+  clueSummary: {
+    color: 'var(--uoft-navy)',
+    cursor: 'pointer',
+    fontSize: 10,
+    width: 'fit-content',
+  },
+  clueDetailText: {
+    margin: '8px 0 0',
+    fontSize: 13,
+    lineHeight: 1.5,
+    color: 'var(--ink-soft)',
+  },
+  refLink: {
+    display: 'inline-block',
+    marginTop: 8,
+    fontSize: 12,
+    color: 'var(--uoft-navy)',
+    textDecoration: 'underline',
+  },
+  refPlain: {
+    display: 'inline-block',
+    marginTop: 8,
+    fontSize: 12,
+    color: 'var(--ink-soft)',
+  },
   skeletonBar: { height: 14, background: 'rgba(30,58,95,0.08)', borderRadius: 2, marginBottom: 6 },
   guessPanel: {
     background: '#fff',

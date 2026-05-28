@@ -1,0 +1,12 @@
+{
+  "Cellulitis": {
+    "6": "case-images/cellulitis-clue6.gif"
+  },
+  "Monosomy X (Turner's Syndrome)": {
+    "5": "case-images/monosomy-x-turner-s-syndrome-clue5.jpg",
+    "6": "case-images/monosomy-x-turner-s-syndrome-clue6.jpg"
+  },
+  "Trisomy 21 (Down Syndrome)": {
+    "6": "case-images/trisomy-21-down-syndrome-clue6.jpg"
+  }
+}
