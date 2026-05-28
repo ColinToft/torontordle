@@ -6,7 +6,7 @@ Live: <https://colintoft.com/torontordle/>
 
 ## How to play
 
-You're given **one symptom** to start. Type a working diagnosis and submit. Each incorrect guess reveals one new clinical clue. You have **six** guesses. New case at midnight ET.
+You're given **one symptom** to start. Type a working diagnosis and submit. Each incorrect guess reveals one new clinical clue. You have **six** guesses. When the case closes, you're asked how you'd manage the patient — jot it down and compare against a model answer. New case at midnight ET.
 
 ## Stack
 
@@ -43,11 +43,12 @@ The parser locates the header row automatically (any preamble or scratch tables 
 | `Week` (or `Category`)| no       | Shown in the case header (e.g., `Immunology II`). **Filled only on the first row of each week block** — the value is carried down to the blank rows beneath it. Defaults to `General`. |
 | `Aliases`             | no       | Pipe- or semicolon-separated alternates accepted as correct guesses. |
 | `Description`         | no       | Short study note shown to the player after the case ends (win or lose). |
+| `Management?` (or `Management`) | no | Model answer for the post-case management step. When present, the player is asked how they'd manage the patient (free text), then reveals this answer to self-compare. |
 | `Clue 1 type` … `Clue 6 type` | no | Optional small-caps label per clue (e.g., `Vitals`, `Imaging`). |
 
 Rows missing a diagnosis or all clues are skipped (so diagnosis-only stub rows in a work-in-progress sheet are simply not yet playable).
 
-> **Not yet wired up:** the live sheet also has a `Management?` column and per-clue imaging/pathology "drop-down" description columns (with references). These are parsed-around for now; surfacing them is the next phase (a post-diagnosis free-text management step and expandable clue references).
+> **Not yet wired up:** the live sheet also has per-clue imaging/pathology "drop-down" description columns (with references). These are parsed-around for now; surfacing them as expandable clue references is the next phase.
 
 ## Deploy
 

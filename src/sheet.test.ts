@@ -75,6 +75,11 @@ describe('parseSheetCsv — live sheet structure', () => {
   it('captures the description (study note)', () => {
     expect(cases[0].description).toBe('Most common survivable autosomal trisomy.')
   })
+
+  it('captures the management model answer from the annotated header', () => {
+    expect(cases[0].management).toBe('Early developmental intervention and surveillance.')
+    expect(cases[1].management).toBe('Growth hormone and estrogen replacement.')
+  })
 })
 
 describe('parseSheetCsv — older sheet with explicit "Clue N type" columns', () => {
@@ -94,6 +99,10 @@ describe('parseSheetCsv — older sheet with explicit "Clue N type" columns', ()
     expect(c.category).toBe('Respiratory')
     expect(c.clues[0]).toEqual({ type: 'Symptom', text: 'Sudden pleuritic chest pain' })
     expect(c.clues[1]).toEqual({ type: '', text: 'Tachycardia on exam' })
+  })
+
+  it('leaves management undefined when there is no management column', () => {
+    expect(cases[0].management).toBeUndefined()
   })
 })
 

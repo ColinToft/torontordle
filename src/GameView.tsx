@@ -369,6 +369,7 @@ function ResultBlock({
           ? `Solved in ${g.guesses.length} ${g.guesses.length === 1 ? 'guess' : 'guesses'}. Streak: ${g.stats.streak} day${g.stats.streak === 1 ? '' : 's'}.`
           : 'Better luck tomorrow. New case at midnight ET.'}
       </p>
+      {g.tCase.management && <ManagementPanel answer={g.tCase.management} />}
       <div style={{ display: 'flex', gap: 8, marginTop: 12, flexWrap: 'wrap' }}>
         <button className="tt-submit" style={styles.primaryBtn} onClick={onShare}>{shareLabel}</button>
         <button className="tt-secondary" style={styles.secondaryBtn} onClick={onOpenStats}>View stats</button>
@@ -381,6 +382,60 @@ function ResultBlock({
             {g.tCase.description}
           </p>
         </>
+      )}
+    </div>
+  )
+}
+
+// Post-case learning step: ask how the student would manage the patient, then
+// reveal the model answer to self-compare. Reveal-and-compare only — the draft
+// is ephemeral (intentionally not persisted) and never scored.
+function ManagementPanel({ answer }: { answer: string }) {
+  const [draft, setDraft] = useState('')
+  const [revealed, setRevealed] = useState(false)
+
+  return (
+    <div style={{ marginTop: 16 }}>
+      <hr className="tt-rule" style={{ margin: '4px 0 12px' }} />
+      <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Management</div>
+      <p style={{ fontSize: 13, color: 'var(--ink-soft)', margin: '6px 0 8px', lineHeight: 1.5 }}>
+        How would you manage this patient?
+      </p>
+      <textarea
+        style={styles.managementInput}
+        value={draft}
+        onChange={(e) => setDraft(e.target.value)}
+        placeholder="Type your management plan…"
+        aria-label="Your management plan"
+        readOnly={revealed}
+        rows={3}
+      />
+      {!revealed ? (
+        <button
+          className="tt-secondary"
+          style={{ ...styles.secondaryBtn, marginTop: 10 }}
+          onClick={() => setRevealed(true)}
+        >
+          Reveal model answer
+        </button>
+      ) : (
+        <div
+          style={{
+            marginTop: 12,
+            padding: 14,
+            background: 'var(--uoft-bone)',
+            border: '1px solid var(--line)',
+            borderRadius: 4,
+          }}
+        >
+          <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Model answer</div>
+          <p style={{ fontSize: 14, color: 'var(--ink)', marginTop: 6, lineHeight: 1.55 }}>
+            {answer}
+          </p>
+          <p style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 8, lineHeight: 1.5 }}>
+            Compare against your own answer — use your judgment.
+          </p>
+        </div>
       )}
     </div>
   )
@@ -410,6 +465,7 @@ function HowToModal({ onClose }: { onClose: () => void }) {
         <li>Type a working diagnosis and submit. You have <strong>six guesses</strong>.</li>
         <li>Each incorrect guess reveals a new clinical clue — vitals, history, exam, labs, imaging.</li>
         <li>Solve the case with the fewest guesses to climb the leaderboard.</li>
+        <li>When the case closes, jot down how you'd manage the patient and compare against a model answer.</li>
       </ol>
       <div style={{ marginTop: 14, padding: 12, background: 'var(--uoft-bone)', border: '1px solid var(--line)' }}>
         <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>For learning, not for clinical use</div>
@@ -633,6 +689,20 @@ const styles: Record<string, CSSProperties> = {
     fontSize: 16,
     background: 'transparent',
     color: 'var(--ink)',
+  },
+  managementInput: {
+    width: '100%',
+    boxSizing: 'border-box',
+    padding: '12px 14px',
+    border: '1px solid var(--uoft-navy)',
+    outline: 'none',
+    fontFamily: SERIF,
+    fontSize: 15,
+    lineHeight: 1.5,
+    background: '#fff',
+    color: 'var(--ink)',
+    resize: 'vertical',
+    minHeight: 72,
   },
   submitBtn: {
     padding: '0 18px',

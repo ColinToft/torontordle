@@ -7,6 +7,7 @@ export type TCase = {
   category: string
   clues: Clue[]
   description?: string
+  management?: string
 }
 
 export type Guess = { text: string; correct: boolean }
