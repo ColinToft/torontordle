@@ -51,7 +51,7 @@ export function GameView({ g }: { g: UseGame }) {
                   {c.type && (
                     <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)', marginBottom: 4 }}>{c.type}</div>
                   )}
-                  {c.text && <p style={{ ...styles.clueText, marginTop: c.type ? 0 : 2 }}>{c.text}</p>}
+                  {c.text && <p style={styles.clueText}>{c.text}</p>}
                   {c.image && (
                     <img
                       src={import.meta.env.BASE_URL + c.image}
@@ -642,7 +642,7 @@ const styles: Record<string, CSSProperties> = {
     gap: 14,
   },
   clueItem: { display: 'flex', gap: 14, paddingTop: 4 },
-  clueNum: { fontFamily: SERIF, color: 'var(--uoft-navy)', fontSize: 13, fontWeight: 700, paddingTop: 2 },
+  clueNum: { fontFamily: SERIF, color: 'var(--uoft-navy)', fontSize: 13, fontWeight: 700, lineHeight: 1.55 },
   clueText: { margin: 0, fontSize: 15, lineHeight: 1.55, color: 'var(--ink)' },
   clueImage: {
     display: 'block',
