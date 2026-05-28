@@ -21,6 +21,7 @@ You're given **one symptom** to start. Type a working diagnosis and submit. Each
 npm install
 npm run dev   # http://localhost:5173/torontordle/
 npm run build # → dist/
+npm test      # run the sheet-parser test suite (vitest)
 ```
 
 ## Diagnosis bank (Google Sheet)
@@ -33,18 +34,20 @@ The case shown on a given date is `hash(YYYY-MM-DD) % cases.length` — determin
 
 ### Sheet schema
 
-The parser locates the header row automatically (preamble rows above it are ignored), then matches columns case-insensitively.
+The parser locates the header row automatically (any preamble or scratch tables above it are ignored — the real header is the one row that has *both* a `Diagnosis` cell and a `Clue 1…` cell), then matches columns case-insensitively **by prefix**, so trailing annotations in the title are fine.
 
 | column                | required | notes |
 | --- | --- | --- |
-| `Diagnosis?` (or `Diagnosis`) | yes | Canonical diagnosis. A trailing parenthetical like `(PE)` is auto-extracted as an alias. |
-| `Clue 1` … `Clue 6`   | at least 1 | Clue body. Up to 8 clues supported. |
-| `Week` (or `Category`)| no       | Shown in the case header (e.g., `Immunology II`). Defaults to `General`. |
+| `Diagnosis?` (or `Diagnosis`) | yes | The full string is the displayed answer. For `Trisomy 21 (Down Syndrome)`, both the stem (`Trisomy 21`) and the parenthetical (`Down Syndrome`) are added as accepted aliases. |
+| `Clue 1` … `Clue 6`   | at least 1 | Clue body. Up to 8 clues supported. Header may carry an annotation, e.g. `Clue 1 (most typical chief complaint; broad)`. |
+| `Week` (or `Category`)| no       | Shown in the case header (e.g., `Immunology II`). **Filled only on the first row of each week block** — the value is carried down to the blank rows beneath it. Defaults to `General`. |
 | `Aliases`             | no       | Pipe- or semicolon-separated alternates accepted as correct guesses. |
 | `Description`         | no       | Short study note shown to the player after the case ends (win or lose). |
 | `Clue 1 type` … `Clue 6 type` | no | Optional small-caps label per clue (e.g., `Vitals`, `Imaging`). |
 
-Rows missing a diagnosis or all clues are skipped.
+Rows missing a diagnosis or all clues are skipped (so diagnosis-only stub rows in a work-in-progress sheet are simply not yet playable).
+
+> **Not yet wired up:** the live sheet also has a `Management?` column and per-clue imaging/pathology "drop-down" description columns (with references). These are parsed-around for now; surfacing them is the next phase (a post-diagnosis free-text management step and expandable clue references).
 
 ## Deploy
 

@@ -2,21 +2,25 @@ import { parseCSV } from './csv'
 import type { TCase } from './types'
 
 // Google Sheet ID for the diagnosis bank.
-// Sheet URL: https://docs.google.com/spreadsheets/d/1Zv5xSR3xmizLnblHl8pnTgwDZ2Coilp4dRd3GMuyD9o/
+// Sheet URL: https://docs.google.com/spreadsheets/d/117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI/
 // The sheet must be shared "Anyone with the link → Viewer" (or Published to web)
 // for the gviz/CSV endpoint to be reachable from the browser.
-export const SHEET_ID = '1Zv5xSR3xmizLnblHl8pnTgwDZ2Coilp4dRd3GMuyD9o'
+export const SHEET_ID = '117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI'
 export const SHEET_GID = '0'
 
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`
 
 /**
- * Sheet schema (case-insensitive, header row located automatically — preamble
- * rows above it are ignored). Required columns:
- *   - "Diagnosis?" or "Diagnosis"   → diagnosis name (parenthetical aliases auto-extracted)
+ * Sheet schema (case-insensitive, header row located automatically — any
+ * preamble/scratch tables above it are ignored). Column titles are matched by
+ * prefix, so trailing annotations like "Clue 1 (chief complaint; broad)" are
+ * fine. Required columns:
+ *   - "Diagnosis?" or "Diagnosis"   → full diagnosis (the parenthetical and the
+ *                                     stem are both added as accepted aliases)
  *   - "Clue 1" … "Clue 6"            → clue body text (1–8 supported)
  * Optional columns:
- *   - "Week" or "Category"           → grouping label (shown in case header)
+ *   - "Week" or "Category"           → grouping label; carried down to blank
+ *                                     rows beneath the first row of each block
  *   - "Aliases"                      → pipe- or semicolon-separated alternates
  *   - "Description"                  → study note shown after the case ends
  *   - "Clue 1 type" … "Clue 6 type"  → optional small-caps label per clue
@@ -38,9 +42,20 @@ export function parseSheetCsv(text: string): TCase[] {
   if (headerRowIdx < 0) return []
   const header = rows[headerRowIdx].map((h) => h.trim().toLowerCase())
 
+  // Exact-match column lookup.
   const findCol = (names: string[]): number => {
     for (const n of names) {
       const i = header.indexOf(n.toLowerCase())
+      if (i >= 0) return i
+    }
+    return -1
+  }
+  // Prefix-match column lookup — headers in the live sheet carry trailing
+  // annotations, e.g. "Description (includes pathophysiology…)" or
+  // "Management? (free text, user will just compare to provided answer)".
+  const findColPrefix = (prefixes: string[]): number => {
+    for (const p of prefixes) {
+      const i = header.findIndex((h) => h.startsWith(p.toLowerCase()))
       if (i >= 0) return i
     }
     return -1
@@ -49,21 +64,33 @@ export function parseSheetCsv(text: string): TCase[] {
   const idxDiagnosis = findCol(['diagnosis?', 'diagnosis'])
   const idxAliases = findCol(['aliases', 'alias'])
   const idxCategory = findCol(['week', 'category', 'topic'])
-  const idxDescription = findCol(['description', 'study note', 'notes'])
+  const idxDescription = findColPrefix(['description', 'study note', 'notes'])
   if (idxDiagnosis < 0) return []
 
-  // Up to 8 clue columns. Each clue may also have an optional type column.
+  // Up to 8 clue columns. The clue body header embeds its type in a trailing
+  // parenthetical in the live sheet, e.g. "Clue 1 (most typical chief
+  // complaint; broad)". An optional separate "Clue N type" column (older
+  // sheets) supplies the small-caps label when present.
   const clueCols: { typeIdx: number; textIdx: number }[] = []
   for (let n = 1; n <= 8; n++) {
-    const text = findCol([`clue ${n}`, `clue${n}`])
-    if (text < 0) continue
-    const type = findCol([`clue ${n} type`, `clue${n}_type`, `clue${n} type`])
-    clueCols.push({ typeIdx: type, textIdx: text })
+    const typeIdx = header.findIndex((h) => new RegExp(`^clue ?${n} type`).test(h))
+    const textIdx = header.findIndex(
+      (h, i) => i !== typeIdx && new RegExp(`^clue ?${n}\\b`).test(h),
+    )
+    if (textIdx < 0) continue
+    clueCols.push({ typeIdx, textIdx })
   }
 
   const cases: TCase[] = []
+  // The Week column is filled only on the first row of each week's block;
+  // carry the last non-empty value down to the rows beneath it.
+  let lastCategory = 'General'
   for (let r = headerRowIdx + 1; r < rows.length; r++) {
     const row = rows[r]
+
+    const categoryCell = (idxCategory >= 0 ? row[idxCategory] : '')?.trim()
+    if (categoryCell) lastCategory = categoryCell
+
     const rawDiagnosis = (row[idxDiagnosis] ?? '').trim()
     if (!rawDiagnosis) continue
 
@@ -71,7 +98,7 @@ export function parseSheetCsv(text: string): TCase[] {
     const sheetAliases = parseAliases(idxAliases >= 0 ? row[idxAliases] : '')
     const aliases = dedupe([...derivedAliases, ...sheetAliases])
 
-    const category = (idxCategory >= 0 ? row[idxCategory] : '')?.trim() || 'General'
+    const category = lastCategory
     const description = (idxDescription >= 0 ? row[idxDescription] : '')?.trim() || undefined
 
     const clues = clueCols
@@ -88,18 +115,28 @@ export function parseSheetCsv(text: string): TCase[] {
   return cases
 }
 
+// Find the real column-title row. The live sheet stacks several preamble
+// tables (instructions, author assignments, a week list, scratch examples)
+// above it, so we scan the whole sheet rather than just the first few rows.
+// Requiring BOTH a diagnosis cell and a "Clue 1…" cell disambiguates the real
+// header from the scratch tables, which lack a literal "Clue 1" column title.
 function findHeaderRow(rows: string[][]): number {
-  for (let i = 0; i < Math.min(rows.length, 10); i++) {
+  for (let i = 0; i < rows.length; i++) {
     const cells = rows[i].map((c) => c.trim().toLowerCase())
     const hasDiagnosis = cells.some((c) => c === 'diagnosis?' || c === 'diagnosis')
-    const hasClue = cells.some((c) => /^clue ?1$/.test(c))
+    const hasClue = cells.some((c) => /^clue ?1\b/.test(c))
     if (hasDiagnosis && hasClue) return i
   }
   return -1
 }
 
-// "Pulmonary embolism (PE)" → { diagnosis: "Pulmonary embolism", derivedAliases: ["PE"] }
-// "Anaphylaxis"             → { diagnosis: "Anaphylaxis", derivedAliases: [] }
+// The full string stays the canonical answer (shown to the player); the
+// stem and the parenthetical are added as aliases so either is accepted.
+// "Trisomy 21 (Down Syndrome)"
+//   → { diagnosis: "Trisomy 21 (Down Syndrome)",
+//       derivedAliases: ["Down Syndrome", "Trisomy 21"] }
+// "Anaphylaxis"
+//   → { diagnosis: "Anaphylaxis", derivedAliases: [] }
 function splitDiagnosis(raw: string): { diagnosis: string; derivedAliases: string[] } {
   const trimmed = raw.trim()
   const m = trimmed.match(/^(.*?)\s*\(([^()]+)\)\s*$/)
@@ -108,8 +145,8 @@ function splitDiagnosis(raw: string): { diagnosis: string; derivedAliases: strin
   const inside = m[2].trim()
   const insideAliases = inside.split(/[,/]/).map((s) => s.trim()).filter(Boolean)
   return {
-    diagnosis: main,
-    derivedAliases: [...insideAliases, trimmed],
+    diagnosis: trimmed,
+    derivedAliases: [...insideAliases, main],
   }
 }
 
