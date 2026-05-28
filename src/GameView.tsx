@@ -188,10 +188,12 @@ function GuessCombobox({ g }: { g: UseGame }) {
     )
   }, [g.cases, g.input, usedSet])
 
-  // Keep highlight in range as the filter changes.
-  useEffect(() => {
-    setHighlighted((h) => Math.max(0, Math.min(h, matches.length - 1)))
-  }, [matches.length])
+  // Keep the highlighted index in range as the filtered matches change.
+  // Done during render (not in an effect) to avoid a wasted commit; the
+  // guard makes this idempotent, so it can't loop — even when matches is
+  // empty (maxIndex 0, highlighted clamps to 0 and then stops).
+  const maxIndex = Math.max(0, matches.length - 1)
+  if (highlighted > maxIndex) setHighlighted(maxIndex)
 
   // Click outside closes the dropdown.
   useEffect(() => {

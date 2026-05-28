@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { DailyProgress, Guess, Stats, Status, TCase } from './types'
 import { pickDailyCase, todayET } from './dailyCase'
 import { normalizeAnswer } from './normalize'
@@ -24,30 +24,34 @@ export function useGame(cases: TCase[]) {
   const [input, setInput] = useState('')
   const [status, setStatus] = useState<Status>('playing')
   const [stats, setStats] = useState<Stats>(() => loadStats())
-  const restoredCaseIdRef = useRef<number | null>(null)
 
-  // Restore today's progress when the active case becomes known.
-  useEffect(() => {
+  // Restore (or reset) today's progress synchronously when the active case
+  // changes. Done during render per React's "adjust state when a prop changes"
+  // guidance — an effect that only mirrors a key into state causes a wasted
+  // commit and is flagged by react-hooks/set-state-in-effect.
+  const caseKey = `${dateStr}:${tCase.id}`
+  const [syncedKey, setSyncedKey] = useState<string | null>(null)
+  if (syncedKey !== caseKey) {
     const stored = loadDailyProgress(dateStr)
     if (stored && stored.caseId === tCase.id) {
       setGuesses(stored.guesses)
       setStatus(stored.status)
-      restoredCaseIdRef.current = tCase.id
     } else {
       // New day, or sheet refreshed and assigned a different case for today.
       setGuesses([])
       setStatus('playing')
       setInput('')
-      restoredCaseIdRef.current = tCase.id
     }
-  }, [dateStr, tCase.id])
+    setSyncedKey(caseKey)
+  }
 
-  // Persist progress whenever it changes for the active case.
+  // Persist progress whenever it changes for the active case — but only once
+  // it has been synced, so we never clobber stored progress before restoring.
   useEffect(() => {
-    if (restoredCaseIdRef.current !== tCase.id) return
+    if (syncedKey !== caseKey) return
     const progress: DailyProgress = { caseId: tCase.id, guesses, status }
     saveDailyProgress(dateStr, progress)
-  }, [dateStr, tCase.id, guesses, status])
+  }, [caseKey, syncedKey, dateStr, tCase.id, guesses, status])
 
   const submitGuess = useCallback(() => {
     if (status !== 'playing') return
