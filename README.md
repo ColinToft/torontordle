@@ -57,7 +57,7 @@ Some clue cells hold an **in-cell image** (a radiograph, karyotype, histology sl
 npm run sync-images   # exports the sheet, extracts in-cell images, writes assets + manifest
 ```
 
-This authenticates with Google (reads `token.json`; defaults to the `google-docs-mcp` creds path, override with `GOOGLE_OAUTH_TOKEN`), exports the sheet as XLSX, reads each image's anchor cell, and maps it to a **diagnosis + clue number**. It writes the images to `public/case-images/` and a manifest to `src/caseImages.json` (keyed `{ [diagnosis]: { [clueNumber]: path } }`), both committed.
+This authenticates with Google (reads `token.json`; defaults to the `google-docs-mcp` creds path, override with `GOOGLE_OAUTH_TOKEN`), exports the sheet as XLSX, reads each image's anchor cell, and maps it to a **diagnosis + clue number**. Each image is downscaled to ≤1200px wide and re-encoded as JPEG (quality 82) via `sharp` to keep assets light — sheet images can be multi-MB. It writes the images to `public/case-images/` and a manifest to `src/caseImages.json` (keyed `{ [diagnosis]: { [clueNumber]: path } }`), both committed; assets no longer in the sheet are pruned.
 
 At runtime, text stays **live via CSV**; `parseSheetCsv` merges the committed manifest by diagnosis (stable across row reordering) and the app renders the image inline. A clue with no synced image just shows its text/caption — never a broken image.
 

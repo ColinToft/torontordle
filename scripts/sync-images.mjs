@@ -11,8 +11,18 @@
 //   GOOGLE_OAUTH_TOKEN_JSON=<creds JSON string> supplies creds inline (used in CI).
 
 import { google } from 'googleapis'
+import sharp from 'sharp'
 import { execSync } from 'node:child_process'
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import {
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  unlinkSync,
+  writeFileSync,
+} from 'node:fs'
 import { tmpdir } from 'node:os'
 import { basename, dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -52,6 +62,23 @@ function authClient() {
   const oauth2 = new google.auth.OAuth2(cred.client_id, cred.client_secret)
   oauth2.setCredentials({ refresh_token: cred.refresh_token })
   return oauth2
+}
+
+// Downscale + recompress a clue image for the web. Sheet images can be large
+// (multi-MB PNGs); cap the width and re-encode to JPEG so assets stay light.
+// Falls back to the original bytes for anything sharp can't handle (e.g. GIF).
+const MAX_IMAGE_WIDTH = 1200
+async function compressImage(buf, origExt) {
+  try {
+    const out = await sharp(buf)
+      .rotate() // honor EXIF orientation before stripping metadata
+      .resize({ width: MAX_IMAGE_WIDTH, withoutEnlargement: true })
+      .jpeg({ quality: 82, mozjpeg: true })
+      .toBuffer()
+    return { buffer: out, ext: 'jpg' }
+  } catch {
+    return { buffer: buf, ext: origExt }
+  }
 }
 
 async function main() {
@@ -107,9 +134,10 @@ async function main() {
   const anchors = parseDrawingAnchors(read(`xl/drawings/${drawingFile}`))
   const drawingRels = parseRels(read(`xl/drawings/_rels/${drawingFile}.rels`))
 
-  // 5. For each anchored image, resolve diagnosis + clue number and write the asset.
+  // 5. For each anchored image, resolve diagnosis + clue number, compress, and write the asset.
   mkdirSync(OUT_IMAGES, { recursive: true })
   const entries = []
+  const written = new Set()
   let skipped = 0
   for (const a of anchors) {
     const diagnosis = String((values[a.row] || [])[diagCol] ?? '').trim()
@@ -120,11 +148,23 @@ async function main() {
       continue
     }
     const mediaFile = basename(drawingRels[a.embed]) // e.g. image2.jpg
-    const ext = mediaFile.split('.').pop()
+    const srcBuf = readFileSync(join(unzipDir, 'xl', 'media', mediaFile))
+    const { buffer, ext } = await compressImage(srcBuf, mediaFile.split('.').pop())
     const fileName = imageFileName(diagnosis, clueNumber, ext)
-    writeFileSync(join(OUT_IMAGES, fileName), readFileSync(join(unzipDir, 'xl', 'media', mediaFile)))
+    writeFileSync(join(OUT_IMAGES, fileName), buffer)
+    written.add(fileName)
     entries.push({ diagnosis, clueNumber, path: `case-images/${fileName}` })
-    console.log(`  ✓ ${diagnosis} · clue ${clueNumber} → ${fileName}`)
+    const kb = (n) => `${Math.round(n / 1024)}KB`
+    console.log(`  ✓ ${diagnosis} · clue ${clueNumber} → ${fileName} (${kb(srcBuf.length)} → ${kb(buffer.length)})`)
+  }
+
+  // Drop any previously-synced assets no longer present in the sheet (e.g. a
+  // PNG now re-encoded as JPEG, or an image removed upstream).
+  for (const f of readdirSync(OUT_IMAGES)) {
+    if (!written.has(f)) {
+      unlinkSync(join(OUT_IMAGES, f))
+      console.log(`  – removed stale ${f}`)
+    }
   }
 
   // 6. Write the manifest.
