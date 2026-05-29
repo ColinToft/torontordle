@@ -1,6 +1,6 @@
 import type { Guess } from './types'
 
-// 🟫 = wrong guess, 🟩 = correct guess. Mirrors Wordle-style emoji grids.
+// ⬛ = wrong guess, 🟩 = correct guess. Mirrors Wordle-style emoji grids.
 export function buildShareText(opts: {
   dayNumber: number
   guesses: Guess[]
@@ -10,7 +10,7 @@ export function buildShareText(opts: {
 }): string {
   const { dayNumber, guesses, won, maxGuesses, url } = opts
   const score = won ? `${guesses.length}/${maxGuesses}` : `X/${maxGuesses}`
-  const grid = guesses.map((g) => (g.correct ? '🟩' : '🟫')).join('')
+  const grid = guesses.map((g) => (g.correct ? '🟩' : '⬛')).join('')
   return `Torontordle Day ${dayNumber} — ${score}\n${grid}\n${url}`
 }
 

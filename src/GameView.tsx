@@ -25,7 +25,11 @@ export function GameView({ g }: { g: UseGame }) {
   const lockedCount = Math.max(0, g.tCase.clues.length - visibleClues.length)
   const day = computeDayNumber(g.dateStr)
   const headerDate = formatHeaderDate(g.dateStr)
-  const caseLabel = `Case No. ${String(day).padStart(3, '0')} · ${g.tCase.category}`
+  // The week/category is a strong hint toward the diagnosis, so keep it hidden
+  // while playing and reveal it only once the case is over.
+  const caseLabel =
+    `Case No. ${String(day).padStart(3, '0')}` +
+    (g.status === 'playing' ? '' : ` · ${g.tCase.category}`)
 
   return (
     <div className="tt-frame" style={styles.frame}>
@@ -365,6 +369,11 @@ function ResultBlock({
 }) {
   const won = g.status === 'won'
   const [shareLabel, setShareLabel] = useState('Share results')
+  // The study note describes management/pathophysiology, so it would spoil the
+  // management step. Hold it back until the player reveals the model answer
+  // (or show it immediately when the case has no management step).
+  const [mgmtRevealed, setMgmtRevealed] = useState(false)
+  const showStudyNote = Boolean(g.tCase.description) && (!g.tCase.management || mgmtRevealed)
 
   const onShare = async () => {
     const text = buildShareText({
@@ -400,12 +409,10 @@ function ResultBlock({
           ? `Solved in ${g.guesses.length} ${g.guesses.length === 1 ? 'guess' : 'guesses'}. Streak: ${g.stats.streak} day${g.stats.streak === 1 ? '' : 's'}.`
           : 'Better luck tomorrow. New case at midnight ET.'}
       </p>
-      {g.tCase.management && <ManagementPanel answer={g.tCase.management} />}
-      <div style={{ display: 'flex', gap: 8, marginTop: 12, flexWrap: 'wrap' }}>
-        <button className="tt-submit" style={styles.primaryBtn} onClick={onShare}>{shareLabel}</button>
-        <button className="tt-secondary" style={styles.secondaryBtn} onClick={onOpenStats}>View stats</button>
-      </div>
-      {g.tCase.description && (
+      {g.tCase.management && (
+        <ManagementPanel answer={g.tCase.management} onReveal={() => setMgmtRevealed(true)} />
+      )}
+      {showStudyNote && (
         <>
           <hr className="tt-rule" style={{ margin: '16px 0 12px' }} />
           <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Study note</div>
@@ -414,6 +421,10 @@ function ResultBlock({
           </p>
         </>
       )}
+      <div style={{ display: 'flex', gap: 8, marginTop: 16, flexWrap: 'wrap' }}>
+        <button className="tt-submit" style={styles.primaryBtn} onClick={onShare}>{shareLabel}</button>
+        <button className="tt-secondary" style={styles.secondaryBtn} onClick={onOpenStats}>View stats</button>
+      </div>
     </div>
   )
 }
@@ -421,7 +432,7 @@ function ResultBlock({
 // Post-case learning step: ask how the student would manage the patient, then
 // reveal the model answer to self-compare. Reveal-and-compare only — the draft
 // is ephemeral (intentionally not persisted) and never scored.
-function ManagementPanel({ answer }: { answer: string }) {
+function ManagementPanel({ answer, onReveal }: { answer: string; onReveal: () => void }) {
   const [draft, setDraft] = useState('')
   const [revealed, setRevealed] = useState(false)
 
@@ -445,7 +456,10 @@ function ManagementPanel({ answer }: { answer: string }) {
         <button
           className="tt-secondary"
           style={{ ...styles.secondaryBtn, marginTop: 10 }}
-          onClick={() => setRevealed(true)}
+          onClick={() => {
+            setRevealed(true)
+            onReveal()
+          }}
         >
           Reveal model answer
         </button>
