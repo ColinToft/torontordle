@@ -59,7 +59,22 @@ npm run sync-images   # exports the sheet, extracts in-cell images, writes asset
 
 This authenticates with Google (reads `token.json`; defaults to the `google-docs-mcp` creds path, override with `GOOGLE_OAUTH_TOKEN`), exports the sheet as XLSX, reads each image's anchor cell, and maps it to a **diagnosis + clue number**. It writes the images to `public/case-images/` and a manifest to `src/caseImages.json` (keyed `{ [diagnosis]: { [clueNumber]: path } }`), both committed.
 
-At runtime, text stays **live via CSV**; `parseSheetCsv` merges the committed manifest by diagnosis (stable across row reordering) and the app renders the image inline. A clue with no synced image just shows its text/caption — never a broken image. Re-run `npm run sync-images` and redeploy when images change.
+At runtime, text stays **live via CSV**; `parseSheetCsv` merges the committed manifest by diagnosis (stable across row reordering) and the app renders the image inline. A clue with no synced image just shows its text/caption — never a broken image.
+
+#### Automatic nightly sync
+
+You don't normally need to run the sync by hand. The workflow at `.github/workflows/sync-images.yml` runs it **nightly** (07:00 UTC) and on demand (Actions tab → *Sync image clues* → *Run workflow*, i.e. `workflow_dispatch`). It re-runs the sync, commits `public/case-images/` + `src/caseImages.json` only if they changed, then builds and redeploys to Pages in the same job.
+
+> Why deploy in the same workflow? A commit pushed by the default `GITHUB_TOKEN` does **not** trigger `deploy.yml` (GitHub blocks workflow-triggering-workflow to avoid loops), so this workflow handles the build + deploy itself rather than relying on a separate PAT secret.
+
+**One-time setup (required before the automation works):** add a GitHub Actions secret named `GOOGLE_OAUTH_TOKEN_JSON` (repo → Settings → Secrets and variables → Actions) containing the OAuth creds JSON the sync uses. The script parses it inline when that env var is set; otherwise it falls back to the local `token.json` file.
+
+For CI, **strongly prefer a dedicated read-only Google service account** over a personal refresh token:
+
+- **Recommended — service account (read-only):** create a service account in Google Cloud, enable the Drive + Sheets APIs, download its key JSON, and share *just this sheet* with the service-account email as **Viewer**. Store that key JSON in the secret. (Scope CI access to exactly this sheet, nothing else in your Drive.)
+- **Alternative — personal OAuth token:** paste the same `client_id` / `client_secret` / `refresh_token` JSON the local sync uses. Simpler, but it grants CI your personal Drive scope, so it's less safe.
+
+To run the sync manually after a sheet change, you can still: `npm run sync-images` then push (or just trigger the workflow).
 
 ## Deploy
 

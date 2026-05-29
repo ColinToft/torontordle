@@ -8,6 +8,7 @@
 //
 // Run locally (needs Google OAuth creds): npm run sync-images
 //   GOOGLE_OAUTH_TOKEN=/path/to/token.json overrides the default creds path.
+//   GOOGLE_OAUTH_TOKEN_JSON=<creds JSON string> supplies creds inline (used in CI).
 
 import { google } from 'googleapis'
 import { execSync } from 'node:child_process'
@@ -34,10 +35,20 @@ const OUT_IMAGES = join(ROOT, 'public', 'case-images')
 const OUT_MANIFEST = join(ROOT, 'src', 'caseImages.json')
 
 function authClient() {
-  if (!existsSync(TOKEN_PATH)) {
-    throw new Error(`No OAuth creds at ${TOKEN_PATH}. Set GOOGLE_OAUTH_TOKEN to your token.json path.`)
+  // In CI, creds are supplied inline via GOOGLE_OAUTH_TOKEN_JSON (the JSON string
+  // itself). Locally, we read them from a file (GOOGLE_OAUTH_TOKEN path or default).
+  const inlineCreds = process.env.GOOGLE_OAUTH_TOKEN_JSON
+  let cred
+  if (inlineCreds) {
+    cred = JSON.parse(inlineCreds)
+  } else {
+    if (!existsSync(TOKEN_PATH)) {
+      throw new Error(
+        `No OAuth creds at ${TOKEN_PATH}. Set GOOGLE_OAUTH_TOKEN to your token.json path, or GOOGLE_OAUTH_TOKEN_JSON to the creds JSON.`,
+      )
+    }
+    cred = JSON.parse(readFileSync(TOKEN_PATH, 'utf8'))
   }
-  const cred = JSON.parse(readFileSync(TOKEN_PATH, 'utf8'))
   const oauth2 = new google.auth.OAuth2(cred.client_id, cred.client_secret)
   oauth2.setCredentials({ refresh_token: cred.refresh_token })
   return oauth2
