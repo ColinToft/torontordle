@@ -2,6 +2,12 @@
   "Cellulitis": {
     "6": "case-images/cellulitis-clue6.jpg"
   },
+  "Choriocarcinoma": {
+    "5": "case-images/choriocarcinoma-clue5.jpg"
+  },
+  "Hydatidiform mole": {
+    "5": "case-images/hydatidiform-mole-clue5.jpg"
+  },
   "Klinefelter's Syndrome": {
     "6": "case-images/klinefelter-s-syndrome-clue6.jpg"
   },
