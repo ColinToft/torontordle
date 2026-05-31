@@ -1,4 +1,10 @@
 {
+  "Achondroplasia": {
+    "5": "case-images/achondroplasia-clue5.jpg"
+  },
+  "CHARGE Syndrome": {
+    "5": "case-images/charge-syndrome-clue5.jpg"
+  },
   "Cellulitis": {
     "6": "case-images/cellulitis-clue6.jpg"
   },
@@ -8,12 +14,21 @@
   "Hydatidiform mole": {
     "5": "case-images/hydatidiform-mole-clue5.jpg"
   },
+  "Kearns-Sayre Syndrome": {
+    "5": "case-images/kearns-sayre-syndrome-clue5.jpg"
+  },
   "Klinefelter's Syndrome": {
     "6": "case-images/klinefelter-s-syndrome-clue6.jpg"
   },
   "Monosomy X (Turner's Syndrome)": {
     "5": "case-images/monosomy-x-turner-s-syndrome-clue5.jpg",
     "6": "case-images/monosomy-x-turner-s-syndrome-clue6.jpg"
+  },
+  "Polyendocrine Metabolic Ovarian Syndrome (PMOS; formerly PCOS)": {
+    "5": "case-images/polyendocrine-metabolic-ovarian-syndrome-pmos-formerly-pcos-clue5.jpg"
+  },
+  "Spina Bifida": {
+    "5": "case-images/spina-bifida-clue5.jpg"
   },
   "Trisomy 21 (Down Syndrome)": {
     "6": "case-images/trisomy-21-down-syndrome-clue6.jpg"
