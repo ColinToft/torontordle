@@ -30,6 +30,14 @@
   "Spina Bifida": {
     "5": "case-images/spina-bifida-clue5.jpg"
   },
+  "Trisomy 13 (Patau Syndrome)": {
+    "5": "case-images/trisomy-13-patau-syndrome-clue5.jpg",
+    "6": "case-images/trisomy-13-patau-syndrome-clue6.jpg"
+  },
+  "Trisomy 18 (Edwards Syndrome)": {
+    "5": "case-images/trisomy-18-edwards-syndrome-clue5.jpg",
+    "6": "case-images/trisomy-18-edwards-syndrome-clue6.jpg"
+  },
   "Trisomy 21 (Down Syndrome)": {
     "6": "case-images/trisomy-21-down-syndrome-clue6.jpg"
   }
