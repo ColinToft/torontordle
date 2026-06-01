@@ -132,6 +132,11 @@ export function GameView({ g }: { g: UseGame }) {
         </section>
       </div>
 
+      <footer style={styles.disclaimer}>
+        *Torontordle is for entertainment only and does not constitute medical advice. Consult a healthcare
+        professional for health concerns.
+      </footer>
+
       {showHowTo && <HowToModal onClose={() => setShowHowTo(false)} />}
       {showStats && (
         <StatsModal
@@ -602,6 +607,17 @@ const styles: Record<string, CSSProperties> = {
     fontFamily: SERIF,
     color: 'var(--ink)',
     padding: 28,
+  },
+  disclaimer: {
+    maxWidth: 720,
+    margin: '32px auto 0',
+    paddingTop: 16,
+    borderTop: '1px solid var(--line)',
+    textAlign: 'center',
+    fontSize: 11,
+    lineHeight: 1.5,
+    letterSpacing: '0.02em',
+    color: 'var(--ink-soft)',
   },
   header: {
     display: 'flex',
