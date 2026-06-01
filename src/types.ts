@@ -20,7 +20,10 @@ export type TCase = {
   management?: string
 }
 
-export type Guess = { text: string; correct: boolean }
+// `passed` marks a skipped turn: the player had no guess, spent an attempt to
+// reveal the next clue. Always `correct: false`; the flag lets the UI and share
+// grid distinguish a deliberate skip from a wrong diagnosis.
+export type Guess = { text: string; correct: boolean; passed?: boolean }
 
 export type Status = 'playing' | 'won' | 'lost'
 

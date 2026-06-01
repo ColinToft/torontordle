@@ -119,7 +119,7 @@ export function GameView({ g }: { g: UseGame }) {
             <div style={{ marginTop: 16 }}>
               <GuessCombobox g={g} />
               <div className="tt-monocaps" style={{ marginTop: 10, color: 'var(--ink-soft)' }}>
-                Each incorrect guess reveals one new clue.
+                Each incorrect guess reveals one new clue. No idea? Submit blank to skip.
               </div>
             </div>
           ) : (
@@ -213,6 +213,10 @@ function GuessCombobox({ g }: { g: UseGame }) {
     )
   }, [g.cases, g.input, usedSet])
 
+  // With nothing typed, Submit becomes a "skip" that reveals the next clue at
+  // the cost of one guess — a way out when you have no idea.
+  const canPass = g.input.trim().length === 0
+
   // Keep the highlighted index in range as the filtered matches change.
   // Done during render (not in an effect) to avoid a wasted commit; the
   // guard makes this idempotent, so it can't loop — even when matches is
@@ -262,6 +266,9 @@ function GuessCombobox({ g }: { g: UseGame }) {
       } else if (isValid) {
         setOpen(false)
         g.submitGuess()
+      } else if (canPass) {
+        setOpen(false)
+        g.passGuess()
       }
     } else if (e.key === 'Escape') {
       setOpen(false)
@@ -291,15 +298,19 @@ function GuessCombobox({ g }: { g: UseGame }) {
         />
         <button
           className="tt-submit"
-          style={{ ...styles.submitBtn, opacity: isValid ? 1 : 0.5, cursor: isValid ? 'pointer' : 'not-allowed' }}
-          onClick={() => {
-            if (!isValid) return
-            setOpen(false)
-            g.submitGuess()
+          style={{
+            ...styles.submitBtn,
+            opacity: isValid || canPass ? 1 : 0.5,
+            cursor: isValid || canPass ? 'pointer' : 'not-allowed',
           }}
-          disabled={!isValid}
+          onClick={() => {
+            setOpen(false)
+            if (isValid) g.submitGuess()
+            else if (canPass) g.passGuess()
+          }}
+          disabled={!isValid && !canPass}
         >
-          Submit →
+          {isValid || !canPass ? 'Submit →' : 'Skip clue →'}
         </button>
       </div>
       {open && matches.length > 0 && (
@@ -329,6 +340,17 @@ function GuessCombobox({ g }: { g: UseGame }) {
 }
 
 function GuessRow({ index, guess }: { index: number; guess: Guess }) {
+  if (guess.passed) {
+    return (
+      <div style={{ ...styles.guessRow, ...styles.guessRowPass }}>
+        <span className="tt-monocaps" style={{ minWidth: 28, color: 'var(--ink-soft)' }}>{String(index + 1).padStart(2, '0')}</span>
+        <span style={{ flex: 1, fontFamily: SERIF, fontSize: 16, fontStyle: 'italic', color: 'var(--ink-soft)' }}>
+          Skipped — clue revealed
+        </span>
+        <span className="tt-monocaps" style={{ color: 'var(--ink-soft)' }}>Skipped</span>
+      </div>
+    )
+  }
   const base = { ...styles.guessRow, ...(guess.correct ? styles.guessRowOk : styles.guessRowNo) }
   return (
     <div style={base}>
@@ -748,6 +770,11 @@ const styles: Record<string, CSSProperties> = {
   },
   guessRowEmpty: {
     background: 'var(--uoft-paper)',
+    borderStyle: 'dashed',
+  },
+  guessRowPass: {
+    background: 'var(--uoft-bone)',
+    borderColor: 'var(--line)',
     borderStyle: 'dashed',
   },
   inputWrap: {

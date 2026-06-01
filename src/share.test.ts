@@ -3,6 +3,7 @@ import { buildShareText } from './share'
 import type { Guess } from './types'
 
 const g = (correct: boolean): Guess => ({ text: 'x', correct })
+const skip = (): Guess => ({ text: '', correct: false, passed: true })
 
 describe('buildShareText', () => {
   it('renders a win: score out of max and ⬛ misses ending in a 🟩 solve', () => {
@@ -28,5 +29,16 @@ describe('buildShareText', () => {
     expect(text).toContain('⬛⬛⬛⬛⬛⬛')
     expect(text).not.toContain('🟫') // the old brown square is gone
     expect(text).not.toContain('🟩') // no solve square on a loss
+  })
+
+  it('renders skipped turns as ⬜, distinct from wrong (⬛) and correct (🟩)', () => {
+    const text = buildShareText({
+      dayNumber: 7,
+      guesses: [skip(), g(false), skip(), g(true)],
+      won: true,
+      maxGuesses: 6,
+      url: 'u',
+    })
+    expect(text).toBe('Torontordle Day 7 — 4/6\n⬜⬛⬜🟩\nu')
   })
 })

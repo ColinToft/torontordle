@@ -82,6 +82,25 @@ export function useGame(cases: TCase[]) {
     }
   }, [dateStr, guesses, input, stats, status, tCase])
 
+  // Skip the current turn without diagnosing: spend an attempt to reveal the
+  // next clue. Mirrors an incorrect guess for scoring (it consumes a guess and
+  // can end the game by exhausting all six), but is flagged `passed` so the UI
+  // and share grid show it as a deliberate skip rather than a wrong answer.
+  const passGuess = useCallback(() => {
+    if (status !== 'playing') return
+
+    const next: Guess[] = [...guesses, { text: '', correct: false, passed: true }]
+    setGuesses(next)
+    setInput('')
+
+    if (next.length >= MAX_GUESSES) {
+      setStatus('lost')
+      const updated = recordResult(stats, dateStr, 'lost', next.length)
+      setStats(updated)
+      saveStats(updated)
+    }
+  }, [dateStr, guesses, stats, status])
+
   // Wipes every shred of saved state — today's gameplay and the aggregate
   // stats — and starts the player over from a clean slate.
   const resetEverything = useCallback(() => {
@@ -108,6 +127,7 @@ export function useGame(cases: TCase[]) {
     cluesRevealed,
     cluesLeft,
     submitGuess,
+    passGuess,
     resetEverything,
     stats,
     winRate,
