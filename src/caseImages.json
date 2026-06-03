@@ -30,6 +30,10 @@
   "Klinefelter's Syndrome": {
     "6": "case-images/klinefelter-s-syndrome-clue6.jpg"
   },
+  "Lung Adenocarcinoma (NSCLC)": {
+    "5": "case-images/lung-adenocarcinoma-nsclc-clue5.jpg",
+    "6": "case-images/lung-adenocarcinoma-nsclc-clue6.jpg"
+  },
   "Meningioma": {
     "5": "case-images/meningioma-clue5.jpg",
     "6": "case-images/meningioma-clue6.jpg"
@@ -53,8 +57,16 @@
   "Severe Combined Immunodeficiency (SCID)": {
     "5": "case-images/severe-combined-immunodeficiency-scid-clue5.jpg"
   },
+  "Small Cell Lung Cancer (SCLC)": {
+    "5": "case-images/small-cell-lung-cancer-sclc-clue5.jpg",
+    "6": "case-images/small-cell-lung-cancer-sclc-clue6.jpg"
+  },
   "Spina Bifida": {
     "5": "case-images/spina-bifida-clue5.jpg"
+  },
+  "Squamous Cell Carcinoma (NSCLC)": {
+    "5": "case-images/squamous-cell-carcinoma-nsclc-clue5.jpg",
+    "6": "case-images/squamous-cell-carcinoma-nsclc-clue6.jpg"
   },
   "Trisomy 13 (Patau Syndrome)": {
     "5": "case-images/trisomy-13-patau-syndrome-clue5.jpg",
