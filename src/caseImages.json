@@ -1,6 +1,51 @@
 {
+  "1st Degree Heart Block": {
+    "5": "case-images/1st-degree-heart-block-clue5.jpg"
+  },
   "Achondroplasia": {
     "5": "case-images/achondroplasia-clue5.jpg"
+  },
+  "Acne Vulgaris": {
+    "1": "case-images/acne-vulgaris-clue1.jpg"
+  },
+  "Actinic keratosis": {
+    "1": "case-images/actinic-keratosis-clue1.jpg"
+  },
+  "Acute Limb Ischemia (ALI)": {
+    "5": "case-images/acute-limb-ischemia-ali-clue5.jpg"
+  },
+  "Acute on Chronic Limb Ischemia": {
+    "5": "case-images/acute-on-chronic-limb-ischemia-clue5.jpg"
+  },
+  "Alopecia Areata": {
+    "1": "case-images/alopecia-areata-clue1.jpg"
+  },
+  "Androgenic Alopecia": {
+    "1": "case-images/androgenic-alopecia-clue1.jpg"
+  },
+  "Aortic Dissection": {
+    "5": "case-images/aortic-dissection-clue5.jpg"
+  },
+  "Atelectasis": {
+    "5": "case-images/atelectasis-clue5.jpg"
+  },
+  "Atopic Dermatitis (Eczema)": {
+    "1": "case-images/atopic-dermatitis-eczema-clue1.jpg"
+  },
+  "Atrial Fibrillation (Afib)": {
+    "5": "case-images/atrial-fibrillation-afib-clue5.jpg"
+  },
+  "Atrial Flutter": {
+    "5": "case-images/atrial-flutter-clue5.jpg"
+  },
+  "Bacterial Endocarditis": {
+    "5": "case-images/bacterial-endocarditis-clue5.jpg"
+  },
+  "Basal Cell Carcinoma": {
+    "1": "case-images/basal-cell-carcinoma-clue1.jpg"
+  },
+  "Bullous Pemphigoid": {
+    "1": "case-images/bullous-pemphigoid-clue1.jpg"
   },
   "Burkitt Lymphoma": {
     "5": "case-images/burkitt-lymphoma-clue5.jpg"
@@ -11,14 +56,66 @@
   "Cellulitis": {
     "6": "case-images/cellulitis-clue6.jpg"
   },
+  "Central Centrifugal Cicatricial Alopecia": {
+    "1": "case-images/central-centrifugal-cicatricial-alopecia-clue1.jpg"
+  },
+  "Cherry angioma": {
+    "1": "case-images/cherry-angioma-clue1.jpg"
+  },
   "Choriocarcinoma": {
     "5": "case-images/choriocarcinoma-clue5.jpg"
   },
-  "Diffuse large B-cell lymphoma": {
-    "6": "case-images/diffuse-large-b-cell-lymphoma-clue6.jpg"
+  "Complete Heart Block (3rd Degree Block)": {
+    "5": "case-images/complete-heart-block-3rd-degree-block-clue5.jpg"
+  },
+  "Condyloma Accuminata": {
+    "1": "case-images/condyloma-accuminata-clue1.jpg"
+  },
+  "Constrictive Pericarditis": {
+    "5": "case-images/constrictive-pericarditis-clue5.jpg"
+  },
+  "Contact Dermatitis": {
+    "1": "case-images/contact-dermatitis-clue1.jpg"
+  },
+  "DRESS": {
+    "1": "case-images/dress-clue1.jpg"
+  },
+  "Deep Vein Thrombosis (DVT)": {
+    "6": "case-images/deep-vein-thrombosis-dvt-clue6.jpg"
+  },
+  "Diffuse large B-cell lymphoma (DLBCL)": {
+    "6": "case-images/diffuse-large-b-cell-lymphoma-dlbcl-clue6.jpg"
+  },
+  "Disseminated Intravascular Coagulation (DIC)": {
+    "5": "case-images/disseminated-intravascular-coagulation-dic-clue5.jpg"
+  },
+  "Fat Embolism Syndrome": {
+    "5": "case-images/fat-embolism-syndrome-clue5.jpg",
+    "6": "case-images/fat-embolism-syndrome-clue6.jpg"
+  },
+  "Follicular Lymphoma": {
+    "5": "case-images/follicular-lymphoma-clue5.jpg"
+  },
+  "Folliculitis Decalvans": {
+    "1": "case-images/folliculitis-decalvans-clue1.jpg"
+  },
+  "Guttate Psoriasis": {
+    "1": "case-images/guttate-psoriasis-clue1.jpg"
+  },
+  "Hemangioma": {
+    "1": "case-images/hemangioma-clue1.jpg"
+  },
+  "Hemothorax": {
+    "5": "case-images/hemothorax-clue5.jpg"
+  },
+  "Herpes Simplex Virus": {
+    "1": "case-images/herpes-simplex-virus-clue1.jpg"
   },
   "Hydatidiform mole": {
     "5": "case-images/hydatidiform-mole-clue5.jpg"
+  },
+  "Impetigo": {
+    "1": "case-images/impetigo-clue1.jpg"
   },
   "Invasive Ductal Carcinoma": {
     "5": "case-images/invasive-ductal-carcinoma-clue5.jpg",
@@ -30,29 +127,89 @@
   "Klinefelter's Syndrome": {
     "6": "case-images/klinefelter-s-syndrome-clue6.jpg"
   },
+  "Lichen Planopilaris": {
+    "1": "case-images/lichen-planopilaris-clue1.jpg"
+  },
+  "Lichen Planus": {
+    "1": "case-images/lichen-planus-clue1.jpg"
+  },
   "Lung Adenocarcinoma (NSCLC)": {
     "5": "case-images/lung-adenocarcinoma-nsclc-clue5.jpg",
     "6": "case-images/lung-adenocarcinoma-nsclc-clue6.jpg"
+  },
+  "Melanoma": {
+    "1": "case-images/melanoma-clue1.jpg"
   },
   "Meningioma": {
     "5": "case-images/meningioma-clue5.jpg",
     "6": "case-images/meningioma-clue6.jpg"
   },
+  "Mobitz Type 1 2nd Degree Heart Block (Wenckebach)": {
+    "5": "case-images/mobitz-type-1-2nd-degree-heart-block-wenckebach-clue5.jpg"
+  },
+  "Mobitz Type 2 2nd Degree Heart Block": {
+    "5": "case-images/mobitz-type-2-2nd-degree-heart-block-clue5.jpg"
+  },
+  "Molluscum Contagiosum": {
+    "1": "case-images/molluscum-contagiosum-clue1.jpg"
+  },
+  "Monomorphic Ventricular Tachycardia (MonoVT)": {
+    "5": "case-images/monomorphic-ventricular-tachycardia-monovt-clue5.jpg"
+  },
   "Monosomy X (Turner's Syndrome)": {
     "5": "case-images/monosomy-x-turner-s-syndrome-clue5.jpg",
     "6": "case-images/monosomy-x-turner-s-syndrome-clue6.jpg"
   },
+  "Multiple Myeloma (MM)": {
+    "5": "case-images/multiple-myeloma-mm-clue5.jpg"
+  },
+  "Onychomycosis": {
+    "1": "case-images/onychomycosis-clue1.jpg"
+  },
   "PJP (Pneumocystis jirovecii pneumonia)": {
     "5": "case-images/pjp-pneumocystis-jirovecii-pneumonia-clue5.jpg"
   },
+  "Pemphigus vulgaris": {
+    "1": "case-images/pemphigus-vulgaris-clue1.jpg"
+  },
+  "Pityriasis Rosea": {
+    "1": "case-images/pityriasis-rosea-clue1.jpg"
+  },
+  "Pityriasis Versicolor": {
+    "1": "case-images/pityriasis-versicolor-clue1.jpg"
+  },
+  "Plaque Psoriasis": {
+    "1": "case-images/plaque-psoriasis-clue1.jpg"
+  },
+  "Pleural Effusion": {
+    "5": "case-images/pleural-effusion-clue5.jpg"
+  },
   "Polyendocrine Metabolic Ovarian Syndrome (PMOS; formerly PCOS)": {
     "5": "case-images/polyendocrine-metabolic-ovarian-syndrome-pmos-formerly-pcos-clue5.jpg"
+  },
+  "Polymorphic Ventricular Tachycardia (Torsades de Pointes)": {
+    "5": "case-images/polymorphic-ventricular-tachycardia-torsades-de-pointes-clue5.jpg"
+  },
+  "Psoriatic Arthritis": {
+    "1": "case-images/psoriatic-arthritis-clue1.jpg"
+  },
+  "Pulmonary Embolism (PE)": {
+    "5": "case-images/pulmonary-embolism-pe-clue5.jpg"
   },
   "Retinoblastoma (Hereditary)": {
     "5": "case-images/retinoblastoma-hereditary-clue5.jpg"
   },
   "Retinoblastoma (Non-Hereditary)": {
     "5": "case-images/retinoblastoma-non-hereditary-clue5.jpg"
+  },
+  "Ruptured Abdominal Aortic Aneurysm (rAAA)": {
+    "5": "case-images/ruptured-abdominal-aortic-aneurysm-raaa-clue5.jpg"
+  },
+  "Scabies": {
+    "1": "case-images/scabies-clue1.jpg"
+  },
+  "Seborrheic Dermatitis": {
+    "1": "case-images/seborrheic-dermatitis-clue1.jpg"
   },
   "Severe Combined Immunodeficiency (SCID)": {
     "5": "case-images/severe-combined-immunodeficiency-scid-clue5.jpg"
@@ -64,9 +221,21 @@
   "Spina Bifida": {
     "5": "case-images/spina-bifida-clue5.jpg"
   },
+  "Squamous Cell Carcinoma": {
+    "1": "case-images/squamous-cell-carcinoma-clue1.jpg"
+  },
   "Squamous Cell Carcinoma (NSCLC)": {
     "5": "case-images/squamous-cell-carcinoma-nsclc-clue5.jpg",
     "6": "case-images/squamous-cell-carcinoma-nsclc-clue6.jpg"
+  },
+  "Steven-Johnsons Syndrome": {
+    "1": "case-images/steven-johnsons-syndrome-clue1.jpg"
+  },
+  "Tension Pneumothorax": {
+    "5": "case-images/tension-pneumothorax-clue5.jpg"
+  },
+  "Toxic Epidermal Necrolysis": {
+    "1": "case-images/toxic-epidermal-necrolysis-clue1.jpg"
   },
   "Trisomy 13 (Patau Syndrome)": {
     "5": "case-images/trisomy-13-patau-syndrome-clue5.jpg",
@@ -78,5 +247,20 @@
   },
   "Trisomy 21 (Down Syndrome)": {
     "6": "case-images/trisomy-21-down-syndrome-clue6.jpg"
+  },
+  "Urticaria": {
+    "1": "case-images/urticaria-clue1.jpg"
+  },
+  "Ventricular Fibrillation (VFib)": {
+    "5": "case-images/ventricular-fibrillation-vfib-clue5.jpg"
+  },
+  "Verruca Vulgaris": {
+    "1": "case-images/verruca-vulgaris-clue1.jpg"
+  },
+  "Vitiligo": {
+    "1": "case-images/vitiligo-clue1.jpg"
+  },
+  "Wolff-Parkinson-White (WPW) Syndrome": {
+    "5": "case-images/wolff-parkinson-white-wpw-syndrome-clue5.jpg"
   }
 }
