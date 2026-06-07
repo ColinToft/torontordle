@@ -37,7 +37,6 @@ import {
 
 const SPREADSHEET_ID = '117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI'
 const GID = 0
-const XLSX_MIME = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 const TOKEN_PATH = process.env.GOOGLE_OAUTH_TOKEN || '/Users/colin/Code/google-docs-mcp/token.json'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -84,7 +83,6 @@ async function compressImage(buf, origExt) {
 async function main() {
   const auth = authClient()
   const sheets = google.sheets({ version: 'v4', auth })
-  const drive = google.drive({ version: 'v3', auth })
 
   // 1. Resolve the gid=0 sheet's title.
   const meta = await sheets.spreadsheets.get({ spreadsheetId: SPREADSHEET_ID, fields: 'sheets.properties' })
@@ -107,11 +105,20 @@ async function main() {
   // 3. Export XLSX and unzip.
   const tmp = mkdtempSync(join(tmpdir(), 'tt-sync-'))
   const xlsxPath = join(tmp, 'sheet.xlsx')
-  const exportRes = await drive.files.export(
-    { fileId: SPREADSHEET_ID, mimeType: XLSX_MIME },
-    { responseType: 'arraybuffer' },
-  )
-  writeFileSync(xlsxPath, Buffer.from(exportRes.data))
+  // Download via the docs.google.com export endpoint rather than the Drive API's
+  // files.export: that method hard-caps at 10 MB and this sheet (with its in-cell
+  // images) is well over that, so it returns 403 exportSizeLimitExceeded. The
+  // download endpoint has no such cap. Authenticate with the same OAuth token.
+  const { token } = await auth.getAccessToken()
+  const exportUrl = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=xlsx`
+  const exportRes = await fetch(exportUrl, { headers: { Authorization: `Bearer ${token}` } })
+  if (!exportRes.ok) {
+    const body = await exportRes.text().catch(() => '')
+    throw new Error(
+      `XLSX export failed: ${exportRes.status} ${exportRes.statusText}${body ? ` — ${body.slice(0, 300)}` : ''}`,
+    )
+  }
+  writeFileSync(xlsxPath, Buffer.from(await exportRes.arrayBuffer()))
   const unzipDir = join(tmp, 'x')
   execSync(`unzip -o "${xlsxPath}" -d "${unzipDir}"`, { stdio: 'ignore' })
   const read = (p) => readFileSync(join(unzipDir, p), 'utf8')
