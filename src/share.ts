@@ -1,6 +1,10 @@
 import type { Guess } from './types'
 
-// ⬛ = wrong guess, ⬜ = skipped turn, 🟩 = correct guess. Wordle-style grid.
+// Wordle-style grid:
+//   🟩 = correct · 🟥 = wrong guess · ⬜ = skipped turn · ⬛ = unused hint (a
+//   guess slot never reached because the case was solved early).
+const TAGLINE = 'Daily diagnosis for Preclerkship students in Toronto'
+
 export function buildShareText(opts: {
   dayNumber: number
   guesses: Guess[]
@@ -10,8 +14,9 @@ export function buildShareText(opts: {
 }): string {
   const { dayNumber, guesses, won, maxGuesses, url } = opts
   const score = won ? `${guesses.length}/${maxGuesses}` : `X/${maxGuesses}`
-  const grid = guesses.map((g) => (g.correct ? '🟩' : g.passed ? '⬜' : '⬛')).join('')
-  return `Torontordle Day ${dayNumber} — ${score}\n${grid}\n${url}`
+  const used = guesses.map((g) => (g.correct ? '🟩' : g.passed ? '⬜' : '🟥')).join('')
+  const unused = '⬛'.repeat(Math.max(0, maxGuesses - guesses.length))
+  return `Torontordle Day ${dayNumber} — ${score}\n${used}${unused}\n${TAGLINE}\n${url}`
 }
 
 export async function copyShare(text: string): Promise<boolean> {

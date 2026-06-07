@@ -36,8 +36,9 @@ export type DailyProgress = {
 export type Stats = {
   played: number
   wins: number
-  streak: number
-  best: number | null
+  streak: number // current daily win streak
+  maxStreak: number // longest daily win streak ever
+  best: number | null // fewest guesses in a win (kept for history; not surfaced)
   lastPlayedDate: string | null
   distribution: number[] // index 0 → solved in 1 guess, …, index 5 → solved in 6
 }

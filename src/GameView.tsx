@@ -18,8 +18,11 @@ import type { UseGame } from './useGame'
 const SERIF = "'Source Serif Pro', Georgia, serif"
 
 export function GameView({ g }: { g: UseGame }) {
+  const [showAbout, setShowAbout] = useState(false)
   const [showHowTo, setShowHowTo] = useState(false)
   const [showStats, setShowStats] = useState(false)
+  // Highlight today's bar in the distribution only when the player won today.
+  const todayGuess = g.status === 'won' ? g.guesses.length : null
 
   const visibleClues = g.tCase.clues.slice(0, g.cluesRevealed)
   const lockedCount = Math.max(0, g.tCase.clues.length - visibleClues.length)
@@ -36,6 +39,7 @@ export function GameView({ g }: { g: UseGame }) {
       <Header
         day={day}
         headerDate={headerDate}
+        onAbout={() => setShowAbout(true)}
         onHowTo={() => setShowHowTo(true)}
         onStats={() => setShowStats(true)}
       />
@@ -135,13 +139,19 @@ export function GameView({ g }: { g: UseGame }) {
       <footer style={styles.disclaimer}>
         *Torontordle is for entertainment only and does not constitute medical advice. Consult a healthcare
         professional for health concerns.
+        <div style={{ marginTop: 8 }}>
+          Questions, corrections, or feedback?{' '}
+          <a href="mailto:contact@torontordle.com" style={styles.contactLink}>contact@torontordle.com</a>
+        </div>
       </footer>
 
+      {showAbout && <AboutModal onClose={() => setShowAbout(false)} />}
       {showHowTo && <HowToModal onClose={() => setShowHowTo(false)} />}
       {showStats && (
         <StatsModal
           stats={g.stats}
           winRate={g.winRate}
+          todayGuess={todayGuess}
           onReset={() => {
             g.resetEverything()
             setShowStats(false)
@@ -156,11 +166,13 @@ export function GameView({ g }: { g: UseGame }) {
 function Header({
   day,
   headerDate,
+  onAbout,
   onHowTo,
   onStats,
 }: {
   day: number
   headerDate: string
+  onAbout: () => void
   onHowTo: () => void
   onStats: () => void
 }) {
@@ -168,6 +180,7 @@ function Header({
     <header style={styles.header}>
       <div style={styles.wordmark}>Torontordle</div>
       <nav className="tt-header-nav" style={styles.nav}>
+        <button className="tt-monocaps" style={styles.navBtn} onClick={onAbout}>About</button>
         <button className="tt-monocaps" style={styles.navBtn} onClick={onHowTo}>How to play</button>
         <button className="tt-monocaps" style={styles.navBtn} onClick={onStats}>Stats</button>
         <span className="tt-date-badge" style={styles.dateBadge}>
@@ -408,7 +421,7 @@ function ResultBlock({
       guesses: g.guesses,
       won,
       maxGuesses: g.MAX_GUESSES,
-      url: typeof window !== 'undefined' ? window.location.href : 'colintoft.com/torontordle',
+      url: typeof window !== 'undefined' ? window.location.href : 'torontordle.com',
     })
     const ok = await copyShare(text)
     setShareLabel(ok ? 'Copied!' : 'Copy failed')
@@ -524,6 +537,31 @@ function Modal({ children, onClose }: { children: ReactNode; onClose: () => void
   )
 }
 
+function AboutModal({ onClose }: { onClose: () => void }) {
+  return (
+    <Modal onClose={onClose}>
+      <div style={modal.headerRow}>
+        <h2 style={modal.title}>About</h2>
+        <button style={modal.close} onClick={onClose} aria-label="Close">×</button>
+      </div>
+      <hr className="tt-rule" style={{ margin: '12px 0 16px' }} />
+      <p style={{ margin: 0, lineHeight: 1.7, color: 'var(--ink)' }}>
+        Torontordle is a student-led educational initiative created to provide high-quality, peer-developed
+        learning resources aligned with the University of Toronto pre-clerkship curriculum. Designed by medical
+        students, for medical students, daily puzzles are developed with mentor oversight to ensure accuracy,
+        relevance, and educational value.
+      </p>
+      <p style={{ margin: '14px 0 0', lineHeight: 1.7, color: 'var(--ink)' }}>
+        The goal of Torontordle is not only to reinforce previously learned material, but also to promote
+        long-term retention and strengthen clinical reasoning skills over time. As students progress through
+        different curriculum blocks, the cases are designed to build on foundational knowledge, encourage
+        integration across disciplines, and support the development of diagnostic and management-based thinking
+        in an engaging, low-stakes format in preparation for shadowing opportunities and clerkship.
+      </p>
+    </Modal>
+  )
+}
+
 function HowToModal({ onClose }: { onClose: () => void }) {
   return (
     <Modal onClose={onClose}>
@@ -553,16 +591,26 @@ function HowToModal({ onClose }: { onClose: () => void }) {
 function StatsModal({
   stats,
   winRate,
+  todayGuess,
+  percentile,
   onReset,
   onClose,
 }: {
   stats: Stats
   winRate: number
+  todayGuess?: number | null // 1-based guess count of today's win, to highlight its bar
+  percentile?: number | null // "top N% of players today" — needs the (not-yet-built) backend
   onReset: () => void
   onClose: () => void
 }) {
   const distribution = stats.distribution
   const maxBar = Math.max(1, ...distribution)
+  const cards: [string, string | number][] = [
+    ['Games played', stats.played],
+    ['Win rate', `${winRate}%`],
+    ['Current streak', stats.streak],
+    ['Longest streak', stats.maxStreak],
+  ]
   return (
     <Modal onClose={onClose}>
       <div style={modal.headerRow}>
@@ -570,48 +618,43 @@ function StatsModal({
         <button style={modal.close} onClick={onClose} aria-label="Close">×</button>
       </div>
       <hr className="tt-rule" style={{ margin: '12px 0 16px' }} />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
-        {([
-          ['Played', stats.played],
-          ['Win %', winRate],
-          ['Streak', stats.streak],
-          ['Best', stats.best ?? '—'],
-        ] as const).map(([label, value]) => (
-          <div key={label} style={{ textAlign: 'center', padding: '12px 0', border: '1px solid var(--line)' }}>
-            <div style={{ fontFamily: SERIF, fontSize: 28, fontWeight: 700, color: 'var(--uoft-navy)' }}>{value}</div>
-            <div className="tt-monocaps" style={{ color: 'var(--ink-soft)', fontSize: 10 }}>{label}</div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+        {cards.map(([label, value]) => (
+          <div key={label} style={statBox.card}>
+            <div style={statBox.value}>{value}</div>
+            <div className="tt-monocaps" style={statBox.label}>{label}</div>
           </div>
         ))}
       </div>
-      <div className="tt-monocaps" style={{ marginTop: 18, color: 'var(--uoft-navy)' }}>Guess distribution</div>
-      <div style={{ marginTop: 8, display: 'flex', flexDirection: 'column', gap: 6 }}>
-        {distribution.map((n, i) => {
-          const pct = (n / maxBar) * 100
-          return (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <span className="tt-monocaps" style={{ width: 16 }}>{i + 1}</span>
-              <div style={{ flex: 1, height: 22, background: 'var(--uoft-bone)', position: 'relative' }}>
-                <div
-                  style={{
-                    width: `${pct}%`,
-                    height: '100%',
-                    background: 'var(--uoft-navy)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'flex-end',
-                    paddingRight: 8,
-                    color: '#fff',
-                    fontSize: 12,
-                    minWidth: n > 0 ? 22 : 0,
-                  }}
-                >
-                  {n > 0 ? n : ''}
+
+      <div style={statBox.distPanel}>
+        <div className="tt-section-title" style={{ textAlign: 'center', color: 'var(--uoft-navy)', fontSize: 13 }}>
+          Guess distribution
+        </div>
+        <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 7 }}>
+          {distribution.map((n, i) => {
+            const pct = (n / maxBar) * 100
+            const isToday = todayGuess === i + 1
+            return (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={isToday ? statBox.rowNumToday : statBox.rowNum}>{i + 1}</span>
+                <div style={statBox.track}>
+                  {n > 0 && (
+                    <div style={{ ...statBox.fill, width: `${Math.max(pct, 12)}%` }}>{n}</div>
+                  )}
                 </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
       </div>
+
+      {percentile != null && (
+        <div style={statBox.percentile}>
+          🐙 You were in the <strong>top {percentile}%</strong> of players today!
+        </div>
+      )}
+
       <hr className="tt-rule" style={{ margin: '20px 0 14px' }} />
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <button className="tt-secondary" style={styles.resetBtn} onClick={onReset}>
@@ -620,6 +663,60 @@ function StatsModal({
       </div>
     </Modal>
   )
+}
+
+const TEAL = '#0f766e'
+const statBox: Record<string, CSSProperties> = {
+  card: {
+    textAlign: 'center',
+    padding: '14px 4px',
+    border: '1px solid var(--line)',
+    borderRadius: 10,
+    background: 'var(--uoft-paper)',
+  },
+  value: { fontFamily: SERIF, fontSize: 26, fontWeight: 700, color: TEAL, lineHeight: 1.1 },
+  label: { color: 'var(--ink-soft)', fontSize: 9, marginTop: 6, display: 'block' },
+  distPanel: {
+    marginTop: 16,
+    padding: 16,
+    border: '1px solid var(--line)',
+    borderRadius: 10,
+    background: 'var(--uoft-paper)',
+  },
+  rowNum: { width: 18, textAlign: 'center', fontSize: 13, color: 'var(--ink-soft)' },
+  rowNumToday: {
+    width: 18,
+    textAlign: 'center',
+    fontSize: 13,
+    color: TEAL,
+    fontWeight: 700,
+    border: `1.5px solid ${TEAL}`,
+    borderRadius: 5,
+  },
+  track: { flex: 1, height: 24, background: 'var(--uoft-bone)', borderRadius: 5, overflow: 'hidden' },
+  fill: {
+    height: '100%',
+    background: `linear-gradient(90deg, #14b8a6, ${TEAL})`,
+    borderRadius: 5,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingRight: 8,
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: 700,
+  },
+  percentile: {
+    marginTop: 16,
+    padding: '14px 16px',
+    border: '1px solid rgba(15,118,110,0.35)',
+    borderRadius: 10,
+    background: 'rgba(20,184,166,0.10)',
+    textAlign: 'center',
+    fontFamily: SERIF,
+    fontSize: 15,
+    color: 'var(--ink)',
+  },
 }
 
 const styles: Record<string, CSSProperties> = {
@@ -640,6 +737,11 @@ const styles: Record<string, CSSProperties> = {
     lineHeight: 1.5,
     letterSpacing: '0.02em',
     color: 'var(--ink-soft)',
+  },
+  contactLink: {
+    color: 'var(--uoft-navy)',
+    textDecoration: 'none',
+    borderBottom: '1px solid var(--line)',
   },
   header: {
     display: 'flex',

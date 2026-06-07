@@ -7,6 +7,7 @@ const EMPTY_STATS: Stats = {
   played: 0,
   wins: 0,
   streak: 0,
+  maxStreak: 0,
   best: null,
   lastPlayedDate: null,
   distribution: [0, 0, 0, 0, 0, 0],
@@ -71,6 +72,9 @@ export function loadStats(): Stats {
     played: stored.played ?? 0,
     wins: stored.wins ?? 0,
     streak: stored.streak ?? 0,
+    // Backfill for entries saved before maxStreak existed: the best we can infer
+    // is the current streak (older history is unrecoverable).
+    maxStreak: stored.maxStreak ?? stored.streak ?? 0,
     best: stored.best ?? null,
     lastPlayedDate: stored.lastPlayedDate ?? null,
     distribution: stored.distribution && stored.distribution.length === 6 ? stored.distribution : [0, 0, 0, 0, 0, 0],
@@ -92,15 +96,13 @@ export function recordResult(
 
   const yesterday = shiftDate(dateStr, -1)
   const continued = prev.lastPlayedDate === yesterday
+  const streak =
+    outcome === 'won' ? (continued ? prev.streak + 1 : 1) : 0
   const next: Stats = {
     played: prev.played + 1,
     wins: prev.wins + (outcome === 'won' ? 1 : 0),
-    streak:
-      outcome === 'won'
-        ? continued
-          ? prev.streak + 1
-          : 1
-        : 0,
+    streak,
+    maxStreak: Math.max(prev.maxStreak ?? 0, streak),
     best: prev.best,
     lastPlayedDate: dateStr,
     distribution: [...prev.distribution],
