@@ -2,7 +2,7 @@
 
 Daily diagnosis-guessing game for U of T med students — a clinical-reasoning take on Wordle/Doctordle.
 
-Live: <https://colintoft.com/torontordle/>
+Live: <https://torontordle.com>
 
 ## How to play
 
@@ -13,13 +13,13 @@ You're given **one symptom** to start. Type a working diagnosis and submit. Each
 - Vite + React + TypeScript (static SPA)
 - Source Serif Pro via Google Fonts
 - localStorage for daily progress and aggregate stats
-- Hosted on GitHub Pages at `colintoft.com/torontordle/`
+- Hosted on GitHub Pages at the custom apex domain `torontordle.com`
 
 ## Develop
 
 ```bash
 npm install
-npm run dev   # http://localhost:5173/torontordle/
+npm run dev   # http://localhost:5173/
 npm run build # → dist/
 npm test      # run the sheet-parser test suite (vitest)
 ```
@@ -78,9 +78,9 @@ To run the sync manually after a sheet change, you can still: `npm run sync-imag
 
 ## Deploy
 
-Push to `main`. The GitHub Actions workflow at `.github/workflows/deploy.yml` builds with `npm run build`, uploads `dist/`, and publishes to GitHub Pages. The custom domain `colintoft.com` is inherited from `ColinToft/ColinToft.github.io`, so the project site lives at `colintoft.com/torontordle/`.
+Push to `main`. The GitHub Actions workflow at `.github/workflows/deploy.yml` builds with `npm run build`, uploads `dist/`, and publishes to GitHub Pages. The site is served at the custom apex domain **`torontordle.com`**.
 
-The `base: '/torontordle/'` in `vite.config.ts` is what makes asset URLs resolve correctly under the subpath.
+The custom domain is set by `public/CNAME` (copied verbatim into `dist/` at build time, which is how GitHub Pages picks it up). DNS lives in Cloudflare (the `torontordle.com` zone): apex `A`/`AAAA` records point at GitHub Pages' IPs and `www` is a `CNAME` to `colintoft.github.io`, all **DNS-only** (unproxied) so GitHub can provision the Let's Encrypt certificate. `base: '/'` in `vite.config.ts` is what makes asset URLs resolve at the domain root.
 
 ## Credits
 
