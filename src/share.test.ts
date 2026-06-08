@@ -34,7 +34,7 @@ describe('buildShareText', () => {
     expect(text).toContain(TAGLINE)
   })
 
-  it('renders skipped turns as ⬜, distinct from wrong (🟥), correct (🟩), and unused (⬛)', () => {
+  it('treats a skipped turn as a miss (🟥), same as a wrong guess', () => {
     const text = buildShareText({
       dayNumber: 7,
       guesses: [skip(), g(false), skip(), g(true)],
@@ -42,6 +42,6 @@ describe('buildShareText', () => {
       maxGuesses: 6,
       url: 'u',
     })
-    expect(text).toBe(`Torontordle Day 7 — 4/6\n⬜🟥⬜🟩⬛⬛\n${TAGLINE}\nu`)
+    expect(text).toBe(`Torontordle Day 7 — 4/6\n🟥🟥🟥🟩⬛⬛\n${TAGLINE}\nu`)
   })
 })
