@@ -4,8 +4,6 @@ import type { Guess } from './types'
 //   🟩 = correct · 🟥 = miss (a wrong guess *or* a skipped turn — both spend an
 //   attempt) · ⬛ = unused hint (a guess slot never reached because the case was
 //   solved early).
-const TAGLINE = 'Daily diagnosis for Preclerkship students in Toronto'
-
 export function buildShareText(opts: {
   dayNumber: number
   guesses: Guess[]
@@ -17,7 +15,7 @@ export function buildShareText(opts: {
   const score = won ? `${guesses.length}/${maxGuesses}` : `X/${maxGuesses}`
   const used = guesses.map((g) => (g.correct ? '🟩' : '🟥')).join('')
   const unused = '⬛'.repeat(Math.max(0, maxGuesses - guesses.length))
-  return `Torontordle Day ${dayNumber} — ${score}\n${used}${unused}\n${TAGLINE}\n${url}`
+  return `Torontordle Day ${dayNumber} — ${score}\n${used}${unused}\n${url}`
 }
 
 export async function copyShare(text: string): Promise<boolean> {

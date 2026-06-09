@@ -5,8 +5,6 @@ import type { Guess } from './types'
 const g = (correct: boolean): Guess => ({ text: 'x', correct })
 const skip = (): Guess => ({ text: '', correct: false, passed: true })
 
-const TAGLINE = 'Daily diagnosis for Preclerkship students in Toronto'
-
 describe('buildShareText', () => {
   it('renders a win: 🟥 misses, a 🟩 solve, then ⬛ for the unused guesses', () => {
     const text = buildShareText({
@@ -16,7 +14,7 @@ describe('buildShareText', () => {
       maxGuesses: 6,
       url: 'torontordle.com',
     })
-    expect(text).toBe(`Torontordle Day 5 — 3/6\n🟥🟥🟩⬛⬛⬛\n${TAGLINE}\ntorontordle.com`)
+    expect(text).toBe('Torontordle Day 5 — 3/6\n🟥🟥🟩⬛⬛⬛\ntorontordle.com')
   })
 
   it('renders a loss: X/max, an all-red grid, no unused (all six used) and no solve', () => {
@@ -31,7 +29,6 @@ describe('buildShareText', () => {
     expect(text).toContain('🟥🟥🟥🟥🟥🟥')
     expect(text).not.toContain('🟩') // no solve square on a loss
     expect(text).not.toContain('⬛') // all six guesses used → no unused squares
-    expect(text).toContain(TAGLINE)
   })
 
   it('treats a skipped turn as a miss (🟥), same as a wrong guess', () => {
@@ -42,6 +39,6 @@ describe('buildShareText', () => {
       maxGuesses: 6,
       url: 'u',
     })
-    expect(text).toBe(`Torontordle Day 7 — 4/6\n🟥🟥🟥🟩⬛⬛\n${TAGLINE}\nu`)
+    expect(text).toBe('Torontordle Day 7 — 4/6\n🟥🟥🟥🟩⬛⬛\nu')
   })
 })

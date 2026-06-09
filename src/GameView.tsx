@@ -580,8 +580,8 @@ function HowToModal({ onClose }: { onClose: () => void }) {
       <div style={{ marginTop: 14, padding: 12, background: 'var(--uoft-bone)', border: '1px solid var(--line)' }}>
         <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>For learning, not for clinical use</div>
         <p style={{ margin: '6px 0 0', fontSize: 13, color: 'var(--ink-soft)' }}>
-          Cases are simplified teaching vignettes written for U of T med students. Always defer to clinical judgment in
-          practice.
+          Cases are simplified teaching vignettes written for pre-clerkship medical students. Always defer to clinical
+          judgment in practice.
         </p>
       </div>
     </Modal>

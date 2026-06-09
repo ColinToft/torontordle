@@ -1,6 +1,6 @@
 # Torontordle
 
-Daily diagnosis-guessing game for U of T med students — a clinical-reasoning take on Wordle/Doctordle.
+Daily diagnosis-guessing game for preclerkship students in Toronto — a clinical-reasoning take on Wordle/Doctordle.
 
 Live: <https://torontordle.com>
 
