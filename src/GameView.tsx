@@ -224,7 +224,11 @@ function Header({
 }) {
   return (
     <header style={styles.header}>
-      <div style={styles.wordmark}>Torontordle</div>
+      <img
+        src={import.meta.env.BASE_URL + 'torontordle-logo.png'}
+        alt="Torontordle"
+        style={{ height: 40, width: 'auto', display: 'block' }}
+      />
       <nav className="tt-header-nav" style={styles.nav}>
         <button className="tt-monocaps" style={styles.navBtn} onClick={onAbout}>About</button>
         <button className="tt-monocaps" style={styles.navBtn} onClick={onHowTo}>How to play</button>
