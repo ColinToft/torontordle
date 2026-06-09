@@ -1,13 +1,14 @@
-name: Sync image clues
+name: Sync diagnosis data
 
-# Nightly job that re-runs the image sync against the Google Sheet, commits any
-# changed image assets + manifest, and redeploys the site.
+# Nightly job that re-bakes the diagnosis bank (clue text + in-cell images) from
+# the Google Sheet into src/cases.json + public/case-images/, commits any
+# changes, and redeploys the site.
 #
 # Deploy approach (a): this workflow runs the build + Pages deploy itself after
-# committing. We can't rely on the existing deploy.yml firing on our push,
-# because GitHub deliberately does NOT trigger workflows from commits pushed by
-# the default GITHUB_TOKEN (loop prevention). So rather than introduce a PAT,
-# we reuse the deploy steps here. The job only deploys when images changed.
+# committing. We can't rely on deploy.yml firing on our push, because GitHub
+# deliberately does NOT trigger workflows from commits pushed by the default
+# GITHUB_TOKEN (loop prevention). So we reuse the deploy steps here, and only
+# deploy when something actually changed.
 
 on:
   schedule:
@@ -44,22 +45,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Sync images from the sheet
-        run: npm run sync-images
+      - name: Sync data from the sheet
+        run: npm run sync-data
         env:
           GOOGLE_OAUTH_TOKEN_JSON: ${{ secrets.GOOGLE_OAUTH_TOKEN_JSON }}
 
-      - name: Commit changed images (if any)
+      - name: Commit changed data (if any)
         id: commit
         run: |
-          git add public/case-images src/caseImages.json
+          git add public/case-images src/cases.json
           if git diff --staged --quiet; then
-            echo "No image changes to commit."
+            echo "No data changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "torontordle-bot"
             git config user.email "torontordle-bot@users.noreply.github.com"
-            git commit -m "chore: sync case images from sheet [skip ci]
+            git commit -m "chore: sync diagnosis data from sheet [skip ci]
 
           Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
             git push

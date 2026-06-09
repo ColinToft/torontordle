@@ -1,16 +1,6 @@
 import { parseCSV } from './csv'
 import { splitReference } from './references'
-import caseImages from './caseImages.json'
 import type { CaseImageManifest, TCase } from './types'
-
-// Google Sheet ID for the diagnosis bank.
-// Sheet URL: https://docs.google.com/spreadsheets/d/117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI/
-// The sheet must be shared "Anyone with the link → Viewer" (or Published to web)
-// for the gviz/CSV endpoint to be reachable from the browser.
-export const SHEET_ID = '117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI'
-export const SHEET_GID = '0'
-
-const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`
 
 /**
  * Sheet schema (case-insensitive, header row located automatically — any
@@ -33,13 +23,6 @@ const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tq
  *                                     by position; "Retrieved from <ref>" split
  *                                     into detail + reference)
  */
-export async function fetchCasesFromSheet(): Promise<TCase[]> {
-  const res = await fetch(SHEET_URL, { cache: 'no-store' })
-  if (!res.ok) throw new Error(`Sheet fetch failed: ${res.status}`)
-  const text = await res.text()
-  return parseSheetCsv(text, caseImages as CaseImageManifest)
-}
-
 export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCase[] {
   const rows = parseCSV(text)
   if (rows.length < 2) return []

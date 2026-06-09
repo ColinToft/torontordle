@@ -1,48 +1,18 @@
-import { useEffect, useState } from 'react'
-import { fetchCasesFromSheet } from './sheet'
+import casesData from './cases.json'
 import type { TCase } from './types'
 import { GameView } from './GameView'
 import { useGame } from './useGame'
 
-type LoadState =
-  | { kind: 'loading' }
-  | { kind: 'ready'; cases: TCase[] }
-  | { kind: 'error'; message: string }
+// Cases are baked at build time by scripts/sync-data.ts, so there's no network
+// fetch or loading state — the bank is available synchronously.
+const cases = casesData as unknown as TCase[]
 
 export default function App() {
-  const [state, setState] = useState<LoadState>({ kind: 'loading' })
-
-  useEffect(() => {
-    let cancelled = false
-    fetchCasesFromSheet()
-      .then((cases) => {
-        if (cancelled) return
-        if (cases.length === 0) {
-          setState({ kind: 'error', message: 'The diagnosis sheet has no cases yet. Add a row and try again.' })
-        } else {
-          setState({ kind: 'ready', cases })
-        }
-      })
-      .catch((err) => {
-        if (cancelled) return
-        const message =
-          err instanceof Error
-            ? `Couldn't load the diagnosis sheet (${err.message}). Make sure the sheet is shared "Anyone with the link → Viewer".`
-            : "Couldn't load the diagnosis sheet."
-        setState({ kind: 'error', message })
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [])
-
-  if (state.kind === 'loading') return <Splash>Loading today's case…</Splash>
-  if (state.kind === 'error') return <Splash error>{state.message}</Splash>
-
-  return <Game cases={state.cases} />
+  if (cases.length === 0) return <Splash error>No cases available yet.</Splash>
+  return <Game />
 }
 
-function Game({ cases }: { cases: TCase[] }) {
+function Game() {
   const g = useGame(cases)
   return <GameView g={g} />
 }

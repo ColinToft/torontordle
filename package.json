@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "sync-images": "node scripts/sync-images.mjs"
+    "sync-data": "tsx scripts/sync-data.ts"
   },
   "dependencies": {
     "react": "^19.2.5",
@@ -28,6 +28,7 @@
     "globals": "^17.5.0",
     "googleapis": "^172.0.0",
     "sharp": "^0.34.5",
+    "tsx": "^4.22.4",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.10",

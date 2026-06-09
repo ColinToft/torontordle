@@ -1,29 +1,31 @@
 # Torontordle
 
-Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med students. Static Vite + React + TypeScript SPA; cases are sourced live from a Google Sheet.
+Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med students. Static Vite + React + TypeScript SPA. Cases (clue text **and** images) are **baked at build time** from a Google Sheet into `src/cases.json` — the client never touches the sheet.
 
 ## Commands
 - `npm run dev` — local dev (http://localhost:5173/)
 - `npm run build` — typecheck + Vite build → `dist/`
 - `npm test` — vitest (sheet parser, share, references)
-- `npm run sync-images` — pull in-cell sheet images → `public/case-images/` + `src/caseImages.json`
+- `npm run sync-data` — re-bake the bank from the sheet → `src/cases.json` + `public/case-images/` (needs Google OAuth creds; `tsx scripts/sync-data.ts`)
 
 ## Deploy
 - GitHub Pages at custom apex **torontordle.com** (DNS in Cloudflare, *Hatolkarved* account: A/AAAA → GitHub IPs + `www` CNAME, all **DNS-only**). `public/CNAME` sets the domain; `base:'/'` in `vite.config.ts`.
 - Push to `main` → `.github/workflows/deploy.yml` builds + deploys.
-- Nightly `.github/workflows/sync-images.yml` (07:00 UTC) re-syncs images, commits, redeploys. Needs the `GOOGLE_OAUTH_TOKEN_JSON` Actions secret.
+- Nightly + on-demand `.github/workflows/sync-data.yml` (07:00 UTC, or *Run workflow*) re-bakes the data, commits if changed, redeploys. Needs the `GOOGLE_OAUTH_TOKEN_JSON` Actions secret. **Content edits go live only after a sync runs** — there's no live read.
 
 ## Architecture
-- `src/sheet.ts` — fetches the sheet as CSV (gviz endpoint), parses → `TCase[]`. Header row auto-located; columns matched by prefix. **Canonical sheet schema lives here.** `SHEET_ID`/`SHEET_GID` too.
+- `scripts/sync-data.ts` — the only thing that reads the sheet (holds `SPREADSHEET_ID`). Exports the workbook (XLSX), extracts in-cell images → `public/case-images/`, parses clue text from the CSV via `parseSheetCsv`, attaches images per-clue, writes `src/cases.json`. Fails loudly if an image can't be attached to a case. Pure-JS XLSX helpers in `scripts/syncImagesLib.mjs`.
+- `src/sheet.ts` — **parser only** now (`parseSheetCsv`): header auto-located, columns matched by prefix. **Canonical sheet schema lives here.** Shared by the sync (via `tsx`) and tests. No fetch, no sheet ID.
+- `src/cases.json` — the baked bank (generated; committed). `src/App.tsx` imports it directly — no network, no loading state.
 - `src/dailyCase.ts` — `pickDailyCase` = `hash(date) % cases.length` (deterministic; ET-midnight rollover via `todayET`). "Day NNN" badge from `LAUNCH_DATE_ET`.
-- `src/useGame.ts` — game-state hook. `src/GameView.tsx` / `src/App.tsx` — UI (header has How to Play / Stats).
+- `src/useGame.ts` — game-state hook. `src/GameView.tsx` — UI (header: About / How to Play / Stats).
 - `src/storage.ts` — localStorage daily progress + aggregate `Stats` (**per-device only**; no server data).
-- `src/share.ts` — Wordle-style share grid (🟩 correct / ⬛ wrong / ⬜ skipped). `src/types.ts` — core types.
-- Images: in-cell sheet images can't come via CSV; `scripts/sync-images.mjs` extracts them at build time. Pure-JS parser in `scripts/syncImagesLib.mjs` (browser-reusable).
+- `src/share.ts` — Wordle-style share grid (🟩 right / 🟥 miss / ⬛ unused). `src/types.ts` — core types.
 
 ## Gotchas
-- Sheet must be "Anyone with link → Viewer" for the in-browser CSV fetch to work.
-- Do **not** use `drive.files.export` for the XLSX — it 10 MB-caps and the sheet is ~24 MB. Download via the `docs.google.com/.../export?format=xlsx` endpoint instead.
+- All cases (incl. answers) ship in `cases.json` since day-selection is client-side — baking hides the *sheet*, not future answers (that'd need a per-request backend).
+- The sheet must stay "Anyone with link → Viewer" — the sync reads its CSV. (It's never read by the browser, only by `sync-data` in CI.)
+- Do **not** use `drive.files.export` for the XLSX — it 10 MB-caps and the sheet is ~24 MB. Use the `docs.google.com/.../export?format=xlsx` endpoint.
 - Stats/progress are localStorage-only today — cross-user comparison would need a backend.
 
 ## Roadmap
