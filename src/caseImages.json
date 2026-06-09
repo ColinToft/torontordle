@@ -26,6 +26,9 @@
   "Aortic Dissection": {
     "5": "case-images/aortic-dissection-clue5.jpg"
   },
+  "Asthma": {
+    "5": "case-images/asthma-clue5.jpg"
+  },
   "Atelectasis": {
     "5": "case-images/atelectasis-clue5.jpg"
   },
@@ -41,8 +44,11 @@
   "Bacterial Endocarditis": {
     "5": "case-images/bacterial-endocarditis-clue5.jpg"
   },
-  "Basal Cell Carcinoma": {
-    "1": "case-images/basal-cell-carcinoma-clue1.jpg"
+  "Basal Cell Carcinoma (BCC)": {
+    "1": "case-images/basal-cell-carcinoma-bcc-clue1.jpg"
+  },
+  "Bronchiestasis": {
+    "5": "case-images/bronchiestasis-clue5.jpg"
   },
   "Bullous Pemphigoid": {
     "1": "case-images/bullous-pemphigoid-clue1.jpg"
@@ -56,14 +62,17 @@
   "Cellulitis": {
     "6": "case-images/cellulitis-clue6.jpg"
   },
-  "Central Centrifugal Cicatricial Alopecia": {
-    "1": "case-images/central-centrifugal-cicatricial-alopecia-clue1.jpg"
+  "Central Centrifugal Cicatricial Alopecia (CCCA)": {
+    "1": "case-images/central-centrifugal-cicatricial-alopecia-ccca-clue1.jpg"
   },
   "Cherry angioma": {
     "1": "case-images/cherry-angioma-clue1.jpg"
   },
   "Choriocarcinoma": {
     "5": "case-images/choriocarcinoma-clue5.jpg"
+  },
+  "Chronic Obstructive Pulmonary Disease (COPD)": {
+    "5": "case-images/chronic-obstructive-pulmonary-disease-copd-clue5.jpg"
   },
   "Complete Heart Block (3rd Degree Block)": {
     "5": "case-images/complete-heart-block-3rd-degree-block-clue5.jpg"
@@ -77,9 +86,6 @@
   "Contact Dermatitis": {
     "1": "case-images/contact-dermatitis-clue1.jpg"
   },
-  "DRESS": {
-    "1": "case-images/dress-clue1.jpg"
-  },
   "Deep Vein Thrombosis (DVT)": {
     "6": "case-images/deep-vein-thrombosis-dvt-clue6.jpg"
   },
@@ -88,6 +94,9 @@
   },
   "Disseminated Intravascular Coagulation (DIC)": {
     "5": "case-images/disseminated-intravascular-coagulation-dic-clue5.jpg"
+  },
+  "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)": {
+    "1": "case-images/drug-reaction-with-eosinophilia-and-systemic-symptoms-dress-clue1.jpg"
   },
   "Fat Embolism Syndrome": {
     "5": "case-images/fat-embolism-syndrome-clue5.jpg",
@@ -108,11 +117,14 @@
   "Hemothorax": {
     "5": "case-images/hemothorax-clue5.jpg"
   },
-  "Herpes Simplex Virus": {
-    "1": "case-images/herpes-simplex-virus-clue1.jpg"
+  "Herpes Simplex Virus (HSV)": {
+    "1": "case-images/herpes-simplex-virus-hsv-clue1.jpg"
   },
   "Hydatidiform mole": {
     "5": "case-images/hydatidiform-mole-clue5.jpg"
+  },
+  "Idiopathic Pulmonary Fibrosis (IPF)": {
+    "6": "case-images/idiopathic-pulmonary-fibrosis-ipf-clue6.jpg"
   },
   "Impetigo": {
     "1": "case-images/impetigo-clue1.jpg"
@@ -221,15 +233,15 @@
   "Spina Bifida": {
     "5": "case-images/spina-bifida-clue5.jpg"
   },
-  "Squamous Cell Carcinoma": {
-    "1": "case-images/squamous-cell-carcinoma-clue1.jpg"
-  },
   "Squamous Cell Carcinoma (NSCLC)": {
     "5": "case-images/squamous-cell-carcinoma-nsclc-clue5.jpg",
     "6": "case-images/squamous-cell-carcinoma-nsclc-clue6.jpg"
   },
-  "Steven-Johnsons Syndrome": {
-    "1": "case-images/steven-johnsons-syndrome-clue1.jpg"
+  "Squamous Cell Carcinoma (SCC)": {
+    "1": "case-images/squamous-cell-carcinoma-scc-clue1.jpg"
+  },
+  "Steven-Johnsons Syndrome (SJS/TEN)": {
+    "1": "case-images/steven-johnsons-syndrome-sjs-ten-clue1.jpg"
   },
   "Tension Pneumothorax": {
     "5": "case-images/tension-pneumothorax-clue5.jpg"
