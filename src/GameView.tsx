@@ -547,9 +547,9 @@ function AboutModal({ onClose }: { onClose: () => void }) {
       <hr className="tt-rule" style={{ margin: '12px 0 16px' }} />
       <p style={{ margin: 0, lineHeight: 1.7, color: 'var(--ink)' }}>
         Torontordle is a student-led educational initiative created to provide high-quality, peer-developed
-        learning resources aligned with the University of Toronto pre-clerkship curriculum. Designed by medical
-        students, for medical students, daily puzzles are developed with mentor oversight to ensure accuracy,
-        relevance, and educational value.
+        learning resources aligned with pre-clerkship expectations. Designed by medical students, for medical
+        students, daily puzzles are developed with mentor oversight to ensure accuracy, relevance, and
+        educational value.
       </p>
       <p style={{ margin: '14px 0 0', lineHeight: 1.7, color: 'var(--ink)' }}>
         The goal of Torontordle is not only to reinforce previously learned material, but also to promote
