@@ -10,6 +10,7 @@ import {
   saveDailyProgress,
   saveStats,
 } from './storage'
+import { submitResult } from './statsApi'
 
 export const MAX_GUESSES = 6
 
@@ -38,8 +39,10 @@ export function useGame(
       const updated = recordResult(stats, dateStr, outcome, guessCount)
       setStats(updated)
       saveStats(year, updated)
+      // Contribute to the community stats (anonymous, fire-and-forget).
+      void submitResult({ year, date: dateStr, diagnosis: tCase.diagnosis, won: outcome === 'won', guesses: guessCount })
     },
-    [archive, stats, dateStr, year],
+    [archive, stats, dateStr, year, tCase.diagnosis],
   )
 
   // Restore (or reset) progress synchronously when the active case/year/mode

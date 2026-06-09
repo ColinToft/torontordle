@@ -16,6 +16,7 @@ import { buildShareText, copyShare } from './share'
 import type { UseGame } from './useGame'
 import type { ArchiveDay, Nav } from './App'
 import { loadDailyProgress } from './storage'
+import { fetchCaseStats, percentileBand } from './statsApi'
 
 const SERIF = "'Source Serif Pro', Georgia, serif"
 
@@ -25,6 +26,25 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
   const [showStats, setShowStats] = useState(false)
   // Highlight today's bar in the distribution only when the player won today.
   const todayGuess = !g.archive && g.status === 'won' ? g.guesses.length : null
+
+  // Community "top N%" band — fetched when the player opens Stats after a
+  // finished daily game. Fails soft (stays null) if the backend isn't reachable.
+  const [percentile, setPercentile] = useState<number | null>(null)
+  const openStats = () => {
+    setPercentile(null) // clear any stale value from a previous open
+    setShowStats(true)
+  }
+  useEffect(() => {
+    if (!showStats || g.archive || g.status === 'playing') return
+    let cancelled = false
+    fetchCaseStats({ year: nav.year, date: g.dateStr, diagnosis: g.tCase.diagnosis }).then((s) => {
+      if (cancelled || !s) return
+      setPercentile(percentileBand(s, { won: g.status === 'won', guesses: g.guesses.length }))
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [showStats, g.archive, g.status, g.guesses.length, nav.year, g.dateStr, g.tCase.diagnosis])
 
   const visibleClues = g.tCase.clues.slice(0, g.cluesRevealed)
   const lockedCount = Math.max(0, g.tCase.clues.length - visibleClues.length)
@@ -44,7 +64,7 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
         nav={nav}
         onAbout={() => setShowAbout(true)}
         onHowTo={() => setShowHowTo(true)}
-        onStats={() => setShowStats(true)}
+        onStats={openStats}
       />
 
       {g.archive && (
@@ -144,7 +164,7 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
             <ResultBlock
               g={g}
               day={day}
-              onOpenStats={() => setShowStats(true)}
+              onOpenStats={openStats}
             />
           )}
         </section>
@@ -175,6 +195,7 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
           stats={g.stats}
           winRate={g.winRate}
           todayGuess={todayGuess}
+          percentile={percentile}
           onReset={() => {
             g.resetEverything()
             setShowStats(false)
