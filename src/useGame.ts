@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
-import type { DailyProgress, Guess, Stats, Status, TCase } from './types'
-import { pickDailyCase, todayET } from './dailyCase'
+import { useCallback, useEffect, useState } from 'react'
+import type { DailyProgress, Guess, Stats, Status, TCase, Year } from './types'
 import { normalizeAnswer } from './normalize'
 import {
   clearAll,
@@ -16,42 +15,59 @@ export const MAX_GUESSES = 6
 
 export type UseGame = ReturnType<typeof useGame>
 
-export function useGame(cases: TCase[]) {
-  const dateStr = useMemo(() => todayET(), [])
-  const tCase = useMemo(() => pickDailyCase(cases, dateStr), [cases, dateStr])
+// `cases` is the active year's full pool (for the guess autocomplete); `tCase`
+// is the resolved case for `dateStr` (App resolves it and guards the empty case).
+// In `archive` mode the play is practice-only: progress is saved under a
+// separate slot and stats are never touched.
+export function useGame(
+  cases: TCase[],
+  tCase: TCase,
+  year: Year,
+  opts: { dateStr: string; archive?: boolean },
+) {
+  const { dateStr, archive = false } = opts
 
   const [guesses, setGuesses] = useState<Guess[]>([])
   const [input, setInput] = useState('')
   const [status, setStatus] = useState<Status>('playing')
-  const [stats, setStats] = useState<Stats>(() => loadStats())
+  const [stats, setStats] = useState<Stats>(() => loadStats(year))
 
-  // Restore (or reset) today's progress synchronously when the active case
-  // changes. Done during render per React's "adjust state when a prop changes"
-  // guidance — an effect that only mirrors a key into state causes a wasted
-  // commit and is flagged by react-hooks/set-state-in-effect.
-  const caseKey = `${dateStr}:${tCase.id}`
+  const recordIfDaily = useCallback(
+    (outcome: 'won' | 'lost', guessCount: number) => {
+      if (archive) return // practice replay — never affects stats
+      const updated = recordResult(stats, dateStr, outcome, guessCount)
+      setStats(updated)
+      saveStats(year, updated)
+    },
+    [archive, stats, dateStr, year],
+  )
+
+  // Restore (or reset) progress synchronously when the active case/year/mode
+  // changes — adjusting state during render per React's "derive from props"
+  // guidance (an effect that only mirrors a key causes a wasted commit).
+  const caseKey = `${year}:${archive ? 'a' : 'd'}:${dateStr}:${tCase.id}`
   const [syncedKey, setSyncedKey] = useState<string | null>(null)
   if (syncedKey !== caseKey) {
-    const stored = loadDailyProgress(dateStr)
+    const stored = loadDailyProgress(year, dateStr, archive)
     if (stored && stored.caseId === tCase.id) {
       setGuesses(stored.guesses)
       setStatus(stored.status)
     } else {
-      // New day, or sheet refreshed and assigned a different case for today.
       setGuesses([])
       setStatus('playing')
       setInput('')
     }
+    setStats(loadStats(year))
     setSyncedKey(caseKey)
   }
 
-  // Persist progress whenever it changes for the active case — but only once
-  // it has been synced, so we never clobber stored progress before restoring.
+  // Persist progress whenever it changes — but only once synced, so we never
+  // clobber stored progress before restoring it.
   useEffect(() => {
     if (syncedKey !== caseKey) return
     const progress: DailyProgress = { caseId: tCase.id, guesses, status }
-    saveDailyProgress(dateStr, progress)
-  }, [caseKey, syncedKey, dateStr, tCase.id, guesses, status])
+    saveDailyProgress(year, dateStr, progress, archive)
+  }, [caseKey, syncedKey, year, dateStr, archive, tCase.id, guesses, status])
 
   const submitGuess = useCallback(() => {
     if (status !== 'playing') return
@@ -66,50 +82,38 @@ export function useGame(cases: TCase[]) {
     setGuesses(next)
     setInput('')
 
-    let outcome: 'won' | 'lost' | null = null
     if (correct) {
       setStatus('won')
-      outcome = 'won'
+      recordIfDaily('won', next.length)
     } else if (next.length >= MAX_GUESSES) {
       setStatus('lost')
-      outcome = 'lost'
+      recordIfDaily('lost', next.length)
     }
-
-    if (outcome) {
-      const updated = recordResult(stats, dateStr, outcome, next.length)
-      setStats(updated)
-      saveStats(updated)
-    }
-  }, [dateStr, guesses, input, stats, status, tCase])
+  }, [guesses, input, status, tCase, recordIfDaily])
 
   // Skip the current turn without diagnosing: spend an attempt to reveal the
-  // next clue. Mirrors an incorrect guess for scoring (it consumes a guess and
-  // can end the game by exhausting all six), but is flagged `passed` so the UI
-  // and share grid show it as a deliberate skip rather than a wrong answer.
+  // next clue. Flagged `passed` so the UI/share grid can tell it from a wrong
+  // guess (though both count as a miss).
   const passGuess = useCallback(() => {
     if (status !== 'playing') return
-
     const next: Guess[] = [...guesses, { text: '', correct: false, passed: true }]
     setGuesses(next)
     setInput('')
-
     if (next.length >= MAX_GUESSES) {
       setStatus('lost')
-      const updated = recordResult(stats, dateStr, 'lost', next.length)
-      setStats(updated)
-      saveStats(updated)
+      recordIfDaily('lost', next.length)
     }
-  }, [dateStr, guesses, stats, status])
+  }, [guesses, status, recordIfDaily])
 
-  // Wipes every shred of saved state — today's gameplay and the aggregate
-  // stats — and starts the player over from a clean slate.
+  // Wipes this year's saved state (daily + archive progress and stats).
   const resetEverything = useCallback(() => {
-    clearAll()
+    clearAll(year)
     setGuesses([])
     setStatus('playing')
     setInput('')
     setStats(emptyStats())
-  }, [])
+    setSyncedKey(null)
+  }, [year])
 
   const cluesRevealed =
     status === 'playing' ? Math.min(guesses.length + 1, tCase.clues.length) : tCase.clues.length
@@ -118,6 +122,7 @@ export function useGame(cases: TCase[]) {
 
   return {
     dateStr,
+    archive,
     cases,
     tCase,
     guesses,

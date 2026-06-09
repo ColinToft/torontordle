@@ -1,7 +1,11 @@
-import type { DailyProgress, Stats } from './types'
+import type { DailyProgress, Stats, Year } from './types'
 
-const PROGRESS_PREFIX = 'torontordle:progress:'
-const STATS_KEY = 'torontordle:stats'
+// All keys are namespaced by year so Year 1 and Year 2 keep independent
+// progress + stats. `archive:` progress is for replayed past days (practice).
+const ns = (year: Year) => `torontordle:y${year}:`
+const progressKey = (year: Year, dateStr: string) => `${ns(year)}progress:${dateStr}`
+const archiveKey = (year: Year, dateStr: string) => `${ns(year)}archive:${dateStr}`
+const statsKey = (year: Year) => `${ns(year)}stats`
 
 const EMPTY_STATS: Stats = {
   played: 0,
@@ -30,29 +34,31 @@ function safeWrite(key: string, value: unknown): void {
   }
 }
 
-export function loadDailyProgress(dateStr: string): DailyProgress | null {
-  return safeRead<DailyProgress>(PROGRESS_PREFIX + dateStr)
+// `archive` selects the practice-replay slot for a past day vs the live daily.
+export function loadDailyProgress(year: Year, dateStr: string, archive = false): DailyProgress | null {
+  return safeRead<DailyProgress>((archive ? archiveKey : progressKey)(year, dateStr))
 }
 
-export function saveDailyProgress(dateStr: string, progress: DailyProgress): void {
-  safeWrite(PROGRESS_PREFIX + dateStr, progress)
+export function saveDailyProgress(year: Year, dateStr: string, progress: DailyProgress, archive = false): void {
+  safeWrite((archive ? archiveKey : progressKey)(year, dateStr), progress)
 }
 
-export function clearDailyProgress(dateStr: string): void {
+export function clearDailyProgress(year: Year, dateStr: string, archive = false): void {
   try {
-    localStorage.removeItem(PROGRESS_PREFIX + dateStr)
+    localStorage.removeItem((archive ? archiveKey : progressKey)(year, dateStr))
   } catch {
     /* ignore */
   }
 }
 
-// Wipes every stored daily progress entry plus aggregate stats.
-export function clearAll(): void {
+// Wipes one year's stored progress (daily + archive) and aggregate stats.
+export function clearAll(year: Year): void {
   try {
+    const prefix = ns(year)
     const toRemove: string[] = []
     for (let i = 0; i < localStorage.length; i++) {
       const k = localStorage.key(i)
-      if (k && (k === STATS_KEY || k.startsWith(PROGRESS_PREFIX))) toRemove.push(k)
+      if (k && k.startsWith(prefix)) toRemove.push(k)
     }
     toRemove.forEach((k) => localStorage.removeItem(k))
   } catch {
@@ -64,8 +70,8 @@ export function emptyStats(): Stats {
   return { ...EMPTY_STATS, distribution: [...EMPTY_STATS.distribution] }
 }
 
-export function loadStats(): Stats {
-  const stored = safeRead<Stats>(STATS_KEY)
+export function loadStats(year: Year): Stats {
+  const stored = safeRead<Stats>(statsKey(year))
   if (!stored) return { ...EMPTY_STATS, distribution: [...EMPTY_STATS.distribution] }
   // Defensive fill for older or partial entries.
   return {
@@ -81,8 +87,8 @@ export function loadStats(): Stats {
   }
 }
 
-export function saveStats(stats: Stats): void {
-  safeWrite(STATS_KEY, stats)
+export function saveStats(year: Year, stats: Stats): void {
+  safeWrite(statsKey(year), stats)
 }
 
 export function recordResult(

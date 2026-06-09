@@ -37,10 +37,17 @@ import {
   parseWorkbookSheets,
 } from './syncImagesLib.mjs'
 import { parseSheetCsv } from '../src/sheet.ts'
+import type { CasesByYear, TCase, Year } from '../src/types.ts'
 
 const SPREADSHEET_ID = '117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI'
-const GID = 0
-const CSV_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:csv&gid=${GID}`
+// One tab per year. Year 1 images keep their bare filenames; Year 2 images are
+// prefixed (filePrefix) so a diagnosis shared between years can't collide.
+const YEARS: { year: Year; gid: number; filePrefix: string }[] = [
+  { year: '1', gid: 0, filePrefix: '' },
+  { year: '2', gid: 1808332748, filePrefix: 'y2-' },
+]
+const csvUrl = (gid: number) =>
+  `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:csv&gid=${gid}`
 const TOKEN_PATH = process.env.GOOGLE_OAUTH_TOKEN || '/Users/colin/Code/google-docs-mcp/token.json'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -86,26 +93,9 @@ async function main() {
   const auth = authClient()
   const sheets = google.sheets({ version: 'v4', auth })
 
-  // 1. Resolve the gid=0 sheet's title and grab its grid values (used to map
-  //    each in-cell image's anchor row → diagnosis, and column → clue number).
+  // Export the whole workbook once (all tabs) and unzip — the Drive API export
+  // method 10MB-caps, so use the docs.google.com endpoint.
   const meta = await sheets.spreadsheets.get({ spreadsheetId: SPREADSHEET_ID, fields: 'sheets.properties' })
-  const sheet = meta.data.sheets!.find((s) => s.properties!.sheetId === GID)
-  if (!sheet) throw new Error(`No sheet with gid ${GID}`)
-  const sheetTitle = sheet.properties!.title!
-  console.log(`Sheet: "${sheetTitle}"`)
-
-  const valsRes = await sheets.spreadsheets.values.get({
-    spreadsheetId: SPREADSHEET_ID,
-    range: `'${sheetTitle}'`,
-    valueRenderOption: 'UNFORMATTED_VALUE',
-  })
-  const values: unknown[][] = valsRes.data.values ?? []
-  const header = (values[0] ?? []).map((c) => String(c ?? ''))
-  const diagCol = header.findIndex((h) => /^diagnosis\??$/i.test(h.trim()))
-  if (diagCol < 0) throw new Error('No Diagnosis column found in header')
-
-  // 2. Export the workbook as XLSX (via the docs.google.com endpoint — the Drive
-  //    API export 10MB-caps and the sheet is larger) and unzip it.
   const tmp = mkdtempSync(join(tmpdir(), 'tt-sync-'))
   const xlsxPath = join(tmp, 'sheet.xlsx')
   const { token } = await auth.getAccessToken()
@@ -120,50 +110,88 @@ async function main() {
   execSync(`unzip -o "${xlsxPath}" -d "${unzipDir}"`, { stdio: 'ignore' })
   const read = (p: string) => readFileSync(join(unzipDir, p), 'utf8')
 
-  // 3. Map the sheet → worksheet xml → drawing xml → image anchors.
   mkdirSync(OUT_IMAGES, { recursive: true })
-  const entries: { diagnosis: string; clueNumber: number; path: string }[] = []
-  const written = new Set<string>()
-  let skipped = 0
-
   const wbSheets = parseWorkbookSheets(read('xl/workbook.xml')) as { name: string; rid: string }[]
   const wbRels = parseRels(read('xl/_rels/workbook.xml.rels')) as Record<string, string>
-  const target = wbSheets.find((s) => s.name === sheetTitle)
-  if (!target) throw new Error(`"${sheetTitle}" not found in workbook.xml`)
-  const sheetFile = basename(wbRels[target.rid]) // e.g. sheet1.xml
-  const wsRelsPath = `xl/worksheets/_rels/${sheetFile}.rels`
+  const written = new Set<string>() // every image filename we keep (across both years)
+  const byYear = {} as CasesByYear
+  let totalImages = 0
+  let skipped = 0
 
-  if (!existsSync(join(unzipDir, wsRelsPath))) {
-    console.log('No drawings on this sheet — no images to sync.')
-  } else {
-    const wsRels = parseRels(read(wsRelsPath)) as Record<string, string>
-    const drawingTarget = Object.values(wsRels).find((t) => /drawings\/drawing/.test(t)) as string
-    const drawingFile = basename(drawingTarget)
-    const anchors = parseDrawingAnchors(read(`xl/drawings/${drawingFile}`)) as { row: number; col: number; embed: string }[]
-    const drawingRels = parseRels(read(`xl/drawings/_rels/${drawingFile}.rels`)) as Record<string, string>
+  for (const { year, gid, filePrefix } of YEARS) {
+    const sheetMeta = meta.data.sheets!.find((s) => s.properties!.sheetId === gid)
+    if (!sheetMeta) throw new Error(`No sheet with gid ${gid} (year ${year})`)
+    const title = sheetMeta.properties!.title!
+    console.log(`\n=== Year ${year}: "${title}" ===`)
 
-    // 4. For each anchored image, resolve diagnosis + clue number, compress, write.
-    for (const a of anchors) {
-      const diagnosis = String((values[a.row] ?? [])[diagCol] ?? '').trim()
-      const clueNumber = parseClueNumber(header[a.col])
-      if (!diagnosis || !clueNumber) {
-        skipped++
-        console.warn(`  skip image at (row ${a.row}, col ${a.col}): diagnosis=${diagnosis || '∅'} clue=${clueNumber ?? '∅'}`)
-        continue
+    // Grid values: map each in-cell image's anchor row → diagnosis, col → clue #.
+    const valsRes = await sheets.spreadsheets.values.get({
+      spreadsheetId: SPREADSHEET_ID,
+      range: `'${title}'`,
+      valueRenderOption: 'UNFORMATTED_VALUE',
+    })
+    const values: unknown[][] = valsRes.data.values ?? []
+    const header = (values[0] ?? []).map((c) => String(c ?? ''))
+    const diagCol = header.findIndex((h) => /^diagnosis\??$/i.test(h.trim()))
+    if (diagCol < 0) throw new Error(`Year ${year}: no Diagnosis column in header`)
+
+    // Extract this tab's in-cell images.
+    const entries: { diagnosis: string; clueNumber: number; path: string }[] = []
+    const wsTarget = wbSheets.find((s) => s.name === title)
+    if (!wsTarget) throw new Error(`"${title}" not found in workbook.xml`)
+    const sheetFile = basename(wbRels[wsTarget.rid])
+    const wsRelsPath = `xl/worksheets/_rels/${sheetFile}.rels`
+    if (existsSync(join(unzipDir, wsRelsPath))) {
+      const wsRels = parseRels(read(wsRelsPath)) as Record<string, string>
+      const drawingTarget = Object.values(wsRels).find((t) => /drawings\/drawing/.test(t))
+      if (drawingTarget) {
+        const drawingFile = basename(drawingTarget)
+        const anchors = parseDrawingAnchors(read(`xl/drawings/${drawingFile}`)) as { row: number; col: number; embed: string }[]
+        const drawingRels = parseRels(read(`xl/drawings/_rels/${drawingFile}.rels`)) as Record<string, string>
+        for (const a of anchors) {
+          const diagnosis = String((values[a.row] ?? [])[diagCol] ?? '').trim()
+          const clueNumber = parseClueNumber(header[a.col])
+          if (!diagnosis || !clueNumber) {
+            skipped++
+            console.warn(`  skip image at (row ${a.row}, col ${a.col}): diagnosis=${diagnosis || '∅'} clue=${clueNumber ?? '∅'}`)
+            continue
+          }
+          const mediaFile = basename(drawingRels[a.embed])
+          const srcBuf = readFileSync(join(unzipDir, 'xl', 'media', mediaFile))
+          const { buffer, ext } = await compressImage(srcBuf, mediaFile.split('.').pop()!)
+          const fileName = filePrefix + imageFileName(diagnosis, clueNumber, ext)
+          writeFileSync(join(OUT_IMAGES, fileName), buffer)
+          written.add(fileName)
+          entries.push({ diagnosis, clueNumber, path: `case-images/${fileName}` })
+          const kb = (n: number) => `${Math.round(n / 1024)}KB`
+          console.log(`  ✓ ${diagnosis} · clue ${clueNumber} → ${fileName} (${kb(srcBuf.length)} → ${kb(buffer.length)})`)
+        }
       }
-      const mediaFile = basename(drawingRels[a.embed])
-      const srcBuf = readFileSync(join(unzipDir, 'xl', 'media', mediaFile))
-      const { buffer, ext } = await compressImage(srcBuf, mediaFile.split('.').pop()!)
-      const fileName = imageFileName(diagnosis, clueNumber, ext)
-      writeFileSync(join(OUT_IMAGES, fileName), buffer)
-      written.add(fileName)
-      entries.push({ diagnosis, clueNumber, path: `case-images/${fileName}` })
-      const kb = (n: number) => `${Math.round(n / 1024)}KB`
-      console.log(`  ✓ ${diagnosis} · clue ${clueNumber} → ${fileName} (${kb(srcBuf.length)} → ${kb(buffer.length)})`)
     }
+
+    // Parse this tab's clue text from its CSV and merge in the images.
+    const manifest = buildManifest(entries) as Record<string, Record<string, string>>
+    const csvRes = await fetch(csvUrl(gid), { cache: 'no-store' })
+    if (!csvRes.ok) throw new Error(`Year ${year} CSV fetch failed: ${csvRes.status} ${csvRes.statusText}`)
+    const cases: TCase[] = parseSheetCsv(await csvRes.text(), manifest)
+
+    // Fail fast if any extracted image didn't land on a case (name mismatch).
+    const attached = new Set<string>()
+    for (const c of cases) for (const clue of c.clues) if (clue.image) attached.add(clue.image)
+    const orphans = entries.filter((e) => !attached.has(e.path))
+    if (orphans.length) {
+      throw new Error(
+        `Year ${year}: ${orphans.length} image(s) couldn't be attached to a case (diagnosis-name mismatch):\n` +
+          orphans.map((o) => `  • ${o.diagnosis} · clue ${o.clueNumber}`).join('\n'),
+      )
+    }
+
+    byYear[year] = cases
+    totalImages += entries.length
+    console.log(`  → ${cases.length} case(s), ${entries.length} image(s)`)
   }
 
-  // Drop previously-synced assets no longer present in the sheet.
+  // Drop previously-synced assets no longer present in either tab.
   for (const f of readdirSync(OUT_IMAGES)) {
     if (!written.has(f)) {
       unlinkSync(join(OUT_IMAGES, f))
@@ -171,30 +199,14 @@ async function main() {
     }
   }
 
-  // 5. Parse the clue text from the live CSV and merge in the images we just
-  //    extracted (same snapshot → names line up), producing the baked cases.
-  const manifest = buildManifest(entries) as Record<string, Record<string, string>>
-  const csvRes = await fetch(CSV_URL, { cache: 'no-store' })
-  if (!csvRes.ok) throw new Error(`CSV fetch failed: ${csvRes.status} ${csvRes.statusText}`)
-  const cases = parseSheetCsv(await csvRes.text(), manifest)
-  if (cases.length === 0) throw new Error('Parsed 0 cases from the sheet — refusing to write an empty bank.')
-
-  // 6. Fail fast if any extracted image didn't land on a case (a diagnosis-name
-  //    mismatch between the image step and the parsed CSV).
-  const attached = new Set<string>()
-  for (const c of cases) for (const clue of c.clues) if (clue.image) attached.add(clue.image)
-  const orphans = entries.filter((e) => !attached.has(e.path))
-  if (orphans.length) {
-    throw new Error(
-      `${orphans.length} image(s) couldn't be attached to a case (diagnosis-name mismatch):\n` +
-        orphans.map((o) => `  • ${o.diagnosis} · clue ${o.clueNumber}`).join('\n'),
-    )
+  if ((byYear['1']?.length ?? 0) === 0) {
+    throw new Error('Parsed 0 Year 1 cases — refusing to write an empty bank.')
   }
 
-  writeFileSync(OUT_CASES, JSON.stringify(cases, null, 2) + '\n')
+  writeFileSync(OUT_CASES, JSON.stringify(byYear, null, 2) + '\n')
   rmSync(tmp, { recursive: true, force: true })
   console.log(
-    `\nWrote ${cases.length} case(s) to src/cases.json with ${entries.length} image(s) in public/case-images/ (${skipped} skipped).`,
+    `\nWrote Year 1: ${byYear['1'].length} / Year 2: ${byYear['2']?.length ?? 0} case(s) to src/cases.json, ${totalImages} image(s) in public/case-images/ (${skipped} skipped).`,
   )
 }
 

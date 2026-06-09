@@ -14,13 +14,14 @@ Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med studen
 - Nightly + on-demand `.github/workflows/sync-data.yml` (07:00 UTC, or *Run workflow*) re-bakes the data, commits if changed, redeploys. Needs the `GOOGLE_OAUTH_TOKEN_JSON` Actions secret. **Content edits go live only after a sync runs** — there's no live read.
 
 ## Architecture
-- `scripts/sync-data.ts` — the only thing that reads the sheet (holds `SPREADSHEET_ID`). Exports the workbook (XLSX), extracts in-cell images → `public/case-images/`, parses clue text from the CSV via `parseSheetCsv`, attaches images per-clue, writes `src/cases.json`. Fails loudly if an image can't be attached to a case. Pure-JS XLSX helpers in `scripts/syncImagesLib.mjs`.
-- `src/sheet.ts` — **parser only** now (`parseSheetCsv`): header auto-located, columns matched by prefix. **Canonical sheet schema lives here.** Shared by the sync (via `tsx`) and tests. No fetch, no sheet ID.
-- `src/cases.json` — the baked bank (generated; committed). `src/App.tsx` imports it directly — no network, no loading state.
-- `src/dailyCase.ts` — `pickDailyCase` = `hash(date) % cases.length` (deterministic; ET-midnight rollover via `todayET`). "Day NNN" badge from `LAUNCH_DATE_ET`.
-- `src/useGame.ts` — game-state hook. `src/GameView.tsx` — UI (header: About / How to Play / Stats).
-- `src/storage.ts` — localStorage daily progress + aggregate `Stats` (**per-device only**; no server data).
-- `src/share.ts` — Wordle-style share grid (🟩 right / 🟥 miss / ⬛ unused). `src/types.ts` — core types.
+- `scripts/sync-data.ts` — the only thing that reads the sheet (holds `SPREADSHEET_ID`). Bakes **both year tabs** (gid 0 = Year 1, gid 1808332748 = Year 2): exports the workbook (XLSX), extracts in-cell images → `public/case-images/` (Year 2 files prefixed `y2-` to avoid collisions), parses clue text from each tab's CSV via `parseSheetCsv`, attaches images per-clue, writes `src/cases.json` as `{ "1": TCase[], "2": TCase[] }`. Fails loudly if an image can't be attached. Pure-JS XLSX helpers in `scripts/syncImagesLib.mjs`.
+- `src/sheet.ts` — **parser only** (`parseSheetCsv`): header auto-located, columns matched by prefix; reads the optional `Unlock date` column (carried down per week like Week → `TCase.unlockDate`). **Canonical sheet schema lives here.** Shared by the sync (via `tsx`) and tests. No fetch, no sheet ID.
+- `src/cases.json` — the baked bank, **per year** (generated; committed). `src/App.tsx` imports it, owns the active **year** (localStorage, default `'1'`) + Archives state, resolves the day's case, and guards the empty case.
+- `src/dailyCase.ts` — the deterministic **scheduler**. `buildSchedule(cases, year, today)` replays launch→today: pool = unlocked (unlockDate ≤ day or null) minus used, resetting when exhausted (repeats resume — the "summer/bank" behavior); current week (latest unlock date ≤ today) weighted ×1.5. `caseForDate` = a single day. Same for everyone. With no unlock dates it degrades to a no-repeat cycle. "Day NNN" badge from `LAUNCH_DATE_ET`.
+- `src/useGame.ts` — game-state hook, takes the resolved `tCase`, `year`, and `{ dateStr, archive }`. **Archive mode** = practice replay: separate progress slot, never records stats.
+- `src/GameView.tsx` — UI (header: About / How to Play / Stats / **Year 1 | Year 2** toggle / **Archives**; archive banner + ArchivesModal).
+- `src/storage.ts` — localStorage, **namespaced per year** (`torontordle:y<1|2>:…`): daily + archive progress, aggregate `Stats` (**per-device only**; no server data).
+- `src/share.ts` — Wordle-style share grid (🟩 right / 🟥 miss / ⬛ unused). `src/types.ts` — core types (`TCase`, `CasesByYear`, `Year`).
 
 ## Gotchas
 - All cases (incl. answers) ship in `cases.json` since day-selection is client-side — baking hides the *sheet*, not future answers (that'd need a per-request backend).
@@ -31,4 +32,5 @@ Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med studen
 ## Roadmap
 Planned work lives in the **"Plan for Torontordle"** Google Doc:
 <https://docs.google.com/document/d/1lyxqfa2xXlfUwqiZsCou2rqz6HVxGuqFQTR53-XYco4/edit>
-Covers: Year 1 / Year 2 sheets, progressive weekly unlock, no-repeat scheduling, summer mode, cross-user comparative stats, About section, contact email, and share rebrand.
+Done: About, contact, share rebrand, baked-data architecture, **Year 1/2 switcher, progressive unlock (dormant until dates set), 1.5× current-week weighting, no-repeat scheduling, Archives**.
+Still open: the **`Unlock date` column** needs adding to each year tab (first row of each week block, YYYY-MM-DD; carried down) — until then unlock/weighting are inert. And **cross-user comparative stats** (the "top N% today" banner) still needs a backend.

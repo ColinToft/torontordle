@@ -57,6 +57,10 @@ export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCa
   const idxCategory = findCol(['week', 'category', 'topic'])
   const idxDescription = findColPrefix(['description', 'study note', 'notes'])
   const idxManagement = findColPrefix(['management'])
+  // Optional: the date a week's cases become available. Like Week, it's filled
+  // on the first row of each block and carried down. Absent column / blank →
+  // null (always available), so progressive unlock is dormant until populated.
+  const idxUnlock = findColPrefix(['unlock'])
   if (idxDiagnosis < 0) return []
 
   // Up to 8 clue columns. The clue body header embeds its type in a trailing
@@ -93,14 +97,18 @@ export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCa
   }
 
   const cases: TCase[] = []
-  // The Week column is filled only on the first row of each week's block;
-  // carry the last non-empty value down to the rows beneath it.
+  // The Week and Unlock-date columns are filled only on the first row of each
+  // week's block; carry the last non-empty value down to the rows beneath it.
   let lastCategory = 'General'
+  let lastUnlock: string | null = null
   for (let r = headerRowIdx + 1; r < rows.length; r++) {
     const row = rows[r]
 
     const categoryCell = (idxCategory >= 0 ? row[idxCategory] : '')?.trim()
     if (categoryCell) lastCategory = categoryCell
+
+    const unlockCell = (idxUnlock >= 0 ? row[idxUnlock] : '')?.trim()
+    if (unlockCell) lastUnlock = normalizeDate(unlockCell)
 
     const rawDiagnosis = (row[idxDiagnosis] ?? '').trim()
     if (!rawDiagnosis) continue
@@ -132,9 +140,21 @@ export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCa
 
     if (clues.length === 0) continue
 
-    cases.push({ id: r, diagnosis, aliases, category, clues, description, management })
+    cases.push({ id: r, diagnosis, aliases, category, unlockDate: lastUnlock, clues, description, management })
   }
   return cases
+}
+
+// Normalize an unlock-date cell to YYYY-MM-DD, or null if unparseable/empty.
+// Accepts ISO (2026-09-08) and M/D/YYYY (gviz often renders date cells this way).
+export function normalizeDate(raw: string): string | null {
+  const s = raw.trim()
+  if (!s) return null
+  const iso = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/)
+  if (iso) return `${iso[1]}-${iso[2].padStart(2, '0')}-${iso[3].padStart(2, '0')}`
+  const mdy = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/)
+  if (mdy) return `${mdy[3]}-${mdy[1].padStart(2, '0')}-${mdy[2].padStart(2, '0')}`
+  return null
 }
 
 // Find the real column-title row. The live sheet stacks several preamble

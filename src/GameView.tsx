@@ -8,21 +8,23 @@ import {
   type MouseEvent,
   type ReactNode,
 } from 'react'
-import type { Guess, Stats, TCase } from './types'
+import type { Guess, Stats, TCase, Year } from './types'
 import { dayNumber as computeDayNumber, formatHeaderDate } from './dailyCase'
 import { normalizeAnswer } from './normalize'
 import { referenceHref } from './references'
 import { buildShareText, copyShare } from './share'
 import type { UseGame } from './useGame'
+import type { ArchiveDay, Nav } from './App'
+import { loadDailyProgress } from './storage'
 
 const SERIF = "'Source Serif Pro', Georgia, serif"
 
-export function GameView({ g }: { g: UseGame }) {
+export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
   const [showAbout, setShowAbout] = useState(false)
   const [showHowTo, setShowHowTo] = useState(false)
   const [showStats, setShowStats] = useState(false)
   // Highlight today's bar in the distribution only when the player won today.
-  const todayGuess = g.status === 'won' ? g.guesses.length : null
+  const todayGuess = !g.archive && g.status === 'won' ? g.guesses.length : null
 
   const visibleClues = g.tCase.clues.slice(0, g.cluesRevealed)
   const lockedCount = Math.max(0, g.tCase.clues.length - visibleClues.length)
@@ -39,10 +41,22 @@ export function GameView({ g }: { g: UseGame }) {
       <Header
         day={day}
         headerDate={headerDate}
+        nav={nav}
         onAbout={() => setShowAbout(true)}
         onHowTo={() => setShowHowTo(true)}
         onStats={() => setShowStats(true)}
       />
+
+      {g.archive && (
+        <div style={styles.archiveBanner}>
+          <span className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>
+            Archive · practice — results don't affect your stats
+          </span>
+          <button className="tt-monocaps" style={styles.archiveBack} onClick={nav.exitArchive}>
+            ← Back to today
+          </button>
+        </div>
+      )}
 
       <div className="tt-grid" style={styles.grid}>
         <section className="tt-card" style={styles.casePanel}>
@@ -147,6 +161,15 @@ export function GameView({ g }: { g: UseGame }) {
 
       {showAbout && <AboutModal onClose={() => setShowAbout(false)} />}
       {showHowTo && <HowToModal onClose={() => setShowHowTo(false)} />}
+      {nav.showArchives && (
+        <ArchivesModal
+          year={nav.year}
+          days={nav.archiveDays}
+          activeDate={nav.archiveDate}
+          onPick={nav.onPickArchive}
+          onClose={nav.closeArchives}
+        />
+      )}
       {showStats && (
         <StatsModal
           stats={g.stats}
@@ -166,12 +189,14 @@ export function GameView({ g }: { g: UseGame }) {
 function Header({
   day,
   headerDate,
+  nav,
   onAbout,
   onHowTo,
   onStats,
 }: {
   day: number
   headerDate: string
+  nav: Nav
   onAbout: () => void
   onHowTo: () => void
   onStats: () => void
@@ -183,6 +208,22 @@ function Header({
         <button className="tt-monocaps" style={styles.navBtn} onClick={onAbout}>About</button>
         <button className="tt-monocaps" style={styles.navBtn} onClick={onHowTo}>How to play</button>
         <button className="tt-monocaps" style={styles.navBtn} onClick={onStats}>Stats</button>
+        <span style={styles.yearToggle} role="tablist" aria-label="Choose year">
+          {(['1', '2'] as Year[]).map((y) => (
+            <button
+              key={y}
+              className="tt-monocaps"
+              role="tab"
+              aria-selected={nav.year === y}
+              style={nav.year === y ? styles.yearOn : styles.yearOff}
+              onClick={() => nav.setYear(y)}
+              title={`Year ${y} Daily Diagnosis`}
+            >
+              Year {y}
+            </button>
+          ))}
+        </span>
+        <button className="tt-monocaps" style={styles.navBtn} onClick={nav.openArchives}>Archives</button>
         <span className="tt-date-badge" style={styles.dateBadge}>
           <span className="tt-monocaps" style={{ display: 'block', color: 'rgba(245,241,232,0.7)' }}>{headerDate}</span>
           <span style={{ fontFamily: SERIF, fontSize: 18, color: '#fff' }}>Day {String(day).padStart(3, '0')}</span>
@@ -446,8 +487,11 @@ function ResultBlock({
       </div>
       <p style={{ fontSize: 13, color: 'var(--ink-soft)', marginTop: 6, lineHeight: 1.5 }}>
         {won
-          ? `Solved in ${g.guesses.length} ${g.guesses.length === 1 ? 'guess' : 'guesses'}. Streak: ${g.stats.streak} day${g.stats.streak === 1 ? '' : 's'}.`
-          : 'Better luck tomorrow. New case at midnight ET.'}
+          ? `Solved in ${g.guesses.length} ${g.guesses.length === 1 ? 'guess' : 'guesses'}.` +
+            (g.archive ? '' : ` Streak: ${g.stats.streak} day${g.stats.streak === 1 ? '' : 's'}.`)
+          : g.archive
+            ? 'Practice case — no stats affected.'
+            : 'Better luck tomorrow. New case at midnight ET.'}
       </p>
       {g.tCase.management && (
         <ManagementPanel answer={g.tCase.management} onReveal={() => setMgmtRevealed(true)} />
@@ -561,6 +605,67 @@ function AboutModal({ onClose }: { onClose: () => void }) {
     </Modal>
   )
 }
+
+function ArchivesModal({
+  year,
+  days,
+  activeDate,
+  onPick,
+  onClose,
+}: {
+  year: Year
+  days: ArchiveDay[]
+  activeDate: string | null
+  onPick: (date: string) => void
+  onClose: () => void
+}) {
+  return (
+    <Modal onClose={onClose}>
+      <div style={modal.headerRow}>
+        <h2 style={modal.title}>Archives · Year {year}</h2>
+        <button style={modal.close} onClick={onClose} aria-label="Close">×</button>
+      </div>
+      <p style={{ margin: '4px 0 0', fontSize: 13, color: 'var(--ink-soft)' }}>
+        Replay any past day. Practice only — these don't affect your stats.
+      </p>
+      <hr className="tt-rule" style={{ margin: '12px 0 8px' }} />
+      {days.length === 0 ? (
+        <p style={{ color: 'var(--ink-soft)', fontSize: 14 }}>No past days yet.</p>
+      ) : (
+        <div style={{ maxHeight: '52vh', overflowY: 'auto', display: 'flex', flexDirection: 'column' }}>
+          {days.map((d) => {
+            const prog = loadDailyProgress(year, d.date, true)
+            const mark = prog?.status === 'won' ? '🟩' : prog?.status === 'lost' ? '🟥' : '▢'
+            return (
+              <button
+                key={d.date}
+                onClick={() => onPick(d.date)}
+                style={{ ...archiveRow, ...(activeDate === d.date ? archiveRowActive : null) }}
+              >
+                <span style={{ fontFamily: SERIF, color: 'var(--uoft-navy)', fontWeight: 700, width: 70 }}>
+                  Day {String(d.day).padStart(3, '0')}
+                </span>
+                <span style={{ flex: 1, color: 'var(--ink-soft)', fontSize: 13 }}>{formatHeaderDate(d.date)}</span>
+                <span aria-hidden style={{ fontSize: 13 }}>{mark}</span>
+              </button>
+            )
+          })}
+        </div>
+      )}
+    </Modal>
+  )
+}
+
+const archiveRow: CSSProperties = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: 12,
+  padding: '10px 8px',
+  borderBottom: '1px solid var(--line)',
+  textAlign: 'left',
+  width: '100%',
+}
+const archiveRowActive: CSSProperties = { background: 'rgba(30,58,95,0.06)' }
 
 function HowToModal({ onClose }: { onClose: () => void }) {
   return (
@@ -759,8 +864,24 @@ const styles: Record<string, CSSProperties> = {
     color: 'var(--uoft-navy)',
     letterSpacing: '-0.3px',
   },
-  nav: { display: 'flex', gap: 20, alignItems: 'center' },
+  nav: { display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'flex-end' },
   navBtn: { color: 'var(--ink-soft)', padding: 0 },
+  yearToggle: { display: 'inline-flex', border: '1px solid var(--line)', borderRadius: 4, overflow: 'hidden' },
+  yearOn: { background: 'var(--uoft-navy)', color: '#fff', padding: '4px 10px' },
+  yearOff: { background: 'transparent', color: 'var(--ink-soft)', padding: '4px 10px' },
+  archiveBanner: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 12,
+    flexWrap: 'wrap',
+    margin: '0 0 16px',
+    padding: '10px 14px',
+    background: 'rgba(30,58,95,0.06)',
+    border: '1px solid var(--line)',
+    borderRadius: 4,
+  },
+  archiveBack: { color: 'var(--uoft-navy)', borderBottom: '1px solid var(--uoft-navy)', paddingBottom: 1 },
   dateBadge: {
     background: 'var(--uoft-navy)',
     padding: '6px 14px',
