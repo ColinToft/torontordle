@@ -5,33 +5,28 @@ the top N% today" stat. Free-tier sized (Workers + D1; no Durable Objects, no KV
 
 - `src/index.ts` — the Worker (`/submit`, `/stats`).
 - `schema.sql` — the D1 table.
-- `wrangler.toml` — config. Serves at `api.torontordle.com`.
+- `wrangler.toml` — config.
 
+**Deployed** (cwt1078 account) at <https://torontordle-stats.torontordle.workers.dev>.
 The client talks to it from `src/statsApi.ts`; failures are swallowed, so the
-game works fine whether or not this is deployed.
+game works fine whether or not this is reachable.
 
-## Deploy (one-time)
+> Why `workers.dev` and not `api.torontordle.com`? A Worker custom domain must
+> live in the same account as the `torontordle.com` zone (the *Hatolkarved*
+> account), but this Worker + its D1 are in the *cwt1078* account. The
+> `workers.dev` URL is fine — it's an API, never seen by users (CORS allows the
+> torontordle.com origin).
 
-From this `workers/` directory:
+## Redeploy / maintenance
+
+**Run these from this `workers/` directory** (running `wrangler deploy` from the
+repo root will try to deploy the React app as a Worker — don't):
 
 ```bash
-# 1. Log in (interactive — opens a browser; choose the account that owns
-#    torontordle.com so the api.torontordle.com custom domain can bind).
-npx wrangler login
-
-# 2. Create the D1 database, then paste the printed database_id into wrangler.toml.
-npx wrangler d1 create torontordle-stats
-
-# 3. Apply the schema (remote).
-npx wrangler d1 execute torontordle-stats --remote --file=./schema.sql
-
-# 4. Deploy.
-npx wrangler deploy
+npx wrangler deploy                                              # ship code changes
+npx wrangler d1 execute torontordle-stats --remote --file=./schema.sql   # (re)apply schema
+npx wrangler d1 execute torontordle-stats --remote --command "SELECT COUNT(*) FROM results"
 ```
-
-`api.torontordle.com` is created automatically (proxied DNS + cert) since the
-zone lives in this Cloudflare account. After deploy, the site's stats banner
-lights up on the next visit.
 
 ## Local dev
 

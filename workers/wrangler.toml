@@ -3,14 +3,11 @@ main = "src/index.ts"
 compatibility_date = "2026-06-09"
 workers_dev = true
 
-# Serve at a stable custom domain (the torontordle.com zone is in this account).
-# wrangler creates the proxied DNS record + cert automatically on deploy.
-routes = [
-  { pattern = "api.torontordle.com", custom_domain = true }
-]
+# Served at https://torontordle-stats.torontordle.workers.dev. (A custom domain
+# like api.torontordle.com would require the worker to live in the same account
+# as the torontordle.com zone; this worker + its D1 are in the cwt1078 account.)
 
-# D1 binding. database_id is filled in after `wrangler d1 create torontordle-stats`.
 [[d1_databases]]
 binding = "DB"
 database_name = "torontordle-stats"
-database_id = "PLACEHOLDER_FILLED_AFTER_D1_CREATE"
+database_id = "f1083779-0d6b-48c5-a5c1-59fc19126832"

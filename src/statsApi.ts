@@ -3,7 +3,7 @@ import type { Year } from './types'
 // Community-stats API (Cloudflare Worker). Override for local dev with
 // VITE_STATS_API=http://localhost:8787. All calls fail soft — if the backend
 // is down or not yet deployed, the game is unaffected and no banner shows.
-const API_BASE = (import.meta.env.VITE_STATS_API as string | undefined) ?? 'https://api.torontordle.com'
+const API_BASE = (import.meta.env.VITE_STATS_API as string | undefined) ?? 'https://torontordle-stats.torontordle.workers.dev'
 
 const CID_KEY = 'torontordle:cid'
 function clientId(): string {
