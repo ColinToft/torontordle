@@ -972,7 +972,9 @@
           "type": "",
           "text": "The causative agent is a single-stranded RNA retrovirus"
         }
-      ]
+      ],
+      "description": "HIV is a retrovirus that targets CD4+ T cells via the CD4 receptor, causing progressive immune depletion through direct cytopathic effects, chronic immune activation, and gut mucosal damage. Risk factors include condomless sex, injection drug use, MSM, and perinatal transmission. Diagnosis follows the CDC algorithm: 4th-generation Ag/Ab immunoassay → HIV-1/HIV-2 antibody differentiation assay → HIV RNA (NAT) if discordant. Acute retroviral syndrome (fever, lymphadenopathy, pharyngitis, rash) and AIDS-defining conditions (e.g., Pneumocystis pneumonia, Kaposi sarcoma, oral thrush progressing to esophageal candidiasis) at CD4 <200 cells/µL are highly characteristic.",
+      "management": "HIV management centers on early initiation of antiretroviral therapy (ART), ideally within 7 days of diagnosis. Preferred regimens are integrase inhibitor–based (bictegravir/emtricitabine/TAF or dolutegravir-based combinations), achieving >90% viral suppression. Goals include durable viral suppression, immune restoration, reduced transmission, and opportunistic infection prophylaxis when indicated."
     },
     {
       "id": 30,
@@ -5531,6 +5533,367 @@
       "management": "Avoiding triggers, treating contributing medications, and, in patients with a predominant cardioinhibitory response, permanent pacemaker implantation."
     },
     {
+      "id": 164,
+      "diagnosis": "Mitral Stenosis",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 46-year-old woman presents with progressively worsening exertional dyspnea and reduced exercise tolerance over the past several years."
+        },
+        {
+          "type": "",
+          "text": "She recently developed episodes of palpitations and occasional streaks of blood in her sputum"
+        },
+        {
+          "type": "",
+          "text": "CBC demonstrates mild microcytic anemia. BNP is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals an irregularly irregular pulse and a low-pitched diastolic murmur best heard at the cardiac apex"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates thickened mitral valve leaflets with commissural fusion and a characteristic ‘hockey-stick’ appearance of the anterior leaflet"
+        },
+        {
+          "type": "",
+          "text": "She immigrated from a region where rheumatic fever remains common and recalls a severe febrile illness with migratory joint pain during childhood"
+        }
+      ],
+      "description": "Mitral Stenosis is most commonly caused by rheumatic heart disease and results in impaired blood flow from the left atrium to the left ventricle during diastole. Patients typically present with exertional dyspnea, fatigue, hemoptysis, atrial fibrillation, and symptoms of pulmonary congestion. Physical examination classically reveals a loud first heart sound, opening snap, and low-pitched diastolic rumble heard best at the apex. Echocardiography is the diagnostic test of choice and demonstrates leaflet thickening, commissural fusion, and reduced valve area. Complications include atrial fibrillation, thromboembolism, pulmonary hypertension, and right-sided heart failure.",
+      "management": "Mitral stenosis management includes medical therapy (rate control with beta-blockers, diuretics for congestion, anticoagulation for atrial fibrillation) and intervention for severe MS (MVA ≤1.5 cm²). Percutaneous mitral balloon commissurotomy (PMBC) is first-line for favorable valve morphology; mitral valve surgery (commissurotomy or replacement) is indicated when anatomy is unfavorable or PMBC fails"
+    },
+    {
+      "id": 165,
+      "diagnosis": "Primary Mitral Regurgitation",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman presents with progressive exertional dyspnea and fatigue over the past year. She reports occasional palpitations but denies chest pain"
+        },
+        {
+          "type": "",
+          "text": "She has no history of coronary artery disease"
+        },
+        {
+          "type": "",
+          "text": "BNP is mildly elevated. CBC, electrolytes, and cardiac biomarkers are otherwise normal"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a high-pitched blowing systolic murmur heard best at the cardiac apex and radiating toward the axilla"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates left atrial enlargement, left ventricular dilation, and regurgitant flow from the left ventricle into the left atrium during systole"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography further demonstrates prolapse of a myxomatously degenerated posterior mitral leaflet into the left atrium during systole"
+        }
+      ],
+      "description": "Primary Mitral Regurgitation is caused by intrinsic abnormalities of the mitral valve apparatus, including leaflet degeneration, chordae tendineae rupture, papillary muscle dysfunction, or mitral valve prolapse. During systole, blood regurgitates from the left ventricle into the left atrium, producing chronic volume overload of both chambers. Patients typically present with exertional dyspnea, fatigue, palpitations, or heart failure symptoms. Physical examination reveals a high-pitched holosystolic murmur heard best at the apex and radiating to the axilla. Echocardiography confirms the diagnosis and evaluates severity. Progressive disease can lead to atrial fibrillation, pulmonary hypertension, left ventricular dysfunction, and heart failure.",
+      "management": "Surgical MV repair (preferred over replacement) when severe and symptomatic, or asymptomatic with LVEF ≤60% or LVESD ≥40 mm. No medical therapy reduces MR severity. TEER is reserved for high-surgical-risk patients. Serial echocardiographic surveillance guides intervention timing"
+    },
+    {
+      "id": 166,
+      "diagnosis": "Functional Mitral Regurgitation",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 71-year-old man presents with progressively worsening exertional dyspnea, orthopnea, and lower extremity swelling over the past six months. He now requires three pillows to sleep comfortably"
+        },
+        {
+          "type": "",
+          "text": "He suffered a large anterior myocardial infarction five years ago and has a known left ventricular ejection fraction of 30%"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals elevated jugular venous pressure, bibasilar crackles, and a blowing holosystolic murmur best heard at the cardiac apex"
+        },
+        {
+          "type": "",
+          "text": "BNP is markedly elevated. Cardiac troponin levels are normal"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates severe left ventricular dilation and reduced systolic function"
+        },
+        {
+          "type": "",
+          "text": "The mitral valve leaflets appear structurally normal"
+        }
+      ],
+      "description": "Secondary Mitral Regurgitation occurs when left ventricular dilation or dysfunction prevents normal coaptation of otherwise structurally normal mitral valve leaflets. The condition most commonly develops in patients with ischemic cardiomyopathy or dilated cardiomyopathy. Patients typically present with symptoms of heart failure, including dyspnea, fatigue, orthopnea, and peripheral edema. Physical examination reveals a holosystolic murmur at the apex similar to primary mitral regurgitation. Echocardiography demonstrates left ventricular enlargement, reduced systolic function, and mitral regurgitation with normal valve anatomy.",
+      "management": "Guideline-directed heart failure therapy and, in selected patients, transcatheter or surgical intervention."
+    },
+    {
+      "id": 167,
+      "diagnosis": "Bicuspid Aortic Valve",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 42-year-old man presents with gradually worsening exertional dyspnea and occasional episodes of exertional lightheadedness while jogging. He has no known history of coronary artery disease"
+        },
+        {
+          "type": "",
+          "text": "He reports that his father underwent valve replacement surgery in his fifties and that several family members have been told they have heart murmurs"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a systolic ejection murmur heard best at the right upper sternal border with radiation toward the carotid arteries"
+        },
+        {
+          "type": "",
+          "text": "CBC, electrolytes, renal function, and cardiac biomarkers are normal"
+        },
+        {
+          "type": "",
+          "text": "Transthoracic echocardiography demonstrates calcific aortic valve disease with mild ascending aortic dilation"
+        },
+        {
+          "type": "",
+          "text": "Short-axis echocardiographic imaging reveals a ‘fish-mouth’ opening during systole"
+        }
+      ],
+      "description": "Bicuspid Aortic Valve is the most common congenital cardiac valvular abnormality and results from fusion of two aortic valve cusps during development. Although many patients are asymptomatic early in life, accelerated valve degeneration often leads to premature aortic stenosis or aortic regurgitation. Patients may present with exertional dyspnea, chest pain, syncope, or an incidentally detected murmur. Echocardiography is the diagnostic test of choice and demonstrates a valve with two cusps rather than the normal three. Associated complications include ascending aortic dilation, aortic aneurysm formation, and aortic dissection, necessitating lifelong surveillance.",
+      "management": "lifelong surveillance of both valve function and aortopathy. Valve intervention (SAVR or repair) follows standard AS/AR indications. Aortic replacement is recommended at ≥5.5 cm (or ≥5.0 cm with risk factors like family history of dissection or rapid growth). Concomitant aortic replacement is reasonable at ≥4.5 cm during AVR"
+    },
+    {
+      "id": 168,
+      "diagnosis": "Aortic Stenosis",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 76-year-old man presents with progressive exertional shortness of breath and occasional episodes of lightheadedness while walking uphill. Over the past several months, he has also developed exertional chest discomfort"
+        },
+        {
+          "type": "",
+          "text": "He has a history of hypertension"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a harsh crescendo-decrescendo systolic murmur best heard at the right upper sternal border with radiation to both carotid arteries and pulsus parvus et tardus"
+        },
+        {
+          "type": "",
+          "text": "CBC, electrolytes, renal function, and cardiac biomarkers are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates a heavily calcified aortic valve with restricted leaflet motion and concentric left ventricular hypertrophy"
+        },
+        {
+          "type": "",
+          "text": "Doppler echocardiography demonstrates a markedly reduced aortic valve area"
+        }
+      ],
+      "description": "Aortic Stenosis is a progressive valvular disorder most commonly caused by age-related calcific degeneration or congenital bicuspid aortic valve disease. Progressive narrowing of the valve increases left ventricular afterload, resulting in concentric hypertrophy and reduced cardiac output. Patients classically present with exertional dyspnea, angina, and syncope. Physical examination reveals a harsh crescendo-decrescendo systolic murmur at the right upper sternal border radiating to the carotids and diminished carotid upstrokes. Echocardiography is the diagnostic test of choice and quantifies disease severity. Symptomatic severe disease requires valve replacement because mortality rises substantially once symptoms develop (typically following the \"SAD\" mnemonic of Syncope -> Angina -> Dyspnea (heart failure)).",
+      "management": "AVR for symptomatic severe high-gradient AS as a Class I indication, and for asymptomatic severe AS with LVEF <50%. In asymptomatic severe AS, AVR is reasonable when exercise testing shows decreased tolerance or BP drop ≥10 mmHg, aortic velocity ≥5 m/s, BNP >3× normal, or velocity increase ≥0.3 m/s/year. SAVR is preferred for patients <65 years; TAVR for those ≥80 years; shared decision-making guides ages 65–80. Asymptomatic patients not meeting intervention criteria require echocardiographic surveillance every 6–12 months."
+    },
+    {
+      "id": 169,
+      "diagnosis": "Aortic Regurgitation",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 54-year-old man presents with progressively worsening exertional dyspnea and awareness of a forceful heartbeat, particularly when lying in bed at night."
+        },
+        {
+          "type": "",
+          "text": "He has a history of a congenital bicuspid aortic valve and was recently noted to have dilation of the ascending aorta"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a wide pulse pressure and a high-pitched decrescendo diastolic murmur heard best along the left sternal border with the patient leaning forward"
+        },
+        {
+          "type": "",
+          "text": "CBC, electrolytes, renal function, and cardiac biomarkers are normal"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates left ventricular dilation with eccentric hypertrophy and retrograde flow"
+        },
+        {
+          "type": "",
+          "text": "Color Doppler echocardiography demonstrates a broad diastolic regurgitant jet extending from the aorta into the left ventricle"
+        }
+      ],
+      "description": "Aortic Regurgitation occurs when the aortic valve fails to close completely during diastole, allowing blood to flow from the aorta back into the left ventricle. Common causes include bicuspid aortic valve disease, aortic root dilation, infective endocarditis, rheumatic heart disease, and aortic dissection. Chronic regurgitation produces progressive left ventricular volume overload, resulting in eccentric hypertrophy and ventricular dilation. Patients may present with exertional dyspnea, palpitations, and heart failure symptoms. Physical examination classically reveals a high-pitched blowing diastolic murmur and widened pulse pressure. Echocardiography is the primary diagnostic modality and guides management and timing of valve intervention.",
+      "management": "Surgical aortic valve replacement (SAVR) as the definitive treatment for chronic severe aortic regurgitation. Key indications include: symptomatic severe AR regardless of LV function (Class I), asymptomatic severe AR with LVEF ≤55% (Class I), and severe LV enlargement (LVESD >50 mm) with normal LVEF (Class IIa). Medical therapy with afterload reduction (ACE inhibitors, ARBs, or dihydropyridine CCBs) is reserved for hypertension management or when surgery is contraindicated. TAVI should not be performed in surgical candidates with isolated severe AR."
+    },
+    {
+      "id": 170,
+      "diagnosis": "Primary Tricuspid Regurgitation",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 41-year-old woman presents with progressive fatigue, abdominal fullness, and worsening lower extremity swelling over the past several months."
+        },
+        {
+          "type": "",
+          "text": "She notes increasing discomfort from abdominal distension but minimal shortness of breath"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals elevated jugular venous pressure, hepatomegaly, and a blowing holosystolic murmur best heard along the left lower sternal border. The murmur becomes louder during inspiration"
+        },
+        {
+          "type": "",
+          "text": "Liver enzymes are mildly elevated, while BNP is modestly increased. Renal function is normal"
+        },
+        {
+          "type": "",
+          "text": "“Echocardiography demonstrates a flail tricuspid leaflet with destruction of valvular tissue"
+        },
+        {
+          "type": "",
+          "text": "She has a history of infective endocarditis related to prior intravenous drug use"
+        }
+      ],
+      "description": "Primary Tricuspid Regurgitation results from intrinsic abnormalities of the tricuspid valve apparatus, including infective endocarditis, rheumatic heart disease, congenital abnormalities, trauma, carcinoid heart disease, or leaflet degeneration. During systole, blood regurgitates from the right ventricle into the right atrium, producing right-sided volume overload. Patients typically present with fatigue, peripheral edema, ascites, hepatomegaly, and symptoms of systemic venous congestion. Physical examination reveals a holosystolic murmur at the left lower sternal border that intensifies with inspiration (Carvallo sign). Echocardiography confirms the diagnosis and identifies the underlying structural lesion.",
+      "management": "Severe disease may require surgical or transcatheter intervention."
+    },
+    {
+      "id": 171,
+      "diagnosis": "Functional Tricuspid Regurgitation",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 72-year-old woman presents with worsening fatigue, abdominal distension, and progressive lower extremity edema over the past year. She also reports increasing shortness of breath when climbing stairs"
+        },
+        {
+          "type": "",
+          "text": "She has a history of group 2 pulmonary hypertension"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals elevated jugular venous pressure with prominent CV waves, hepatomegaly, ascites, and a holosystolic murmur at the left lower sternal border that increases with inspiration"
+        },
+        {
+          "type": "",
+          "text": "BNP is elevated, and liver enzymes demonstrate a mild cholestatic pattern"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates marked right atrial enlargement, right ventricular dilation, and elevated pulmonary artery systolic pressure"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography further reveals structurally unaffected tricuspid leaflets"
+        }
+      ],
+      "description": "Functional Tricuspid Regurgitation is the most common form of tricuspid regurgitation and occurs when right ventricular enlargement or tricuspid annular dilation prevents normal leaflet coaptation. Common causes include pulmonary hypertension, left-sided heart disease, right ventricular dysfunction, and chronic atrial fibrillation. Patients typically present with symptoms of systemic venous congestion, including edema, ascites, hepatomegaly, and fatigue. Physical examination reveals elevated jugular venous pressure and a holosystolic murmur that increases with inspiration. Echocardiography demonstrates severe regurgitation despite structurally normal valve leaflets.",
+      "management": "Management focuses on treatment of the underlying cardiac or pulmonary disorder and, in selected patients, valve intervention."
+    },
+    {
+      "id": 172,
+      "diagnosis": "Tetralogy of Fallot (TOF)",
+      "aliases": [
+        "TOF",
+        "Tetralogy of Fallot"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "An 8-month-old infant is brought to clinic because of episodes of sudden bluish discoloration of the lips and fingers, particularly when crying or feeding."
+        },
+        {
+          "type": "",
+          "text": "The infant was has demonstrated poor weight gain since birth"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals central cyanosis and a harsh systolic ejection murmur heard best at the left upper sternal border"
+        },
+        {
+          "type": "",
+          "text": "CBC demonstrates an elevated hemoglobin concentration and hematocrit"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/tetralogy-of-fallot-tof-clue5.jpg",
+          "detail": "CXR demonstrates a \"boot-shaped\" heart with an upturned cardiac apex and concave pulmonary arterial segment. Retrived from https://doi.org/10.53347/rID-8049"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography confirms the presence of a ventricular septal defect, overriding aorta, right ventricular outflow tract obstruction, and right ventricular hypertrophy"
+        }
+      ],
+      "description": "Tetralogy of Fallot is the most common cyanotic congenital heart disease beyond infancy and consists of four abnormalities: ventricular septal defect, overriding aorta, right ventricular outflow tract obstruction, and right ventricular hypertrophy. Right ventricular outflow obstruction promotes right-to-left shunting across the ventricular septal defect, resulting in cyanosis. Patients typically present with cyanosis, poor feeding, failure to thrive, and hypercyanotic (“tet”) spells (squatting increases SVR reducing right to left shunting. Laboratory findings may reveal secondary polycythemia. Chest radiography classically demonstrates a boot-shaped heart. Definitive diagnosis is established by echocardiography.",
+      "management": "Surgical repair during infancy. Lifelong surveillance for pulmonary regurgitation and RV dysfunction with pulmonary valve replacement when indicated"
+    },
+    {
+      "id": 173,
+      "diagnosis": "Transposition of the Great Arteries (TGA)",
+      "aliases": [
+        "TGA",
+        "Transposition of the Great Arteries"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "Two hours after birth, a full-term newborn develops profound cyanosis and tachypnea. Oxygen supplementation produces minimal improvement in oxygen saturation"
+        },
+        {
+          "type": "",
+          "text": "The infant was born after an uncomplicated pregnancy and delivery. Prenatal ultrasounds were reportedly normal"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals marked central cyanosis with minimal respiratory distress. Cardiac examination is otherwise relatively unremarkable, and no harsh murmur is appreciated"
+        },
+        {
+          "type": "",
+          "text": "Arterial blood gas analysis demonstrates severe hypoxemia despite administration of 100% oxygen"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/transposition-of-the-great-arteries-tga-clue5.jpg",
+          "detail": "CXR shows a narrow superior mediastinum and a globular cardiac silhouette resembling an \"egg-on-a-string\"",
+          "reference": "https://doi.org/10.53347/rID-43062"
+        },
+        {
+          "type": "",
+          "text": "Administration of prostaglandin E1 improves oxygenation by maintaining ductal patency"
+        }
+      ],
+      "description": "Transposition of the Great Arteries is a cyanotic congenital heart defect in which the aorta arises from the right ventricle and the pulmonary artery arises from the left ventricle. This creates parallel rather than series circulations, making survival dependent on mixing of oxygenated and deoxygenated blood through a patent ductus arteriosus, atrial septal defect, ventricular septal defect, or patent foramen ovale. Newborns present with profound cyanosis shortly after birth that does not improve with supplemental oxygen. Chest radiography may demonstrate an egg-on-a-string appearance.",
+      "management": "Immediate management includes Alprostadil infusion (PGE1) to maintain ductal patency, followed by definitive surgical correction with an arterial switch procedure."
+    },
+    {
       "id": 193,
       "diagnosis": "Pleural Effusion",
       "aliases": [],
@@ -6086,7 +6449,42 @@
           "text": "Serum testing is positive for antibodies against presynaptic voltage-gated calcium channels (VGCCs)."
         }
       ],
-      "management": "3,4-diaminopyridine (DAP), treat underlying malignancy"
+      "description": "Lambert-Eaton myasthenic syndrome (LEMS) is a rare autoimmune neuromuscular junction disorder, in which antibodies target presynaptic voltage-gated calcium channels, reducing acetylcholine release. Patients typically present with progressive proximal muscle weakness, hyporeflexia/areflexia, and autonomic symptoms such as dry mouth, constipation, and erectile dysfunction. About 60% of cases occur in people who have an underlying malignancy, most commonly small-cell lung cancer. Diagnosis is supported by anti-VGCC antibodies and electrophysiologic studies showing an incremental response with repetitive nerve stimulation. A characteristic finding of LEMS is improvement in strength and reflexes after brief exercise (post-exercise facilitation). Management includes treatment of the underlying malignancy when present and symptomatic therapy with amifampridine (3,4-diaminopyridine), pyridiostigmine, and immunomodulatory therapy in refractory cases.",
+      "management": "treat underlying malignancy, amifampridine (3,4-diaminopyridine), pyridiostigmine, immomodulators if refractory to other treatment"
+    },
+    {
+      "id": 2,
+      "diagnosis": "Pyloric Stenosis",
+      "aliases": [],
+      "category": "Neonate/Infant",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 6-week-old infant presents with progressive, non-bilious vomiting occurring shortly after feeds."
+        },
+        {
+          "type": "",
+          "text": "Parents report poor weight gain and signs of dehydration despite continued feeding."
+        },
+        {
+          "type": "",
+          "text": "Physical exam reveals a palpable “olive-like” mass in the right upper abdomen."
+        },
+        {
+          "type": "",
+          "text": "Labs show hypochloremic, hypokalemic metabolic alkalosis."
+        },
+        {
+          "type": "",
+          "text": "Abdominal ultrasound demonstrates a thickened pyloric muscle with an elongated pyloric channel.",
+          "detail": "Abdominal ultrasound shows an elongated pyloric canal with increased pyloric muscle thickness. https://radiopaedia.org/cases/congenital-hypertrophic-pyloric-stenosis-3"
+        },
+        {
+          "type": "",
+          "text": "Pathology shows hypertrophy and hyperplasia of the pyloric circular smooth muscle causing gastric outlet obstruction."
+        }
+      ]
     }
   ]
 }
