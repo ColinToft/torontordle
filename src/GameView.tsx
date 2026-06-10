@@ -203,6 +203,7 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
           winRate={g.winRate}
           todayGuess={todayGuess}
           community={community}
+          archive={g.archive}
           percentile={percentile}
           onReset={() => {
             g.resetEverything()
@@ -731,6 +732,7 @@ function StatsModal({
   winRate,
   todayGuess,
   community,
+  archive,
   percentile,
   onReset,
   onClose,
@@ -738,8 +740,9 @@ function StatsModal({
   stats: Stats
   winRate: number
   todayGuess?: number | null // 1-based guess count of today's win, to highlight its bar
-  community?: CaseStats | null // how everyone did on today's case (null until fetched)
-  percentile?: number | null // "top N% of players today" band (needs ≥5 players)
+  community?: CaseStats | null // everyone's guesses on the shown case/day (null until fetched)
+  archive?: boolean // shown day is an archived past day (changes "today" → "that day")
+  percentile?: number | null // "top N% of players today" band
   onReset: () => void
   onClose: () => void
 }) {
@@ -773,7 +776,7 @@ function StatsModal({
         <div className="tt-section-title" style={statBox.distTitle}>Guess distribution</div>
         {playerCount > 0 && (
           <p style={statBox.distCaption}>
-            {playerCount} {playerCount === 1 ? 'player' : 'players'} this day
+            {playerCount} {playerCount === 1 ? 'player' : 'players'} {archive ? 'that day' : 'today'}
             {community!.lost > 0 ? ` · ${community!.lost} didn’t solve it` : ''}
           </p>
         )}

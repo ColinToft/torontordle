@@ -147,7 +147,14 @@ async function main() {
       if (drawingTarget) {
         const drawingFile = basename(drawingTarget)
         const anchors = parseDrawingAnchors(read(`xl/drawings/${drawingFile}`)) as { row: number; col: number; embed: string }[]
-        const drawingRels = parseRels(read(`xl/drawings/_rels/${drawingFile}.rels`)) as Record<string, string>
+        // A drawing made only of shapes/textboxes (no embedded images) has no
+        // relationships file — its anchors carry no <a:blip>, so parseDrawingAnchors
+        // returns none and the loop below is a no-op. Default to {} rather than
+        // crashing on the missing file.
+        const drawingRelsPath = `xl/drawings/_rels/${drawingFile}.rels`
+        const drawingRels = (
+          existsSync(join(unzipDir, drawingRelsPath)) ? parseRels(read(drawingRelsPath)) : {}
+        ) as Record<string, string>
         for (const a of anchors) {
           const diagnosis = String((values[a.row] ?? [])[diagCol] ?? '').trim()
           const clueNumber = parseClueNumber(header[a.col])
@@ -156,7 +163,15 @@ async function main() {
             console.warn(`  skip image at (row ${a.row}, col ${a.col}): diagnosis=${diagnosis || '∅'} clue=${clueNumber ?? '∅'}`)
             continue
           }
-          const mediaFile = basename(drawingRels[a.embed])
+          const target = drawingRels[a.embed]
+          if (!target) {
+            // An image anchor whose media relationship is missing — don't silently
+            // drop a real clue image; surface it.
+            throw new Error(
+              `Year ${year}: image at (row ${a.row}, col ${a.col}) references relationship ${a.embed}, which has no target in ${drawingRelsPath}`,
+            )
+          }
+          const mediaFile = basename(target)
           const srcBuf = readFileSync(join(unzipDir, 'xl', 'media', mediaFile))
           const { buffer, ext } = await compressImage(srcBuf, mediaFile.split('.').pop()!)
           const fileName = filePrefix + imageFileName(diagnosis, clueNumber, ext)
