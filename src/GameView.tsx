@@ -24,8 +24,10 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
   const [showAbout, setShowAbout] = useState(false)
   const [showHowTo, setShowHowTo] = useState(false)
   const [showStats, setShowStats] = useState(false)
-  // Highlight today's bar in the distribution only when the player won today.
+  // Highlight today's bar in the distribution: the win-row when solved, or the
+  // "didn't solve" row when the player lost today.
   const todayGuess = !g.archive && g.status === 'won' ? g.guesses.length : null
+  const todayLost = !g.archive && g.status === 'lost'
 
   // The day's community stats (everyone's guesses on the shown case/day) — drives
   // the Guess Distribution chart and the "top N%" band. Fetched whenever Stats is
@@ -202,6 +204,7 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
           stats={g.stats}
           winRate={g.winRate}
           todayGuess={todayGuess}
+          todayLost={todayLost}
           community={community}
           archive={g.archive}
           percentile={percentile}
@@ -731,6 +734,7 @@ function StatsModal({
   stats,
   winRate,
   todayGuess,
+  todayLost,
   community,
   archive,
   percentile,
@@ -740,6 +744,7 @@ function StatsModal({
   stats: Stats
   winRate: number
   todayGuess?: number | null // 1-based guess count of today's win, to highlight its bar
+  todayLost?: boolean // player lost today, to highlight the "didn't solve" row
   community?: CaseStats | null // everyone's guesses on the shown case/day (null until fetched)
   archive?: boolean // shown day is an archived past day (changes "today" → "that day")
   percentile?: number | null // "top N% of players today" band
@@ -755,7 +760,14 @@ function StatsModal({
   // The Guess Distribution is everyone's guesses on the shown case/day (not this
   // device's history). Until the day's community data loads it shows empty rows.
   const counts = community?.byGuess ?? [0, 0, 0, 0, 0, 0]
+  const lost = community?.lost ?? 0
   const playerCount = community?.total ?? 0
+  // Rows 1–6 are wins by guess count; append a "✗" row for non-solvers so a day
+  // where everyone lost still shows a bar instead of looking empty.
+  const distRows: { label: string; count: number; highlight?: boolean; fill?: string }[] = counts.map(
+    (count, i) => ({ label: String(i + 1), count, highlight: todayGuess === i + 1 }),
+  )
+  if (lost > 0) distRows.push({ label: '✗', count: lost, highlight: Boolean(todayLost), fill: LOST_FILL })
   return (
     <Modal onClose={onClose}>
       <div style={modal.headerRow}>
@@ -777,10 +789,10 @@ function StatsModal({
         {playerCount > 0 && (
           <p style={statBox.distCaption}>
             {playerCount} {playerCount === 1 ? 'player' : 'players'} {archive ? 'that day' : 'today'}
-            {community!.lost > 0 ? ` · ${community!.lost} didn’t solve it` : ''}
+            {lost > 0 ? ` · ${lost} didn’t solve it` : ''}
           </p>
         )}
-        <DistributionBars counts={counts} highlight={todayGuess} fillBg={TEAL_GRAD} />
+        <DistributionBars rows={distRows} fillBg={TEAL_GRAD} />
       </div>
 
       {percentile != null && (
@@ -799,30 +811,29 @@ function StatsModal({
   )
 }
 
-// A 1–6 guess-count distribution rendered as horizontal bars. Used for both the
-// player's all-time distribution (teal) and today's community distribution
-// (navy). `highlight` outlines one row (the player's result for today's case).
+// A labelled distribution rendered as horizontal bars. Rows carry their own
+// label/count; `highlight` outlines one row (the player's result), and a row
+// can override its fill (e.g. the "didn't solve" row).
 function DistributionBars({
-  counts,
-  highlight,
+  rows,
   fillBg,
 }: {
-  counts: number[]
-  highlight?: number | null
+  rows: { label: string; count: number; highlight?: boolean; fill?: string }[]
   fillBg: string
 }) {
-  const maxBar = Math.max(1, ...counts)
+  const maxBar = Math.max(1, ...rows.map((r) => r.count))
   return (
     <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 7 }}>
-      {counts.map((n, i) => {
-        const pct = (n / maxBar) * 100
-        const isHi = highlight === i + 1
+      {rows.map((r, i) => {
+        const pct = (r.count / maxBar) * 100
         return (
           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <span style={isHi ? statBox.rowNumToday : statBox.rowNum}>{i + 1}</span>
+            <span style={r.highlight ? statBox.rowNumToday : statBox.rowNum}>{r.label}</span>
             <div style={statBox.track}>
-              {n > 0 && (
-                <div style={{ ...statBox.fill, width: `${Math.max(pct, 12)}%`, background: fillBg }}>{n}</div>
+              {r.count > 0 && (
+                <div style={{ ...statBox.fill, width: `${Math.max(pct, 12)}%`, background: r.fill ?? fillBg }}>
+                  {r.count}
+                </div>
               )}
             </div>
           </div>
@@ -834,6 +845,7 @@ function DistributionBars({
 
 const TEAL = '#0f766e'
 const TEAL_GRAD = `linear-gradient(90deg, #14b8a6, ${TEAL})`
+const LOST_FILL = 'linear-gradient(90deg, #b08a8a, #8b5a5a)' // muted clay for "didn't solve"
 const statBox: Record<string, CSSProperties> = {
   card: {
     textAlign: 'center',
