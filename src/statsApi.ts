@@ -62,11 +62,11 @@ export async function fetchCaseStats(p: { year: Year; date: string; diagnosis: s
 }
 
 // The tightest "Top N%" band the player qualifies for (10/25/50), or null when
-// there isn't enough data or they didn't place in the top half. Lower guesses
-// are better; any win beats any loss. Players who *did better* than you are the
-// only ones ahead, so your band = (#better / total).
+// they didn't place in the top half. Lower guesses are better; any win beats any
+// loss. Players who *did better* than you are the only ones ahead, so your band
+// = (#better / total).
 export function percentileBand(stats: CaseStats, mine: { won: boolean; guesses: number }): number | null {
-  if (stats.total < 5) return null // too few players to be meaningful
+  if (stats.total < 1) return null // nobody recorded yet
   const better = mine.won
     ? stats.byGuess.slice(0, Math.max(0, mine.guesses - 1)).reduce((a, b) => a + b, 0)
     : stats.byGuess.reduce((a, b) => a + b, 0) // a loss: every solver did better

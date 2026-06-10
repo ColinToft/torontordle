@@ -16,7 +16,7 @@ import { buildShareText, copyShare } from './share'
 import type { UseGame } from './useGame'
 import type { ArchiveDay, Nav } from './App'
 import { loadDailyProgress } from './storage'
-import { fetchCaseStats, percentileBand } from './statsApi'
+import { fetchCaseStats, percentileBand, type CaseStats } from './statsApi'
 
 const SERIF = "'Source Serif Pro', Georgia, serif"
 
@@ -27,19 +27,26 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
   // Highlight today's bar in the distribution only when the player won today.
   const todayGuess = !g.archive && g.status === 'won' ? g.guesses.length : null
 
-  // Community "top N%" band — fetched when the player opens Stats after a
-  // finished daily game. Fails soft (stays null) if the backend isn't reachable.
+  // The day's community stats (everyone's guesses on the shown case/day) — drives
+  // the Guess Distribution chart and the "top N%" band. Fetched whenever Stats is
+  // opened. Fails soft (stays null) if the backend isn't reachable.
+  const [community, setCommunity] = useState<CaseStats | null>(null)
   const [percentile, setPercentile] = useState<number | null>(null)
   const openStats = () => {
-    setPercentile(null) // clear any stale value from a previous open
+    setCommunity(null) // clear any stale values from a previous open
+    setPercentile(null)
     setShowStats(true)
   }
   useEffect(() => {
-    if (!showStats || g.archive || g.status === 'playing') return
+    if (!showStats) return
     let cancelled = false
     fetchCaseStats({ year: nav.year, date: g.dateStr, diagnosis: g.tCase.diagnosis }).then((s) => {
       if (cancelled || !s) return
-      setPercentile(percentileBand(s, { won: g.status === 'won', guesses: g.guesses.length }))
+      setCommunity(s)
+      // The "top N%" band only applies to a finished, non-practice daily game.
+      if (!g.archive && g.status !== 'playing') {
+        setPercentile(percentileBand(s, { won: g.status === 'won', guesses: g.guesses.length }))
+      }
     })
     return () => {
       cancelled = true
@@ -195,6 +202,7 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
           stats={g.stats}
           winRate={g.winRate}
           todayGuess={todayGuess}
+          community={community}
           percentile={percentile}
           onReset={() => {
             g.resetEverything()
@@ -722,6 +730,7 @@ function StatsModal({
   stats,
   winRate,
   todayGuess,
+  community,
   percentile,
   onReset,
   onClose,
@@ -729,18 +738,21 @@ function StatsModal({
   stats: Stats
   winRate: number
   todayGuess?: number | null // 1-based guess count of today's win, to highlight its bar
-  percentile?: number | null // "top N% of players today" — needs the (not-yet-built) backend
+  community?: CaseStats | null // how everyone did on today's case (null until fetched)
+  percentile?: number | null // "top N% of players today" band (needs ≥5 players)
   onReset: () => void
   onClose: () => void
 }) {
-  const distribution = stats.distribution
-  const maxBar = Math.max(1, ...distribution)
   const cards: [string, string | number][] = [
     ['Games played', stats.played],
     ['Win rate', `${winRate}%`],
     ['Current streak', stats.streak],
     ['Longest streak', stats.maxStreak],
   ]
+  // The Guess Distribution is everyone's guesses on the shown case/day (not this
+  // device's history). Until the day's community data loads it shows empty rows.
+  const counts = community?.byGuess ?? [0, 0, 0, 0, 0, 0]
+  const playerCount = community?.total ?? 0
   return (
     <Modal onClose={onClose}>
       <div style={modal.headerRow}>
@@ -758,25 +770,14 @@ function StatsModal({
       </div>
 
       <div style={statBox.distPanel}>
-        <div className="tt-section-title" style={{ textAlign: 'center', color: 'var(--uoft-navy)', fontSize: 13 }}>
-          Guess distribution
-        </div>
-        <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 7 }}>
-          {distribution.map((n, i) => {
-            const pct = (n / maxBar) * 100
-            const isToday = todayGuess === i + 1
-            return (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <span style={isToday ? statBox.rowNumToday : statBox.rowNum}>{i + 1}</span>
-                <div style={statBox.track}>
-                  {n > 0 && (
-                    <div style={{ ...statBox.fill, width: `${Math.max(pct, 12)}%` }}>{n}</div>
-                  )}
-                </div>
-              </div>
-            )
-          })}
-        </div>
+        <div className="tt-section-title" style={statBox.distTitle}>Guess distribution</div>
+        {playerCount > 0 && (
+          <p style={statBox.distCaption}>
+            {playerCount} {playerCount === 1 ? 'player' : 'players'} this day
+            {community!.lost > 0 ? ` · ${community!.lost} didn’t solve it` : ''}
+          </p>
+        )}
+        <DistributionBars counts={counts} highlight={todayGuess} fillBg={TEAL_GRAD} />
       </div>
 
       {percentile != null && (
@@ -795,7 +796,41 @@ function StatsModal({
   )
 }
 
+// A 1–6 guess-count distribution rendered as horizontal bars. Used for both the
+// player's all-time distribution (teal) and today's community distribution
+// (navy). `highlight` outlines one row (the player's result for today's case).
+function DistributionBars({
+  counts,
+  highlight,
+  fillBg,
+}: {
+  counts: number[]
+  highlight?: number | null
+  fillBg: string
+}) {
+  const maxBar = Math.max(1, ...counts)
+  return (
+    <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 7 }}>
+      {counts.map((n, i) => {
+        const pct = (n / maxBar) * 100
+        const isHi = highlight === i + 1
+        return (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <span style={isHi ? statBox.rowNumToday : statBox.rowNum}>{i + 1}</span>
+            <div style={statBox.track}>
+              {n > 0 && (
+                <div style={{ ...statBox.fill, width: `${Math.max(pct, 12)}%`, background: fillBg }}>{n}</div>
+              )}
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
 const TEAL = '#0f766e'
+const TEAL_GRAD = `linear-gradient(90deg, #14b8a6, ${TEAL})`
 const statBox: Record<string, CSSProperties> = {
   card: {
     textAlign: 'center',
@@ -813,6 +848,8 @@ const statBox: Record<string, CSSProperties> = {
     borderRadius: 10,
     background: 'var(--uoft-paper)',
   },
+  distTitle: { textAlign: 'center', color: 'var(--uoft-navy)', fontSize: 13 },
+  distCaption: { textAlign: 'center', color: 'var(--ink-soft)', fontSize: 12, margin: '6px 0 0' },
   rowNum: { width: 18, textAlign: 'center', fontSize: 13, color: 'var(--ink-soft)' },
   rowNumToday: {
     width: 18,
