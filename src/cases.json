@@ -897,7 +897,7 @@
           "text": "",
           "image": "case-images/trisomy-13-patau-syndrome-clue6.jpg",
           "detail": "Karyotype analysis demonstrates an additional copy of chromosome 13 resulting from meiotic nondisjunction",
-          "reference": "https://en.wikipedia.org/wiki/Patau_syndrome"
+          "reference": "https://en.wikipedia.org/wiki"
         }
       ],
       "description": "Trisomy 13 is a severe chromosomal disorder caused by an extra copy of chromosome 13, most commonly due to meiotic nondisjunction. Risk increases with advanced maternal age. Affected infants typically present with profound developmental impairment and multiple congenital anomalies including holoprosencephaly, cleft lip and palate, microphthalmia, postaxial polydactyly, and congenital heart defects. Prenatal ultrasound often identifies major structural abnormalities. Diagnosis is confirmed by karyotyping. Holoprosencephaly is one of the most characteristic findings and results from failed forebrain division during embryogenesis.",
@@ -1041,12 +1041,13 @@
         {
           "type": "",
           "text": "",
-          "image": "case-images/pjp-pneumocystis-jirovecii-pneumonia-clue5.jpg"
+          "image": "case-images/pjp-pneumocystis-jirovecii-pneumonia-clue5.jpg",
+          "detail": "High-resolution CT demonstrates ground-glass opacities and reticular opacities with septal thickening",
+          "reference": "https://doi.org/10.53347/rID-1901"
         },
         {
           "type": "",
-          "text": "Lung biopsy reveals silver stain positive cysts",
-          "detail": "Imaging patterns of Pneumocystis jirovecii pneumonia in HIV-positive and renal transplant patients – a multicentre study. Swiss Med Wkly [Internet]. 2019 Oct. 3 [cited 2026 June. 1];149(3940):w20130. Available from: https://smw.ch/index.php/smw/article/view/2680"
+          "text": "Lung biopsy reveals silver stain positive cysts"
         }
       ],
       "description": "Pneumocystitis Jirovecii Pneumonia is a serious fungal lung infection that almost exclusively infects immunocompromised patients. Causes of immunosuppression include HIV/Aids, Immunosuppressive medications, Chemotherapy etc.",
@@ -1117,11 +1118,12 @@
           "type": "",
           "text": "",
           "image": "case-images/severe-combined-immunodeficiency-scid-clue5.jpg",
-          "detail": "Absent thymic shadow noted in neonate CXR. Nickels A, Boyce T, Joshi A ...\nAbsence of the Thymic Shadow in a Neonate Suspected of Primary Immunodeficiency: Not a Straightforward Clinical Sign of Immunodeficiency\nThe Journal of Pediatrics, 2014; 166, 203-203.e1"
+          "detail": "Absent thymic shadow noted in neonate CXR",
+          "reference": "27655432"
         },
         {
           "type": "",
-          "text": "Absent germinal centers in lymph node follicles, very low T-cell receptor excision circles on neonatal screening,"
+          "text": "Absent germinal centers in lymph node follicles, very low T-cell receptor excision circles on neonatal screening"
         }
       ],
       "description": "Severe combined immunodeficiency is a life-threatening primary immunodeficiency caused by defective T-cell development, often with impaired B-cell and NK-cell function depending on subtype. Affected infants develop severe recurrent bacterial, viral, fungal, and opportunistic infections early in life. Classic clues include chronic diarrhea, failure to thrive, persistent thrush, recurrent pneumonia, absent lymphoid tissue, absent thymic shadow, lymphopenia, and low TRECs on screening.",
@@ -1197,7 +1199,7 @@
           "text": "",
           "image": "case-images/meningioma-clue6.jpg",
           "detail": "Surgical resection demonstrates a whorled pattern of spindle-shaped cells with numerous psammoma bodies",
-          "reference": "https://www.webpathology.com/images/neuropath/non-glial-tumors/meningiomas/33236"
+          "reference": "https://www.webpathology.com"
         }
       ],
       "description": "Meningioma is the most common primary benign intracranial tumor and arises from arachnoid cap cells of the meninges. It is more common in women and is associated with loss of the NF2 tumor suppressor gene on chromosome 22. Patients typically present with slowly progressive headaches, seizures, focal neurologic deficits, or personality changes due to mass effect. MRI classically demonstrates a dural-based extra-axial mass with homogeneous enhancement and a dural tail sign. Pathology reveals whorled spindle cells and psammoma bodies.",
@@ -1238,7 +1240,7 @@
           "text": "",
           "image": "case-images/invasive-ductal-carcinoma-clue6.jpg",
           "detail": "Core needle biopsy demonstrates malignant gland-forming cells infiltrating through the basement membrane within a dense desmoplastic stroma. Additionally (not pictured), immunohistochemistry demonstrates estrogen receptor positivity, progesterone receptor positivity, and HER2 negativity",
-          "reference": "https://pathology.jhu.edu/breast/types-of-breast-cancer/"
+          "reference": "https://pathology.jhu.edu"
         }
       ],
       "description": "Invasive Ductal Carcinoma is the most common type of breast cancer and arises from epithelial cells of the mammary ducts that invade beyond the basement membrane into surrounding breast tissue. Risk factors include increasing age, family history, BRCA mutations, prolonged estrogen exposure, obesity, and nulliparity. Patients typically present with a painless, firm, irregular breast mass, sometimes associated with skin dimpling or nipple retraction. Mammography classically demonstrates a spiculated mass with possible microcalcifications. Diagnosis is confirmed by biopsy and receptor testing (ER, PR, HER2).",
@@ -1512,7 +1514,7 @@
           "text": "",
           "image": "case-images/small-cell-lung-cancer-sclc-clue6.jpg",
           "detail": "Endobronchial biopsy reveals sheets of small blue cells with scant cytoplasm, nuclear molding, and numerous mitotic figures",
-          "reference": "https://www.pathologyoutlines.com/topic/lungtumorsmallcell.html"
+          "reference": "https://www.pathologyoutlines.com"
         }
       ],
       "description": "Small Cell Lung Cancer is a highly aggressive neuroendocrine lung malignancy that is strongly associated with cigarette smoking. It typically arises centrally near the hilum and often presents with cough, weight loss, and early metastatic disease. Laboratory abnormalities frequently result from paraneoplastic syndromes, including SIADH causing hyponatremia and Lambert-Eaton myasthenic syndrome causing proximal muscle weakness. Imaging usually demonstrates a central hilar mass with mediastinal involvement. Pathology reveals small blue cells with nuclear molding, high mitotic activity, and expression of neuroendocrine markers such as chromogranin and synaptophysin.",
@@ -1599,7 +1601,7 @@
           "text": "",
           "image": "case-images/squamous-cell-carcinoma-nsclc-clue6.jpg",
           "detail": "Bronchoscopic biopsy reveals malignant squamous cells with keratinization and intercellular bridges. Nuclear atypia and prominent mitosis is seen",
-          "reference": "https://www.pathologyoutlines.com/topic/lungtumorscc.html"
+          "reference": "https://www.pathologyoutlines.com"
         }
       ],
       "description": "Squamous Cell Carcinoma of the Lung is a smoking-associated non-small cell lung cancer that typically arises centrally within the major bronchi. Patients commonly present with cough, hemoptysis, dyspnea, weight loss, and symptoms related to airway obstruction. Laboratory findings may demonstrate hypercalcemia caused by paraneoplastic secretion of parathyroid hormone-related peptide (PTHrP). Imaging often reveals a centrally located hilar mass with cavitation. Histopathology classically demonstrates keratinization, keratin pearl formation, and intercellular bridges. Diagnosis is confirmed by biopsy and staging imaging.",
@@ -2043,7 +2045,7 @@
         {
           "type": "",
           "text": "Caused by human papillomavirus infection of keratinocytes.",
-          "detail": "https://www.webpathology.com/images/dermpath/non-neoplastic-dermpath---ii/skin-infections---viral/41291"
+          "detail": "https://www.webpathology.com/images"
         }
       ],
       "description": "Common warts are benign HPV-related epidermal proliferations.",
@@ -2080,7 +2082,7 @@
         {
           "type": "",
           "text": "Caused by a poxvirus.",
-          "detail": "https://www.bangkoksafeclinic.com/molluscum-contagiosum-virus/"
+          "detail": "https://www.bangkoksafeclinic.com"
         }
       ],
       "description": "Molluscum is a contagious viral infection that is usually self-limited.",
@@ -2154,7 +2156,7 @@
         {
           "type": "",
           "text": "Nail pitting is present.",
-          "detail": "https://www.webmd.com/skin-problems-and-treatments/psoriasis/plaque-psoriasis-facts"
+          "detail": "https://www.webmd.com/skin-problems-and-treatments"
         }
       ],
       "description": "Plaque psoriasis is an immune-mediated papulosquamous disorder.",
@@ -2191,7 +2193,7 @@
         {
           "type": "",
           "text": "Recent group A streptococcal infection is identified.",
-          "detail": "https://www.google.com/search?sca_esv=5f30eb1ccc1d36a0&sxsrf=ANbL-n4fn1Z0ADzIerfxEfOiIEEEObXiCg:1780511168789&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6YKj3ieLLpE5n_AQ7knvny0NyDG6rqjTFTpNuplrR82Edc8Z3ZXmfwsujo4PqE9HmY_3FGXBDmIQ62S9YsNZ-LGPLQHfEaTM7f8Q1kc89fGZJHCBEAZ3aUuqsE5hpBWMptfEVdjhOMjuYuAeHQFkrqoS_ybA&q=guttate+psoriasis&sa=X&ved=2ahUKEwiOzO_92OuUAxV2oSsGHQTlOsoQtKgLegQIHxAB&biw=1920&bih=1080&dpr=1#sv=CAMSVhoyKhBlLUJQY2taUXdxaUVXbF9NMg5CUGNrWlF3cWlFV2xfTToOUjFKMnNoNVI5RjNhN00gBCocCgZtb3NhaWMSEGUtQlBja1pRd3FpRVdsX00YADABGAcgkJy-kA5KCBABGAEgASgB"
+          "detail": "Image link"
         }
       ],
       "description": "Guttate psoriasis is an acute psoriasis variant often triggered by streptococcal infection.",
@@ -2228,7 +2230,7 @@
         {
           "type": "",
           "text": "KOH shows spaghetti and meatballs.",
-          "detail": "https://www.nhs.uk/conditions/pityriasis-versicolor/"
+          "detail": "https://www.nhs.uk"
         }
       ],
       "description": "Pityriasis versicolor is caused by Malassezia yeast affecting pigmentation.",
@@ -2265,7 +2267,7 @@
         {
           "type": "",
           "text": "The initial larger lesion is called a herald patch.",
-          "detail": "https://hellopediatrics.com/understanding-skin-conditions-pityriasis-rosea-vs-tinea-versicolor/"
+          "detail": "https://hellopediatrics.com/"
         }
       ],
       "description": "Pityriasis rosea is a self-limited papulosquamous eruption, often post-viral.",
@@ -2302,7 +2304,7 @@
         {
           "type": "",
           "text": "Pathogenesis involves follicular hyperkeratinization, sebum, Cutibacterium acnes, and inflammation.",
-          "detail": "https://en.wikipedia.org/wiki/Acne"
+          "detail": "https://en.wikipedia.org/wiki/"
         }
       ],
       "description": "Acne is a disorder of the pilosebaceous unit.",
@@ -2376,7 +2378,7 @@
         {
           "type": "",
           "text": "Associated with Malassezia and improves with antifungal shampoo.",
-          "detail": "https://my.clevelandclinic.org/health/diseases/14403-seborrheic-dermatitis"
+          "detail": "https://my.clevelandclinic.org/health/"
         }
       ],
       "description": "Seborrheic dermatitis is a chronic inflammatory reaction in sebaceous areas.",
@@ -2413,7 +2415,7 @@
         {
           "type": "",
           "text": "Wickham striae are present.",
-          "detail": "Oral Lichen Planus: Symptoms, Causes & Treatment"
+          "detail": "Image link"
         }
       ],
       "description": "Lichen planus is an inflammatory condition classically described by the 6 Ps.",
@@ -2450,7 +2452,7 @@
         {
           "type": "",
           "text": "It is a premalignant keratinocyte lesion that can progress to SCC.",
-          "detail": "Actinic keratosis - Wikipedia"
+          "detail": "image link"
         }
       ],
       "description": "Actinic keratosis represents UV-induced keratinocyte atypia confined to the epidermis.",
@@ -2524,7 +2526,7 @@
         {
           "type": "",
           "text": "Most commonly caused by HPV types 6 and 11.",
-          "detail": "Condylomata Acuminata (Genital Warts) | Treatment & Management | Point of Care - StatPearls"
+          "detail": "Image Link"
         }
       ],
       "description": "Condyloma acuminata are benign HPV-induced genital warts.",
@@ -2598,7 +2600,7 @@
         {
           "type": "",
           "text": "No scale, crust, or bruising remains after lesions resolve.",
-          "detail": "https://en.wikipedia.org/wiki/Hives"
+          "detail": "Image Link"
         }
       ],
       "description": "Urticaria is mast-cell mediated dermal edema.",
@@ -2635,7 +2637,7 @@
         {
           "type": "",
           "text": "High-risk sites include periocular, airway/beard distribution, large facial segmental, or ulcerated lesions.",
-          "detail": "https://en.wikipedia.org/wiki/Hemangioma"
+          "detail": "Image Link"
         }
       ],
       "description": "Infantile hemangiomas are benign vascular tumors with proliferative and involution phases.",
@@ -2672,7 +2674,7 @@
         {
           "type": "",
           "text": "Multiple benign papillary proliferations are present.",
-          "detail": "https://dermlab.ca/cosmetic/cherry-angiomas/"
+          "detail": "Image Link"
         }
       ],
       "description": "Cherry angiomas are common benign vascular papules.",
@@ -2713,7 +2715,7 @@
         {
           "type": "",
           "text": "Epidermal detachment involves less than 10% body surface area.",
-          "detail": "https://my.clevelandclinic.org/health/diseases/17656-stevens-johnson-syndrome"
+          "detail": "Image Link"
         }
       ],
       "description": "SJS is a severe mucocutaneous reaction with keratinocyte necrosis.",
@@ -2750,7 +2752,7 @@
         {
           "type": "",
           "text": "Epidermal detachment involves more than 30% body surface area.",
-          "detail": "https://dermnetnz.org/cme/emergencies/toxic-epidermal-necrolysis"
+          "detail": "Image Link"
         }
       ],
       "description": "TEN is the most severe end of the SJS/TEN spectrum and has high mortality.",
@@ -2827,7 +2829,7 @@
         {
           "type": "",
           "text": "Autoantibodies target desmogleins, causing intraepidermal acantholysis.",
-          "detail": "https://www.nhs.uk/conditions/pemphigus-vulgaris/"
+          "detail": "Image link"
         }
       ],
       "description": "Pemphigus vulgaris causes fragile intraepidermal blisters with prominent mucosal involvement.",
@@ -2864,7 +2866,7 @@
         {
           "type": "",
           "text": "Autoantibodies target hemidesmosomes at the basement membrane.",
-          "detail": "https://mdsearchlight.com/skin-problems-and-treatments/bullous-pemphigoid/"
+          "detail": "Image Link"
         }
       ],
       "description": "Bullous pemphigoid is an autoimmune subepidermal blistering disease of older adults.",
@@ -2901,7 +2903,7 @@
         {
           "type": "",
           "text": "Wood's lamp accentuates chalk-white depigmentation.",
-          "detail": "https://my.clevelandclinic.org/health/diseases/12419-vitiligo"
+          "detail": "Image Link"
         }
       ],
       "description": "Vitiligo is autoimmune loss of melanocytes.",
@@ -2938,7 +2940,7 @@
         {
           "type": "",
           "text": "Miniaturized hairs are seen without scarring or inflammation.",
-          "detail": "https://my.clevelandclinic.org/health/diseases/24515-male-pattern-baldness-androgenic-alopecia"
+          "detail": "Image Link"
         }
       ],
       "description": "Androgenic alopecia is nonscarring patterned hair loss driven by genetic and androgen sensitivity.",
@@ -3015,7 +3017,7 @@
         {
           "type": "",
           "text": "The pattern is central and centrifugal with scarring.",
-          "detail": "https://scarringalopecia.org/central-centrifugal-cicatricial-alopecia"
+          "detail": "Image Link"
         }
       ],
       "description": "CCCA is a scarring alopecia that begins at the vertex and spreads outward.",
@@ -3052,7 +3054,7 @@
         {
           "type": "",
           "text": "Staphylococcus aureus is often implicated.",
-          "detail": "https://my.clevelandclinic.org/health/diseases/22784-folliculitis-decalvans"
+          "detail": "Image Link"
         }
       ],
       "description": "Folliculitis decalvans is a neutrophilic scarring alopecia with follicular pustules and tufting.",
@@ -3089,7 +3091,7 @@
         {
           "type": "",
           "text": "Exclamation mark hairs are seen at the edge of the patch.",
-          "detail": "https://en.wikipedia.org/wiki/Alopecia_areata"
+          "detail": "Image Link"
         }
       ],
       "description": "Alopecia areata is autoimmune nonscarring hair loss targeting hair follicles.",
@@ -3129,7 +3131,7 @@
         {
           "type": "",
           "text": "PCR or viral swab can confirm HSV-1 or HSV-2.",
-          "detail": "https://en.wikipedia.org/wiki/Herpes"
+          "detail": "Image Link"
         }
       ],
       "description": "HSV causes recurrent painful vesicular eruptions after latency in sensory ganglia.",
