@@ -5896,6 +5896,716 @@
       "management": "Immediate management includes Alprostadil infusion (PGE1) to maintain ductal patency, followed by definitive surgical correction with an arterial switch procedure."
     },
     {
+      "id": 174,
+      "diagnosis": "Truncus Arteriosus (PTA)",
+      "aliases": [
+        "PTA",
+        "Truncus Arteriosus"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 3-week-old infant is brought to clinic because of poor feeding, excessive sweating during feeds, and failure to gain weight. Parents also note persistent bluish discoloration of the lips"
+        },
+        {
+          "type": "",
+          "text": "The infant was born at term but has developed progressively worsening tachypnea since the first week of life"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals central cyanosis, tachypnea, bounding peripheral pulses, and a hyperdynamic precordium"
+        },
+        {
+          "type": "",
+          "text": "Pulse oximetry demonstrates persistent hypoxemia. CBC demonstrates mild erythrocytosis"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates cardiomegaly and increased pulmonary vascular markings. Echocardiography reveals a large ventricular septal defect"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates a single arterial vessel arising from the heart that gives rise to the systemic, pulmonary, and coronary circulations"
+        }
+      ],
+      "description": "Truncus Arteriosus is a rare cyanotic congenital heart defect caused by failure of embryologic truncal septation. Instead of separate aortic and pulmonary outflow tracts, a single arterial trunk supplies the systemic, pulmonary, and coronary circulations. A large ventricular septal defect is almost always present. Patients typically present during infancy with cyanosis, tachypnea, poor feeding, diaphoresis with feeding, and signs of congestive heart failure due to pulmonary overcirculation. Chest radiography often demonstrates cardiomegaly and increased pulmonary vascularity. Echocardiography confirms the diagnosis.",
+      "management": "Truncus arteriosus requires early surgical repair, typically within the first few weeks of life. The procedure involves separating the single truncal vessel into the aorta and pulmonary artery, closing the ventricular septal defect (VSD) with a patch, and establishing right ventricle-to-pulmonary artery continuity using a valved conduit (Rastelli procedure). Lifelong follow-up is essential for conduit replacement."
+    },
+    {
+      "id": 175,
+      "diagnosis": "Eisenmenger Syndrome",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 28-year-old woman presents with progressive exertional dyspnea, fatigue, and decreasing exercise tolerance."
+        },
+        {
+          "type": "",
+          "text": "Over the past year she has noticed bluish discoloration of her lips and \"ballooning\" of her fingertips during physical activity"
+        },
+        {
+          "type": "",
+          "text": "She was diagnosed with a congenital heart defect during childhood but never underwent corrective surgery because she remained relatively asymptomatic"
+        },
+        {
+          "type": "",
+          "text": "CBC demonstrates a hemoglobin concentration of 205 g/L and a hematocrit of 63%"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates severe pulmonary hypertension and a large ventricular septal defect"
+        },
+        {
+          "type": "",
+          "text": "Cardiac catheterization reveals pulmonary vascular resistance exceeding systemic vascular resistance"
+        }
+      ],
+      "description": "Eisenmenger Syndrome is a late complication of unrepaired congenital cardiac shunts such as ventricular septal defects, atrial septal defects, or patent ductus arteriosus. Chronic left-to-right shunting causes progressive pulmonary vascular remodeling and pulmonary hypertension. As pulmonary vascular resistance rises above systemic vascular resistance, shunt reversal occurs, resulting in right-to-left flow and systemic cyanosis. Patients present with dyspnea, fatigue, cyanosis, clubbing, and secondary erythrocytosis. Echocardiography and cardiac catheterization establish the diagnosis. Once Eisenmenger physiology develops, closure of the original shunt is generally contraindicated because the pulmonary vascular disease is irreversible.",
+      "management": "Eisenmenger's syndrome management focuses on supportive care and pulmonary vasodilator therapy, as surgical correction is contraindicated once irreversible pulmonary hypertension develops. Key strategies include pulmonary arterial hypertension-targeted therapies (e.g., bosentan, phosphodiesterase-5 inhibitors, prostanoids), avoidance of dehydration and pregnancy, phlebotomy for hyperviscosity symptoms, and consideration of heart-lung transplantation for refractory cases."
+    },
+    {
+      "id": 176,
+      "diagnosis": "Tricuspid Atresia",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 2-day-old newborn develops progressive cyanosis shortly after birth. Despite supplemental oxygen, oxygen saturation remains persistently low"
+        },
+        {
+          "type": "",
+          "text": "The infant initially appeared well but developed increasing difficulty feeding and tachypnea during the first 48 hours of life"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals central cyanosis and a single prominent second heart sound. A holosystolic murmur is heard along the lower left sternal border"
+        },
+        {
+          "type": "",
+          "text": "Arterial blood gas analysis demonstrates persistent hypoxemia. CBC is otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates a relatively small right ventricle and decreased pulmonary vascular markings. ECG reveals left axis deviation"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates no direct blood flow between the right atrium and right ventricle"
+        }
+      ],
+      "description": "Tricuspid Atresia is a congenital cardiac malformation in which the tricuspid valve fails to develop, preventing blood flow from the right atrium to the right ventricle. Survival requires an atrial septal defect or patent foramen ovale to allow blood to reach the left side of the heart, and often a ventricular septal defect or patent ductus arteriosus to provide pulmonary blood flow. Patients typically present shortly after birth with cyanosis and hypoxemia. Echocardiography confirms the diagnosis by demonstrating absence of the tricuspid valve and a hypoplastic right ventricle.",
+      "management": "Definitive treatment involves staged surgical palliation, often culminating in a Fontan procedure."
+    },
+    {
+      "id": 177,
+      "diagnosis": "Total Anomalous Pulmonary Venous Connection (TAPVC/TAPVR)",
+      "aliases": [
+        "TAPVC",
+        "TAPVR",
+        "Total Anomalous Pulmonary Venous Connection"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 5-day-old newborn is brought to the emergency department because of progressive cyanosis and difficulty feeding. Parents report rapid breathing that has worsened since birth"
+        },
+        {
+          "type": "",
+          "text": "The infant was born at term without complications but has remained persistently cyanotic despite oxygen therapy"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals central cyanosis, tachypnea, and a fixed split second heart sound. A mild systolic flow murmur is present"
+        },
+        {
+          "type": "",
+          "text": "Arterial blood gas analysis demonstrates persistent hypoxemia despite administration of 100% oxygen"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/total-anomalous-pulmonary-venous-connection-tapvc-tapvr-clue5.jpg",
+          "detail": "CXR reveals cardiomegaly and a \"snowman\" appearance formed by the dialted vertical vein, brachiocephalic vein, and SVC forming the head and an enlarged right atrium forming the body",
+          "reference": "https://doi.org/10.53347/rID-16080"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates absence of any direct pulmonary venous connection to the left atrium"
+        }
+      ],
+      "description": "Total Anomalous Pulmonary Venous Connection is a cyanotic congenital heart defect in which none of the pulmonary veins connect normally to the left atrium. Instead, oxygenated pulmonary venous blood returns to the systemic venous circulation, resulting in complete mixing of oxygenated and deoxygenated blood. Survival requires an atrial septal defect or patent foramen ovale to allow blood to reach the left side of the heart. Patients typically present with cyanosis, tachypnea, feeding difficulties, and hypoxemia. Echocardiography confirms the diagnosis. The supracardiac form classically produces a snowman appearance on chest radiography.",
+      "management": "Total anomalous pulmonary venous return (TAPVR) requires urgent surgical repair, often within the neonatal period. Surgery involves redirecting the pulmonary veins to drain into the left atrium by creating an anastomosis between the pulmonary venous confluence and the left atrium, ligating the anomalous connection, and closing the associated atrial septal defect. Obstructed TAPVR is a surgical emergency."
+    },
+    {
+      "id": 178,
+      "diagnosis": "Ebstein's Anomaly",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 19-year-old woman presents with progressive exertional dyspnea and intermittent episodes of palpitations. She reports several episodes of near-syncope during physical activity over the past year"
+        },
+        {
+          "type": "",
+          "text": "Review of prenatal records reveals maternal treatment with lithium during early pregnancy"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals mild cyanosis, elevated jugular venous pressure, and a holosystolic murmur heard best along the left lower sternal border"
+        },
+        {
+          "type": "",
+          "text": "CBC demonstrates mild erythrocytosis. Electrolytes and cardiac biomarkers are normal"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography reveals severe tricuspid regurgitation and marked enlargement of the right atrium"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography further reveals The septal leaflet of the tricuspid valve is displaced toward the cardiac apex"
+        }
+      ],
+      "description": "Ebstein's Anomaly is a rare congenital heart defect characterized by downward displacement of the tricuspid valve into the right ventricle. This creates an “atrialized” portion of the right ventricle and often results in severe tricuspid regurgitation. Patients may present with cyanosis, exertional dyspnea, right-sided heart failure, or supraventricular arrhythmias and WPW Syndrome. The condition is classically associated with maternal lithium exposure during pregnancy. Right atrial enlargement is common, and many patients have an associated atrial septal defect or patent foramen ovale that permits right-to-left shunting. Echocardiography establishes the diagnosis.",
+      "management": "Management ranges from observation to surgical repair depending on severity."
+    },
+    {
+      "id": 179,
+      "diagnosis": "Pulmonary Stenosis",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "16-year-old boy presents with progressive exertional dyspnea and reduced exercise tolerance. He occasionally experiences lightheadedness during competitive sports but has never lost consciousness"
+        },
+        {
+          "type": "",
+          "text": "A heart murmur was first detected during childhood, but he has never undergone cardiac intervention"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a harsh systolic ejection murmur best heard at the left upper sternal border. A palpable right ventricular heave is present"
+        },
+        {
+          "type": "",
+          "text": "CBC, electrolytes, and cardiac biomarkers are normal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/pulmonary-stenosis-clue5.jpg",
+          "detail": "ECG reveals RAD, dominant R wave in V1, dominant S wave in V6 (poor R wave progression), and ST depression and T-wave inversion in V1-4",
+          "reference": "ECG link"
+        },
+        {
+          "type": "",
+          "text": "Doppler echocardiography demonstrates a doming pulmonary valve with a markedly elevated transvalvular systolic gradient"
+        }
+      ],
+      "description": "Pulmonary Stenosis is most commonly a congenital valvular abnormality that causes obstruction of blood flow from the right ventricle into the pulmonary artery. Progressive obstruction leads to right ventricular pressure overload and hypertrophy. Mild disease may remain asymptomatic, whereas severe stenosis can cause exertional dyspnea, fatigue, chest discomfort, or syncope. Physical examination classically reveals a systolic ejection murmur at the left upper sternal border and a right ventricular heave. Echocardiography is the diagnostic test of choice and quantifies severity by measuring transvalvular gradients. It is ccommonly associated with Noonan Syndrome.",
+      "management": "Severe disease is often treated with balloon valvuloplasty."
+    },
+    {
+      "id": 180,
+      "diagnosis": "Pulmonary Atresia",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 12-hour-old newborn develops profound cyanosis shortly after birth. Despite supplemental oxygen, oxygen saturation remains critically low"
+        },
+        {
+          "type": "",
+          "text": "The infant initially appeared stable after delivery but deteriorated rapidly during the first day of life"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals marked central cyanosis and tachypnea. No significant systolic ejection murmur is appreciated"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates a hypoplastic pulmonary outflow tract and a patent ductus arteriosus supplying pulmonary blood flow"
+        },
+        {
+          "type": "",
+          "text": "No antegrade flow can be demonstrated across the pulmonary valve on Doppler imaging"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates complete absence of a functional pulmonary valve opening with no direct blood flow from the right ventricle into the pulmonary artery"
+        }
+      ],
+      "description": "Pulmonary Atresia is a severe cyanotic congenital heart defect in which the pulmonary valve fails to form properly, preventing blood from flowing from the right ventricle into the pulmonary artery. Pulmonary blood flow therefore depends on a patent ductus arteriosus and other intracardiac shunts. Newborns typically present within hours of birth with profound cyanosis and hypoxemia that respond poorly to oxygen therapy. Echocardiography confirms the diagnosis by demonstrating absent antegrade pulmonary flow. Immediate administration of Alprostadil is lifesaving.",
+      "management": "Definitive treatment requires staged surgical or catheter-based intervention."
+    },
+    {
+      "id": 181,
+      "diagnosis": "Acute Pericarditis",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 27-year-old man presents with sharp central chest pain that began two days ago. The pain worsens with deep inspiration and coughing and has become increasingly uncomfortable when lying flat"
+        },
+        {
+          "type": "",
+          "text": "He reports a febrile upper respiratory tract infection approximately one week before symptom onset"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals that the chest pain improves significantly when the patient sits up and leans forward. Cardiac auscultation identifies a leathery sound along the left sternal border"
+        },
+        {
+          "type": "",
+          "text": "CRP and ESR are elevated. High-sensitivity troponin is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/acute-pericarditis-clue5.jpg",
+          "detail": "ECG demonstrates widespread ST elevation and PR depression with reciprocal ST depression and PR elevation in V1 and aVR"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates a small circumferential pericardial effusion"
+        }
+      ],
+      "description": "Acute Pericarditis is most commonly caused by viral infection but may also result from autoimmune disease, malignancy, uremia, myocardial infarction, or medication exposure. Patients classically present with pleuritic chest pain that worsens when supine and improves when sitting forward. Physical examination may reveal a pericardial friction rub, one of the most specific findings. Inflammatory markers are typically elevated, and mild troponin elevation may occur. Electrocardiography classically demonstrates diffuse ST-segment elevation with PR-segment depression. Echocardiography is performed to evaluate for associated pericardial effusion and cardiac tamponade.",
+      "management": "Acute pericarditis is primarily managed with NSAIDs (e.g., ibuprofen or aspirin) combined with colchicine, which reduces recurrence risk. Activity restriction is recommended until symptom resolution. Corticosteroids are reserved for contraindications to first-line therapy or refractory cases, used at low doses. Treatment of underlying etiology is essential. Hospitalization is indicated for high-risk features."
+    },
+    {
+      "id": 182,
+      "diagnosis": "Pericardial Effusion",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman presents with progressive shortness of breath and fatigue over several weeks. She reports increasing exercise intolerance but minimal chest pain"
+        },
+        {
+          "type": "",
+          "text": "She has metastatic breast cancer and recently completed a course of radiation therapy"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals tachycardia and distant heart sounds. Lung examination is clear"
+        },
+        {
+          "type": "",
+          "text": "CBC demonstrates mild anemia. Cardiac biomarkers are normal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/pericardial-effusion-clue5.jpg",
+          "detail": "CXR shows increased pulmonary vasculature markings and cardiac silhouetting with an increased cardiothoracic ratio. A \"globular\" shaped heart is noted",
+          "reference": "https://doi.org/10.53347/rID-158486"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates a large echo-free space circumferentially surrounding the heart within the pericardial sac"
+        }
+      ],
+      "description": "Pericardial Effusion occurs when fluid accumulates between the visceral and parietal layers of the pericardium. Causes include malignancy, infection, autoimmune disease, hypothyroidism, uremia, trauma, and post-cardiac injury syndromes. Small effusions may be asymptomatic, whereas larger effusions can cause dyspnea, fatigue, chest discomfort, and hemodynamic compromise. Physical examination may reveal distant heart sounds and tachycardia. Chest radiography may demonstrate a globular “water-bottle” cardiac silhouette when the effusion is large. Echocardiography is the diagnostic test of choice and determines size, location, and whether tamponade physiology is present.",
+      "management": "Management depends on the underlying cause and hemodynamic significance."
+    },
+    {
+      "id": 183,
+      "diagnosis": "Cardiac Tamponade",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 63-year-old woman presents to the emergency department with rapidly worsening shortness of breath, profound fatigue, and lightheadedness."
+        },
+        {
+          "type": "",
+          "text": "Over the past several hours she has become increasingly weak and unable to walk short distances"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals tachycardia, hypotension, elevated jugular venous pressure, and markedly diminished heart sounds"
+        },
+        {
+          "type": "",
+          "text": "Serum lactate is elevated. Cardiac biomarkers are normal"
+        },
+        {
+          "type": "",
+          "text": "During inspiration, systolic blood pressure falls by 16 mmHg"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates a large circumferential pericardial effusion"
+        }
+      ],
+      "description": "Cardiac Tamponade occurs when pericardial pressure rises sufficiently to impair cardiac filling, reducing stroke volume and cardiac output. Causes include malignancy, trauma, uremia, infection, and progression of a pericardial effusion. Patients typically present with dyspnea, tachycardia, hypotension, and signs of obstructive shock. Physical examination classically demonstrates elevated jugular venous pressure, muffled heart sounds, and hypotension (Beck triad). Echocardiography is the diagnostic test of choice and may reveal right atrial or right ventricular diastolic collapse.",
+      "management": "Emergent pericardiocentesis is the definitive treatment and can be lifesaving."
+    },
+    {
+      "id": 184,
+      "diagnosis": "Atrial Septal Defect (ASD)",
+      "aliases": [
+        "ASD",
+        "Atrial Septal Defect"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 29-year-old woman presents with gradually worsening exertional dyspnea and reduced exercise tolerance. She reports becoming unusually fatigued during activities that were previously easy"
+        },
+        {
+          "type": "",
+          "text": "She has been told since childhood that she has a heart murmur but has never undergone cardiac evaluation"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a systolic ejection murmur at the left upper sternal border and a widely split second heart sound that does not vary with respiration"
+        },
+        {
+          "type": "",
+          "text": "CBC and metabolic studies are normal. BNP is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates enlargement of the right atrium and right ventricle with evidence of increased pulmonary blood flow"
+        },
+        {
+          "type": "",
+          "text": "Color Doppler echocardiography demonstrates left-to-right shunting through a defect in the interatrial septum"
+        }
+      ],
+      "description": "Atrial Septal Defect is a common congenital heart defect in which blood flows from the higher-pressure left atrium to the right atrium. There are 3 types: sinus venosus defect, secundum ASD, and primum ASD. Chronic left-to-right shunting results in increased pulmonary blood flow and progressive right atrial and right ventricular volume overload. Many patients remain asymptomatic until adulthood, when they develop exertional dyspnea, fatigue, atrial arrhythmias, or pulmonary hypertension. Physical examination classically reveals a fixed split S2 and a systolic flow murmur caused by increased flow across the pulmonary valve. Echocardiography confirms the diagnosis.",
+      "management": "Significant defects are often closed to prevent long-term complications such as atrial fibrillation and Eisenmenger syndrome."
+    },
+    {
+      "id": 185,
+      "diagnosis": "Patent Foramen Ovale (PFO)",
+      "aliases": [
+        "PFO",
+        "Patent Foramen Ovale"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old woman presents after experiencing a transient episode of right arm weakness and expressive aphasia that resolved completely within 30 minutes."
+        },
+        {
+          "type": "",
+          "text": "She recently completed a long-haul international flight and reports mild calf discomfort several days before the neurologic event"
+        },
+        {
+          "type": "",
+          "text": "Neurologic examination is normal. Cardiovascular examination reveals no murmurs, and there are no signs of structural heart disease"
+        },
+        {
+          "type": "",
+          "text": "Routine laboratory testing, thrombophilia screening, and vascular imaging are unrevealing"
+        },
+        {
+          "type": "",
+          "text": "Brain MRI confirms a small embolic infarction. Transthoracic echocardiography demonstrates normal ventricular structure and function"
+        },
+        {
+          "type": "",
+          "text": "During an agitated saline bubble study, microbubbles appear in the left atrium within three cardiac cycles after injection and become more prominent during a Valsalva maneuver"
+        }
+      ],
+      "description": "Patent Foramen Ovale is a common congenital cardiac finding resulting from failure of the foramen ovale to seal completely after birth. Most individuals remain asymptomatic throughout life. However, transient increases in right atrial pressure may permit right-to-left shunting, allowing venous thrombi to bypass the pulmonary circulation and enter the systemic arterial system. This mechanism can result in paradoxical embolism and cryptogenic stroke. Diagnosis is typically established using contrast echocardiography with an agitated saline (“bubble”) study.",
+      "management": "Management depends on clinical context and may include antithrombotic therapy or transcatheter closure in selected patients with cryptogenic stroke."
+    },
+    {
+      "id": 186,
+      "diagnosis": "Ventricular Septal Defect (VSD)",
+      "aliases": [
+        "VSD",
+        "Ventricular Septal Defect"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 4-month-old infant is brought to clinic because of poor weight gain, rapid breathing during feeds, and excessive sweating while feeding."
+        },
+        {
+          "type": "",
+          "text": "A heart murmur was first detected during a newborn examination, but the infant initially appeared otherwise healthy"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals tachypnea, mild hepatomegaly, and a harsh pansystolic murmur heard best at the left lower sternal border"
+        },
+        {
+          "type": "",
+          "text": "CBC and metabolic studies are normal. BNP is mildly elevated."
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates cardiomegaly and increased pulmonary vascular markings. Echocardiography reveals left atrial and left ventricular enlargement"
+        },
+        {
+          "type": "",
+          "text": "Color Doppler echocardiography demonstrates systolic left-to-right blood flow"
+        }
+      ],
+      "description": "Ventricular Septal Defect is the most common congenital heart defect and results from incomplete formation of the interventricular septum. Because left ventricular pressure exceeds right ventricular pressure, blood initially shunts from left to right, producing increased pulmonary blood flow and volume overload of the left heart. Small defects may be asymptomatic and close spontaneously, whereas larger defects can cause heart failure, poor feeding, growth failure, and pulmonary hypertension. Physical examination classically reveals a harsh holosystolic murmur at the left lower sternal border. Echocardiography confirms the diagnosis. Untreated large defects may eventually progress to Eisenmenger Syndrome. There are several types of VSD: Perimembranous, muscular, inlet, and outlet.",
+      "management": "Small, asymptomatic VSDs often close spontaneously and require only monitoring. Large, hemodynamically significant VSDs causing heart failure or failure to thrive require surgical patch closure, typically by 3–6 months of age to prevent irreversible pulmonary vascular disease. Medical therapy (diuretics, nutritional support) bridges to surgery."
+    },
+    {
+      "id": 187,
+      "diagnosis": "Patent Ductus Arteriosus (PDA)",
+      "aliases": [
+        "PDA",
+        "Patent Ductus Arteriosus"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 6-month-old infant is brought to clinic because of poor weight gain and increasing shortness of breath during feeding. Parents report frequent sweating and fatigue while feeding"
+        },
+        {
+          "type": "",
+          "text": "The infant was born prematurely at 29 weeks gestation and required a prolonged neonatal intensive care stay"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals bounding peripheral pulses and a continuous murmur heard beneath the left clavicle"
+        },
+        {
+          "type": "",
+          "text": "CBC and metabolic studies are normal. BNP is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates cardiomegaly and increased pulmonary vascular markings. Echocardiography reveals left atrial and left ventricular enlargement"
+        },
+        {
+          "type": "",
+          "text": "Color Doppler echocardiography demonstrates continuous blood flow from the descending aorta into the pulmonary artery throughout both systole and diastole"
+        }
+      ],
+      "description": "Patent Ductus Arteriosus occurs when the fetal ductus arteriosus fails to close after birth. Because aortic pressure exceeds pulmonary artery pressure, blood flows continuously from the aorta into the pulmonary circulation, producing a left-to-right shunt. Small PDAs may be asymptomatic, whereas larger lesions can cause heart failure, poor feeding, and failure to thrive. Physical examination classically reveals a continuous “machinery” murmur and bounding pulses caused by a widened pulse pressure. Echocardiography confirms the diagnosis. Long-standing untreated PDA may progress to pulmonary hypertension and Eisenmenger syndrome.",
+      "management": "Closure may occur pharmacologically in premature infants or through transcatheter or surgical intervention."
+    },
+    {
+      "id": 188,
+      "diagnosis": "Coarctation of the Aorta (CoA)",
+      "aliases": [
+        "CoA",
+        "Coarctation of the Aorta"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 17-year-old male presents with exertional headaches, occasional epistaxis, and fatigue in his legs while playing soccer."
+        },
+        {
+          "type": "",
+          "text": "He was noted to have elevated blood pressure during a routine sports physical, despite being otherwise healthy"
+        },
+        {
+          "type": "",
+          "text": "Blood pressure is 165/90 mmHg in the arms and 105/70 mmHg in the legs. Femoral pulses are delayed compared with radial pulses"
+        },
+        {
+          "type": "",
+          "text": "CBC, renal function, thyroid studies, and electrolytes are normal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/coarctation-of-the-aorta-coa-clue5.jpg",
+          "detail": "CXR demonstrates inferior rib notching along multiple ribs and a \"figure 3\" sign",
+          "reference": "https://doi.org/10.53347/rID-6277"
+        },
+        {
+          "type": "",
+          "text": "CT angiography demonstrates a focal narrowing of the aorta just distal to the origin of the left subclavian artery"
+        }
+      ],
+      "description": "Coarctation of the Aorta is a congenital vascular abnormality characterized by narrowing of the aortic arch, most commonly at the juxtaductal region distal to the left subclavian artery. The obstruction increases afterload, causing upper extremity hypertension and left ventricular hypertrophy while reducing perfusion to the lower extremities. Patients may present with headaches, epistaxis, leg claudication, or hypertension discovered during routine examination. Physical examination classically reveals delayed femoral pulses and a blood pressure gradient between the arms and legs. Imaging confirms the diagnosis. Associated conditions include bicuspid aortic valve and Turner Syndrome.",
+      "management": "Surgical repair or catheter-based balloon angioplasty/stenting, depending on age and anatomy. Neonates with critical coarctation require prostaglandin E1 to maintain ductal patency before surgical intervention (end-to-end anastomosis or extended resection). Older children and adults may undergo balloon angioplasty with stent placement. Lifelong blood pressure monitoring is essential."
+    },
+    {
+      "id": 189,
+      "diagnosis": "Atrioventricular Septal Defect (AVSD)",
+      "aliases": [
+        "AVSD",
+        "Atrioventricular Septal Defect"
+      ],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 3-month-old infant is brought to clinic because of poor feeding, diaphoresis during feeds, and failure to gain weight. Parents report rapid breathing that has progressively worsened over the past several weeks"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals tachypnea, hepatomegaly, and a systolic murmur along the lower left sternal border. A prominent right ventricular impulse is also noted"
+        },
+        {
+          "type": "",
+          "text": "The infant has characteristic facial features and was diagnosed with a chromosomal disorder shortly after birth"
+        },
+        {
+          "type": "",
+          "text": "BNP is elevated. CBC and metabolic studies are otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates cardiomegaly and marked pulmonary vascular congestion"
+        },
+        {
+          "type": "",
+          "text": "Echocardiography demonstrates a common atrioventricular valve bridging a large defect involving both the atrial and ventricular septa"
+        }
+      ],
+      "description": "Atrioventricular Septal Defect is a congenital heart defect caused by failure of the endocardial cushions to fuse during embryologic development. The defect consists of varying degrees of atrial septal defects, ventricular septal defects, and abnormalities of the atrioventricular valves. Large left-to-right shunts result in pulmonary overcirculation, heart failure, and pulmonary hypertension early in life. Patients commonly present with tachypnea, poor feeding, diaphoresis, and failure to thrive. AVSD is strongly associated with Down Syndrome. Echocardiography confirms the diagnosis. Components are primum ASD, inlet VSD, and common AV valve. Types are complete, partial, unbalanced.",
+      "management": "Surgical repair during infancy."
+    },
+    {
+      "id": 190,
+      "diagnosis": "Hyperplastic Arteriolosclerosis",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 42-year-old man presents to the emergency department with severe headache, blurred vision, and progressive confusion over the past 24 hours."
+        },
+        {
+          "type": "",
+          "text": "He has a long history of poorly controlled hypertension"
+        },
+        {
+          "type": "",
+          "text": "Blood pressure on arrival is 245/145 mmHg."
+        },
+        {
+          "type": "",
+          "text": "Fundoscopic examination reveals retinal hemorrhages, cotton-wool spots, and papilledema"
+        },
+        {
+          "type": "",
+          "text": "Serum creatinine is markedly elevated, and urinalysis demonstrates proteinuria and microscopic hematuria."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/hyperplastic-arteriolosclerosis-clue6.jpg",
+          "detail": "Renal biopsy demonstrates concentric laminated thickening of arteriolar walls with an \"onion-skin\" appearance and marked luminal narrowing",
+          "reference": "https://basicmedicalkey.com/vascular-pathology/"
+        }
+      ],
+      "description": "Hyperplastic Arteriolosclerosis is a vascular lesion classically associated with malignant hypertension. Severe elevations in blood pressure produce endothelial injury and smooth muscle hyperplasia within small arteries and arterioles. Histologically, affected vessels demonstrate concentric laminated (“onion-skin”) thickening of the vessel wall with progressive luminal narrowing. Patients often present with hypertensive emergency, including encephalopathy, retinal hemorrhages, papilledema, and acute kidney injury. Renal involvement may lead to rapidly progressive renal failure. Hyperplastic arteriolosclerosis is frequently accompanied by fibrinoid necrosis in the most severe cases.",
+      "management": "Treatment requires urgent but controlled blood pressure reduction to prevent irreversible end-organ damage."
+    },
+    {
+      "id": 191,
+      "diagnosis": "Hyaline Arteriolosclerosis",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old man is referred to nephrology after routine bloodwork demonstrates slowly worsening kidney function over several years."
+        },
+        {
+          "type": "",
+          "text": "He feels well and denies urinary symptoms"
+        },
+        {
+          "type": "",
+          "text": "He has a 20-year history of hypertension and type 2 diabetes mellitus, both of which have been moderately controlled"
+        },
+        {
+          "type": "",
+          "text": "Blood pressure is persistently elevated at 155/90 mmHg. Fundoscopic examination demonstrates mild arteriolar narrowing but no papilledema"
+        },
+        {
+          "type": "",
+          "text": "Serum creatinine is mildly elevated, and urinalysis demonstrates low-grade proteinuria without active urinary sediment"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/hyaline-arteriolosclerosis-clue6.jpg",
+          "detail": "Renal biopsy demonstrates homogenous pink hyaline thickening of arteriolar walls with narrowing of the vascular lumen",
+          "reference": "https://www.pathologyoutlines.com/topic/"
+        }
+      ],
+      "description": "Hyaline Arteriolosclerosis is a small-vessel lesion most commonly associated with long-standing hypertension and diabetes mellitus. Chronic endothelial injury permits leakage of plasma proteins into the vessel wall while stimulating extracellular matrix deposition by smooth muscle cells. Histologically, affected arterioles demonstrate homogeneous eosinophilic (hyaline) thickening with progressive luminal narrowing. These vascular changes reduce tissue perfusion and contribute to chronic ischemic injury, particularly in the kidneys. Hyaline arteriolosclerosis is a hallmark of benign nephrosclerosis and diabetic microvascular disease.",
+      "management": "Management focuses on controlling blood pressure, glucose levels, and other cardiovascular risk factors."
+    },
+    {
+      "id": 192,
+      "diagnosis": "Atherosclerosis",
+      "aliases": [],
+      "category": "Cardiovascular IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 61-year-old man presents with progressively worsening calf pain when walking several blocks. The pain consistently resolves after several minutes of rest"
+        },
+        {
+          "type": "",
+          "text": "He has a 40-pack-year smoking history, hypertension, and hyperlipidemia"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals diminished dorsalis pedis pulses and a cool lower extremity with delayed capillary refill"
+        },
+        {
+          "type": "",
+          "text": "CT angiography demonstrates multiple eccentric arterial plaques causing segmental luminal narrowing within the superficial femoral artery"
+        },
+        {
+          "type": "",
+          "text": "Lipid studies demonstrate elevated LDL cholesterol and reduced HDL cholesterol"
+        },
+        {
+          "type": "",
+          "text": "Histologic examination demonstrates an intimal plaque composed of a fibrous cap overlying a lipid-rich necrotic core containing cholesterol clefts and foam cells"
+        }
+      ],
+      "description": "Atherosclerosis is a progressive inflammatory disorder of medium and large arteries driven by endothelial injury, lipid accumulation, and chronic inflammation. LDL cholesterol enters the arterial intima where it becomes oxidized and stimulates recruitment of macrophages that ingest lipid and form foam cells. Over time, smooth muscle proliferation and extracellular matrix deposition create a fibrous cap over a lipid-rich necrotic core. Plaque growth causes arterial stenosis, while plaque rupture can precipitate thrombosis and acute ischemic events. Atherosclerosis is the underlying cause of most cases of coronary artery disease, ischemic stroke, peripheral artery disease, and abdominal aortic aneurysm.",
+      "management": "Management centers on lifestyle modification (heart-healthy diet, exercise, smoking cessation, weight management) and aggressive risk factor control, primarily LDL-C lowering with high-intensity statins (≥50% reduction), adding ezetimibe or PCSK9 inhibitors if targets are unmet. Antiplatelet therapy (aspirin), blood pressure control, and glycemic management (including SGLT-2 inhibitors/GLP-1 agonists in diabetics) are essential adjuncts. Revascularization is reserved for symptomatic or high-risk disease."
+    },
+    {
       "id": 193,
       "diagnosis": "Pleural Effusion",
       "aliases": [],
