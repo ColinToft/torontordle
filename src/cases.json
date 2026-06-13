@@ -1177,7 +1177,7 @@
         },
         {
           "type": "",
-          "text": "She has no significant medical history but notes that symptoms have progressed very slowly and are accompanied by occasional difficulty concentrating"
+          "text": "She has no significant medical history but notes that symptoms have progressed slowly and are accompanied by occasional difficulty concentrating"
         },
         {
           "type": "",
@@ -1185,13 +1185,13 @@
         },
         {
           "type": "",
-          "text": "The tumor is found to arise from arachnoid cap cells and is associated with loss of the NF2 tumor suppressor gene on chromosome 22"
+          "text": "",
+          "image": "case-images/meningioma-clue4.jpg"
         },
         {
           "type": "",
-          "text": "",
-          "image": "case-images/meningioma-clue5.jpg",
-          "detail": "MRI demonstrates a well-circumscribed, dural based extra axial mass with contrast enhancement",
+          "text": "The tumor is found to arise from arachnoid cap cells and is associated with loss of the NF2 tumor suppressor gene on chromosome 22",
+          "detail": "CT demonstrates a well-circumscribed, dural based extra axial mass with contrast enhancement",
           "reference": "https://doi.org/10.53347/rID-43429"
         },
         {
@@ -7123,6 +7123,415 @@
       ],
       "description": "Alpha-1 Antitrypsin Deficiency is an autosomal codominant disorder caused by mutations in the SERPINA1 gene, resulting in reduced levels or dysfunctional alpha-1 antitrypsin. Deficiency of this antiprotease permits unchecked neutrophil elastase activity, leading to progressive alveolar destruction and emphysema. Patients typically develop early-onset COPD, particularly panacinar emphysema involving the lower lobes, often with minimal smoking exposure. Liver disease may also occur because abnormal alpha-1 antitrypsin accumulates within hepatocytes. Pulmonary function testing demonstrates obstructive physiology and reduced DLCO. Diagnosis is confirmed by low serum alpha-1 antitrypsin levels and genotype testing.",
       "management": "A1AT deficiency management centers on smoking cessation, standard COPD therapy, and IV augmentation therapy (weekly pooled human AAT) for those with established emphysema and severely reduced AAT levels. Liver disease requires alcohol avoidance and transplantation for advanced cases. Surveillance includes serial PFTs and liver monitoring. Family screening is recommended."
+    },
+    {
+      "id": 207,
+      "diagnosis": "Acute Respiratory Distress Syndrome (ARDS)",
+      "aliases": [
+        "ARDS",
+        "Acute Respiratory Distress Syndrome"
+      ],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 54-year-old man is admitted to the intensive care unit with severe community-acquired pneumonia."
+        },
+        {
+          "type": "",
+          "text": "Three days later, he develops rapidly worsening shortness of breath and increasing oxygen requirements despite appropriate antibiotic therapy"
+        },
+        {
+          "type": "",
+          "text": "He is now requiring high-flow oxygen and has become increasingly tachypneic. Blood cultures remain positive for a gram-negative organism"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals diffuse bilateral crackles and marked respiratory distress. No jugular venous distension or peripheral edema is present"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/acute-respiratory-distress-syndrome-ards-clue5.jpg",
+          "detail": "CXR demonstrates diffuse bilateral pulmonary opacities involving multiple lung fields",
+          "reference": "https://doi.org/10.53347/rID-858"
+        },
+        {
+          "type": "",
+          "text": "Histologic examination demonstrates diffuse alveolar damage with eosinophilic hyaline membranes lining the alveolar walls"
+        }
+      ],
+      "description": "Acute Respiratory Distress Syndrome is a severe form of acute lung injury caused by diffuse inflammation and increased permeability of the alveolar-capillary barrier. Common triggers include sepsis, pneumonia, aspiration, trauma, pancreatitis, and massive transfusion. Protein-rich fluid leaks into alveoli, causing noncardiogenic pulmonary edema and profound hypoxemia. Patients develop acute respiratory failure with bilateral pulmonary infiltrates and reduced lung compliance. Echocardiography demonstrates no evidence of left-sided heart failure. Histologically, ARDS is characterized by diffuse alveolar damage and hyaline membrane formation.",
+      "management": "Primarily supportive, including lung-protective mechanical ventilation and treatment of the underlying cause."
+    },
+    {
+      "id": 208,
+      "diagnosis": "Obstructive Sleep Apnea (OSA)",
+      "aliases": [
+        "OSA",
+        "Obstructive Sleep Apnea"
+      ],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 52-year-old man presents with excessive daytime sleepiness, difficulty concentrating at work, and frequent morning headaches. He reports feeling unrefreshed despite sleeping 8–9 hours each night"
+        },
+        {
+          "type": "",
+          "text": "His spouse reports loud nightly snoring"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals obesity, a moderately large neck circumference, and elevated blood pressure"
+        },
+        {
+          "type": "",
+          "text": "CBC demonstrates a mildly elevated hemoglobin concentration. Thyroid function studies are normal"
+        },
+        {
+          "type": "",
+          "text": "Overnight pulse oximetry demonstrates recurrent episodes of oxygen desaturation during sleep"
+        },
+        {
+          "type": "",
+          "text": "Polysomnography demonstrates repeated episodes of airflow cessation despite persistent respiratory effort"
+        }
+      ],
+      "description": "Obstructive Sleep Apnea is a common sleep-related breathing disorder characterized by recurrent collapse of the upper airway during sleep. These episodes cause intermittent hypoxemia, hypercapnia, and repeated arousals that disrupt normal sleep architecture. Risk factors include obesity, male sex, increasing age, craniofacial abnormalities, and large neck circumference. Patients typically present with loud snoring, witnessed apneas, excessive daytime sleepiness, and morning headaches. Diagnosis is established by polysomnography, which demonstrates repeated obstructive apneas despite ongoing respiratory effort. Untreated OSA increases the risk of hypertension, atrial fibrillation, stroke, pulmonary hypertension, and cardiovascular disease.",
+      "management": "Continuous positive airway pressure (CPAP) is the first-line treatment. Weight loss, exercise, alcohol avoidance, are recommended. Oral appliances used for those who cannot tolerate PAP and uvulopalatopharyngoplasty, maxillomandibular advancement, and hypoglossal nerve stimulation is more moderate to severe cases."
+    },
+    {
+      "id": 209,
+      "diagnosis": "Central Sleep Apnea",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 68-year-old man presents with excessive daytime sleepiness, frequent nighttime awakenings, and nonrestorative sleep"
+        },
+        {
+          "type": "",
+          "text": "He has a history of severe systolic heart failure with an ejection fraction of 25%"
+        },
+        {
+          "type": "",
+          "text": "Physical examination demonstrates elevated jugular venous pressure and bilateral lower extremity edema. Body mass index is normal"
+        },
+        {
+          "type": "",
+          "text": "BNP is markedly elevated. CBC and thyroid studies are normal"
+        },
+        {
+          "type": "",
+          "text": "Overnight monitoring demonstrates recurrent episodes of oxygen desaturation associated with cyclic fluctuations in breathing pattern"
+        },
+        {
+          "type": "",
+          "text": "Polysomnography demonstrates repeated episodes of absent airflow accompanied by complete absence of respiratory effort"
+        }
+      ],
+      "description": "Central Sleep Apnea is a sleep-related breathing disorder characterized by transient loss of central respiratory drive during sleep. Unlike obstructive sleep apnea, airflow ceases because the brain temporarily fails to initiate breathing rather than because of upper airway obstruction. Common causes include heart failure, stroke, high-altitude exposure, neurologic disease, and chronic opioid use. Patients present with fragmented sleep, excessive daytime sleepiness, and nocturnal awakenings. Polysomnography demonstrates recurrent apneas without respiratory effort. A characteristic breathing pattern known as Cheyne-Stokes respiration may occur in patients with heart failure.",
+      "management": "Central sleep apnea management prioritizes treating the underlying cause (e.g., optimizing heart failure therapy, reducing opioids), followed by CPAP, adaptive servo-ventilation (ASV) (avoid in HFrEF with LVEF ≤45%), nocturnal oxygen, phrenic nerve stimulation, or acetazolamide as adjuncts"
+    },
+    {
+      "id": 210,
+      "diagnosis": "Pectus Carinatum",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 15-year-old boy presents because of a progressively prominent chest wall deformity that has become more noticeable during his adolescent growth spurt. He is otherwise healthy but feels self-conscious during sports and swimming"
+        },
+        {
+          "type": "",
+          "text": "The deformity first became noticeable during early childhood but has worsened significantly over the past two years"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a symmetric forward projection of the sternum. Lung and cardiac examinations are otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Routine lab tests are unremarkable"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/pectus-carinatum-clue5.jpg",
+          "detail": "Chest CT shows protrusion of the sternal body and xiphisternum. No suspicious osseous or retrosternal lesion",
+          "reference": "https://doi.org/10.53347/rID-74918"
+        },
+        {
+          "type": "",
+          "text": "Inspection reveals a characteristic ‘pigeon chest’ deformity"
+        }
+      ],
+      "description": "Pectus Carinatum is a congenital chest wall deformity characterized by outward displacement of the sternum, often becoming more prominent during rapid adolescent growth. Most patients are asymptomatic, although some experience cosmetic concerns, exercise intolerance, or chest discomfort. Physical examination reveals a protruding sternum, commonly described as a “pigeon chest.” The condition may occur in isolation or be associated with connective tissue disorders such as Marfan Syndrome and Noonan Syndrome. Diagnosis is clinical, although imaging may be used to assess severity.",
+      "management": "External bracing during adolescence and surgery for severe cases."
+    },
+    {
+      "id": 211,
+      "diagnosis": "Pectus Excavatum",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 15-year-old boy presents to his family physician because he becomes more fatigued than his peers during soccer games and feels short of breath with intense exercise"
+        },
+        {
+          "type": "",
+          "text": "His symptoms have become more noticeable over the past year during a period of rapid growth. He has no relevant PMHx."
+        },
+        {
+          "type": "",
+          "text": "Cardiopulmonary examination is largely unremarkable, but inspection of the chest reveals a symmetric depression of the lower anterior chest wall centered around the sternum"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count, electrolyte panel, and cardiac biomarkers are all within normal limits"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/pectus-excavatum-clue5.jpg",
+          "detail": "Chest CT shows posterior displacement of the sternum with mild compression of the right ventricle",
+          "reference": "https://doi.org/10.53347/rID-84576"
+        },
+        {
+          "type": "",
+          "text": "Further assessment reveals mild scoliosis and an arm-span-to-height ratio greater than expected for age."
+        }
+      ],
+      "description": "Pectus excavatum is the most common congenital chest wall deformity, characterized by posterior displacement of the sternum due to abnormal costal cartilage growth. It is more common in males and may occur with connective tissue disorders such as Marfan syndrome. Diagnosis begins with physical examination and is confirmed with CT measurement of the Haller index. Most cases are mild, but severe deformities can cause exercise intolerance, cardiopulmonary compression, psychosocial distress, mitral valve prolapse, and arrhythmias.",
+      "management": "Mild cases require reassurance and observation. Symptomatic or severe deformities causing cardiopulmonary compromise or significant psychosocial burden may warrant surgical correction."
+    },
+    {
+      "id": 212,
+      "diagnosis": "Kyphoscoliosis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 16 year old female presents to her family physician due to shortness of breath on exertion and recent development of intermittent upper back discomfort"
+        },
+        {
+          "type": "",
+          "text": "Her parents report that she experienced a rapid growth spurt over the past two years, and she has no history of trauma or chronic illness"
+        },
+        {
+          "type": "",
+          "text": "On inspection, one shoulder sits higher than the other, and forward bending reveals asymmetry of the thoracic back with an exaggerated posterior curvature"
+        },
+        {
+          "type": "",
+          "text": "CBC, inflammatory markers, and metabolic studies are within normal limits."
+        },
+        {
+          "type": "",
+          "text": "Standing spinal radiographs demonstrate a lateral curvature of the thoracic spine with vertebral rotation and increased thoracic sagittal curvature"
+        },
+        {
+          "type": "",
+          "text": "Pulmonary function testing demonstrates a restrictive ventilatory defect with reduced total lung capacity"
+        }
+      ],
+      "description": "Kyphoscoliosis is a spinal deformity characterized by combined scoliosis and excessive kyphosis, producing abnormal curvature in both the coronal and sagittal planes. It most commonly develops during adolescence and may be idiopathic, congenital, or associated with neuromuscular disorders. Diagnosis begins with physical examination and is confirmed using standing radiographs to assess spinal curvature. Severe disease may cause chronic pain, restrictive lung disease, pulmonary hypertension, and respiratory failure.",
+      "management": "Monitor mild curves with serial examinations and radiographs. Progressive deformities may require bracing, while severe curvature, respiratory compromise, or pain warrants surgery."
+    },
+    {
+      "id": 213,
+      "diagnosis": "Inflammatory myositis (Polymyositis)",
+      "aliases": [
+        "Polymyositis",
+        "Inflammatory myositis"
+      ],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 47-year-old woman presents to her family physician because she has had increasing difficulty climbing stairs and lifting objects onto high shelves over the past several months"
+        },
+        {
+          "type": "",
+          "text": "She reports progressive fatigue and has recently noticed that routine daily activities, such as rising from a chair, require more effort than before"
+        },
+        {
+          "type": "",
+          "text": "Neurologic examination demonstrates symmetric proximal muscle weakness involving the shoulder and hip girdles, while sensation and reflexes are preserved"
+        },
+        {
+          "type": "",
+          "text": "Serum creatine kinase, aldolase, AST, and ALT are elevated"
+        },
+        {
+          "type": "",
+          "text": "MRI of the thighs demonstrates bilateral symmetric muscle edema with areas of inflammation involving proximal muscle groups"
+        },
+        {
+          "type": "",
+          "text": "Muscle biopsy reveals endomysial inflammatory infiltrates surrounding and invading non-necrotic muscle fibers"
+        }
+      ],
+      "description": "Inflammatory myositis is an autoimmune disorder characterized by immune-mediated skeletal muscle inflammation causing progressive proximal muscle weakness. It most commonly affects middle-aged adults and may occur with other autoimmune diseases or malignancy. Diagnosis is suggested by symmetric proximal weakness and elevated muscle enzymes, then supported by MRI, autoantibody testing, electromyography, and muscle biopsy. Management involves corticosteroids and immunosuppressive therapy. Complications include dysphagia, interstitial lung disease, respiratory muscle weakness, disability, and increased malignancy risk.",
+      "management": "High-dose corticosteroids followed by steroid-sparing immunosuppressive therapy. Monitor muscle strength, creatine kinase levels, swallowing function, pulmonary involvement, and malignancy risk."
+    },
+    {
+      "id": 214,
+      "diagnosis": "Hypersensitivity Pneumonitis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 42-year-old woman presents to her family physician with several months of progressive shortness of breath, dry cough, and reduced exercise tolerance"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals fine inspiratory crackles at both lung bases without wheezing or signs of airway obstruction"
+        },
+        {
+          "type": "",
+          "text": "She notes that her symptoms tend to worsen on certain days and improve when she spends extended periods away from home."
+        },
+        {
+          "type": "",
+          "text": "Pulmonary function testing demonstrates a restrictive pattern with reduced diffusion capacity, while routine bloodwork is largely unremarkable"
+        },
+        {
+          "type": "",
+          "text": "High-resolution CT demonstrates diffuse centrilobular ground-glass nodules with patchy areas of air trapping, creating a mosaic attenuation pattern"
+        },
+        {
+          "type": "",
+          "text": "Further history reveals that she keeps several pet birds inside her home"
+        }
+      ],
+      "description": "Hypersensitivity pneumonitis is an immune-mediated interstitial lung disease caused by repeated inhalation of organic antigens, leading to alveolar and bronchiolar inflammation. Common exposures include birds, mold, hay, and agricultural dusts. Patients present with cough, dyspnea, and fatigue that often correlate with exposure. Diagnosis relies on exposure history, pulmonary function testing, and high-resolution CT, sometimes supplemented by bronchoscopy or biopsy.  Chronic disease may progress to pulmonary fibrosis, respiratory failure, and pulmonary hypertension.",
+      "management": "Identify and eliminate the offending antigen. Corticosteroids may accelerate recovery in symptomatic disease. Monitor lung function and progression to chronic fibrotic lung disease."
+    },
+    {
+      "id": 215,
+      "diagnosis": "Ankylosing Spondilitis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 24-year-old man presents to his family physician with gradually worsening lower back pain and stiffness that has persisted for over a year"
+        },
+        {
+          "type": "",
+          "text": "He reports that his symptoms are worst in the morning, improve with activity, and occasionally wake him during the second half of the night"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals reduced lumbar spine flexion and decreased chest expansion with deep inspiration"
+        },
+        {
+          "type": "",
+          "text": "Inflammatory markers are elevated, rheumatoid factor and anti-CCP antibodies are negative, and HLA-B27 testing is positive"
+        },
+        {
+          "type": "",
+          "text": "Pelvic radiographs demonstrate bilateral sacroiliac joint sclerosis and erosive changes with progressive joint space narrowing"
+        },
+        {
+          "type": "",
+          "text": "Spinal imaging later demonstrates thin vertical bony bridges connecting adjacent vertebral bodies, producing a \"bamboo spine\" appearance"
+        }
+      ],
+      "description": "Ankylosing spondylitis is a chronic inflammatory spondyloarthropathy affecting the axial skeleton, particularly the sacroiliac joints and spine. It most commonly occurs in young men and is strongly associated with HLA-B27. Patients develop inflammatory back pain, morning stiffness, and reduced spinal mobility. Diagnosis is based on characteristic clinical features and imaging evidence of sacroiliitis. Complications include spinal fusion, uveitis, osteoporosis, fractures, and restrictive lung disease.",
+      "management": "Encourage regular exercise and physiotherapy. NSAIDs are first-line therapy. Persistent active disease may require TNF-α or IL-17 inhibitors with ongoing monitoring."
+    },
+    {
+      "id": 216,
+      "diagnosis": "Silicosis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 56-year-old man presents to his family physician with gradually worsening shortness of breath and a chronic nonproductive cough over several years"
+        },
+        {
+          "type": "",
+          "text": "He has worked for decades in an industry involving frequent exposure to airborne dust despite intermittent use of respiratory protection"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals scattered inspiratory crackles, while the remainder of the examination is largely unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Pulmonary function testing demonstrates a restrictive ventilatory defect with reduced diffusion capacity. Routine bloodwork is otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/silicosis-clue5.jpg",
+          "detail": "Coronal CT shows extensive areas of bilateral perihilar and apical consolidation and fibrosis with architectural distortion and apical volume loss. Numerous calcified mediastinal and hilar lymph nodes are seen. Mosaic attenuation and widespread interlobular septal thickening involving both lung fields",
+          "reference": "https://doi.org/10.53347/rID-158624"
+        },
+        {
+          "type": "",
+          "text": "Rheumatoid factor and ANA lab results are negative."
+        }
+      ],
+      "description": "Silicosis is a pneumoconiosis caused by inhalation of crystalline silica particles, leading to chronic pulmonary inflammation and progressive fibrotic lung disease. It commonly affects miners, quarry workers, sandblasters, and construction workers with prolonged occupational exposure. Patients present with progressive dyspnea and cough. Diagnosis relies on exposure history, pulmonary function testing, and characteristic upper-lobe nodules with eggshell lymph node calcification on imaging. Complications include progressive massive fibrosis, respiratory failure, tuberculosis, lung cancer, and pulmonary hypertension.",
+      "management": "Eliminate further silica exposure and provide supportive care. Monitor pulmonary function regularly, vaccinate appropriately, and screen for tuberculosis and progressive fibrosis."
+    },
+    {
+      "id": 217,
+      "diagnosis": "Sarcoidosis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old woman presents to her family physician with several months of fatigue, dry cough, and progressive shortness of breath on exertion."
+        },
+        {
+          "type": "",
+          "text": "She has otherwise been healthy but recently developed painful red bumps on the fronts of her legs"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tender erythematous nodules over both shins and mild cervical lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium and angiotensin-converting enzyme (ACE) levels are elevated"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/sarcoidosis-clue5.jpg",
+          "detail": "CXR demonstrates upper zone reticulonodular opacities with mediastinal and hilar nodal enlargment",
+          "reference": "https://doi.org/10.53347/rID-6546"
+        },
+        {
+          "type": "",
+          "text": "Biopsy of an affected lymph node reveals noncaseating granulomas in the absence of identifiable infectious organisms"
+        }
+      ],
+      "description": "Sarcoidosis is a multisystem granulomatous disease characterized by noncaseating granuloma formation in affected tissues. It most commonly affects young and middle-aged adults and frequently involves the lungs, lymph nodes, skin, and eyes. Patients may present with cough, dyspnea, fatigue, erythema nodosum, or uveitis. Diagnosis is based on compatible clinical and radiographic findings with histologic confirmation and exclusion of alternative causes. Complications include pulmonary fibrosis, hypercalcemia, vision loss, cardiac involvement, and pulmonary hypertension.",
+      "management": "Asymptomatic disease may only require observation. Symptomatic organ involvement is treated with corticosteroids, with immunosuppressive agents reserved for refractory cases."
     }
   ],
   "2": [
