@@ -64,18 +64,74 @@ export type ScheduledDay = { date: string; tCase: TCase }
 // (same value) until the next successful sync pins it.
 // ---------------------------------------------------------------------------
 
-// Resolve a frozen entry back to a case in the current bank. Primary key is the
-// diagnosis (stable when rows are reordered); the sheet row `id` is a fallback so
-// a spelling fix to an answer still resolves. Returns null only if the case was
-// genuinely removed (or renamed *and* reordered in the same sync) — then the day
-// can't be rendered, but the used-set is still advanced so the rest of the
+// Normalize a diagnosis for fuzzy comparison: lowercase, trimmed, collapsed
+// whitespace.
+function normName(s: string): string {
+  return s.trim().toLowerCase().replace(/\s+/g, ' ')
+}
+
+// Levenshtein edit distance (iterative, two-row). Small strings only.
+function levenshtein(a: string, b: string): number {
+  if (a === b) return 0
+  if (!a.length) return b.length
+  if (!b.length) return a.length
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j)
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i]
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost)
+    }
+    prev = cur
+  }
+  return prev[b.length]
+}
+
+// How alike are two diagnoses, in [0, 1]? Combines edit-distance ratio (catches
+// spelling fixes), prefix match (catches an appended clarifier), and word
+// containment (catches "Diabetes" → "Diabetes Mellitus"). Used to decide whether
+// the case now sitting at a frozen row id is plausibly the SAME case with its
+// name edited, vs. a different case that shifted into that row.
+export function nameSimilarity(a: string, b: string): number {
+  const na = normName(a)
+  const nb = normName(b)
+  if (!na || !nb) return 0
+  if (na === nb) return 1
+  const ratio = 1 - levenshtein(na, nb) / Math.max(na.length, nb.length)
+  const [short, long] = na.length <= nb.length ? [na, nb] : [nb, na]
+  const prefix = long.startsWith(short) ? short.length / long.length : 0
+  const wordsLong = new Set(long.split(' '))
+  const wordsShort = short.split(' ')
+  const contained = wordsShort.every((w) => wordsLong.has(w)) ? 0.9 : 0
+  return Math.max(ratio, prefix, contained)
+}
+
+// Minimum similarity to accept the row-id fallback as a renamed-in-place case.
+const RENAME_SIMILARITY = 0.6
+
+// Resolve a frozen entry back to a case in the current bank.
+//  1. Exact diagnosis match — stable across row reordering; the common path.
+//  2. Row-id fallback for a renamed answer, but ONLY when it's safe: the case now
+//     at that row must not already belong to another archived day (`claimed`),
+//     and its name must be similar enough to be a plausible spelling fix. This
+//     keeps a typo-fix self-healing while refusing to render a *different* case
+//     that merely shifted into the row (rename + reorder in one sync).
+// Returns null when it can't resolve safely — the day shows an honest gap rather
+// than a wrong answer, and the used-set is still advanced so the rest of the
 // schedule stays put.
 function resolveFrozen(
   entry: FrozenDay,
   byDiagnosis: Map<string, TCase>,
   byId: Map<number, TCase>,
+  claimed: Set<string>,
 ): TCase | null {
-  return byDiagnosis.get(entry.diagnosis) ?? byId.get(entry.id) ?? null
+  const direct = byDiagnosis.get(entry.diagnosis)
+  if (direct) return direct
+  const candidate = byId.get(entry.id)
+  if (!candidate) return null
+  if (claimed.has(candidate.diagnosis)) return null // belongs to a different archived day
+  if (nameSimilarity(entry.diagnosis, candidate.diagnosis) < RENAME_SIMILARITY) return null
+  return candidate
 }
 
 // One live pick for `date`, given the running used-set (keyed by current
@@ -151,9 +207,12 @@ export function buildSchedule(
   const byId = new Map(cases.map((c) => [c.id, c]))
 
   const { used, next, frozen } = replayHistory(history, today, launch)
+  // Diagnoses that some archived day still matches exactly — the row-id fallback
+  // must never steal one of these from its rightful day.
+  const claimed = new Set(frozen.map((e) => e.diagnosis).filter((d) => byDiagnosis.has(d)))
   for (const entry of frozen) {
-    const tCase = resolveFrozen(entry, byDiagnosis, byId)
-    if (tCase) out.push({ date: entry.date, tCase }) // skip days whose case is gone
+    const tCase = resolveFrozen(entry, byDiagnosis, byId, claimed)
+    if (tCase) out.push({ date: entry.date, tCase }) // skip days whose case can't be resolved
   }
 
   for (let date = next; date <= today; date = addDays(date, 1)) {

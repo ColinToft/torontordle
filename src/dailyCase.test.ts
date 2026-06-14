@@ -4,6 +4,7 @@ import {
   buildSchedule,
   caseForDate,
   freezeThrough,
+  nameSimilarity,
 } from './dailyCase'
 import type { FrozenDay, TCase } from './types'
 
@@ -140,6 +141,21 @@ describe('rename resilience for a case that DID appear', () => {
     )
   })
 
+  it('shows a gap, never a wrong case, when an answer is renamed AND rows shift', () => {
+    // 01-01 was Pneumonia (row 1); 01-02 was Asthma (row 2). Then Pneumonia is
+    // renamed AND a row is inserted, so row 1 now holds Asthma and the renamed
+    // Pneumonia moved to row 2. The row-1 fallback must NOT render Asthma for the
+    // Pneumonia day.
+    const h: FrozenDay[] = [
+      { date: '2026-01-01', diagnosis: 'Pneumonia', id: 1 },
+      { date: '2026-01-02', diagnosis: 'Asthma', id: 2 },
+    ]
+    const shifted = [mk(1, 'Asthma'), mk(2, 'Pneumonia (community-acquired)')]
+    const out = buildSchedule(shifted, '1', '2026-01-02', h, '2026-01-01')
+    expect(out.find((d) => d.date === '2026-01-01')).toBeUndefined() // honest gap
+    expect(out.find((d) => d.date === '2026-01-02')?.tCase.diagnosis).toBe('Asthma')
+  })
+
   it('degrades gracefully when a frozen case is removed entirely', () => {
     const frozen = history[0]
     const mutated = bank.filter((c) => c.id !== frozen.id && c.diagnosis !== frozen.diagnosis)
@@ -147,6 +163,63 @@ describe('rename resilience for a case that DID appear', () => {
     // That one day can't render, but nothing crashes and the rest stay put.
     expect(out.find((d) => d.date === frozen.date)).toBeUndefined()
     expect(out).toHaveLength(history.length - 1)
+  })
+})
+
+describe('guarded row-id fallback', () => {
+  const LH = '2026-01-01'
+
+  it('self-heals a spelling fix to an answer (same row, similar name)', () => {
+    const h: FrozenDay[] = [{ date: '2026-01-01', diagnosis: 'Pnuemonia', id: 7 }]
+    const bank = [mk(7, 'Pneumonia')] // corrected typo, same row
+    const out = buildSchedule(bank, '1', '2026-01-01', h, LH)
+    expect(out).toHaveLength(1)
+    expect(out[0].tCase.diagnosis).toBe('Pneumonia')
+  })
+
+  it('self-heals an appended clarifier (word containment)', () => {
+    const h: FrozenDay[] = [{ date: '2026-01-01', diagnosis: 'Diabetes', id: 4 }]
+    const bank = [mk(4, 'Diabetes Mellitus')]
+    const out = buildSchedule(bank, '1', '2026-01-01', h, LH)
+    expect(out[0].tCase.diagnosis).toBe('Diabetes Mellitus')
+  })
+
+  it('refuses an unclaimed but dissimilar case sitting at the row', () => {
+    const h: FrozenDay[] = [{ date: '2026-01-01', diagnosis: 'Pneumonia', id: 1 }]
+    const bank = [mk(1, 'Glioblastoma')] // totally different case at that row
+    const out = buildSchedule(bank, '1', '2026-01-01', h, LH)
+    expect(out).toHaveLength(0) // gap, not Glioblastoma
+  })
+
+  it('refuses to steal a case that another archived day owns by exact name', () => {
+    const h: FrozenDay[] = [
+      { date: '2026-01-01', diagnosis: 'Hyperthyroidism', id: 1 },
+      { date: '2026-01-02', diagnosis: 'Hypothyroidism', id: 2 },
+    ]
+    // Hyperthyroidism renamed + rows shifted: row 1 now holds Hypothyroidism
+    // (similar name!), but it rightfully belongs to 01-02 → must not be stolen.
+    const bank = [mk(1, 'Hypothyroidism'), mk(2, 'Hyperthyroidism, primary')]
+    const out = buildSchedule(bank, '1', '2026-01-02', h, LH)
+    expect(out.find((d) => d.date === '2026-01-01')).toBeUndefined() // gap
+    expect(out.find((d) => d.date === '2026-01-02')?.tCase.diagnosis).toBe('Hypothyroidism')
+  })
+})
+
+describe('nameSimilarity', () => {
+  it('rates a spelling fix as similar', () => {
+    expect(nameSimilarity('Pnuemonia', 'Pneumonia')).toBeGreaterThan(0.6)
+  })
+  it('rates an appended clarifier as similar', () => {
+    expect(nameSimilarity('Diabetes', 'Diabetes Mellitus')).toBeGreaterThan(0.6)
+  })
+  it('rates two different diagnoses as dissimilar', () => {
+    expect(nameSimilarity('Pneumonia', 'Glioblastoma')).toBeLessThan(0.6)
+  })
+  it('rates an abbreviation expansion as dissimilar (major rename → gap)', () => {
+    expect(nameSimilarity('MI', 'Myocardial Infarction')).toBeLessThan(0.6)
+  })
+  it('is case- and whitespace-insensitive', () => {
+    expect(nameSimilarity('  Asthma ', 'asthma')).toBe(1)
   })
 })
 
