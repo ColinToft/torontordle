@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import casesData from './cases.json'
-import type { CasesByYear, TCase, Year } from './types'
+import historyData from './history.json'
+import type { CasesByYear, FrozenDay, HistoryByYear, TCase, Year } from './types'
 import { GameView } from './GameView'
 import { useGame } from './useGame'
 import { buildSchedule, caseForDate, dayNumber, todayET } from './dailyCase'
@@ -8,6 +9,11 @@ import { buildSchedule, caseForDate, dayNumber, todayET } from './dailyCase'
 // The bank is baked at build time by scripts/sync-data.ts — available
 // synchronously, no network/loading state. One case pool per year.
 const bank = casesData as unknown as CasesByYear
+// The frozen past schedule, also baked by the sync. Past days are read from
+// here verbatim so re-baking the bank can't change an archive; today is computed
+// live. Empty arrays (no sync yet) degrade to a fully-live schedule.
+const history = historyData as unknown as HistoryByYear
+const historyFor = (y: Year): FrozenDay[] => history[y] ?? []
 
 export type ArchiveDay = { date: string; tCase: TCase; day: number }
 export type Nav = {
@@ -51,12 +57,15 @@ export default function App() {
   const pool = useMemo(() => bank[year] ?? [], [year])
   const today = useMemo(() => todayET(), [])
   const dateStr = archiveDate ?? today
-  const tCase = useMemo(() => caseForDate(pool, year, dateStr), [pool, year, dateStr])
+  const tCase = useMemo(
+    () => caseForDate(pool, year, dateStr, historyFor(year)),
+    [pool, year, dateStr],
+  )
 
   // Past days for the Archives list (most recent first, excluding today).
   const archiveDays = useMemo<ArchiveDay[]>(() => {
     if (!showArchives) return []
-    return buildSchedule(pool, year, today)
+    return buildSchedule(pool, year, today, historyFor(year))
       .filter((d) => d.date !== today)
       .reverse()
       .map((d) => ({ date: d.date, tCase: d.tCase, day: dayNumber(d.date) }))
