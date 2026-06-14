@@ -7532,6 +7532,1692 @@
       ],
       "description": "Sarcoidosis is a multisystem granulomatous disease characterized by noncaseating granuloma formation in affected tissues. It most commonly affects young and middle-aged adults and frequently involves the lungs, lymph nodes, skin, and eyes. Patients may present with cough, dyspnea, fatigue, erythema nodosum, or uveitis. Diagnosis is based on compatible clinical and radiographic findings with histologic confirmation and exclusion of alternative causes. Complications include pulmonary fibrosis, hypercalcemia, vision loss, cardiac involvement, and pulmonary hypertension.",
       "management": "Asymptomatic disease may only require observation. Symptomatic organ involvement is treated with corticosteroids, with immunosuppressive agents reserved for refractory cases."
+    },
+    {
+      "id": 218,
+      "diagnosis": "Tuberculosis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 38-year-old man presents to his family physician with a persistent cough, progressive fatigue, and unintentional weight loss over the past two months."
+        },
+        {
+          "type": "",
+          "text": "He also reports occasinal night sweats"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a thin, chronically ill-appearing patient with low-grade fever and scattered crackles over the upper lung fields."
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates mild anemia of chronic disease, and inflammatory markers are elevated."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/tuberculosis-clue5.jpg",
+          "detail": "CXR shows bilateral airspace consolidation and pleural effusions. A widened paratracheal stripe is seen too",
+          "reference": "https://doi.org/10.53347/rID-8741"
+        },
+        {
+          "type": "",
+          "text": "Sputum microscopy demonstrates acid-fast bacilli"
+        }
+      ],
+      "description": "Tuberculosis is a chronic granulomatous infection caused by Mycobacterium tuberculosis and transmitted through airborne droplets. Risk factors include exposure to infected individuals, immunosuppression, crowded living conditions, and residence in endemic regions. Patients commonly present with chronic cough, fever, night sweats, and weight loss. Diagnosis involves tuberculin skin testing or interferon-gamma release assays, chest imaging, and microbiologic confirmation. Treatment requires prolonged multidrug therapy. Complications include hemoptysis, cavitary lung destruction (caseating granulomas), miliary dissemination, meningitis, and vertebral osteomyelitis.",
+      "management": "Treat active disease with multidrug therapy, typically including isoniazid, rifampin, pyrazinamide, and ethambutol. Monitor adherence, drug toxicity, and contacts."
+    },
+    {
+      "id": 219,
+      "diagnosis": "Bird-Fancier's Lung",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 46-year-old woman presents to her family physician with several months of progressive shortness of breath, dry cough, and reduced exercise tolerance"
+        },
+        {
+          "type": "",
+          "text": "She reports that her symptoms seem to worsen on weekends and improve when she spends several days away from home"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals fine inspiratory crackles bilaterally without wheezing or signs of airflow obstruction"
+        },
+        {
+          "type": "",
+          "text": "Pulmonary function testing demonstrates a restrictive pattern with reduced diffusion capacity. Routine bloodwork is otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "High-resolution CT demonstrates diffuse centrilobular ground-glass nodules with patchy mosaic attenuation and areas of air trapping"
+        },
+        {
+          "type": "",
+          "text": "Further history reveals that she has bred and cared for multiple pigeons in an indoor aviary for many years"
+        }
+      ],
+      "description": "Bird-fancier's lung is a subtype of hypersensitivity pneumonitis caused by repeated inhalation of avian proteins found in bird feathers, droppings, and serum. It most commonly affects individuals with prolonged exposure to pet birds, pigeons, or aviaries. Patients develop cough, dyspnea, and fatigue that correlate with antigen exposure. Diagnosis relies on exposure history, pulmonary function testing, and characteristic high-resolution CT findings. Management focuses on antigen avoidance and corticosteroids. Chronic exposure may result in irreversible pulmonary fibrosis, respiratory failure, and pulmonary hypertension.",
+      "management": "Eliminate bird antigen exposure and consider corticosteroids for symptomatic disease. Monitor pulmonary function and imaging for progression to chronic fibrotic lung disease."
+    },
+    {
+      "id": 220,
+      "diagnosis": "Rheumatoid Arthritis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 63-year-old woman presents to her family physician with gradually worsening shortness of breath and a persistent dry cough over the past year"
+        },
+        {
+          "type": "",
+          "text": "She has a long-standing history of inflammatory joint disease affecting her hands and reports a remote smoking history"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals fine bibasilar inspiratory crackles. Examination of the hands demonstrates ulnar deviation and deformities of several finger joints"
+        },
+        {
+          "type": "",
+          "text": "Inflammatory markers are elevated, and serologic testing is positive for rheumatoid factor and anti-cyclic citrullinated peptide antibodies. Pulmonary function testing demonstrates a restrictive pattern with reduced diffusion capacity"
+        },
+        {
+          "type": "",
+          "text": "High-resolution CT demonstrates peripheral, basilar-predominant reticular opacities with traction bronchiectasis and honeycombing"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates a usual interstitial pneumonia (UIP) pattern in a patient with established autoimmune inflammatory arthritis"
+        }
+      ],
+      "description": "Rheumatoid arthritis–associated interstitial lung disease is an extra-articular manifestation of rheumatoid arthritis characterized by chronic inflammation and fibrosis of the pulmonary interstitium. It occurs most commonly in older patients with long-standing seropositive disease, particularly smokers. Patients develop progressive dyspnea and nonproductive cough. Diagnosis is suggested by restrictive pulmonary function tests and confirmed with high-resolution CT, often demonstrating a UIP pattern. Complications include pulmonary fibrosis, respiratory failure, pulmonary hypertension, and increased mortality.",
+      "management": "Treat underlying rheumatoid arthritis and pulmonary inflammation with immunomodulatory therapy. Monitor lung function regularly and provide supportive care for progressive fibrotic disease."
+    },
+    {
+      "id": 221,
+      "diagnosis": "Asbestosis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 68-year-old man presents to his family physician with progressively worsening shortness of breath and reduced exercise tolerance over several years"
+        },
+        {
+          "type": "",
+          "text": "He worked for decades in shipbuilding and industrial construction before retiring"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals fine end-inspiratory crackles at both lung bases and digital clubbing"
+        },
+        {
+          "type": "",
+          "text": "Pulmonary function testing demonstrates a restrictive ventilatory defect with reduced diffusion capacity. Routine bloodwork is otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/asbestosis-clue5.jpg",
+          "detail": "UIP pattern characterized by subreticular opacity, honeycombing, and traction bronchiectasis worse in the bases. Calcified pleural plaques are seen. There is no pulmonary nodule or mass or lobar collapse",
+          "reference": "https://doi.org/10.53347/rID-56192"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates golden-brown, beaded rods with an iron-containing protein coating within the lung parenchyma"
+        }
+      ],
+      "description": "Asbestosis is a chronic fibrotic interstitial lung disease caused by prolonged inhalation of asbestos fibers. It most commonly affects workers in shipbuilding, construction, insulation, and manufacturing industries after a long latency period. Patients develop progressive dyspnea, cough, and restrictive lung disease. Diagnosis relies on occupational exposure history, pulmonary function testing, and imaging demonstrating basilar fibrosis and pleural plaques. Management is supportive and focuses on exposure cessation. Complications include respiratory failure, lung cancer, malignant mesothelioma, and pulmonary hypertension.",
+      "management": "Eliminate further asbestos exposure and optimize pulmonary health through smoking cessation, vaccination, and supportive care. Monitor for malignancy and progressive respiratory impairment"
+    },
+    {
+      "id": 222,
+      "diagnosis": "Scleroderma (SSc-ILD)",
+      "aliases": [
+        "SSc-ILD",
+        "Scleroderma"
+      ],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 52-year-old woman presents to her family physician with gradually worsening shortness of breath and a persistent dry cough over the past year"
+        },
+        {
+          "type": "",
+          "text": "She reports several years of episodic finger discoloration and pain when exposed to cold temperatures, along with progressive tightening of the skin on her hands"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals fine bibasilar inspiratory crackles. Examination of the hands demonstrates taut, shiny skin with reduced finger mobility"
+        },
+        {
+          "type": "",
+          "text": "Antinuclear antibody testing is positive, and anti-topoisomerase I (anti-Scl-70) antibodies are detected. Pulmonary function testing demonstrates a restrictive pattern with reduced diffusion capacity"
+        },
+        {
+          "type": "",
+          "text": "High-resolution CT demonstrates bilateral basilar-predominant ground-glass opacities, reticulation, and traction bronchiectasis"
+        },
+        {
+          "type": "",
+          "text": "Nailfold capillaroscopy demonstrates dilated capillary loops with capillary dropout in a patient with Raynaud phenomenon and skin thickening"
+        }
+      ],
+      "description": "Systemic sclerosis–associated interstitial lung disease is a pulmonary manifestation of systemic sclerosis characterized by immune-mediated inflammation and progressive fibrosis of the lung interstitium. It occurs most commonly in patients with diffuse cutaneous disease and anti-Scl-70 antibodies. Patients present with exertional dyspnea, dry cough, Raynaud phenomenon, and skin thickening. Diagnosis relies on autoantibody testing, pulmonary function testing, and high-resolution CT. Management includes immunosuppressive therapy and monitoring. Complications include pulmonary fibrosis, respiratory failure, pulmonary hypertension, and increased mortality.",
+      "management": "Treat progressive lung disease with immunomodulatory therapy and monitor pulmonary function regularly. Manage systemic sclerosis manifestations and screen for pulmonary hypertension"
+    },
+    {
+      "id": 223,
+      "diagnosis": "Amiodarone Induced Pneumonitis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 71-year-old man presents to his family physician with progressively worsening shortness of breath and a nonproductive cough over the past several months"
+        },
+        {
+          "type": "",
+          "text": "He has a history of atrial fibrillation and has not had any recent infectious symptoms, travel, or environmental exposures"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals fine bilateral inspiratory crackles, while cardiac examination demonstrates an irregularly irregular rhythm"
+        },
+        {
+          "type": "",
+          "text": "Pulmonary function testing demonstrates a restrictive ventilatory defect with reduced diffusion capacity. Infectious workup is negative"
+        },
+        {
+          "type": "",
+          "text": "High-resolution CT demonstrates bilateral patchy ground-glass opacities and areas of interstitial infiltrates, predominantly in the peripheral lung fields"
+        },
+        {
+          "type": "",
+          "text": "Bronchoalveolar lavage and lung biopsy demonstrate lipid-laden foamy macrophages within the alveolar spaces"
+        }
+      ],
+      "description": "Amiodarone-induced pneumonitis is a drug-related interstitial lung disease caused by pulmonary toxicity from chronic amiodarone exposure. Risk increases with higher cumulative doses, advanced age, and prolonged therapy. Patients develop progressive dyspnea, nonproductive cough, and restrictive lung disease. Diagnosis relies on medication history, exclusion of infection and heart failure, pulmonary function testing, and characteristic imaging findings. Management involves discontinuing amiodarone and often initiating corticosteroids. Complications include pulmonary fibrosis, respiratory failure, and death if unrecognized.",
+      "management": "Immediately discontinue amiodarone and exclude alternative causes of pulmonary symptoms. Corticosteroids are commonly used for significant disease, with close respiratory follow-up."
+    },
+    {
+      "id": 224,
+      "diagnosis": "Nitrofurantoin Induced Pneumonitis",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 68-year-old woman presents to her family physician with progressively worsening shortness of breath and a persistent dry cough over several weeks"
+        },
+        {
+          "type": "",
+          "text": "She has experienced recurrent urinary tract infections and has been taking a daily medication for prophylaxis over the past several months"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals bilateral fine inspiratory crackles without evidence of volume overload or focal consolidation"
+        },
+        {
+          "type": "",
+          "text": "Pulmonary function testing demonstrates a restrictive ventilatory defect with reduced diffusion capacity. Mild peripheral eosinophilia is present"
+        },
+        {
+          "type": "",
+          "text": "High-resolution CT demonstrates bilateral ground-glass opacities and patchy interstitial infiltrates"
+        },
+        {
+          "type": "",
+          "text": "Review of her medication list reveals prolonged nitrofurantoin use for recurrent urinary tract infection prophylaxis"
+        }
+      ],
+      "description": "Nitrofurantoin-induced pneumonitis is a drug-induced lung disease resulting from hypersensitivity reactions or chronic pulmonary toxicity associated with nitrofurantoin exposure. It occurs most commonly in older women receiving long-term therapy for recurrent urinary tract infection prophylaxis. Patients develop dyspnea, cough, and restrictive lung disease, sometimes accompanied by eosinophilia. Diagnosis relies on medication history, exclusion of alternative causes, pulmonary function testing, and characteristic imaging findings. Complications include pulmonary fibrosis, chronic respiratory impairment, and respiratory failure.",
+      "management": "Immediately discontinue nitrofurantoin and monitor for clinical improvement. Corticosteroids may be considered in severe cases. Follow pulmonary function and imaging resolution."
+    },
+    {
+      "id": 225,
+      "diagnosis": "Narcolepsy",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 19-year-old university student presents to his family physician because he repeatedly falls asleep during lectures despite getting what he believes is an adequate amount of sleep each night"
+        },
+        {
+          "type": "",
+          "text": "He reports that these episodes have become more frequent over the past year and are beginning to interfere with his academic performance and social life"
+        },
+        {
+          "type": "",
+          "text": "Physical and neurologic examinations are unremarkable, but he describes several episodes of sudden muscle weakness triggered by laughter"
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork, including thyroid function testing and metabolic studies, is normal. Overnight polysomnography demonstrates no alternative explanation for excessive daytime sleepiness"
+        },
+        {
+          "type": "",
+          "text": "Brain MRI is unremarkable without structural abnormalities"
+        },
+        {
+          "type": "",
+          "text": "Multiple sleep latency testing demonstrates a mean sleep latency of less than 8 minutes with two or more sleep-onset REM periods"
+        }
+      ],
+      "description": "Narcolepsy is a chronic neurologic sleep disorder caused by loss of hypothalamic orexin (hypocretin)-producing neurons, resulting in dysregulation of sleep-wake cycles. It typically begins during adolescence or early adulthood and may be associated with specific HLA haplotypes. Patients develop excessive daytime sleepiness, cataplexy, sleep paralysis, and hypnagogic hallucinations. Diagnosis is established with polysomnography followed by multiple sleep latency testing. Complications include accidents, academic difficulties, and impaired quality of life.",
+      "management": "Treat excessive daytime sleepiness with wake-promoting agents and encourage scheduled naps. Cataplexy may require REM-suppressing medications and ongoing sleep medicine follow-up."
+    },
+    {
+      "id": 226,
+      "diagnosis": "Idiopathic Hypersomnolence",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 23-year-old woman presents to her family physician because she feels excessively sleepy throughout the day despite regularly sleeping more than eight hours each night"
+        },
+        {
+          "type": "",
+          "text": "She reports difficulty waking in the morning and often requires multiple alarms, but denies shift work, substance use, or significant psychosocial stressors"
+        },
+        {
+          "type": "",
+          "text": "Physical and neurologic examinations are unremarkable. She does not report episodes of sudden muscle weakness, vivid hallucinations, or sleep paralysis"
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork, including thyroid function studies, complete blood count, and metabolic testing, is normal. Overnight polysomnography reveals adequate sleep duration without evidence of sleep-disordered breathing"
+        },
+        {
+          "type": "",
+          "text": "Brain MRI demonstrates no structural abnormalities"
+        },
+        {
+          "type": "",
+          "text": "Multiple sleep latency testing demonstrates a mean sleep latency of less than 8 minutes without sleep-onset REM periods"
+        }
+      ],
+      "description": "Idiopathic hypersomnolence is a central disorder of hypersomnolence characterized by excessive daytime sleepiness despite adequate or prolonged sleep duration. It typically affects adolescents and young adults and is diagnosed after excluding secondary causes such as sleep deprivation, medications, psychiatric illness, and sleep-disordered breathing. Patients experience persistent sleepiness, prolonged nocturnal sleep, and severe sleep inertia. Diagnosis relies on polysomnography and multiple sleep latency testing. Complications include impaired academic performance, occupational difficulties, and reduced quality of life.",
+      "management": "Optimize sleep hygiene and treat excessive daytime sleepiness with wake-promoting medications. Monitor functional impairment and reassess for alternative sleep disorders if symptoms evolve."
+    },
+    {
+      "id": 227,
+      "diagnosis": "Tracheoesophageal Fistula",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A full-term newborn develops respiratory distress and repeated episodes of coughing and cyanosis during the first attempted feeding shortly after birth"
+        },
+        {
+          "type": "",
+          "text": "The pregnancy was complicated by excessive amniotic fluid accumulation, and prenatal ultrasounds did not identify a clear cause"
+        },
+        {
+          "type": "",
+          "text": "The infant demonstrates excessive oral secretions and develops choking, coughing, and oxygen desaturation whenever feeding is attempted"
+        },
+        {
+          "type": "",
+          "text": "Routine neonatal laboratory investigations are unremarkable. Blood gas analysis demonstrates hypoxemia during feeding episodes"
+        },
+        {
+          "type": "",
+          "text": "A radiograph obtained after attempted passage of a nasogastric tube demonstrates the tube coiled within the upper mediastinum, with air present throughout the stomach and intestines"
+        },
+        {
+          "type": "",
+          "text": "Further evaluation reveals the most common congenital pattern: proximal esophageal atresia with a distal communication between the trachea and esophagus"
+        }
+      ],
+      "description": "Tracheoesophageal fistula is a congenital foregut malformation characterized by an abnormal connection between the trachea and esophagus, most commonly occurring with esophageal atresia. It typically presents in the neonatal period with choking, coughing, cyanosis during feeds, and excessive secretions. Polyhydramnios is a common prenatal clue. Diagnosis is suggested by inability to pass a nasogastric tube and confirmed radiographically. Complications include aspiration pneumonia, feeding difficulties, gastroesophageal reflux, tracheomalacia, and recurrent respiratory infections.",
+      "management": "Prevent aspiration with feeding cessation, suctioning, and supportive care. Definitive treatment is surgical repair, followed by monitoring for reflux and respiratory complications."
+    },
+    {
+      "id": 228,
+      "diagnosis": "Congenital Diaphragmatic Hernia",
+      "aliases": [],
+      "category": "Respiratory II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A full-term newborn develops severe respiratory distress within minutes of birth, requiring supplemental oxygen and ventilatory support"
+        },
+        {
+          "type": "",
+          "text": "Prenatal ultrasound demonstrated excess amniotic fluid and difficulty visualizing normal abdominal structures in their expected location"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals marked respiratory distress with decreased breath sounds over the left hemithorax and a scaphoid-appearing abdomen"
+        },
+        {
+          "type": "",
+          "text": "Arterial blood gas analysis demonstrates hypoxemia and respiratory acidosis despite escalating respiratory support"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates multiple air-filled bowel loops occupying the left hemithorax with displacement of the mediastinum to the right"
+        },
+        {
+          "type": "",
+          "text": "The defect most commonly occurs through the posterolateral portion of the diaphragm and is associated with pulmonary hypoplasia"
+        }
+      ],
+      "description": "Congenital diaphragmatic hernia is a developmental defect of the diaphragm that permits abdominal viscera to herniate into the thoracic cavity, impairing normal lung development. It most commonly results from a left-sided posterolateral (Bochdalek) defect. Newborns present with respiratory distress, decreased breath sounds, and a scaphoid abdomen. Diagnosis is suggested prenatally by ultrasound and confirmed with postnatal imaging.Complications include pulmonary hypoplasia, persistent pulmonary hypertension, respiratory failure, and long-term feeding difficulties.",
+      "management": "Prioritize respiratory stabilization and management of pulmonary hypertension. Avoid bag-mask ventilation when possible. Definitive treatment involves surgical repair after cardiopulmonary stabilization"
+    },
+    {
+      "id": 229,
+      "diagnosis": "Mycetoma",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents to his family physician with intermittent episodes of coughing up blood over the past several months"
+        },
+        {
+          "type": "",
+          "text": "He was treated for a chronic pulmonary infection many years ago and has otherwise been well since completing therapy"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination is largely unremarkable aside from occasional crackles over the upper lung fields. He is not febrile and appears clinically stable"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count and inflammatory markers are within normal limits. Sputum cultures are negative for bacterial pathogens"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates a rounded soft-tissue mass within a pre-existing upper lobe cavity, separated from the cavity wall by a crescent of air"
+        },
+        {
+          "type": "",
+          "text": "Repeat imaging obtained in a different patient position demonstrates movement of the intracavitary mass within the cavity"
+        }
+      ],
+      "description": "Pulmonary mycetoma, most commonly an aspergilloma, is a fungal ball formed by colonization of a pre-existing lung cavity, often left by prior tuberculosis, sarcoidosis, or other cavitary lung diseases. Patients may be asymptomatic or present with hemoptysis, which can be life-threatening. Diagnosis is suggested by characteristic imaging showing an intracavitary mass with an air crescent and confirmed through microbiologic or serologic evaluation. Complications include massive hemoptysis, recurrent bleeding, and rarely invasive fungal infection.",
+      "management": "Monitor asymptomatic patients. Significant or recurrent hemoptysis may require surgical resection or bronchial artery embolization. Consider antifungal therapy in selected cases."
+    },
+    {
+      "id": 230,
+      "diagnosis": "Granulomatosis with polyangiitis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 46-year-old man presents to his family physician with several months of fatigue, persistent sinus congestion, and a chronic cough occasionally streaked with blood"
+        },
+        {
+          "type": "",
+          "text": "He has required multiple courses of antibiotics for recurrent \"sinus infections\" over the past year but has experienced little improvement"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals crusting and ulceration of the nasal mucosa, while chest auscultation demonstrates scattered crackles bilaterally"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates hematuria with red blood cell casts, inflammatory markers are elevated, and serum creatinine is increased"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/granulomatosis-with-polyangiitis-clue5.jpg",
+          "detail": "Chest CT demonstrates pulmonary nodules and an area of central cavitation",
+          "reference": "https://doi.org/10.53347/rID-2285"
+        },
+        {
+          "type": "",
+          "text": "Serologic testing reveals positivity for proteinase-3 antineutrophil cytoplasmic antibodies (PR3-ANCA, c-ANCA)"
+        }
+      ],
+      "description": "Granulomatosis with polyangiitis is an ANCA-associated necrotizing small-vessel vasculitis characterized by granulomatous inflammation involving the upper respiratory tract, lungs, and kidneys. It typically affects middle-aged adults and presents with chronic sinus disease, pulmonary symptoms, and rapidly progressive glomerulonephritis. Diagnosis is suggested by compatible clinical findings, PR3-ANCA positivity, and tissue biopsy demonstrating necrotizing granulomatous vasculitis. Management involves glucocorticoids with immunosuppressive therapy. Complications include diffuse alveolar hemorrhage, renal failure, subglottic stenosis, and permanent organ damage.",
+      "management": "Induce remission with glucocorticoids plus rituximab or cyclophosphamide. Transition to maintenance immunosuppression and monitor closely for renal and pulmonary complications."
+    },
+    {
+      "id": 231,
+      "diagnosis": "Eosinophilic Granulomatosis with polyangiitis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 39-year-old woman presents to her family physician with progressively worsening shortness of breath, chronic cough, and increasing fatigue over several months"
+        },
+        {
+          "type": "",
+          "text": "She has a long-standing history of adult-onset asthma and recurrent episodes of nasal congestion requiring treatment with inhaled and oral medications"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals diffuse expiratory wheezing, and neurologic examination demonstrates decreased sensation over the lateral aspect of her right foot"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates marked peripheral eosinophilia, and inflammatory markers are elevated"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates transient, patchy bilateral pulmonary infiltrates that do not conform to a single lobar distribution"
+        },
+        {
+          "type": "",
+          "text": "Biopsy demonstrates eosinophil-rich necrotizing granulomatous vasculitis involving small- to medium-sized vessels"
+        }
+      ],
+      "description": "Eosinophilic granulomatosis with polyangiitis is an ANCA-associated small-vessel vasculitis characterized by asthma, eosinophilia, and eosinophil-rich granulomatous inflammation. It typically develops in adults with long-standing asthma and chronic rhinosinusitis. Patients may present with pulmonary infiltrates, peripheral neuropathy, skin lesions, or systemic symptoms. Diagnosis relies on clinical features, eosinophilia, ANCA testing, imaging, and biopsy findings. Management includes glucocorticoids and immunosuppressive therapy for severe disease. Complications include mononeuritis multiplex, myocarditis, diffuse alveolar hemorrhage, and end-organ damage.",
+      "management": "Treat with systemic glucocorticoids and add immunosuppressive or biologic therapy for organ-threatening disease. Monitor eosinophil counts and cardiac involvement closely."
+    },
+    {
+      "id": 232,
+      "diagnosis": "Goodpasture's Syndrome (antiglomerular basement membrane antibody disease [anti-GBM])",
+      "aliases": [
+        "antiglomerular basement membrane antibody disease [anti-GBM]",
+        "Goodpasture's Syndrome"
+      ],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 27-year-old man presents to the emergency department with worsening shortness of breath, fatigue, and several episodes of coughing up blood over the past week"
+        },
+        {
+          "type": "",
+          "text": "He recently recovered from a viral respiratory illness and has a history of cigarette smoking but was otherwise healthy before symptom onset"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals bibasilar crackles and mild lower extremity edema. He appears pale and mildly tachypneic"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin is decreased, serum creatinine is elevated, and urinalysis demonstrates hematuria with red blood cell casts"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/goodpasture-s-syndrome-antiglomerular-basement-membrane-antibody-disease-anti-gbm-clue5.jpg",
+          "detail": "Chest CT shows patchy regions of ground glass opacity throughout the lungs. No interlobular septal thickening. No pleural effusion",
+          "reference": "https://doi.org/10.53347/rID-38334"
+        },
+        {
+          "type": "",
+          "text": "Kidney biopsy with immunofluorescence demonstrates smooth linear deposition of IgG along the glomerular basement membrane"
+        }
+      ],
+      "description": "Goodpasture syndrome is an autoimmune disorder caused by antibodies directed against type IV collagen within glomerular and alveolar basement membranes. It most commonly affects young adults and presents with pulmonary hemorrhage and rapidly progressive glomerulonephritis. Patients develop hemoptysis, dyspnea, hematuria, and acute kidney injury. Diagnosis relies on anti-glomerular basement membrane antibodies and biopsy demonstrating linear IgG deposition. Management includes plasmapheresis, glucocorticoids, and immunosuppression. Complications include diffuse alveolar hemorrhage, respiratory failure, end-stage kidney disease, and death.",
+      "management": "Initiate urgent plasmapheresis with high-dose glucocorticoids and immunosuppression. Monitor pulmonary hemorrhage and renal function closely to prevent irreversible organ damage."
+    },
+    {
+      "id": 233,
+      "diagnosis": "Dieulafoy Lesion",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 61-year-old man presents to the emergency department after a sudden episode of large-volume hematemesis associated with lightheadedness and weakness"
+        },
+        {
+          "type": "",
+          "text": "He reports no prior history of peptic ulcer disease, chronic liver disease, or significant gastrointestinal symptoms before this event"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachycardia, orthostatic hypotension, and signs of acute blood loss without abdominal tenderness or peritoneal findings"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin is decreased, while coagulation studies and liver function tests are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Upper endoscopy demonstrates active arterial bleeding from a minute mucosal defect in the proximal stomach, with otherwise normal surrounding mucosa"
+        },
+        {
+          "type": "",
+          "text": "Endoscopic evaluation identifies a large-caliber submucosal artery that protrudes through a tiny erosion, most commonly along the lesser curvature of the stomach near the gastroesophageal junction"
+        }
+      ],
+      "description": "A Dieulafoy lesion is a vascular anomaly in which an abnormally large-caliber submucosal artery erodes through a small mucosal defect, causing potentially massive gastrointestinal bleeding. It most commonly occurs in the proximal stomach along the lesser curvature but can arise elsewhere in the gastrointestinal tract. Patients present with recurrent or sudden severe upper gastrointestinal hemorrhage. Diagnosis is established by endoscopy. Management is primarily endoscopic hemostasis. Complications include recurrent bleeding, hemorrhagic shock, transfusion requirements, and death.",
+      "management": "Stabilize hemodynamics and perform urgent endoscopic hemostasis using clips, thermal coagulation, or injection therapy. Refractory bleeding may require angiographic or surgical intervention."
+    },
+    {
+      "id": 234,
+      "diagnosis": "Empyema",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents to the emergency department with worsening shortness of breath, pleuritic chest pain, and persistent fever despite completing a course of antibiotics for pneumonia"
+        },
+        {
+          "type": "",
+          "text": "Two weeks earlier, he was treated for a community-acquired lower respiratory tract infection but reports progressive symptoms rather than improvement"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals reduced chest expansion on the right side, dullness to percussion, and markedly decreased breath sounds over the right lung base"
+        },
+        {
+          "type": "",
+          "text": "Leukocytosis and elevated inflammatory markers are present. Thoracentesis yields cloudy fluid with low pH, low glucose, and elevated lactate dehydrogenase"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/empyema-clue5.jpg",
+          "detail": "Chest CT demonstrates a large pleural collection with thickened surrounding pleura (split pleura sign) and multiple gas bubbles. The adjacent lung is compressed and collapsed",
+          "reference": "https://doi.org/10.53347/rID-8562"
+        },
+        {
+          "type": "",
+          "text": "Gram stain and culture of pleural fluid demonstrate bacterial infection within the pleural space"
+        }
+      ],
+      "description": "Empyema is the accumulation of purulent fluid within the pleural space, most commonly arising as a complication of bacterial pneumonia. Risk factors include pneumonia, thoracic surgery, chest trauma, and aspiration. Patients typically present with fever, pleuritic chest pain, dyspnea, and persistent infection despite antibiotic therapy. Diagnosis relies on imaging and thoracentesis demonstrating infected exudative pleural fluid. Management requires antimicrobial therapy and pleural drainage. Complications include fibrothorax, trapped lung, sepsis, respiratory failure, and prolonged hospitalization.",
+      "management": "systemic antibiotics and pleural drainage via chest tube (thoracostomy), with intrapleural tPA plus DNase for loculated collections or VATS decortication if medical therapy fails."
+    },
+    {
+      "id": 235,
+      "diagnosis": "Parapneumonic Effusion",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 64-year-old woman presents to the emergency department with fever, productive cough, and worsening shortness of breath over the past week"
+        },
+        {
+          "type": "",
+          "text": "She was recently diagnosed with community-acquired pneumonia and has completed several days of antibiotic therapy with only partial improvement"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals decreased breath sounds, reduced tactile fremitus, and dullness to percussion over the lower portion of the left hemithorax"
+        },
+        {
+          "type": "",
+          "text": "Leukocytosis and elevated inflammatory markers are present. Thoracentesis demonstrates an exudative pleural effusion without evidence of frank pus"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/parapneumonic-effusion-clue5.jpg",
+          "detail": "Chest CT shows left lower lobe consolidation and atelectasis. Moderate left pleural effusion extending to the oblique fissure",
+          "reference": "https://doi.org/10.53347/rID-44224"
+        },
+        {
+          "type": "",
+          "text": "Pleural fluid analysis demonstrates a neutrophil-predominant exudate occurring in association with bacterial pneumonia but without microorganisms identified on Gram stain or culture"
+        }
+      ],
+      "description": "Parapneumonic effusion is a pleural effusion that develops secondary to pneumonia or another pulmonary infection. It results from inflammation of the pleural surfaces and ranges from uncomplicated sterile exudates to complicated effusions that may progress to empyema. Patients present with symptoms of pneumonia accompanied by dyspnea and pleuritic chest pain. Diagnosis relies on imaging and thoracentesis with pleural fluid analysis. Management depends on severity and fluid characteristics. Complications include loculation, empyema, fibrothorax, and respiratory compromise.",
+      "management": "Treat the underlying pneumonia with appropriate antibiotics. Perform thoracentesis when indicated and drain complicated effusions to prevent progression to empyema."
+    },
+    {
+      "id": 236,
+      "diagnosis": "Primary Pneumothorax",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 22-year-old man presents to the emergency department with sudden-onset right-sided chest pain and shortness of breath that began while studying for an exam"
+        },
+        {
+          "type": "",
+          "text": "He is otherwise healthy, takes no medications, and has no history of lung disease or recent trauma"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals decreased breath sounds and reduced chest expansion over the left hemithorax. Oxygen saturation is mildly reduced"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count, cardiac biomarkers, and inflammatory markers are within normal limits. Arterial blood gas demonstrates mild hypoxemia"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/primary-pneumothorax-clue5.jpg",
+          "detail": "CXR reveals a visible visceral pleural edge and loss of pulmonary markings peripheral to the line. There is a slight mediastinal shift away from the compromised lung",
+          "reference": "https://doi.org/10.53347/rID-86926"
+        },
+        {
+          "type": "",
+          "text": "Thoracoscopic evaluation identifies rupture of a small apical subpleural bleb"
+        }
+      ],
+      "description": "Primary spontaneous pneumothorax occurs when air accumulates within the pleural space without preceding trauma or known lung disease, usually due to rupture of apical subpleural blebs. It most commonly affects tall, thin adolescents and young adults, particularly males and smokers. Patients present with sudden pleuritic chest pain and dyspnea. Diagnosis is confirmed by chest imaging demonstrating a pneumothorax. Management ranges from observation to needle aspiration or chest tube placement. Complications include recurrence, tension pneumothorax, and respiratory compromise.",
+      "management": "Small stable pneumothoraces may be observed with oxygen therapy. Larger or symptomatic cases require aspiration or chest tube drainage and recurrence prevention."
+    },
+    {
+      "id": 237,
+      "diagnosis": "Secondary Pneumothorax",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 68-year-old man presents to the emergency department with sudden-onset left-sided chest pain and worsening shortness of breath that developed while walking to the mailbox"
+        },
+        {
+          "type": "",
+          "text": "He has a long history of cigarette smoking and chronic respiratory symptoms requiring daily inhaler therapy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachypnea, decreased breath sounds over the left hemithorax, and increased work of breathing compared with his baseline"
+        },
+        {
+          "type": "",
+          "text": "Arterial blood gas demonstrates hypoxemia. Routine bloodwork is otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates a visible pleural line with absence of peripheral lung markings and partial collapse of the left lung. Hyperinflated lungs are also noted"
+        },
+        {
+          "type": "",
+          "text": "Review of prior imaging demonstrates severe centrilobular emphysema with large apical bullae"
+        }
+      ],
+      "description": "Secondary spontaneous pneumothorax occurs when air accumulates in the pleural space due to an underlying lung disease, most commonly chronic obstructive pulmonary disease with emphysematous bullae. It typically affects older adults and causes more severe symptoms than primary spontaneous pneumothorax because of reduced pulmonary reserve. Diagnosis is confirmed by chest imaging demonstrating a pneumothorax and underlying lung pathology. Management generally requires pleural drainage. Complications include respiratory failure, recurrence, tension pneumothorax, and increased mortality.",
+      "management": "Provide supplemental oxygen and perform chest tube drainage in most cases. Address the underlying lung disease and consider definitive recurrence-prevention strategies."
+    },
+    {
+      "id": 238,
+      "diagnosis": "Acute Bronchitis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 31-year-old woman presents to her family physician with a persistent cough that began after a recent upper respiratory tract infection and has continued for nearly two weeks"
+        },
+        {
+          "type": "",
+          "text": "She reports several days of nasal congestion, sore throat, and low-grade fever before the cough developed. She is otherwise healthy and has no history of chronic lung disease"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals scattered wheezes and rhonchi that improve with coughing. She is afebrile and not in respiratory distress"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count and inflammatory markers are within normal limits or only mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/acute-bronchitis-clue5.jpg",
+          "detail": "Normal CXR. Some degree of hyperinflation due to mildly depressed diaphragms",
+          "reference": "https://doi.org/10.53347/rID-8304"
+        },
+        {
+          "type": "",
+          "text": "The cough persists for several weeks despite resolution of other symptoms, most commonly following a viral infection and without radiographic evidence of pneumonia."
+        }
+      ],
+      "description": "Acute bronchitis is a self-limited inflammation of the bronchi, most commonly caused by viral respiratory infections. It affects otherwise healthy individuals and typically follows an upper respiratory tract infection. Patients present with an acute cough, often lasting several weeks, with or without sputum production. Diagnosis is clinical and supported by the absence of focal findings or radiographic evidence of pneumonia. Management is primarily supportive. Complications are uncommon but include transient bronchial hyperreactivity, unnecessary antibiotic exposure, and missed alternative diagnoses.",
+      "management": "Provide reassurance and supportive care with hydration and symptom control. Antibiotics are generally not indicated unless a specific bacterial cause is suspected."
+    },
+    {
+      "id": 239,
+      "diagnosis": "Group A Streptococcus Pharyngitis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 10-year-old boy is brought to his family physician with a two-day history of sore throat, painful swallowing, and fever"
+        },
+        {
+          "type": "",
+          "text": "Several classmates have recently been absent from school with similar symptoms"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals an erythematous pharynx with tonsillar enlargement, patchy tonsillar exudates, and tender anterior cervical lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "He has no cough or rhinorrhea"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates leukocytosis with neutrophil predominance. A rapid antigen detection test is positive"
+        },
+        {
+          "type": "",
+          "text": "Throat culture grows a β-hemolytic organism that is bacitracin-sensitive"
+        }
+      ],
+      "description": "Group A streptococcal pharyngitis is an acute bacterial infection of the oropharynx caused by Streptococcus pyogenes. It most commonly affects school-aged children and spreads through respiratory droplets. Patients present with fever, sore throat, tonsillar exudates, and tender anterior cervical lymphadenopathy, typically without cough. Diagnosis is established with rapid antigen testing or throat culture. Treatment reduces symptom duration and prevents complications. Potential complications include peritonsillar abscess, acute rheumatic fever, post-streptococcal glomerulonephritis, and scarlet fever.",
+      "management": "Treat with penicillin or amoxicillin to reduce transmission and prevent rheumatic fever. Provide analgesia, hydration, and return precautions for complications."
+    },
+    {
+      "id": 240,
+      "diagnosis": "Hospital Associated Pneumonia (HAP)",
+      "aliases": [
+        "HAP",
+        "Hospital Associated Pneumonia"
+      ],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 72-year-old man develops worsening cough, fever, and shortness of breath while recovering from a hip fracture repair in hospital"
+        },
+        {
+          "type": "",
+          "text": "He had been recovering well postoperatively but develops symptoms five days after admission. His medical history is significant for COPD and type 2 diabetes mellitus"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachypnea, fever, and crackles over the right lower lung field. Oxygen saturation is lower than previously documented during his admission"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates neutrophilic leukocytosis, and inflammatory markers are elevated. Arterial blood gas reveals hypoxemia"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates a new right lower lobe air-space opacity not present on admission imaging"
+        },
+        {
+          "type": "",
+          "text": "Respiratory culture grows a multidrug-resistant gram-negative organism after pneumonia develops more than 48 hours following hospital admission"
+        }
+      ],
+      "management": "Empiric antibiotic therapy covering S. aureus, P. aeruginosa, and other gram-negative bacilli for all patients with suspected HAP. MRSA coverage (vancomycin or linezolid): Add only if risk factors for MDR pathogens are present, the unit has >10–20% MRSA prevalence, or local prevalence is unknown. Without MRSA risk: Monotherapy with piperacillin-tazobactam, cefepime, levofloxacin, imipenem, or meropenem is suggested. A 7-day course is recommended (strong recommendation), with adjustment based on clinical, radiologic, and laboratory response."
+    },
+    {
+      "id": 241,
+      "diagnosis": "Ventilator Associated Pneumonia (VAP)",
+      "aliases": [
+        "VAP",
+        "Ventilator Associated Pneumonia"
+      ],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old man in the intensive care unit develops increasing oxygen requirements and recurrent fevers while recovering from septic shock"
+        },
+        {
+          "type": "",
+          "text": "He has been mechanically ventilated for six days following emergency abdominal surgery and had initially shown signs of clinical improvement"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals fever, tachycardia, purulent tracheal secretions, and new coarse crackles over the right lung field"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates neutrophilic leukocytosis, inflammatory markers are elevated, and arterial blood gas analysis demonstrates worsening hypoxemia"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates a new right lower lobe infiltrate that was not present on previous imaging obtained after intubation"
+        },
+        {
+          "type": "",
+          "text": "Quantitative culture of lower respiratory tract secretions obtained after more than 48 hours of mechanical ventilation grows a multidrug-resistant gram-negative organism"
+        }
+      ],
+      "description": "Ventilator-associated pneumonia is a hospital-acquired lung infection that develops more than 48 hours after endotracheal intubation and initiation of mechanical ventilation. Common pathogens include Pseudomonas aeruginosa, Staphylococcus aureus, and other multidrug-resistant gram-negative organisms. Patients develop fever, purulent respiratory secretions, worsening oxygenation, and new pulmonary infiltrates. Diagnosis combines clinical findings, imaging, and microbiologic sampling. Management requires prompt empiric broad-spectrum antibiotics followed by culture-directed therapy. Complications include respiratory failure, sepsis, prolonged mechanical ventilation, and increased mortality.",
+      "management": "Empiric antibiotic coverage for S. aureus, P. aeruginosa, and other gram-negative bacilli in all patients with suspected VAP. MRSA coverage (vancomycin or linezolid): Only when risk factors for MDR pathogens are present, the unit has >10–20% MRSA prevalence, or local prevalence is unknown. Otherwise, cover MSSA with piperacillin-tazobactam, cefepime, levofloxacin, imipenem, or meropenem. Dual anti-pseudomonal therapy: Recommended empirically when MDR risk factors are present, to increase the probability that at least one agent is active against the causative pathogen. A 7-day course is recommended (strong recommendation, moderate-quality evidence), with adjustment based on clinical, radiologic, and laboratory response."
+    },
+    {
+      "id": 242,
+      "diagnosis": "SARS-CoV-2",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 54-year-old man presents to the emergency department with fever, fatigue, dry cough, and progressive shortness of breath over the past five days"
+        },
+        {
+          "type": "",
+          "text": "Several family members recently experienced a similar febrile respiratory illness, and he has a history of obesity and hypertension"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals fever, tachypnea, and oxygen saturation of 89% on room air. Lung auscultation demonstrates bilateral inspiratory crackles"
+        },
+        {
+          "type": "",
+          "text": "Lymphopenia is present, and inflammatory markers including CRP and ferritin are elevated"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/sars-cov-2-clue5.jpg",
+          "detail": "Chest CT shows multilobar and bilateral ground-glass opacities with lobular and rounded morphology in the periphery of both lungs",
+          "reference": "https://doi.org/10.53347/rID-73913"
+        },
+        {
+          "type": "",
+          "text": "A nucleic acid amplification test performed on a nasopharyngeal specimen detects RNA from a novel betacoronavirus"
+        }
+      ],
+      "description": "COVID-19 is a viral respiratory illness caused by SARS-CoV-2, an enveloped RNA coronavirus that enters host cells through ACE2 receptors. Disease severity ranges from asymptomatic infection to severe pneumonia and acute respiratory distress syndrome. Risk factors for severe illness include advanced age, obesity, cardiovascular disease, diabetes, and immunosuppression. Diagnosis is established through nucleic acid amplification testing. Management depends on disease severity and may include supportive care, antiviral therapy, and corticosteroids. Complications include respiratory failure, thrombosis, myocarditis, and long COVID.",
+      "management": "Provide supportive care and oxygen as needed. Use antiviral therapy for eligible patients and corticosteroids for hypoxemic disease while monitoring complications."
+    },
+    {
+      "id": 243,
+      "diagnosis": "Influenza",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 27-year-old woman presents to her family physician with the sudden onset of fever, chills, severe fatigue, headache, and diffuse muscle aches that began yesterday"
+        },
+        {
+          "type": "",
+          "text": "Several coworkers have recently been absent with similar respiratory symptoms"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals fever, tachycardia, pharyngeal erythema, and mild diffuse wheezing without focal lung findings"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates mild leukopenia. A respiratory viral panel is positive for an enveloped negative-sense RNA virus"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates no focal consolidation or pleural effusion"
+        },
+        {
+          "type": "",
+          "text": "After significant conversation, the patient says she did not receive this season's influenza vaccine"
+        }
+      ],
+      "description": "Influenza is an acute respiratory infection caused by influenza viruses, most commonly influenza A and B. Transmission occurs through respiratory droplets and seasonal outbreaks. Patients typically develop abrupt fever, myalgias, headache, fatigue, cough, and upper respiratory symptoms. Diagnosis is usually clinical but may be confirmed with molecular testing. Management is primarily supportive, with antiviral therapy considered for high-risk or severely ill patients. Complications include viral pneumonia, secondary bacterial pneumonia, myocarditis, encephalitis, and respiratory failure.",
+      "management": "Provide supportive care and initiate antiviral therapy early in high-risk or hospitalized patients. Monitor for secondary bacterial pneumonia and respiratory complications."
+    },
+    {
+      "id": 244,
+      "diagnosis": "Parainfluenza",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 2-year-old boy is brought to the emergency department with a barking cough and noisy breathing that worsened overnight"
+        },
+        {
+          "type": "",
+          "text": "Three days earlier, he developed rhinorrhea, low-grade fever, and nasal congestion. Several children at his daycare have recently had similar respiratory illnesses"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals inspiratory stridor, hoarseness, and suprasternal retractions. Lung auscultation is otherwise clear bilaterally"
+        },
+        {
+          "type": "",
+          "text": "Routine laboratory investigations are unremarkable. Respiratory viral testing identifies an enveloped negative-sense RNA virus"
+        },
+        {
+          "type": "",
+          "text": "Anteroposterior neck radiography demonstrates symmetric narrowing of the subglottic airway"
+        },
+        {
+          "type": "",
+          "text": "The causative pathogen belongs to the Paramyxoviridae family"
+        }
+      ],
+      "description": "Parainfluenza virus is an enveloped negative-sense RNA virus and the leading cause of croup (laryngotracheobronchitis) in young children. Infection causes inflammation and edema of the subglottic airway, producing a characteristic barking cough, hoarseness, and inspiratory stridor. Transmission occurs through respiratory droplets and direct contact. Diagnosis is usually clinical, though imaging may demonstrate the steeple sign. Management is supportive, with corticosteroids and nebulized epinephrine used for more severe disease. Complications include respiratory distress, hypoxemia, and rarely respiratory failure.",
+      "management": "Administer corticosteroids for all symptomatic patients. Moderate or severe disease may require nebulized epinephrine and observation until respiratory distress improves."
+    },
+    {
+      "id": 245,
+      "diagnosis": "Respiratory Syncytial Virus (RSV)",
+      "aliases": [
+        "RSV",
+        "Respiratory Syncytial Virus"
+      ],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 7-month-old boy is brought to the emergency department with worsening cough, difficulty feeding, and increasing work of breathing over the past three days"
+        },
+        {
+          "type": "",
+          "text": "He was born prematurely and developed rhinorrhea and low-grade fever several days before the onset of respiratory symptoms. Multiple children at his daycare have recently been ill"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachypnea, subcostal retractions, nasal flaring, and diffuse bilateral wheezing with scattered crackles"
+        },
+        {
+          "type": "",
+          "text": "Pulse oximetry demonstrates mild hypoxemia. Routine bloodwork is unremarkable, and respiratory viral testing is positive for a common pediatric respiratory virus"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates hyperinflation with peribronchial thickening and patchy areas of subsegmental atelectasis"
+        },
+        {
+          "type": "",
+          "text": "The causative virus induces fusion of infected respiratory epithelial cells, resulting in the formation of multinucleated syncytia"
+        }
+      ],
+      "description": "Respiratory syncytial virus is an enveloped negative-sense RNA virus and the leading cause of bronchiolitis in infants. Infection spreads through respiratory secretions and is particularly severe in premature infants and those with cardiopulmonary disease. Patients develop rhinorrhea, cough, wheezing, and respiratory distress. Diagnosis is usually clinical, though viral testing may confirm infection. Management is primarily supportive. Complications include apnea, dehydration, respiratory failure, recurrent wheezing, and hospitalization, particularly among high-risk infants.",
+      "management": "Provide supportive care with hydration, nasal suctioning, and oxygen when needed. Severe cases may require hospitalization and respiratory support. Avoid routine antibiotics."
+    },
+    {
+      "id": 246,
+      "diagnosis": "Lady Windermere Syndrome",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old woman presents to her family physician with a chronic cough, progressive fatigue, and unintentional weight loss over the past year."
+        },
+        {
+          "type": "",
+          "text": "She has never smoked and has no history of chronic lung disease, but reports frequent respiratory infections requiring multiple courses of antibiotics."
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals scattered crackles over the right middle lung field. The remainder of the examination is unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork is largely normal. Multiple sputum cultures grow acid-fast organisms, but nucleic acid testing for tuberculosis is negative"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/lady-windermere-syndrome-clue5.jpg",
+          "detail": "Chest CT shows subsegmental atelectasis in the anterior segment of the right upper lobe and lingula. Bronchiectasis is seen in the right upper lobe, middle lobe, and lingula, with some of the demonstrating a \"tree-in-bud\" pattern due to mucosal impactions",
+          "reference": "https://doi.org/10.53347/rID-86203"
+        },
+        {
+          "type": "",
+          "text": "Microbiologic testing identifies a nontuberculous mycobacterial species, Mycobacterium avium complex"
+        }
+      ],
+      "description": "Lady Windermere syndrome is a form of pulmonary nontuberculous mycobacterial infection, usually caused by Mycobacterium avium complex, affecting older women without major pre-existing lung disease. It classically involves the right middle lobe and lingula, producing chronic cough, fatigue, weight loss, and recurrent respiratory infections. Diagnosis relies on characteristic imaging findings and repeated positive respiratory cultures. Management requires prolonged multidrug antimicrobial therapy. Complications include progressive bronchiectasis, chronic respiratory symptoms, hemoptysis, and irreversible structural lung damage.",
+      "management": "Three-times-weekly macrolide-based regimen (azithromycin, rifampicin, ethambutol) for ≥12 months after sputum culture conversion, combined with airway clearance techniques. Airway clearance, nutritional support, and pulmonary rehabilitation is an essential adjunct."
+    },
+    {
+      "id": 247,
+      "diagnosis": "Invasive Pulmonary Aspergillosis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents to the emergency department with fever, cough, and worsening shortness of breath despite receiving broad-spectrum antibiotics for several days"
+        },
+        {
+          "type": "",
+          "text": "He recently underwent induction chemotherapy for acute leukemia and has remained hospitalized since treatment"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals fever, tachypnea, and scattered crackles over both lung fields. Oral mucosal ulcerations are also noted"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates profound neutropenia. Serum galactomannan antigen testing is positive"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates multiple pulmonary nodules surrounded by ground-glass opacities"
+        },
+        {
+          "type": "",
+          "text": "Biopsy demonstrates septate hyphae with acute-angle branching invading blood vessels"
+        }
+      ],
+      "description": "Invasive pulmonary aspergillosis is an opportunistic fungal infection caused by Aspergillus species, most commonly affecting patients with prolonged neutropenia, hematologic malignancies, transplantation, or significant immunosuppression. Infection begins after inhalation of spores and can invade pulmonary blood vessels, causing tissue necrosis and hemorrhage. Diagnosis relies on imaging, fungal biomarkers such as galactomannan, and microbiologic or histopathologic confirmation. Management requires prompt antifungal therapy. Complications include massive hemoptysis, disseminated infection, respiratory failure, and death.",
+      "management": "Initiate prompt antifungal therapy, typically with voriconazole. Reverse immunosuppression when possible and monitor closely for dissemination, hemorrhage, and respiratory failure."
+    },
+    {
+      "id": 248,
+      "diagnosis": "Histoplasmosis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old man presents to his family physician with two weeks of fever, dry cough, fatigue, and progressive shortness of breath"
+        },
+        {
+          "type": "",
+          "text": "He recently returned from a camping trip during which he spent several hours exploring caves and abandoned structures"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals low-grade fever and scattered bilateral crackles. No focal abnormalities are identified on the remainder of the examination"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates mild leukopenia, and urine antigen testing is positive for a fungal pathogen"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates diffuse reticulonodular opacities with bilateral hilar and mediastinal lymphadenopathy."
+        },
+        {
+          "type": "",
+          "text": "Tissue biopsy demonstrates small intracellular yeasts residing within macrophages"
+        }
+      ],
+      "description": "Histoplasmosis is a fungal infection caused by Histoplasma capsulatum, a dimorphic fungus found in soil contaminated with bird or bat droppings. Infection occurs through inhalation of fungal spores and most commonly causes a self-limited pulmonary illness. Risk factors include cave exploration, demolition work, and exposure to bird or bat habitats. Diagnosis relies on antigen testing, serology, culture, or tissue biopsy. Management depends on disease severity. Complications include chronic pulmonary disease, mediastinal fibrosis, and disseminated infection in immunocompromised individuals.",
+      "management": "Mild disease may only require observation. Moderate or severe infection is treated with antifungal therapy, and disseminated disease requires prolonged treatment and follow-up."
+    },
+    {
+      "id": 249,
+      "diagnosis": "Blastomycosis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 41-year-old man presents to his family physician with several weeks of cough, fever, fatigue, and unintentional weight loss"
+        },
+        {
+          "type": "",
+          "text": "He recently returned from a hunting trip where he spent significant time clearing brush and disturbing soil near rivers and wooded areas"
+        },
+        {
+          "type": "",
+          "text": "Respiratory examination reveals scattered crackles. In addition, several painless verrucous skin lesions with irregular raised borders are noted on his forearm"
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork demonstrates elevated inflammatory markers. Fungal culture from a skin lesion is pending."
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates patchy air-space consolidation and multiple pulmonary nodules"
+        },
+        {
+          "type": "",
+          "text": "Microscopy demonstrates broad-based budding yeasts with thick, refractile cell walls"
+        }
+      ],
+      "description": "Blastomycosis is a fungal infection caused by Blastomyces species, dimorphic fungi found in moist soil and decaying organic matter, particularly near waterways. Infection occurs through inhalation of spores and primarily affects the lungs, although dissemination to skin, bone, and the genitourinary system is common. Diagnosis relies on culture, antigen testing, or visualization of characteristic broad-based budding yeasts. Management depends on disease severity and extent of dissemination. Complications include respiratory failure, osteomyelitis, central nervous system involvement, and disseminated disease.",
+      "management": "Treat mild to moderate disease with itraconazole. Severe, disseminated, or central nervous system infection requires amphotericin B followed by prolonged azole therapy."
+    },
+    {
+      "id": 250,
+      "diagnosis": "Metapneumovirus",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 14-month-old girl is brought to the emergency department with worsening cough, fever, and difficulty breathing over the past three days"
+        },
+        {
+          "type": "",
+          "text": "She attends daycare and developed rhinorrhea and nasal congestion several days before the onset of lower respiratory symptoms. Several children in her class have recently been ill"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachypnea, subcostal retractions, diffuse wheezing, and scattered crackles throughout both lung fields"
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork is unremarkable. Multiplex respiratory viral PCR identifies an enveloped negative-sense RNA virus"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/metapneumovirus-clue5.jpg",
+          "detail": "CXR reveals bilateral basal patchy airspace opacification. Irregular bilateral heart border suggesting lingula and RML involvement",
+          "reference": "https://doi.org/10.53347/rID-94586"
+        },
+        {
+          "type": "",
+          "text": "The causative pathogen belongs to the Paramyxoviridae family"
+        }
+      ],
+      "description": "Human metapneumovirus is an enveloped negative-sense RNA virus in the Paramyxoviridae family that causes upper and lower respiratory tract infections. It primarily affects infants, young children, older adults, and immunocompromised individuals. Clinical manifestations range from mild upper respiratory symptoms to bronchiolitis and pneumonia. Diagnosis is typically established by respiratory viral PCR testing. Management is supportive, including hydration and respiratory support when necessary. Complications include bronchiolitis, pneumonia, respiratory failure, hospitalization, and severe disease in vulnerable populations.",
+      "management": "Provide supportive care with hydration, oxygen supplementation, and respiratory support as needed. No specific antiviral therapy is routinely recommended for immunocompetent patients."
+    },
+    {
+      "id": 251,
+      "diagnosis": "Cryptococcal Pneumonia",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 44-year-old man presents to his family physician with several weeks of cough, progressive shortness of breath, fatigue, and unintentional weight loss"
+        },
+        {
+          "type": "",
+          "text": "He has advanced HIV infection and has not been taking his prescribed medications consistently over the past year"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals low-grade fever, mild tachypnea, and scattered bilateral crackles without focal findings"
+        },
+        {
+          "type": "",
+          "text": "CD4 count is markedly reduced. Serum cryptococcal antigen testing is positive"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates multiple pulmonary nodules with surrounding ground-glass opacities and mediastinal lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Microscopic examination using India ink demonstrates encapsulated budding yeasts with a prominent polysaccharide capsule"
+        }
+      ],
+      "description": "Cryptococcal pneumonia is a fungal lung infection caused by Cryptococcus neoformans or Cryptococcus gattii. Infection occurs through inhalation of environmental spores and primarily affects immunocompromised individuals, particularly those with advanced HIV/AIDS, although C. gattii may infect immunocompetent hosts. Patients develop cough, dyspnea, fever, and constitutional symptoms. Diagnosis relies on antigen testing, culture, and histopathology. Management involves antifungal therapy. Complications include respiratory failure, fungemia, and dissemination to the central nervous system causing cryptococcal meningitis.",
+      "management": "Evaluate for central nervous system involvement and initiate antifungal therapy. Severe disease requires induction treatment followed by prolonged consolidation and maintenance therapy."
+    },
+    {
+      "id": 252,
+      "diagnosis": "Coccidioidomycosis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 32-year-old woman presents to her family physician with three weeks of cough, fatigue, fever, and pleuritic chest pain that began shortly after returning from a hiking trip"
+        },
+        {
+          "type": "",
+          "text": "She recently spent time in a desert region and recalls participating in outdoor activities during a windstorm. She has no significant past medical history"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals low-grade fever and scattered crackles over both lung fields. Tender erythematous nodules are present on the anterior shins"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates peripheral eosinophilia. Fungal serologic testing is positive"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates patchy pulmonary infiltrates with ipsilateral hilar lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates large thick-walled spherules filled with endospores"
+        }
+      ],
+      "description": "Coccidioidomycosis is a fungal infection caused by Coccidioides species, dimorphic fungi endemic to arid desert regions of the southwestern United States and parts of Central and South America. Infection occurs through inhalation of airborne arthroconidia disturbed from soil. Most infections are asymptomatic or cause a self-limited pulmonary illness. Diagnosis relies on serology, culture, or histopathology. Management depends on disease severity and host factors. Complications include chronic pulmonary disease, meningitis, osteomyelitis, and disseminated infection.",
+      "management": "Mild disease may only require observation. Severe, chronic, or disseminated infection requires prolonged antifungal therapy and monitoring for extrapulmonary complications"
+    },
+    {
+      "id": 253,
+      "diagnosis": "Postobstructive Pneumonia",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 69-year-old man presents to his family physician with persistent cough, fever, and increasing shortness of breath despite completing two courses of antibiotics over the past month"
+        },
+        {
+          "type": "",
+          "text": "He has a 50-pack-year smoking history and reports several months of unintentional weight loss and reduced appetite"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals decreased breath sounds and dullness to percussion over the right upper lung field. Digital clubbing is also present"
+        },
+        {
+          "type": "",
+          "text": "Leukocytosis and elevated inflammatory markers are present. Sputum cultures repeatedly grow mixed respiratory flora"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates persistent right upper lobe consolidation distal to an obstructing endobronchial mass with associated atelectatic changes"
+        },
+        {
+          "type": "",
+          "text": "Bronchoscopy reveals a partially occluding bronchial lesion causing impaired drainage and recurrent infection of the distal lung parenchyma"
+        }
+      ],
+      "description": "Postobstructive pneumonia is a pulmonary infection that develops distal to a partial or complete airway obstruction, most commonly caused by bronchogenic carcinoma. Obstruction impairs airway clearance and promotes bacterial growth, resulting in recurrent or persistent pneumonia despite appropriate antibiotic therapy. Patients often present with cough, fever, dyspnea, and constitutional symptoms related to the underlying lesion. Diagnosis relies on imaging and bronchoscopy. Management requires treatment of both the infection and the obstructing cause. Complications include lung abscess, empyema, sepsis, and respiratory failure.",
+      "management": "Treat the infection with appropriate antibiotics and relieve the airway obstruction when possible. Bronchoscopy, surgery, or oncologic therapy may be required."
+    },
+    {
+      "id": 254,
+      "diagnosis": "Lymphangitis Carcinomatosis",
+      "aliases": [],
+      "category": "Respiratory III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman presents to her family physician with progressively worsening shortness of breath and a persistent dry cough over the past two months"
+        },
+        {
+          "type": "",
+          "text": "She was treated for breast cancer three years ago and had been in remission until recently. She now reports unintentional weight loss and increasing fatigue"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachypnea and diffuse fine inspiratory crackles bilaterally. No focal signs of infection are present"
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork is nonspecific, although alkaline phosphatase is mildly elevated. Inflammatory markers are only minimally increased"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/lymphangitis-carcinomatosis-clue5.jpg",
+          "detail": "Chest CT shows interlobular septal thickening with nodular irregularity of the bronchovascular bundles and pleural surfaces",
+          "reference": "https://doi.org/10.53347/rID-1612"
+        },
+        {
+          "type": "",
+          "text": "Lung biopsy demonstrates malignant cells infiltrating and obstructing the pulmonary lymphatic channels"
+        }
+      ],
+      "description": "Lymphangitic carcinomatosis is metastatic spread of malignancy through the pulmonary lymphatic system, most commonly from breast, lung, gastric, pancreatic, or prostate cancer. Tumor infiltration of lymphatic channels causes progressive interstitial edema and impaired gas exchange. Patients present with rapidly progressive dyspnea, dry cough, and constitutional symptoms. Diagnosis relies on characteristic CT findings and histopathologic confirmation. Management focuses on treatment of the underlying malignancy. Complications include severe hypoxemia, respiratory failure, reduced quality of life, and poor overall prognosis.",
+      "management": "Treat the underlying malignancy with systemic therapy when appropriate. Provide supportive respiratory care and symptom management while monitoring for progressive hypoxemic failure."
+    },
+    {
+      "id": 288,
+      "diagnosis": "Nephrolithiasis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old man presents to the emergency department with sudden-onset severe left-sided flank pain that began while he was at work and has become progressively more intense"
+        },
+        {
+          "type": "",
+          "text": "He reports a history of poor fluid intake and experienced a similar episode several years ago that resolved spontaneously"
+        },
+        {
+          "type": "",
+          "text": "The patient appears restless and unable to find a comfortable position. Examination reveals left costovertebral angle tenderness without peritoneal signs"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates microscopic hematuria without evidence of infection. Serum creatinine is normal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/nephrolithiasis-clue5.jpg",
+          "detail": "Non-contrast CT abdomen shows mild left hydronephrosis and hydroureter with a 3mm calculus in the distal left ureter proximal to the left uterovesicular junction",
+          "reference": "https://doi.org/10.53347/rID-71420"
+        },
+        {
+          "type": "",
+          "text": "Stone analysis reveals calcium oxalate crystals with characteristic envelope-shaped morphology on urine microscopy"
+        }
+      ],
+      "description": "Nephrolithiasis is the formation of calculi within the urinary tract, most commonly composed of calcium oxalate. Risk factors include dehydration, hypercalciuria, obesity, dietary excesses, and certain metabolic disorders. Patients typically present with acute colicky flank pain, hematuria, nausea, and vomiting. Diagnosis is confirmed with urinalysis and imaging, particularly non-contrast CT. Management depends on stone size, location, and complications. Potential complications include urinary obstruction, hydronephrosis, infection, acute kidney injury, and recurrent stone formation.",
+      "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
+    },
+    {
+      "id": 307,
+      "diagnosis": "Hydronephrosis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 61-year-old man presents to the emergency department with progressively worsening right flank pain, nausea, and decreased urine output over the past two days"
+        },
+        {
+          "type": "",
+          "text": "He has a history of recurrent urinary stone disease and recently experienced several episodes of intermittent flank discomfort"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals right costovertebral angle tenderness and mild abdominal fullness. He is afebrile and hemodynamically stable"
+        },
+        {
+          "type": "",
+          "text": "Serum creatinine is elevated compared with baseline. Urinalysis demonstrates microscopic hematuria without significant pyuria"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/hydronephrosis-clue5.jpg",
+          "detail": "US demonstrates dilation of the renal pelvis and calyces with thinning of the surrounding renal parenchyma",
+          "reference": "https://doi.org/10.53347/rID-21885"
+        },
+        {
+          "type": "",
+          "text": "Further evaluation identifies urinary tract obstruction causing progressive dilation of the collecting system proximal to the blockage"
+        }
+      ],
+      "description": "Hydronephrosis is dilation of the renal pelvis and calyces resulting from obstruction of urinary outflow. Common causes include nephrolithiasis, benign prostatic hyperplasia, ureteral strictures, congenital anomalies, and malignancy. Patients may present with flank pain, decreased urine output, urinary symptoms, or be asymptomatic. Diagnosis is established with ultrasound or cross-sectional imaging demonstrating collecting system dilation. Management focuses on relieving the obstruction and treating the underlying cause. Complications include recurrent infection, nephrolithiasis, renal atrophy, and chronic kidney disease.",
+      "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
+    },
+    {
+      "id": 308,
+      "diagnosis": "Emphysematous Pyelonephritis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 62-year-old woman presents to the emergency department with fever, severe left flank pain, nausea, and increasing confusion over the past two days"
+        },
+        {
+          "type": "",
+          "text": "She has a long-standing history of poorly controlled type 2 diabetes mellitus and recurrent urinary tract infections"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals fever, hypotension, tachycardia, and marked left costovertebral angle tenderness"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates leukocytosis, serum creatinine is elevated, and urinalysis reveals pyuria, bacteriuria, and positive nitrites"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/emphysematous-pyelonephritis-clue5.jpg",
+          "detail": "Axial non-contrast CT demonstrates left renal enlargement with architectural distortion. There are bubbly and linear streaks of air within renal parenchyma and perinephric space with an intrarenal fluid collection. Bilateral perinephric fat stranding",
+          "reference": "https://doi.org/10.53347/rID-41366"
+        },
+        {
+          "type": "",
+          "text": "Urine and blood cultures grow a gas-producing gram-negative bacillus"
+        }
+      ],
+      "description": "Emphysematous pyelonephritis is a severe necrotizing renal infection characterized by gas formation within the renal parenchyma, collecting system, or surrounding tissues. It occurs most commonly in patients with diabetes mellitus and may be associated with urinary tract obstruction. Patients present with sepsis, fever, flank pain, and acute kidney injury. Diagnosis is confirmed by CT demonstrating intrarenal gas. Management requires aggressive resuscitation, broad-spectrum antibiotics, and source control. Complications include septic shock, renal failure, multiorgan dysfunction, and death.",
+      "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
+    },
+    {
+      "id": 309,
+      "diagnosis": "Urothelial Cell Carcinoma",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 68-year-old man presents to his family physician after noticing blood in his urine on several occasions over the past month. He denies dysuria or flank pain"
+        },
+        {
+          "type": "",
+          "text": "He has a 13-pack-year smoking history and previously worked in the dye manufacturing industry for many years"
+        },
+        {
+          "type": "",
+          "text": "Physical examination is largely unremarkable, with no costovertebral angle tenderness or palpable abdominal masses"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates numerous red blood cells without evidence of infection"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/urothelial-cell-carcinoma-clue5.jpg",
+          "detail": "MRI reveals two papillary tumours on the posterior aspect of the bladder base",
+          "reference": "https://doi.org/10.53347/rID-83748"
+        },
+        {
+          "type": "",
+          "text": "Cystoscopy confirms multiple papillary frond-like lesions arising from the urothelium."
+        }
+      ],
+      "description": "Urothelial cell carcinoma is the most common malignancy of the urinary tract and arises from the transitional epithelium lining the renal pelvis, ureters, bladder, and proximal urethra. Major risk factors include cigarette smoking, aromatic amine exposure, cyclophosphamide use, and chronic inflammation. Patients classically present with painless gross hematuria. Diagnosis relies on cystoscopy, urine cytology, and imaging. Management depends on stage and grade. Complications include local invasion, ureteral obstruction, recurrence, metastasis, and death.",
+      "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
+    },
+    {
+      "id": 310,
+      "diagnosis": "Multicystic Renal Dysplasia",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A full-term newborn is noted to have an abdominal mass during a routine postnatal examination but is otherwise feeding and growing normally"
+        },
+        {
+          "type": "",
+          "text": "Prenatal ultrasonography identified an abnormal kidney with multiple cystic structures, while the pregnancy and delivery were otherwise uncomplicated"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a palpable, non-tender flank mass. Blood pressure and urine output are normal"
+        },
+        {
+          "type": "",
+          "text": "Serum creatinine and electrolyte levels are within normal limits, and urinalysis is unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Renal ultrasound demonstrates multiple noncommunicating cysts of varying sizes replacing the affected kidney, with little identifiable normal renal parenchyma"
+        },
+        {
+          "type": "",
+          "text": "Nuclear renal scintigraphy demonstrates absent function of the affected kidney with compensatory function of the contralateral kidney"
+        }
+      ],
+      "description": "Multicystic dysplastic kidney is a congenital malformation resulting from abnormal renal development, often due to early urinary tract obstruction or abnormal ureteric bud–metanephric mesenchyme interaction. The affected kidney is replaced by multiple noncommunicating cysts and lacks normal function. Most cases are unilateral and detected prenatally or during infancy. Diagnosis is established with ultrasonography and functional imaging when needed. Management is usually conservative. Complications include hypertension, recurrent urinary tract infections, contralateral renal abnormalities, and chronic kidney disease if bilateral.",
+      "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
+    },
+    {
+      "id": 311,
+      "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents to the emergency department with new-onset gross hematuria and dull left flank discomfort"
+        },
+        {
+          "type": "",
+          "text": "He has end-stage kidney disease secondary to diabetic nephropathy"
+        },
+        {
+          "type": "",
+          "text": "Examination is notable for pallor and mild left flank tenderness. His dialysis access is functioning normally, and there are no signs of infection"
+        },
+        {
+          "type": "",
+          "text": "Serum creatinine is markedly elevated at baseline. Hemoglobin is decreased compared with previous measurements, while urinalysis demonstrates numerous red blood cells"
+        },
+        {
+          "type": "",
+          "text": "Renal ultrasound demonstrates bilaterally shrunken kidneys containing numerous small cortical and medullary cysts that were not present before the onset of kidney failure"
+        },
+        {
+          "type": "",
+          "text": "He has been receiving hemodialysis three times weekly for the past eight years"
+        }
+      ],
+      "description": "Dialysis-associated acquired cystic kidney disease is characterized by the development of multiple renal cysts in patients with long-standing chronic kidney disease, particularly those receiving dialysis. Unlike inherited cystic disorders, patients have no prior history of cystic kidneys before renal failure. The prevalence increases with dialysis duration. Diagnosis is established with renal imaging demonstrating numerous cysts in small atrophic kidneys. Management focuses on surveillance and complication monitoring. Complications include cyst hemorrhage, hematuria, infection, and significantly increased risk of renal cell carcinoma.",
+      "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
+    },
+    {
+      "id": 312,
+      "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
+      "aliases": [
+        "PCKD",
+        "Autosomal Dominant Polycystic Kidney Disease"
+      ],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 43-year-old man presents to his family physician with intermittent flank discomfort, increasing abdominal fullness, and several episodes of visible blood in his urine"
+        },
+        {
+          "type": "",
+          "text": "His father required dialysis in his fifties, and several relatives have a history of kidney disease. He has recently been diagnosed with hypertension"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals elevated blood pressure and bilateral palpable flank masses. Mild costovertebral angle tenderness is present."
+        },
+        {
+          "type": "",
+          "text": "Serum creatinine is mildly elevated, and urinalysis demonstrates microscopic hematuria with mild proteinuria"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/autosomal-dominant-polycystic-kidney-disease-pckd-clue5.jpg",
+          "reference": "https://doi.org/10.53347/rID-98146"
+        },
+        {
+          "type": "",
+          "text": "Magnetic resonance angiography performed after a sudden severe headache identifies a saccular aneurysm arising from the circle of Willis"
+        }
+      ],
+      "description": "Autosomal dominant polycystic kidney disease is an inherited disorder caused by mutations in PKD1 or PKD2, leading to progressive formation of renal cysts and enlargement of the kidneys. It is one of the most common inherited kidney diseases and typically presents in adulthood with hypertension, hematuria, flank pain, or declining renal function. Diagnosis is established by family history and renal imaging. Management focuses on blood pressure control and slowing disease progression. Complications include chronic kidney disease, cyst infection, nephrolithiasis, hepatic cysts, and intracranial (Berry) aneurysms.",
+      "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
+    },
+    {
+      "id": 313,
+      "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
+      "aliases": [
+        "PCKD",
+        "Autosomal Recessive Polycystic Kidney Disease"
+      ],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A newborn boy is admitted to the neonatal intensive care unit shortly after birth because of respiratory distress and difficulty maintaining adequate oxygenation"
+        },
+        {
+          "type": "",
+          "text": "Prenatal ultrasonography demonstrated bilaterally enlarged echogenic kidneys and markedly reduced amniotic fluid volume during the third trimester"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals respiratory distress, a distended abdomen, and bilaterally enlarged palpable kidneys"
+        },
+        {
+          "type": "",
+          "text": "Serum creatinine is elevated for age, and urinalysis demonstrates impaired concentrating ability. Electrolyte abnormalities consistent with renal dysfunction are present"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/autosomal-recessive-polycystic-kidney-disease-pckd-clue5.jpg",
+          "detail": "US demonstrates enlarged echogenic kidneys without corticomedullary differentiation",
+          "reference": "https://doi.org/10.53347/rID-14079"
+        },
+        {
+          "type": "",
+          "text": "Further evaluation reveals congenital hepatic fibrosis with progressive portal hypertension during childhood"
+        }
+      ],
+      "description": "Autosomal recessive polycystic kidney disease is a hereditary disorder caused by mutations in the PKHD1 gene, resulting in cystic dilation of the renal collecting ducts and congenital hepatic fibrosis. It typically presents in infancy or childhood with enlarged kidneys, renal dysfunction, and complications related to oligohydramnios. Diagnosis is established through prenatal or postnatal imaging and genetic testing when needed. Management is supportive and focuses on renal and hepatic complications. Major complications include pulmonary hypoplasia, portal hypertension, chronic kidney disease, and kidney failure.",
+      "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
+    },
+    {
+      "id": 314,
+      "diagnosis": "Primary Hyperoxaluria Type 1",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 12-year-old boy is brought to the nephrology clinic because of recurrent episodes of severe flank pain and multiple kidney stones despite adequate hydration"
+        },
+        {
+          "type": "",
+          "text": "He has required several procedures for stone removal since early childhood, and his parents report a family history of unexplained kidney failure in a sibling"
+        },
+        {
+          "type": "",
+          "text": "Examination is largely unremarkable except for mild hypertension. Growth parameters are below expected for age"
+        },
+        {
+          "type": "",
+          "text": "Twenty-four-hour urine studies demonstrate markedly elevated oxalate excretion. Serum creatinine is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/primary-hyperoxaluria-type-1-clue5.jpg",
+          "detail": "Fluoroscopy demonstrates heavily calcified kidneys and osteomalacia of the pelvic bones with bilateral protusio acetabuli",
+          "reference": "https://doi.org/10.53347/rID-74826"
+        },
+        {
+          "type": "",
+          "text": "Genetic testing identifies a mutation in the AGXT gene, resulting in deficiency of alanine-glyoxylate aminotransferase"
+        }
+      ],
+      "description": "Primary hyperoxaluria type 1 is a rare autosomal recessive metabolic disorder caused by deficiency of alanine-glyoxylate aminotransferase due to mutations in the AGXT gene. Excess hepatic oxalate production leads to recurrent calcium oxalate nephrolithiasis, nephrocalcinosis, and progressive kidney injury. Patients often present in childhood with recurrent stones and declining renal function. Diagnosis relies on elevated urinary oxalate levels, genetic testing, and imaging. Management includes aggressive hydration and oxalate-lowering therapies. Complications include end-stage kidney disease and systemic oxalosis.",
+      "management": "Hyperhydration, crystallization inhibitors (citrate), pyridoxine trial (responsive genotypes), lumasiran (RNAi therapy reducing oxalate production), and combined liver-kidney transplantation for advanced disease or ESKD"
     }
   ],
   "2": [
