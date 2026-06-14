@@ -229,11 +229,6 @@
       "date": "2026-06-13",
       "diagnosis": "Severe Combined Immunodeficiency (SCID)",
       "id": 33
-    },
-    {
-      "date": "2026-06-14",
-      "diagnosis": "Cervical Cancer",
-      "id": 38
     }
   ],
   "2": [
@@ -488,12 +483,6 @@
       "date": "2026-06-13",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
-    },
-    {
-      "date": "2026-06-14",
-      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
-      "id": 1,
-      "reset": true
     }
   ]
 }
