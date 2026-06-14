@@ -37,7 +37,8 @@ import {
   parseWorkbookSheets,
 } from './syncImagesLib.mjs'
 import { parseSheetCsv } from '../src/sheet.ts'
-import type { CasesByYear, TCase, Year } from '../src/types.ts'
+import { assertAppendOnly, freezeThrough, todayET } from '../src/dailyCase.ts'
+import type { CasesByYear, FrozenDay, HistoryByYear, TCase, Year } from '../src/types.ts'
 
 const SPREADSHEET_ID = '117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI'
 // One tab per year. Year 1 images keep their bare filenames; Year 2 images are
@@ -53,6 +54,28 @@ const TOKEN_PATH = process.env.GOOGLE_OAUTH_TOKEN || '/Users/colin/Code/google-d
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const OUT_IMAGES = join(ROOT, 'public', 'case-images')
 const OUT_CASES = join(ROOT, 'src', 'cases.json')
+const OUT_HISTORY = join(ROOT, 'src', 'history.json')
+
+// Freeze every day that has already been live (launch → today) into history.json
+// BEFORE the freshly-baked bank is written, computing picks against the bank
+// that was actually committed while those days ran. This pins the past (and
+// today): the new bank only ever affects future days, so an archive can never
+// change. Append-only — existing entries are asserted unchanged, then we write.
+function freezeHistory(prevBank: CasesByYear, today: string): HistoryByYear {
+  const prev: HistoryByYear = existsSync(OUT_HISTORY)
+    ? (JSON.parse(readFileSync(OUT_HISTORY, 'utf8')) as HistoryByYear)
+    : ({} as HistoryByYear)
+  const next = {} as HistoryByYear
+  for (const { year } of YEARS) {
+    const before: FrozenDay[] = prev[year] ?? []
+    const after = freezeThrough(prevBank[year] ?? [], year, before, today)
+    assertAppendOnly(before, after) // a past puzzle must never move — fail loudly if it would
+    next[year] = after
+    const added = after.length - before.length
+    console.log(`  history year ${year}: ${before.length} → ${after.length} day(s) (+${added})`)
+  }
+  return next
+}
 
 function authClient() {
   const inlineCreds = process.env.GOOGLE_OAUTH_TOKEN_JSON
@@ -90,6 +113,13 @@ async function compressImage(buf: Buffer, origExt: string) {
 }
 
 async function main() {
+  // Capture the currently-committed bank + today BEFORE re-baking, so we can
+  // freeze the past against the bank that was actually live during those days.
+  const prevBank: CasesByYear = existsSync(OUT_CASES)
+    ? (JSON.parse(readFileSync(OUT_CASES, 'utf8')) as CasesByYear)
+    : ({} as CasesByYear)
+  const today = todayET()
+
   const auth = authClient()
   const sheets = google.sheets({ version: 'v4', auth })
 
@@ -216,6 +246,22 @@ async function main() {
 
   if ((byYear['1']?.length ?? 0) === 0) {
     throw new Error('Parsed 0 Year 1 cases — refusing to write an empty bank.')
+  }
+
+  // Freeze the past ONLY when the bank actually changes — that's the only moment
+  // a past puzzle is at risk. While the bank is unchanged, the not-yet-frozen
+  // tail is computed live and stays stable, so there's nothing to pin (and we
+  // avoid a needless daily commit + redeploy). When it does change, we freeze the
+  // whole backlog (launch → today) against the OLD bank — the values that were
+  // actually shown — and write that in the same commit as the new bank, so you
+  // can never get a re-baked bank without its matching freeze.
+  const bankChanged = JSON.stringify(prevBank) !== JSON.stringify(byYear)
+  if (bankChanged) {
+    console.log('\n=== Bank changed — freezing schedule history ===')
+    const history = freezeHistory(prevBank, today)
+    writeFileSync(OUT_HISTORY, JSON.stringify(history, null, 2) + '\n')
+  } else {
+    console.log('\nBank unchanged — leaving history.json as-is (live tail stays stable).')
   }
 
   writeFileSync(OUT_CASES, JSON.stringify(byYear, null, 2) + '\n')

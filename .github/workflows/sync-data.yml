@@ -53,7 +53,7 @@ jobs:
       - name: Commit changed data (if any)
         id: commit
         run: |
-          git add public/case-images src/cases.json
+          git add public/case-images src/cases.json src/history.json
           if git diff --staged --quiet; then
             echo "No data changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"

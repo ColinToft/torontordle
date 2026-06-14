@@ -1,0 +1,488 @@
+{
+  "1": [
+    {
+      "date": "2026-04-29",
+      "diagnosis": "Dermatofibrosarcoma Protuberans",
+      "id": 47
+    },
+    {
+      "date": "2026-04-30",
+      "diagnosis": "Functional Tricuspid Regurgitation",
+      "id": 171
+    },
+    {
+      "date": "2026-05-01",
+      "diagnosis": "Ventricular Septal Defect (VSD)",
+      "id": 186
+    },
+    {
+      "date": "2026-05-02",
+      "diagnosis": "Atrioventricular Septal Defect (AVSD)",
+      "id": 189
+    },
+    {
+      "date": "2026-05-03",
+      "diagnosis": "Patent Ductus Arteriosus (PDA)",
+      "id": 187
+    },
+    {
+      "date": "2026-05-04",
+      "diagnosis": "Acute Pericarditis",
+      "id": 181
+    },
+    {
+      "date": "2026-05-05",
+      "diagnosis": "Pulmonary Atresia",
+      "id": 180
+    },
+    {
+      "date": "2026-05-06",
+      "diagnosis": "Cardiac Tamponade",
+      "id": 183
+    },
+    {
+      "date": "2026-05-07",
+      "diagnosis": "Pericardial Effusion",
+      "id": 182
+    },
+    {
+      "date": "2026-05-08",
+      "diagnosis": "Atelectasis",
+      "id": 194
+    },
+    {
+      "date": "2026-05-09",
+      "diagnosis": "Atherosclerosis",
+      "id": 192
+    },
+    {
+      "date": "2026-05-10",
+      "diagnosis": "Eisenmenger Syndrome",
+      "id": 175
+    },
+    {
+      "date": "2026-05-11",
+      "diagnosis": "Tricuspid Atresia",
+      "id": 176
+    },
+    {
+      "date": "2026-05-12",
+      "diagnosis": "Tetralogy of Fallot (TOF)",
+      "id": 172
+    },
+    {
+      "date": "2026-05-13",
+      "diagnosis": "Transposition of the Great Arteries (TGA)",
+      "id": 173
+    },
+    {
+      "date": "2026-05-14",
+      "diagnosis": "Ebstein's Anomaly",
+      "id": 178
+    },
+    {
+      "date": "2026-05-15",
+      "diagnosis": "Pulmonary Stenosis",
+      "id": 179
+    },
+    {
+      "date": "2026-05-16",
+      "diagnosis": "Primary Tricuspid Regurgitation",
+      "id": 170
+    },
+    {
+      "date": "2026-05-17",
+      "diagnosis": "Truncus Arteriosus (PTA)",
+      "id": 174
+    },
+    {
+      "date": "2026-05-18",
+      "diagnosis": "Coarctation of the Aorta (CoA)",
+      "id": 188
+    },
+    {
+      "date": "2026-05-19",
+      "diagnosis": "Hyperplastic Arteriolosclerosis",
+      "id": 190
+    },
+    {
+      "date": "2026-05-20",
+      "diagnosis": "Androgenic Alopecia",
+      "id": 84
+    },
+    {
+      "date": "2026-05-21",
+      "diagnosis": "Vitiligo",
+      "id": 83
+    },
+    {
+      "date": "2026-05-22",
+      "diagnosis": "Bullous Pemphigoid",
+      "id": 82
+    },
+    {
+      "date": "2026-05-23",
+      "diagnosis": "Pemphigus vulgaris",
+      "id": 81
+    },
+    {
+      "date": "2026-05-24",
+      "diagnosis": "Toxic Epidermal Necrolysis",
+      "id": 79
+    },
+    {
+      "date": "2026-05-25",
+      "diagnosis": "Steven-Johnsons Syndrome (SJS/TEN)",
+      "id": 78
+    },
+    {
+      "date": "2026-05-26",
+      "diagnosis": "Cherry angioma",
+      "id": 77
+    },
+    {
+      "date": "2026-05-27",
+      "diagnosis": "Hemangioma",
+      "id": 76
+    },
+    {
+      "date": "2026-05-28",
+      "diagnosis": "Urticaria",
+      "id": 75
+    },
+    {
+      "date": "2026-05-29",
+      "diagnosis": "Onychomycosis",
+      "id": 74
+    },
+    {
+      "date": "2026-05-30",
+      "diagnosis": "Central Centrifugal Cicatricial Alopecia (CCCA)",
+      "id": 86
+    },
+    {
+      "date": "2026-05-31",
+      "diagnosis": "Folliculitis Decalvans",
+      "id": 87
+    },
+    {
+      "date": "2026-06-01",
+      "diagnosis": "Trisomy 13 (Patau Syndrome)",
+      "id": 25
+    },
+    {
+      "date": "2026-06-02",
+      "diagnosis": "C5 Deficiency",
+      "id": 28
+    },
+    {
+      "date": "2026-06-03",
+      "diagnosis": "Cellulitis",
+      "id": 30
+    },
+    {
+      "date": "2026-06-04",
+      "diagnosis": "Kearns-Sayre Syndrome",
+      "id": 21
+    },
+    {
+      "date": "2026-06-05",
+      "diagnosis": "Congenital Rubella Syndrome",
+      "id": 23
+    },
+    {
+      "date": "2026-06-06",
+      "diagnosis": "Trisomy 18 (Edwards Syndrome)",
+      "id": 24
+    },
+    {
+      "date": "2026-06-07",
+      "diagnosis": "PJP (Pneumocystis jirovecii pneumonia)",
+      "id": 31
+    },
+    {
+      "date": "2026-06-08",
+      "diagnosis": "Burkitt Lymphoma",
+      "id": 37
+    },
+    {
+      "date": "2026-06-09",
+      "diagnosis": "Retinoblastoma (Hereditary)",
+      "id": 39
+    },
+    {
+      "date": "2026-06-10",
+      "diagnosis": "Invasive Ductal Carcinoma",
+      "id": 36
+    },
+    {
+      "date": "2026-06-11",
+      "diagnosis": "Meningioma",
+      "id": 35
+    },
+    {
+      "date": "2026-06-12",
+      "diagnosis": "IgA Deficiency",
+      "id": 34
+    },
+    {
+      "date": "2026-06-13",
+      "diagnosis": "Severe Combined Immunodeficiency (SCID)",
+      "id": 33
+    }
+  ],
+  "2": [
+    {
+      "date": "2026-04-29",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-04-30",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-01",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-05-02",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-05-03",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-05-04",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-05-05",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-05-06",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-05-07",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-05-08",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-05-09",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-05-10",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-05-11",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-12",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-13",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-14",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-15",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-16",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-17",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-18",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-19",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-20",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-21",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-22",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-23",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-24",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-25",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-26",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-27",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-28",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-29",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-05-30",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-05-31",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-06-01",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-06-02",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-03",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-04",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-05",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-06",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-07",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-08",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-09",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-10",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-11",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-12",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-13",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    }
+  ]
+}
