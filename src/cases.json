@@ -457,7 +457,7 @@
       "management": "There is no curative treatment, and management focuses on prenatal counseling, supportive care, and prevention through preconception folic acid supplementation"
     },
     {
-      "id": 14,
+      "id": 13,
       "diagnosis": "Noonan Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -492,7 +492,7 @@
       "management": "Cardiac surveillance, developmental support, treatment of growth and endocrine issues, and monitoring for associated complications throughout life."
     },
     {
-      "id": 15,
+      "id": 14,
       "diagnosis": "Tay-Sachs Disease",
       "aliases": [],
       "category": "Medical Genetics",
@@ -527,7 +527,7 @@
       "management": "There is no curative treatment; management is supportive and focuses on symptom control, nutritional support, and family genetic counseling."
     },
     {
-      "id": 16,
+      "id": 15,
       "diagnosis": "CHARGE Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -565,7 +565,7 @@
       "management": "Multidisciplinary care involving cardiology, otolaryngology, ophthalmology, audiology, developmental services, and surgical correction of life-threatening anomalies such as choanal atresia"
     },
     {
-      "id": 17,
+      "id": 16,
       "diagnosis": "Marfan Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -600,7 +600,7 @@
       "management": "Regular cardiovascular surveillance, beta-blockers or angiotensin receptor blockers to slow aortic dilation, activity modification, and prophylactic surgical repair of the aorta when indicated."
     },
     {
-      "id": 18,
+      "id": 17,
       "diagnosis": "Achondroplasia",
       "aliases": [],
       "category": "Medical Genetics",
@@ -638,7 +638,7 @@
       "management": "Monitoring growth and development, treating complications such as spinal stenosis and recurrent ear infections, and providing orthopedic and supportive care"
     },
     {
-      "id": 19,
+      "id": 18,
       "diagnosis": "Fragile X Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -673,7 +673,7 @@
       "management": "Educational support, behavioral therapy, speech therapy, and treatment of associated psychiatric or developmental conditions. Genetic counseling is recommended because of the X-linked inheritance pattern."
     },
     {
-      "id": 20,
+      "id": 19,
       "diagnosis": "Rett Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -708,7 +708,7 @@
       "management": "Physical therapy, speech therapy, seizure management, nutritional support, and multidisciplinary developmental care. Early recognition is important for intervention and family counseling."
     },
     {
-      "id": 21,
+      "id": 20,
       "diagnosis": "Kearns-Sayre Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -746,7 +746,7 @@
       "management": "Cardiac monitoring, pacemaker placement when indicated, treatment of endocrine complications, rehabilitation, and multidisciplinary follow-up."
     },
     {
-      "id": 22,
+      "id": 21,
       "diagnosis": "1p36 Deletion Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -781,7 +781,7 @@
       "management": "Developmental therapies, seizure management, cardiac surveillance, nutritional support, and multidisciplinary care"
     },
     {
-      "id": 23,
+      "id": 22,
       "diagnosis": "Congenital Rubella Syndrome",
       "aliases": [],
       "category": "Medical Genetics",
@@ -816,7 +816,7 @@
       "management": "Supportive and multidisciplinary, focusing on hearing, vision, cardiac, and developmental complications. Prevention through preconception and childhood rubella vaccination remains the most effective strategy"
     },
     {
-      "id": 24,
+      "id": 23,
       "diagnosis": "Trisomy 18 (Edwards Syndrome)",
       "aliases": [
         "Edwards Syndrome",
@@ -860,7 +860,7 @@
       "management": "Supportive and focuses on feeding, respiratory, and cardiac complications, as survival beyond the first year is uncommon."
     },
     {
-      "id": 25,
+      "id": 24,
       "diagnosis": "Trisomy 13 (Patau Syndrome)",
       "aliases": [
         "Patau Syndrome",
@@ -904,7 +904,277 @@
       "management": "Primarily supportive, focusing on feeding, respiratory, neurologic, and cardiac complications, as survival beyond the first year is uncommon"
     },
     {
+      "id": 25,
+      "diagnosis": "Myocardial Infarction",
+      "aliases": [],
+      "category": "Pathology",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old man presents with acute chest discomfort associated with nausea and diaphoresis."
+        },
+        {
+          "type": "",
+          "text": "He has a history of hypertension, hyperlipidemia, and a 40-pack-year smoking history."
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals tachycardia and mild hypotension."
+        },
+        {
+          "type": "",
+          "text": "Troponin I and CK-MB are markedly elevated."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/myocardial-infarction-clue5.jpg",
+          "detail": "Coronary angiography demonstrates complete interruption of blood flow within the LAD due to acute thrombosis. \n \n Retreived from: Tan et al. (2006). Simultaneous thromboses of multiple coronary arteries in acute myocardial infarction. Singapore medical journal. 47. 240-2."
+        },
+        {
+          "type": "",
+          "text": "Histology demonstrates coagulative necrosis with loss of nuclei and neutrophilic infiltration.",
+          "detail": "Myocardial fibers demonstrate eosinophilic cytoplasm, loss of nuclei, and acute inflammatory infiltrates characteristic of ischemic injury."
+        }
+      ],
+      "description": "Myocardial infarction occurs when coronary blood flow is acutely interrupted, most commonly due to atherosclerotic plaque rupture and thrombosis. Risk factors include smoking, hypertension, diabetes, and hyperlipidemia. Diagnosis relies on symptoms, cardiac biomarkers, ECG findings, and coronary imaging. Histologically it demonstrates coagulative necrosis followed by inflammation and eventual scar formation.",
+      "management": "Urgent reperfusion therapy (PCI), antiplatelet therapy, anticoagulation, statin therapy, and secondary prevention."
+    },
+    {
+      "id": 26,
+      "diagnosis": "Pulmonary Tuberculosis",
+      "aliases": [],
+      "category": "Pathology",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 45-year-old man presents with chronic cough, fatigue, and unintentional weight loss."
+        },
+        {
+          "type": "",
+          "text": "He recently immigrated from a region with a high prevalence of tuberculosis."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals cachexia and crackles over the upper lung fields."
+        },
+        {
+          "type": "",
+          "text": "Sputum testing is positive for acid-fast bacilli."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/pulmonary-tuberculosis-clue5.jpg",
+          "detail": "Chest radiograph demonstrates cavitary destruction predominantly involving the lung apices. \n \n Retreived from: 10.7759/cureus.3108"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/pulmonary-tuberculosis-clue6.jpg",
+          "detail": "Granulomas consist of central acellular caseous necrosis surrounded by epithelioid macrophages, giant cells, and lymphocytes",
+          "reference": "Bezuidenhout, Juanita. Cytokines and tuberculosis : an investigation of tuberculous lung tissue and a comparison with sarcoidosis."
+        }
+      ],
+      "description": "Tuberculosis is caused by Mycobacterium tuberculosis and classically presents with chronic cough, weight loss, fevers, and night sweats. Diagnosis relies on microbiology, imaging, and pathology. The hallmark histologic finding is caseating granulomatous inflammation.",
+      "management": "RIPE therapy followed by continuation therapy and public health follow-up."
+    },
+    {
+      "id": 27,
+      "diagnosis": "Greenstick Fracture",
+      "aliases": [],
+      "category": "Pathology",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "An 8-year-old boy presents after falling from playground equipment and developing arm pain."
+        },
+        {
+          "type": "",
+          "text": "He is otherwise healthy with no significant medical history."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals localized tenderness and deformity of the forearm."
+        },
+        {
+          "type": "",
+          "text": "CBC and metabolic studies are normal."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/greenstick-fracture-clue5.jpg",
+          "detail": "Forearm radiograph demonstrates incomplete cortical disruption with bending of the opposite cortex",
+          "reference": "10.7759/cureus.38966"
+        }
+      ],
+      "description": "Greenstick fractures occur primarily in children because immature bone is more flexible than adult bone. The fracture extends through one cortex while the opposite side bends without completely breaking. Healing proceeds through callus formation and remodeling.",
+      "management": "Immobilization with casting or splinting and orthopedic follow-up."
+    },
+    {
       "id": 28,
+      "diagnosis": "Systemic Lupus Erythematosus (Lupus Nephritis)",
+      "aliases": [
+        "Lupus Nephritis",
+        "Systemic Lupus Erythematosus"
+      ],
+      "category": "Pathology",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 26-year-old woman presents with fatigue, joint pain, and intermittent facial rash."
+        },
+        {
+          "type": "",
+          "text": "Symptoms worsen following sun exposure."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a malar rash sparing the nasolabial folds."
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates hematuria and proteinuria. ANA and anti-dsDNA antibodies are positive."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/systemic-lupus-erythematosus-lupus-nephritis-clue6.jpg",
+          "detail": "Immunofluorescence demonstrates deposition of IgG, IgA, IgM, C3, and C1q within glomeruli",
+          "reference": "https://pathpresenter.net/public/display?token=c3180024"
+        }
+      ],
+      "description": "SLE is a multisystem autoimmune disease characterized by immune-complex deposition and inflammation. Lupus nephritis is a major cause of morbidity and demonstrates characteristic immune-complex deposition within glomeruli.",
+      "management": "Immunosuppression, corticosteroids, renal monitoring, and management of systemic disease manifestations."
+    },
+    {
+      "id": 29,
+      "diagnosis": "Diabetic Nephropathy",
+      "aliases": [],
+      "category": "Pathology",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents for evaluation of progressively worsening lower extremity swelling."
+        },
+        {
+          "type": "",
+          "text": "He has a 20-year history of poorly controlled type 2 diabetes mellitus."
+        },
+        {
+          "type": "",
+          "text": "Examination demonstrates bilateral pitting edema and diabetic retinopathy."
+        },
+        {
+          "type": "",
+          "text": "Urinalysis reveals nephrotic-range proteinuria and elevated albumin-to-creatinine ratio."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/diabetic-nephropathy-clue5.jpg",
+          "detail": "Ultrasound demonstrates bilaterally enlarged kidneys",
+          "reference": "10.4236/ojrad.2014.44039"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/diabetic-nephropathy-clue6.jpg",
+          "detail": "Glomeruli demonstrate nodular mesangial expansion forming Kimmelstiel-Wilson nodules",
+          "reference": "KGH, Wikipedia Commons"
+        }
+      ],
+      "description": "Diabetic nephropathy is the leading cause of chronic kidney disease and results from chronic hyperglycemia causing glomerular injury. Histologic findings include mesangial expansion, basement membrane thickening, and Kimmelstiel-Wilson nodules.",
+      "management": "Glycemic control, blood pressure management, ACE inhibitor or ARB therapy, and CKD risk reduction."
+    },
+    {
+      "id": 30,
+      "diagnosis": "Ventricular Septal Defect",
+      "aliases": [],
+      "category": "Pathology",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A newborn infant develops poor feeding and tachypnea shortly after birth."
+        },
+        {
+          "type": "",
+          "text": "Pregnancy and family history are otherwise unremarkable."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a harsh holosystolic murmur along the left lower sternal border."
+        },
+        {
+          "type": "",
+          "text": "Pulse oximetry demonstrates mild hypoxemia."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/ventricular-septal-defect-clue5.jpg",
+          "detail": "Echocardiography demonstrates abnormal communication between the right and left ventricles with left-to-right shunting",
+          "reference": "Ekko, Wikipedia Commons"
+        },
+        {
+          "type": "",
+          "text": "Pathologic examination demonstrates incomplete formation of the interventricular septum during embryogenesis.",
+          "detail": "Failure of complete septal fusion produces persistent communication between the ventricles."
+        }
+      ],
+      "description": "Ventricular septal defect is one of the most common congenital heart defects and results from incomplete formation of the interventricular septum. Significant defects may produce heart failure, pulmonary hypertension, and growth impairment.",
+      "management": "Observation for small defects, medical management of heart failure symptoms, or surgical closure for significant shunts."
+    },
+    {
+      "id": 31,
+      "diagnosis": "Burkitt Lymphoma",
+      "aliases": [],
+      "category": "Pathology",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 10-year-old boy presents with rapidly progressive abdominal distension and abdominal pain."
+        },
+        {
+          "type": "",
+          "text": "Symptoms have worsened dramatically over the preceding month."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a large abdominal mass and mesenteric lymphadenopathy."
+        },
+        {
+          "type": "",
+          "text": "LDH is markedly elevated."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/burkitt-lymphoma-clue5.jpg",
+          "detail": "CT demonstrates a bulky ileocecal mass with extensive abdominal lymphadenopathy",
+          "reference": "10.3941/jrcr.v6i8.1052"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/burkitt-lymphoma-clue6.jpg",
+          "detail": "Sheets of malignant B lymphocytes are interspersed with tingible-body macrophages, producing the classic “starry-sky” appearance",
+          "reference": "https://pathpresenter.net/public/display?token=67b9506a"
+        }
+      ],
+      "description": "Burkitt lymphoma is a highly aggressive B-cell lymphoma characterized by MYC activation and extremely rapid proliferation. The classic pathology finding is the starry-sky appearance caused by abundant apoptosis and macrophage clearance of cellular debris.",
+      "management": "Intensive multi-agent chemotherapy."
+    },
+    {
+      "id": 33,
       "diagnosis": "C5 Deficiency",
       "aliases": [],
       "category": "Immunology I",
@@ -939,7 +1209,7 @@
       "management": "Vaccination against meningococcal disease, prompt treatment of infections, and patient education regarding early recognition of invasive bacterial illness."
     },
     {
-      "id": 29,
+      "id": 34,
       "diagnosis": "HIV (Human Immunodeficiency Virus)",
       "aliases": [
         "Human Immunodeficiency Virus",
@@ -977,7 +1247,7 @@
       "management": "HIV management centers on early initiation of antiretroviral therapy (ART), ideally within 7 days of diagnosis. Preferred regimens are integrase inhibitor–based (bictegravir/emtricitabine/TAF or dolutegravir-based combinations), achieving >90% viral suppression. Goals include durable viral suppression, immune restoration, reduced transmission, and opportunistic infection prophylaxis when indicated."
     },
     {
-      "id": 30,
+      "id": 35,
       "diagnosis": "Cellulitis",
       "aliases": [],
       "category": "Immunology I",
@@ -1013,7 +1283,7 @@
       "management": "Oral cephalexin 500 mg QID for 10 days"
     },
     {
-      "id": 31,
+      "id": 36,
       "diagnosis": "PJP (Pneumocystis jirovecii pneumonia)",
       "aliases": [
         "Pneumocystis jirovecii pneumonia",
@@ -1054,7 +1324,7 @@
       "management": "First-Line drugs for PJP is Trimethoprim-Sulfamethoxazole (TMP-SMX)"
     },
     {
-      "id": 32,
+      "id": 37,
       "diagnosis": "Chronic Granulomatous Disease",
       "aliases": [],
       "category": "Immunology I",
@@ -1089,7 +1359,7 @@
       "management": "Management includes lifelong infection prevention with antibiotic and antifungal prophylaxis and aggressive treatment of infections"
     },
     {
-      "id": 33,
+      "id": 38,
       "diagnosis": "Severe Combined Immunodeficiency (SCID)",
       "aliases": [
         "SCID",
@@ -1130,7 +1400,7 @@
       "management": "Protective isolation, avoidance of live vaccines, antimicrobial prophylaxis, immunoglobulin replacement, and urgent hematopoietic stem cell transplantation."
     },
     {
-      "id": 34,
+      "id": 39,
       "diagnosis": "IgA Deficiency",
       "aliases": [],
       "category": "Immunology I",
@@ -1165,7 +1435,7 @@
       "management": "Most patients only require observation. Use washed blood products if transfusion is needed to prevent anti-IgA antibody reactions"
     },
     {
-      "id": 35,
+      "id": 40,
       "diagnosis": "Meningioma",
       "aliases": [],
       "category": "Cancer",
@@ -1206,7 +1476,7 @@
       "management": "Management depends on symptoms and tumor size but may include observation, surgical resection, and radiotherapy for unresectable or recurrent lesions."
     },
     {
-      "id": 36,
+      "id": 41,
       "diagnosis": "Invasive Ductal Carcinoma",
       "aliases": [],
       "category": "Cancer",
@@ -1247,7 +1517,7 @@
       "management": "Surgery, radiation, chemotherapy, endocrine therapy, and targeted therapies depending on tumor stage and receptor status, as well as Oncotype 21 Dx results."
     },
     {
-      "id": 37,
+      "id": 42,
       "diagnosis": "Burkitt Lymphoma",
       "aliases": [],
       "category": "Cancer",
@@ -1278,14 +1548,15 @@
         },
         {
           "type": "",
-          "text": "Cytogenetic analysis reveals a t(8;14) translocation resulting in overexpression of the MYC oncogene"
+          "text": "Cytogenetic analysis reveals a t(8;14) translocation resulting in overexpression of the MYC oncogene",
+          "image": "case-images/burkitt-lymphoma-clue6.jpg"
         }
       ],
       "description": "Burkitt Lymphoma is a highly aggressive B-cell lymphoma characterized by translocation and activation of the MYC oncogene, most commonly t(8;14). Three major forms exist: endemic (associated with Epstein–Barr virus and jaw tumors), sporadic (typically involving the abdomen, especially the ileocecal region), and immunodeficiency-associated disease. Patients present with rapidly enlarging masses and constitutional B symptoms. Pathology classically demonstrates a “starry-sky” appearance caused by tingible-body macrophages among proliferating lymphoma cells. Diagnosis is confirmed by biopsy and cytogenetic testing.",
       "management": "Highly responsive to intensive combination chemotherapy, making prompt recognition and treatment essential"
     },
     {
-      "id": 38,
+      "id": 43,
       "diagnosis": "Cervical Cancer",
       "aliases": [],
       "category": "Cancer",
@@ -1320,7 +1591,7 @@
       "management": "Management depends on stage and includes surgical resection, chemoradiation, and HPV prevention through vaccination and routine screening."
     },
     {
-      "id": 39,
+      "id": 44,
       "diagnosis": "Retinoblastoma (Hereditary)",
       "aliases": [
         "Hereditary",
@@ -1361,7 +1632,7 @@
       "management": "Focal therapies, chemotherapy, radiation, or enucleation depending on disease extent. Survivors with hereditary disease are at increased risk for secondary malignancies, particularly osteosarcoma."
     },
     {
-      "id": 40,
+      "id": 45,
       "diagnosis": "Retinoblastoma (Non-Hereditary)",
       "aliases": [
         "Non-Hereditary",
@@ -1402,7 +1673,7 @@
       "management": "Focal therapy, chemotherapy, laser photocoagulation, cryotherapy, or enucleation depending on disease extent. Prognosis is excellent when diagnosed early, and the risk of secondary malignancies is much lower than in hereditary retinoblastoma"
     },
     {
-      "id": 41,
+      "id": 46,
       "diagnosis": "Diffuse large B-cell lymphoma (DLBCL)",
       "aliases": [
         "DLBCL",
@@ -1442,7 +1713,7 @@
       "management": "R-CHOP chemotherapy (rituximab, cyclophosphamide, doxorubicin, vincristine, and prednisone), with cure achievable in many patients."
     },
     {
-      "id": 42,
+      "id": 47,
       "diagnosis": "Rectal Adenocarcinoma",
       "aliases": [],
       "category": "Cancer",
@@ -1477,7 +1748,7 @@
       "management": "Neoadjuvant chemoradiation followed by surgical resection and, when indicated, systemic chemotherapy"
     },
     {
-      "id": 43,
+      "id": 48,
       "diagnosis": "Small Cell Lung Cancer (SCLC)",
       "aliases": [
         "SCLC",
@@ -1521,7 +1792,7 @@
       "management": "Disease is usually disseminated at diagnosis, treatment primarily consists of chemotherapy and radiation rather than surgery"
     },
     {
-      "id": 44,
+      "id": 49,
       "diagnosis": "Lung Adenocarcinoma (NSCLC)",
       "aliases": [
         "NSCLC",
@@ -1564,7 +1835,7 @@
       "management": "Molecular testing for EGFR, ALK, ROS1, KRAS, and other mutations is essential because targeted therapies can significantly improve outcomes in selected patients. Early stage tumours are treated surgically, radiation used for inoperable tumours or palliative settings, and immunotherapy can be combined with chemo."
     },
     {
-      "id": 45,
+      "id": 50,
       "diagnosis": "Squamous Cell Carcinoma (NSCLC)",
       "aliases": [
         "NSCLC",
@@ -1608,7 +1879,7 @@
       "management": "Management depends on stage and may include surgical resection, chemotherapy, immunotherapy, radiation therapy, or combinations of these modalities."
     },
     {
-      "id": 46,
+      "id": 51,
       "diagnosis": "Hodgkin Lymphoma",
       "aliases": [],
       "category": "Cancer",
@@ -1643,7 +1914,7 @@
       "management": "Management depends on stage and generally includes combination chemotherapy, often with radiation therapy. Overall prognosis is excellent, particularly in early-stage disease."
     },
     {
-      "id": 47,
+      "id": 52,
       "diagnosis": "Dermatofibrosarcoma Protuberans",
       "aliases": [],
       "category": "Cancer",
@@ -1678,7 +1949,7 @@
       "management": "Wide local excision or Mohs micrographic surgery, with targeted therapy such as imatinib used in selected advanced cases"
     },
     {
-      "id": 49,
+      "id": 54,
       "diagnosis": "Opioid Overdose",
       "aliases": [],
       "category": "Drugs I",
@@ -1713,7 +1984,7 @@
       "management": "Airway support, oxygen/ventilation as needed, naloxone, monitor for recurrence because naloxone may wear off before the opioid."
     },
     {
-      "id": 50,
+      "id": 55,
       "diagnosis": "Opioid-Induced Constipation",
       "aliases": [],
       "category": "Drugs I",
@@ -1748,7 +2019,7 @@
       "management": "Start bowel regimen: stimulant laxative such as senna or bisacodyl ± osmotic laxative such as polyethylene glycol. Consider peripherally acting μ-opioid antagonists if refractory."
     },
     {
-      "id": 51,
+      "id": 56,
       "diagnosis": "Peptic Ulcer Disease (PUD)",
       "aliases": [
         "PUD",
@@ -1786,7 +2057,7 @@
       "management": "Stop NSAID/ASA if appropriate, stabilize ABCs, IV fluids/blood if needed, IV PPI, urgent endoscopy for significant bleeding."
     },
     {
-      "id": 52,
+      "id": 57,
       "diagnosis": "Alcohol Withdrawal",
       "aliases": [],
       "category": "Drugs II",
@@ -1821,7 +2092,7 @@
       "management": "Benzodiazepines, thiamine before glucose, fluids/electrolyte correction, monitor for seizures/delirium tremens."
     },
     {
-      "id": 55,
+      "id": 60,
       "diagnosis": "Basal Cell Carcinoma (BCC)",
       "aliases": [
         "BCC",
@@ -1861,7 +2132,7 @@
       "management": "Biopsy, then excision, Mohs surgery for high-risk sites, or other local therapies depending on subtype/location."
     },
     {
-      "id": 56,
+      "id": 61,
       "diagnosis": "Squamous Cell Carcinoma (SCC)",
       "aliases": [
         "SCC",
@@ -1901,7 +2172,7 @@
       "management": "Biopsy and surgical excision; Mohs for high-risk lesions."
     },
     {
-      "id": 57,
+      "id": 62,
       "diagnosis": "Melanoma",
       "aliases": [],
       "category": "Dermatology",
@@ -1938,7 +2209,7 @@
       "management": "Excisional biopsy, wide local excision, staging ± sentinel lymph node biopsy depending on depth."
     },
     {
-      "id": 58,
+      "id": 63,
       "diagnosis": "Atopic Dermatitis (Eczema)",
       "aliases": [
         "Eczema",
@@ -1978,7 +2249,7 @@
       "management": "Emollients, trigger avoidance, topical corticosteroids/calcineurin inhibitors for flares."
     },
     {
-      "id": 59,
+      "id": 64,
       "diagnosis": "Contact Dermatitis",
       "aliases": [],
       "category": "Dermatology",
@@ -2015,7 +2286,7 @@
       "management": "Avoid trigger, topical corticosteroids, barrier protection."
     },
     {
-      "id": 60,
+      "id": 65,
       "diagnosis": "Verruca Vulgaris",
       "aliases": [],
       "category": "Dermatology",
@@ -2052,7 +2323,7 @@
       "management": "Observation, salicylic acid, or cryotherapy."
     },
     {
-      "id": 61,
+      "id": 66,
       "diagnosis": "Molluscum Contagiosum",
       "aliases": [],
       "category": "Dermatology",
@@ -2089,7 +2360,7 @@
       "management": "Reassurance/observation; curettage, cryotherapy, or topical therapy if needed."
     },
     {
-      "id": 62,
+      "id": 67,
       "diagnosis": "Psoriatic Arthritis",
       "aliases": [],
       "category": "Dermatology",
@@ -2126,7 +2397,7 @@
       "management": "NSAIDs for mild disease; DMARDs/biologics and rheumatology referral for persistent disease."
     },
     {
-      "id": 63,
+      "id": 68,
       "diagnosis": "Plaque Psoriasis",
       "aliases": [],
       "category": "Dermatology",
@@ -2163,7 +2434,7 @@
       "management": "Topical corticosteroids/vitamin D analogs; phototherapy or systemic therapy for moderate-severe disease."
     },
     {
-      "id": 64,
+      "id": 69,
       "diagnosis": "Guttate Psoriasis",
       "aliases": [],
       "category": "Dermatology",
@@ -2200,7 +2471,7 @@
       "management": "Treat strep if present; topical steroids or phototherapy if extensive."
     },
     {
-      "id": 65,
+      "id": 70,
       "diagnosis": "Pityriasis Versicolor",
       "aliases": [],
       "category": "Dermatology",
@@ -2237,7 +2508,7 @@
       "management": "Topical selenium sulfide or azole antifungals; oral antifungals if extensive/recurrent."
     },
     {
-      "id": 66,
+      "id": 71,
       "diagnosis": "Pityriasis Rosea",
       "aliases": [],
       "category": "Dermatology",
@@ -2274,7 +2545,7 @@
       "management": "Reassurance; antihistamines/topical steroids for itch."
     },
     {
-      "id": 67,
+      "id": 72,
       "diagnosis": "Acne Vulgaris",
       "aliases": [],
       "category": "Dermatology",
@@ -2311,7 +2582,7 @@
       "management": "Topical retinoid ± benzoyl peroxide; antibiotics, hormonal therapy, or isotretinoin depending on severity."
     },
     {
-      "id": 68,
+      "id": 73,
       "diagnosis": "Impetigo",
       "aliases": [],
       "category": "Dermatology",
@@ -2348,7 +2619,7 @@
       "management": "Topical mupirocin/fusidic acid if localized; oral antibiotics if extensive."
     },
     {
-      "id": 69,
+      "id": 74,
       "diagnosis": "Seborrheic Dermatitis",
       "aliases": [],
       "category": "Dermatology",
@@ -2385,7 +2656,7 @@
       "management": "Antifungal shampoos/creams; low-potency topical steroids for flares."
     },
     {
-      "id": 70,
+      "id": 75,
       "diagnosis": "Lichen Planus",
       "aliases": [],
       "category": "Dermatology",
@@ -2422,7 +2693,7 @@
       "management": "Topical corticosteroids; systemic therapy if severe/widespread."
     },
     {
-      "id": 71,
+      "id": 76,
       "diagnosis": "Actinic keratosis",
       "aliases": [],
       "category": "Dermatology",
@@ -2459,7 +2730,7 @@
       "management": "Cryotherapy for isolated lesions; field therapy for multiple lesions."
     },
     {
-      "id": 72,
+      "id": 77,
       "diagnosis": "Scabies",
       "aliases": [],
       "category": "Dermatology",
@@ -2496,7 +2767,7 @@
       "management": "Permethrin 5% cream or oral ivermectin; treat close contacts and wash bedding/clothing."
     },
     {
-      "id": 73,
+      "id": 78,
       "diagnosis": "Condyloma Accuminata",
       "aliases": [],
       "category": "Dermatology",
@@ -2533,7 +2804,7 @@
       "management": "Patient-applied imiquimod/podophyllotoxin or clinician-applied cryotherapy/TCA; assess STI risk."
     },
     {
-      "id": 74,
+      "id": 79,
       "diagnosis": "Onychomycosis",
       "aliases": [],
       "category": "Dermatology",
@@ -2570,7 +2841,7 @@
       "management": "Confirm diagnosis; oral terbinafine for most toenail dermatophyte disease if appropriate."
     },
     {
-      "id": 75,
+      "id": 80,
       "diagnosis": "Urticaria",
       "aliases": [],
       "category": "Dermatology",
@@ -2607,7 +2878,7 @@
       "management": "Second-generation antihistamines; epinephrine if anaphylaxis."
     },
     {
-      "id": 76,
+      "id": 81,
       "diagnosis": "Hemangioma",
       "aliases": [],
       "category": "Dermatology",
@@ -2644,7 +2915,7 @@
       "management": "Observation if low risk; oral propranolol for high-risk lesions."
     },
     {
-      "id": 77,
+      "id": 82,
       "diagnosis": "Cherry angioma",
       "aliases": [],
       "category": "Dermatology",
@@ -2681,7 +2952,7 @@
       "management": "Reassurance; cosmetic removal if desired."
     },
     {
-      "id": 78,
+      "id": 83,
       "diagnosis": "Steven-Johnsons Syndrome (SJS/TEN)",
       "aliases": [
         "SJS",
@@ -2722,7 +2993,7 @@
       "management": "Stop culprit drug; urgent hospital/burn unit care, fluids, wound care, and mucosal/eye care."
     },
     {
-      "id": 79,
+      "id": 84,
       "diagnosis": "Toxic Epidermal Necrolysis",
       "aliases": [],
       "category": "Dermatology",
@@ -2759,7 +3030,7 @@
       "management": "Stop culprit drug; ICU/burn unit supportive care, fluids/electrolytes, infection prevention, and ophthalmology."
     },
     {
-      "id": 80,
+      "id": 85,
       "diagnosis": "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)",
       "aliases": [
         "DRESS",
@@ -2799,7 +3070,7 @@
       "management": "Stop culprit drug; assess organ involvement; systemic corticosteroids for significant organ involvement."
     },
     {
-      "id": 81,
+      "id": 86,
       "diagnosis": "Pemphigus vulgaris",
       "aliases": [],
       "category": "Dermatology",
@@ -2836,7 +3107,7 @@
       "management": "Systemic corticosteroids plus steroid-sparing immunosuppression or rituximab."
     },
     {
-      "id": 82,
+      "id": 87,
       "diagnosis": "Bullous Pemphigoid",
       "aliases": [],
       "category": "Dermatology",
@@ -2873,7 +3144,7 @@
       "management": "High-potency topical steroids or systemic therapy depending on severity."
     },
     {
-      "id": 83,
+      "id": 88,
       "diagnosis": "Vitiligo",
       "aliases": [],
       "category": "Dermatology",
@@ -2910,7 +3181,7 @@
       "management": "Sun protection; topical corticosteroids/calcineurin inhibitors; phototherapy for more extensive disease."
     },
     {
-      "id": 84,
+      "id": 89,
       "diagnosis": "Androgenic Alopecia",
       "aliases": [],
       "category": "Dermatology",
@@ -2947,7 +3218,7 @@
       "management": "Topical/oral minoxidil; finasteride for appropriate male patients; antiandrogens in selected patients."
     },
     {
-      "id": 85,
+      "id": 90,
       "diagnosis": "Lichen Planopilaris",
       "aliases": [],
       "category": "Dermatology",
@@ -2984,7 +3255,7 @@
       "management": "Dermatology referral; high-potency topical/intralesional steroids; systemic anti-inflammatory therapy if active."
     },
     {
-      "id": 86,
+      "id": 91,
       "diagnosis": "Central Centrifugal Cicatricial Alopecia (CCCA)",
       "aliases": [
         "CCCA",
@@ -3024,7 +3295,7 @@
       "management": "Reduce traumatic hair practices; topical/intralesional steroids; anti-inflammatory therapy."
     },
     {
-      "id": 87,
+      "id": 92,
       "diagnosis": "Folliculitis Decalvans",
       "aliases": [],
       "category": "Dermatology",
@@ -3061,7 +3332,7 @@
       "management": "Dermatology referral; prolonged antibiotics/anti-inflammatory therapy."
     },
     {
-      "id": 88,
+      "id": 93,
       "diagnosis": "Alopecia Areata",
       "aliases": [],
       "category": "Dermatology",
@@ -3098,7 +3369,7 @@
       "management": "Intralesional corticosteroids for limited disease; topical/systemic options for extensive disease."
     },
     {
-      "id": 89,
+      "id": 94,
       "diagnosis": "Herpes Simplex Virus (HSV)",
       "aliases": [
         "HSV",
@@ -3138,7 +3409,7 @@
       "management": "Oral antivirals such as acyclovir, valacyclovir, or famciclovir; suppressive therapy if frequent recurrences."
     },
     {
-      "id": 94,
+      "id": 99,
       "diagnosis": "Deep Vein Thrombosis (DVT)",
       "aliases": [
         "DVT",
@@ -3175,7 +3446,7 @@
       "management": "Anticoagulation with agents such as direct oral anticoagulants or heparin, with thrombolysis or thrombectomy reserved for selected high-risk cases."
     },
     {
-      "id": 95,
+      "id": 100,
       "diagnosis": "Pulmonary Embolism (PE)",
       "aliases": [
         "PE",
@@ -3216,7 +3487,7 @@
       "management": "Anticoagulation, while thrombolysis or thrombectomy may be required for hemodynamically unstable patients with massive pulmonary embolism."
     },
     {
-      "id": 96,
+      "id": 101,
       "diagnosis": "Superficial Thrombophlebitis",
       "aliases": [],
       "category": "Blood II",
@@ -3251,7 +3522,7 @@
       "management": "Mobilization, compression therapy, NSAIDs, and anticoagulation for extensive disease or thrombi located near the deep venous system."
     },
     {
-      "id": 97,
+      "id": 102,
       "diagnosis": "Phlegmasia Cerulea Dolens",
       "aliases": [],
       "category": "Blood II",
@@ -3286,7 +3557,7 @@
       "management": "Vascular emergency and includes immediate anticoagulation, catheter-directed thrombolysis, thrombectomy, or other interventions to prevent venous gangrene, limb loss, and death."
     },
     {
-      "id": 98,
+      "id": 103,
       "diagnosis": "Hereditary Hemorrhagic Telangiectasia (HHT)",
       "aliases": [
         "HHT",
@@ -3324,7 +3595,7 @@
       "management": "Iron supplementation, treatment of bleeding lesions, embolization of AVMs, and surveillance for complications in affected organ systems"
     },
     {
-      "id": 99,
+      "id": 104,
       "diagnosis": "Type 1 Von Willebrand Disease (VWD)",
       "aliases": [
         "VWD",
@@ -3362,7 +3633,7 @@
       "management": "Desmopressin for many patients, antifibrinolytics for mucosal bleeding, and von Willebrand factor replacement in severe cases or major surgery."
     },
     {
-      "id": 100,
+      "id": 105,
       "diagnosis": "Type 2 Von Willebrand Disease (VWD)",
       "aliases": [
         "VWD",
@@ -3400,7 +3671,7 @@
       "management": "Management depends on subtype and may include desmopressin, antifibrinolytics, or von Willebrand factor concentrates for significant bleeding or surgical procedures."
     },
     {
-      "id": 101,
+      "id": 106,
       "diagnosis": "Hemophilia A/B",
       "aliases": [],
       "category": "Blood II",
@@ -3435,7 +3706,7 @@
       "management": "Factor VIII (or IX for B) replacement therapy, bleeding prophylaxis in severe disease, and avoidance of medications that increase bleeding risk."
     },
     {
-      "id": 102,
+      "id": 107,
       "diagnosis": "Disseminated Intravascular Coagulation (DIC)",
       "aliases": [
         "DIC",
@@ -3476,7 +3747,7 @@
       "management": "Management focuses on treating the underlying cause, supportive transfusion therapy when indicated, and close monitoring for life-threatening bleeding and organ failure. Platelets are not typically given."
     },
     {
-      "id": 103,
+      "id": 108,
       "diagnosis": "Tension Pneumothorax",
       "aliases": [],
       "category": "Blood II",
@@ -3514,7 +3785,7 @@
       "management": "Immediate needle decompression followed by chest tube thoracostomy to prevent cardiovascular collapse and death."
     },
     {
-      "id": 104,
+      "id": 109,
       "diagnosis": "Hemothorax",
       "aliases": [],
       "category": "Blood II",
@@ -3552,7 +3823,7 @@
       "management": "Prompt chest tube thoracostomy, volume resuscitation, and surgical intervention for ongoing hemorrhage or massive hemothorax."
     },
     {
-      "id": 105,
+      "id": 110,
       "diagnosis": "Flail Chest",
       "aliases": [],
       "category": "Blood II",
@@ -3587,7 +3858,7 @@
       "management": "Aggressive pain control, respiratory support, pulmonary hygiene, and, in selected cases, surgical rib fixation"
     },
     {
-      "id": 106,
+      "id": 111,
       "diagnosis": "Fat Embolism Syndrome",
       "aliases": [],
       "category": "Blood II",
@@ -3628,7 +3899,7 @@
       "management": "Management is primarily supportive, including oxygen therapy, mechanical ventilation when necessary, and early stabilization of fractures to reduce risk."
     },
     {
-      "id": 107,
+      "id": 112,
       "diagnosis": "Hairy Cell Leukemia",
       "aliases": [],
       "category": "Blood III",
@@ -3663,7 +3934,7 @@
       "management": "Purine analogs such as cladribine, which produce high rates of long-term remission."
     },
     {
-      "id": 108,
+      "id": 113,
       "diagnosis": "Primary Myelofibrosis",
       "aliases": [],
       "category": "Blood III",
@@ -3698,7 +3969,7 @@
       "management": "Management depends on risk stratification and may include JAK inhibitors such as ruxolitinib, transfusion support, and allogeneic stem cell transplantation in selected patients."
     },
     {
-      "id": 109,
+      "id": 114,
       "diagnosis": "Chronic Myeloid Leukemia (CML)",
       "aliases": [
         "CML",
@@ -3736,7 +4007,7 @@
       "management": "Management primarily consists of tyrosine kinase inhibitors such as imatinib, which have dramatically improved long-term survival. Due to progression to blast crisis during an accelerated phase, treatment should be started promptly."
     },
     {
-      "id": 110,
+      "id": 115,
       "diagnosis": "Schistosomiasis",
       "aliases": [],
       "category": "Blood III",
@@ -3771,7 +4042,7 @@
       "management": "Treatment consists of praziquantel, while prevention focuses on avoiding contaminated freshwater exposure in endemic regions"
     },
     {
-      "id": 111,
+      "id": 116,
       "diagnosis": "Leischmaniasis",
       "aliases": [],
       "category": "Blood III",
@@ -3806,7 +4077,7 @@
       "management": "Liposomal amphotericin B, while prevention focuses on vector control and reducing exposure to sandflies in endemic regions."
     },
     {
-      "id": 112,
+      "id": 117,
       "diagnosis": "Mononucleosis",
       "aliases": [],
       "category": "Blood III",
@@ -3841,7 +4112,7 @@
       "management": "Management is supportive and includes avoidance of contact sports during splenic enlargement because of the risk of splenic rupture."
     },
     {
-      "id": 113,
+      "id": 118,
       "diagnosis": "Felty Syndrome",
       "aliases": [],
       "category": "Blood III",
@@ -3876,7 +4147,7 @@
       "management": "Controlling rheumatoid arthritis with disease-modifying therapy, particularly methotrexate, and addressing infection risk; granulocyte colony-stimulating factor may be used in selected cases"
     },
     {
-      "id": 114,
+      "id": 119,
       "diagnosis": "Myelodysplastic Syndrome (MDS)",
       "aliases": [
         "MDS",
@@ -3914,7 +4185,7 @@
       "management": "Management ranges from supportive transfusions and growth factors to hypomethylating agents and allogeneic stem cell transplantation in selected patients."
     },
     {
-      "id": 115,
+      "id": 120,
       "diagnosis": "Acute Myelogenous Leukemia (AML)",
       "aliases": [
         "AML",
@@ -3952,7 +4223,7 @@
       "management": "Induction chemotherapy, targeted therapies for specific mutations, and stem cell transplantation in selected patients"
     },
     {
-      "id": 116,
+      "id": 121,
       "diagnosis": "Acute Lymphoblastic Leukemia (ALL)",
       "aliases": [
         "ALL",
@@ -3990,7 +4261,7 @@
       "management": "Treatment consists of multi-agent chemotherapy with central nervous system prophylaxis."
     },
     {
-      "id": 117,
+      "id": 122,
       "diagnosis": "Thrombotic Thrombocytopenic Purpura (TTP)",
       "aliases": [
         "TTP",
@@ -4028,7 +4299,7 @@
       "management": "Management is a hematologic emergency requiring urgent plasma exchange, corticosteroids, and often immunosuppressive therapy such as rituximab."
     },
     {
-      "id": 118,
+      "id": 123,
       "diagnosis": "Immune Thrombocytopenic Purpura (ITP)",
       "aliases": [
         "ITP",
@@ -4066,7 +4337,7 @@
       "management": "Management depends on bleeding severity and platelet count and may include corticosteroids, intravenous immunoglobulin, rituximab, thrombopoietin receptor agonists, or splenectomy in refractory cases."
     },
     {
-      "id": 119,
+      "id": 124,
       "diagnosis": "Chronic Neutrophilic Leukemia (CNL)",
       "aliases": [
         "CNL",
@@ -4104,7 +4375,7 @@
       "management": "Cytoreductive therapy, JAK-pathway-targeted treatments in selected cases, and allogeneic stem cell transplantation for eligible patients with advanced disease."
     },
     {
-      "id": 120,
+      "id": 125,
       "diagnosis": "Polycythemia Vera",
       "aliases": [],
       "category": "Blood III",
@@ -4139,7 +4410,7 @@
       "management": "Periodic phlebotomy, low-dose aspirin, and cytoreductive therapy such as hydroxyurea for high-risk patients."
     },
     {
-      "id": 121,
+      "id": 126,
       "diagnosis": "Essential Thrombocythemia",
       "aliases": [],
       "category": "Blood III",
@@ -4174,7 +4445,7 @@
       "management": "Low-dose aspirin for symptom control and thrombosis prevention, with cytoreductive therapy such as hydroxyurea used in higher-risk patients."
     },
     {
-      "id": 122,
+      "id": 127,
       "diagnosis": "Febrile Neutropenia",
       "aliases": [],
       "category": "Blood III",
@@ -4209,7 +4480,7 @@
       "management": "Medical emergency requiring immediate empiric broad-spectrum intravenous antibiotics with antipseudomonal coverage, supportive care, and consideration of antifungal therapy if fever persists."
     },
     {
-      "id": 123,
+      "id": 128,
       "diagnosis": "Agranulocytosis",
       "aliases": [],
       "category": "Blood III",
@@ -4244,7 +4515,7 @@
       "management": "Management requires immediate discontinuation of the offending agent, broad-spectrum antibiotics for suspected infection, supportive care, and consideration of granulocyte colony-stimulating factor (G-CSF) in severe cases."
     },
     {
-      "id": 124,
+      "id": 129,
       "diagnosis": "Duffy-Associated Neutrophil Count (DANC)",
       "aliases": [
         "DANC",
@@ -4282,7 +4553,7 @@
       "management": "No treatment is required, and recognition helps prevent unnecessary investigations or medication discontinuation."
     },
     {
-      "id": 125,
+      "id": 130,
       "diagnosis": "Follicular Lymphoma",
       "aliases": [],
       "category": "Blood III",
@@ -4319,7 +4590,7 @@
       "management": "Management ranges from active surveillance in asymptomatic patients to immunochemotherapy, commonly including rituximab."
     },
     {
-      "id": 126,
+      "id": 131,
       "diagnosis": "Spontaneous Tumour Lysis Syndrome",
       "aliases": [],
       "category": "Blood III",
@@ -4354,7 +4625,7 @@
       "management": "Aggressive intravenous hydration, cardiac monitoring, correction of electrolyte abnormalities, and uric acid-lowering therapy such as rasburicase. Immediate recognition is critical because fatal arrhythmias and renal failure may occur."
     },
     {
-      "id": 127,
+      "id": 132,
       "diagnosis": "Chronic Lymphocytic Leukemia (CLL)",
       "aliases": [
         "CLL",
@@ -4392,7 +4663,7 @@
       "management": "Management ranges from active surveillance in asymptomatic patients to targeted therapies such as BTK inhibitors or BCL2 inhibitors in symptomatic disease."
     },
     {
-      "id": 128,
+      "id": 133,
       "diagnosis": "Autoimmune Hemolytic Anemia (AIHA)",
       "aliases": [
         "AIHA",
@@ -4430,7 +4701,7 @@
       "management": "Management generally includes corticosteroids, treatment of the underlying condition, rituximab, and occasionally splenectomy for refractory disease."
     },
     {
-      "id": 129,
+      "id": 134,
       "diagnosis": "Multiple Myeloma (MM)",
       "aliases": [
         "MM",
@@ -4471,7 +4742,7 @@
       "management": "Combination chemotherapy, immunomodulatory agents, proteasome inhibitors, anti-CD38 monoclonal antibodies, bisphosphonates, and autologous stem cell transplantation in eligible patients."
     },
     {
-      "id": 130,
+      "id": 135,
       "diagnosis": "Monoclonal Gammopathy of Undetermined Significance (MGUS)",
       "aliases": [
         "MGUS",
@@ -4509,7 +4780,7 @@
       "management": "Periodic monitoring because MGUS carries an approximately 1% annual risk of progression to multiple myeloma, amyloidosis, or another plasma cell or lymphoproliferative disorder."
     },
     {
-      "id": 131,
+      "id": 136,
       "diagnosis": "Smoldering Multiple Myeloma (SMM)",
       "aliases": [
         "SMM",
@@ -4547,7 +4818,7 @@
       "management": "Management consists primarily of risk stratification and close surveillance, as patients remain at significant risk of progression to symptomatic multiple myeloma over time."
     },
     {
-      "id": 134,
+      "id": 139,
       "diagnosis": "Essential Hypertension",
       "aliases": [],
       "category": "Cardiovascular I",
@@ -4582,7 +4853,7 @@
       "management": "Lifestyle modifications, weight loss, exercise, sodium restriction and medications such as ACE Inhibitors, ARBs, Thiazides etc. DASH diet."
     },
     {
-      "id": 135,
+      "id": 140,
       "diagnosis": "Angina Pectoris",
       "aliases": [],
       "category": "Cardiovascular I",
@@ -4617,7 +4888,21 @@
       "management": "Risk-factor reduction, antiplatelet therapy when indicated, statins, beta blockers, nitrates, and evaluation for revascularization if needed."
     },
     {
-      "id": 140,
+      "id": 142,
+      "diagnosis": "Myocardial Infarction",
+      "aliases": [],
+      "category": "Cardiovascular I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/myocardial-infarction-clue5.jpg"
+        }
+      ]
+    },
+    {
+      "id": 145,
       "diagnosis": "Acute Limb Ischemia (ALI)",
       "aliases": [
         "ALI",
@@ -4658,7 +4943,7 @@
       "management": "Immediate management includes systemic anticoagulation with heparin and urgent revascularization through thrombectomy, thrombolysis, or surgical bypass to prevent irreversible tissue loss and amputation."
     },
     {
-      "id": 141,
+      "id": 146,
       "diagnosis": "Arterial Insufficiency (Peripheral Artery Disease [PAD])",
       "aliases": [
         "Peripheral Artery Disease [PAD]",
@@ -4696,7 +4981,7 @@
       "management": "Smoking cessation, supervised exercise therapy, statins, antiplatelet therapy, risk-factor modification, and revascularization for severe or limb-threatening disease."
     },
     {
-      "id": 142,
+      "id": 147,
       "diagnosis": "Acute on Chronic Limb Ischemia",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -4734,7 +5019,7 @@
       "management": "Immediate anticoagulation, urgent vascular assessment, and revascularization through endovascular or surgical intervention."
     },
     {
-      "id": 143,
+      "id": 148,
       "diagnosis": "Chronic Venous Insufficiency (CVI)",
       "aliases": [
         "CVI",
@@ -4772,7 +5057,7 @@
       "management": "Compression therapy, leg elevation, exercise, weight reduction, wound care, and endovenous or surgical interventions for selected patients."
     },
     {
-      "id": 144,
+      "id": 149,
       "diagnosis": "Compartment Syndrome",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -4807,7 +5092,7 @@
       "management": "Definitive treatment is emergent fasciotomy to prevent irreversible muscle necrosis, nerve injury, limb loss, and systemic complications."
     },
     {
-      "id": 145,
+      "id": 150,
       "diagnosis": "Wolff-Parkinson-White (WPW) Syndrome",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -4845,7 +5130,7 @@
       "management": "Management may include vagal maneuvers, antiarrhythmic therapy in selected cases, and catheter ablation, which is often curative."
     },
     {
-      "id": 146,
+      "id": 151,
       "diagnosis": "1st Degree Heart Block",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -4883,7 +5168,7 @@
       "management": "Treatment is typically unnecessary unless associated with symptomatic conduction disease or an underlying reversible cause."
     },
     {
-      "id": 147,
+      "id": 152,
       "diagnosis": "Mobitz Type 1 2nd Degree Heart Block (Wenckebach)",
       "aliases": [
         "Wenckebach",
@@ -4924,7 +5209,7 @@
       "management": "Observation and treatment of reversible causes."
     },
     {
-      "id": 148,
+      "id": 153,
       "diagnosis": "Mobitz Type 2 2nd Degree Heart Block",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -4961,7 +5246,7 @@
       "management": "Mobitz II frequently progresses to complete heart block and is associated with an unstable escape rhythm, permanent pacemaker implantation is generally recommended even in minimally symptomatic patients."
     },
     {
-      "id": 149,
+      "id": 154,
       "diagnosis": "Complete Heart Block (3rd Degree Block)",
       "aliases": [
         "3rd Degree Block",
@@ -5001,7 +5286,7 @@
       "management": "Definitive treatment is permanent pacemaker implantation because of the risk of profound bradycardia and sudden cardiac death."
     },
     {
-      "id": 150,
+      "id": 155,
       "diagnosis": "Atrial Fibrillation (Afib)",
       "aliases": [
         "Afib",
@@ -5042,7 +5327,7 @@
       "management": "Management focuses on rate or rhythm control and stroke prevention through anticoagulation guided by thromboembolic risk assessment."
     },
     {
-      "id": 151,
+      "id": 156,
       "diagnosis": "Atrial Flutter",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -5080,7 +5365,7 @@
       "management": "Rate control, anticoagulation when indicated, cardioversion, and catheter ablation, which is highly effective and often curative."
     },
     {
-      "id": 152,
+      "id": 157,
       "diagnosis": "Ventricular Fibrillation (VFib)",
       "aliases": [
         "VFib",
@@ -5121,7 +5406,7 @@
       "management": "Management requires immediate high-quality CPR and unsynchronized defibrillation, followed by advanced cardiac life support and treatment of the underlying cause."
     },
     {
-      "id": 153,
+      "id": 158,
       "diagnosis": "Monomorphic Ventricular Tachycardia (MonoVT)",
       "aliases": [
         "MonoVT",
@@ -5162,7 +5447,7 @@
       "management": "Management depends on hemodynamic stability and may include synchronized cardioversion, antiarrhythmic therapy, catheter ablation, and implantable cardioverter-defibrillator placement for secondary prevention."
     },
     {
-      "id": 154,
+      "id": 159,
       "diagnosis": "Polymorphic Ventricular Tachycardia (Torsades de Pointes)",
       "aliases": [
         "Torsades de Pointes",
@@ -5203,7 +5488,7 @@
       "management": "Acute management includes intravenous magnesium sulfate, correction of electrolyte abnormalities, withdrawal of offending medications, and electrical cardioversion if the patient is unstable."
     },
     {
-      "id": 155,
+      "id": 160,
       "diagnosis": "Bacterial Endocarditis",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -5241,7 +5526,7 @@
       "management": "Prolonged intravenous antibiotics and, in selected cases, surgical valve repair or replacement."
     },
     {
-      "id": 156,
+      "id": 161,
       "diagnosis": "Constrictive Pericarditis",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -5279,7 +5564,7 @@
       "management": "Definitive treatment is surgical pericardiectomy."
     },
     {
-      "id": 157,
+      "id": 162,
       "diagnosis": "Carotid Artery Disease",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -5314,7 +5599,7 @@
       "management": "Aggressive risk-factor modification, antiplatelet therapy, statins, and carotid endarterectomy or carotid artery stenting in selected patients with significant stenosis."
     },
     {
-      "id": 158,
+      "id": 163,
       "diagnosis": "Critical Limb Ischemia (CLI)",
       "aliases": [
         "CLI",
@@ -5352,7 +5637,7 @@
       "management": "Aggressive cardiovascular risk reduction, wound care, pain control, and prompt revascularization when feasible to prevent amputation and reduce mortality."
     },
     {
-      "id": 159,
+      "id": 164,
       "diagnosis": "Ruptured Abdominal Aortic Aneurysm (rAAA)",
       "aliases": [
         "rAAA",
@@ -5393,7 +5678,7 @@
       "management": "Immediate vascular surgical intervention, permissive hypotension, blood product resuscitation, and either open repair or endovascular aneurysm repair (EVAR). IV hydromorphone, anti-impulse therapy to prevent false-lumen propagation (target SBP 100 mmHg, HR ~70 bpm), esmolol to reduce heart's workload"
     },
     {
-      "id": 160,
+      "id": 165,
       "diagnosis": "Aortic Dissection",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -5431,7 +5716,7 @@
       "management": "Initial management includes rapid heart rate and blood pressure control with intravenous beta-blockers. Stanford type A dissections generally require emergent surgery, whereas uncomplicated type B dissections are often managed medically."
     },
     {
-      "id": 161,
+      "id": 166,
       "diagnosis": "Vasovagal Syncope",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -5462,7 +5747,7 @@
       "management": "Reassurance, trigger avoidance, hydration, physical counterpressure maneuvers, and education regarding recognition of prodromal symptoms."
     },
     {
-      "id": 162,
+      "id": 167,
       "diagnosis": "Arrhythmia-induced Syncope",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -5497,7 +5782,7 @@
       "management": "Management targets the underlying rhythm disturbance and may include antiarrhythmic therapy, catheter ablation, pacemaker implantation, or implantable cardioverter-defibrillator placement."
     },
     {
-      "id": 163,
+      "id": 168,
       "diagnosis": "Carotid Sinus Syncope (reflex syncope)",
       "aliases": [
         "reflex syncope",
@@ -5535,7 +5820,7 @@
       "management": "Avoiding triggers, treating contributing medications, and, in patients with a predominant cardioinhibitory response, permanent pacemaker implantation."
     },
     {
-      "id": 164,
+      "id": 169,
       "diagnosis": "Mitral Stenosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5570,7 +5855,7 @@
       "management": "Mitral stenosis management includes medical therapy (rate control with beta-blockers, diuretics for congestion, anticoagulation for atrial fibrillation) and intervention for severe MS (MVA ≤1.5 cm²). Percutaneous mitral balloon commissurotomy (PMBC) is first-line for favorable valve morphology; mitral valve surgery (commissurotomy or replacement) is indicated when anatomy is unfavorable or PMBC fails"
     },
     {
-      "id": 165,
+      "id": 170,
       "diagnosis": "Primary Mitral Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5605,7 +5890,7 @@
       "management": "Surgical MV repair (preferred over replacement) when severe and symptomatic, or asymptomatic with LVEF ≤60% or LVESD ≥40 mm. No medical therapy reduces MR severity. TEER is reserved for high-surgical-risk patients. Serial echocardiographic surveillance guides intervention timing"
     },
     {
-      "id": 166,
+      "id": 171,
       "diagnosis": "Functional Mitral Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5640,7 +5925,7 @@
       "management": "Guideline-directed heart failure therapy and, in selected patients, transcatheter or surgical intervention."
     },
     {
-      "id": 167,
+      "id": 172,
       "diagnosis": "Bicuspid Aortic Valve",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5675,7 +5960,7 @@
       "management": "lifelong surveillance of both valve function and aortopathy. Valve intervention (SAVR or repair) follows standard AS/AR indications. Aortic replacement is recommended at ≥5.5 cm (or ≥5.0 cm with risk factors like family history of dissection or rapid growth). Concomitant aortic replacement is reasonable at ≥4.5 cm during AVR"
     },
     {
-      "id": 168,
+      "id": 173,
       "diagnosis": "Aortic Stenosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5710,7 +5995,7 @@
       "management": "AVR for symptomatic severe high-gradient AS as a Class I indication, and for asymptomatic severe AS with LVEF <50%. In asymptomatic severe AS, AVR is reasonable when exercise testing shows decreased tolerance or BP drop ≥10 mmHg, aortic velocity ≥5 m/s, BNP >3× normal, or velocity increase ≥0.3 m/s/year. SAVR is preferred for patients <65 years; TAVR for those ≥80 years; shared decision-making guides ages 65–80. Asymptomatic patients not meeting intervention criteria require echocardiographic surveillance every 6–12 months."
     },
     {
-      "id": 169,
+      "id": 174,
       "diagnosis": "Aortic Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5745,7 +6030,7 @@
       "management": "Surgical aortic valve replacement (SAVR) as the definitive treatment for chronic severe aortic regurgitation. Key indications include: symptomatic severe AR regardless of LV function (Class I), asymptomatic severe AR with LVEF ≤55% (Class I), and severe LV enlargement (LVESD >50 mm) with normal LVEF (Class IIa). Medical therapy with afterload reduction (ACE inhibitors, ARBs, or dihydropyridine CCBs) is reserved for hypertension management or when surgery is contraindicated. TAVI should not be performed in surgical candidates with isolated severe AR."
     },
     {
-      "id": 170,
+      "id": 175,
       "diagnosis": "Primary Tricuspid Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5780,7 +6065,7 @@
       "management": "Severe disease may require surgical or transcatheter intervention."
     },
     {
-      "id": 171,
+      "id": 176,
       "diagnosis": "Functional Tricuspid Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5815,7 +6100,7 @@
       "management": "Management focuses on treatment of the underlying cardiac or pulmonary disorder and, in selected patients, valve intervention."
     },
     {
-      "id": 172,
+      "id": 177,
       "diagnosis": "Tetralogy of Fallot (TOF)",
       "aliases": [
         "TOF",
@@ -5855,7 +6140,7 @@
       "management": "Surgical repair during infancy. Lifelong surveillance for pulmonary regurgitation and RV dysfunction with pulmonary valve replacement when indicated"
     },
     {
-      "id": 173,
+      "id": 178,
       "diagnosis": "Transposition of the Great Arteries (TGA)",
       "aliases": [
         "TGA",
@@ -5896,7 +6181,7 @@
       "management": "Immediate management includes Alprostadil infusion (PGE1) to maintain ductal patency, followed by definitive surgical correction with an arterial switch procedure."
     },
     {
-      "id": 174,
+      "id": 179,
       "diagnosis": "Truncus Arteriosus (PTA)",
       "aliases": [
         "PTA",
@@ -5934,7 +6219,7 @@
       "management": "Truncus arteriosus requires early surgical repair, typically within the first few weeks of life. The procedure involves separating the single truncal vessel into the aorta and pulmonary artery, closing the ventricular septal defect (VSD) with a patch, and establishing right ventricle-to-pulmonary artery continuity using a valved conduit (Rastelli procedure). Lifelong follow-up is essential for conduit replacement."
     },
     {
-      "id": 175,
+      "id": 180,
       "diagnosis": "Eisenmenger Syndrome",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -5969,7 +6254,7 @@
       "management": "Eisenmenger's syndrome management focuses on supportive care and pulmonary vasodilator therapy, as surgical correction is contraindicated once irreversible pulmonary hypertension develops. Key strategies include pulmonary arterial hypertension-targeted therapies (e.g., bosentan, phosphodiesterase-5 inhibitors, prostanoids), avoidance of dehydration and pregnancy, phlebotomy for hyperviscosity symptoms, and consideration of heart-lung transplantation for refractory cases."
     },
     {
-      "id": 176,
+      "id": 181,
       "diagnosis": "Tricuspid Atresia",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6004,7 +6289,7 @@
       "management": "Definitive treatment involves staged surgical palliation, often culminating in a Fontan procedure."
     },
     {
-      "id": 177,
+      "id": 182,
       "diagnosis": "Total Anomalous Pulmonary Venous Connection (TAPVC/TAPVR)",
       "aliases": [
         "TAPVC",
@@ -6046,7 +6331,7 @@
       "management": "Total anomalous pulmonary venous return (TAPVR) requires urgent surgical repair, often within the neonatal period. Surgery involves redirecting the pulmonary veins to drain into the left atrium by creating an anastomosis between the pulmonary venous confluence and the left atrium, ligating the anomalous connection, and closing the associated atrial septal defect. Obstructed TAPVR is a surgical emergency."
     },
     {
-      "id": 178,
+      "id": 183,
       "diagnosis": "Ebstein's Anomaly",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6081,7 +6366,7 @@
       "management": "Management ranges from observation to surgical repair depending on severity."
     },
     {
-      "id": 179,
+      "id": 184,
       "diagnosis": "Pulmonary Stenosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6119,7 +6404,7 @@
       "management": "Severe disease is often treated with balloon valvuloplasty."
     },
     {
-      "id": 180,
+      "id": 185,
       "diagnosis": "Pulmonary Atresia",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6154,7 +6439,7 @@
       "management": "Definitive treatment requires staged surgical or catheter-based intervention."
     },
     {
-      "id": 181,
+      "id": 186,
       "diagnosis": "Acute Pericarditis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6191,7 +6476,7 @@
       "management": "Acute pericarditis is primarily managed with NSAIDs (e.g., ibuprofen or aspirin) combined with colchicine, which reduces recurrence risk. Activity restriction is recommended until symptom resolution. Corticosteroids are reserved for contraindications to first-line therapy or refractory cases, used at low doses. Treatment of underlying etiology is essential. Hospitalization is indicated for high-risk features."
     },
     {
-      "id": 182,
+      "id": 187,
       "diagnosis": "Pericardial Effusion",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6229,7 +6514,7 @@
       "management": "Management depends on the underlying cause and hemodynamic significance."
     },
     {
-      "id": 183,
+      "id": 188,
       "diagnosis": "Cardiac Tamponade",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6264,7 +6549,7 @@
       "management": "Emergent pericardiocentesis is the definitive treatment and can be lifesaving."
     },
     {
-      "id": 184,
+      "id": 189,
       "diagnosis": "Atrial Septal Defect (ASD)",
       "aliases": [
         "ASD",
@@ -6302,7 +6587,7 @@
       "management": "Significant defects are often closed to prevent long-term complications such as atrial fibrillation and Eisenmenger syndrome."
     },
     {
-      "id": 185,
+      "id": 190,
       "diagnosis": "Patent Foramen Ovale (PFO)",
       "aliases": [
         "PFO",
@@ -6340,7 +6625,7 @@
       "management": "Management depends on clinical context and may include antithrombotic therapy or transcatheter closure in selected patients with cryptogenic stroke."
     },
     {
-      "id": 186,
+      "id": 191,
       "diagnosis": "Ventricular Septal Defect (VSD)",
       "aliases": [
         "VSD",
@@ -6378,7 +6663,7 @@
       "management": "Small, asymptomatic VSDs often close spontaneously and require only monitoring. Large, hemodynamically significant VSDs causing heart failure or failure to thrive require surgical patch closure, typically by 3–6 months of age to prevent irreversible pulmonary vascular disease. Medical therapy (diuretics, nutritional support) bridges to surgery."
     },
     {
-      "id": 187,
+      "id": 192,
       "diagnosis": "Patent Ductus Arteriosus (PDA)",
       "aliases": [
         "PDA",
@@ -6416,7 +6701,7 @@
       "management": "Closure may occur pharmacologically in premature infants or through transcatheter or surgical intervention."
     },
     {
-      "id": 188,
+      "id": 193,
       "diagnosis": "Coarctation of the Aorta (CoA)",
       "aliases": [
         "CoA",
@@ -6457,7 +6742,7 @@
       "management": "Surgical repair or catheter-based balloon angioplasty/stenting, depending on age and anatomy. Neonates with critical coarctation require prostaglandin E1 to maintain ductal patency before surgical intervention (end-to-end anastomosis or extended resection). Older children and adults may undergo balloon angioplasty with stent placement. Lifelong blood pressure monitoring is essential."
     },
     {
-      "id": 189,
+      "id": 194,
       "diagnosis": "Atrioventricular Septal Defect (AVSD)",
       "aliases": [
         "AVSD",
@@ -6495,7 +6780,7 @@
       "management": "Surgical repair during infancy."
     },
     {
-      "id": 190,
+      "id": 195,
       "diagnosis": "Hyperplastic Arteriolosclerosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6533,7 +6818,7 @@
       "management": "Treatment requires urgent but controlled blood pressure reduction to prevent irreversible end-organ damage."
     },
     {
-      "id": 191,
+      "id": 196,
       "diagnosis": "Hyaline Arteriolosclerosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6571,7 +6856,7 @@
       "management": "Management focuses on controlling blood pressure, glucose levels, and other cardiovascular risk factors."
     },
     {
-      "id": 192,
+      "id": 197,
       "diagnosis": "Atherosclerosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -6606,7 +6891,7 @@
       "management": "Management centers on lifestyle modification (heart-healthy diet, exercise, smoking cessation, weight management) and aggressive risk factor control, primarily LDL-C lowering with high-intensity statins (≥50% reduction), adding ezetimibe or PCSK9 inhibitors if targets are unmet. Antiplatelet therapy (aspirin), blood pressure control, and glycemic management (including SGLT-2 inhibitors/GLP-1 agonists in diabetics) are essential adjuncts. Revascularization is reserved for symptomatic or high-risk disease."
     },
     {
-      "id": 193,
+      "id": 198,
       "diagnosis": "Pleural Effusion",
       "aliases": [],
       "category": "Respiratory I",
@@ -6644,7 +6929,7 @@
       "management": "Treatment of the underlying cause and drainage when clinically indicated."
     },
     {
-      "id": 194,
+      "id": 199,
       "diagnosis": "Atelectasis",
       "aliases": [],
       "category": "Respiratory I",
@@ -6682,7 +6967,7 @@
       "management": "Lung re-expansion through incentive spirometry, early mobilization, adequate analgesia, chest physiotherapy, and treatment of underlying airway obstruction when present."
     },
     {
-      "id": 195,
+      "id": 200,
       "diagnosis": "Asthma",
       "aliases": [],
       "category": "Respiratory I",
@@ -6720,7 +7005,7 @@
       "management": "Trigger avoidance, inhaled corticosteroids, bronchodilators, and biologic therapies for severe disease. Severe exacerbations can result in respiratory failure if untreated."
     },
     {
-      "id": 196,
+      "id": 201,
       "diagnosis": "Chronic Bronchitis",
       "aliases": [],
       "category": "Respiratory I",
@@ -6751,7 +7036,7 @@
       "management": "Smoking cessation, bronchodilators, pulmonary rehabilitation, vaccination, and supplemental oxygen when indicated."
     },
     {
-      "id": 197,
+      "id": 202,
       "diagnosis": "Emphysema",
       "aliases": [],
       "category": "Respiratory I",
@@ -6786,7 +7071,7 @@
       "management": "Smoking cessation, bronchodilators (LAMA ± LABA), pulmonary rehabilitation, and vaccinations. ICS is added for frequent exacerbations with elevated eosinophils. Severe hyperinflation may warrant lung volume reduction (surgery or bronchoscopic valves/coils). Long-term oxygen is used for chronic hypoxemia. Alpha-1 antitrypsin deficiency requires augmentation therapy."
     },
     {
-      "id": 198,
+      "id": 203,
       "diagnosis": "Chronic Obstructive Pulmonary Disease (COPD)",
       "aliases": [
         "COPD",
@@ -6827,7 +7112,7 @@
       "management": "Smoking cessation, bronchodilators (LAMA ± LABA), pulmonary rehabilitation, and vaccinations. ICS is added for frequent exacerbations with elevated eosinophils. Severe hyperinflation may warrant lung volume reduction (surgery or bronchoscopic valves/coils). Long-term oxygen is used for chronic hypoxemia. Alpha-1 antitrypsin deficiency requires augmentation therapy."
     },
     {
-      "id": 199,
+      "id": 204,
       "diagnosis": "Bronchiestasis",
       "aliases": [],
       "category": "Respiratory I",
@@ -6865,7 +7150,7 @@
       "management": "Bronchiectasis management centers on airway clearance techniques, treating underlying causes, and long-term antibiotics for frequent exacerbators. Vaccinations, pulmonary rehabilitation, and mucoactive agents (e.g., hypertonic saline) support care. Macrolides reduce exacerbations in high-risk patients. Pseudomonas eradication is pursued when newly detected. Surgery is reserved for localized refractory disease."
     },
     {
-      "id": 200,
+      "id": 205,
       "diagnosis": "Idiopathic Pulmonary Fibrosis (IPF)",
       "aliases": [
         "IPF",
@@ -6906,7 +7191,7 @@
       "management": "Antifibrotic agents such as Nintedanib and Pirfenidone, with lung transplantation considered in selected patients. Prednisone and azathioprine (or generally, immunosuppressants) should never be used. They have been shown to worsen survival."
     },
     {
-      "id": 201,
+      "id": 206,
       "diagnosis": "Pulmonary Arterial Hypertension (PAH)",
       "aliases": [
         "PAH",
@@ -6944,7 +7229,7 @@
       "management": "Treatment may include euvolemia maintenance, endothelin receptor antagonists, phosphodiesterase-5 inhibitors, prostacyclin analogues, and lung transplantation in advanced disease."
     },
     {
-      "id": 202,
+      "id": 207,
       "diagnosis": "Amyotrophic Lateral Sclerosis (ALS)",
       "aliases": [
         "ALS",
@@ -6982,7 +7267,7 @@
       "management": "ALS management centers on multidisciplinary care, riluzole (modest survival benefit), and supportive therapies. Edaravone and tofersen (for SOD1 variants) are additional FDA-approved options. Non-invasive ventilation prolongs survival. Gastrostomy supports nutrition. Symptom management addresses sialorrhea, spasticity, pseudobulbar affect, and pain. Palliative care is integral throughout."
     },
     {
-      "id": 203,
+      "id": 208,
       "diagnosis": "Rhinosinusitis",
       "aliases": [],
       "category": "Respiratory I",
@@ -7017,7 +7302,7 @@
       "management": "Treatment includes intranasal corticosteroids, saline irrigation, management of underlying inflammatory disease, biologic therapy in selected patients, and endoscopic sinus surgery for refractory cases."
     },
     {
-      "id": 204,
+      "id": 209,
       "diagnosis": "Duchenne's Muscular Dystrophy (DMD)",
       "aliases": [
         "DMD",
@@ -7055,7 +7340,7 @@
       "management": "Airway clearance therapies, lung-volume recruitment, noninvasive ventilation, corticosteroids, and multidisciplinary care."
     },
     {
-      "id": 205,
+      "id": 210,
       "diagnosis": "Bronchiolitis",
       "aliases": [],
       "category": "Respiratory I",
@@ -7090,7 +7375,7 @@
       "management": "Supportive and includes hydration, nasal suctioning, and oxygen therapy when indicated. Routine antibiotics, corticosteroids, and bronchodilators are generally not recommended."
     },
     {
-      "id": 206,
+      "id": 211,
       "diagnosis": "Alpha-1 Antitrypsin Deficiency",
       "aliases": [],
       "category": "Respiratory I",
@@ -7125,7 +7410,7 @@
       "management": "A1AT deficiency management centers on smoking cessation, standard COPD therapy, and IV augmentation therapy (weekly pooled human AAT) for those with established emphysema and severely reduced AAT levels. Liver disease requires alcohol avoidance and transplantation for advanced cases. Surveillance includes serial PFTs and liver monitoring. Family screening is recommended."
     },
     {
-      "id": 207,
+      "id": 212,
       "diagnosis": "Acute Respiratory Distress Syndrome (ARDS)",
       "aliases": [
         "ARDS",
@@ -7166,7 +7451,7 @@
       "management": "Primarily supportive, including lung-protective mechanical ventilation and treatment of the underlying cause."
     },
     {
-      "id": 208,
+      "id": 213,
       "diagnosis": "Obstructive Sleep Apnea (OSA)",
       "aliases": [
         "OSA",
@@ -7204,7 +7489,7 @@
       "management": "Continuous positive airway pressure (CPAP) is the first-line treatment. Weight loss, exercise, alcohol avoidance, are recommended. Oral appliances used for those who cannot tolerate PAP and uvulopalatopharyngoplasty, maxillomandibular advancement, and hypoglossal nerve stimulation is more moderate to severe cases."
     },
     {
-      "id": 209,
+      "id": 214,
       "diagnosis": "Central Sleep Apnea",
       "aliases": [],
       "category": "Respiratory II",
@@ -7239,7 +7524,7 @@
       "management": "Central sleep apnea management prioritizes treating the underlying cause (e.g., optimizing heart failure therapy, reducing opioids), followed by CPAP, adaptive servo-ventilation (ASV) (avoid in HFrEF with LVEF ≤45%), nocturnal oxygen, phrenic nerve stimulation, or acetazolamide as adjuncts"
     },
     {
-      "id": 210,
+      "id": 215,
       "diagnosis": "Pectus Carinatum",
       "aliases": [],
       "category": "Respiratory II",
@@ -7277,7 +7562,7 @@
       "management": "External bracing during adolescence and surgery for severe cases."
     },
     {
-      "id": 211,
+      "id": 216,
       "diagnosis": "Pectus Excavatum",
       "aliases": [],
       "category": "Respiratory II",
@@ -7315,7 +7600,7 @@
       "management": "Mild cases require reassurance and observation. Symptomatic or severe deformities causing cardiopulmonary compromise or significant psychosocial burden may warrant surgical correction."
     },
     {
-      "id": 212,
+      "id": 217,
       "diagnosis": "Kyphoscoliosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7350,7 +7635,7 @@
       "management": "Monitor mild curves with serial examinations and radiographs. Progressive deformities may require bracing, while severe curvature, respiratory compromise, or pain warrants surgery."
     },
     {
-      "id": 213,
+      "id": 218,
       "diagnosis": "Inflammatory myositis (Polymyositis)",
       "aliases": [
         "Polymyositis",
@@ -7388,7 +7673,7 @@
       "management": "High-dose corticosteroids followed by steroid-sparing immunosuppressive therapy. Monitor muscle strength, creatine kinase levels, swallowing function, pulmonary involvement, and malignancy risk."
     },
     {
-      "id": 214,
+      "id": 219,
       "diagnosis": "Hypersensitivity Pneumonitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7423,7 +7708,7 @@
       "management": "Identify and eliminate the offending antigen. Corticosteroids may accelerate recovery in symptomatic disease. Monitor lung function and progression to chronic fibrotic lung disease."
     },
     {
-      "id": 215,
+      "id": 220,
       "diagnosis": "Ankylosing Spondilitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7458,7 +7743,7 @@
       "management": "Encourage regular exercise and physiotherapy. NSAIDs are first-line therapy. Persistent active disease may require TNF-α or IL-17 inhibitors with ongoing monitoring."
     },
     {
-      "id": 216,
+      "id": 221,
       "diagnosis": "Silicosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7496,7 +7781,7 @@
       "management": "Eliminate further silica exposure and provide supportive care. Monitor pulmonary function regularly, vaccinate appropriately, and screen for tuberculosis and progressive fibrosis."
     },
     {
-      "id": 217,
+      "id": 222,
       "diagnosis": "Sarcoidosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7534,7 +7819,7 @@
       "management": "Asymptomatic disease may only require observation. Symptomatic organ involvement is treated with corticosteroids, with immunosuppressive agents reserved for refractory cases."
     },
     {
-      "id": 218,
+      "id": 223,
       "diagnosis": "Tuberculosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7572,7 +7857,7 @@
       "management": "Treat active disease with multidrug therapy, typically including isoniazid, rifampin, pyrazinamide, and ethambutol. Monitor adherence, drug toxicity, and contacts."
     },
     {
-      "id": 219,
+      "id": 224,
       "diagnosis": "Bird-Fancier's Lung",
       "aliases": [],
       "category": "Respiratory II",
@@ -7607,7 +7892,7 @@
       "management": "Eliminate bird antigen exposure and consider corticosteroids for symptomatic disease. Monitor pulmonary function and imaging for progression to chronic fibrotic lung disease."
     },
     {
-      "id": 220,
+      "id": 225,
       "diagnosis": "Rheumatoid Arthritis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7642,7 +7927,7 @@
       "management": "Treat underlying rheumatoid arthritis and pulmonary inflammation with immunomodulatory therapy. Monitor lung function regularly and provide supportive care for progressive fibrotic disease."
     },
     {
-      "id": 221,
+      "id": 226,
       "diagnosis": "Asbestosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7680,7 +7965,7 @@
       "management": "Eliminate further asbestos exposure and optimize pulmonary health through smoking cessation, vaccination, and supportive care. Monitor for malignancy and progressive respiratory impairment"
     },
     {
-      "id": 222,
+      "id": 227,
       "diagnosis": "Scleroderma (SSc-ILD)",
       "aliases": [
         "SSc-ILD",
@@ -7718,7 +8003,7 @@
       "management": "Treat progressive lung disease with immunomodulatory therapy and monitor pulmonary function regularly. Manage systemic sclerosis manifestations and screen for pulmonary hypertension"
     },
     {
-      "id": 223,
+      "id": 228,
       "diagnosis": "Amiodarone Induced Pneumonitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7753,7 +8038,7 @@
       "management": "Immediately discontinue amiodarone and exclude alternative causes of pulmonary symptoms. Corticosteroids are commonly used for significant disease, with close respiratory follow-up."
     },
     {
-      "id": 224,
+      "id": 229,
       "diagnosis": "Nitrofurantoin Induced Pneumonitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -7788,7 +8073,7 @@
       "management": "Immediately discontinue nitrofurantoin and monitor for clinical improvement. Corticosteroids may be considered in severe cases. Follow pulmonary function and imaging resolution."
     },
     {
-      "id": 225,
+      "id": 230,
       "diagnosis": "Narcolepsy",
       "aliases": [],
       "category": "Respiratory II",
@@ -7823,7 +8108,7 @@
       "management": "Treat excessive daytime sleepiness with wake-promoting agents and encourage scheduled naps. Cataplexy may require REM-suppressing medications and ongoing sleep medicine follow-up."
     },
     {
-      "id": 226,
+      "id": 231,
       "diagnosis": "Idiopathic Hypersomnolence",
       "aliases": [],
       "category": "Respiratory II",
@@ -7858,7 +8143,7 @@
       "management": "Optimize sleep hygiene and treat excessive daytime sleepiness with wake-promoting medications. Monitor functional impairment and reassess for alternative sleep disorders if symptoms evolve."
     },
     {
-      "id": 227,
+      "id": 232,
       "diagnosis": "Tracheoesophageal Fistula",
       "aliases": [],
       "category": "Respiratory II",
@@ -7893,7 +8178,7 @@
       "management": "Prevent aspiration with feeding cessation, suctioning, and supportive care. Definitive treatment is surgical repair, followed by monitoring for reflux and respiratory complications."
     },
     {
-      "id": 228,
+      "id": 233,
       "diagnosis": "Congenital Diaphragmatic Hernia",
       "aliases": [],
       "category": "Respiratory II",
@@ -7928,7 +8213,7 @@
       "management": "Prioritize respiratory stabilization and management of pulmonary hypertension. Avoid bag-mask ventilation when possible. Definitive treatment involves surgical repair after cardiopulmonary stabilization"
     },
     {
-      "id": 229,
+      "id": 234,
       "diagnosis": "Mycetoma",
       "aliases": [],
       "category": "Respiratory III",
@@ -7963,7 +8248,7 @@
       "management": "Monitor asymptomatic patients. Significant or recurrent hemoptysis may require surgical resection or bronchial artery embolization. Consider antifungal therapy in selected cases."
     },
     {
-      "id": 230,
+      "id": 235,
       "diagnosis": "Granulomatosis with polyangiitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8001,7 +8286,7 @@
       "management": "Induce remission with glucocorticoids plus rituximab or cyclophosphamide. Transition to maintenance immunosuppression and monitor closely for renal and pulmonary complications."
     },
     {
-      "id": 231,
+      "id": 236,
       "diagnosis": "Eosinophilic Granulomatosis with polyangiitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8036,7 +8321,7 @@
       "management": "Treat with systemic glucocorticoids and add immunosuppressive or biologic therapy for organ-threatening disease. Monitor eosinophil counts and cardiac involvement closely."
     },
     {
-      "id": 232,
+      "id": 237,
       "diagnosis": "Goodpasture's Syndrome (antiglomerular basement membrane antibody disease [anti-GBM])",
       "aliases": [
         "antiglomerular basement membrane antibody disease [anti-GBM]",
@@ -8077,7 +8362,7 @@
       "management": "Initiate urgent plasmapheresis with high-dose glucocorticoids and immunosuppression. Monitor pulmonary hemorrhage and renal function closely to prevent irreversible organ damage."
     },
     {
-      "id": 233,
+      "id": 238,
       "diagnosis": "Dieulafoy Lesion",
       "aliases": [],
       "category": "Respiratory III",
@@ -8112,7 +8397,7 @@
       "management": "Stabilize hemodynamics and perform urgent endoscopic hemostasis using clips, thermal coagulation, or injection therapy. Refractory bleeding may require angiographic or surgical intervention."
     },
     {
-      "id": 234,
+      "id": 239,
       "diagnosis": "Empyema",
       "aliases": [],
       "category": "Respiratory III",
@@ -8150,7 +8435,7 @@
       "management": "systemic antibiotics and pleural drainage via chest tube (thoracostomy), with intrapleural tPA plus DNase for loculated collections or VATS decortication if medical therapy fails."
     },
     {
-      "id": 235,
+      "id": 240,
       "diagnosis": "Parapneumonic Effusion",
       "aliases": [],
       "category": "Respiratory III",
@@ -8188,7 +8473,7 @@
       "management": "Treat the underlying pneumonia with appropriate antibiotics. Perform thoracentesis when indicated and drain complicated effusions to prevent progression to empyema."
     },
     {
-      "id": 236,
+      "id": 241,
       "diagnosis": "Primary Pneumothorax",
       "aliases": [],
       "category": "Respiratory III",
@@ -8226,7 +8511,7 @@
       "management": "Small stable pneumothoraces may be observed with oxygen therapy. Larger or symptomatic cases require aspiration or chest tube drainage and recurrence prevention."
     },
     {
-      "id": 237,
+      "id": 242,
       "diagnosis": "Secondary Pneumothorax",
       "aliases": [],
       "category": "Respiratory III",
@@ -8261,7 +8546,7 @@
       "management": "Provide supplemental oxygen and perform chest tube drainage in most cases. Address the underlying lung disease and consider definitive recurrence-prevention strategies."
     },
     {
-      "id": 238,
+      "id": 243,
       "diagnosis": "Acute Bronchitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8299,7 +8584,7 @@
       "management": "Provide reassurance and supportive care with hydration and symptom control. Antibiotics are generally not indicated unless a specific bacterial cause is suspected."
     },
     {
-      "id": 239,
+      "id": 244,
       "diagnosis": "Group A Streptococcus Pharyngitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8334,7 +8619,7 @@
       "management": "Treat with penicillin or amoxicillin to reduce transmission and prevent rheumatic fever. Provide analgesia, hydration, and return precautions for complications."
     },
     {
-      "id": 240,
+      "id": 245,
       "diagnosis": "Hospital Associated Pneumonia (HAP)",
       "aliases": [
         "HAP",
@@ -8371,7 +8656,7 @@
       "management": "Empiric antibiotic therapy covering S. aureus, P. aeruginosa, and other gram-negative bacilli for all patients with suspected HAP. MRSA coverage (vancomycin or linezolid): Add only if risk factors for MDR pathogens are present, the unit has >10–20% MRSA prevalence, or local prevalence is unknown. Without MRSA risk: Monotherapy with piperacillin-tazobactam, cefepime, levofloxacin, imipenem, or meropenem is suggested. A 7-day course is recommended (strong recommendation), with adjustment based on clinical, radiologic, and laboratory response."
     },
     {
-      "id": 241,
+      "id": 246,
       "diagnosis": "Ventilator Associated Pneumonia (VAP)",
       "aliases": [
         "VAP",
@@ -8409,7 +8694,7 @@
       "management": "Empiric antibiotic coverage for S. aureus, P. aeruginosa, and other gram-negative bacilli in all patients with suspected VAP. MRSA coverage (vancomycin or linezolid): Only when risk factors for MDR pathogens are present, the unit has >10–20% MRSA prevalence, or local prevalence is unknown. Otherwise, cover MSSA with piperacillin-tazobactam, cefepime, levofloxacin, imipenem, or meropenem. Dual anti-pseudomonal therapy: Recommended empirically when MDR risk factors are present, to increase the probability that at least one agent is active against the causative pathogen. A 7-day course is recommended (strong recommendation, moderate-quality evidence), with adjustment based on clinical, radiologic, and laboratory response."
     },
     {
-      "id": 242,
+      "id": 247,
       "diagnosis": "SARS-CoV-2",
       "aliases": [],
       "category": "Respiratory III",
@@ -8447,7 +8732,7 @@
       "management": "Provide supportive care and oxygen as needed. Use antiviral therapy for eligible patients and corticosteroids for hypoxemic disease while monitoring complications."
     },
     {
-      "id": 243,
+      "id": 248,
       "diagnosis": "Influenza",
       "aliases": [],
       "category": "Respiratory III",
@@ -8482,7 +8767,7 @@
       "management": "Provide supportive care and initiate antiviral therapy early in high-risk or hospitalized patients. Monitor for secondary bacterial pneumonia and respiratory complications."
     },
     {
-      "id": 244,
+      "id": 249,
       "diagnosis": "Parainfluenza",
       "aliases": [],
       "category": "Respiratory III",
@@ -8517,7 +8802,7 @@
       "management": "Administer corticosteroids for all symptomatic patients. Moderate or severe disease may require nebulized epinephrine and observation until respiratory distress improves."
     },
     {
-      "id": 245,
+      "id": 250,
       "diagnosis": "Respiratory Syncytial Virus (RSV)",
       "aliases": [
         "RSV",
@@ -8555,7 +8840,7 @@
       "management": "Provide supportive care with hydration, nasal suctioning, and oxygen when needed. Severe cases may require hospitalization and respiratory support. Avoid routine antibiotics."
     },
     {
-      "id": 246,
+      "id": 251,
       "diagnosis": "Lady Windermere Syndrome",
       "aliases": [],
       "category": "Respiratory III",
@@ -8593,7 +8878,7 @@
       "management": "Three-times-weekly macrolide-based regimen (azithromycin, rifampicin, ethambutol) for ≥12 months after sputum culture conversion, combined with airway clearance techniques. Airway clearance, nutritional support, and pulmonary rehabilitation is an essential adjunct."
     },
     {
-      "id": 247,
+      "id": 252,
       "diagnosis": "Invasive Pulmonary Aspergillosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8628,7 +8913,7 @@
       "management": "Initiate prompt antifungal therapy, typically with voriconazole. Reverse immunosuppression when possible and monitor closely for dissemination, hemorrhage, and respiratory failure."
     },
     {
-      "id": 248,
+      "id": 253,
       "diagnosis": "Histoplasmosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8663,7 +8948,7 @@
       "management": "Mild disease may only require observation. Moderate or severe infection is treated with antifungal therapy, and disseminated disease requires prolonged treatment and follow-up."
     },
     {
-      "id": 249,
+      "id": 254,
       "diagnosis": "Blastomycosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8698,7 +8983,7 @@
       "management": "Treat mild to moderate disease with itraconazole. Severe, disseminated, or central nervous system infection requires amphotericin B followed by prolonged azole therapy."
     },
     {
-      "id": 250,
+      "id": 255,
       "diagnosis": "Metapneumovirus",
       "aliases": [],
       "category": "Respiratory III",
@@ -8736,7 +9021,7 @@
       "management": "Provide supportive care with hydration, oxygen supplementation, and respiratory support as needed. No specific antiviral therapy is routinely recommended for immunocompetent patients."
     },
     {
-      "id": 251,
+      "id": 256,
       "diagnosis": "Cryptococcal Pneumonia",
       "aliases": [],
       "category": "Respiratory III",
@@ -8771,7 +9056,7 @@
       "management": "Evaluate for central nervous system involvement and initiate antifungal therapy. Severe disease requires induction treatment followed by prolonged consolidation and maintenance therapy."
     },
     {
-      "id": 252,
+      "id": 257,
       "diagnosis": "Coccidioidomycosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8806,7 +9091,7 @@
       "management": "Mild disease may only require observation. Severe, chronic, or disseminated infection requires prolonged antifungal therapy and monitoring for extrapulmonary complications"
     },
     {
-      "id": 253,
+      "id": 258,
       "diagnosis": "Postobstructive Pneumonia",
       "aliases": [],
       "category": "Respiratory III",
@@ -8841,7 +9126,7 @@
       "management": "Treat the infection with appropriate antibiotics and relieve the airway obstruction when possible. Bronchoscopy, surgery, or oncologic therapy may be required."
     },
     {
-      "id": 254,
+      "id": 259,
       "diagnosis": "Lymphangitis Carcinomatosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -8879,7 +9164,844 @@
       "management": "Treat the underlying malignancy with systemic therapy when appropriate. Provide supportive respiratory care and symptom management while monitoring for progressive hypoxemic failure."
     },
     {
+      "id": 269,
+      "diagnosis": "Central Diabetes Insipidus",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 27-year-old woman presents to her family physician with excessive thirst and frequent urination that have progressively worsened over the past several months"
+        },
+        {
+          "type": "",
+          "text": "She underwent transsphenoidal surgery for a pituitary mass six months ago and has otherwise recovered well"
+        },
+        {
+          "type": "",
+          "text": "Examination is largely unremarkable except for signs of mild dehydration, including dry mucous membranes and orthostatic tachycardia"
+        },
+        {
+          "type": "",
+          "text": "Serum sodium and serum osmolality are elevated, while urine osmolality and urine specific gravity are inappropriately low"
+        },
+        {
+          "type": "",
+          "text": "MRI of the brain demonstrates postoperative changes involving the pituitary region with absence of the normal posterior pituitary bright spot"
+        },
+        {
+          "type": "",
+          "text": "During water deprivation testing, administration of desmopressin results in a marked increase in urine osmolality"
+        }
+      ],
+      "description": "Central diabetes insipidus is a disorder caused by deficient secretion of antidiuretic hormone (ADH) from the hypothalamus or posterior pituitary. Common causes include pituitary surgery, head trauma, tumors, infections, and autoimmune disease. Patients present with polyuria, polydipsia, nocturia, and hypernatremia if unable to maintain water intake. Diagnosis relies on serum and urine osmolality measurements, MRI evaluation of the hypothalamic-pituitary axis, and water deprivation testing. Complications include dehydration, severe hypernatremia, and neurologic dysfunction.",
+      "management": "Treat with desmopressin replacement and ensure adequate water intake. Monitor serum sodium closely and address the underlying hypothalamic or pituitary disorder."
+    },
+    {
+      "id": 270,
+      "diagnosis": "Nephrogenic Diabetes Insipidus",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 52-year-old man presents to his family physician with excessive thirst and frequent urination that have gradually worsened over the past several months"
+        },
+        {
+          "type": "",
+          "text": "He has bipolar disorder and has been taking the same mood-stabilizing medication for many years"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild dehydration with dry mucous membranes and orthostatic tachycardia. The remainder of the examination is unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Serum sodium and serum osmolality are elevated, while urine osmolality and urine specific gravity remain inappropriately low"
+        },
+        {
+          "type": "",
+          "text": "MRI of the brain demonstrates an intact posterior pituitary bright spot with no hypothalamic or pituitary abnormalities"
+        },
+        {
+          "type": "",
+          "text": "During water deprivation testing, administration of desmopressin produces little or no increase in urine osmolality"
+        }
+      ],
+      "description": "Nephrogenic diabetes insipidus is a disorder in which the kidneys are unable to respond appropriately to antidiuretic hormone (ADH). Common causes include chronic lithium therapy, hypercalcemia, hypokalemia, chronic kidney disease, and inherited mutations affecting the vasopressin receptor or aquaporin channels. Patients present with polyuria, polydipsia, and hypernatremia. Diagnosis is established with water deprivation testing demonstrating failure to concentrate urine despite desmopressin administration. Management focuses on treating the underlying cause. Complications include dehydration, severe hypernatremia, and chronic urinary tract dilation.",
+      "management": "Address the underlying cause, optimize hydration, and reduce urine output with dietary measures and selected medications. Monitor closely for dehydration and hypernatremia"
+    },
+    {
+      "id": 271,
+      "diagnosis": "Osmotic Demyelination Syndrome",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 56-year-old man develops progressive difficulty speaking, trouble swallowing, and generalized weakness two days after being admitted to hospital"
+        },
+        {
+          "type": "",
+          "text": "He has a history of alcohol use disorder and was hospitalized for severe symptomatic hyponatremia that required treatment"
+        },
+        {
+          "type": "",
+          "text": "Neurologic examination reveals dysarthria, spastic quadriparesis, hyperreflexia, and pseudobulbar affect. Sensation is preserved"
+        },
+        {
+          "type": "",
+          "text": "Review of laboratory results demonstrates that serum sodium increased by more than 12 mmol/L within the first 24 hours of treatment"
+        },
+        {
+          "type": "",
+          "text": "MRI of the brain demonstrates symmetric T2 hyperintensity within the central pons with relative sparing of the peripheral pontine fibers"
+        },
+        {
+          "type": "",
+          "text": "A trident-shaped lesion involving the central pons is seen on imaging"
+        }
+      ],
+      "description": "Osmotic demyelination syndrome is a neurologic disorder caused by rapid correction of chronic hyponatremia, leading to osmotic injury and demyelination, most commonly within the pons. Risk factors include alcoholism, malnutrition, liver disease, and severe chronic hyponatremia. Patients develop delayed neurologic deterioration with dysarthria, dysphagia, spasticity, and altered consciousness. Diagnosis is established through clinical history and MRI findings. Management is largely supportive. Complications include locked-in syndrome, permanent neurologic deficits, respiratory failure, and death",
+      "management": "Prevention through careful sodium correction is critical. Provide supportive neurologic care, rehabilitation, and close monitoring for respiratory compromise and long-term deficits."
+    },
+    {
+      "id": 272,
+      "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH)",
+      "aliases": [
+        "SIADH",
+        "Syndrome of Inappropriate Antidiuretic Hormone secretion"
+      ],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 68-year-old man is brought to the emergency department by his family because of worsening confusion, fatigue, and several recent falls"
+        },
+        {
+          "type": "",
+          "text": "He has a 50-pack-year smoking history and reports a persistent cough and unintentional weight loss over the past few months"
+        },
+        {
+          "type": "",
+          "text": "Neurologic examination reveals mild confusion but no focal deficits. He appears euvolemic, with no peripheral edema, orthostatic hypotension, or signs of dehydration"
+        },
+        {
+          "type": "",
+          "text": "Serum sodium is 118 mmol/L, serum osmolality is low, urine osmolality is inappropriately elevated, and urine sodium concentration is increased"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates a centrally located hilar mass with mediastinal lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Further evaluation identifies a neuroendocrine malignancy associated with ectopic production of antidiuretic hormone"
+        }
+      ],
+      "description": "SIADH is a disorder of excessive antidiuretic hormone secretion causing impaired free-water excretion and euvolemic hyponatremia. Common causes include malignancy (especially small-cell lung cancer), pulmonary disease, central nervous system disorders, and medications. Patients present with symptoms of hyponatremia ranging from fatigue and confusion to seizures and coma. Diagnosis is based on hypotonic hyponatremia with inappropriately concentrated urine in a clinically euvolemic patient. Management targets the underlying cause. Complications include cerebral edema, seizures, and osmotic demyelination from overly rapid correction.",
+      "management": "Treat the underlying cause and restrict fluids first; if insufficient, escalate to urea or tolvaptan as second-line therapy; and use hypertonic saline emergently for severe symptomatic hyponatremia, with careful sodium correction to avoid osmotic demyelination"
+    },
+    {
+      "id": 273,
+      "diagnosis": "Primary Hyperaldosteronism (Conn's)",
+      "aliases": [
+        "Conn's",
+        "Primary Hyperaldosteronism"
+      ],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 46-year-old woman presents to her family physician for evaluation of persistently elevated blood pressure despite taking three antihypertensive medications"
+        },
+        {
+          "type": "",
+          "text": "She has experienced increasing fatigue and intermittent muscle cramps over the past several months. There is no family history of early cardiovascular disease"
+        },
+        {
+          "type": "",
+          "text": "Blood pressure is 172/98 mmHg. The remainder of the examination is unremarkable, with no peripheral edema or signs of heart failure"
+        },
+        {
+          "type": "",
+          "text": "Serum potassium is decreased, bicarbonate is elevated, plasma renin activity is suppressed, and the aldosterone-to-renin ratio is markedly increased"
+        },
+        {
+          "type": "",
+          "text": "CT of the abdomen demonstrates a unilateral 1.8-cm adrenal nodule"
+        },
+        {
+          "type": "",
+          "text": "Confirmatory testing demonstrates persistent autonomous aldosterone secretion despite sodium loading"
+        }
+      ],
+      "description": "Primary hyperaldosteronism is a disorder of autonomous aldosterone production, most commonly caused by an aldosterone-producing adrenal adenoma or bilateral adrenal hyperplasia. Excess aldosterone promotes sodium retention, potassium wasting, and metabolic alkalosis, leading to resistant hypertension. Patients may present with hypertension, muscle weakness, or be asymptomatic. Diagnosis relies on an elevated aldosterone-to-renin ratio followed by confirmatory testing and adrenal imaging. Management depends on the underlying cause. Complications include cardiovascular disease, arrhythmias, chronic kidney disease, and stroke.",
+      "management": "Unilateral disease is typically treated surgically. Bilateral adrenal hyperplasia is managed medically with mineralocorticoid receptor antagonists and cardiovascular risk reduction."
+    },
+    {
+      "id": 274,
+      "diagnosis": "Gitelman Syndrome",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 17-year-old girl presents to her family physician with chronic fatigue, intermittent muscle cramps, and episodes of lightheadedness during sports activities"
+        },
+        {
+          "type": "",
+          "text": "She has experienced these symptoms for several years but has otherwise been healthy. There is no history of diuretic use, vomiting, or eating disorders"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals low-normal blood pressure and mild muscle weakness. The remainder of the examination is unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Serum potassium and magnesium are decreased, metabolic alkalosis is present, and urinary calcium excretion is low"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/gitelman-syndrome-clue5.jpg",
+          "detail": "Normal kidney US",
+          "reference": "https://doi.org/10.53347/rID-50538"
+        },
+        {
+          "type": "",
+          "text": "Genetic testing identifies a mutation affecting the thiazide-sensitive sodium-chloride cotransporter in the distal convoluted tubule"
+        }
+      ],
+      "description": "Gitelman syndrome is an autosomal recessive renal tubulopathy caused by mutations in the SLC12A3 gene, resulting in defective sodium-chloride reabsorption in the distal convoluted tubule. The disorder mimics chronic thiazide diuretic use and typically presents during adolescence or adulthood with fatigue, muscle cramps, salt craving, and weakness. Diagnosis is suggested by hypokalemic metabolic alkalosis, hypomagnesemia, and hypocalciuria. Management focuses on electrolyte replacement. Complications include arrhythmias, chondrocalcinosis, chronic fatigue, and impaired quality of life.",
+      "management": "Provide lifelong magnesium and potassium supplementation. Encourage liberal salt intake and consider potassium-sparing agents for persistent electrolyte abnormalities or symptoms."
+    },
+    {
+      "id": 275,
+      "diagnosis": "Bartter Syndrome",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 6-year-old boy is brought to the pediatric clinic because of poor growth, excessive urination, and frequent episodes of muscle weakness"
+        },
+        {
+          "type": "",
+          "text": "His mother recalls being told she had excessive amniotic fluid during pregnancy, and he has required multiple evaluations for dehydration since infancy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a thin child with short stature, mild hypotension, and signs of volume depletion. No edema is present"
+        },
+        {
+          "type": "",
+          "text": "Serum potassium is decreased, metabolic alkalosis is present, plasma renin and aldosterone levels are elevated, and urinary calcium excretion is increased"
+        },
+        {
+          "type": "",
+          "text": "Renal ultrasonography demonstrates bilateral medullary nephrocalcinosis"
+        },
+        {
+          "type": "",
+          "text": "Genetic testing identifies a defect affecting ion transport in the thick ascending limb of the loop of Henle, producing a physiology similar to chronic loop diuretic use"
+        }
+      ],
+      "description": "Bartter syndrome is an autosomal recessive renal tubulopathy caused by impaired sodium, potassium, and chloride reabsorption in the thick ascending limb of the loop of Henle. It commonly presents during infancy or childhood with polyuria, polydipsia, growth delay, dehydration, and muscle weakness. Laboratory findings include hypokalemic metabolic alkalosis, elevated renin and aldosterone levels, and hypercalciuria. Diagnosis is based on clinical and biochemical features. Complications include nephrocalcinosis, chronic kidney disease, growth impairment, and cardiac arrhythmias.",
+      "management": "Correct fluid and electrolyte losses with potassium supplementation and liberal salt intake. NSAIDs and potassium-sparing agents may reduce renal salt wasting"
+    },
+    {
+      "id": 276,
+      "diagnosis": "Methanol Poisoning",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 38-year-old man presents to the emergency department with headache, nausea, vomiting, and progressively worsening blurry vision several hours after attending a party"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachypnea, confusion, and markedly reduced visual acuity. He describes his vision as looking through a \"snowstorm.\""
+        },
+        {
+          "type": "",
+          "text": "Arterial blood gas demonstrates a severe high-anion-gap metabolic acidosis"
+        },
+        {
+          "type": "",
+          "text": "Serum osmolar gap is elevated"
+        },
+        {
+          "type": "",
+          "text": "MRI of the brain demonstrates bilateral putaminal necrosis"
+        },
+        {
+          "type": "",
+          "text": "After tracking down his friends, they report that he consumed a large quantity of homemade alcohol the previous evening. He was initially asymptomatic but became increasingly ill overnight"
+        }
+      ],
+      "description": "Methanol poisoning occurs after ingestion of methanol-containing substances such as industrial solvents, windshield washer fluid, or adulterated alcohol. Methanol is metabolized by alcohol dehydrogenase to formic acid, which causes metabolic acidosis and optic nerve toxicity. Patients present with visual disturbances, gastrointestinal symptoms, and altered mental status. Diagnosis relies on exposure history, elevated osmolar gap, and high-anion-gap metabolic acidosis. Complications include blindness, cerebral injury, respiratory failure, and death if untreated.",
+      "management": "Administer fomepizole to inhibit alcohol dehydrogenase, correct acidosis, and perform hemodialysis when indicated. Monitor closely for visual and neurologic injury."
+    },
+    {
+      "id": 277,
+      "diagnosis": "Salicylate Poisoning",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 24-year-old woman presents to the emergency department with nausea, vomiting, ringing in her ears, and rapid breathing after taking medication for a severe headache"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tachypnea, diaphoresis, agitation, and mild confusion. Temperature is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "Arterial blood gas demonstrates a mixed primary respiratory alkalosis and high-anion-gap metabolic acidosis. Serum salicylate concentration is elevated"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography demonstrates bilateral diffuse pulmonary infiltrates consistent with noncardiogenic pulmonary edema"
+        },
+        {
+          "type": "",
+          "text": "The patient reports persistent tinnitus"
+        },
+        {
+          "type": "",
+          "text": "Her roommate reports finding an empty bottle of over-the-counter pain medication beside her bed earlier that day"
+        }
+      ],
+      "description": "Salicylate poisoning results from excessive ingestion of aspirin or other salicylate-containing products. Toxicity causes direct stimulation of the respiratory center, producing respiratory alkalosis, followed by accumulation of organic acids leading to high-anion-gap metabolic acidosis. Patients develop tinnitus, nausea, vomiting, tachypnea, hyperthermia, and altered mental status. Diagnosis is based on serum salicylate levels and characteristic acid-base abnormalities. Complications include pulmonary edema, cerebral edema, seizures, multiorgan failure, and death.",
+      "management": "Administer activated charcoal when appropriate and alkalinize serum and urine with intravenous bicarbonate. Severe toxicity may require urgent hemodialysis."
+    },
+    {
+      "id": 278,
+      "diagnosis": "Renal Tubular Acidosis Type 1",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 32-year-old woman presents to her family physician with recurrent kidney stones, chronic fatigue, and intermittent muscle weakness"
+        },
+        {
+          "type": "",
+          "text": "She has a history of dry eyes and dry mouth and has required treatment for multiple episodes of nephrolithiasis over the past several years"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild proximal muscle weakness. The remainder of the examination is unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Serum bicarbonate and potassium are decreased. Arterial blood gas demonstrates a normal-anion-gap metabolic acidosis, and urine pH remains persistently above 5.5"
+        },
+        {
+          "type": "",
+          "text": "Renal ultrasound demonstrates bilateral medullary nephrocalcinosis with multiple small renal calculi"
+        },
+        {
+          "type": "",
+          "text": "Despite systemic acidemia, the distal nephron is unable to appropriately acidify the urine"
+        }
+      ],
+      "description": "Distal renal tubular acidosis is a disorder characterized by impaired hydrogen ion secretion in the distal nephron, resulting in an inability to acidify urine. Common causes include autoimmune diseases such as Sjögren syndrome, medications, and hereditary disorders. Patients develop normal-anion-gap metabolic acidosis, hypokalemia, nephrolithiasis, and nephrocalcinosis. Diagnosis is suggested by persistent urine pH above 5.5 despite systemic acidosis. Management focuses on alkali replacement and correction of electrolyte abnormalities. Complications include recurrent stones, nephrocalcinosis, chronic kidney disease, and bone disease.",
+      "management": "Treat with oral alkali therapy and potassium supplementation when needed. Address underlying causes and monitor for nephrolithiasis, nephrocalcinosis, and kidney dysfunction."
+    },
+    {
+      "id": 279,
+      "diagnosis": "Renal Tubular Acidosis Type 2",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 9-year-old boy is brought to the pediatric clinic because of poor growth, fatigue, and intermittent muscle weakness over the past several years"
+        },
+        {
+          "type": "",
+          "text": "His parents report that he drinks large amounts of water and urinates frequently. He has also experienced several episodes of dehydration during minor illnesses"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals short stature and mild proximal muscle weakness. No edema or hypertension is present"
+        },
+        {
+          "type": "",
+          "text": "Serum bicarbonate and potassium are decreased. Arterial blood gas demonstrates a normal-anion-gap metabolic acidosis, and urinalysis reveals glucosuria despite normal blood glucose levels"
+        },
+        {
+          "type": "",
+          "text": "Radiographs of the wrists and knees demonstrate findings consistent with rickets"
+        },
+        {
+          "type": "",
+          "text": "Further evaluation demonstrates generalized proximal tubular dysfunction with urinary wasting of phosphate, glucose, amino acids, and bicarbonate"
+        }
+      ],
+      "description": "Proximal renal tubular acidosis is caused by impaired bicarbonate reabsorption in the proximal tubule, resulting in renal bicarbonate wasting and normal-anion-gap metabolic acidosis. It may occur in isolation or as part of Fanconi syndrome. Causes include inherited disorders, monoclonal gammopathies, medications, and heavy metal exposure. Patients present with growth failure, muscle weakness, polyuria, and bone disease. Diagnosis is based on characteristic laboratory findings and evidence of proximal tubular dysfunction. Complications include rickets, osteomalacia, nephrolithiasis, and chronic kidney disease.",
+      "management": "Provide bicarbonate replacement and correct electrolyte abnormalities. Treat the underlying cause and supplement phosphate or vitamin D when bone disease is present."
+    },
+    {
+      "id": 280,
+      "diagnosis": "Renal Tubular Acidosis Type 4",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old man presents to his family physician with progressive fatigue, generalized weakness, and occasional palpitations over the past several weeks"
+        },
+        {
+          "type": "",
+          "text": "He has a long-standing history of type 2 diabetes mellitus complicated by diabetic kidney disease and is taking an ACE inhibitor for hypertension"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild muscle weakness. Blood pressure is elevated, and there are no signs of volume depletion"
+        },
+        {
+          "type": "",
+          "text": "Serum potassium is elevated, serum bicarbonate is decreased, and arterial blood gas demonstrates a normal-anion-gap metabolic acidosis"
+        },
+        {
+          "type": "",
+          "text": "Renal ultrasound demonstrates bilaterally small echogenic kidneys consistent with chronic kidney disease"
+        },
+        {
+          "type": "",
+          "text": "Further evaluation demonstrates hypoaldosteronism or aldosterone resistance resulting in impaired distal potassium and hydrogen ion secretion"
+        }
+      ],
+      "description": "Type 4 renal tubular acidosis is a disorder caused by aldosterone deficiency or resistance, leading to impaired distal secretion of potassium and hydrogen ions. It most commonly occurs in patients with diabetic nephropathy, chronic kidney disease, or medications affecting the renin-angiotensin-aldosterone system. Patients often present with asymptomatic hyperkalemia or nonspecific weakness. Diagnosis is based on hyperkalemia with normal-anion-gap metabolic acidosis. Management focuses on treating the underlying cause and correcting hyperkalemia. Complications include cardiac arrhythmias and progressive kidney dysfunction.",
+      "management": "Address underlying hypoaldosteronism, discontinue contributing medications when possible, and treat hyperkalemia. Some patients benefit from mineralocorticoid replacement or diuretic therapy."
+    },
+    {
+      "id": 281,
+      "diagnosis": "Saline-Infusion Hyperchloremia",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man in the intensive care unit develops increasing fatigue and tachypnea two days after admission for septic shock"
+        },
+        {
+          "type": "",
+          "text": "He received several liters of intravenous fluid resuscitation during the first 24 hours of hospitalization and has no prior history of kidney disease"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild tachypnea and signs of improving hemodynamic status. There are no focal neurologic deficits or signs of ongoing shock"
+        },
+        {
+          "type": "",
+          "text": "Serum chloride is elevated, serum bicarbonate is decreased, and arterial blood gas demonstrates a normal-anion-gap metabolic acidosis"
+        },
+        {
+          "type": "",
+          "text": "Chest radiography and abdominal imaging reveal no new abnormalities to explain the acid-base disturbance"
+        },
+        {
+          "type": "",
+          "text": "Review of the medication administration record reveals large-volume administration of 0.9% sodium chloride solution preceding the development of the acidosis"
+        }
+      ],
+      "description": "Saline-infusion hyperchloremia is an iatrogenic cause of normal-anion-gap metabolic acidosis resulting from large-volume administration of 0.9% sodium chloride. Excess chloride lowers serum bicarbonate concentration and produces a hyperchloremic metabolic acidosis without accumulation of unmeasured anions. It commonly occurs during aggressive fluid resuscitation in critically ill or perioperative patients. Diagnosis relies on recognizing the temporal relationship between saline administration and laboratory abnormalities. Complications include reduced renal perfusion, worsening acidosis, prolonged hospitalization, and diagnostic confusion with other acid-base disorders.",
+      "management": "Reduce or discontinue chloride-rich fluids and consider balanced crystalloids. Monitor acid-base status and renal function while treating the underlying illness."
+    },
+    {
+      "id": 282,
+      "diagnosis": "Urinary Tract Infection",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 24-year-old woman presents to her family physician with two days of painful urination, urinary frequency, and a persistent urge to void"
+        },
+        {
+          "type": "",
+          "text": "She is sexually active and reports a similar episode approximately one year ago that resolved with antibiotic treatment"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild suprapubic tenderness without costovertebral angle tenderness, fever, or systemic signs of illness"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates positive leukocyte esterase, positive nitrites, pyuria, and bacteriuria"
+        },
+        {
+          "type": "",
+          "text": "Renal and bladder ultrasonography demonstrates no structural abnormalities when performed"
+        },
+        {
+          "type": "",
+          "text": "Urine culture grows a lactose-fermenting gram-negative bacillus"
+        }
+      ],
+      "description": "Urinary tract infection is a bacterial infection of the urinary tract, most commonly caused by Escherichia coli. Risk factors include female sex, sexual activity, prior urinary tract infections, urinary tract abnormalities, and catheterization. Patients typically present with dysuria, urinary frequency, urgency, and suprapubic discomfort. Diagnosis is based on symptoms and urinalysis, with urine culture used in selected cases. Management involves antimicrobial therapy. Complications include recurrent infection, pyelonephritis, sepsis, and renal scarring in severe or untreated cases.",
+      "management": "First-line treatment of uncomplicated UTI includes nitrofurantoin (100 mg twice daily, 5 days), trimethoprim-sulfamethoxazole (1 DS tablet twice daily, 3 days), or fosfomycin (single 3 g dose); fluoroquinolones are reserved as alternatives."
+    },
+    {
+      "id": 283,
+      "diagnosis": "Acute Pyelonephritis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 29-year-old woman presents to the emergency department with fever, chills, nausea, and worsening left-sided flank pain over the past two days"
+        },
+        {
+          "type": "",
+          "text": "She reports several days of painful urination and urinary frequency before the onset of her current symptoms. She has a history of recurrent urinary tract infections"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals fever, tachycardia, and marked left costovertebral angle tenderness"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates pyuria, bacteriuria, positive leukocyte esterase, and white blood cell casts. Leukocytosis is present"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/acute-pyelonephritis-clue5.jpg",
+          "detail": "US shows a bulky and hypoechoic left kidney with decreased vascularity. No evident calculus or hydronephrosis is seen. The right kidney has normal features",
+          "reference": "https://doi.org/10.53347/rID-50687"
+        },
+        {
+          "type": "",
+          "text": "Urine culture grows a lactose-fermenting gram-negative bacillus that ascends from the lower urinary tract"
+        }
+      ],
+      "description": "Acute pyelonephritis is a bacterial infection of the renal parenchyma and collecting system, most commonly caused by ascending infection with Escherichia coli. Risk factors include female sex, urinary tract obstruction, vesicoureteral reflux, diabetes, and recurrent urinary tract infections. Patients present with fever, flank pain, costovertebral angle tenderness, and urinary symptoms. Diagnosis is based on urinalysis, urine culture, and imaging when complicated disease is suspected. Complications include renal abscess, sepsis, emphysematous infection, and permanent renal scarring.",
+      "management": "Initiate appropriate antibiotic therapy and ensure adequate hydration. Hospitalize patients with severe illness, sepsis, obstruction, or inability to tolerate oral medications."
+    },
+    {
+      "id": 284,
+      "diagnosis": "Prostatitis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 48-year-old man presents to the emergency department with fever, chills, painful urination, and increasing pelvic discomfort over the past three days"
+        },
+        {
+          "type": "",
+          "text": "He has no prior history of prostate disease"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals suprapubic tenderness. Digital rectal examination demonstrates a markedly tender, warm, and enlarged prostate"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates pyuria, bacteriuria, and positive leukocyte esterase. Complete blood count reveals neutrophilic leukocytosis"
+        },
+        {
+          "type": "",
+          "text": "Transrectal ultrasonography demonstrates an enlarged prostate without evidence of abscess formation"
+        },
+        {
+          "type": "",
+          "text": "He recently underwent urinary catheterization following a surgical procedure"
+        }
+      ],
+      "description": "Acute bacterial prostatitis is an infection of the prostate gland, most commonly caused by ascending gram-negative urinary pathogens such as Escherichia coli. Risk factors include urinary tract instrumentation, catheterization, bladder outlet obstruction, and immunosuppression. Patients present with fever, dysuria, pelvic pain, and obstructive urinary symptoms. Diagnosis is based on clinical findings and urinalysis with culture. Management requires prolonged antibiotic therapy. Complications include prostatic abscess, urinary retention, bacteremia, sepsis, and chronic prostatitis.",
+      "management": "Ciprofloxacin 500 mg po x 14-30 d or Septra DS 1 tab po BID x 14-30 d. Monitor for urinary retention, abscess formation, and sepsis, with hospitalization for severe disease."
+    },
+    {
+      "id": 285,
+      "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
+      "aliases": [
+        "BPH",
+        "Benign Prostatic Hyperplasia"
+      ],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old man presents to his family physician because he has been waking up several times each night to urinate and feels that his urinary stream has become progressively weaker over the past year."
+        },
+        {
+          "type": "",
+          "text": "He reports increasing urinary frequency, urgency, and a sensation of incomplete bladder emptying"
+        },
+        {
+          "type": "",
+          "text": "Digital rectal examination reveals a symmetrically enlarged, smooth, rubbery prostate without nodules or areas of induration"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis is unremarkable, serum creatinine is normal, and prostate-specific antigen is mildly elevated for age"
+        },
+        {
+          "type": "",
+          "text": "Bladder ultrasonography demonstrates a significant postvoid residual volume with mild bladder wall trabeculation"
+        },
+        {
+          "type": "",
+          "text": "Histologic examination demonstrates nodular hyperplasia involving the periurethral (transition) zone of the prostate"
+        }
+      ],
+      "description": "Benign prostatic hyperplasia is a nonmalignant proliferation of stromal and glandular tissue within the transition zone of the prostate. It is an age-related condition driven by androgen signaling, particularly dihydrotestosterone. Patients develop lower urinary tract symptoms including urinary frequency, urgency, nocturia, weak stream, and incomplete emptying. Diagnosis is primarily clinical and supported by physical examination and assessment of postvoid residual urine. Complications include urinary retention, recurrent urinary tract infections, bladder stones, hydronephrosis, and kidney dysfunction.",
+      "management": "Lifestyle modifications and α₁-blockers provide symptomatic relief. Larger prostates may benefit from 5α-reductase inhibitors, while refractory obstruction may require surgery."
+    },
+    {
+      "id": 286,
+      "diagnosis": "Overactive Bladder (OAB)",
+      "aliases": [
+        "OAB",
+        "Overactive Bladder"
+      ],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman presents to her family physician because she experiences sudden urges to urinate that are difficult to postpone and has had several episodes of urine leakage on the way to the bathroom"
+        },
+        {
+          "type": "",
+          "text": "She reports that symptoms have gradually worsened over the past year. She has had three prior vaginal deliveries and denies dysuria, hematuria, or recurrent urinary tract infections"
+        },
+        {
+          "type": "",
+          "text": "Physical examination is unremarkable, with no pelvic masses, neurologic deficits, or signs of pelvic organ prolapse"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis is normal, urine culture is negative, and postvoid residual volume is minimal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/overactive-bladder-oab-clue5.jpg",
+          "detail": "Bladder US is normal with negligible post-void urine",
+          "reference": "https://doi.org/10.53347/rID-60889"
+        },
+        {
+          "type": "",
+          "text": "Urodynamic testing demonstrates involuntary detrusor contractions during the bladder filling phase"
+        }
+      ],
+      "description": "Overactive bladder is a symptom syndrome characterized by urinary urgency, usually accompanied by frequency, nocturia, and urge urinary incontinence. It is most commonly caused by detrusor overactivity and becomes more prevalent with advancing age. Diagnosis is clinical after excluding infection, obstruction, and other causes of urinary symptoms. Routine testing is often normal. Management begins with behavioral interventions and pelvic floor therapy, followed by pharmacologic treatment when needed. Complications include falls, sleep disturbance, social isolation, and reduced quality of life.",
+      "management": "Begin with bladder training, fluid management, and pelvic floor exercises. Persistent symptoms may require antimuscarinic therapy, β3-adrenergic agonists, or specialist referral."
+    },
+    {
+      "id": 287,
+      "diagnosis": "Prostate Adenocarcinoma",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 72-year-old man presents to his family physician because of gradually worsening urinary hesitancy, nocturia, and lower back discomfort over the past several month"
+        },
+        {
+          "type": "",
+          "text": "He has otherwise been healthy and has not sought medical attention regularly."
+        },
+        {
+          "type": "",
+          "text": "Digital rectal examination reveals a firm, irregular nodule involving one lobe of the prostate"
+        },
+        {
+          "type": "",
+          "text": "Prostate-specific antigen (PSA) is elevated above the expected range for age and has increased significantly from a previous measurement"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/prostate-adenocarcinoma-clue5.jpg",
+          "detail": "Sagittal T2-weighted MRI shows mild median lobe hypertrophy invading into the urinary bladder. Loss of normal T2 high signal intensity of the left half of the peripheral zone, which is replaced by a T2 hypointense lesion which is crossing the midline, breaching prostatic capsule and invading left neurovascular bundle",
+          "reference": "https://doi.org/10.53347/rID-57192"
+        },
+        {
+          "type": "",
+          "text": "Biopsy demonstrates small malignant glands lacking a basal cell layer"
+        }
+      ],
+      "description": "Prostate adenocarcinoma is the most common cancer of the prostate and typically arises in the peripheral zone. Risk factors include advanced age, family history, African ancestry, and inherited mutations such as BRCA2. Patients may be asymptomatic or present with urinary symptoms, hematuria, or bone pain from metastases. Diagnosis relies on PSA testing, MRI, and prostate biopsy. Management depends on risk stratification and stage. Complications include metastatic bone disease, urinary obstruction, spinal cord compression, and death.",
+      "management": "Management ranges from active surveillance to surgery, radiation, and androgen deprivation therapy. Advanced disease may require systemic therapy and treatment of metastases."
+    },
+    {
       "id": 288,
+      "diagnosis": "Renal Cell Carcinoma (RCC)",
+      "aliases": [
+        "RCC",
+        "Renal Cell Carcinoma"
+      ],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 64-year-old man presents to his family physician with intermittent left-sided flank discomfort and increasing fatigue over the past several months"
+        },
+        {
+          "type": "",
+          "text": "He has a 40-pack-year smoking history, obesity, and long-standing hypertension"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild left flank tenderness and a palpable abdominal mass. His blood pressure is elevated"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin is elevated above the reference range, and urinalysis demonstrates microscopic hematuria"
+        },
+        {
+          "type": "",
+          "text": "",
+          "detail": "CT shows a large exophytic mass lesion originating from the lower pole of the left kidney. Heterogenous post-contrast enhancement is seen with a central less enhancing core demonstrating partial central necrosis",
+          "reference": "https://doi.org/10.53347/rID-3046"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates malignant cells with abundant clear cytoplasm arranged in nests surrounded by a delicate vascular network"
+        }
+      ],
+      "description": "Renal cell carcinoma is the most common primary malignancy of the kidney, arising from renal tubular epithelial cells. Major risk factors include smoking, obesity, hypertension, chronic kidney disease, and inherited syndromes such as Von Hippel–Lindau disease. Patients may present with hematuria, flank pain, constitutional symptoms, or paraneoplastic syndromes, although many tumors are discovered incidentally. Diagnosis relies on contrast-enhanced imaging and histopathology. Complications include renal vein invasion, metastasis, paraneoplastic syndromes, and death.",
+      "management": "Localized disease is treated with partial or radical nephrectomy. Advanced disease may require targeted therapy, immunotherapy, and management of metastatic complications."
+    },
+    {
+      "id": 289,
+      "diagnosis": "Testicular Cancer",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 28-year-old man presents to his family physician after noticing a painless enlargement of his right testicle while showering several weeks ago"
+        },
+        {
+          "type": "",
+          "text": "He has a history of an undescended testicle that required surgical correction during childhood. He is otherwise healthy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm, non-tender intratesticular mass that does not transilluminate. No signs of infection are present"
+        },
+        {
+          "type": "",
+          "text": "Serum testing demonstrates elevated β-hCG and lactate dehydrogenase levels"
+        },
+        {
+          "type": "",
+          "text": "Scrotal ultrasonography demonstrates a solid hypoechoic intratesticular mass with increased vascularity"
+        },
+        {
+          "type": "",
+          "text": "CT imaging demonstrates para-aortic lymphadenopathy"
+        }
+      ],
+      "description": "Testicular cancer is the most common solid malignancy in young men and is usually a germ cell tumor. Major risk factors include cryptorchidism, family history, and prior testicular cancer. Patients typically present with a painless testicular mass or enlargement. Diagnosis relies on scrotal ultrasonography, serum tumor markers, and staging imaging after radical inguinal orchiectomy. Prognosis is excellent with appropriate treatment. Complications include metastatic disease, infertility, treatment-related toxicity, and recurrence.",
+      "management": "Radical inguinal orchiectomy for diagnosis and treatment. Further management depends on histology and stage and may include surveillance, chemotherapy, or radiation. Never biopsy due to risk of lymphatogenous spread."
+    },
+    {
+      "id": 290,
+      "diagnosis": "Von Hippel-Lindau Syndrome (VHL)",
+      "aliases": [
+        "VHL",
+        "Von Hippel-Lindau Syndrome"
+      ],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 26-year-old man presents to the emergency department with progressively worsening headaches, dizziness, and difficulty maintaining balance over the past several months"
+        },
+        {
+          "type": "",
+          "text": "His father died of kidney cancer at a young age, and several relatives have undergone surgery for tumors involving different organ systems"
+        },
+        {
+          "type": "",
+          "text": "Neurologic examination reveals truncal ataxia and impaired coordination. Fundoscopic examination identifies abnormal retinal vascular lesions"
+        },
+        {
+          "type": "",
+          "text": "Neurologic examination reveals truncal ataxia and impaired coordination. Fundoscopic examination identifies abnormal retinal vascular lesions"
+        },
+        {
+          "type": "",
+          "text": "MRI of the brain demonstrates a cystic cerebellar lesion with an enhancing mural nodule. Abdominal CT reveals multiple bilateral renal masses and pancreatic cysts"
+        },
+        {
+          "type": "",
+          "text": "Further evaluation identifies a catecholamine-secreting adrenal tumor in association with retinal and central nervous system hemangioblastomas"
+        }
+      ],
+      "description": "Von Hippel–Lindau syndrome is an autosomal dominant cancer predisposition disorder caused by mutations in the VHL tumor suppressor gene. Loss of VHL function leads to abnormal accumulation of hypoxia-inducible factors and increased angiogenesis. Patients are predisposed to retinal and central nervous system hemangioblastomas, clear cell renal cell carcinoma, pheochromocytoma, pancreatic cysts, and other tumors. Diagnosis relies on characteristic clinical findings, family history, and genetic testing. Complications include vision loss, neurologic deficits, metastatic renal cancer, and premature death.",
+      "management": "Provide lifelong surveillance for associated tumors with regular imaging and screening. Surgical intervention is often required for symptomatic or high-risk lesions."
+    },
+    {
+      "id": 291,
+      "diagnosis": "Septic Stone",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman presents to the emergency department with severe left flank pain, fever, and shaking chills that began earlier that day"
+        },
+        {
+          "type": "",
+          "text": "She has a history of recurrent nephrolithiasis and reports several days of dysuria and urinary frequency before the onset of flank pain"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals fever, tachycardia, hypotension, and marked left costovertebral angle tenderness. She appears acutely ill"
+        },
+        {
+          "type": "",
+          "text": "Leukocytosis is present, serum creatinine is elevated, and urinalysis demonstrates pyuria, bacteriuria, positive nitrites, and hematuria"
+        },
+        {
+          "type": "",
+          "text": "CT of the abdomen and pelvis demonstrates a proximal ureteral calculus with moderate hydronephrosis and perinephric inflammatory stranding"
+        },
+        {
+          "type": "",
+          "text": "Blood and urine cultures grow the same uropathogen in the setting of an obstructed collecting system, creating a urologic emergency"
+        }
+      ],
+      "description": "A septic stone is an infected urinary tract obstruction caused by a ureteral or renal calculus that blocks urine drainage while infection is present. Obstruction prevents adequate source control and can rapidly lead to pyelonephritis, bacteremia, and septic shock. Patients present with fever, flank pain, urinary symptoms, and systemic toxicity. Diagnosis relies on urinalysis, cultures, laboratory evidence of infection, and imaging demonstrating both obstruction and infection. Complications include septic shock, acute kidney injury, multiorgan failure, and death.",
+      "management": "Treat as a urologic emergency with immediate broad-spectrum antibiotics and urgent urinary decompression via nephrostomy tube or ureteral stent placement."
+    },
+    {
+      "id": 292,
       "diagnosis": "Nephrolithiasis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -8917,7 +10039,573 @@
       "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
     },
     {
+      "id": 293,
+      "diagnosis": "Erectile Dysfunction (ED)",
+      "aliases": [
+        "ED",
+        "Erectile Dysfunction"
+      ],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents to his family physician because he has been having increasing difficulty achieving and maintaining erections sufficient for sexual intercourse over the past year"
+        },
+        {
+          "type": "",
+          "text": "His medical history is significant for type 2 diabetes mellitus. He reports preserved libido."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals diminished peripheral pulses and reduced sensation in both feet. Genital examination is otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin A1c is elevated, while serum testosterone, luteinizing hormone, and prolactin levels are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Penile Doppler ultrasonography demonstrates reduced arterial inflow to the corpora cavernosa following pharmacologic stimulation"
+        },
+        {
+          "type": "",
+          "text": "There is an absence of spontaneous nocturnal erections"
+        }
+      ],
+      "description": "Erectile dysfunction is the persistent inability to achieve or maintain an erection sufficient for satisfactory sexual activity. Common causes include vascular disease, diabetes mellitus, neurologic disorders, medications, endocrine abnormalities, and psychological factors. Patients often present with difficulty obtaining or sustaining erections. Diagnosis relies on a focused sexual and medical history, physical examination, and selective laboratory testing. Management targets reversible causes and underlying comorbidities. Complications include relationship difficulties, reduced quality of life, and identification of underlying cardiovascular disease.",
+      "management": "Address reversible causes and optimize cardiovascular risk factors. First-line therapy typically involves phosphodiesterase-5 inhibitors, with additional treatments reserved for refractory cases"
+    },
+    {
+      "id": 294,
+      "diagnosis": "Hydrocele",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 42-year-old man presents to his family physician because of a gradually enlarging, painless swelling of the right side of his scrotum over the past several months"
+        },
+        {
+          "type": "",
+          "text": "He denies urinary symptoms, fever, trauma, or recent sexual exposures. The swelling is more noticeable at the end of the day but is otherwise asymptomatic"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a smooth, fluctuant, non-tender scrotal mass surrounding the testicle. The testis itself is difficult to palpate separately"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis is normal, and inflammatory markers are not elevated"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/hydrocele-clue5.jpg",
+          "detail": "Scrotal US demonstrates anechoic fluid collection surrounding a normal testicle",
+          "reference": "https://doi.org/10.53347/rID-17962"
+        },
+        {
+          "type": "",
+          "text": "When examined with a penlight in a dark room, the scrotal swelling transilluminates uniformly"
+        }
+      ],
+      "description": "Hydrocele is the accumulation of serous fluid within the tunica vaginalis surrounding the testicle. It may be congenital due to a patent processus vaginalis or acquired secondary to trauma, infection, malignancy, or idiopathic fluid imbalance. Patients typically present with painless scrotal enlargement and a sensation of heaviness. Diagnosis is based on physical examination and confirmed with scrotal ultrasonography. Most hydroceles are benign. Complications are uncommon but include discomfort, cosmetic concerns, and rarely masking an underlying testicular pathology.",
+      "management": "Observe asymptomatic hydroceles. Symptomatic, enlarging, or persistent cases may require surgical hydrocelectomy after excluding underlying infection, malignancy, or hernia."
+    },
+    {
+      "id": 295,
+      "diagnosis": "Epididymal Cyst",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 36-year-old man presents to his family physician after noticing a painless lump in his scrotum while showering several weeks ago"
+        },
+        {
+          "type": "",
+          "text": "He denies trauma, urinary symptoms, constitutional symptoms, or a family history of testicular cancer. The mass has not changed significantly in size"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a smooth, mobile, non-tender cystic mass superior and posterior to the testicle that is clearly separate from the testicular parenchyma"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis and serum tumor markers are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Scrotal ultrasonography demonstrates a well-circumscribed anechoic cyst arising from the head of the epididymis with a normal-appearing testicle"
+        },
+        {
+          "type": "",
+          "text": "The lesion transilluminates and remains distinct from the testis"
+        }
+      ],
+      "description": "An epididymal cyst is a benign fluid-filled lesion arising from the epididymis, most commonly from the epididymal head. When the cyst contains spermatozoa, it is termed a spermatocele. These lesions are common in adult men and are often discovered incidentally. Patients typically present with a painless scrotal mass separate from the testicle. Diagnosis is confirmed with scrotal ultrasonography. Most lesions are asymptomatic and benign. Complications are uncommon but may include discomfort, enlargement, or anxiety regarding malignancy.",
+      "management": "Reassure and observe asymptomatic lesions. Surgical excision may be considered for persistent pain, significant enlargement, or diagnostic uncertainty after imaging evaluation."
+    },
+    {
+      "id": 296,
+      "diagnosis": "Varicocele",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 22-year-old man presents to his family physician because of a dull aching discomfort in his left scrotum that becomes more noticeable after prolonged standing or exercise"
+        },
+        {
+          "type": "",
+          "text": "He and his partner have been attempting to conceive for over a year without success. He otherwise feels well and has no history of genitourinary infections or trauma"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a soft, tortuous mass superior to the left testicle that becomes more prominent with standing and the Valsalva maneuver"
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork and hormone studies are normal. Semen analysis demonstrates reduced sperm motility and concentration"
+        },
+        {
+          "type": "",
+          "text": "Scrotal ultrasonography demonstrates multiple dilated veins of the pampiniform plexus with retrograde blood flow during Valsalva"
+        },
+        {
+          "type": "",
+          "text": "The scrotal mass is described as feeling like a \"bag of worms\" on palpation"
+        }
+      ],
+      "description": "Varicocele is an abnormal dilation of the pampiniform venous plexus within the spermatic cord, most commonly occurring on the left side because of venous drainage anatomy. It is a common cause of male infertility and may present with scrotal heaviness, discomfort, or be discovered incidentally. Diagnosis is usually clinical and confirmed with Doppler ultrasonography when needed. Management depends on symptoms and fertility goals. Complications include testicular atrophy, impaired spermatogenesis, infertility, and recurrent symptoms.",
+      "management": "Observe asymptomatic cases. Symptomatic patients or those with infertility may benefit from surgical ligation or percutaneous embolization of the affected veins."
+    },
+    {
+      "id": 297,
+      "diagnosis": "Epididymitis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 27-year-old man presents to the emergency department with gradually worsening left-sided scrotal pain and swelling over the past three days"
+        },
+        {
+          "type": "",
+          "text": "He is sexually active with multiple partners and reports several days of dysuria before the onset of scrotal symptoms"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a swollen, tender epididymis posterior to the testicle with overlying scrotal erythema. Elevation of the affected hemiscrotum partially relieves the pain"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates pyuria, and nucleic acid amplification testing is positive for a sexually transmitted bacterial pathogen"
+        },
+        {
+          "type": "",
+          "text": "Scrotal Doppler ultrasonography demonstrates an enlarged epididymis with increased blood flow and preserved testicular perfusion"
+        },
+        {
+          "type": "",
+          "text": "The cremasteric reflex remains intact"
+        }
+      ],
+      "description": "Epididymitis is inflammation of the epididymis, most commonly caused by sexually transmitted pathogens in younger men and enteric gram-negative bacteria in older men. Patients present with gradually progressive scrotal pain, swelling, dysuria, and occasionally fever. Diagnosis relies on history, physical examination, urine testing, and Doppler ultrasonography to exclude testicular torsion. Management includes antimicrobial therapy directed at the underlying pathogen. Complications include abscess formation, chronic pain, infertility, testicular infarction, and recurrent infection.",
+      "management": "Treat with pathogen-directed antibiotics, analgesia, scrotal elevation, and rest. Exclude testicular torsion promptly and monitor for abscess or fertility complications"
+    },
+    {
+      "id": 298,
+      "diagnosis": "Orchitis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 19-year-old man presents to the emergency department with fever and progressively worsening right testicular pain and swelling over the past two days"
+        },
+        {
+          "type": "",
+          "text": "One week earlier, he developed facial swelling, malaise, and low-grade fever that resolved without medical attention"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a swollen, erythematous, and exquisitely tender testicle"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates mild leukocytosis. Urinalysis is unremarkable, and bacterial urine cultures are negative"
+        },
+        {
+          "type": "",
+          "text": "Scrotal Doppler ultrasonography demonstrates an enlarged testicle with increased blood flow and diffuse parenchymal edema"
+        },
+        {
+          "type": "",
+          "text": "Further history reveals recent parotid gland swelling caused by a viral illness"
+        }
+      ],
+      "description": "Orchitis is inflammation of the testicle, most commonly caused by viral infection, particularly mumps virus in unvaccinated or incompletely vaccinated individuals. It may also occur secondary to bacterial genitourinary infections. Patients present with testicular pain, swelling, erythema, and systemic symptoms such as fever. Diagnosis relies on clinical findings and scrotal ultrasonography to exclude testicular torsion. Management is primarily supportive for viral disease. Complications include testicular atrophy, infertility, chronic pain, and impaired testosterone production.",
+      "management": "Provide analgesia, scrotal support, and supportive care. Treat underlying bacterial infection when present and monitor for testicular atrophy or fertility complications."
+    },
+    {
+      "id": 299,
+      "diagnosis": "Indirect Inguinal Hernia",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 24-year-old man presents to his family physician because of a painless groin bulge that becomes more noticeable when lifting weights and coughing"
+        },
+        {
+          "type": "",
+          "text": "He reports that the swelling has been present intermittently since adolescence and often disappears when he lies down"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a reducible right groin mass that enlarges with the Valsalva maneuver and extends into the ipsilateral hemiscrotum"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count, electrolyte panel, and inflammatory markers are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Groin ultrasonography demonstrates abdominal contents protruding through the deep inguinal ring and coursing within the inguinal canal"
+        },
+        {
+          "type": "",
+          "text": "The hernia sac follows the path of the spermatic cord and lies lateral to the inferior epigastric vessels"
+        }
+      ],
+      "description": "Indirect inguinal hernia occurs when abdominal contents protrude through a patent processus vaginalis and enter the inguinal canal via the deep inguinal ring. It is the most common type of inguinal hernia and is often congenital in origin, although symptoms may not appear until later in life. Patients present with a reducible groin bulge that enlarges with increased intra-abdominal pressure. Diagnosis is usually clinical. Complications include incarceration, bowel obstruction, strangulation, and ischemic bowel injury.",
+      "management": "Elective surgical repair is recommended for symptomatic hernias. Urgent intervention is required for incarceration, strangulation, bowel obstruction, or compromised blood supply."
+    },
+    {
+      "id": 300,
+      "diagnosis": "Testicular Torsion",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 16-year-old boy presents to the emergency department with sudden-onset severe left testicular pain that awakened him from sleep several hours ago"
+        },
+        {
+          "type": "",
+          "text": "He reports a brief episode of similar pain a few weeks earlier that resolved spontaneously without medical attention"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a swollen, exquisitely tender testicle positioned higher than the contralateral side. The cremasteric reflex is absent"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis is unremarkable, and inflammatory markers are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Scrotal Doppler ultrasonography demonstrates markedly reduced or absent blood flow to the affected testicle"
+        },
+        {
+          "type": "",
+          "text": "Surgical exploration identifies a congenital bell-clapper deformity allowing abnormal rotation of the spermatic cord"
+        }
+      ],
+      "description": "Testicular torsion occurs when the spermatic cord twists, obstructing venous and arterial blood flow to the testicle. It most commonly affects adolescents and is often associated with a bell-clapper deformity. Patients present with sudden severe unilateral testicular pain, swelling, nausea, and vomiting. Diagnosis is primarily clinical and supported by Doppler ultrasonography when it does not delay treatment. Testicular viability declines rapidly with time. Complications include testicular infarction, atrophy, infertility, and loss of the affected testicle.",
+      "management": "Treat as a surgical emergency with immediate urologic consultation and urgent orchiopexy. Delay in intervention significantly increases the risk of testicular loss."
+    },
+    {
+      "id": 301,
+      "diagnosis": "Hematocele",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 29-year-old man presents to the emergency department with sudden scrotal swelling and pain shortly after being struck in the groin during a soccer game"
+        },
+        {
+          "type": "",
+          "text": "He reports immediate discomfort after the injury, followed by progressive enlargement of the affected hemiscrotum over several hours"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a tense, tender scrotal swelling with overlying ecchymosis. The testicle is difficult to palpate separately"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis is normal, and routine bloodwork demonstrates no evidence of infection or systemic illness"
+        },
+        {
+          "type": "",
+          "text": "Scrotal ultrasonography demonstrates a complex heterogeneous fluid collection surrounding the testicle with internal echoes and septations"
+        },
+        {
+          "type": "",
+          "text": "The scrotal swelling does not transilluminate when examined with a penlight"
+        }
+      ],
+      "description": "Hematocele is the accumulation of blood within the tunica vaginalis surrounding the testicle, most commonly following trauma, surgery, or testicular rupture. Patients present with acute scrotal pain, swelling, and discoloration after injury. Diagnosis relies on physical examination and scrotal ultrasonography, which demonstrates a complex fluid collection rather than simple anechoic fluid. Management depends on severity and associated injuries. Complications include infection, chronic pain, testicular compression, fibrosis, and missed testicular rupture.",
+      "management": "Obtain urgent scrotal ultrasonography and assess for testicular injury. Small stable hematoceles may be observed, while large or expanding collections require surgery."
+    },
+    {
+      "id": 302,
+      "diagnosis": "Cystitis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 23-year-old woman presents to her family physician with two days of painful urination and an increasing urge to urinate frequently"
+        },
+        {
+          "type": "",
+          "text": "She recently became sexually active with a new partner and experienced a similar episode approximately one year ago"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild suprapubic tenderness without fever, flank pain, or costovertebral angle tenderness"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates pyuria, bacteriuria, positive leukocyte esterase, and positive nitrites"
+        },
+        {
+          "type": "",
+          "text": "Bladder ultrasonography, when performed, demonstrates a normal urinary tract without obstruction"
+        },
+        {
+          "type": "",
+          "text": "Urine culture grows a lactose-fermenting gram-negative bacillus"
+        }
+      ],
+      "description": "Acute cystitis is a bacterial infection of the urinary bladder, most commonly caused by Escherichia coli. Risk factors include female sex, sexual activity, prior urinary tract infections, spermicide use, and urinary tract abnormalities. Patients typically present with dysuria, urinary frequency, urgency, and suprapubic discomfort without systemic illness. Diagnosis is based on symptoms and urinalysis, with urine culture reserved for selected cases. Complications include recurrent infection, ascending infection causing pyelonephritis, and, rarely, sepsis.",
+      "management": "Nitrofurantoin, TMP-SMX, or fosfomycin are first-line for uncomplicated cystitis; fluoroquinolones are reserved as alternative agents due to resistance concerns."
+    },
+    {
+      "id": 303,
+      "diagnosis": "Urethritis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 22-year-old man presents to a sexual health clinic with burning during urination and a new urethral discharge that began three days ago"
+        },
+        {
+          "type": "",
+          "text": "He reports unprotected sexual intercourse with a new partner two weeks earlier and has no prior history of urinary tract disease"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a mucopurulent discharge at the urethral meatus. The testes and epididymides are non-tender"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates pyuria without significant bacteriuria."
+        },
+        {
+          "type": "",
+          "text": "A urethral swab demonstrates numerous neutrophils"
+        },
+        {
+          "type": "",
+          "text": "Nucleic acid amplification testing identifies Chlamydia trachomatis"
+        }
+      ],
+      "description": "Urethritis is inflammation of the urethra, most commonly caused by sexually transmitted infections such as Chlamydia trachomatis or Neisseria gonorrhoeae. Patients typically present with dysuria, urethral discharge, and urethral irritation. Risk factors include unprotected sexual activity and multiple sexual partners. Diagnosis relies on nucleic acid amplification testing of urine or urethral specimens. Management involves pathogen-directed antimicrobial therapy and partner notification. Complications include epididymitis, pelvic inflammatory disease, infertility, and reactive arthritis.",
+      "management": "Treat with appropriate empiric antibiotics while awaiting test results. Ensure partner notification and treatment, and recommend abstinence until therapy is completed."
+    },
+    {
+      "id": 304,
+      "diagnosis": "Priapism",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 33-year-old man presents to the emergency department with a painful penile erection that has persisted for more than six hours despite the absence of sexual stimulation"
+        },
+        {
+          "type": "",
+          "text": "He has a history of sickle cell disease and recently began taking a new medication for erectile dysfunction"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a rigid penile shaft with marked tenderness. The glans penis remains relatively soft"
+        },
+        {
+          "type": "",
+          "text": "Corporal blood gas analysis demonstrates hypoxemia, hypercapnia, and acidosis"
+        },
+        {
+          "type": "",
+          "text": "Penile Doppler ultrasonography demonstrates markedly reduced cavernosal arterial blood flow"
+        },
+        {
+          "type": "",
+          "text": "Aspiration of the corpora cavernosa yields dark, deoxygenated blood consistent with an ischemic low-flow state"
+        }
+      ],
+      "description": "Priapism is a prolonged penile erection lasting more than four hours that occurs independently of sexual stimulation. Ischemic (low-flow) priapism is the most common type and is associated with sickle cell disease, medications, hematologic disorders, and intracavernosal therapies. Patients present with a painful persistent erection and risk progressive corporal ischemia. Diagnosis relies on history, corporal blood gas analysis, and Doppler ultrasonography. Complications include corporal fibrosis, erectile dysfunction, penile deformity, and permanent tissue injury.",
+      "management": "Treat as a urologic emergency with corporal aspiration and intracavernosal sympathomimetic therapy. Address underlying causes promptly to prevent permanent erectile dysfunction"
+    },
+    {
+      "id": 305,
+      "diagnosis": "Paraphimosis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 71-year-old man presents to the emergency department with severe penile pain and swelling that developed several hours after a urinary catheter was inserted"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a markedly swollen glans penis with a tight constricting band of foreskin trapped behind the corona"
+        },
+        {
+          "type": "",
+          "text": "Routine laboratory investigations are unremarkable. Urinalysis demonstrates no evidence of infection"
+        },
+        {
+          "type": "",
+          "text": "Further physical examination demonstrates venous congestion and progressive distal penile edema"
+        },
+        {
+          "type": "",
+          "text": "The retracted foreskin cannot be advanced back over the glans, creating a risk of ischemic injury to the distal penis"
+        },
+        {
+          "type": "",
+          "text": "He is uncircumcised and reports that the foreskin was retracted during the procedure but was not returned to its normal position afterward"
+        }
+      ],
+      "description": "Paraphimosis occurs when a retracted foreskin becomes trapped behind the glans penis and cannot be returned to its normal position. The resulting constriction impairs venous and lymphatic drainage, causing progressive edema that may eventually compromise arterial blood flow. Common risk factors include catheterization, penile procedures, and failure to replace the foreskin after retraction. Diagnosis is clinical. Complications include glans ischemia, tissue necrosis, urinary retention, infection, and permanent penile injury.",
+      "management": "Treat as a urologic emergency with prompt manual reduction. Severe cases may require dorsal slit or circumcision to prevent ischemic complications."
+    },
+    {
+      "id": 306,
+      "diagnosis": "Phimosis",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 9-year-old boy is brought to his family physician because of difficulty retracting his foreskin and intermittent discomfort during urination."
+        },
+        {
+          "type": "",
+          "text": "His parents report recurrent episodes of foreskin irritation and inflammation over the past year. He is otherwise healthy and uncircumcised"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a tight preputial opening that prevents retraction of the foreskin over the glans penis. Mild scarring is present at the foreskin tip"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis is normal without evidence of infection or hematuria"
+        },
+        {
+          "type": "",
+          "text": "Observation during voiding demonstrates ballooning of the foreskin with urination"
+        },
+        {
+          "type": "",
+          "text": "The foreskin cannot be retracted over the glans, distinguishing this condition from one in which a retracted foreskin becomes trapped behind the glans"
+        }
+      ],
+      "description": "Phimosis is the inability to retract the foreskin over the glans penis. Physiologic phimosis is common in young boys and usually resolves spontaneously, whereas pathologic phimosis results from scarring, chronic inflammation, or recurrent infection. Patients may present with difficulty retracting the foreskin, ballooning during urination, irritation, or recurrent balanitis. Diagnosis is clinical. Most cases are benign, but severe disease may impair hygiene or voiding. Complications include recurrent infection, urinary obstruction, and paraphimosis.",
+      "management": "Treat pathologic cases with topical corticosteroids and gentle stretching. Persistent, recurrent, or severe symptoms may require circumcision or surgical intervention."
+    },
+    {
       "id": 307,
+      "diagnosis": "Fournier's Gangrene",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 61-year-old man presents to the emergency department with rapidly worsening scrotal pain, swelling, and fever over the past 24 hours"
+        },
+        {
+          "type": "",
+          "text": "He has poorly controlled type 2 diabetes mellitus and recently noticed a small painful lesion near the perineum that he assumed would heal on its own"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals an erythematous, edematous scrotum with areas of dusky discoloration"
+        },
+        {
+          "type": "",
+          "text": "Leukocytosis, elevated C-reactive protein, metabolic acidosis, and acute kidney injury are present"
+        },
+        {
+          "type": "",
+          "text": "CT of the pelvis demonstrates extensive subcutaneous gas tracking along the fascial planes of the perineum and scrotum"
+        },
+        {
+          "type": "",
+          "text": "Surgical exploration reveals rapidly progressive polymicrobial necrotizing fasciitis involving the perineal and genital fascia"
+        }
+      ],
+      "description": "Fournier's gangrene is a life-threatening necrotizing fasciitis of the perineal, genital, and perianal regions. It is typically polymicrobial and most commonly affects patients with diabetes mellitus, immunosuppression, alcoholism, or recent genitourinary or anorectal infections. Patients present with severe pain, swelling, fever, systemic toxicity, and rapidly progressive soft tissue destruction. Diagnosis is primarily clinical and supported by imaging. Complications include septic shock, multiorgan failure, extensive tissue loss, and death.",
+      "management": "Initiate immediate broad-spectrum antibiotics and aggressive resuscitation. Urgent surgical debridement is essential, often requiring multiple procedures and intensive care support."
+    },
+    {
+      "id": 308,
+      "diagnosis": "Penile Fracture",
+      "aliases": [],
+      "category": "Kidney and Urinary Tract II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old man presents to the emergency department with sudden severe penile pain and swelling that began during sexual intercourse"
+        },
+        {
+          "type": "",
+          "text": "He reports that his erect penis struck his partner's pelvis, immediately followed by loss of erection and worsening pain"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals marked penile swelling, ecchymosis, and deviation of the shaft. The penis appears enlarged and discolored"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis is normal"
+        },
+        {
+          "type": "",
+          "text": "Penile ultrasonography demonstrates disruption of the tunica albuginea with an adjacent hematoma"
+        },
+        {
+          "type": "",
+          "text": "The patient recalls hearing an audible \"snap\" immediately before rapid detumescence"
+        }
+      ],
+      "description": "Penile fracture is a traumatic rupture of the tunica albuginea surrounding the corpus cavernosum, typically occurring during vigorous sexual activity involving an erect penis. Patients classically report a snapping sound, immediate pain, rapid detumescence, and subsequent swelling and ecchymosis. Diagnosis is usually clinical but may be supported by ultrasonography or MRI. Associated urethral injury can occur. Complications include erectile dysfunction, penile curvature, painful erections, urethral stricture, and permanent deformity.",
+      "management": "Obtain urgent urologic consultation and perform prompt surgical repair. Evaluate for associated urethral injury and monitor for long-term erectile dysfunction."
+    },
+    {
+      "id": 310,
       "diagnosis": "Hydronephrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -8955,7 +10643,7 @@
       "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
     },
     {
-      "id": 308,
+      "id": 311,
       "diagnosis": "Emphysematous Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -8993,7 +10681,7 @@
       "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
     },
     {
-      "id": 309,
+      "id": 312,
       "diagnosis": "Urothelial Cell Carcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -9031,7 +10719,7 @@
       "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
     },
     {
-      "id": 310,
+      "id": 313,
       "diagnosis": "Multicystic Renal Dysplasia",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -9066,7 +10754,7 @@
       "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
     },
     {
-      "id": 311,
+      "id": 314,
       "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -9101,7 +10789,7 @@
       "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
     },
     {
-      "id": 312,
+      "id": 315,
       "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -9141,7 +10829,7 @@
       "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
     },
     {
-      "id": 313,
+      "id": 316,
       "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -9182,7 +10870,7 @@
       "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
     },
     {
-      "id": 314,
+      "id": 317,
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
