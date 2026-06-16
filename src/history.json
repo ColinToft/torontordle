@@ -239,6 +239,11 @@
       "date": "2026-06-15",
       "diagnosis": "Lung Adenocarcinoma (NSCLC)",
       "id": 44
+    },
+    {
+      "date": "2026-06-16",
+      "diagnosis": "Hodgkin Lymphoma",
+      "id": 51
     }
   ],
   "2": [
@@ -504,6 +509,12 @@
       "date": "2026-06-15",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
+    },
+    {
+      "date": "2026-06-16",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
     }
   ]
 }
