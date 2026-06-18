@@ -249,6 +249,11 @@
       "date": "2026-06-17",
       "diagnosis": "Pressure Ulcer",
       "id": 41
+    },
+    {
+      "date": "2026-06-18",
+      "diagnosis": "Night Terrors",
+      "id": 77
     }
   ],
   "2": [
@@ -525,6 +530,12 @@
       "date": "2026-06-17",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
+    },
+    {
+      "date": "2026-06-18",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
     }
   ]
 }

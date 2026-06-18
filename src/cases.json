@@ -1490,19 +1490,19 @@
       "clues": [
         {
           "type": "",
-          "text": "Elderly immobile patient develops skin breakdown"
+          "text": "An 81-year-old woman residing in a long-term care facility is evaluated for a painful sore over her lower back that has progressively worsened over several weeks."
         },
         {
           "type": "",
-          "text": "Prolonged pressure over bony prominences"
+          "text": "She has advanced dementia and requires assistance for all transfers."
         },
         {
           "type": "",
-          "text": "Ulceration over the sacrum, heel or hip"
+          "text": "Examination reveals a well-demarcated ulcer over the sacrum with surrounding erythema. The wound overlies a bony prominence and has areas of tissue breakdown."
         },
         {
           "type": "",
-          "text": "Secondary infection may cause leukocytosis"
+          "text": "Laboratory studies demonstrate hypoalbuminemia and mild anemia. Inflammatory markers are mildly elevated."
         },
         {
           "type": "",
@@ -1513,11 +1513,11 @@
         },
         {
           "type": "",
-          "text": "The lesion overlies a bony prominence and developed after prolonged immobility."
+          "text": "The lesion developed at a site of prolonged pressure between a bony prominence and an external surface, resulting in ischemic tissue injury."
         }
       ],
-      "description": "Localized ischemic injury caused by prolonged pressure and impaired perfusion.",
-      "management": "Pressure off-loading, wound care and management of complications"
+      "description": "Pressure ulcers are localized injuries to the skin and underlying soft tissues caused by prolonged pressure, shear forces, or friction, most commonly over bony prominences such as the sacrum, heels, and ischial tuberosities. Risk factors include immobility, advanced age, malnutrition, incontinence, and neurologic impairment. Diagnosis is clinical and staged according to depth of tissue involvement. Management emphasizes pressure relief, wound care, and nutritional optimization. Complications include cellulitis, osteomyelitis, sepsis, chronic pain, and prolonged hospitalization.",
+      "management": "Relieve pressure through frequent repositioning, provide appropriate wound care, optimize nutrition, and treat infection when present. Advanced ulcers may require surgical management."
     },
     {
       "id": 41,
@@ -3731,10 +3731,9 @@
     },
     {
       "id": 102,
-      "diagnosis": "Steven-Johnsons Syndrome (SJS/TEN)",
+      "diagnosis": "Steven-Johnsons Syndrome (SJS)",
       "aliases": [
         "SJS",
-        "TEN",
         "Steven-Johnsons Syndrome"
       ],
       "category": "Dermatology",
@@ -3743,7 +3742,7 @@
         {
           "type": "",
           "text": "",
-          "image": "case-images/steven-johnsons-syndrome-sjs-ten-clue1.jpg"
+          "image": "case-images/steven-johnsons-syndrome-sjs-clue1.jpg"
         },
         {
           "type": "",
