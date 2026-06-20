@@ -254,6 +254,16 @@
       "date": "2026-06-18",
       "diagnosis": "Night Terrors",
       "id": 77
+    },
+    {
+      "date": "2026-06-19",
+      "diagnosis": "Nutritional Rickets",
+      "id": 76
+    },
+    {
+      "date": "2026-06-20",
+      "diagnosis": "Pectus Excavatum",
+      "id": 268
     }
   ],
   "2": [
@@ -533,6 +543,17 @@
     },
     {
       "date": "2026-06-18",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-19",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-20",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1,
       "reset": true

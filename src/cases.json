@@ -1142,7 +1142,7 @@
       "clues": [
         {
           "type": "",
-          "text": "Young adult presents with worsening abdominal pain and loss of appetite"
+          "text": "A young adult presents with worsening abdominal pain and loss of appetite"
         },
         {
           "type": "",
@@ -1211,82 +1211,47 @@
     },
     {
       "id": 33,
-      "diagnosis": "Abscess",
+      "diagnosis": "Crohn's Disease",
       "aliases": [],
       "category": "Inflammation and Infection",
       "unlockDate": null,
       "clues": [
         {
           "type": "",
-          "text": "Painful enlarging soft tissue mass"
+          "text": "A 21-year-old woman presents to her family physician with several months of intermittent abdominal pain"
         },
         {
           "type": "",
-          "text": "Recent skin trauma or infection"
+          "text": "She reports increasing fatigue and has noticed painful sores in her mouth with unintentional weight loss"
         },
         {
           "type": "",
-          "text": "Fluctuant tender erythematous lesion"
+          "text": "Examination reveals right lower quadrant abdominal tenderness"
         },
         {
           "type": "",
-          "text": "Leukocytosis and elevated inflammatory markers"
-        },
-        {
-          "type": "",
-          "text": "Ultrasound demonstrates a well-circumscribed fluid collection with internal debris"
-        },
-        {
-          "type": "",
-          "text": "Symptoms improve when purulent material is drained"
-        }
-      ],
-      "description": "Localized collection of pus caused by acute suppurative inflammation.",
-      "management": "Incision and drainage ± antibiotics"
-    },
-    {
-      "id": 34,
-      "diagnosis": "Crohn Disease",
-      "aliases": [],
-      "category": "Inflammation and Infection",
-      "unlockDate": null,
-      "clues": [
-        {
-          "type": "",
-          "text": "Young adult with chronic abdominal pain and diarrhea"
-        },
-        {
-          "type": "",
-          "text": "Progressive weight loss and intermittent symptom flares"
-        },
-        {
-          "type": "",
-          "text": "Perianal drainage and RLQ tenderness"
-        },
-        {
-          "type": "",
-          "text": "Elevated CRP and iron deficiency anemia"
+          "text": "Hemoglobin is decreased, C-reactive protein is elevated, and fecal calprotectin is markedly increased"
         },
         {
           "type": "",
           "text": "",
-          "image": "case-images/crohn-disease-clue5.jpg",
+          "image": "case-images/crohn-s-disease-clue5.jpg",
           "detail": "Colonoscopy demonstrates patchy areas of inflammation separated by normal-appearing mucosa",
           "reference": "2016. Korean Association for the Study of Intestinal Diseases. All rights reserved. CC BY-NC 4.0"
         },
         {
           "type": "",
           "text": "",
-          "image": "case-images/crohn-disease-clue6.jpg",
+          "image": "case-images/crohn-s-disease-clue6.jpg",
           "detail": "Chronic transmural inflammation with fissures and non-necrotizing granulomas",
           "reference": "Nephron, Wikimedia Commons"
         }
       ],
-      "description": "Inflammatory bowel disease that can affect any GI segment and is characterized by transmural inflammation.",
+      "description": "Crohn disease is a chronic inflammatory bowel disease characterized by transmural granulomatous inflammation that can affect any part of the gastrointestinal tract, most commonly the terminal ileum. Genetic predisposition, environmental factors, and immune dysregulation contribute to disease development. Patients present with abdominal pain, diarrhea, weight loss, and extraintestinal manifestations. Diagnosis relies on endoscopy, histopathology, laboratory studies, and cross-sectional imaging. Management includes anti-inflammatory, immunomodulatory, and biologic therapies. Complications include strictures, fistulas, abscesses, malnutrition, and bowel obstruction.",
       "management": "Biologics, immunomodulators, corticosteroids and surgery for complications"
     },
     {
-      "id": 35,
+      "id": 34,
       "diagnosis": "Ulcerative Colitis",
       "aliases": [],
       "category": "Inflammation and Infection",
@@ -1327,48 +1292,51 @@
       "management": "5-ASA therapy, corticosteroids, biologics or colectomy"
     },
     {
-      "id": 36,
-      "diagnosis": "Pott Disease",
-      "aliases": [],
+      "id": 35,
+      "diagnosis": "Pott Disease (Tuberculous Spondylitis)",
+      "aliases": [
+        "Tuberculous Spondylitis",
+        "Pott Disease"
+      ],
       "category": "Inflammation and Infection",
       "unlockDate": null,
       "clues": [
         {
           "type": "",
-          "text": "Patient develops chronic back pain and progressive difficulty walking"
+          "text": "A 46-year-old man presents to his family physician with progressively worsening mid-back pain over the past four months that is not relieved by rest"
         },
         {
           "type": "",
-          "text": "Several months of fatigue, night sweats and weight loss"
+          "text": "He recently immigrated from a tuberculosis-endemic region and reports several months of night sweats, fatigue, and unintentional weight loss"
         },
         {
           "type": "",
-          "text": "Vertebral tenderness with evolving neurologic deficits"
+          "text": "Examination reveals localized tenderness over the thoracic spine and mild kyphotic deformity. Neurologic examination demonstrates subtle weakness in both lower extremities"
         },
         {
           "type": "",
-          "text": "Elevated ESR and CRP"
+          "text": "Erythrocyte sedimentation rate and C-reactive protein are elevated. Interferon-gamma release assay is positive"
         },
         {
           "type": "",
           "text": "",
-          "image": "case-images/pott-disease-clue5.jpg",
+          "image": "case-images/pott-disease-tuberculous-spondylitis-clue5.jpg",
           "detail": "MRI demonstrates vertebral body destruction with collapse and adjacent paraspinal soft tissue involvement",
           "reference": "10.2174/1874279301810010101"
         },
         {
           "type": "",
           "text": "",
-          "image": "case-images/pott-disease-clue6.jpg",
+          "image": "case-images/pott-disease-tuberculous-spondylitis-clue6.jpg",
           "detail": "Granulomatous inflammation with central necrotic debris and multinucleated giant cells",
           "reference": "10.3941/jrcr.v3i1.103"
         }
       ],
-      "description": "Tuberculous infection of the vertebral column causing destructive osteomyelitis.",
-      "management": "Prolonged antimycobacterial therapy ± surgical intervention"
+      "description": "Pott disease is vertebral osteomyelitis caused by hematogenous spread of Mycobacterium tuberculosis. It most commonly affects the thoracic and lumbar spine, producing gradual vertebral destruction and collapse. Patients present with chronic back pain, constitutional symptoms, and sometimes neurologic deficits from spinal cord compression. Diagnosis relies on imaging, microbiologic testing, and tissue biopsy. Treatment requires prolonged antituberculous therapy. Complications include kyphotic deformity, paraspinal abscess formation, spinal instability, paraplegia, and chronic pain.",
+      "management": "Anti-tuberculous chemotherapy (typically 6–12 months of rifampin-based multidrug regimen) is the cornerstone of treatment, with surgical intervention reserved for neurological compromise, spinal instability, or failure of medical therapy."
     },
     {
-      "id": 37,
+      "id": 36,
       "diagnosis": "Foreign Body Granuloma",
       "aliases": [],
       "category": "Inflammation and Infection",
@@ -1406,7 +1374,7 @@
       "management": "Remove inciting material when feasible"
     },
     {
-      "id": 38,
+      "id": 37,
       "diagnosis": "Full-Thickness Burn",
       "aliases": [],
       "category": "Inflammation and Infection",
@@ -1444,7 +1412,7 @@
       "management": "Fluid resuscitation, wound care, debridement and grafting"
     },
     {
-      "id": 39,
+      "id": 38,
       "diagnosis": "Keloid",
       "aliases": [],
       "category": "Inflammation and Infection",
@@ -1452,15 +1420,15 @@
       "clues": [
         {
           "type": "",
-          "text": "Raised scar develops following wound healing"
+          "text": "A 24-year-old woman presents to a dermatology clinic because of a progressively enlarging, itchy scar on her earlobe that developed after a piercing one year ago"
         },
         {
           "type": "",
-          "text": "History of skin trauma or surgery"
+          "text": "She reports the lesion continued growing long after the original wound had healed"
         },
         {
           "type": "",
-          "text": "Firm scar continues to enlarge over time"
+          "text": "Examination reveals a firm, smooth, raised, hyperpigmented scar extending well beyond the boundaries of the original piercing site"
         },
         {
           "type": "",
@@ -1478,11 +1446,11 @@
           "text": "The lesion continues to enlarge beyond the borders of the original wound months after healing."
         }
       ],
-      "description": "Exuberant fibroproliferative wound healing response.",
-      "management": "Intralesional corticosteroids, silicone therapy and selected surgical approaches"
+      "description": "Keloids are benign fibroproliferative scars resulting from excessive collagen deposition during wound healing. They occur more commonly in younger individuals, people with darker skin pigmentation, and those with a family history of abnormal scarring. Common triggers include surgery, piercings, burns, acne, and minor trauma. Unlike hypertrophic scars, keloids extend beyond the original wound boundaries and may continue enlarging. Diagnosis is clinical. Complications include pruritus, pain, cosmetic concerns, functional impairment, and frequent recurrence after treatment.",
+      "management": "First-line treatment involves intralesional corticosteroid injections. Additional options include silicone therapy, cryotherapy, laser treatment, or surgery combined with recurrence-prevention measures"
     },
     {
-      "id": 40,
+      "id": 39,
       "diagnosis": "Pressure Ulcer",
       "aliases": [],
       "category": "Inflammation and Infection",
@@ -1520,7 +1488,7 @@
       "management": "Relieve pressure through frequent repositioning, provide appropriate wound care, optimize nutrition, and treat infection when present. Advanced ulcers may require surgical management."
     },
     {
-      "id": 41,
+      "id": 40,
       "diagnosis": "C5 Deficiency",
       "aliases": [],
       "category": "Immunology I",
@@ -1555,7 +1523,7 @@
       "management": "Vaccination against meningococcal disease, prompt treatment of infections, and patient education regarding early recognition of invasive bacterial illness."
     },
     {
-      "id": 42,
+      "id": 41,
       "diagnosis": "HIV (Human Immunodeficiency Virus)",
       "aliases": [
         "Human Immunodeficiency Virus",
@@ -1593,7 +1561,7 @@
       "management": "HIV management centers on early initiation of antiretroviral therapy (ART), ideally within 7 days of diagnosis. Preferred regimens are integrase inhibitor–based (bictegravir/emtricitabine/TAF or dolutegravir-based combinations), achieving >90% viral suppression. Goals include durable viral suppression, immune restoration, reduced transmission, and opportunistic infection prophylaxis when indicated."
     },
     {
-      "id": 43,
+      "id": 42,
       "diagnosis": "Cellulitis",
       "aliases": [],
       "category": "Immunology I",
@@ -1629,7 +1597,7 @@
       "management": "Oral cephalexin 500 mg QID for 10 days"
     },
     {
-      "id": 44,
+      "id": 43,
       "diagnosis": "PJP (Pneumocystis jirovecii pneumonia)",
       "aliases": [
         "Pneumocystis jirovecii pneumonia",
@@ -1670,7 +1638,7 @@
       "management": "First-Line drugs for PJP is Trimethoprim-Sulfamethoxazole (TMP-SMX)"
     },
     {
-      "id": 45,
+      "id": 44,
       "diagnosis": "Chronic Granulomatous Disease",
       "aliases": [],
       "category": "Immunology I",
@@ -1706,7 +1674,7 @@
       "management": "Management includes lifelong infection prevention with antibiotic and antifungal prophylaxis and aggressive treatment of infections"
     },
     {
-      "id": 46,
+      "id": 45,
       "diagnosis": "Severe Combined Immunodeficiency (SCID)",
       "aliases": [
         "SCID",
@@ -1747,7 +1715,7 @@
       "management": "Protective isolation, avoidance of live vaccines, antimicrobial prophylaxis, immunoglobulin replacement, and urgent hematopoietic stem cell transplantation."
     },
     {
-      "id": 47,
+      "id": 46,
       "diagnosis": "IgA Deficiency",
       "aliases": [],
       "category": "Immunology I",
@@ -1782,7 +1750,7 @@
       "management": "Most patients only require observation. Use washed blood products if transfusion is needed to prevent anti-IgA antibody reactions"
     },
     {
-      "id": 48,
+      "id": 47,
       "diagnosis": "Meningioma",
       "aliases": [],
       "category": "Cancer",
@@ -1823,7 +1791,7 @@
       "management": "Management depends on symptoms and tumor size but may include observation, surgical resection, and radiotherapy for unresectable or recurrent lesions."
     },
     {
-      "id": 49,
+      "id": 48,
       "diagnosis": "Invasive Ductal Carcinoma",
       "aliases": [],
       "category": "Cancer",
@@ -1864,7 +1832,7 @@
       "management": "Surgery, radiation, chemotherapy, endocrine therapy, and targeted therapies depending on tumor stage and receptor status, as well as Oncotype 21 Dx results."
     },
     {
-      "id": 50,
+      "id": 49,
       "diagnosis": "Burkitt Lymphoma",
       "aliases": [],
       "category": "Cancer",
@@ -1902,7 +1870,7 @@
       "management": "Highly responsive to intensive combination chemotherapy, making prompt recognition and treatment essential"
     },
     {
-      "id": 51,
+      "id": 50,
       "diagnosis": "Cervical Cancer",
       "aliases": [],
       "category": "Cancer",
@@ -1937,7 +1905,7 @@
       "management": "Management depends on stage and includes surgical resection, chemoradiation, and HPV prevention through vaccination and routine screening."
     },
     {
-      "id": 52,
+      "id": 51,
       "diagnosis": "Retinoblastoma (Hereditary)",
       "aliases": [
         "Hereditary",
@@ -1978,7 +1946,7 @@
       "management": "Focal therapies, chemotherapy, radiation, or enucleation depending on disease extent. Survivors with hereditary disease are at increased risk for secondary malignancies, particularly osteosarcoma."
     },
     {
-      "id": 53,
+      "id": 52,
       "diagnosis": "Retinoblastoma (Non-Hereditary)",
       "aliases": [
         "Non-Hereditary",
@@ -2019,7 +1987,7 @@
       "management": "Focal therapy, chemotherapy, laser photocoagulation, cryotherapy, or enucleation depending on disease extent. Prognosis is excellent when diagnosed early, and the risk of secondary malignancies is much lower than in hereditary retinoblastoma"
     },
     {
-      "id": 54,
+      "id": 53,
       "diagnosis": "Diffuse Large B-cell Lymphoma (DLBCL)",
       "aliases": [
         "DLBCL",
@@ -2059,7 +2027,7 @@
       "management": "R-CHOP chemotherapy (rituximab, cyclophosphamide, doxorubicin, vincristine, and prednisone), with cure achievable in many patients."
     },
     {
-      "id": 55,
+      "id": 54,
       "diagnosis": "Rectal Adenocarcinoma",
       "aliases": [],
       "category": "Cancer",
@@ -2094,7 +2062,7 @@
       "management": "Neoadjuvant chemoradiation followed by surgical resection and, when indicated, systemic chemotherapy"
     },
     {
-      "id": 56,
+      "id": 55,
       "diagnosis": "Small Cell Lung Cancer (SCLC)",
       "aliases": [
         "SCLC",
@@ -2138,7 +2106,7 @@
       "management": "Disease is usually disseminated at diagnosis, treatment primarily consists of chemotherapy and radiation rather than surgery"
     },
     {
-      "id": 57,
+      "id": 56,
       "diagnosis": "Lung Adenocarcinoma (NSCLC)",
       "aliases": [
         "NSCLC",
@@ -2181,7 +2149,7 @@
       "management": "Molecular testing for EGFR, ALK, ROS1, KRAS, and other mutations is essential because targeted therapies can significantly improve outcomes in selected patients. Early stage tumours are treated surgically, radiation used for inoperable tumours or palliative settings, and immunotherapy can be combined with chemo."
     },
     {
-      "id": 58,
+      "id": 57,
       "diagnosis": "Squamous Cell Carcinoma (NSCLC)",
       "aliases": [
         "NSCLC",
@@ -2225,7 +2193,7 @@
       "management": "Management depends on stage and may include surgical resection, chemotherapy, immunotherapy, radiation therapy, or combinations of these modalities."
     },
     {
-      "id": 59,
+      "id": 58,
       "diagnosis": "Hodgkin Lymphoma",
       "aliases": [],
       "category": "Cancer",
@@ -2260,7 +2228,7 @@
       "management": "Management depends on stage and generally includes combination chemotherapy, often with radiation therapy. Overall prognosis is excellent, particularly in early-stage disease."
     },
     {
-      "id": 60,
+      "id": 59,
       "diagnosis": "Dermatofibrosarcoma Protuberans",
       "aliases": [],
       "category": "Cancer",
@@ -2293,6 +2261,44 @@
       ],
       "description": "Dermatofibrosarcoma Protuberans is a rare, low-grade soft tissue sarcoma that arises from the dermis and invades surrounding subcutaneous tissue. It typically presents as a slowly enlarging plaque or nodular lesion on the trunk or proximal extremities. Bloodwork is usually normal and not useful diagnostically. Histopathology classically demonstrates spindle cells arranged in a storiform pattern with infiltration of subcutaneous fat in a honeycomb configuration. Most cases harbor a t(17;22) translocation producing a COL1A1–PDGFB fusion gene and show strong CD34 positivity. Although metastasis is uncommon, local recurrence is frequent.",
       "management": "Wide local excision or Mohs micrographic surgery, with targeted therapy such as imatinib used in selected advanced cases"
+    },
+    {
+      "id": 60,
+      "diagnosis": "Cutaneous T-Cell Lymphoma (Mycosis Fungoides)",
+      "aliases": [
+        "Mycosis Fungoides",
+        "Cutaneous T-Cell Lymphoma"
+      ],
+      "category": "Cancer",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents to a dermatology clinic with a persistent itchy rash on his trunk that has slowly enlarged over several years despite treatment with topical corticosteroids"
+        },
+        {
+          "type": "",
+          "text": "He has been treated repeatedly for presumed eczema and psoriasis, but the lesions have progressively increased in size and number"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals multiple well-demarcated erythematous scaly patches and plaques distributed over non-sun-exposed areas of the trunk and buttocks"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count is initially normal. Skin biopsy is performed."
+        },
+        {
+          "type": "",
+          "text": "PET-CT demonstrates enlarged lymph nodes in the axillary and inguinal regions"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates atypical T lymphocytes infiltrating the epidermis with characteristic Pautrier microabscesses"
+        }
+      ],
+      "description": "Cutaneous T-cell lymphoma is a non-Hodgkin lymphoma characterized by malignant proliferation of skin-homing T lymphocytes. Mycosis fungoides is the most common subtype and typically progresses from patches to plaques and eventually tumors over years. Patients often present with chronic pruritic lesions that mimic eczema or psoriasis. Diagnosis requires skin biopsy and immunophenotyping. Advanced disease may involve lymph nodes, blood, and visceral organs. Complications include infection, erythroderma, systemic dissemination, and reduced survival in advanced stages.",
+      "management": "Early disease is treated with skin-directed therapies such as topical corticosteroids, phototherapy, or radiation. Advanced disease may require systemic immunomodulatory treatment."
     },
     {
       "id": 62,
