@@ -6995,8 +6995,11 @@
     },
     {
       "id": 195,
-      "diagnosis": "Myocardial Infarction",
-      "aliases": [],
+      "diagnosis": "Myocardial Infarction (atypical)",
+      "aliases": [
+        "atypical",
+        "Myocardial Infarction"
+      ],
       "category": "Cardiovascular I",
       "unlockDate": null,
       "clues": [
@@ -7018,13 +7021,11 @@
         },
         {
           "type": "",
-          "text": "She becomes increasingly short of breath",
-          "image": "case-images/myocardial-infarction-clue5.jpg"
+          "text": "She becomes increasingly short of breath"
         },
         {
           "type": "",
-          "text": "In the ED, her ECG shows ischemic changes and her troponin is elevated",
-          "image": "case-images/myocardial-infarction-clue6.jpg"
+          "text": "In the ED, her ECG shows ischemic changes and her troponin is elevated"
         }
       ],
       "description": "Myocardial infarction results from an interruption of coronary blood flow leading to ischemia and necrosis. Most MIs are caused by rupture of an atherosclerotic plaque followed by thrombus formation. MI in women may present with atypical symptoms which can delay recognition and treatment. Instead of classic crushing chest pain, women may experience fatigue, nausea, shortness of breath, indigestion, back pain or jaw pain.",

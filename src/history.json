@@ -264,6 +264,11 @@
       "date": "2026-06-20",
       "diagnosis": "Pectus Excavatum",
       "id": 268
+    },
+    {
+      "date": "2026-06-21",
+      "diagnosis": "Kyphoscoliosis",
+      "id": 269
     }
   ],
   "2": [
@@ -557,6 +562,11 @@
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1,
       "reset": true
+    },
+    {
+      "date": "2026-06-21",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
     }
   ]
 }
