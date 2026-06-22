@@ -11429,10 +11429,257 @@
           "type": "",
           "text": "His breath is fruity. Urinalysis reveals glucosuria and ketonuria"
         }
-      ]
+      ],
+      "description": "Diabetic ketoacidosis (DKA) is a life-threatening acute complication of diabetes mellitus, most commonly associated with Type 1 diabetes, although it can also occur in individuals with Type 2 diabetes. DKA develops when there is a severe deficiency of insulin, preventing glucose from entering cells for energy. As a result, the body breaks down fat for fuel, producing acidic substances called ketones. The accumulation of ketones in the blood leads to metabolic acidosis, while elevated blood glucose levels cause dehydration and electrolyte imbalances.",
+      "management": "Immediate management entails fluid resuscitation, potassium management, and IV insulin. Careful monitoring is required to prevent life-threatening complications. Provide explanation of appropriate glucose management longterm."
     },
     {
-      "id": 329,
+      "id": 317,
+      "diagnosis": "Hyperosmolar Hyperglycemic State",
+      "aliases": [],
+      "category": "Endocrine I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 72-year-old man with a 15-year history of Type 2 diabetes is brought to the emergency department"
+        },
+        {
+          "type": "",
+          "text": "He has been increasingly thirsty and has been urinating frequently for several days and is now very tired"
+        },
+        {
+          "type": "",
+          "text": "His mucous membranes are dry, his skin has poor turgor, and his blood pressure is 92/58 mmHg with a heart rate of 118 beats/min"
+        },
+        {
+          "type": "",
+          "text": "He is confused and disoriented to time and place."
+        },
+        {
+          "type": "",
+          "text": "Blood glucose: 980 mg/dL (54.4 mmol/L)\nSerum osmolality: 340 mOsm/kg\nArterial pH: 7.38\nSerum bicarbonate: 23 mEq/L\nMinimal ketones present"
+        },
+        {
+          "type": "",
+          "text": "He does not have fruity breath odor, or deep Kussmaul respirations"
+        }
+      ],
+      "description": "Hyperosmolar Hyperglycemic State (HHS) is a serious, potentially life-threatening complication of diabetes mellitus that occurs most commonly in people with Type 2 diabetes. HHS develops when blood glucose levels become extremely elevated, leading to severe dehydration and increased blood osmolality. Unlike diabetic ketoacidosis (DKA), there is usually enough insulin present to prevent significant ketone production and acidosis.",
+      "management": "The primary goal of HHS management is to restore fluids, monitor electrolytes, and begin insulin therapy. Provide education on appropriate management of blood glucose longterm."
+    },
+    {
+      "id": 318,
+      "diagnosis": "Diabetic Retinopathy",
+      "aliases": [],
+      "category": "Endocrine I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman with a 20-year history of Type 2 diabetes attends her annual diabetes follow-up appointment. Her"
+        },
+        {
+          "type": "",
+          "text": "She reports gradually worsening vision over the past several months"
+        },
+        {
+          "type": "",
+          "text": "Her eyeglass prescription has changed frequently"
+        },
+        {
+          "type": "",
+          "text": "She mentions seeing dark spots and floating specks moving across her field of vision"
+        },
+        {
+          "type": "",
+          "text": "Visual acuity testing reveals decreased vision in both eyes. There is no eye pain, redness, or history of recent eye injury."
+        },
+        {
+          "type": "",
+          "text": "A dilated eye examination reveals microaneurysms, retinal hemorrhages, and areas of retinal swelling. Further imaging demonstrates abnormal new blood vessel growth on the retina."
+        }
+      ],
+      "description": "The patient is diagnosed with Diabetic Retinopathy, a microvascular complication of diabetes caused by chronic hyperglycemia damaging the retinal blood vessels.",
+      "management": "Management includes optimizing blood glucose, blood pressure, and lipid control, regular ophthalmologic monitoring, and treatments such as laser photocoagulation, intravitreal anti-VEGF injections, or vitrectomy in advanced cases."
+    },
+    {
+      "id": 319,
+      "diagnosis": "Maturity-Onset Diabetes of the Young",
+      "aliases": [],
+      "category": "Endocrine I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 19 year old university student is found with elevated serum glucose levels during annual bloodwork"
+        },
+        {
+          "type": "",
+          "text": "Normal BMI and no signs of insulin resistance"
+        },
+        {
+          "type": "",
+          "text": "Her father, grandfather, and great-grandmother were all diagnosed with diabetes before 30."
+        },
+        {
+          "type": "",
+          "text": "Labs show persistent fasting hyperglycemia"
+        },
+        {
+          "type": "",
+          "text": "Pancreatic autoantibodies are negative and C-peptide levels indicate that she is still producing insulin."
+        },
+        {
+          "type": "",
+          "text": "Despite her condition, she requires little or no insulin therapy and maintains stable elevated glucose levels with minimal treatment"
+        }
+      ],
+      "description": "Maturity-Onset Diabetes of the Young is an inherited form of diabetes caused by a single-gene mutation that affects insulin production.",
+      "management": "Management depends on the subtype of MODY and may include lifestyle modifications, oral meds, or in some cases, insulin therapy. Genetic counseling and screening are also recommended as MODY follows an autosomal dominant inheritance pattern"
+    },
+    {
+      "id": 320,
+      "diagnosis": "Hypoglycemic Emergency",
+      "aliases": [],
+      "category": "Endocrine I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old man with Type 2 diabetes takes insulin before breakfast but becomes busy with errands and skips his meal."
+        },
+        {
+          "type": "",
+          "text": "About two hours later, he begins to feel shaky, sweaty, and unusually hungry. He also notices his heart racing."
+        },
+        {
+          "type": "",
+          "text": "As the morning progresses, he develops dizziness, difficulty concentrating, and blurred vision."
+        },
+        {
+          "type": "",
+          "text": "A family member notices that he is behaving strangely, speaking incoherently, and appears confused."
+        },
+        {
+          "type": "",
+          "text": "When EMS arrives, he is difficult to arouse, pale and diaphoretic. Finger-stick blood glucose is 2.1mmol/L (38mg/dL)"
+        },
+        {
+          "type": "",
+          "text": "The patient becomes unconscious briefly"
+        }
+      ],
+      "description": "A hypoglycemic emergency can occur when blood glucose levels fall below the normal range, depriving the brain of its primary energy source.",
+      "management": "Immediate management includes administering 15–20 g of fast-acting carbohydrates if the patient is conscious, or intravenous dextrose or glucagon if unconscious. Long-term management focuses on identifying the cause, adjusting diabetes medications, regular blood glucose monitoring, and educating the patient on recognizing and treating early symptoms of hypoglycemia."
+    },
+    {
+      "id": 321,
+      "diagnosis": "Prolactinoma",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A young woman presents with several months of menstrual irregularity."
+        },
+        {
+          "type": "",
+          "text": "She and her partner have been unsuccessfully trying to conceive."
+        },
+        {
+          "type": "",
+          "text": "She reports reduced libido and increasing fatigue."
+        },
+        {
+          "type": "",
+          "text": "A pregnancy test is negative despite missed periods."
+        },
+        {
+          "type": "",
+          "text": "She notices intermittent milky discharge from both breasts."
+        },
+        {
+          "type": "",
+          "text": "Bloodwork reveals a markedly elevated prolactin level."
+        }
+      ],
+      "description": "Prolactin-secreting pituitary adenoma causing hyperprolactinemia.",
+      "management": "Cabergoline or bromocriptine; surgery if refractory."
+    },
+    {
+      "id": 322,
+      "diagnosis": "Acromegaly",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A middle-aged patient reports gradual physical changes occurring over many years."
+        },
+        {
+          "type": "",
+          "text": "He needs to replace rings that no longer fit."
+        },
+        {
+          "type": "",
+          "text": "He notices his shoe size has increased since adulthood."
+        },
+        {
+          "type": "",
+          "text": "Family members comment that his facial appearance has changed."
+        },
+        {
+          "type": "",
+          "text": "IGF-1 is elevated on laboratory testing."
+        },
+        {
+          "type": "",
+          "text": "Growth hormone fails to suppress after oral glucose administration."
+        }
+      ],
+      "description": "Growth hormone excess usually due to a pituitary adenoma.",
+      "management": "Transsphenoidal surgery; medical therapy if persistent."
+    },
+    {
+      "id": 323,
+      "diagnosis": "Cushing DIsease",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A patient presents with progressive weight gain despite no major dietary changes."
+        },
+        {
+          "type": "",
+          "text": "Most of the weight accumulates centrally around the trunk."
+        },
+        {
+          "type": "",
+          "text": "She bruises more easily than before."
+        },
+        {
+          "type": "",
+          "text": "Climbing stairs becomes difficult because of proximal muscle weakness."
+        },
+        {
+          "type": "",
+          "text": "Screening tests confirm excess cortisol production."
+        },
+        {
+          "type": "",
+          "text": "ACTH is elevated and pituitary imaging identifies a microadenoma"
+        }
+      ],
+      "description": "Pituitary ACTH-secreting tumour causing hypercortisolism.",
+      "management": "Pituitary surgery; adjunctive medical therapy when needed."
+    },
+    {
+      "id": 340,
       "diagnosis": "Central Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11467,7 +11714,7 @@
       "management": "Treat with desmopressin replacement and ensure adequate water intake. Monitor serum sodium closely and address the underlying hypothalamic or pituitary disorder."
     },
     {
-      "id": 330,
+      "id": 341,
       "diagnosis": "Nephrogenic Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11502,7 +11749,7 @@
       "management": "Address the underlying cause, optimize hydration, and reduce urine output with dietary measures and selected medications. Monitor closely for dehydration and hypernatremia"
     },
     {
-      "id": 331,
+      "id": 342,
       "diagnosis": "Osmotic Demyelination Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11537,7 +11784,7 @@
       "management": "Prevention through careful sodium correction is critical. Provide supportive neurologic care, rehabilitation, and close monitoring for respiratory compromise and long-term deficits."
     },
     {
-      "id": 332,
+      "id": 343,
       "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH)",
       "aliases": [
         "SIADH",
@@ -11575,7 +11822,7 @@
       "management": "Treat the underlying cause and restrict fluids first; if insufficient, escalate to urea or tolvaptan as second-line therapy; and use hypertonic saline emergently for severe symptomatic hyponatremia, with careful sodium correction to avoid osmotic demyelination"
     },
     {
-      "id": 333,
+      "id": 344,
       "diagnosis": "Primary Hyperaldosteronism (Conn's)",
       "aliases": [
         "Conn's",
@@ -11613,7 +11860,7 @@
       "management": "Unilateral disease is typically treated surgically. Bilateral adrenal hyperplasia is managed medically with mineralocorticoid receptor antagonists and cardiovascular risk reduction."
     },
     {
-      "id": 334,
+      "id": 345,
       "diagnosis": "Gitelman Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11651,7 +11898,7 @@
       "management": "Provide lifelong magnesium and potassium supplementation. Encourage liberal salt intake and consider potassium-sparing agents for persistent electrolyte abnormalities or symptoms."
     },
     {
-      "id": 335,
+      "id": 346,
       "diagnosis": "Bartter Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11686,7 +11933,7 @@
       "management": "Correct fluid and electrolyte losses with potassium supplementation and liberal salt intake. NSAIDs and potassium-sparing agents may reduce renal salt wasting"
     },
     {
-      "id": 336,
+      "id": 347,
       "diagnosis": "Methanol Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11721,7 +11968,7 @@
       "management": "Administer fomepizole to inhibit alcohol dehydrogenase, correct acidosis, and perform hemodialysis when indicated. Monitor closely for visual and neurologic injury."
     },
     {
-      "id": 337,
+      "id": 348,
       "diagnosis": "Salicylate Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11756,7 +12003,7 @@
       "management": "Administer activated charcoal when appropriate and alkalinize serum and urine with intravenous bicarbonate. Severe toxicity may require urgent hemodialysis."
     },
     {
-      "id": 338,
+      "id": 349,
       "diagnosis": "Renal Tubular Acidosis Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11791,7 +12038,7 @@
       "management": "Treat with oral alkali therapy and potassium supplementation when needed. Address underlying causes and monitor for nephrolithiasis, nephrocalcinosis, and kidney dysfunction."
     },
     {
-      "id": 339,
+      "id": 350,
       "diagnosis": "Renal Tubular Acidosis Type 2",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11826,7 +12073,7 @@
       "management": "Provide bicarbonate replacement and correct electrolyte abnormalities. Treat the underlying cause and supplement phosphate or vitamin D when bone disease is present."
     },
     {
-      "id": 340,
+      "id": 351,
       "diagnosis": "Renal Tubular Acidosis Type 4",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11861,7 +12108,7 @@
       "management": "Address underlying hypoaldosteronism, discontinue contributing medications when possible, and treat hyperkalemia. Some patients benefit from mineralocorticoid replacement or diuretic therapy."
     },
     {
-      "id": 341,
+      "id": 352,
       "diagnosis": "Saline-Infusion Hyperchloremia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11896,7 +12143,7 @@
       "management": "Reduce or discontinue chloride-rich fluids and consider balanced crystalloids. Monitor acid-base status and renal function while treating the underlying illness."
     },
     {
-      "id": 342,
+      "id": 353,
       "diagnosis": "Urinary Tract Infection",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11931,7 +12178,7 @@
       "management": "First-line treatment of uncomplicated UTI includes nitrofurantoin (100 mg twice daily, 5 days), trimethoprim-sulfamethoxazole (1 DS tablet twice daily, 3 days), or fosfomycin (single 3 g dose); fluoroquinolones are reserved as alternatives."
     },
     {
-      "id": 343,
+      "id": 354,
       "diagnosis": "Acute Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11969,7 +12216,7 @@
       "management": "Initiate appropriate antibiotic therapy and ensure adequate hydration. Hospitalize patients with severe illness, sepsis, obstruction, or inability to tolerate oral medications."
     },
     {
-      "id": 344,
+      "id": 355,
       "diagnosis": "Prostatitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12004,7 +12251,7 @@
       "management": "Ciprofloxacin 500 mg po x 14-30 d or Septra DS 1 tab po BID x 14-30 d. Monitor for urinary retention, abscess formation, and sepsis, with hospitalization for severe disease."
     },
     {
-      "id": 345,
+      "id": 356,
       "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
       "aliases": [
         "BPH",
@@ -12042,7 +12289,7 @@
       "management": "Lifestyle modifications and α₁-blockers provide symptomatic relief. Larger prostates may benefit from 5α-reductase inhibitors, while refractory obstruction may require surgery."
     },
     {
-      "id": 346,
+      "id": 357,
       "diagnosis": "Overactive Bladder (OAB)",
       "aliases": [
         "OAB",
@@ -12083,7 +12330,7 @@
       "management": "Begin with bladder training, fluid management, and pelvic floor exercises. Persistent symptoms may require antimuscarinic therapy, β3-adrenergic agonists, or specialist referral."
     },
     {
-      "id": 347,
+      "id": 358,
       "diagnosis": "Prostate Adenocarcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12121,7 +12368,7 @@
       "management": "Management ranges from active surveillance to surgery, radiation, and androgen deprivation therapy. Advanced disease may require systemic therapy and treatment of metastases."
     },
     {
-      "id": 348,
+      "id": 359,
       "diagnosis": "Renal Cell Carcinoma (RCC)",
       "aliases": [
         "RCC",
@@ -12161,7 +12408,7 @@
       "management": "Localized disease is treated with partial or radical nephrectomy. Advanced disease may require targeted therapy, immunotherapy, and management of metastatic complications."
     },
     {
-      "id": 349,
+      "id": 360,
       "diagnosis": "Testicular Cancer",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12196,7 +12443,7 @@
       "management": "Radical inguinal orchiectomy for diagnosis and treatment. Further management depends on histology and stage and may include surveillance, chemotherapy, or radiation. Never biopsy due to risk of lymphatogenous spread."
     },
     {
-      "id": 350,
+      "id": 361,
       "diagnosis": "Von Hippel-Lindau Syndrome (VHL)",
       "aliases": [
         "VHL",
@@ -12234,7 +12481,7 @@
       "management": "Provide lifelong surveillance for associated tumors with regular imaging and screening. Surgical intervention is often required for symptomatic or high-risk lesions."
     },
     {
-      "id": 351,
+      "id": 362,
       "diagnosis": "Septic Stone",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12269,7 +12516,7 @@
       "management": "Treat as a urologic emergency with immediate broad-spectrum antibiotics and urgent urinary decompression via nephrostomy tube or ureteral stent placement."
     },
     {
-      "id": 352,
+      "id": 363,
       "diagnosis": "Nephrolithiasis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12307,7 +12554,7 @@
       "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
     },
     {
-      "id": 353,
+      "id": 364,
       "diagnosis": "Erectile Dysfunction (ED)",
       "aliases": [
         "ED",
@@ -12345,7 +12592,7 @@
       "management": "Address reversible causes and optimize cardiovascular risk factors. First-line therapy typically involves phosphodiesterase-5 inhibitors, with additional treatments reserved for refractory cases"
     },
     {
-      "id": 354,
+      "id": 365,
       "diagnosis": "Hydrocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12383,7 +12630,7 @@
       "management": "Observe asymptomatic hydroceles. Symptomatic, enlarging, or persistent cases may require surgical hydrocelectomy after excluding underlying infection, malignancy, or hernia."
     },
     {
-      "id": 355,
+      "id": 366,
       "diagnosis": "Epididymal Cyst",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12418,7 +12665,7 @@
       "management": "Reassure and observe asymptomatic lesions. Surgical excision may be considered for persistent pain, significant enlargement, or diagnostic uncertainty after imaging evaluation."
     },
     {
-      "id": 356,
+      "id": 367,
       "diagnosis": "Varicocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12453,7 +12700,7 @@
       "management": "Observe asymptomatic cases. Symptomatic patients or those with infertility may benefit from surgical ligation or percutaneous embolization of the affected veins."
     },
     {
-      "id": 357,
+      "id": 368,
       "diagnosis": "Epididymitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12488,7 +12735,7 @@
       "management": "Treat with pathogen-directed antibiotics, analgesia, scrotal elevation, and rest. Exclude testicular torsion promptly and monitor for abscess or fertility complications"
     },
     {
-      "id": 358,
+      "id": 369,
       "diagnosis": "Orchitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12523,7 +12770,7 @@
       "management": "Provide analgesia, scrotal support, and supportive care. Treat underlying bacterial infection when present and monitor for testicular atrophy or fertility complications."
     },
     {
-      "id": 359,
+      "id": 370,
       "diagnosis": "Indirect Inguinal Hernia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12558,7 +12805,7 @@
       "management": "Elective surgical repair is recommended for symptomatic hernias. Urgent intervention is required for incarceration, strangulation, bowel obstruction, or compromised blood supply."
     },
     {
-      "id": 360,
+      "id": 371,
       "diagnosis": "Testicular Torsion",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12593,7 +12840,7 @@
       "management": "Treat as a surgical emergency with immediate urologic consultation and urgent orchiopexy. Delay in intervention significantly increases the risk of testicular loss."
     },
     {
-      "id": 361,
+      "id": 372,
       "diagnosis": "Hematocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12628,7 +12875,7 @@
       "management": "Obtain urgent scrotal ultrasonography and assess for testicular injury. Small stable hematoceles may be observed, while large or expanding collections require surgery."
     },
     {
-      "id": 362,
+      "id": 373,
       "diagnosis": "Cystitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12663,7 +12910,7 @@
       "management": "Nitrofurantoin, TMP-SMX, or fosfomycin are first-line for uncomplicated cystitis; fluoroquinolones are reserved as alternative agents due to resistance concerns."
     },
     {
-      "id": 363,
+      "id": 374,
       "diagnosis": "Urethritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12698,7 +12945,7 @@
       "management": "Treat with appropriate empiric antibiotics while awaiting test results. Ensure partner notification and treatment, and recommend abstinence until therapy is completed."
     },
     {
-      "id": 364,
+      "id": 375,
       "diagnosis": "Priapism",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12733,7 +12980,7 @@
       "management": "Treat as a urologic emergency with corporal aspiration and intracavernosal sympathomimetic therapy. Address underlying causes promptly to prevent permanent erectile dysfunction"
     },
     {
-      "id": 365,
+      "id": 376,
       "diagnosis": "Paraphimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12768,7 +13015,7 @@
       "management": "Treat as a urologic emergency with prompt manual reduction. Severe cases may require dorsal slit or circumcision to prevent ischemic complications."
     },
     {
-      "id": 366,
+      "id": 377,
       "diagnosis": "Phimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12803,7 +13050,7 @@
       "management": "Treat pathologic cases with topical corticosteroids and gentle stretching. Persistent, recurrent, or severe symptoms may require circumcision or surgical intervention."
     },
     {
-      "id": 367,
+      "id": 378,
       "diagnosis": "Fournier's Gangrene",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12838,7 +13085,7 @@
       "management": "Initiate immediate broad-spectrum antibiotics and aggressive resuscitation. Urgent surgical debridement is essential, often requiring multiple procedures and intensive care support."
     },
     {
-      "id": 368,
+      "id": 379,
       "diagnosis": "Penile Fracture",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12873,7 +13120,7 @@
       "management": "Obtain urgent urologic consultation and perform prompt surgical repair. Evaluate for associated urethral injury and monitor for long-term erectile dysfunction."
     },
     {
-      "id": 370,
+      "id": 381,
       "diagnosis": "Hydronephrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -12911,7 +13158,7 @@
       "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
     },
     {
-      "id": 371,
+      "id": 382,
       "diagnosis": "Emphysematous Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -12949,7 +13196,7 @@
       "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
     },
     {
-      "id": 372,
+      "id": 383,
       "diagnosis": "Urothelial Cell Carcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -12987,7 +13234,7 @@
       "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
     },
     {
-      "id": 373,
+      "id": 384,
       "diagnosis": "Multicystic Renal Dysplasia",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -13022,7 +13269,7 @@
       "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
     },
     {
-      "id": 374,
+      "id": 385,
       "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -13057,7 +13304,7 @@
       "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
     },
     {
-      "id": 375,
+      "id": 386,
       "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -13097,7 +13344,7 @@
       "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
     },
     {
-      "id": 376,
+      "id": 387,
       "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -13138,7 +13385,7 @@
       "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
     },
     {
-      "id": 377,
+      "id": 388,
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",

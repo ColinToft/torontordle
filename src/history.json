@@ -269,6 +269,11 @@
       "date": "2026-06-21",
       "diagnosis": "Kyphoscoliosis",
       "id": 269
+    },
+    {
+      "date": "2026-06-22",
+      "diagnosis": "Acute Respiratory Distress Syndrome (ARDS)",
+      "id": 264
     }
   ],
   "2": [
@@ -567,6 +572,12 @@
       "date": "2026-06-21",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
+    },
+    {
+      "date": "2026-06-22",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
     }
   ]
 }
