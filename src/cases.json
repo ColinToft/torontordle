@@ -2877,6 +2877,366 @@
     },
     {
       "id": 79,
+      "diagnosis": "Neuroblastoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/neuroblastoma-clue1.jpg"
+        },
+        {
+          "type": "",
+          "text": "An infant is brought to the pediatrician because of progressive fatigue, decreased appetite, and intermittent fevers"
+        },
+        {
+          "type": "",
+          "text": "Physical examination reveals a firm, irregular abdominal mass that crosses the midline. Bilateral periorbital ecchymoses are also present"
+        },
+        {
+          "type": "",
+          "text": "Urine testing demonstrates markedly elevated catecholamine metabolites"
+        },
+        {
+          "type": "",
+          "text": "CT imaging demonstrates a large adrenal mass containing coarse calcifications with evidence of regional lymph node involvement"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/neuroblastoma-clue6.jpg",
+          "detail": "Tumour biopsy demonstrates small round blue cells with background neutropils",
+          "reference": "https://www.pathologyoutlines.com/topic/"
+        }
+      ],
+      "description": "Neuroblastoma is the most common extracranial solid tumor of childhood and arises from neural crest-derived sympathetic tissue, most commonly within the adrenal medulla. Patients typically present before five years of age with an irregular abdominal mass, constitutional symptoms, or metastatic disease involving bone, bone marrow, or the orbits. As seen in the first image, \"blueberry muffin\" baby may be used to describe the appearance of the lesions. Urinary catecholamine metabolites, including vanillylmandelic acid (VMA) and homovanillic acid (HVA), are characteristically elevated. Imaging often demonstrates an adrenal mass with calcifications. Histology reveals small round blue cells with Homer Wright rosettes. High-risk disease may be associated with MYCN amplification and carries a poorer prognosis.",
+      "management": "Neuroblastoma management is risk-stratified: low-risk requires observation/surgery; intermediate-risk uses chemotherapy and surgery; high-risk requires induction chemotherapy, surgery, myeloablative therapy with stem cell rescue, radiation, anti-GD2 immunotherapy, and isotretinoin."
+    },
+    {
+      "id": 80,
+      "diagnosis": "Nephroblastoma (Wilm's Tumour)",
+      "aliases": [
+        "Wilm's Tumour",
+        "Nephroblastoma"
+      ],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 3-year-old girl is brought to the pediatrician after her parents notice swelling on the left side of her abdomen during bath time"
+        },
+        {
+          "type": "",
+          "text": "She was born with unilateral aniridia (absence of an iris) and has otherwise been healthy. There is no history of recent illness or trauma"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm, smooth, non-tender flank mass that does not cross the midline. Mild hypertension is noted"
+        },
+        {
+          "type": "",
+          "text": "Urinalysis demonstrates microscopic hematuria. Complete blood count reveals mild anemia, while renal function is preserved"
+        },
+        {
+          "type": "",
+          "text": "Abdominal ultrasound followed by contrast-enhanced CT demonstrates a large, well-circumscribed intrarenal mass arising from the left kidney without calcifications"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/nephroblastoma-wilm-s-tumour-clue6.jpg",
+          "detail": "Histopathology demonstrates a triphasic pattern of blastemal, epithelial, and stromal elements",
+          "reference": "https://doi.org/10.4021/jocmr377w"
+        }
+      ],
+      "description": "Nephroblastoma (Wilms tumor) is the most common renal malignancy of childhood, arising from embryonic nephrogenic tissue. It is associated with abnormalities involving the WT1 gene and syndromes such as WAGR syndrome, Denys–Drash syndrome, and Beckwith–Wiedemann syndrome. Children typically present with a painless abdominal mass, hematuria, or hypertension. Diagnosis relies on imaging and histopathology. Complications include tumor rupture, pulmonary metastases, recurrence, and chronic kidney disease following treatment.",
+      "management": "Treat with nephrectomy and risk-adapted chemotherapy. Advanced disease may require radiation therapy, with long-term surveillance for recurrence and treatment-related complications."
+    },
+    {
+      "id": 81,
+      "diagnosis": "Pleuropulmonary Blastoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 3-year-old girl is brought to the emergency department with persistent cough, increasing shortness of breath, and intermittent fever over the past several weeks"
+        },
+        {
+          "type": "",
+          "text": "She has experienced several episodes of presumed pneumonia over the past year that only partially improved with antibiotics"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals decreased breath sounds over the right hemithorax and mild respiratory distress. Digital clubbing is absent"
+        },
+        {
+          "type": "",
+          "text": "Routine laboratory investigations demonstrate mild anemia"
+        },
+        {
+          "type": "",
+          "text": "Chest CT demonstrates a large multiloculated cystic mass with solid nodular components arising from the lung and pleura, causing mediastinal shift"
+        },
+        {
+          "type": "",
+          "text": "Genetic testing identifies a pathogenic DICER1 mutation"
+        }
+      ],
+      "description": "Pleuropulmonary blastoma is a rare, highly aggressive pediatric intrathoracic malignancy arising from primitive mesenchymal tissue of the lung or pleura. It most commonly affects children younger than six years and is strongly associated with germline DICER1 mutations. Patients present with respiratory symptoms or recurrent pneumothoraces. Diagnosis relies on imaging and histopathology, with tumors classified as cystic, mixed cystic-solid, or solid. Complications include local invasion, distant metastases, respiratory failure, and recurrence.",
+      "management": "Treat with complete surgical resection and multi-agent chemotherapy. Advanced disease may require radiotherapy, with genetic counseling and surveillance for associated DICER1-related tumors."
+    },
+    {
+      "id": 82,
+      "diagnosis": "Sacrococcygeal Teratoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A full-term newborn girl is noted immediately after delivery to have a large mass protruding from the sacral region"
+        },
+        {
+          "type": "",
+          "text": "Prenatal ultrasonography identified a rapidly enlarging fetal pelvic mass with associated polyhydramnios during the third trimester"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a large, lobulated sacrococcygeal mass that is predominantly external with intact overlying skin. The infant has normal lower-extremity movement"
+        },
+        {
+          "type": "",
+          "text": "Serum alpha-fetoprotein is markedly elevated for age and remains persistently elevated on serial measurements"
+        },
+        {
+          "type": "",
+          "text": "Pelvic MRI demonstrates a heterogeneous mass containing both cystic and solid components arising from the coccygeal region without spinal canal involvement"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates tissues derived from all three embryonic germ layers"
+        }
+      ],
+      "description": "Sacrococcygeal teratoma is the most common congenital tumor of the newborn and arises from pluripotent germ cells near the coccyx. It is more common in females and may be detected prenatally or at birth as a sacral mass. Most tumors are benign, although the risk of malignant transformation increases with age if untreated. Diagnosis relies on prenatal or postnatal imaging and histopathology. Complications include hemorrhage, high-output cardiac failure, malignant transformation, bowel or bladder dysfunction, and recurrence.",
+      "management": "Perform complete surgical excision including coccygectomy to reduce recurrence. Monitor alpha-fetoprotein levels and imaging postoperatively for recurrent or malignant disease"
+    },
+    {
+      "id": 83,
+      "diagnosis": "Leiomyosarcoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 56-year-old woman presents to her family physician with a progressively enlarging, painless mass in her right thigh that has become more noticeable over the past four months"
+        },
+        {
+          "type": "",
+          "text": "She denies trauma or infection but reports that the mass has continued to enlarge despite conservative management"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm, deep, poorly mobile soft tissue mass that is mildly tender to palpation. No overlying skin changes are present"
+        },
+        {
+          "type": "",
+          "text": "Routine laboratory investigations are unremarkable. Lactate dehydrogenase is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "MRI demonstrates a heterogeneous enhancing soft tissue mass arising from smooth muscle with areas of central necrosis and invasion into adjacent tissues"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates malignant spindle cells with cigar-shaped nuclei and frequent atypical mitotic figures that stain positive for smooth muscle actin and desmin"
+        }
+      ],
+      "description": "Leiomyosarcoma is a malignant mesenchymal tumor arising from smooth muscle, most commonly involving the uterus, retroperitoneum, or deep soft tissues. It typically affects middle-aged and older adults and presents as a painless enlarging mass or abnormal uterine bleeding when uterine in origin. Diagnosis relies on imaging and biopsy with immunohistochemistry demonstrating smooth muscle differentiation. Management primarily involves surgical resection. Complications include local recurrence, hematogenous metastases—particularly to the lungs—and poor prognosis in advanced disease.",
+      "management": "Perform wide surgical excision with negative margins. Selected patients benefit from radiation or systemic chemotherapy depending on tumor location, grade, stage, and resectability."
+    },
+    {
+      "id": 84,
+      "diagnosis": "Hepatoblastoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 2-year-old boy is brought to the pediatrician because his parents have noticed progressive abdominal enlargement and decreased appetite over the past several weeks"
+        },
+        {
+          "type": "",
+          "text": "He was born prematurely with a very low birth weight and has otherwise met developmental milestones appropriately"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm, non-tender mass in the right upper quadrant extending below the costal margin. Mild hepatomegaly is present without jaundice"
+        },
+        {
+          "type": "",
+          "text": "Serum alpha-fetoprotein is markedly elevated for age. Liver function tests are only mildly abnormal"
+        },
+        {
+          "type": "",
+          "text": "Contrast-enhanced CT of the abdomen demonstrates a solitary, well-circumscribed heterogeneous hepatic mass with coarse calcifications arising from the right lobe of the liver"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates malignant fetal and embryonal hepatocytes"
+        }
+      ],
+      "description": "Hepatoblastoma is the most common primary malignant liver tumor of childhood, typically occurring before five years of age. Risk factors include very low birth weight, prematurity, and genetic syndromes such as Familial adenomatous polyposis and Beckwith–Wiedemann syndrome. Children usually present with an enlarging abdominal mass and elevated alpha-fetoprotein levels. Diagnosis relies on imaging, serum AFP, and histopathology. Complications include tumor rupture, pulmonary metastases, recurrence, and liver failure.",
+      "management": "Treat with surgical resection and neoadjuvant or adjuvant chemotherapy. Liver transplantation may be required for unresectable localized disease without distant metastases."
+    },
+    {
+      "id": 85,
+      "diagnosis": "Osteosarcoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 16-year-old boy presents to the emergency department with progressively worsening pain around his left knee that has been waking him from sleep over the past two months"
+        },
+        {
+          "type": "",
+          "text": "He is otherwise healthy and recently experienced a rapid growth spurt. He denies any significant trauma, although the pain has become worse with activity."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm, tender swelling over the distal femur with reduced knee range of motion. No overlying skin changes are present"
+        },
+        {
+          "type": "",
+          "text": "Serum alkaline phosphatase and lactate dehydrogenase are elevated. Routine blood counts are otherwise unremarkable"
+        },
+        {
+          "type": "",
+          "text": "Plain radiographs demonstrate a destructive mixed lytic and sclerotic metaphyseal lesion with periosteal elevation and radiating spiculated new bone formation"
+        },
+        {
+          "type": "",
+          "text": "Biopsy demonstrates malignant osteoblasts producing osteoid"
+        }
+      ],
+      "description": "Osteosarcoma is the most common primary malignant bone tumor in adolescents and arises from malignant osteoblasts producing osteoid. It most commonly affects the metaphyses of rapidly growing long bones, particularly around the knee. Risk factors include rapid skeletal growth, prior radiation exposure, and hereditary cancer syndromes such as Li-Fraumeni syndrome and Hereditary retinoblastoma. Diagnosis relies on imaging and biopsy. Complications include pathologic fracture, pulmonary metastases, local recurrence, and death.",
+      "management": "Treat with neoadjuvant chemotherapy followed by limb-salvage surgery or amputation. Adjuvant chemotherapy reduces recurrence and improves long-term survival."
+    },
+    {
+      "id": 86,
+      "diagnosis": "Liposarcoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 59-year-old man presents to his family physician because of a painless mass in his left thigh that has gradually enlarged over the past year"
+        },
+        {
+          "type": "",
+          "text": "He denies trauma or infection but reports that the mass has continued to grow despite being initially told it was likely a lipoma"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a large, firm, deep-seated, poorly mobile soft tissue mass within the proximal thigh. The overlying skin appears normal"
+        },
+        {
+          "type": "",
+          "text": "Routine laboratory investigations are unremarkable. No specific serum tumor markers are identified"
+        },
+        {
+          "type": "",
+          "text": "MRI demonstrates a large heterogeneous soft tissue mass containing predominantly fatty tissue with thick irregular septa and non-fatty nodular enhancing components"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates lipoblasts with hyperchromatic, indented nuclei and cytoplasmic lipid vacuoles"
+        }
+      ],
+      "description": "Liposarcoma is a malignant tumor of adipocytic origin and one of the most common adult soft tissue sarcomas. It typically arises in the deep soft tissues of the extremities or retroperitoneum and presents as a slowly enlarging painless mass. Histologic subtypes include well-differentiated, dedifferentiated, myxoid, and pleomorphic variants. Diagnosis relies on MRI and tissue biopsy. Management is primarily surgical. Complications include local recurrence, pulmonary metastases, retroperitoneal organ compression, and death in advanced disease.",
+      "management": "Perform wide surgical excision with negative margins. Selected patients benefit from radiation therapy or systemic chemotherapy depending on histologic subtype and stage."
+    },
+    {
+      "id": 87,
+      "diagnosis": "Rhabdomyosarcoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 7-year-old boy is brought to the pediatrician because of a rapidly enlarging swelling around his left eye that has developed over the past three weeks"
+        },
+        {
+          "type": "",
+          "text": "He has otherwise been healthy but recently developed progressive eyelid swelling and double vision. There is no history of trauma or infection"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals unilateral proptosis with a firm orbital mass causing restricted extraocular movements. Visual acuity is preserved"
+        },
+        {
+          "type": "",
+          "text": "Routine laboratory investigations are unremarkable. No specific serum tumor markers are identified"
+        },
+        {
+          "type": "",
+          "text": "MRI of the orbit demonstrates a well-defined enhancing soft tissue mass arising from the extraocular musculature without bony destruction"
+        },
+        {
+          "type": "",
+          "text": "Histopathology demonstrates primitive skeletal muscle cells with rhabdomyoblasts showing eosinophilic cytoplasm and positive immunostaining for desmin, myogenin, and MyoD1"
+        }
+      ],
+      "description": "Rhabdomyosarcoma is the most common soft tissue sarcoma of childhood and arises from primitive mesenchymal cells committed to skeletal muscle differentiation. Common sites include the head and neck, genitourinary tract, and extremities. Children typically present with a rapidly enlarging painless mass or symptoms related to tumor location. Diagnosis relies on MRI, biopsy, and immunohistochemistry. Management combines chemotherapy, surgery, and radiation when indicated. Complications include local invasion, pulmonary or bone marrow metastases, recurrence, and treatment-related morbidity.",
+      "management": "Treat with multi-agent chemotherapy combined with surgery and selective radiation therapy. Long-term surveillance is essential to detect recurrence and treatment-related complications."
+    },
+    {
+      "id": 88,
+      "diagnosis": "Ewing Sarcoma",
+      "aliases": [],
+      "category": "Pediatrics",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 13-year-old boy presents to the emergency department with progressively worsening pain and swelling in his left thigh over the past two months. The pain now wakes him at night"
+        },
+        {
+          "type": "",
+          "text": "He has no history of significant trauma but has recently developed intermittent low-grade fevers and unintentional weight loss"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a warm, tender swelling over the midshaft of the femur with localized soft tissue fullness. Knee and hip motion are mildly limited by pain"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates mild anemia. Erythrocyte sedimentation rate, C-reactive protein, and lactate dehydrogenase are elevated"
+        },
+        {
+          "type": "",
+          "text": "Plain radiographs demonstrate a permeative diaphyseal lytic lesion with layered periosteal elevation producing an \"onion-skin\" appearance and an associated soft tissue mass"
+        },
+        {
+          "type": "",
+          "text": "Biopsy demonstrates sheets of small round blue cells with identification of the t(11;22) EWSR1-FLI1 translocation"
+        }
+      ],
+      "description": "Ewing sarcoma is a highly aggressive primary malignant bone tumor that most commonly affects children and adolescents. It typically arises in the diaphysis of long bones or the pelvis and is characterized by the t(11;22)(q24;q12) translocation producing the EWSR1-FLI1 fusion protein. Patients present with localized pain, swelling, and occasionally fever. Diagnosis relies on imaging and biopsy with molecular confirmation. Complications include pathologic fracture, pulmonary and bone metastases, local recurrence, and death.",
+      "management": "Treat with neoadjuvant chemotherapy followed by surgical resection and/or radiation therapy. Adjuvant chemotherapy and long-term surveillance improve disease control and survival."
+    },
+    {
+      "id": 90,
       "diagnosis": "Basal Cell Carcinoma (BCC)",
       "aliases": [
         "BCC",
@@ -2916,7 +3276,7 @@
       "management": "Biopsy, then excision, Mohs surgery for high-risk sites, or other local therapies depending on subtype/location."
     },
     {
-      "id": 80,
+      "id": 91,
       "diagnosis": "Squamous Cell Carcinoma (SCC)",
       "aliases": [
         "SCC",
@@ -2956,7 +3316,7 @@
       "management": "Biopsy and surgical excision; Mohs for high-risk lesions."
     },
     {
-      "id": 81,
+      "id": 92,
       "diagnosis": "Melanoma",
       "aliases": [],
       "category": "Dermatology",
@@ -2993,7 +3353,7 @@
       "management": "Excisional biopsy, wide local excision, staging ± sentinel lymph node biopsy depending on depth."
     },
     {
-      "id": 82,
+      "id": 93,
       "diagnosis": "Atopic Dermatitis (Eczema)",
       "aliases": [
         "Eczema",
@@ -3033,7 +3393,7 @@
       "management": "Emollients, trigger avoidance, topical corticosteroids/calcineurin inhibitors for flares."
     },
     {
-      "id": 83,
+      "id": 94,
       "diagnosis": "Contact Dermatitis",
       "aliases": [],
       "category": "Dermatology",
@@ -3070,7 +3430,7 @@
       "management": "Avoid trigger, topical corticosteroids, barrier protection."
     },
     {
-      "id": 84,
+      "id": 95,
       "diagnosis": "Verruca Vulgaris",
       "aliases": [],
       "category": "Dermatology",
@@ -3107,7 +3467,7 @@
       "management": "Observation, salicylic acid, or cryotherapy."
     },
     {
-      "id": 85,
+      "id": 96,
       "diagnosis": "Molluscum Contagiosum",
       "aliases": [],
       "category": "Dermatology",
@@ -3144,7 +3504,7 @@
       "management": "Reassurance/observation; curettage, cryotherapy, or topical therapy if needed."
     },
     {
-      "id": 86,
+      "id": 97,
       "diagnosis": "Psoriatic Arthritis",
       "aliases": [],
       "category": "Dermatology",
@@ -3181,7 +3541,7 @@
       "management": "NSAIDs for mild disease; DMARDs/biologics and rheumatology referral for persistent disease."
     },
     {
-      "id": 87,
+      "id": 98,
       "diagnosis": "Plaque Psoriasis",
       "aliases": [],
       "category": "Dermatology",
@@ -3218,7 +3578,7 @@
       "management": "Topical corticosteroids/vitamin D analogs; phototherapy or systemic therapy for moderate-severe disease."
     },
     {
-      "id": 88,
+      "id": 99,
       "diagnosis": "Guttate Psoriasis",
       "aliases": [],
       "category": "Dermatology",
@@ -3255,7 +3615,7 @@
       "management": "Treat strep if present; topical steroids or phototherapy if extensive."
     },
     {
-      "id": 89,
+      "id": 100,
       "diagnosis": "Pityriasis Versicolor",
       "aliases": [],
       "category": "Dermatology",
@@ -3292,7 +3652,7 @@
       "management": "Topical selenium sulfide or azole antifungals; oral antifungals if extensive/recurrent."
     },
     {
-      "id": 90,
+      "id": 101,
       "diagnosis": "Pityriasis Rosea",
       "aliases": [],
       "category": "Dermatology",
@@ -3329,7 +3689,7 @@
       "management": "Reassurance; antihistamines/topical steroids for itch."
     },
     {
-      "id": 91,
+      "id": 102,
       "diagnosis": "Acne Vulgaris",
       "aliases": [],
       "category": "Dermatology",
@@ -3366,7 +3726,7 @@
       "management": "Topical retinoid ± benzoyl peroxide; antibiotics, hormonal therapy, or isotretinoin depending on severity."
     },
     {
-      "id": 92,
+      "id": 103,
       "diagnosis": "Impetigo",
       "aliases": [],
       "category": "Dermatology",
@@ -3403,7 +3763,7 @@
       "management": "Topical mupirocin/fusidic acid if localized; oral antibiotics if extensive."
     },
     {
-      "id": 93,
+      "id": 104,
       "diagnosis": "Seborrheic Dermatitis",
       "aliases": [],
       "category": "Dermatology",
@@ -3440,7 +3800,7 @@
       "management": "Antifungal shampoos/creams; low-potency topical steroids for flares."
     },
     {
-      "id": 94,
+      "id": 105,
       "diagnosis": "Lichen Planus",
       "aliases": [],
       "category": "Dermatology",
@@ -3477,7 +3837,7 @@
       "management": "Topical corticosteroids; systemic therapy if severe/widespread."
     },
     {
-      "id": 95,
+      "id": 106,
       "diagnosis": "Actinic keratosis",
       "aliases": [],
       "category": "Dermatology",
@@ -3514,7 +3874,7 @@
       "management": "Cryotherapy for isolated lesions; field therapy for multiple lesions."
     },
     {
-      "id": 96,
+      "id": 107,
       "diagnosis": "Scabies",
       "aliases": [],
       "category": "Dermatology",
@@ -3551,7 +3911,7 @@
       "management": "Permethrin 5% cream or oral ivermectin; treat close contacts and wash bedding/clothing."
     },
     {
-      "id": 97,
+      "id": 108,
       "diagnosis": "Condyloma Accuminata",
       "aliases": [],
       "category": "Dermatology",
@@ -3588,7 +3948,7 @@
       "management": "Patient-applied imiquimod/podophyllotoxin or clinician-applied cryotherapy/TCA; assess STI risk."
     },
     {
-      "id": 98,
+      "id": 109,
       "diagnosis": "Onychomycosis",
       "aliases": [],
       "category": "Dermatology",
@@ -3625,7 +3985,7 @@
       "management": "Confirm diagnosis; oral terbinafine for most toenail dermatophyte disease if appropriate."
     },
     {
-      "id": 99,
+      "id": 110,
       "diagnosis": "Urticaria",
       "aliases": [],
       "category": "Dermatology",
@@ -3662,7 +4022,7 @@
       "management": "Second-generation antihistamines; epinephrine if anaphylaxis."
     },
     {
-      "id": 100,
+      "id": 111,
       "diagnosis": "Hemangioma",
       "aliases": [],
       "category": "Dermatology",
@@ -3699,7 +4059,7 @@
       "management": "Observation if low risk; oral propranolol for high-risk lesions."
     },
     {
-      "id": 101,
+      "id": 112,
       "diagnosis": "Cherry angioma",
       "aliases": [],
       "category": "Dermatology",
@@ -3736,7 +4096,7 @@
       "management": "Reassurance; cosmetic removal if desired."
     },
     {
-      "id": 102,
+      "id": 113,
       "diagnosis": "Steven-Johnsons Syndrome (SJS)",
       "aliases": [
         "SJS",
@@ -3776,7 +4136,7 @@
       "management": "Stop culprit drug; urgent hospital/burn unit care, fluids, wound care, and mucosal/eye care."
     },
     {
-      "id": 103,
+      "id": 114,
       "diagnosis": "Toxic Epidermal Necrolysis",
       "aliases": [],
       "category": "Dermatology",
@@ -3814,7 +4174,7 @@
       "management": "Stop culprit drug; ICU/burn unit supportive care, fluids/electrolytes, infection prevention, and ophthalmology."
     },
     {
-      "id": 104,
+      "id": 115,
       "diagnosis": "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)",
       "aliases": [
         "DRESS",
@@ -3854,7 +4214,7 @@
       "management": "Stop culprit drug; assess organ involvement; systemic corticosteroids for significant organ involvement."
     },
     {
-      "id": 105,
+      "id": 116,
       "diagnosis": "Pemphigus vulgaris",
       "aliases": [],
       "category": "Dermatology",
@@ -3891,7 +4251,7 @@
       "management": "Systemic corticosteroids plus steroid-sparing immunosuppression or rituximab."
     },
     {
-      "id": 106,
+      "id": 117,
       "diagnosis": "Bullous Pemphigoid",
       "aliases": [],
       "category": "Dermatology",
@@ -3928,7 +4288,7 @@
       "management": "High-potency topical steroids or systemic therapy depending on severity."
     },
     {
-      "id": 107,
+      "id": 118,
       "diagnosis": "Vitiligo",
       "aliases": [],
       "category": "Dermatology",
@@ -3965,7 +4325,7 @@
       "management": "Sun protection; topical corticosteroids/calcineurin inhibitors; phototherapy for more extensive disease."
     },
     {
-      "id": 108,
+      "id": 119,
       "diagnosis": "Androgenic Alopecia",
       "aliases": [],
       "category": "Dermatology",
@@ -4002,7 +4362,7 @@
       "management": "Topical/oral minoxidil; finasteride for appropriate male patients; antiandrogens in selected patients."
     },
     {
-      "id": 109,
+      "id": 120,
       "diagnosis": "Lichen Planopilaris",
       "aliases": [],
       "category": "Dermatology",
@@ -4039,7 +4399,7 @@
       "management": "Dermatology referral; high-potency topical/intralesional steroids; systemic anti-inflammatory therapy if active."
     },
     {
-      "id": 110,
+      "id": 121,
       "diagnosis": "Central Centrifugal Cicatricial Alopecia (CCCA)",
       "aliases": [
         "CCCA",
@@ -4079,7 +4439,7 @@
       "management": "Reduce traumatic hair practices; topical/intralesional steroids; anti-inflammatory therapy."
     },
     {
-      "id": 111,
+      "id": 122,
       "diagnosis": "Folliculitis Decalvans",
       "aliases": [],
       "category": "Dermatology",
@@ -4116,7 +4476,7 @@
       "management": "Dermatology referral; prolonged antibiotics/anti-inflammatory therapy."
     },
     {
-      "id": 112,
+      "id": 123,
       "diagnosis": "Alopecia Areata",
       "aliases": [],
       "category": "Dermatology",
@@ -4153,7 +4513,7 @@
       "management": "Intralesional corticosteroids for limited disease; topical/systemic options for extensive disease."
     },
     {
-      "id": 113,
+      "id": 124,
       "diagnosis": "Herpes Simplex Virus (HSV)",
       "aliases": [
         "HSV",
@@ -4193,7 +4553,7 @@
       "management": "Oral antivirals such as acyclovir, valacyclovir, or famciclovir; suppressive therapy if frequent recurrences."
     },
     {
-      "id": 114,
+      "id": 125,
       "diagnosis": "Allergic Rhinitis",
       "aliases": [],
       "category": "Immunology II",
@@ -4228,7 +4588,7 @@
       "management": "Allergen avoidance where feasible, intranasal corticosteroid spray, non-sedating second-generation antihistamines, and allergy immunotherapy for persistent allergen-specific disease."
     },
     {
-      "id": 115,
+      "id": 126,
       "diagnosis": "Allergic Asthma",
       "aliases": [],
       "category": "Immunology II",
@@ -4263,7 +4623,7 @@
       "management": "Inhaled bronchodilators for symptom relief, inhaled corticosteroid-containing controller therapy, trigger reduction, and systemic corticosteroids for severe exacerbations."
     },
     {
-      "id": 116,
+      "id": 127,
       "diagnosis": "Acute Allergic Urticaria",
       "aliases": [],
       "category": "Immunology II",
@@ -4301,7 +4661,7 @@
       "management": "Assess immediately for anaphylaxis; if no airway, respiratory, cardiovascular, or severe gastrointestinal involvement is present, treat with non-sedating H1 antihistamines, identify and avoid the trigger, and refer for allergy assessment when indicated."
     },
     {
-      "id": 117,
+      "id": 128,
       "diagnosis": "Acute Viral Urticaria",
       "aliases": [],
       "category": "Immunology II",
@@ -4336,7 +4696,7 @@
       "management": "Rule out anaphylaxis and drug or food triggers; manage with non-sedating H1 antihistamines and reassurance while the viral illness resolves."
     },
     {
-      "id": 118,
+      "id": 129,
       "diagnosis": "Anaphylaxis",
       "aliases": [],
       "category": "Immunology II",
@@ -4371,7 +4731,7 @@
       "management": "Immediate intramuscular epinephrine, airway support, high-flow oxygen as needed, IV fluids for hypotension, adjunct antihistamines/bronchodilators/steroids when appropriate, observation for recurrence, allergen avoidance, and epinephrine autoinjector education."
     },
     {
-      "id": 119,
+      "id": 130,
       "diagnosis": "Contact Urticaria",
       "aliases": [],
       "category": "Immunology II",
@@ -4409,7 +4769,7 @@
       "management": "Avoid the trigger, use non-sedating antihistamines for symptoms, assess occupational exposures, and provide epinephrine autoinjector education if systemic reactions occur or risk is high."
     },
     {
-      "id": 120,
+      "id": 131,
       "diagnosis": "Allergic Contact Dermatitis",
       "aliases": [],
       "category": "Immunology II",
@@ -4447,7 +4807,7 @@
       "management": "Identify and avoid the allergen, use topical corticosteroids for flares, consider topical calcineurin inhibitors in steroid-sensitive areas, and use patch testing for unclear or occupational exposures."
     },
     {
-      "id": 121,
+      "id": 132,
       "diagnosis": "Serum Sickness",
       "aliases": [],
       "category": "Immunology II",
@@ -4482,7 +4842,7 @@
       "management": "Stop or avoid the offending antigen when possible; provide antihistamines/NSAIDs for mild disease and systemic corticosteroids for severe disease, with supportive care and monitoring for organ involvement."
     },
     {
-      "id": 122,
+      "id": 133,
       "diagnosis": "Morbilliform Drug Eruption",
       "aliases": [],
       "category": "Immunology II",
@@ -4520,7 +4880,7 @@
       "management": "Stop the suspected drug when appropriate, document the reaction, provide symptomatic therapy such as non-sedating antihistamines and topical corticosteroids, and assess carefully for red flags suggesting severe drug hypersensitivity."
     },
     {
-      "id": 123,
+      "id": 134,
       "diagnosis": "DRESS Syndrome",
       "aliases": [],
       "category": "Immunology II",
@@ -4558,7 +4918,7 @@
       "management": "Stop the culprit medication immediately, assess for organ involvement, monitor closely, and treat significant systemic involvement with systemic corticosteroids or specialist-directed immunosuppression."
     },
     {
-      "id": 124,
+      "id": 135,
       "diagnosis": "Stevens-Johnson Syndrome",
       "aliases": [],
       "category": "Immunology II",
@@ -4596,7 +4956,7 @@
       "management": "Stop the culprit drug immediately, admit for urgent supportive care, provide fluid/electrolyte management and wound care, obtain ophthalmology involvement, and manage in an ICU or burn unit when severe."
     },
     {
-      "id": 125,
+      "id": 136,
       "diagnosis": "Toxic Epidermal Necrolysis",
       "aliases": [],
       "category": "Immunology II",
@@ -4635,7 +4995,7 @@
       "management": "Stop the culprit drug immediately; provide ICU or burn-unit level supportive care, aggressive fluid/electrolyte management, wound care, infection prevention, pain control, and urgent ophthalmology involvement."
     },
     {
-      "id": 126,
+      "id": 137,
       "diagnosis": "Chronic Spontaneous Urticaria",
       "aliases": [],
       "category": "Immunology II",
@@ -4673,7 +5033,7 @@
       "management": "Non-sedating H1 antihistamines, dose escalation up to fourfold if needed, omalizumab for refractory disease, and reassurance that this is usually not a food allergy."
     },
     {
-      "id": 127,
+      "id": 138,
       "diagnosis": "Urticarial Vasculitis",
       "aliases": [],
       "category": "Immunology II",
@@ -4714,7 +5074,7 @@
       "management": "Dermatology/rheumatology/immunology referral; evaluate for systemic involvement; treat with systemic anti-inflammatory or immunosuppressive therapy such as colchicine, mycophenolate, azathioprine, or corticosteroids for flares."
     },
     {
-      "id": 128,
+      "id": 139,
       "diagnosis": "Cryopyrin-Associated Periodic Syndrome (CAPS)",
       "aliases": [
         "CAPS",
@@ -4752,7 +5112,7 @@
       "management": "Anti-IL-1 biologic therapy, specialist referral, monitoring for complications such as amyloidosis, and symptomatic management of inflammatory flares."
     },
     {
-      "id": 129,
+      "id": 140,
       "diagnosis": "Hereditary Angioedema",
       "aliases": [],
       "category": "Immunology II",
@@ -4789,7 +5149,7 @@
       "management": "Treat acute attacks with C1 inhibitor replacement, bradykinin receptor blockade, or kallikrein inhibition; provide airway management when needed and arrange prophylaxis/specialist follow-up."
     },
     {
-      "id": 130,
+      "id": 141,
       "diagnosis": "ACE-Inhibitor Angioedema",
       "aliases": [],
       "category": "Immunology II",
@@ -4824,7 +5184,7 @@
       "management": "Stop the ACE inhibitor permanently, protect the airway, monitor closely for progression, and provide supportive or bradykinin-targeted therapy when severe."
     },
     {
-      "id": 131,
+      "id": 142,
       "diagnosis": "Systemic Lupus Erythematosus",
       "aliases": [],
       "category": "Immunology II",
@@ -4862,7 +5222,7 @@
       "management": "Sun protection, hydroxychloroquine for most patients, NSAIDs or corticosteroids for flares when appropriate, and organ-directed immunosuppression for severe renal, CNS, hematologic, or serosal disease."
     },
     {
-      "id": 132,
+      "id": 143,
       "diagnosis": "Asplenia",
       "aliases": [],
       "category": "Immunology II",
@@ -4897,7 +5257,7 @@
       "management": "Vaccination against encapsulated bacteria, urgent empiric antibiotics for fever, patient education regarding sepsis risk, and consideration of prophylactic antibiotics in selected high-risk patients."
     },
     {
-      "id": 133,
+      "id": 144,
       "diagnosis": "HIV/AIDS",
       "aliases": [],
       "category": "Immunology II",
@@ -4932,7 +5292,7 @@
       "management": "Combination antiretroviral therapy, opportunistic infection treatment and prophylaxis based on CD4 count, vaccination and prevention counselling, and screening for co-infections."
     },
     {
-      "id": 134,
+      "id": 145,
       "diagnosis": "Febrile Neutropenia",
       "aliases": [],
       "category": "Immunology II",
@@ -4967,7 +5327,7 @@
       "management": "Medical emergency requiring prompt broad-spectrum empiric antimicrobials, blood cultures, sepsis management, and oncology/hematology-directed supportive care."
     },
     {
-      "id": 135,
+      "id": 146,
       "diagnosis": "Chronic Granulomatous Disease",
       "aliases": [],
       "category": "Immunology II",
@@ -5004,7 +5364,7 @@
       "management": "Aggressive treatment of infections, antibacterial and antifungal prophylaxis, interferon-gamma in selected patients, specialist immunology follow-up, and hematopoietic stem cell transplant when appropriate."
     },
     {
-      "id": 136,
+      "id": 147,
       "diagnosis": "Leukocyte Adhesion Deficiency",
       "aliases": [],
       "category": "Immunology II",
@@ -5039,7 +5399,7 @@
       "management": "Aggressive treatment of bacterial infections, infection prophylaxis, wound care, immunology referral, and hematopoietic stem cell transplant for severe disease."
     },
     {
-      "id": 137,
+      "id": 148,
       "diagnosis": "Terminal Complement Deficiency",
       "aliases": [],
       "category": "Immunology II",
@@ -5074,7 +5434,7 @@
       "management": "Vaccination against Neisseria meningitidis, consideration of antibiotic prophylaxis, urgent treatment of febrile illness, and patient education about recurrent invasive Neisseria risk."
     },
     {
-      "id": 138,
+      "id": 149,
       "diagnosis": "Severe Combined Immunodeficiency (SCID)",
       "aliases": [
         "SCID",
@@ -5115,7 +5475,7 @@
       "management": "Protective isolation, urgent immunology and infectious diseases referral, avoidance of live vaccines, antimicrobial prophylaxis including PJP prophylaxis, and hematopoietic stem cell transplant."
     },
     {
-      "id": 139,
+      "id": 150,
       "diagnosis": "DiGeorge Syndrome (22q11 Deletion Syndrome)",
       "aliases": [
         "22q11 Deletion Syndrome",
@@ -5156,7 +5516,7 @@
       "management": "Manage cardiac defects and hypocalcemia, avoid live vaccines if severe T-cell deficiency is present, provide immunology follow-up, and coordinate multidisciplinary care for palate, developmental, and neuropsychiatric manifestations."
     },
     {
-      "id": 140,
+      "id": 151,
       "diagnosis": "X-Linked Agammaglobulinemia",
       "aliases": [],
       "category": "Immunology II",
@@ -5191,7 +5551,7 @@
       "management": "Lifelong immunoglobulin replacement with IVIG or SCIG, prompt treatment of infections, avoidance of selected live vaccines, and immunology follow-up."
     },
     {
-      "id": 141,
+      "id": 152,
       "diagnosis": "Hyper-IgM Syndrome",
       "aliases": [],
       "category": "Immunology II",
@@ -5226,7 +5586,7 @@
       "management": "Immunoglobulin replacement, antimicrobial prophylaxis including PJP prophylaxis when indicated, aggressive infection treatment, immunology follow-up, and hematopoietic stem cell transplant for severe CD40L deficiency."
     },
     {
-      "id": 142,
+      "id": 153,
       "diagnosis": "Common Variable Immunodeficiency (CVID)",
       "aliases": [
         "CVID",
@@ -5264,7 +5624,7 @@
       "management": "Regular immunoglobulin replacement with IVIG or SCIG, prompt antibiotics for infections, monitoring for autoimmune disease, bronchiectasis, and malignancy, and immunology follow-up."
     },
     {
-      "id": 143,
+      "id": 154,
       "diagnosis": "Plasmapheresis for Preformed Antibody-Mediated Disease",
       "aliases": [],
       "category": "Immunology II",
@@ -5299,7 +5659,7 @@
       "management": "Plasma exchange to remove circulating antibodies, combined with immunosuppression to reduce ongoing antibody production, with specialist-directed transplant or autoimmune disease management."
     },
     {
-      "id": 144,
+      "id": 155,
       "diagnosis": "Corticosteroid-Induced Osteonecrosis",
       "aliases": [],
       "category": "Immunology II",
@@ -5337,7 +5697,7 @@
       "management": "Evaluate promptly with imaging, reduce corticosteroid exposure when clinically feasible, use steroid-sparing therapy where appropriate, manage pain and mobility, and refer to orthopedics if osteonecrosis is confirmed."
     },
     {
-      "id": 145,
+      "id": 156,
       "diagnosis": "Rituximab-Associated Secondary Humoral Immunodeficiency",
       "aliases": [],
       "category": "Immunology II",
@@ -5372,7 +5732,7 @@
       "management": "Monitor immunoglobulins and infections, treat infections promptly, consider immunoglobulin replacement for clinically significant recurrent infections, and coordinate with hematology/immunology."
     },
     {
-      "id": 146,
+      "id": 157,
       "diagnosis": "Methotrexate Toxicity",
       "aliases": [],
       "category": "Immunology II",
@@ -5407,7 +5767,7 @@
       "management": "Hold or adjust methotrexate, assess CBC/liver/renal function, provide folinic acid rescue when indicated, treat complications, and use specialist guidance for future dosing."
     },
     {
-      "id": 147,
+      "id": 158,
       "diagnosis": "Reactive Arthritis",
       "aliases": [],
       "category": "Immunology II",
@@ -5442,7 +5802,7 @@
       "management": "NSAIDs for symptom control, treat any persistent triggering infection when present, physical therapy, and rheumatology-directed therapy for persistent or severe disease."
     },
     {
-      "id": 151,
+      "id": 162,
       "diagnosis": "Deep Vein Thrombosis (DVT)",
       "aliases": [
         "DVT",
@@ -5479,7 +5839,7 @@
       "management": "Anticoagulation with agents such as direct oral anticoagulants or heparin, with thrombolysis or thrombectomy reserved for selected high-risk cases."
     },
     {
-      "id": 152,
+      "id": 163,
       "diagnosis": "Pulmonary Embolism (PE)",
       "aliases": [
         "PE",
@@ -5520,7 +5880,7 @@
       "management": "Anticoagulation, while thrombolysis or thrombectomy may be required for hemodynamically unstable patients with massive pulmonary embolism."
     },
     {
-      "id": 153,
+      "id": 164,
       "diagnosis": "Superficial Thrombophlebitis",
       "aliases": [],
       "category": "Blood II",
@@ -5555,7 +5915,7 @@
       "management": "Mobilization, compression therapy, NSAIDs, and anticoagulation for extensive disease or thrombi located near the deep venous system."
     },
     {
-      "id": 154,
+      "id": 165,
       "diagnosis": "Phlegmasia Cerulea Dolens",
       "aliases": [],
       "category": "Blood II",
@@ -5590,7 +5950,7 @@
       "management": "Vascular emergency and includes immediate anticoagulation, catheter-directed thrombolysis, thrombectomy, or other interventions to prevent venous gangrene, limb loss, and death."
     },
     {
-      "id": 155,
+      "id": 166,
       "diagnosis": "Hereditary Hemorrhagic Telangiectasia (HHT)",
       "aliases": [
         "HHT",
@@ -5628,7 +5988,7 @@
       "management": "Iron supplementation, treatment of bleeding lesions, embolization of AVMs, and surveillance for complications in affected organ systems"
     },
     {
-      "id": 156,
+      "id": 167,
       "diagnosis": "Type 1 Von Willebrand Disease (VWD)",
       "aliases": [
         "VWD",
@@ -5666,7 +6026,7 @@
       "management": "Desmopressin for many patients, antifibrinolytics for mucosal bleeding, and von Willebrand factor replacement in severe cases or major surgery."
     },
     {
-      "id": 157,
+      "id": 168,
       "diagnosis": "Type 2 Von Willebrand Disease (VWD)",
       "aliases": [
         "VWD",
@@ -5704,7 +6064,7 @@
       "management": "Management depends on subtype and may include desmopressin, antifibrinolytics, or von Willebrand factor concentrates for significant bleeding or surgical procedures."
     },
     {
-      "id": 158,
+      "id": 169,
       "diagnosis": "Hemophilia A/B",
       "aliases": [],
       "category": "Blood II",
@@ -5739,7 +6099,7 @@
       "management": "Factor VIII (or IX for B) replacement therapy, bleeding prophylaxis in severe disease, and avoidance of medications that increase bleeding risk."
     },
     {
-      "id": 159,
+      "id": 170,
       "diagnosis": "Disseminated Intravascular Coagulation (DIC)",
       "aliases": [
         "DIC",
@@ -5780,7 +6140,7 @@
       "management": "Management focuses on treating the underlying cause, supportive transfusion therapy when indicated, and close monitoring for life-threatening bleeding and organ failure. Platelets are not typically given."
     },
     {
-      "id": 160,
+      "id": 171,
       "diagnosis": "Tension Pneumothorax",
       "aliases": [],
       "category": "Blood II",
@@ -5818,7 +6178,7 @@
       "management": "Immediate needle decompression followed by chest tube thoracostomy to prevent cardiovascular collapse and death."
     },
     {
-      "id": 161,
+      "id": 172,
       "diagnosis": "Hemothorax",
       "aliases": [],
       "category": "Blood II",
@@ -5856,7 +6216,7 @@
       "management": "Prompt chest tube thoracostomy, volume resuscitation, and surgical intervention for ongoing hemorrhage or massive hemothorax."
     },
     {
-      "id": 162,
+      "id": 173,
       "diagnosis": "Flail Chest",
       "aliases": [],
       "category": "Blood II",
@@ -5891,7 +6251,7 @@
       "management": "Aggressive pain control, respiratory support, pulmonary hygiene, and, in selected cases, surgical rib fixation"
     },
     {
-      "id": 163,
+      "id": 174,
       "diagnosis": "Fat Embolism Syndrome",
       "aliases": [],
       "category": "Blood II",
@@ -5932,7 +6292,7 @@
       "management": "Management is primarily supportive, including oxygen therapy, mechanical ventilation when necessary, and early stabilization of fractures to reduce risk."
     },
     {
-      "id": 164,
+      "id": 175,
       "diagnosis": "Hairy Cell Leukemia",
       "aliases": [],
       "category": "Blood III",
@@ -5967,7 +6327,7 @@
       "management": "Purine analogs such as cladribine, which produce high rates of long-term remission."
     },
     {
-      "id": 165,
+      "id": 176,
       "diagnosis": "Primary Myelofibrosis",
       "aliases": [],
       "category": "Blood III",
@@ -6002,7 +6362,7 @@
       "management": "Management depends on risk stratification and may include JAK inhibitors such as ruxolitinib, transfusion support, and allogeneic stem cell transplantation in selected patients."
     },
     {
-      "id": 166,
+      "id": 177,
       "diagnosis": "Chronic Myeloid Leukemia (CML)",
       "aliases": [
         "CML",
@@ -6040,7 +6400,7 @@
       "management": "Management primarily consists of tyrosine kinase inhibitors such as imatinib, which have dramatically improved long-term survival. Due to progression to blast crisis during an accelerated phase, treatment should be started promptly."
     },
     {
-      "id": 167,
+      "id": 178,
       "diagnosis": "Schistosomiasis",
       "aliases": [],
       "category": "Blood III",
@@ -6075,7 +6435,7 @@
       "management": "Treatment consists of praziquantel, while prevention focuses on avoiding contaminated freshwater exposure in endemic regions"
     },
     {
-      "id": 168,
+      "id": 179,
       "diagnosis": "Leischmaniasis",
       "aliases": [],
       "category": "Blood III",
@@ -6110,7 +6470,7 @@
       "management": "Liposomal amphotericin B, while prevention focuses on vector control and reducing exposure to sandflies in endemic regions."
     },
     {
-      "id": 169,
+      "id": 180,
       "diagnosis": "Mononucleosis",
       "aliases": [],
       "category": "Blood III",
@@ -6145,7 +6505,7 @@
       "management": "Management is supportive and includes avoidance of contact sports during splenic enlargement because of the risk of splenic rupture."
     },
     {
-      "id": 170,
+      "id": 181,
       "diagnosis": "Felty Syndrome",
       "aliases": [],
       "category": "Blood III",
@@ -6180,7 +6540,7 @@
       "management": "Controlling rheumatoid arthritis with disease-modifying therapy, particularly methotrexate, and addressing infection risk; granulocyte colony-stimulating factor may be used in selected cases"
     },
     {
-      "id": 171,
+      "id": 182,
       "diagnosis": "Myelodysplastic Syndrome (MDS)",
       "aliases": [
         "MDS",
@@ -6218,7 +6578,7 @@
       "management": "Management ranges from supportive transfusions and growth factors to hypomethylating agents and allogeneic stem cell transplantation in selected patients."
     },
     {
-      "id": 172,
+      "id": 183,
       "diagnosis": "Acute Myelogenous Leukemia (AML)",
       "aliases": [
         "AML",
@@ -6256,7 +6616,7 @@
       "management": "Induction chemotherapy, targeted therapies for specific mutations, and stem cell transplantation in selected patients"
     },
     {
-      "id": 173,
+      "id": 184,
       "diagnosis": "Acute Lymphoblastic Leukemia (ALL)",
       "aliases": [
         "ALL",
@@ -6294,7 +6654,7 @@
       "management": "Treatment consists of multi-agent chemotherapy with central nervous system prophylaxis."
     },
     {
-      "id": 174,
+      "id": 185,
       "diagnosis": "Thrombotic Thrombocytopenic Purpura (TTP)",
       "aliases": [
         "TTP",
@@ -6332,7 +6692,7 @@
       "management": "Management is a hematologic emergency requiring urgent plasma exchange, corticosteroids, and often immunosuppressive therapy such as rituximab."
     },
     {
-      "id": 175,
+      "id": 186,
       "diagnosis": "Immune Thrombocytopenic Purpura (ITP)",
       "aliases": [
         "ITP",
@@ -6370,7 +6730,7 @@
       "management": "Management depends on bleeding severity and platelet count and may include corticosteroids, intravenous immunoglobulin, rituximab, thrombopoietin receptor agonists, or splenectomy in refractory cases."
     },
     {
-      "id": 176,
+      "id": 187,
       "diagnosis": "Chronic Neutrophilic Leukemia (CNL)",
       "aliases": [
         "CNL",
@@ -6408,7 +6768,7 @@
       "management": "Cytoreductive therapy, JAK-pathway-targeted treatments in selected cases, and allogeneic stem cell transplantation for eligible patients with advanced disease."
     },
     {
-      "id": 177,
+      "id": 188,
       "diagnosis": "Polycythemia Vera",
       "aliases": [],
       "category": "Blood III",
@@ -6443,7 +6803,7 @@
       "management": "Periodic phlebotomy, low-dose aspirin, and cytoreductive therapy such as hydroxyurea for high-risk patients."
     },
     {
-      "id": 178,
+      "id": 189,
       "diagnosis": "Essential Thrombocythemia",
       "aliases": [],
       "category": "Blood III",
@@ -6478,7 +6838,7 @@
       "management": "Low-dose aspirin for symptom control and thrombosis prevention, with cytoreductive therapy such as hydroxyurea used in higher-risk patients."
     },
     {
-      "id": 179,
+      "id": 190,
       "diagnosis": "Febrile Neutropenia",
       "aliases": [],
       "category": "Blood III",
@@ -6513,7 +6873,7 @@
       "management": "Medical emergency requiring immediate empiric broad-spectrum intravenous antibiotics with antipseudomonal coverage, supportive care, and consideration of antifungal therapy if fever persists."
     },
     {
-      "id": 180,
+      "id": 191,
       "diagnosis": "Agranulocytosis",
       "aliases": [],
       "category": "Blood III",
@@ -6548,7 +6908,7 @@
       "management": "Management requires immediate discontinuation of the offending agent, broad-spectrum antibiotics for suspected infection, supportive care, and consideration of granulocyte colony-stimulating factor (G-CSF) in severe cases."
     },
     {
-      "id": 181,
+      "id": 192,
       "diagnosis": "Duffy-Associated Neutrophil Count (DANC)",
       "aliases": [
         "DANC",
@@ -6586,7 +6946,7 @@
       "management": "No treatment is required, and recognition helps prevent unnecessary investigations or medication discontinuation."
     },
     {
-      "id": 182,
+      "id": 193,
       "diagnosis": "Follicular Lymphoma",
       "aliases": [],
       "category": "Blood III",
@@ -6623,7 +6983,7 @@
       "management": "Management ranges from active surveillance in asymptomatic patients to immunochemotherapy, commonly including rituximab."
     },
     {
-      "id": 183,
+      "id": 194,
       "diagnosis": "Spontaneous Tumour Lysis Syndrome",
       "aliases": [],
       "category": "Blood III",
@@ -6658,7 +7018,7 @@
       "management": "Aggressive intravenous hydration, cardiac monitoring, correction of electrolyte abnormalities, and uric acid-lowering therapy such as rasburicase. Immediate recognition is critical because fatal arrhythmias and renal failure may occur."
     },
     {
-      "id": 184,
+      "id": 195,
       "diagnosis": "Chronic Lymphocytic Leukemia (CLL)",
       "aliases": [
         "CLL",
@@ -6696,7 +7056,7 @@
       "management": "Management ranges from active surveillance in asymptomatic patients to targeted therapies such as BTK inhibitors or BCL2 inhibitors in symptomatic disease."
     },
     {
-      "id": 185,
+      "id": 196,
       "diagnosis": "Autoimmune Hemolytic Anemia (AIHA)",
       "aliases": [
         "AIHA",
@@ -6734,7 +7094,7 @@
       "management": "Management generally includes corticosteroids, treatment of the underlying condition, rituximab, and occasionally splenectomy for refractory disease."
     },
     {
-      "id": 186,
+      "id": 197,
       "diagnosis": "Multiple Myeloma (MM)",
       "aliases": [
         "MM",
@@ -6775,7 +7135,7 @@
       "management": "Combination chemotherapy, immunomodulatory agents, proteasome inhibitors, anti-CD38 monoclonal antibodies, bisphosphonates, and autologous stem cell transplantation in eligible patients."
     },
     {
-      "id": 187,
+      "id": 198,
       "diagnosis": "Monoclonal Gammopathy of Undetermined Significance (MGUS)",
       "aliases": [
         "MGUS",
@@ -6813,7 +7173,7 @@
       "management": "Periodic monitoring because MGUS carries an approximately 1% annual risk of progression to multiple myeloma, amyloidosis, or another plasma cell or lymphoproliferative disorder."
     },
     {
-      "id": 188,
+      "id": 199,
       "diagnosis": "Smoldering Multiple Myeloma (SMM)",
       "aliases": [
         "SMM",
@@ -6851,7 +7211,7 @@
       "management": "Management consists primarily of risk stratification and close surveillance, as patients remain at significant risk of progression to symptomatic multiple myeloma over time."
     },
     {
-      "id": 191,
+      "id": 202,
       "diagnosis": "Essential Hypertension",
       "aliases": [],
       "category": "Cardiovascular I",
@@ -6886,7 +7246,7 @@
       "management": "Lifestyle modifications, weight loss, exercise, sodium restriction and medications such as ACE Inhibitors, ARBs, Thiazides etc. DASH diet."
     },
     {
-      "id": 192,
+      "id": 203,
       "diagnosis": "Angina Pectoris",
       "aliases": [],
       "category": "Cardiovascular I",
@@ -6921,7 +7281,7 @@
       "management": "Risk-factor reduction, antiplatelet therapy when indicated, statins, beta blockers, nitrates, and evaluation for revascularization if needed."
     },
     {
-      "id": 193,
+      "id": 204,
       "diagnosis": "Heart Failure",
       "aliases": [],
       "category": "Cardiovascular I",
@@ -6956,7 +7316,7 @@
       "management": "Restrict sodium and fluid intake, administer diuretics and guideline directed medical therapy such as ACEi, ARBs, B-blockers, SGLT2 inhibitors etc."
     },
     {
-      "id": 194,
+      "id": 205,
       "diagnosis": "Myocardial Infarction",
       "aliases": [],
       "category": "Cardiovascular I",
@@ -6994,7 +7354,7 @@
       "management": "Obtain 12-lead ECG and cardiac biomarkers, administer aspirin unless contraindicated, nitroglycerin, establish IV access and initiate continous cardiac monitoring. Arrange urgent reperfusion therapy and monitor closely"
     },
     {
-      "id": 195,
+      "id": 206,
       "diagnosis": "Myocardial Infarction (atypical)",
       "aliases": [
         "atypical",
@@ -7032,7 +7392,7 @@
       "management": "Obtain 12-lead ECG and cardiac biomarkers, administer aspirin unless contraindicated, nitroglycerin, establish IV access and initiate continous cardiac monitoring. Arrange urgent reperfusion therapy and monitor closely"
     },
     {
-      "id": 197,
+      "id": 208,
       "diagnosis": "Acute Limb Ischemia (ALI)",
       "aliases": [
         "ALI",
@@ -7073,7 +7433,7 @@
       "management": "Immediate management includes systemic anticoagulation with heparin and urgent revascularization through thrombectomy, thrombolysis, or surgical bypass to prevent irreversible tissue loss and amputation."
     },
     {
-      "id": 198,
+      "id": 209,
       "diagnosis": "Arterial Insufficiency (Peripheral Artery Disease [PAD])",
       "aliases": [
         "Peripheral Artery Disease [PAD]",
@@ -7111,7 +7471,7 @@
       "management": "Smoking cessation, supervised exercise therapy, statins, antiplatelet therapy, risk-factor modification, and revascularization for severe or limb-threatening disease."
     },
     {
-      "id": 199,
+      "id": 210,
       "diagnosis": "Acute on Chronic Limb Ischemia",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7149,7 +7509,7 @@
       "management": "Immediate anticoagulation, urgent vascular assessment, and revascularization through endovascular or surgical intervention."
     },
     {
-      "id": 200,
+      "id": 211,
       "diagnosis": "Chronic Venous Insufficiency (CVI)",
       "aliases": [
         "CVI",
@@ -7187,7 +7547,7 @@
       "management": "Compression therapy, leg elevation, exercise, weight reduction, wound care, and endovenous or surgical interventions for selected patients."
     },
     {
-      "id": 201,
+      "id": 212,
       "diagnosis": "Compartment Syndrome",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7222,7 +7582,7 @@
       "management": "Definitive treatment is emergent fasciotomy to prevent irreversible muscle necrosis, nerve injury, limb loss, and systemic complications."
     },
     {
-      "id": 202,
+      "id": 213,
       "diagnosis": "Wolff-Parkinson-White (WPW) Syndrome",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7260,7 +7620,7 @@
       "management": "Management may include vagal maneuvers, antiarrhythmic therapy in selected cases, and catheter ablation, which is often curative."
     },
     {
-      "id": 203,
+      "id": 214,
       "diagnosis": "1st Degree Heart Block",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7298,7 +7658,7 @@
       "management": "Treatment is typically unnecessary unless associated with symptomatic conduction disease or an underlying reversible cause."
     },
     {
-      "id": 204,
+      "id": 215,
       "diagnosis": "Mobitz Type 1 2nd Degree Heart Block (Wenckebach)",
       "aliases": [
         "Wenckebach",
@@ -7339,7 +7699,7 @@
       "management": "Observation and treatment of reversible causes."
     },
     {
-      "id": 205,
+      "id": 216,
       "diagnosis": "Mobitz Type 2 2nd Degree Heart Block",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7376,7 +7736,7 @@
       "management": "Mobitz II frequently progresses to complete heart block and is associated with an unstable escape rhythm, permanent pacemaker implantation is generally recommended even in minimally symptomatic patients."
     },
     {
-      "id": 206,
+      "id": 217,
       "diagnosis": "Complete Heart Block (3rd Degree Block)",
       "aliases": [
         "3rd Degree Block",
@@ -7416,7 +7776,7 @@
       "management": "Definitive treatment is permanent pacemaker implantation because of the risk of profound bradycardia and sudden cardiac death."
     },
     {
-      "id": 207,
+      "id": 218,
       "diagnosis": "Atrial Fibrillation (Afib)",
       "aliases": [
         "Afib",
@@ -7457,7 +7817,7 @@
       "management": "Management focuses on rate or rhythm control and stroke prevention through anticoagulation guided by thromboembolic risk assessment."
     },
     {
-      "id": 208,
+      "id": 219,
       "diagnosis": "Atrial Flutter",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7495,7 +7855,7 @@
       "management": "Rate control, anticoagulation when indicated, cardioversion, and catheter ablation, which is highly effective and often curative."
     },
     {
-      "id": 209,
+      "id": 220,
       "diagnosis": "Ventricular Fibrillation (VFib)",
       "aliases": [
         "VFib",
@@ -7536,7 +7896,7 @@
       "management": "Management requires immediate high-quality CPR and unsynchronized defibrillation, followed by advanced cardiac life support and treatment of the underlying cause."
     },
     {
-      "id": 210,
+      "id": 221,
       "diagnosis": "Monomorphic Ventricular Tachycardia (MonoVT)",
       "aliases": [
         "MonoVT",
@@ -7577,7 +7937,7 @@
       "management": "Management depends on hemodynamic stability and may include synchronized cardioversion, antiarrhythmic therapy, catheter ablation, and implantable cardioverter-defibrillator placement for secondary prevention."
     },
     {
-      "id": 211,
+      "id": 222,
       "diagnosis": "Polymorphic Ventricular Tachycardia (Torsades de Pointes)",
       "aliases": [
         "Torsades de Pointes",
@@ -7618,7 +7978,7 @@
       "management": "Acute management includes intravenous magnesium sulfate, correction of electrolyte abnormalities, withdrawal of offending medications, and electrical cardioversion if the patient is unstable."
     },
     {
-      "id": 212,
+      "id": 223,
       "diagnosis": "Bacterial Endocarditis",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7656,7 +8016,7 @@
       "management": "Prolonged intravenous antibiotics and, in selected cases, surgical valve repair or replacement."
     },
     {
-      "id": 213,
+      "id": 224,
       "diagnosis": "Constrictive Pericarditis",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7694,7 +8054,7 @@
       "management": "Definitive treatment is surgical pericardiectomy."
     },
     {
-      "id": 214,
+      "id": 225,
       "diagnosis": "Carotid Artery Disease",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7729,7 +8089,7 @@
       "management": "Aggressive risk-factor modification, antiplatelet therapy, statins, and carotid endarterectomy or carotid artery stenting in selected patients with significant stenosis."
     },
     {
-      "id": 215,
+      "id": 226,
       "diagnosis": "Critical Limb Ischemia (CLI)",
       "aliases": [
         "CLI",
@@ -7767,7 +8127,7 @@
       "management": "Aggressive cardiovascular risk reduction, wound care, pain control, and prompt revascularization when feasible to prevent amputation and reduce mortality."
     },
     {
-      "id": 216,
+      "id": 227,
       "diagnosis": "Ruptured Abdominal Aortic Aneurysm (rAAA)",
       "aliases": [
         "rAAA",
@@ -7808,7 +8168,7 @@
       "management": "Immediate vascular surgical intervention, permissive hypotension, blood product resuscitation, and either open repair or endovascular aneurysm repair (EVAR). IV hydromorphone, anti-impulse therapy to prevent false-lumen propagation (target SBP 100 mmHg, HR ~70 bpm), esmolol to reduce heart's workload"
     },
     {
-      "id": 217,
+      "id": 228,
       "diagnosis": "Aortic Dissection",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7846,7 +8206,7 @@
       "management": "Initial management includes rapid heart rate and blood pressure control with intravenous beta-blockers. Stanford type A dissections generally require emergent surgery, whereas uncomplicated type B dissections are often managed medically."
     },
     {
-      "id": 218,
+      "id": 229,
       "diagnosis": "Vasovagal Syncope",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7877,7 +8237,7 @@
       "management": "Reassurance, trigger avoidance, hydration, physical counterpressure maneuvers, and education regarding recognition of prodromal symptoms."
     },
     {
-      "id": 219,
+      "id": 230,
       "diagnosis": "Arrhythmia-induced Syncope",
       "aliases": [],
       "category": "Cardiovascular III",
@@ -7912,7 +8272,7 @@
       "management": "Management targets the underlying rhythm disturbance and may include antiarrhythmic therapy, catheter ablation, pacemaker implantation, or implantable cardioverter-defibrillator placement."
     },
     {
-      "id": 220,
+      "id": 231,
       "diagnosis": "Carotid Sinus Syncope (reflex syncope)",
       "aliases": [
         "reflex syncope",
@@ -7950,7 +8310,7 @@
       "management": "Avoiding triggers, treating contributing medications, and, in patients with a predominant cardioinhibitory response, permanent pacemaker implantation."
     },
     {
-      "id": 221,
+      "id": 232,
       "diagnosis": "Mitral Stenosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -7985,7 +8345,7 @@
       "management": "Mitral stenosis management includes medical therapy (rate control with beta-blockers, diuretics for congestion, anticoagulation for atrial fibrillation) and intervention for severe MS (MVA ≤1.5 cm²). Percutaneous mitral balloon commissurotomy (PMBC) is first-line for favorable valve morphology; mitral valve surgery (commissurotomy or replacement) is indicated when anatomy is unfavorable or PMBC fails"
     },
     {
-      "id": 222,
+      "id": 233,
       "diagnosis": "Primary Mitral Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8020,7 +8380,7 @@
       "management": "Surgical MV repair (preferred over replacement) when severe and symptomatic, or asymptomatic with LVEF ≤60% or LVESD ≥40 mm. No medical therapy reduces MR severity. TEER is reserved for high-surgical-risk patients. Serial echocardiographic surveillance guides intervention timing"
     },
     {
-      "id": 223,
+      "id": 234,
       "diagnosis": "Functional Mitral Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8055,7 +8415,7 @@
       "management": "Guideline-directed heart failure therapy and, in selected patients, transcatheter or surgical intervention."
     },
     {
-      "id": 224,
+      "id": 235,
       "diagnosis": "Bicuspid Aortic Valve",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8090,7 +8450,7 @@
       "management": "lifelong surveillance of both valve function and aortopathy. Valve intervention (SAVR or repair) follows standard AS/AR indications. Aortic replacement is recommended at ≥5.5 cm (or ≥5.0 cm with risk factors like family history of dissection or rapid growth). Concomitant aortic replacement is reasonable at ≥4.5 cm during AVR"
     },
     {
-      "id": 225,
+      "id": 236,
       "diagnosis": "Aortic Stenosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8125,7 +8485,7 @@
       "management": "AVR for symptomatic severe high-gradient AS as a Class I indication, and for asymptomatic severe AS with LVEF <50%. In asymptomatic severe AS, AVR is reasonable when exercise testing shows decreased tolerance or BP drop ≥10 mmHg, aortic velocity ≥5 m/s, BNP >3× normal, or velocity increase ≥0.3 m/s/year. SAVR is preferred for patients <65 years; TAVR for those ≥80 years; shared decision-making guides ages 65–80. Asymptomatic patients not meeting intervention criteria require echocardiographic surveillance every 6–12 months."
     },
     {
-      "id": 226,
+      "id": 237,
       "diagnosis": "Aortic Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8160,7 +8520,7 @@
       "management": "Surgical aortic valve replacement (SAVR) as the definitive treatment for chronic severe aortic regurgitation. Key indications include: symptomatic severe AR regardless of LV function (Class I), asymptomatic severe AR with LVEF ≤55% (Class I), and severe LV enlargement (LVESD >50 mm) with normal LVEF (Class IIa). Medical therapy with afterload reduction (ACE inhibitors, ARBs, or dihydropyridine CCBs) is reserved for hypertension management or when surgery is contraindicated. TAVI should not be performed in surgical candidates with isolated severe AR."
     },
     {
-      "id": 227,
+      "id": 238,
       "diagnosis": "Primary Tricuspid Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8195,7 +8555,7 @@
       "management": "Severe disease may require surgical or transcatheter intervention."
     },
     {
-      "id": 228,
+      "id": 239,
       "diagnosis": "Functional Tricuspid Regurgitation",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8230,7 +8590,7 @@
       "management": "Management focuses on treatment of the underlying cardiac or pulmonary disorder and, in selected patients, valve intervention."
     },
     {
-      "id": 229,
+      "id": 240,
       "diagnosis": "Tetralogy of Fallot (TOF)",
       "aliases": [
         "TOF",
@@ -8270,7 +8630,7 @@
       "management": "Surgical repair during infancy. Lifelong surveillance for pulmonary regurgitation and RV dysfunction with pulmonary valve replacement when indicated"
     },
     {
-      "id": 230,
+      "id": 241,
       "diagnosis": "Transposition of the Great Arteries (TGA)",
       "aliases": [
         "TGA",
@@ -8311,7 +8671,7 @@
       "management": "Immediate management includes Alprostadil infusion (PGE1) to maintain ductal patency, followed by definitive surgical correction with an arterial switch procedure."
     },
     {
-      "id": 231,
+      "id": 242,
       "diagnosis": "Truncus Arteriosus (PTA)",
       "aliases": [
         "PTA",
@@ -8349,7 +8709,7 @@
       "management": "Truncus arteriosus requires early surgical repair, typically within the first few weeks of life. The procedure involves separating the single truncal vessel into the aorta and pulmonary artery, closing the ventricular septal defect (VSD) with a patch, and establishing right ventricle-to-pulmonary artery continuity using a valved conduit (Rastelli procedure). Lifelong follow-up is essential for conduit replacement."
     },
     {
-      "id": 232,
+      "id": 243,
       "diagnosis": "Eisenmenger Syndrome",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8384,7 +8744,7 @@
       "management": "Eisenmenger's syndrome management focuses on supportive care and pulmonary vasodilator therapy, as surgical correction is contraindicated once irreversible pulmonary hypertension develops. Key strategies include pulmonary arterial hypertension-targeted therapies (e.g., bosentan, phosphodiesterase-5 inhibitors, prostanoids), avoidance of dehydration and pregnancy, phlebotomy for hyperviscosity symptoms, and consideration of heart-lung transplantation for refractory cases."
     },
     {
-      "id": 233,
+      "id": 244,
       "diagnosis": "Tricuspid Atresia",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8419,7 +8779,7 @@
       "management": "Definitive treatment involves staged surgical palliation, often culminating in a Fontan procedure."
     },
     {
-      "id": 234,
+      "id": 245,
       "diagnosis": "Total Anomalous Pulmonary Venous Connection (TAPVC/TAPVR)",
       "aliases": [
         "TAPVC",
@@ -8461,7 +8821,7 @@
       "management": "Total anomalous pulmonary venous return (TAPVR) requires urgent surgical repair, often within the neonatal period. Surgery involves redirecting the pulmonary veins to drain into the left atrium by creating an anastomosis between the pulmonary venous confluence and the left atrium, ligating the anomalous connection, and closing the associated atrial septal defect. Obstructed TAPVR is a surgical emergency."
     },
     {
-      "id": 235,
+      "id": 246,
       "diagnosis": "Ebstein's Anomaly",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8496,7 +8856,7 @@
       "management": "Management ranges from observation to surgical repair depending on severity."
     },
     {
-      "id": 236,
+      "id": 247,
       "diagnosis": "Pulmonary Stenosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8534,7 +8894,7 @@
       "management": "Severe disease is often treated with balloon valvuloplasty."
     },
     {
-      "id": 237,
+      "id": 248,
       "diagnosis": "Pulmonary Atresia",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8569,7 +8929,7 @@
       "management": "Definitive treatment requires staged surgical or catheter-based intervention."
     },
     {
-      "id": 238,
+      "id": 249,
       "diagnosis": "Acute Pericarditis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8606,7 +8966,7 @@
       "management": "Acute pericarditis is primarily managed with NSAIDs (e.g., ibuprofen or aspirin) combined with colchicine, which reduces recurrence risk. Activity restriction is recommended until symptom resolution. Corticosteroids are reserved for contraindications to first-line therapy or refractory cases, used at low doses. Treatment of underlying etiology is essential. Hospitalization is indicated for high-risk features."
     },
     {
-      "id": 239,
+      "id": 250,
       "diagnosis": "Pericardial Effusion",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8644,7 +9004,7 @@
       "management": "Management depends on the underlying cause and hemodynamic significance."
     },
     {
-      "id": 240,
+      "id": 251,
       "diagnosis": "Cardiac Tamponade",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8679,7 +9039,7 @@
       "management": "Emergent pericardiocentesis is the definitive treatment and can be lifesaving."
     },
     {
-      "id": 241,
+      "id": 252,
       "diagnosis": "Atrial Septal Defect (ASD)",
       "aliases": [
         "ASD",
@@ -8717,7 +9077,7 @@
       "management": "Significant defects are often closed to prevent long-term complications such as atrial fibrillation and Eisenmenger syndrome."
     },
     {
-      "id": 242,
+      "id": 253,
       "diagnosis": "Patent Foramen Ovale (PFO)",
       "aliases": [
         "PFO",
@@ -8755,7 +9115,7 @@
       "management": "Management depends on clinical context and may include antithrombotic therapy or transcatheter closure in selected patients with cryptogenic stroke."
     },
     {
-      "id": 243,
+      "id": 254,
       "diagnosis": "Ventricular Septal Defect (VSD)",
       "aliases": [
         "VSD",
@@ -8793,7 +9153,7 @@
       "management": "Small, asymptomatic VSDs often close spontaneously and require only monitoring. Large, hemodynamically significant VSDs causing heart failure or failure to thrive require surgical patch closure, typically by 3–6 months of age to prevent irreversible pulmonary vascular disease. Medical therapy (diuretics, nutritional support) bridges to surgery."
     },
     {
-      "id": 244,
+      "id": 255,
       "diagnosis": "Patent Ductus Arteriosus (PDA)",
       "aliases": [
         "PDA",
@@ -8831,7 +9191,7 @@
       "management": "Closure may occur pharmacologically in premature infants or through transcatheter or surgical intervention."
     },
     {
-      "id": 245,
+      "id": 256,
       "diagnosis": "Coarctation of the Aorta (CoA)",
       "aliases": [
         "CoA",
@@ -8872,7 +9232,7 @@
       "management": "Surgical repair or catheter-based balloon angioplasty/stenting, depending on age and anatomy. Neonates with critical coarctation require prostaglandin E1 to maintain ductal patency before surgical intervention (end-to-end anastomosis or extended resection). Older children and adults may undergo balloon angioplasty with stent placement. Lifelong blood pressure monitoring is essential."
     },
     {
-      "id": 246,
+      "id": 257,
       "diagnosis": "Atrioventricular Septal Defect (AVSD)",
       "aliases": [
         "AVSD",
@@ -8910,7 +9270,7 @@
       "management": "Surgical repair during infancy."
     },
     {
-      "id": 247,
+      "id": 258,
       "diagnosis": "Hyperplastic Arteriolosclerosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8948,7 +9308,7 @@
       "management": "Treatment requires urgent but controlled blood pressure reduction to prevent irreversible end-organ damage."
     },
     {
-      "id": 248,
+      "id": 259,
       "diagnosis": "Hyaline Arteriolosclerosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -8986,7 +9346,7 @@
       "management": "Management focuses on controlling blood pressure, glucose levels, and other cardiovascular risk factors."
     },
     {
-      "id": 249,
+      "id": 260,
       "diagnosis": "Atherosclerosis",
       "aliases": [],
       "category": "Cardiovascular IV",
@@ -9021,7 +9381,7 @@
       "management": "Management centers on lifestyle modification (heart-healthy diet, exercise, smoking cessation, weight management) and aggressive risk factor control, primarily LDL-C lowering with high-intensity statins (≥50% reduction), adding ezetimibe or PCSK9 inhibitors if targets are unmet. Antiplatelet therapy (aspirin), blood pressure control, and glycemic management (including SGLT-2 inhibitors/GLP-1 agonists in diabetics) are essential adjuncts. Revascularization is reserved for symptomatic or high-risk disease."
     },
     {
-      "id": 250,
+      "id": 261,
       "diagnosis": "Pleural Effusion",
       "aliases": [],
       "category": "Respiratory I",
@@ -9059,7 +9419,7 @@
       "management": "Treatment of the underlying cause and drainage when clinically indicated."
     },
     {
-      "id": 251,
+      "id": 262,
       "diagnosis": "Atelectasis",
       "aliases": [],
       "category": "Respiratory I",
@@ -9097,7 +9457,7 @@
       "management": "Lung re-expansion through incentive spirometry, early mobilization, adequate analgesia, chest physiotherapy, and treatment of underlying airway obstruction when present."
     },
     {
-      "id": 252,
+      "id": 263,
       "diagnosis": "Asthma",
       "aliases": [],
       "category": "Respiratory I",
@@ -9135,7 +9495,7 @@
       "management": "Trigger avoidance, inhaled corticosteroids, bronchodilators, and biologic therapies for severe disease. Severe exacerbations can result in respiratory failure if untreated."
     },
     {
-      "id": 253,
+      "id": 264,
       "diagnosis": "Chronic Bronchitis",
       "aliases": [],
       "category": "Respiratory I",
@@ -9166,7 +9526,7 @@
       "management": "Smoking cessation, bronchodilators, pulmonary rehabilitation, vaccination, and supplemental oxygen when indicated."
     },
     {
-      "id": 254,
+      "id": 265,
       "diagnosis": "Emphysema",
       "aliases": [],
       "category": "Respiratory I",
@@ -9201,7 +9561,7 @@
       "management": "Smoking cessation, bronchodilators (LAMA ± LABA), pulmonary rehabilitation, and vaccinations. ICS is added for frequent exacerbations with elevated eosinophils. Severe hyperinflation may warrant lung volume reduction (surgery or bronchoscopic valves/coils). Long-term oxygen is used for chronic hypoxemia. Alpha-1 antitrypsin deficiency requires augmentation therapy."
     },
     {
-      "id": 255,
+      "id": 266,
       "diagnosis": "Chronic Obstructive Pulmonary Disease (COPD)",
       "aliases": [
         "COPD",
@@ -9242,7 +9602,7 @@
       "management": "Smoking cessation, bronchodilators (LAMA ± LABA), pulmonary rehabilitation, and vaccinations. ICS is added for frequent exacerbations with elevated eosinophils. Severe hyperinflation may warrant lung volume reduction (surgery or bronchoscopic valves/coils). Long-term oxygen is used for chronic hypoxemia. Alpha-1 antitrypsin deficiency requires augmentation therapy."
     },
     {
-      "id": 256,
+      "id": 267,
       "diagnosis": "Bronchiestasis",
       "aliases": [],
       "category": "Respiratory I",
@@ -9280,7 +9640,7 @@
       "management": "Bronchiectasis management centers on airway clearance techniques, treating underlying causes, and long-term antibiotics for frequent exacerbators. Vaccinations, pulmonary rehabilitation, and mucoactive agents (e.g., hypertonic saline) support care. Macrolides reduce exacerbations in high-risk patients. Pseudomonas eradication is pursued when newly detected. Surgery is reserved for localized refractory disease."
     },
     {
-      "id": 257,
+      "id": 268,
       "diagnosis": "Idiopathic Pulmonary Fibrosis (IPF)",
       "aliases": [
         "IPF",
@@ -9321,7 +9681,7 @@
       "management": "Antifibrotic agents such as Nintedanib and Pirfenidone, with lung transplantation considered in selected patients. Prednisone and azathioprine (or generally, immunosuppressants) should never be used. They have been shown to worsen survival."
     },
     {
-      "id": 258,
+      "id": 269,
       "diagnosis": "Pulmonary Arterial Hypertension (PAH)",
       "aliases": [
         "PAH",
@@ -9359,7 +9719,7 @@
       "management": "Treatment may include euvolemia maintenance, endothelin receptor antagonists, phosphodiesterase-5 inhibitors, prostacyclin analogues, and lung transplantation in advanced disease."
     },
     {
-      "id": 259,
+      "id": 270,
       "diagnosis": "Amyotrophic Lateral Sclerosis (ALS)",
       "aliases": [
         "ALS",
@@ -9397,7 +9757,7 @@
       "management": "ALS management centers on multidisciplinary care, riluzole (modest survival benefit), and supportive therapies. Edaravone and tofersen (for SOD1 variants) are additional FDA-approved options. Non-invasive ventilation prolongs survival. Gastrostomy supports nutrition. Symptom management addresses sialorrhea, spasticity, pseudobulbar affect, and pain. Palliative care is integral throughout."
     },
     {
-      "id": 260,
+      "id": 271,
       "diagnosis": "Rhinosinusitis",
       "aliases": [],
       "category": "Respiratory I",
@@ -9432,7 +9792,7 @@
       "management": "Treatment includes intranasal corticosteroids, saline irrigation, management of underlying inflammatory disease, biologic therapy in selected patients, and endoscopic sinus surgery for refractory cases."
     },
     {
-      "id": 261,
+      "id": 272,
       "diagnosis": "Duchenne's Muscular Dystrophy (DMD)",
       "aliases": [
         "DMD",
@@ -9470,7 +9830,7 @@
       "management": "Airway clearance therapies, lung-volume recruitment, noninvasive ventilation, corticosteroids, and multidisciplinary care."
     },
     {
-      "id": 262,
+      "id": 273,
       "diagnosis": "Bronchiolitis",
       "aliases": [],
       "category": "Respiratory I",
@@ -9505,7 +9865,7 @@
       "management": "Supportive and includes hydration, nasal suctioning, and oxygen therapy when indicated. Routine antibiotics, corticosteroids, and bronchodilators are generally not recommended."
     },
     {
-      "id": 263,
+      "id": 274,
       "diagnosis": "Alpha-1 Antitrypsin Deficiency",
       "aliases": [],
       "category": "Respiratory I",
@@ -9540,7 +9900,7 @@
       "management": "A1AT deficiency management centers on smoking cessation, standard COPD therapy, and IV augmentation therapy (weekly pooled human AAT) for those with established emphysema and severely reduced AAT levels. Liver disease requires alcohol avoidance and transplantation for advanced cases. Surveillance includes serial PFTs and liver monitoring. Family screening is recommended."
     },
     {
-      "id": 264,
+      "id": 275,
       "diagnosis": "Acute Respiratory Distress Syndrome (ARDS)",
       "aliases": [
         "ARDS",
@@ -9581,7 +9941,7 @@
       "management": "Primarily supportive, including lung-protective mechanical ventilation and treatment of the underlying cause."
     },
     {
-      "id": 265,
+      "id": 276,
       "diagnosis": "Obstructive Sleep Apnea (OSA)",
       "aliases": [
         "OSA",
@@ -9619,7 +9979,7 @@
       "management": "Continuous positive airway pressure (CPAP) is the first-line treatment. Weight loss, exercise, alcohol avoidance, are recommended. Oral appliances used for those who cannot tolerate PAP and uvulopalatopharyngoplasty, maxillomandibular advancement, and hypoglossal nerve stimulation is more moderate to severe cases."
     },
     {
-      "id": 266,
+      "id": 277,
       "diagnosis": "Central Sleep Apnea",
       "aliases": [],
       "category": "Respiratory II",
@@ -9654,7 +10014,7 @@
       "management": "Central sleep apnea management prioritizes treating the underlying cause (e.g., optimizing heart failure therapy, reducing opioids), followed by CPAP, adaptive servo-ventilation (ASV) (avoid in HFrEF with LVEF ≤45%), nocturnal oxygen, phrenic nerve stimulation, or acetazolamide as adjuncts"
     },
     {
-      "id": 267,
+      "id": 278,
       "diagnosis": "Pectus Carinatum",
       "aliases": [],
       "category": "Respiratory II",
@@ -9692,7 +10052,7 @@
       "management": "External bracing during adolescence and surgery for severe cases."
     },
     {
-      "id": 268,
+      "id": 279,
       "diagnosis": "Pectus Excavatum",
       "aliases": [],
       "category": "Respiratory II",
@@ -9730,7 +10090,7 @@
       "management": "Mild cases require reassurance and observation. Symptomatic or severe deformities causing cardiopulmonary compromise or significant psychosocial burden may warrant surgical correction."
     },
     {
-      "id": 269,
+      "id": 280,
       "diagnosis": "Kyphoscoliosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -9765,7 +10125,7 @@
       "management": "Monitor mild curves with serial examinations and radiographs. Progressive deformities may require bracing, while severe curvature, respiratory compromise, or pain warrants surgery."
     },
     {
-      "id": 270,
+      "id": 281,
       "diagnosis": "Inflammatory myositis (Polymyositis)",
       "aliases": [
         "Polymyositis",
@@ -9803,7 +10163,7 @@
       "management": "High-dose corticosteroids followed by steroid-sparing immunosuppressive therapy. Monitor muscle strength, creatine kinase levels, swallowing function, pulmonary involvement, and malignancy risk."
     },
     {
-      "id": 271,
+      "id": 282,
       "diagnosis": "Hypersensitivity Pneumonitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -9838,7 +10198,7 @@
       "management": "Identify and eliminate the offending antigen. Corticosteroids may accelerate recovery in symptomatic disease. Monitor lung function and progression to chronic fibrotic lung disease."
     },
     {
-      "id": 272,
+      "id": 283,
       "diagnosis": "Ankylosing Spondilitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -9873,7 +10233,7 @@
       "management": "Encourage regular exercise and physiotherapy. NSAIDs are first-line therapy. Persistent active disease may require TNF-α or IL-17 inhibitors with ongoing monitoring."
     },
     {
-      "id": 273,
+      "id": 284,
       "diagnosis": "Silicosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -9911,7 +10271,7 @@
       "management": "Eliminate further silica exposure and provide supportive care. Monitor pulmonary function regularly, vaccinate appropriately, and screen for tuberculosis and progressive fibrosis."
     },
     {
-      "id": 274,
+      "id": 285,
       "diagnosis": "Sarcoidosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -9949,7 +10309,7 @@
       "management": "Asymptomatic disease may only require observation. Symptomatic organ involvement is treated with corticosteroids, with immunosuppressive agents reserved for refractory cases."
     },
     {
-      "id": 275,
+      "id": 286,
       "diagnosis": "Tuberculosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -9987,7 +10347,7 @@
       "management": "Treat active disease with multidrug therapy, typically including isoniazid, rifampin, pyrazinamide, and ethambutol. Monitor adherence, drug toxicity, and contacts."
     },
     {
-      "id": 276,
+      "id": 287,
       "diagnosis": "Bird-Fancier's Lung",
       "aliases": [],
       "category": "Respiratory II",
@@ -10022,7 +10382,7 @@
       "management": "Eliminate bird antigen exposure and consider corticosteroids for symptomatic disease. Monitor pulmonary function and imaging for progression to chronic fibrotic lung disease."
     },
     {
-      "id": 277,
+      "id": 288,
       "diagnosis": "Rheumatoid Arthritis",
       "aliases": [],
       "category": "Respiratory II",
@@ -10057,7 +10417,7 @@
       "management": "Treat underlying rheumatoid arthritis and pulmonary inflammation with immunomodulatory therapy. Monitor lung function regularly and provide supportive care for progressive fibrotic disease."
     },
     {
-      "id": 278,
+      "id": 289,
       "diagnosis": "Asbestosis",
       "aliases": [],
       "category": "Respiratory II",
@@ -10095,7 +10455,7 @@
       "management": "Eliminate further asbestos exposure and optimize pulmonary health through smoking cessation, vaccination, and supportive care. Monitor for malignancy and progressive respiratory impairment"
     },
     {
-      "id": 279,
+      "id": 290,
       "diagnosis": "Scleroderma (SSc-ILD)",
       "aliases": [
         "SSc-ILD",
@@ -10133,7 +10493,7 @@
       "management": "Treat progressive lung disease with immunomodulatory therapy and monitor pulmonary function regularly. Manage systemic sclerosis manifestations and screen for pulmonary hypertension"
     },
     {
-      "id": 280,
+      "id": 291,
       "diagnosis": "Amiodarone Induced Pneumonitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -10168,7 +10528,7 @@
       "management": "Immediately discontinue amiodarone and exclude alternative causes of pulmonary symptoms. Corticosteroids are commonly used for significant disease, with close respiratory follow-up."
     },
     {
-      "id": 281,
+      "id": 292,
       "diagnosis": "Nitrofurantoin Induced Pneumonitis",
       "aliases": [],
       "category": "Respiratory II",
@@ -10203,7 +10563,7 @@
       "management": "Immediately discontinue nitrofurantoin and monitor for clinical improvement. Corticosteroids may be considered in severe cases. Follow pulmonary function and imaging resolution."
     },
     {
-      "id": 282,
+      "id": 293,
       "diagnosis": "Narcolepsy",
       "aliases": [],
       "category": "Respiratory II",
@@ -10238,7 +10598,7 @@
       "management": "Treat excessive daytime sleepiness with wake-promoting agents and encourage scheduled naps. Cataplexy may require REM-suppressing medications and ongoing sleep medicine follow-up."
     },
     {
-      "id": 283,
+      "id": 294,
       "diagnosis": "Idiopathic Hypersomnolence",
       "aliases": [],
       "category": "Respiratory II",
@@ -10273,7 +10633,7 @@
       "management": "Optimize sleep hygiene and treat excessive daytime sleepiness with wake-promoting medications. Monitor functional impairment and reassess for alternative sleep disorders if symptoms evolve."
     },
     {
-      "id": 284,
+      "id": 295,
       "diagnosis": "Tracheoesophageal Fistula",
       "aliases": [],
       "category": "Respiratory II",
@@ -10308,7 +10668,7 @@
       "management": "Prevent aspiration with feeding cessation, suctioning, and supportive care. Definitive treatment is surgical repair, followed by monitoring for reflux and respiratory complications."
     },
     {
-      "id": 285,
+      "id": 296,
       "diagnosis": "Congenital Diaphragmatic Hernia",
       "aliases": [],
       "category": "Respiratory II",
@@ -10343,7 +10703,7 @@
       "management": "Prioritize respiratory stabilization and management of pulmonary hypertension. Avoid bag-mask ventilation when possible. Definitive treatment involves surgical repair after cardiopulmonary stabilization"
     },
     {
-      "id": 286,
+      "id": 297,
       "diagnosis": "Mycetoma",
       "aliases": [],
       "category": "Respiratory III",
@@ -10378,7 +10738,7 @@
       "management": "Monitor asymptomatic patients. Significant or recurrent hemoptysis may require surgical resection or bronchial artery embolization. Consider antifungal therapy in selected cases."
     },
     {
-      "id": 287,
+      "id": 298,
       "diagnosis": "Granulomatosis with polyangiitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -10416,7 +10776,7 @@
       "management": "Induce remission with glucocorticoids plus rituximab or cyclophosphamide. Transition to maintenance immunosuppression and monitor closely for renal and pulmonary complications."
     },
     {
-      "id": 288,
+      "id": 299,
       "diagnosis": "Eosinophilic Granulomatosis with polyangiitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -10451,7 +10811,7 @@
       "management": "Treat with systemic glucocorticoids and add immunosuppressive or biologic therapy for organ-threatening disease. Monitor eosinophil counts and cardiac involvement closely."
     },
     {
-      "id": 289,
+      "id": 300,
       "diagnosis": "Goodpasture's Syndrome (antiglomerular basement membrane antibody disease [anti-GBM])",
       "aliases": [
         "antiglomerular basement membrane antibody disease [anti-GBM]",
@@ -10492,7 +10852,7 @@
       "management": "Initiate urgent plasmapheresis with high-dose glucocorticoids and immunosuppression. Monitor pulmonary hemorrhage and renal function closely to prevent irreversible organ damage."
     },
     {
-      "id": 290,
+      "id": 301,
       "diagnosis": "Dieulafoy Lesion",
       "aliases": [],
       "category": "Respiratory III",
@@ -10527,7 +10887,7 @@
       "management": "Stabilize hemodynamics and perform urgent endoscopic hemostasis using clips, thermal coagulation, or injection therapy. Refractory bleeding may require angiographic or surgical intervention."
     },
     {
-      "id": 291,
+      "id": 302,
       "diagnosis": "Empyema",
       "aliases": [],
       "category": "Respiratory III",
@@ -10565,7 +10925,7 @@
       "management": "systemic antibiotics and pleural drainage via chest tube (thoracostomy), with intrapleural tPA plus DNase for loculated collections or VATS decortication if medical therapy fails."
     },
     {
-      "id": 292,
+      "id": 303,
       "diagnosis": "Parapneumonic Effusion",
       "aliases": [],
       "category": "Respiratory III",
@@ -10603,7 +10963,7 @@
       "management": "Treat the underlying pneumonia with appropriate antibiotics. Perform thoracentesis when indicated and drain complicated effusions to prevent progression to empyema."
     },
     {
-      "id": 293,
+      "id": 304,
       "diagnosis": "Primary Pneumothorax",
       "aliases": [],
       "category": "Respiratory III",
@@ -10641,7 +11001,7 @@
       "management": "Small stable pneumothoraces may be observed with oxygen therapy. Larger or symptomatic cases require aspiration or chest tube drainage and recurrence prevention."
     },
     {
-      "id": 294,
+      "id": 305,
       "diagnosis": "Secondary Pneumothorax",
       "aliases": [],
       "category": "Respiratory III",
@@ -10676,7 +11036,7 @@
       "management": "Provide supplemental oxygen and perform chest tube drainage in most cases. Address the underlying lung disease and consider definitive recurrence-prevention strategies."
     },
     {
-      "id": 295,
+      "id": 306,
       "diagnosis": "Acute Bronchitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -10714,7 +11074,7 @@
       "management": "Provide reassurance and supportive care with hydration and symptom control. Antibiotics are generally not indicated unless a specific bacterial cause is suspected."
     },
     {
-      "id": 296,
+      "id": 307,
       "diagnosis": "Group A Streptococcus Pharyngitis",
       "aliases": [],
       "category": "Respiratory III",
@@ -10749,7 +11109,7 @@
       "management": "Treat with penicillin or amoxicillin to reduce transmission and prevent rheumatic fever. Provide analgesia, hydration, and return precautions for complications."
     },
     {
-      "id": 297,
+      "id": 308,
       "diagnosis": "Hospital Associated Pneumonia (HAP)",
       "aliases": [
         "HAP",
@@ -10786,7 +11146,7 @@
       "management": "Empiric antibiotic therapy covering S. aureus, P. aeruginosa, and other gram-negative bacilli for all patients with suspected HAP. MRSA coverage (vancomycin or linezolid): Add only if risk factors for MDR pathogens are present, the unit has >10–20% MRSA prevalence, or local prevalence is unknown. Without MRSA risk: Monotherapy with piperacillin-tazobactam, cefepime, levofloxacin, imipenem, or meropenem is suggested. A 7-day course is recommended (strong recommendation), with adjustment based on clinical, radiologic, and laboratory response."
     },
     {
-      "id": 298,
+      "id": 309,
       "diagnosis": "Ventilator Associated Pneumonia (VAP)",
       "aliases": [
         "VAP",
@@ -10824,7 +11184,7 @@
       "management": "Empiric antibiotic coverage for S. aureus, P. aeruginosa, and other gram-negative bacilli in all patients with suspected VAP. MRSA coverage (vancomycin or linezolid): Only when risk factors for MDR pathogens are present, the unit has >10–20% MRSA prevalence, or local prevalence is unknown. Otherwise, cover MSSA with piperacillin-tazobactam, cefepime, levofloxacin, imipenem, or meropenem. Dual anti-pseudomonal therapy: Recommended empirically when MDR risk factors are present, to increase the probability that at least one agent is active against the causative pathogen. A 7-day course is recommended (strong recommendation, moderate-quality evidence), with adjustment based on clinical, radiologic, and laboratory response."
     },
     {
-      "id": 299,
+      "id": 310,
       "diagnosis": "SARS-CoV-2",
       "aliases": [],
       "category": "Respiratory III",
@@ -10862,7 +11222,7 @@
       "management": "Provide supportive care and oxygen as needed. Use antiviral therapy for eligible patients and corticosteroids for hypoxemic disease while monitoring complications."
     },
     {
-      "id": 300,
+      "id": 311,
       "diagnosis": "Influenza",
       "aliases": [],
       "category": "Respiratory III",
@@ -10897,7 +11257,7 @@
       "management": "Provide supportive care and initiate antiviral therapy early in high-risk or hospitalized patients. Monitor for secondary bacterial pneumonia and respiratory complications."
     },
     {
-      "id": 301,
+      "id": 312,
       "diagnosis": "Parainfluenza",
       "aliases": [],
       "category": "Respiratory III",
@@ -10932,7 +11292,7 @@
       "management": "Administer corticosteroids for all symptomatic patients. Moderate or severe disease may require nebulized epinephrine and observation until respiratory distress improves."
     },
     {
-      "id": 302,
+      "id": 313,
       "diagnosis": "Respiratory Syncytial Virus (RSV)",
       "aliases": [
         "RSV",
@@ -10970,7 +11330,7 @@
       "management": "Provide supportive care with hydration, nasal suctioning, and oxygen when needed. Severe cases may require hospitalization and respiratory support. Avoid routine antibiotics."
     },
     {
-      "id": 303,
+      "id": 314,
       "diagnosis": "Lady Windermere Syndrome",
       "aliases": [],
       "category": "Respiratory III",
@@ -11008,7 +11368,7 @@
       "management": "Three-times-weekly macrolide-based regimen (azithromycin, rifampicin, ethambutol) for ≥12 months after sputum culture conversion, combined with airway clearance techniques. Airway clearance, nutritional support, and pulmonary rehabilitation is an essential adjunct."
     },
     {
-      "id": 304,
+      "id": 315,
       "diagnosis": "Invasive Pulmonary Aspergillosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -11043,7 +11403,7 @@
       "management": "Initiate prompt antifungal therapy, typically with voriconazole. Reverse immunosuppression when possible and monitor closely for dissemination, hemorrhage, and respiratory failure."
     },
     {
-      "id": 305,
+      "id": 316,
       "diagnosis": "Histoplasmosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -11078,7 +11438,7 @@
       "management": "Mild disease may only require observation. Moderate or severe infection is treated with antifungal therapy, and disseminated disease requires prolonged treatment and follow-up."
     },
     {
-      "id": 306,
+      "id": 317,
       "diagnosis": "Blastomycosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -11113,7 +11473,7 @@
       "management": "Treat mild to moderate disease with itraconazole. Severe, disseminated, or central nervous system infection requires amphotericin B followed by prolonged azole therapy."
     },
     {
-      "id": 307,
+      "id": 318,
       "diagnosis": "Metapneumovirus",
       "aliases": [],
       "category": "Respiratory III",
@@ -11151,7 +11511,7 @@
       "management": "Provide supportive care with hydration, oxygen supplementation, and respiratory support as needed. No specific antiviral therapy is routinely recommended for immunocompetent patients."
     },
     {
-      "id": 308,
+      "id": 319,
       "diagnosis": "Cryptococcal Pneumonia",
       "aliases": [],
       "category": "Respiratory III",
@@ -11186,7 +11546,7 @@
       "management": "Evaluate for central nervous system involvement and initiate antifungal therapy. Severe disease requires induction treatment followed by prolonged consolidation and maintenance therapy."
     },
     {
-      "id": 309,
+      "id": 320,
       "diagnosis": "Coccidioidomycosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -11221,7 +11581,7 @@
       "management": "Mild disease may only require observation. Severe, chronic, or disseminated infection requires prolonged antifungal therapy and monitoring for extrapulmonary complications"
     },
     {
-      "id": 310,
+      "id": 321,
       "diagnosis": "Postobstructive Pneumonia",
       "aliases": [],
       "category": "Respiratory III",
@@ -11256,7 +11616,7 @@
       "management": "Treat the infection with appropriate antibiotics and relieve the airway obstruction when possible. Bronchoscopy, surgery, or oncologic therapy may be required."
     },
     {
-      "id": 311,
+      "id": 322,
       "diagnosis": "Lymphangitis Carcinomatosis",
       "aliases": [],
       "category": "Respiratory III",
@@ -11294,7 +11654,7 @@
       "management": "Treat the underlying malignancy with systemic therapy when appropriate. Provide supportive respiratory care and symptom management while monitoring for progressive hypoxemic failure."
     },
     {
-      "id": 313,
+      "id": 324,
       "diagnosis": "Type 1 Diabetes Mellitus",
       "aliases": [],
       "category": "Endocrine I",
@@ -11329,7 +11689,7 @@
       "management": "Insulin therapy and glucose monitoring are the main treatments for T1D. Key investigations include HbA1c, glucose, electrolytes, renal function etc."
     },
     {
-      "id": 314,
+      "id": 325,
       "diagnosis": "Type 2 Diabetes Mellitus",
       "aliases": [],
       "category": "Endocrine I",
@@ -11364,7 +11724,7 @@
       "management": "Lifestyle modification, metformin, GLP1 agonists, insulin if needed.  Key investigations include HbA1c, glucose, electrolytes, renal function etc."
     },
     {
-      "id": 315,
+      "id": 326,
       "diagnosis": "Gestational Diabetes Mellitus",
       "aliases": [],
       "category": "Endocrine I",
@@ -11399,7 +11759,7 @@
       "management": "Diet, exercise, glucose monitoring, insulin if needed and postpartum screening"
     },
     {
-      "id": 316,
+      "id": 327,
       "diagnosis": "Diabetic Ketoacidosis",
       "aliases": [],
       "category": "Endocrine I",
@@ -11434,7 +11794,7 @@
       "management": "Immediate management entails fluid resuscitation, potassium management, and IV insulin. Careful monitoring is required to prevent life-threatening complications. Provide explanation of appropriate glucose management longterm."
     },
     {
-      "id": 317,
+      "id": 328,
       "diagnosis": "Hyperosmolar Hyperglycemic State",
       "aliases": [],
       "category": "Endocrine I",
@@ -11469,7 +11829,7 @@
       "management": "The primary goal of HHS management is to restore fluids, monitor electrolytes, and begin insulin therapy. Provide education on appropriate management of blood glucose longterm."
     },
     {
-      "id": 318,
+      "id": 329,
       "diagnosis": "Diabetic Retinopathy",
       "aliases": [],
       "category": "Endocrine I",
@@ -11504,7 +11864,7 @@
       "management": "Management includes optimizing blood glucose, blood pressure, and lipid control, regular ophthalmologic monitoring, and treatments such as laser photocoagulation, intravitreal anti-VEGF injections, or vitrectomy in advanced cases."
     },
     {
-      "id": 319,
+      "id": 330,
       "diagnosis": "Maturity-Onset Diabetes of the Young",
       "aliases": [],
       "category": "Endocrine I",
@@ -11539,7 +11899,7 @@
       "management": "Management depends on the subtype of MODY and may include lifestyle modifications, oral meds, or in some cases, insulin therapy. Genetic counseling and screening are also recommended as MODY follows an autosomal dominant inheritance pattern"
     },
     {
-      "id": 320,
+      "id": 331,
       "diagnosis": "Hypoglycemic Emergency",
       "aliases": [],
       "category": "Endocrine I",
@@ -11574,7 +11934,7 @@
       "management": "Immediate management includes administering 15–20 g of fast-acting carbohydrates if the patient is conscious, or intravenous dextrose or glucagon if unconscious. Long-term management focuses on identifying the cause, adjusting diabetes medications, regular blood glucose monitoring, and educating the patient on recognizing and treating early symptoms of hypoglycemia."
     },
     {
-      "id": 321,
+      "id": 332,
       "diagnosis": "Prolactinoma",
       "aliases": [],
       "category": "Endocrine II",
@@ -11605,11 +11965,11 @@
           "text": "Bloodwork reveals a markedly elevated prolactin level."
         }
       ],
-      "description": "Prolactin-secreting pituitary adenoma causing hyperprolactinemia.",
+      "description": "Lactotroph adenoma in the anterior pituitary secretes excess prolactin, suppressing hypothalamic GnRH → decreased LH/FSH → hypogonadism. Dopamine normally inhibits prolactin, so disruption of dopamine signaling can exacerbate secretion. Most common functioning pituitary adenoma; more frequent in women (especially microadenomas) but macroadenomas more common in men at diagnosis.",
       "management": "Cabergoline or bromocriptine; surgery if refractory."
     },
     {
-      "id": 322,
+      "id": 333,
       "diagnosis": "Acromegaly",
       "aliases": [],
       "category": "Endocrine II",
@@ -11640,11 +12000,11 @@
           "text": "Growth hormone fails to suppress after oral glucose administration."
         }
       ],
-      "description": "Growth hormone excess usually due to a pituitary adenoma.",
+      "description": "Somatotroph pituitary adenoma secretes excess growth hormone → increased hepatic IGF-1 production → tissue overgrowth after epiphyseal closure. Rare; typically diagnosed in middle-aged adults due to insidious progression",
       "management": "Transsphenoidal surgery; medical therapy if persistent."
     },
     {
-      "id": 323,
+      "id": 334,
       "diagnosis": "Cushing DIsease",
       "aliases": [],
       "category": "Endocrine II",
@@ -11675,11 +12035,259 @@
           "text": "ACTH is elevated and pituitary imaging identifies a microadenoma"
         }
       ],
-      "description": "Pituitary ACTH-secreting tumour causing hypercortisolism.",
+      "description": "Pituitary corticotroph adenoma secretes excess ACTH → adrenal hyperplasia → increased cortisol production → loss of normal hypothalamic-pituitary-adrenal feedback regulation. Most common cause of endogenous Cushing syndrome overall; more common in women",
       "management": "Pituitary surgery; adjunctive medical therapy when needed."
     },
     {
+      "id": 335,
+      "diagnosis": "Hypopituitarism",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A patient complains of chronic fatigue and reduced energy."
+        },
+        {
+          "type": "",
+          "text": "He reports decreased libido and sexual dysfunction."
+        },
+        {
+          "type": "",
+          "text": "Symptoms of hypothyroidism begin to appear."
+        },
+        {
+          "type": "",
+          "text": "Morning cortisol is inappropriately low."
+        },
+        {
+          "type": "",
+          "text": "Several pituitary hormones are deficient"
+        },
+        {
+          "type": "",
+          "text": "Several pituitary hormones are found to be deficient."
+        }
+      ],
+      "description": "Hypopituitarism is partial or complete deficiency of one or more anterior pituitary hormones, resulting in reduced function of the target endocrine glands. Causes include pituitary adenomas, pituitary surgery, radiation therapy, infarction (e.g., Sheehan syndrome), trauma, infiltrative diseases, and congenital defects.",
+      "management": "Treat the underlying cause when possible. Hormone replacement;Glucocorticoids for ACTH deficiency, Levothyroxine for TSH deficiency, Testosterone or estrogen/progesterone replacement for gonadotropin deficiency, Growth hormone replacement in selected patients. Replace cortisol before initiating thyroid hormone to avoid precipitating adrenal crisis. Regular endocrine follow-up and monitoring."
+    },
+    {
+      "id": 336,
+      "diagnosis": "Primary aldosteronism",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A relatively young male is found to have hypertension."
+        },
+        {
+          "type": "",
+          "text": "Blood pressure remains elevated despite multiple medications."
+        },
+        {
+          "type": "",
+          "text": "He develops muscle cramps and intermittent weakness."
+        },
+        {
+          "type": "",
+          "text": "Routine bloodwork reveals low potassium."
+        },
+        {
+          "type": "",
+          "text": "Renin is found to be suppressed."
+        },
+        {
+          "type": "",
+          "text": "The aldosterone-renin ratio is markedly increased."
+        }
+      ],
+      "description": "Primary aldosteronism is autonomous overproduction of aldosterone from the adrenal cortex, leading to sodium retention, hypertension, potassium wasting, and suppression of renin. Common causes include an aldosterone-secreting adenoma, or adrenal hyperplasia.",
+      "management": "Unilateral aldosterone-producing adenoma often treated with Laparoscopic adrenalectomy. Bilateral adrenal hyperplasia: Mineralocorticoid receptor antagonists such as Spironolactone or Eplerenone.Control blood pressure and correct potassium abnormalities. Long-term cardiovascular risk reduction."
+    },
+    {
+      "id": 337,
+      "diagnosis": "Adrenal Cortical Adenoma",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "An adrenal lesion is discovered incidentally on imaging."
+        },
+        {
+          "type": "",
+          "text": "The patient was scanned for an unrelated reason."
+        },
+        {
+          "type": "",
+          "text": "There are no obvious symptoms initially."
+        },
+        {
+          "type": "",
+          "text": "The lesion appears well-circumscribed on imaging."
+        },
+        {
+          "type": "",
+          "text": "Hormonal evaluation is performed."
+        },
+        {
+          "type": "",
+          "text": "There is no evidence of invasive disease."
+        }
+      ],
+      "description": "An adrenal cortical adenoma is a benign neoplasm arising from the adrenal cortex. Most are discovered incidentally during imaging performed for unrelated reasons (\"adrenal incidentalomas\").",
+      "management": "Observation with periodic imaging and hormonal assessment"
+    },
+    {
+      "id": 338,
+      "diagnosis": "Pheochromocytoma",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 43-year-old man presents with intermittent episodes of severe headache, sweating, and palpitations."
+        },
+        {
+          "type": "",
+          "text": "Attacks occur suddenly and resolve spontaneously."
+        },
+        {
+          "type": "",
+          "text": "Blood pressure is 164/98 mmHg"
+        },
+        {
+          "type": "",
+          "text": "Blood pressure becomes markedly elevated during attacks."
+        },
+        {
+          "type": "",
+          "text": "Episodes are accompanied by a rapid pounding heartbeat and intense anxiety."
+        },
+        {
+          "type": "",
+          "text": "Metanephrines are elevated"
+        }
+      ],
+      "description": "Pheochromocytoma is a catecholamine-secreting tumor of chromaffin cells, usually arising in the adrenal medulla. Classic triad is: headache, sweating, palpitations.",
+      "management": "Definitive treatment: surgical resection. Preoperative preparation: Alpha blockade first (e.g., phenoxybenzamine), Adequate volume expansion and beta blockade only after alpha blockade if needed for tachycardia. Genetic testing may be indicated because of associations with hereditary syndromes."
+    },
+    {
+      "id": 339,
+      "diagnosis": "Congenital Adrenal Hyperplasia",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 2 week old child is evaluated shortly after birth."
+        },
+        {
+          "type": "",
+          "text": "There are concerns regarding abnormal genital development."
+        },
+        {
+          "type": "",
+          "text": "The family reports poor feeding and dehydration."
+        },
+        {
+          "type": "",
+          "text": "Electrolyte abnormalities are detected."
+        },
+        {
+          "type": "",
+          "text": "Further testing suggests abnormal steroid synthesis."
+        },
+        {
+          "type": "",
+          "text": "17-hydroxyprogesterone is elevated."
+        }
+      ],
+      "description": "Congenital adrenal hyperplasia is a group of inherited disorders affecting adrenal steroid synthesis, most commonly due to 21-hydroxylase deficiency. Patients will often have reduced cortisol production, increased ACTH secretion, adrenal hyperplasia and excess androgen production. May present with ambigious genitals in females, salt-wasting crisis, dehydration, poor feeding, precocious puberty. Diagnosis is made via elevated 17-hydroxyprogesterone, and genetic testing when appropriate.",
+      "management": "Management of congenital adrenal hyperplasia (CAH) often entails glucocorticoid replacement, mineralocorticoid replacement, sodium supplmentation when indicated in infants and lifelong endocrine monitoring"
+    },
+    {
       "id": 340,
+      "diagnosis": "Idiopathic Galactorrhea",
+      "aliases": [],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 30-year-old woman presents because of persistent breast discharge."
+        },
+        {
+          "type": "",
+          "text": "The discharge is milky and occurs from both breasts."
+        },
+        {
+          "type": "",
+          "text": "Pregnancy testing is negative."
+        },
+        {
+          "type": "",
+          "text": "Menstrual cycles are regular and there are no other endocrine symptoms."
+        },
+        {
+          "type": "",
+          "text": "Review of medications finds no causal drug"
+        },
+        {
+          "type": "",
+          "text": "Serum prolactin levels are normal."
+        }
+      ],
+      "description": "Idiopathic Galactorrhea is the production of milk-like breast discharge unrelated to pregnancy or breastfeeding, despite normal prolactin levels and absence of an underlying cause. It is a diagnosis of exclusion made after ruling out pregnancy, prolactinoma, hypothyroidism, medication-induced galactorrhea and other endocrine disorders. The condition is thought to result from increased breast sensitivity to normal circulating prolactin levels or localized breat factors although the exact mechanism is unclear.",
+      "management": "Management of Idiopathic Galactorrhea focuses on reassurance and exclusion of underlying pathology. Reassurance that condition is benign, periodic follow up. Condition is generally benign and may resolve spontaneously over time. Long term outcomes are excellent when serious underlying causes have been excluded."
+    },
+    {
+      "id": 341,
+      "diagnosis": "Addison's Disease (Primary Adrenal Insufficiency)",
+      "aliases": [
+        "Primary Adrenal Insufficiency",
+        "Addison's Disease"
+      ],
+      "category": "Endocrine II",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 38-year-old woman presents with progressive fatigue and unintentional weight loss."
+        },
+        {
+          "type": "",
+          "text": "She reports dizziness when standing and frequent salt cravings."
+        },
+        {
+          "type": "",
+          "text": "Blood pressure is 92/58 mmHg."
+        },
+        {
+          "type": "",
+          "text": "Laboratory testing shows hyponatremia and hyperkalemia."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals hyperpigmentation of the skin and oral mucosa."
+        },
+        {
+          "type": "",
+          "text": "ACTH levels are elevated and morning cortisol is low."
+        }
+      ],
+      "description": "Addison's disease is primary adrenal insufficiency resulting from destruction or dysfunction of the adrenal cortex, causing deficiencies of cortisol and aldosterone. It is often a result of autoimmune adrenalitis, infection, metastatic disease or adrenal hemorrhage. It often presents with fatigue, weight loss, hypotension, salt craving, hyperpigmentation, hyponatrmia, hyperkalemia. Labs often reveal low cortisol and high ACTH.",
+      "management": "Management of addison's disease involves glucocorticoid replacement and mineralocorticoid replacement."
+    },
+    {
+      "id": 349,
       "diagnosis": "Central Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11714,7 +12322,7 @@
       "management": "Treat with desmopressin replacement and ensure adequate water intake. Monitor serum sodium closely and address the underlying hypothalamic or pituitary disorder."
     },
     {
-      "id": 341,
+      "id": 350,
       "diagnosis": "Nephrogenic Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11749,7 +12357,7 @@
       "management": "Address the underlying cause, optimize hydration, and reduce urine output with dietary measures and selected medications. Monitor closely for dehydration and hypernatremia"
     },
     {
-      "id": 342,
+      "id": 351,
       "diagnosis": "Osmotic Demyelination Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11784,7 +12392,7 @@
       "management": "Prevention through careful sodium correction is critical. Provide supportive neurologic care, rehabilitation, and close monitoring for respiratory compromise and long-term deficits."
     },
     {
-      "id": 343,
+      "id": 352,
       "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH)",
       "aliases": [
         "SIADH",
@@ -11822,7 +12430,7 @@
       "management": "Treat the underlying cause and restrict fluids first; if insufficient, escalate to urea or tolvaptan as second-line therapy; and use hypertonic saline emergently for severe symptomatic hyponatremia, with careful sodium correction to avoid osmotic demyelination"
     },
     {
-      "id": 344,
+      "id": 353,
       "diagnosis": "Primary Hyperaldosteronism (Conn's)",
       "aliases": [
         "Conn's",
@@ -11860,7 +12468,7 @@
       "management": "Unilateral disease is typically treated surgically. Bilateral adrenal hyperplasia is managed medically with mineralocorticoid receptor antagonists and cardiovascular risk reduction."
     },
     {
-      "id": 345,
+      "id": 354,
       "diagnosis": "Gitelman Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11898,7 +12506,7 @@
       "management": "Provide lifelong magnesium and potassium supplementation. Encourage liberal salt intake and consider potassium-sparing agents for persistent electrolyte abnormalities or symptoms."
     },
     {
-      "id": 346,
+      "id": 355,
       "diagnosis": "Bartter Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11933,7 +12541,7 @@
       "management": "Correct fluid and electrolyte losses with potassium supplementation and liberal salt intake. NSAIDs and potassium-sparing agents may reduce renal salt wasting"
     },
     {
-      "id": 347,
+      "id": 356,
       "diagnosis": "Methanol Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -11968,7 +12576,7 @@
       "management": "Administer fomepizole to inhibit alcohol dehydrogenase, correct acidosis, and perform hemodialysis when indicated. Monitor closely for visual and neurologic injury."
     },
     {
-      "id": 348,
+      "id": 357,
       "diagnosis": "Salicylate Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12003,7 +12611,7 @@
       "management": "Administer activated charcoal when appropriate and alkalinize serum and urine with intravenous bicarbonate. Severe toxicity may require urgent hemodialysis."
     },
     {
-      "id": 349,
+      "id": 358,
       "diagnosis": "Renal Tubular Acidosis Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12038,7 +12646,7 @@
       "management": "Treat with oral alkali therapy and potassium supplementation when needed. Address underlying causes and monitor for nephrolithiasis, nephrocalcinosis, and kidney dysfunction."
     },
     {
-      "id": 350,
+      "id": 359,
       "diagnosis": "Renal Tubular Acidosis Type 2",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12073,7 +12681,7 @@
       "management": "Provide bicarbonate replacement and correct electrolyte abnormalities. Treat the underlying cause and supplement phosphate or vitamin D when bone disease is present."
     },
     {
-      "id": 351,
+      "id": 360,
       "diagnosis": "Renal Tubular Acidosis Type 4",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12108,7 +12716,7 @@
       "management": "Address underlying hypoaldosteronism, discontinue contributing medications when possible, and treat hyperkalemia. Some patients benefit from mineralocorticoid replacement or diuretic therapy."
     },
     {
-      "id": 352,
+      "id": 361,
       "diagnosis": "Saline-Infusion Hyperchloremia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12143,7 +12751,7 @@
       "management": "Reduce or discontinue chloride-rich fluids and consider balanced crystalloids. Monitor acid-base status and renal function while treating the underlying illness."
     },
     {
-      "id": 353,
+      "id": 362,
       "diagnosis": "Urinary Tract Infection",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12178,7 +12786,7 @@
       "management": "First-line treatment of uncomplicated UTI includes nitrofurantoin (100 mg twice daily, 5 days), trimethoprim-sulfamethoxazole (1 DS tablet twice daily, 3 days), or fosfomycin (single 3 g dose); fluoroquinolones are reserved as alternatives."
     },
     {
-      "id": 354,
+      "id": 363,
       "diagnosis": "Acute Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12216,7 +12824,7 @@
       "management": "Initiate appropriate antibiotic therapy and ensure adequate hydration. Hospitalize patients with severe illness, sepsis, obstruction, or inability to tolerate oral medications."
     },
     {
-      "id": 355,
+      "id": 364,
       "diagnosis": "Prostatitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12251,7 +12859,7 @@
       "management": "Ciprofloxacin 500 mg po x 14-30 d or Septra DS 1 tab po BID x 14-30 d. Monitor for urinary retention, abscess formation, and sepsis, with hospitalization for severe disease."
     },
     {
-      "id": 356,
+      "id": 365,
       "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
       "aliases": [
         "BPH",
@@ -12289,7 +12897,7 @@
       "management": "Lifestyle modifications and α₁-blockers provide symptomatic relief. Larger prostates may benefit from 5α-reductase inhibitors, while refractory obstruction may require surgery."
     },
     {
-      "id": 357,
+      "id": 366,
       "diagnosis": "Overactive Bladder (OAB)",
       "aliases": [
         "OAB",
@@ -12330,7 +12938,7 @@
       "management": "Begin with bladder training, fluid management, and pelvic floor exercises. Persistent symptoms may require antimuscarinic therapy, β3-adrenergic agonists, or specialist referral."
     },
     {
-      "id": 358,
+      "id": 367,
       "diagnosis": "Prostate Adenocarcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12368,7 +12976,7 @@
       "management": "Management ranges from active surveillance to surgery, radiation, and androgen deprivation therapy. Advanced disease may require systemic therapy and treatment of metastases."
     },
     {
-      "id": 359,
+      "id": 368,
       "diagnosis": "Renal Cell Carcinoma (RCC)",
       "aliases": [
         "RCC",
@@ -12408,7 +13016,7 @@
       "management": "Localized disease is treated with partial or radical nephrectomy. Advanced disease may require targeted therapy, immunotherapy, and management of metastatic complications."
     },
     {
-      "id": 360,
+      "id": 369,
       "diagnosis": "Testicular Cancer",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12443,7 +13051,7 @@
       "management": "Radical inguinal orchiectomy for diagnosis and treatment. Further management depends on histology and stage and may include surveillance, chemotherapy, or radiation. Never biopsy due to risk of lymphatogenous spread."
     },
     {
-      "id": 361,
+      "id": 370,
       "diagnosis": "Von Hippel-Lindau Syndrome (VHL)",
       "aliases": [
         "VHL",
@@ -12481,7 +13089,7 @@
       "management": "Provide lifelong surveillance for associated tumors with regular imaging and screening. Surgical intervention is often required for symptomatic or high-risk lesions."
     },
     {
-      "id": 362,
+      "id": 371,
       "diagnosis": "Septic Stone",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12516,7 +13124,7 @@
       "management": "Treat as a urologic emergency with immediate broad-spectrum antibiotics and urgent urinary decompression via nephrostomy tube or ureteral stent placement."
     },
     {
-      "id": 363,
+      "id": 372,
       "diagnosis": "Nephrolithiasis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12554,7 +13162,7 @@
       "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
     },
     {
-      "id": 364,
+      "id": 373,
       "diagnosis": "Erectile Dysfunction (ED)",
       "aliases": [
         "ED",
@@ -12592,7 +13200,7 @@
       "management": "Address reversible causes and optimize cardiovascular risk factors. First-line therapy typically involves phosphodiesterase-5 inhibitors, with additional treatments reserved for refractory cases"
     },
     {
-      "id": 365,
+      "id": 374,
       "diagnosis": "Hydrocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12630,7 +13238,7 @@
       "management": "Observe asymptomatic hydroceles. Symptomatic, enlarging, or persistent cases may require surgical hydrocelectomy after excluding underlying infection, malignancy, or hernia."
     },
     {
-      "id": 366,
+      "id": 375,
       "diagnosis": "Epididymal Cyst",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12665,7 +13273,7 @@
       "management": "Reassure and observe asymptomatic lesions. Surgical excision may be considered for persistent pain, significant enlargement, or diagnostic uncertainty after imaging evaluation."
     },
     {
-      "id": 367,
+      "id": 376,
       "diagnosis": "Varicocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12700,7 +13308,7 @@
       "management": "Observe asymptomatic cases. Symptomatic patients or those with infertility may benefit from surgical ligation or percutaneous embolization of the affected veins."
     },
     {
-      "id": 368,
+      "id": 377,
       "diagnosis": "Epididymitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12735,7 +13343,7 @@
       "management": "Treat with pathogen-directed antibiotics, analgesia, scrotal elevation, and rest. Exclude testicular torsion promptly and monitor for abscess or fertility complications"
     },
     {
-      "id": 369,
+      "id": 378,
       "diagnosis": "Orchitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12770,7 +13378,7 @@
       "management": "Provide analgesia, scrotal support, and supportive care. Treat underlying bacterial infection when present and monitor for testicular atrophy or fertility complications."
     },
     {
-      "id": 370,
+      "id": 379,
       "diagnosis": "Indirect Inguinal Hernia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12805,7 +13413,7 @@
       "management": "Elective surgical repair is recommended for symptomatic hernias. Urgent intervention is required for incarceration, strangulation, bowel obstruction, or compromised blood supply."
     },
     {
-      "id": 371,
+      "id": 380,
       "diagnosis": "Testicular Torsion",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12840,7 +13448,7 @@
       "management": "Treat as a surgical emergency with immediate urologic consultation and urgent orchiopexy. Delay in intervention significantly increases the risk of testicular loss."
     },
     {
-      "id": 372,
+      "id": 381,
       "diagnosis": "Hematocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12875,7 +13483,7 @@
       "management": "Obtain urgent scrotal ultrasonography and assess for testicular injury. Small stable hematoceles may be observed, while large or expanding collections require surgery."
     },
     {
-      "id": 373,
+      "id": 382,
       "diagnosis": "Cystitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12910,7 +13518,7 @@
       "management": "Nitrofurantoin, TMP-SMX, or fosfomycin are first-line for uncomplicated cystitis; fluoroquinolones are reserved as alternative agents due to resistance concerns."
     },
     {
-      "id": 374,
+      "id": 383,
       "diagnosis": "Urethritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12945,7 +13553,7 @@
       "management": "Treat with appropriate empiric antibiotics while awaiting test results. Ensure partner notification and treatment, and recommend abstinence until therapy is completed."
     },
     {
-      "id": 375,
+      "id": 384,
       "diagnosis": "Priapism",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -12980,7 +13588,7 @@
       "management": "Treat as a urologic emergency with corporal aspiration and intracavernosal sympathomimetic therapy. Address underlying causes promptly to prevent permanent erectile dysfunction"
     },
     {
-      "id": 376,
+      "id": 385,
       "diagnosis": "Paraphimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -13015,7 +13623,7 @@
       "management": "Treat as a urologic emergency with prompt manual reduction. Severe cases may require dorsal slit or circumcision to prevent ischemic complications."
     },
     {
-      "id": 377,
+      "id": 386,
       "diagnosis": "Phimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -13050,7 +13658,7 @@
       "management": "Treat pathologic cases with topical corticosteroids and gentle stretching. Persistent, recurrent, or severe symptoms may require circumcision or surgical intervention."
     },
     {
-      "id": 378,
+      "id": 387,
       "diagnosis": "Fournier's Gangrene",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -13085,7 +13693,7 @@
       "management": "Initiate immediate broad-spectrum antibiotics and aggressive resuscitation. Urgent surgical debridement is essential, often requiring multiple procedures and intensive care support."
     },
     {
-      "id": 379,
+      "id": 388,
       "diagnosis": "Penile Fracture",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -13120,7 +13728,7 @@
       "management": "Obtain urgent urologic consultation and perform prompt surgical repair. Evaluate for associated urethral injury and monitor for long-term erectile dysfunction."
     },
     {
-      "id": 381,
+      "id": 390,
       "diagnosis": "Hydronephrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -13158,7 +13766,7 @@
       "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
     },
     {
-      "id": 382,
+      "id": 391,
       "diagnosis": "Emphysematous Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -13196,7 +13804,7 @@
       "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
     },
     {
-      "id": 383,
+      "id": 392,
       "diagnosis": "Urothelial Cell Carcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -13234,7 +13842,7 @@
       "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
     },
     {
-      "id": 384,
+      "id": 393,
       "diagnosis": "Multicystic Renal Dysplasia",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -13269,7 +13877,7 @@
       "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
     },
     {
-      "id": 385,
+      "id": 394,
       "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -13304,7 +13912,7 @@
       "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
     },
     {
-      "id": 386,
+      "id": 395,
       "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -13344,7 +13952,7 @@
       "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
     },
     {
-      "id": 387,
+      "id": 396,
       "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -13385,7 +13993,7 @@
       "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
     },
     {
-      "id": 388,
+      "id": 397,
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",

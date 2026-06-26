@@ -274,6 +274,26 @@
       "date": "2026-06-22",
       "diagnosis": "Acute Respiratory Distress Syndrome (ARDS)",
       "id": 264
+    },
+    {
+      "date": "2026-06-23",
+      "diagnosis": "Ankylosing Spondilitis",
+      "id": 272
+    },
+    {
+      "date": "2026-06-24",
+      "diagnosis": "Asbestosis",
+      "id": 278
+    },
+    {
+      "date": "2026-06-25",
+      "diagnosis": "Amiodarone Induced Pneumonitis",
+      "id": 280
+    },
+    {
+      "date": "2026-06-26",
+      "diagnosis": "Tuberculosis",
+      "id": 275
     }
   ],
   "2": [
@@ -575,6 +595,28 @@
     },
     {
       "date": "2026-06-22",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-23",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-24",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-25",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-26",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1,
       "reset": true
