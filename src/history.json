@@ -294,6 +294,11 @@
       "date": "2026-06-26",
       "diagnosis": "Tuberculosis",
       "id": 275
+    },
+    {
+      "date": "2026-06-27",
+      "diagnosis": "Scleroderma (SSc-ILD)",
+      "id": 290
     }
   ],
   "2": [
@@ -620,6 +625,11 @@
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1,
       "reset": true
+    },
+    {
+      "date": "2026-06-27",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
     }
   ]
 }
