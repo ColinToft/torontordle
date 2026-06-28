@@ -299,6 +299,11 @@
       "date": "2026-06-27",
       "diagnosis": "Scleroderma (SSc-ILD)",
       "id": 290
+    },
+    {
+      "date": "2026-06-28",
+      "diagnosis": "Amyotrophic Lateral Sclerosis (ALS)",
+      "id": 268
     }
   ],
   "2": [
@@ -630,6 +635,12 @@
       "date": "2026-06-27",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
+    },
+    {
+      "date": "2026-06-28",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
     }
   ]
 }
