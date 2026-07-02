@@ -304,6 +304,26 @@
       "date": "2026-06-28",
       "diagnosis": "Amyotrophic Lateral Sclerosis (ALS)",
       "id": 268
+    },
+    {
+      "date": "2026-06-29",
+      "diagnosis": "Maturity-Onset Diabetes of the Young",
+      "id": 328
+    },
+    {
+      "date": "2026-06-30",
+      "diagnosis": "Celiac Disease",
+      "id": 351
+    },
+    {
+      "date": "2026-07-01",
+      "diagnosis": "Hyperosmolar Hyperglycemic State",
+      "id": 326
+    },
+    {
+      "date": "2026-07-02",
+      "diagnosis": "Gestational Diabetes Mellitus",
+      "id": 324
     }
   ],
   "2": [
@@ -640,6 +660,28 @@
       "date": "2026-06-28",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-06-29",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-06-30",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-01",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-02",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
       "reset": true
     }
   ]

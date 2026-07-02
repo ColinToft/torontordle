@@ -11926,7 +11926,7 @@
     },
     {
       "id": 332,
-      "diagnosis": "Cushing DIsease",
+      "diagnosis": "Cushing's Disease",
       "aliases": [],
       "category": "Endocrine II",
       "unlockDate": null,
@@ -12521,7 +12521,7 @@
         },
         {
           "type": "",
-          "text": "Duodenal biopsy reveals villous atrophy, crypt hyperplasia, and intraepithelial lymphocytosis, confirming celiac disease."
+          "text": "Duodenal biopsy reveals villous atrophy, crypt hyperplasia, and intraepithelial lymphocytosis"
         }
       ],
       "description": "Celiac disease is an autoimmune enteropathy triggered by gluten ingestion in genetically susceptible individuals, leading to immune-mediated damage of the small intestinal mucosa. It presents with a wide spectrum of severity, from classic malabsorptive symptoms (diarrhea, weight loss, nutrient deficiencies) to subtle or extraintestinal manifestations like dermatitis herpetiformis, unexplained anemia, or infertility. If TTG IgA is positive, can also measure a second antibody, anti-endomysial antibody (EMA) which is less sensitive but more specific than IgA TTG. North American guidelines recommend that a diagnosis of celiac disease is confirmed by duodenal biopsy.",
@@ -14578,8 +14578,11 @@
     },
     {
       "id": 411,
-      "diagnosis": "Acute Kidney Injury",
-      "aliases": [],
+      "diagnosis": "Acute Kidney Injury (AKI)",
+      "aliases": [
+        "AKI",
+        "Acute Kidney Injury"
+      ],
       "category": "Kidney and Urinary Tract I",
       "unlockDate": null,
       "clues": [
@@ -14613,8 +14616,11 @@
     },
     {
       "id": 412,
-      "diagnosis": "Chronic Kidney Disease",
-      "aliases": [],
+      "diagnosis": "Chronic Kidney Disease (CKD)",
+      "aliases": [
+        "CKD",
+        "Chronic Kidney Disease"
+      ],
       "category": "Kidney and Urinary Tract I",
       "unlockDate": null,
       "clues": [
@@ -14637,7 +14643,7 @@
         {
           "type": "",
           "text": "",
-          "image": "case-images/chronic-kidney-disease-clue5.jpg",
+          "image": "case-images/chronic-kidney-disease-ckd-clue5.jpg",
           "detail": "https://radiopaedia.org/articles/chronic-kidney-disease"
         },
         {
