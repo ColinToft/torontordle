@@ -324,6 +324,21 @@
       "date": "2026-07-02",
       "diagnosis": "Gestational Diabetes Mellitus",
       "id": 324
+    },
+    {
+      "date": "2026-07-03",
+      "diagnosis": "Type 1 Diabetes Mellitus",
+      "id": 322
+    },
+    {
+      "date": "2026-07-04",
+      "diagnosis": "Adrenal Cortical Adenoma",
+      "id": 335
+    },
+    {
+      "date": "2026-07-05",
+      "diagnosis": "Hypopituitarism",
+      "id": 333
     }
   ],
   "2": [
@@ -683,6 +698,22 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-07-03",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-04",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-05",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
     }
   ]
 }

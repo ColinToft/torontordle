@@ -12038,27 +12038,27 @@
       "clues": [
         {
           "type": "",
-          "text": "An adrenal lesion is discovered incidentally on imaging."
+          "text": "A 59-year-old woman presents to the emergency department with left-sided flank pain from suspected nephrolithiasis. During her evaluation, an unexpected adrenal mass is identified."
         },
         {
           "type": "",
-          "text": "The patient was scanned for an unrelated reason."
+          "text": "She has well-controlled hypertension but denies weight gain, easy bruising, muscle weakness, palpitations, episodic headaches, or symptoms suggestive of hormone excess"
         },
         {
           "type": "",
-          "text": "There are no obvious symptoms initially."
+          "text": "Physical examination is unremarkable"
         },
         {
           "type": "",
-          "text": "The lesion appears well-circumscribed on imaging."
+          "text": "Biochemical evaluation demonstrates normal cortisol suppression following an overnight dexamethasone suppression test, normal plasma metanephrines, and a normal aldosterone-to-renin ratio"
         },
         {
           "type": "",
-          "text": "Hormonal evaluation is performed."
+          "text": "CT of the abdomen demonstrates a 2.8-cm homogeneous, well-circumscribed adrenal lesion with low attenuation (<10 Hounsfield units) and rapid contrast washout"
         },
         {
           "type": "",
-          "text": "There is no evidence of invasive disease."
+          "text": "There is no evidence of surrounding invasive disease"
         }
       ],
       "description": "An adrenal cortical adenoma is a benign neoplasm arising from the adrenal cortex. Most are discovered incidentally during imaging performed for unrelated reasons (\"adrenal incidentalomas\").",
@@ -12073,27 +12073,30 @@
       "clues": [
         {
           "type": "",
-          "text": "A 43-year-old man presents with intermittent episodes of severe headache, sweating, and palpitations."
+          "text": "A 39-year-old woman presents to the emergency department with recurrent episodes of severe headaches, palpitations, and profuse sweating that last 20–30 minutes before resolving spontaneously"
         },
         {
           "type": "",
-          "text": "Attacks occur suddenly and resolve spontaneously."
+          "text": "She reports that the episodes have become more frequent over the past several months and are occasionally triggered by exercise or emotional stress"
         },
         {
           "type": "",
-          "text": "Blood pressure is 164/98 mmHg"
+          "text": "During an episode, her blood pressure is 218/118 mmHg with marked tachycardia. Between episodes, her examination is largely normal"
         },
         {
           "type": "",
-          "text": "Blood pressure becomes markedly elevated during attacks."
+          "text": "Plasma free metanephrines and 24-hour urinary fractionated catecholamines are markedly elevated"
         },
         {
           "type": "",
-          "text": "Episodes are accompanied by a rapid pounding heartbeat and intense anxiety."
+          "text": "",
+          "image": "case-images/pheochromocytoma-clue5.jpg",
+          "detail": "A 3-4cm rounded mass with peripheral enhancement is seen arising from the anterior limb of the left adrenal gland. The right adrenal gland is unremarkable. No lymphadenopathy",
+          "reference": "https://doi.org/10.53347/rID-6478"
         },
         {
           "type": "",
-          "text": "Metanephrines are elevated"
+          "text": "Histopathology demonstrates nests of chromaffin cells with the classic \"Zellballen\" growth pattern"
         }
       ],
       "description": "Pheochromocytoma is a catecholamine-secreting tumor of chromaffin cells, usually arising in the adrenal medulla. Classic triad is: headache, sweating, palpitations.",
