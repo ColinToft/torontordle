@@ -339,6 +339,11 @@
       "date": "2026-07-05",
       "diagnosis": "Hypopituitarism",
       "id": 333
+    },
+    {
+      "date": "2026-07-06",
+      "diagnosis": "Acromegaly",
+      "id": 331
     }
   ],
   "2": [
@@ -714,6 +719,12 @@
       "date": "2026-07-05",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1
+    },
+    {
+      "date": "2026-07-06",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
     }
   ]
 }
