@@ -344,6 +344,31 @@
       "date": "2026-07-06",
       "diagnosis": "Acromegaly",
       "id": 331
+    },
+    {
+      "date": "2026-07-07",
+      "diagnosis": "Histoplasmosis",
+      "id": 359
+    },
+    {
+      "date": "2026-07-08",
+      "diagnosis": "Cushing's Disease",
+      "id": 377
+    },
+    {
+      "date": "2026-07-09",
+      "diagnosis": "Diabetic Retinopathy",
+      "id": 372
+    },
+    {
+      "date": "2026-07-10",
+      "diagnosis": "Parapneumonic Effusion",
+      "id": 346
+    },
+    {
+      "date": "2026-07-11",
+      "diagnosis": "Secondary Pneumothorax",
+      "id": 348
     }
   ],
   "2": [
@@ -725,6 +750,33 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-07-07",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-08",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-09",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-10",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-11",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
     }
   ]
 }
