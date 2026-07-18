@@ -369,6 +369,41 @@
       "date": "2026-07-11",
       "diagnosis": "Secondary Pneumothorax",
       "id": 348
+    },
+    {
+      "date": "2026-07-12",
+      "diagnosis": "Group A Streptococcus Pharyngitis",
+      "id": 350
+    },
+    {
+      "date": "2026-07-13",
+      "diagnosis": "Ventilator Associated Pneumonia (VAP)",
+      "id": 352
+    },
+    {
+      "date": "2026-07-14",
+      "diagnosis": "Influenza",
+      "id": 354
+    },
+    {
+      "date": "2026-07-15",
+      "diagnosis": "Respiratory Syncytial Virus (RSV)",
+      "id": 356
+    },
+    {
+      "date": "2026-07-16",
+      "diagnosis": "Invasive Pulmonary Aspergillosis",
+      "id": 358
+    },
+    {
+      "date": "2026-07-17",
+      "diagnosis": "Blastomycosis",
+      "id": 360
+    },
+    {
+      "date": "2026-07-18",
+      "diagnosis": "Cryptococcal Pneumonia",
+      "id": 362
     }
   ],
   "2": [
@@ -777,6 +812,45 @@
       "date": "2026-07-11",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
+    },
+    {
+      "date": "2026-07-12",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-13",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-14",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-15",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-16",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-17",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-18",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
     }
   ]
 }

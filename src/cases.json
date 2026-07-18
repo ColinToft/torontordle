@@ -6769,6 +6769,701 @@
       "management": "Provide supportive care and monitor liver function closely. Hospitalize severe cases, particularly pregnant patients, and consider antiviral therapy for chronic infection in immunocompromised individuals"
     },
     {
+      "id": 186,
+      "diagnosis": "Hydrops Fetalis",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 31-year-old pregnant woman is referred to maternal-fetal medicine after routine third-trimester ultrasonography demonstrates generalized fetal swelling"
+        },
+        {
+          "type": "",
+          "text": "Ultrasound demonstrates diffuse fetal skin edema and ascites"
+        },
+        {
+          "type": "",
+          "text": "Middle cerebral artery Doppler demonstrates markedly increased peak systolic velocity"
+        },
+        {
+          "type": "",
+          "text": "Fetal ultrasonography further demonstrates placentomegaly and polyhydramnios"
+        },
+        {
+          "type": "",
+          "text": "She has a history of a previous pregnancy complicated by maternal alloimmunization"
+        },
+        {
+          "type": "",
+          "text": "Upon reviewing her file, it is uncovered that the mother did not receive postpartum Rh immunoglobulin after delivery"
+        }
+      ],
+      "description": "Hydrops fetalis is severe fetal edema caused by abnormal fluid accumulation in at least two fetal compartments. It may be immune, most commonly from Rh alloimmunization, or nonimmune due to cardiac disease, chromosomal abnormalities, infections, or severe fetal anemia. Diagnosis relies on prenatal ultrasonography and investigation of the underlying cause. Untreated disease progresses to high-output cardiac failure and fetal demise. Complications include intrauterine death, preterm birth, neonatal respiratory failure, and maternal mirror syndrome.",
+      "management": "Treat the underlying cause. Immune hydrops may require intrauterine fetal transfusions and maternal Rh(D) immune globulin prophylaxis in future pregnancies. Expedite delivery when indicated."
+    },
+    {
+      "id": 187,
+      "diagnosis": "Hemolytic Disease of the Newborn (HDN)",
+      "aliases": [
+        "HDN",
+        "Hemolytic Disease of the Newborn"
+      ],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A full-term newborn develops jaundice and lethargy within the first 12 hours of life"
+        },
+        {
+          "type": "",
+          "text": "The infant is Rh-positive, and the mother is Rh-negative with a previous pregnancy complicated by fetal-maternal hemorrhage"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals jaundice, pallor, hepatosplenomegaly, and mild generalized edema"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin is decreased, indirect bilirubin is elevated and the reticulocyte count is increased"
+        },
+        {
+          "type": "",
+          "text": "Prenatal fetal ultrasonography demonstrated hepatosplenomegaly and increased middle cerebral artery Doppler velocity"
+        },
+        {
+          "type": "",
+          "text": "Direct antiglobulin (Coombs) test is positive"
+        }
+      ],
+      "description": "Hemolytic disease of the newborn results from maternal IgG antibodies crossing the placenta and destroying fetal erythrocytes, most commonly due to Rh incompatibility. Progressive hemolysis causes fetal anemia, hyperbilirubinemia, and, in severe cases, hydrops fetalis. Diagnosis is established using maternal antibody screening, fetal monitoring, and neonatal laboratory evaluation including the direct Coombs test. Complications include kernicterus, hydrops fetalis, heart failure, and neonatal death.",
+      "management": "Treat neonatal hyperbilirubinemia with intensive phototherapy or exchange transfusion when indicated. Prevent Rh disease with Rh(D) immune globulin during pregnancy and postpartum."
+    },
+    {
+      "id": 188,
+      "diagnosis": "Parvovirus B19",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 7-year-old boy is brought to the pediatrician because of a bright red facial rash followed by a lacy rash on his arms and trunk"
+        },
+        {
+          "type": "",
+          "text": "His classmates recently experienced similar illnesses. His mother is currently in the second trimester of pregnancy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals bilateral \"slapped-cheek\" erythema and a reticular rash involving the extremities"
+        },
+        {
+          "type": "",
+          "text": "After further discussion with the boy, he describes pain at his elbows and knees that discourages him from participating in recess activities"
+        },
+        {
+          "type": "",
+          "text": "Reticulocyte count is markedly decreased"
+        },
+        {
+          "type": "",
+          "text": "The boy denies any fevers and cough or conjunctivitis"
+        }
+      ],
+      "description": "Provide supportive care for uncomplicated infection. Severe aplastic crisis requires packed red blood cell transfusion, while chronic infection in immunocompromised patients may respond to intravenous immunoglobulin (IVIG).",
+      "management": "Parvovirus B19 is a single-stranded DNA virus causing erythema infectiosum in children and transient aplastic crises in patients with chronic hemolytic anemias. Infection during pregnancy may result in severe fetal anemia and hydrops fetalis. Diagnosis is established using PCR or serology. Most infections are self-limited, although immunocompromised patients may develop chronic pure red cell aplasia. Complications include aplastic crisis, fetal loss, hydrops fetalis, and chronic anemia."
+    },
+    {
+      "id": 189,
+      "diagnosis": "Idiopathic Aplastic Anemia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 23-year-old woman presents with progressive fatigue, frequent nosebleeds, and recurrent mouth ulcers over the past two months"
+        },
+        {
+          "type": "",
+          "text": "She denies recent chemotherapy or radiation exposure and has no family history of inherited bone marrow failure syndromes"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals pallor, scattered petechiae, and oral ulcerations without hepatosplenomegaly or lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates pancytopenia with a markedly decreased reticulocyte count"
+        },
+        {
+          "type": "",
+          "text": "Peripheral smear shows no blasts or abnormal cells"
+        },
+        {
+          "type": "",
+          "text": "Bone marrow biopsy demonstrates marked hypocellularity with replacement by adipose tissue"
+        }
+      ],
+      "description": "Idiopathic aplastic anemia is an acquired bone marrow failure syndrome caused by immune-mediated destruction of hematopoietic stem cells, resulting in pancytopenia and hypocellular marrow. Patients present with fatigue, infections, and bleeding manifestations. Diagnosis requires exclusion of inherited marrow disorders, leukemia, and myelodysplastic syndromes through bone marrow biopsy. Complications include life-threatening infection, hemorrhage, clonal evolution to myelodysplastic syndrome or leukemia, and death.",
+      "management": "Eligible patients should undergo allogeneic hematopoietic stem cell transplantation. Others receive horse antithymocyte globulin plus cyclosporine, with eltrombopag increasingly used to improve hematopoiesis."
+    },
+    {
+      "id": 190,
+      "diagnosis": "Alpha Thalassemia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 2-year-old boy is referred to a hematology clinic because of persistent microcytic anemia despite several months of oral iron therapy"
+        },
+        {
+          "type": "",
+          "text": "His parents recently immigrated from Southeast Asia"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild pallor and splenomegaly. Growth and development are otherwise normal"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates marked microcytosis with a normal ferritin level and a relatively elevated red blood cell count"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/alpha-thalassemia-clue5.jpg",
+          "detail": "Peripheral smear shows target cells, microcytosis, hypochromia, and anisopoikilocytosis",
+          "reference": "https://emedicine.medscape.com/article/955496-clinical"
+        },
+        {
+          "type": "",
+          "text": "DNA analysis confirms deletion of two α-globin genes"
+        }
+      ],
+      "description": "Alpha thalassemia is an inherited disorder caused by deletion of one or more α-globin genes, resulting in reduced α-globin synthesis and microcytic hemolytic anemia. Disease severity ranges from silent carrier status to HbH disease and fatal Hb Bart's hydrops fetalis. Patients typically have microcytosis disproportionate to the degree of anemia. Diagnosis relies on blood counts, peripheral smear, hemoglobin analysis, and genetic testing. Complications include hemolysis, splenomegaly, gallstones, iron overload, and fetal hydrops.",
+      "management": "Avoid unnecessary iron supplementation. Severe disease may require packed red blood cell transfusions, folic acid, iron chelation (deferasirox/deferoxamine), splenectomy, or hematopoietic stem cell transplantation."
+    },
+    {
+      "id": 191,
+      "diagnosis": "Beta Thalassemia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "An 11-month-old infant is brought to the pediatrician because of poor feeding, failure to thrive, and increasing pallor"
+        },
+        {
+          "type": "",
+          "text": "His parents are of Mediterranean ancestry"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals frontal bossing, maxillary overgrowth, hepatosplenomegaly, and marked pallor"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates severe microcytic anemia"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/beta-thalassemia-clue5.jpg",
+          "detail": "Peripheral smear demonstrates anisopoikilocytosis, nucleated red cell, and basophilic stippling",
+          "reference": "https://www.ncbi.nlm.nih.gov/books/NBK531481/figure/article-30017.image.f1/?report=objectonly"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin electrophoresis demonstrates markedly elevated HbF and HbA₂ with absent or markedly reduced HbA"
+        }
+      ],
+      "description": "Beta thalassemia is an autosomal recessive disorder caused by mutations reducing β-globin synthesis. Severe disease (β-thalassemia major) presents during infancy after fetal hemoglobin declines, causing transfusion-dependent anemia and ineffective erythropoiesis. Progressive marrow expansion produces skeletal deformities and hepatosplenomegaly. Diagnosis relies on hemoglobin electrophoresis and genetic testing. Complications include iron overload, endocrine dysfunction, heart failure, osteoporosis, gallstones, and infection.",
+      "management": "Provide regular transfusion therapy with iron chelation (deferasirox, deferiprone, or deferoxamine). Selected patients benefit from luspatercept or allogeneic stem cell transplantation"
+    },
+    {
+      "id": 192,
+      "diagnosis": "Anemia of Inflammation",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 66-year-old woman with long-standing rheumatoid arthritis presents with worsening fatigue and reduced exercise tolerance over several months"
+        },
+        {
+          "type": "",
+          "text": "She has active inflammatory joint disease despite treatment with disease-modifying antirheumatic medications"
+        },
+        {
+          "type": "",
+          "text": "Examination demonstrates conjunctival pallor and swollen, tender metacarpophalangeal joints. No jaundice or splenomegaly is present"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin is decreased with a normocytic or mildly microcytic anemia"
+        },
+        {
+          "type": "",
+          "text": "Ferritin is elevated, transferrin saturation is reduced, total iron-binding capacity is low, and C-reactive protein is elevated"
+        },
+        {
+          "type": "",
+          "text": "Bone marrow iron staining demonstrates adequate or increased iron stores despite reduced circulating iron availability"
+        }
+      ],
+      "description": "Anemia of inflammation results from chronic inflammatory cytokine production, particularly IL-6, which increases hepatic hepcidin synthesis. Hepcidin inhibits ferroportin, reducing intestinal iron absorption and trapping iron within macrophages. The resulting anemia is usually normocytic but may become microcytic. Diagnosis relies on iron studies demonstrating elevated ferritin with low transferrin saturation. Complications primarily reflect worsening functional status and reduced quality of life from chronic anemia.",
+      "management": "Treat the underlying inflammatory disease. Consider intravenous iron if concurrent iron deficiency exists and erythropoiesis-stimulating agents (epoetin alfa or darbepoetin) in selected patients"
+    },
+    {
+      "id": 193,
+      "diagnosis": "Iron Deficiency Anemia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 42-year-old woman presents with progressive fatigue and shortness of breath on exertion"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals conjunctival pallor, brittle nails, and a smooth tongue. Spoon-shaped fingernails are noted"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates microcytic hypochromic anemia"
+        },
+        {
+          "type": "",
+          "text": "Ferritin is markedly decreased, transferrin saturation is low, and total iron-binding capacity is elevated"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/iron-deficiency-anemia-clue5.jpg",
+          "detail": "Peripheral blood smear demonstrates microcytosis, hypochromia, anisopoikilocytosis, and pencil cells",
+          "reference": "https://imagebank.hematology.org/reference-case/33/"
+        },
+        {
+          "type": "",
+          "text": "She reports heavy menstrual bleeding and cravings to chew ice over the past few months"
+        }
+      ],
+      "description": "Iron deficiency anemia is the most common cause of anemia worldwide and results from inadequate iron intake, chronic blood loss, malabsorption, or increased physiologic demand. Impaired hemoglobin synthesis produces microcytic hypochromic erythrocytes. Patients present with fatigue, pica, koilonychia, and exertional dyspnea. Diagnosis is confirmed by iron studies demonstrating depleted iron stores. Complications include impaired cognition, reduced exercise tolerance, pregnancy complications, and progression of underlying gastrointestinal malignancy if unrecognized.",
+      "management": "Identify and treat the underlying cause. Begin oral ferrous sulfate (or equivalent oral iron). Use intravenous iron sucrose or ferric carboxymaltose for malabsorption, intolerance, or severe deficiency. If the reason is not obvious (heavy menstrual bleeding), GI bleed/malignancy must be investigated, especially in the presence of red flag symptoms such as involuntary weight loss or abdominal pain."
+    },
+    {
+      "id": 194,
+      "diagnosis": "Lead Poisoning",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 5-year-old boy is brought to the pediatrician because of progressive abdominal pain, constipation, irritability, and declining school performance over the past several months"
+        },
+        {
+          "type": "",
+          "text": "He lives in a home built before 1978 that is undergoing renovation"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild pallor, developmental delay, and weakness of wrist extension. Gingival examination demonstrates a bluish discoloration along the gum line"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates microcytic anemia  and free erythrocyte protoporphyrin is increased"
+        },
+        {
+          "type": "",
+          "text": "Peripheral blood smear demonstrates coarse basophilic stippling of erythrocytes"
+        },
+        {
+          "type": "",
+          "text": "The parents are unable to comment on whether the boy has a tendency to place objects in his mouth such as paint chips"
+        }
+      ],
+      "description": "Lead poisoning results from chronic exposure to lead-containing paint, contaminated water, occupational sources, or imported products. Lead interferes with heme synthesis by inhibiting ALAD and ferrochelatase, causing microcytic anemia and neurologic dysfunction. Children are particularly susceptible to cognitive impairment and developmental delay. Diagnosis relies on elevated venous blood lead levels. Complications include encephalopathy, seizures, chronic kidney disease, peripheral neuropathy, hypertension, and permanent neurodevelopmental deficits.",
+      "management": "Eliminate the exposure source. Treat moderate poisoning with oral succimer (DMSA) and severe poisoning with intravenous or intramuscular EDTA plus dimercaprol (BAL) when indicated."
+    },
+    {
+      "id": 195,
+      "diagnosis": "Sideroblastic Anemia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old man presents with several months of progressive fatigue, weakness, and exertional dyspnea despite taking oral iron supplements"
+        },
+        {
+          "type": "",
+          "text": "He has chronic alcohol use disorder and is receiving treatment with isoniazid for latent tuberculosis"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals conjunctival pallor and mild hepatomegaly. There are no signs of active bleeding"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates microcytic anemia with elevated ferritin, increased serum iron, and increased transferrin saturation"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/sideroblastic-anemia-clue5.jpg",
+          "detail": "Bone marrow examination reveals ring sideroblasts on Prussian Blue iron staining",
+          "reference": "https://www.merckmanuals.com/professional/hematology-and-oncology/"
+        },
+        {
+          "type": "",
+          "text": "Iron deposits are seen within mitochondria surrounding the erythroid precursor nucleus"
+        }
+      ],
+      "description": "Sideroblastic anemia is a disorder of impaired heme synthesis resulting in ineffective erythropoiesis and mitochondrial iron accumulation within erythroid precursors. Causes include inherited enzyme defects, myelodysplastic syndromes, alcohol use, vitamin B6 deficiency, lead poisoning, and medications such as isoniazid. Patients develop microcytic or dimorphic anemia with iron overload. Diagnosis relies on bone marrow examination demonstrating ring sideroblasts. Complications include transfusional iron overload, cirrhosis, cardiomyopathy, and progression to myelodysplastic syndrome.",
+      "management": "Treat reversible causes. Administer pyridoxine (vitamin B6) for responsive cases, discontinue offending medications, and use iron chelation if clinically significant iron overload develops."
+    },
+    {
+      "id": 196,
+      "diagnosis": "Megaloblastic Anemia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 69-year-old woman presents with progressive fatigue, numbness in her feet, difficulty walking, and worsening memory over the past several months"
+        },
+        {
+          "type": "",
+          "text": "She has autoimmune thyroid disease and underwent partial gastrectomy several years earlier"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals pallor, a smooth beefy-red tongue, impaired vibration sensation, and an ataxic gait"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates macrocytic anemia with elevated mean corpuscular volume"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/megaloblastic-anemia-clue5.jpg",
+          "detail": "Peripheral smear shows anisocytosis, macrocytosis, oval macrocytes, and hypersegmented neutrophils",
+          "reference": "https://imagebank.hematology.org/image/63103/"
+        },
+        {
+          "type": "",
+          "text": "Serum vitamin B12 is decreased, while methylmalonic acid and homocysteine are elevated"
+        }
+      ],
+      "description": "Megaloblastic anemia results from impaired DNA synthesis, most commonly due to vitamin B12 or folate deficiency. Ineffective nuclear maturation produces macrocytic anemia with hypersegmented neutrophils. Vitamin B12 deficiency additionally causes neurologic dysfunction from demyelination of the posterior columns and corticospinal tracts. Diagnosis relies on vitamin levels, methylmalonic acid, homocysteine, and peripheral smear findings. Complications include irreversible neurologic injury, pancytopenia, and increased thrombotic risk from hyperhomocysteinemia.",
+      "management": "Treat vitamin B12 deficiency with intramuscular cyanocobalamin or high-dose oral therapy. Never administer folic acid alone until vitamin B12 deficiency has been excluded."
+    },
+    {
+      "id": 197,
+      "diagnosis": "Hereditary Spherocytosis",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 12-year-old boy is evaluated for recurrent jaundice, fatigue, and intermittent left upper quadrant abdominal pain"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals scleral icterus, splenomegaly, and mild pallor. There is no lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates anemia with reticulocytosis"
+        },
+        {
+          "type": "",
+          "text": "Lactate dehydrogenase and indirect bilirubin are elevated, while haptoglobin is decreased"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/hereditary-spherocytosis-clue5.jpg",
+          "detail": "Peripheral smear shows loss of biconcave RBC shape and a lack of central pallor",
+          "reference": "https://imagebank.hematology.org/image/60308/"
+        },
+        {
+          "type": "",
+          "text": "It is later revealed that his father underwent splenectomy as a young adult for a chronic hemolytic anemia"
+        }
+      ],
+      "description": "Hereditary spherocytosis is an inherited hemolytic anemia caused by defects in erythrocyte membrane proteins including spectrin, ankyrin, band 3, and protein 4.2. Membrane loss produces spherical erythrocytes that undergo splenic destruction, causing chronic extravascular hemolysis. Patients present with anemia, jaundice, splenomegaly, and pigment gallstones. Diagnosis relies on peripheral smear and EMA binding testing. Complications include aplastic crisis, cholelithiasis, folate deficiency, and severe hemolytic episodes.",
+      "management": "Treat with folic acid supplementation. Moderate or severe disease benefits from splenectomy (after appropriate vaccination), while packed red blood cell transfusions are reserved for severe anemia or aplastic crisis."
+    },
+    {
+      "id": 198,
+      "diagnosis": "Sickle Cell Anemia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 19-year-old man presents to the emergency department with severe pain in his chest, back, and both legs that began after becoming dehydrated during strenuous exercise"
+        },
+        {
+          "type": "",
+          "text": "He has a history of recurrent hospitalizations for painful crises and experienced dactylitis as an infant. His family is of West African ancestry"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals scleral icterus, diffuse bony tenderness, mild splenomegaly, and fever"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates chronic normocytic anemia with reticulocytosis. Lactate dehydrogenase and indirect bilirubin are elevated, while haptoglobin is decreased"
+        },
+        {
+          "type": "",
+          "text": "Peripheral blood smear demonstrates sickled erythrocytes, target cells, and Howell-Jolly bodies"
+        },
+        {
+          "type": "",
+          "text": "Hemoglobin electrophoresis confirms predominantly HbS"
+        }
+      ],
+      "description": "Sickle cell disease is an autosomal recessive hemoglobinopathy caused by a β-globin mutation (Glu6Val) producing hemoglobin S. Deoxygenated HbS polymerizes, causing erythrocyte sickling, vaso-occlusion, and chronic hemolysis. Patients develop recurrent painful crises, acute chest syndrome, stroke, and functional asplenia. Diagnosis relies on hemoglobin electrophoresis or genetic testing. Complications include overwhelming infection, avascular necrosis, priapism, chronic kidney disease, pulmonary hypertension, and early mortality",
+      "management": "Treat acute crises with intravenous fluids, opioid analgesia, oxygen if hypoxemic, and incentive spirometry. Long-term therapy includes hydroxyurea, folic acid, vaccination, and exchange transfusion for acute chest syndrome or stroke."
+    },
+    {
+      "id": 199,
+      "diagnosis": "Autoimmune Hemolytic Anemia (AIHA)",
+      "aliases": [
+        "AIHA",
+        "Autoimmune Hemolytic Anemia"
+      ],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 52-year-old woman presents with progressive fatigue, jaundice, and dark urine that developed over the past two weeks"
+        },
+        {
+          "type": "",
+          "text": "She has a history of systemic lupus erythematosus and recently developed worsening fatigue after a viral illness"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals scleral icterus, pallor, tachycardia, and splenomegaly"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates anemia with reticulocytosis"
+        },
+        {
+          "type": "",
+          "text": "Lactate dehydrogenase and indirect bilirubin are elevated, while haptoglobin is undetectable"
+        },
+        {
+          "type": "",
+          "text": "Peripheral blood smear demonstrates spherocytes without schistocytes. The direct antiglobulin (Coombs) test is positive"
+        }
+      ],
+      "description": "Autoimmune hemolytic anemia results from antibody-mediated destruction of erythrocytes. Warm AIHA, caused by IgG antibodies, is the most common form and is associated with autoimmune disease, lymphoproliferative disorders, and medications. It is an extravascular hemolysis mechanism due to splenic destruction. Patients develop anemia, jaundice, and reticulocytosis. Diagnosis relies on evidence of hemolysis and a positive direct Coombs test. Complications include severe anemia, thromboembolism, gallstones, and recurrent hemolytic episodes.",
+      "management": "Begin prednisone (1 mg/kg/day) as first-line therapy. Refractory disease is treated with rituximab, followed by splenectomy or additional immunosuppressive agents if necessary."
+    },
+    {
+      "id": 200,
+      "diagnosis": "Heparin Induced Thrombocytopenia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old man develops painful swelling of his left leg five days after receiving unfractionated heparin following hip replacement surgery"
+        },
+        {
+          "type": "",
+          "text": "He has received therapeutic unfractionated heparin since surgery and has no prior history of thrombocytopenia"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals unilateral calf swelling and tenderness"
+        },
+        {
+          "type": "",
+          "text": "Platelet count has fallen by more than 50% from baseline. Doppler ultrasonography confirms an acute proximal deep venous thrombosis"
+        },
+        {
+          "type": "",
+          "text": "PF4-heparin antibody ELISA is positive, and the serotonin release assay confirms platelet activation"
+        },
+        {
+          "type": "",
+          "text": "The surgical incision appears clean without evidence of bleeding"
+        }
+      ],
+      "description": "Heparin-induced thrombocytopenia is an immune-mediated prothrombotic disorder caused by IgG antibodies against platelet factor 4-heparin complexes. Platelet activation leads to thrombocytopenia and paradoxical arterial or venous thrombosis. Platelet counts typically fall 5–10 days after heparin exposure. Diagnosis is based on the 4Ts score and confirmatory laboratory testing. Complications include limb ischemia, pulmonary embolism, stroke, myocardial infarction, and death.",
+      "management": "Immediately discontinue all heparin products. Start argatroban, bivalirudin, or fondaparinux. Delay warfarin until platelet recovery because early use increases the risk of limb gangrene."
+    },
+    {
+      "id": 201,
+      "diagnosis": "Paroxysmal nocturnal haemoglobinuria",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old man presents with recurrent episodes of dark urine upon waking, progressive fatigue, and abdominal pain"
+        },
+        {
+          "type": "",
+          "text": "He has a history of aplastic anemia and recently developed an unexplained hepatic vein thrombosis"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals pallor and mild scleral icterus without splenomegaly or lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates anemia with elevated lactate dehydrogenase, decreased haptoglobin, and hemoglobinuria"
+        },
+        {
+          "type": "",
+          "text": "Direct Coombs testing is negative"
+        },
+        {
+          "type": "",
+          "text": "Flow cytometry demonstrates absence of CD55 and CD59 on erythrocytes and granulocytes"
+        }
+      ],
+      "description": "Paroxysmal nocturnal hemoglobinuria is an acquired clonal hematopoietic stem cell disorder caused by a PIGA mutation leading to deficiency of CD55 and CD59. Uncontrolled complement activation causes chronic intravascular hemolysis, bone marrow failure, and life-threatening thrombosis. Diagnosis relies on flow cytometry demonstrating absent GPI-anchored proteins. Complications include Budd-Chiari syndrome, pulmonary embolism, chronic kidney disease, aplastic anemia, and progression to acute leukemia.",
+      "management": "Treat with eculizumab or ravulizumab to inhibit terminal complement activation. Consider anticoagulation for thrombosis and allogeneic stem cell transplantation for severe marrow failure."
+    },
+    {
+      "id": 202,
+      "diagnosis": "Amegakaryocytic thrombocytopenia",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 2-month-old infant is brought to the emergency department because of recurrent nosebleeds, widespread petechiae, and easy bruising since birth"
+        },
+        {
+          "type": "",
+          "text": "He was born at term without complications. There is parental consanguinity, and a previous sibling died from bone marrow failure during childhood"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals diffuse petechiae and ecchymoses without hepatosplenomegaly or dysmorphic features"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates severe isolated thrombocytopenia with otherwise normal hemoglobin and leukocyte counts"
+        },
+        {
+          "type": "",
+          "text": "Serum thrombopoietin levels are markedly elevated"
+        },
+        {
+          "type": "",
+          "text": "Bone marrow biopsy demonstrates marked absence or near absence of megakaryocytes with otherwise preserved marrow cellularity"
+        }
+      ],
+      "description": "Congenital amegakaryocytic thrombocytopenia is a rare autosomal recessive bone marrow failure syndrome caused by mutations in the thrombopoietin receptor (MPL). Infants present with severe thrombocytopenia at birth due to absent megakaryocyte production. Over time, progressive pancytopenia develops as global marrow failure occurs. Diagnosis relies on bone marrow biopsy and genetic testing. Complications include life-threatening hemorrhage, aplastic anemia, infection, and progression to complete bone marrow failure.",
+      "management": "Provide platelet transfusions for significant bleeding. Allogeneic hematopoietic stem cell transplantation is the only curative treatment and should be pursued before advanced marrow failure develops."
+    },
+    {
+      "id": 203,
+      "diagnosis": "Hemolytic Uremic Syndrome (HUS)",
+      "aliases": [
+        "HUS",
+        "Hemolytic Uremic Syndrome"
+      ],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 4-year-old girl is brought to the emergency department with decreased urine output, pallor, and lethargy several days after developing bloody diarrhea"
+        },
+        {
+          "type": "",
+          "text": "One week earlier, she attended a family barbecue where she ate an undercooked hamburger. Several relatives experienced self-limited diarrhea"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals pallor, petechiae, mild peripheral edema, and hypertension"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates thrombocytopenia and anemia"
+        },
+        {
+          "type": "",
+          "text": "Lactate dehydrogenase is elevated, haptoglobin is decreased, serum creatinine is increased, and coagulation studies are normal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/hemolytic-uremic-syndrome-hus-clue6.jpg",
+          "detail": "Peripheral blood smear demonstrates numerous schistocytes",
+          "reference": "Tefferi A, Li C. In Atlas of Clinical Hematology. Edited by JO Armitage. Philadelphia, Current Medicine, 2004."
+        }
+      ],
+      "description": "Hemolytic uremic syndrome is a thrombotic microangiopathy most commonly triggered by Shiga toxin-producing Escherichia coli. Endothelial injury results in platelet activation, microvascular thrombosis, and mechanical hemolysis. Children typically develop acute kidney injury several days after hemorrhagic colitis. Diagnosis relies on evidence of hemolysis, thrombocytopenia, kidney injury, and stool testing when appropriate. Complications include dialysis-dependent renal failure, hypertension, seizures, and chronic kidney disease.",
+      "management": "Provide aggressive intravenous hydration, electrolyte management, and dialysis when indicated. Avoid antibiotics and antimotility agents in STEC-associated HUS because they may worsen disease."
+    },
+    {
+      "id": 204,
+      "diagnosis": "HELLP Syndrome",
+      "aliases": [],
+      "category": "Blood I",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 31-year-old woman at 35 weeks' gestation presents with severe right upper quadrant pain, nausea, vomiting, and headache."
+        },
+        {
+          "type": "",
+          "text": "She has gestational hypertension that has become increasingly difficult to control over the past week"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals hypertension, right upper quadrant tenderness, brisk deep tendon reflexes, and mild peripheral edema"
+        },
+        {
+          "type": "",
+          "text": "Complete blood count demonstrates thrombocytopenia"
+        },
+        {
+          "type": "",
+          "text": "Lactate dehydrogenase and indirect bilirubin are elevated, AST and ALT are markedly increased, and peripheral smear demonstrates schistocytes."
+        },
+        {
+          "type": "",
+          "text": "Abdominal ultrasonography or CT demonstrates a subcapsular hepatic hematoma"
+        }
+      ],
+      "description": "HELLP syndrome is a life-threatening obstetric complication characterized by hemolysis, elevated liver enzymes, and thrombocytopenia, usually occurring in the setting of severe preeclampsia. Endothelial dysfunction and microvascular injury produce hepatic ischemia and microangiopathic hemolysis. Patients present with right upper quadrant pain, hypertension, nausea, and malaise. Complications include disseminated intravascular coagulation, hepatic rupture, placental abruption, acute kidney injury, maternal death, and fetal demise.",
+      "management": "Administer magnesium sulfate for seizure prophylaxis, control blood pressure with labetalol, hydralazine, or nifedipine, provide corticosteroids for fetal lung maturation if appropriate, and proceed to prompt delivery after maternal stabilization."
+    },
+    {
       "id": 205,
       "diagnosis": "Deep Vein Thrombosis (DVT)",
       "aliases": [
@@ -13257,7 +13952,7 @@
       "management": "Management of addison's disease involves glucocorticoid replacement and mineralocorticoid replacement."
     },
     {
-      "id": 388,
+      "id": 392,
       "diagnosis": "Variceal Bleed",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13292,7 +13987,7 @@
       "management": "Variceal bleeding is a medical emergency managed with airway protection, fluid resuscitation, and blood transfusion as needed, alongside IV octreotide (or terlipressin) to reduce splanchnic blood flow and prophylactic antibiotics (e.g., ceftriaxone) to prevent SBP. Endoscopy is performed urgently for band ligation (preferred) or sclerotherapy. If bleeding is refractory, a TIPS procedure or balloon tamponade (e.g., Blakemore tube) may be used as a bridge. For prevention of first bleeding or rebleeding, nonselective beta-blockers (propranolol/nadolol) and serial endoscopic banding are used long-term."
     },
     {
-      "id": 389,
+      "id": 393,
       "diagnosis": "Mallory-Weiss Tear",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13327,7 +14022,7 @@
       "management": "Most cases resolve spontaneously with supportive care, including IV fluids and antiemetics to prevent further retching. Endoscopy is both diagnostic and therapeutic when bleeding is ongoing, using hemoclips, thermal coagulation, or epinephrine injection. PPI therapy is often given to promote healing. Surgery or angiographic embolization is rarely needed and reserved for refractory bleeding."
     },
     {
-      "id": 390,
+      "id": 394,
       "diagnosis": "Boerhaave's syndrome",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13362,7 +14057,7 @@
       "management": "This is a surgical emergency requiring immediate resuscitation with IV fluids, broad-spectrum antibiotics and antifungal coverage, and nothing-by-mouth status with nasogastric decompression. Definitive management is most often surgical primary repair of the perforation with mediastinal and pleural drainage/debridement, though select small, contained leaks in stable patients may be managed with endoscopic clips/stents or conservative therapy. Delay in diagnosis or treatment beyond 24 hours significantly worsens prognosis, underscoring the importance of early recognition in any patient with the classic triad of vomiting, chest pain, and subcutaneous emphysema (Mackler's triad)"
     },
     {
-      "id": 391,
+      "id": 395,
       "diagnosis": "Eosinophilic Esophagitis",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13399,7 +14094,7 @@
       "management": "First-line therapy includes proton pump inhibitors (a subset of patients have PPI-responsive disease), topical swallowed corticosteroids (fluticasone or budesonide), and dietary elimination (empiric 6-food elimination or allergy-testing-directed diets). Dupilumab is approved for refractory cases. Esophageal dilation may be needed for strictures, but is used cautiously due to perforation risk in this inflamed, friable esophagus."
     },
     {
-      "id": 392,
+      "id": 396,
       "diagnosis": "Zenker's Diverticulum",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13434,7 +14129,7 @@
       "management": "Small, asymptomatic diverticula may simply be observed. Symptomatic cases are treated with surgical or endoscopic cricopharyngeal myotomy, which addresses the underlying high-pressure cause, often combined with diverticulum removal (diverticulectomy) or suspension (diverticulopexy) for larger pouches. Endoscopic stapling or laser-assisted myotomy (Dohlman procedure) is a less invasive alternative to open surgery for appropriately sized diverticula, with the goal of relieving dysphagia and reducing aspiration risk."
     },
     {
-      "id": 393,
+      "id": 397,
       "diagnosis": "Gastroesophageal Reflux Disease (GERD)",
       "aliases": [
         "GERD",
@@ -13472,7 +14167,7 @@
       "management": "First-line management includes lifestyle modification (weight loss, avoiding trigger foods, elevating the head of the bed, avoiding meals before lying down) and a trial of proton pump inhibitors. H2 receptor antagonists are an alternative for milder symptoms. Refractory cases warrant endoscopy to exclude complications (erosive esophagitis, Barrett's esophagus, stricture) and may be considered for surgical fundoplication."
     },
     {
-      "id": 394,
+      "id": 398,
       "diagnosis": "Peptic Ulcer Disease",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13507,7 +14202,7 @@
       "management": "Treatment includes acid suppression with PPIs and eradication of H. pylori when present, typically with triple or quadruple therapy regimens (e.g., clarithromycin-based or bismuth-based quadruple therapy depending on resistance patterns). NSAIDs should be discontinued when possible, and gastric ulcers require follow-up endoscopy to confirm healing and exclude malignancy, unlike duodenal ulcers."
     },
     {
-      "id": 395,
+      "id": 399,
       "diagnosis": "Functional Dyspepsia",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13542,7 +14237,7 @@
       "management": "First-line treatment is H. pylori test-and-treat if positive, followed by acid suppression with PPIs. Prokinetic agents (e.g., metoclopramide) may help postprandial distress symptoms, while low-dose tricyclic antidepressants are used for refractory pain-predominant symptoms. Dietary modification (smaller, more frequent low-fat meals) and addressing psychosocial stressors are also important components of management."
     },
     {
-      "id": 396,
+      "id": 400,
       "diagnosis": "Celiac Disease",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13577,7 +14272,7 @@
       "management": "The cornerstone of treatment is a strict, lifelong gluten-free diet, which leads to symptomatic and histologic improvement in most patients. Nutritional deficiencies (iron, folate, vitamin D, calcium, B12) should be assessed and repleted. Patients require monitoring for adherence and response, and refractory celiac disease (persistent symptoms/villous atrophy despite a strict gluten-free diet) warrants further workup for complications such as lymphoma."
     },
     {
-      "id": 397,
+      "id": 401,
       "diagnosis": "Achalasia",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13614,7 +14309,7 @@
       "management": "Treatment options include pneumatic dilation, surgical (Heller) myotomy, and peroral endoscopic myotomy (POEM), all aimed at disrupting the dysfunctional lower esophageal sphincter; myotomy is often paired with a partial fundoplication to reduce subsequent reflux. Botulinum toxin injection into the LES is an option for patients who are poor surgical candidates, though effects are temporary. Pharmacologic therapy (nitrates, calcium channel blockers) is the least effective option and reserved for those unable to undergo more definitive treatment."
     },
     {
-      "id": 398,
+      "id": 402,
       "diagnosis": "Gastroparesis",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13649,7 +14344,7 @@
       "management": "Management begins with dietary modification (small, frequent, low-fat, low-fiber meals) and optimizing glycemic control in diabetic patients. Prokinetic agents (metoclopramide, with caution due to extrapyramidal side effects; or domperidone where available) and antiemetics are used for symptom control. Refractory cases may be considered for gastric electrical stimulation, botulinum toxin injection of the pylorus, or a venting gastrostomy/jejunostomy feeding tube for severe, refractory symptoms."
     },
     {
-      "id": 399,
+      "id": 403,
       "diagnosis": "Barret's Esophagus",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13684,7 +14379,7 @@
       "management": "Management includes ongoing PPI therapy to control reflux and surveillance endoscopy with biopsy at intervals determined by the presence and grade of dysplasia. Non-dysplastic Barrett's is monitored with surveillance endoscopy; low-grade dysplasia may be treated with endoscopic ablation (radiofrequency ablation) or continued surveillance, while high-grade dysplasia or early adenocarcinoma is treated with endoscopic eradication therapy (ablation and/or endoscopic mucosal resection)."
     },
     {
-      "id": 400,
+      "id": 404,
       "diagnosis": "Esophageal Stricture",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13719,7 +14414,7 @@
       "management": "Treatment is primarily with endoscopic dilation (using bougie or balloon dilators), often performed in a series of sessions for durable improvement, combined with high-dose PPI therapy to reduce ongoing acid-related fibrosis and recurrence in peptic strictures. Refractory or recurrent strictures may require intralesional steroid injection, stenting, or, rarely, surgical intervention; any stricture with atypical features should be biopsied to exclude malignancy."
     },
     {
-      "id": 401,
+      "id": 405,
       "diagnosis": "Hiatal Hernia",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13754,7 +14449,7 @@
       "management": "Small, asymptomatic sliding hiatal hernias require no specific treatment beyond standard GERD management (PPIs, lifestyle modification) if reflux symptoms are present. Large or symptomatic paraesophageal hernias, particularly those causing obstruction, bleeding (from Cameron lesions), or with risk of strangulation/volvulus, warrant surgical repair, typically via laparoscopic reduction and crural repair with or without fundoplication."
     },
     {
-      "id": 402,
+      "id": 406,
       "diagnosis": "Esophageal Adenocarcinoma",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -13789,7 +14484,7 @@
       "management": "Treatment depends on stage: early, localized tumors confined to the mucosa may be treated with endoscopic resection, while locally advanced disease is treated with neoadjuvant chemoradiation followed by surgical esophagectomy. Metastatic disease is managed with palliative chemotherapy, targeted therapy (e.g., trastuzumab for HER2-positive tumors), immunotherapy, and palliative measures for dysphagia such as esophageal stenting."
     },
     {
-      "id": 404,
+      "id": 408,
       "diagnosis": "Norovirus Gastroenteritis",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -13824,7 +14519,7 @@
       "management": "Management is entirely supportive, focused on oral or, if necessary, IV rehydration and electrolyte repletion, as the illness is self-limited and there is no specific antiviral therapy. Antiemetics (e.g., ondansetron) can help reduce vomiting and improve oral intake tolerance. Strict hand hygiene (soap and water, since alcohol-based sanitizers are less effective against norovirus) and environmental decontamination with bleach-based disinfectants are essential to prevent further spread in outbreak settings."
     },
     {
-      "id": 405,
+      "id": 409,
       "diagnosis": "Clostridioides difficile infection (C. diff)",
       "aliases": [
         "C. diff",
@@ -13862,7 +14557,7 @@
       "management": "First-line treatment for an initial episode is oral vancomycin or fidaxomicin; metronidazole is now reserved for situations where these are unavailable, due to inferior efficacy. Fulminant disease (ileus, toxic megacolon, shock) requires oral/rectal vancomycin plus IV metronidazole, with surgical consultation for possible colectomy. Recurrent infections may be treated with a prolonged/tapered vancomycin course, fidaxomicin, fecal microbiota transplantation, or bezlotoxumab (a monoclonal antibody against C. diff toxin B) to reduce further recurrence."
     },
     {
-      "id": 406,
+      "id": 410,
       "diagnosis": "Vibrio Cholerae",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -13897,7 +14592,7 @@
       "management": "The cornerstone of treatment is aggressive rehydration, using oral rehydration solution for mild-to-moderate cases and IV fluids (e.g., Ringer's lactate) for severe dehydration or shock, with careful correction of electrolyte abnormalities (particularly potassium). Antibiotics (doxycycline, azithromycin, or a fluoroquinolone) shorten the duration of diarrhea and reduce transmission but are secondary to rehydration. Public health measures, including access to clean water and oral cholera vaccines in endemic/outbreak settings, are key to prevention."
     },
     {
-      "id": 407,
+      "id": 411,
       "diagnosis": "Ulcerative Colitis",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -13934,7 +14629,7 @@
       "management": "Mild-to-moderate disease is treated with 5-aminosalicylates (oral and/or rectal mesalamine), which are especially effective in UC. Moderate-to-severe or refractory disease is managed with corticosteroids for induction of remission, followed by immunomodulators (azathioprine) or biologics (anti-TNF agents, vedolizumab, ustekinumab) or small molecules (tofacitinib, ozanimod) for maintenance. Because inflammation is limited to the colon and rectum, total proctocolectomy is curative in UC (unlike Crohn's), and is indicated for medically refractory disease, fulminant colitis, dysplasia, or colorectal cancer."
     },
     {
-      "id": 408,
+      "id": 412,
       "diagnosis": "Ischemic Colitis",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -13969,7 +14664,7 @@
       "management": "Most cases are non-gangrenous and managed conservatively with bowel rest, IV fluids, and correction of the underlying precipitant (e.g., optimizing blood pressure, treating arrhythmia, stopping vasoconstrictive agents); antibiotics may be given to reduce bacterial translocation in moderate cases. Surgical resection is required for signs of transmural infarction, perforation, peritonitis, or failure to improve with conservative management. Long-term, recurrent or refractory segmental disease may progress to stricture formation requiring elective resection."
     },
     {
-      "id": 409,
+      "id": 413,
       "diagnosis": "Chron's Disease",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14004,7 +14699,7 @@
       "management": "Mild disease may be managed with budesonide (particularly effective for ileocecal disease) or 5-ASAs, though these agents are generally less effective than in UC. Moderate-to-severe disease requires corticosteroids for induction of remission, with early introduction of immunomodulators (azathioprine, methotrexate) or biologics (anti-TNF agents, ustekinumab, vedolizumab), often using a top-down, biologic-first approach in patients with high-risk features. Surgery is not curative in Crohn's disease (unlike UC) and is reserved for complications such as strictures (stricturoplasty or resection), abscesses (drainage), or fistulas, with disease recurrence common at the surgical anastomosis site."
     },
     {
-      "id": 410,
+      "id": 414,
       "diagnosis": "Irritable Bowel Syndrome",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14039,7 +14734,7 @@
       "management": "Management is tailored to the predominant bowel pattern: soluble fiber and antispasmodics for general symptom control, loperamide or bile acid sequestrants for diarrhea-predominant IBS, and osmotic laxatives or secretagogues (linaclotide, lubiprostone, plecanatide) for constipation-predominant IBS. A low-FODMAP diet, gut-directed psychotherapy (cognitive behavioral therapy, gut-directed hypnotherapy), and low-dose tricyclic antidepressants are also effective, particularly for pain-predominant symptoms, and reassurance with a strong patient-provider relationship is a key part of long-term management given the chronic, relapsing nature of the condition."
     },
     {
-      "id": 411,
+      "id": 415,
       "diagnosis": "Osmotic Diarrhea",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14074,7 +14769,7 @@
       "management": "Management is straightforward: identify and eliminate the offending sweetener, after which symptoms typically resolve within 24-48 hours without further intervention. Supportive care includes oral hydration to replace fluid losses, especially in cases of large-volume diarrhea. No specific testing or medication is usually needed, though a stool osmotic gap calculation can confirm an osmotic mechanism when the diagnosis is unclear, and patient education on reading \"sugar-free\" labels helps prevent recurrence."
     },
     {
-      "id": 412,
+      "id": 416,
       "diagnosis": "Surgical Site Infection",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14109,7 +14804,7 @@
       "management": "Superficial SSIs are managed by opening the incision to allow drainage, local wound care, and packing, often without antibiotics unless there is significant surrounding cellulitis or systemic signs of infection. Deep incisional or organ/space infections typically require imaging to define the extent of infection, percutaneous or surgical drainage of any abscess, and a course of antibiotics tailored to culture results. Prevention strategies include perioperative antibiotic prophylaxis, glycemic control, and meticulous sterile technique."
     },
     {
-      "id": 413,
+      "id": 417,
       "diagnosis": "Ogilvie's Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14144,7 +14839,7 @@
       "management": "Initial management includes bowel rest, nasogastric and rectal tube decompression, correction of electrolyte abnormalities, and minimizing opioids and other motility-impairing medications. If there is no improvement within 24-48 hours and the cecal diameter is significantly enlarged, IV neostigmine (a cholinesterase inhibitor) is used to stimulate colonic motility, with cardiac monitoring for bradycardia. Colonoscopic decompression is used for refractory cases or when neostigmine is contraindicated, and surgery (cecostomy or colectomy) is reserved for impending or actual perforation."
     },
     {
-      "id": 414,
+      "id": 418,
       "diagnosis": "Colorectal Adenocarcinoma",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14179,7 +14874,7 @@
       "management": "Treatment is primarily surgical resection (colectomy or proctectomy with regional lymphadenectomy) for localized disease, with adjuvant chemotherapy (commonly FOLFOX) for stage III or high-risk stage II disease. Rectal cancers often require neoadjuvant chemoradiation prior to surgery to reduce local recurrence. Metastatic disease is managed with systemic chemotherapy, targeted therapy (anti-EGFR or anti-VEGF agents depending on molecular profile), and selective resection of isolated liver or lung metastases when feasible."
     },
     {
-      "id": 415,
+      "id": 419,
       "diagnosis": "Diverticular Stricture",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14214,7 +14909,7 @@
       "management": "Asymptomatic or mildly symptomatic strictures may be managed conservatively with a high-fiber diet and observation once malignancy has been excluded. Symptomatic strictures causing significant obstructive symptoms, or any stricture in which malignancy cannot be confidently excluded, are managed with elective surgical resection of the affected segment. Endoscopic balloon dilation is an option in select cases but carries a higher risk of perforation given the inflamed, fibrotic nature of the tissue."
     },
     {
-      "id": 416,
+      "id": 420,
       "diagnosis": "Volvulus (Sigmoid)",
       "aliases": [
         "Sigmoid",
@@ -14254,7 +14949,7 @@
       "management": "In the absence of signs of ischemia or perforation, initial management is endoscopic (sigmoidoscopic) decompression and detorsion, which is successful in the majority of cases but carries a high rate of recurrence without definitive surgery. Given this high recurrence rate, elective sigmoid resection is generally recommended after successful endoscopic decompression in patients fit for surgery. Signs of strangulation, ischemia, or failed endoscopic decompression mandate emergent surgical resection."
     },
     {
-      "id": 417,
+      "id": 421,
       "diagnosis": "Paralytic Ileus",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14291,7 +14986,7 @@
       "management": "Management is largely supportive: bowel rest with advancement of diet as tolerated, correction of underlying electrolyte abnormalities, and minimizing opioid use in favor of multimodal analgesia (e.g., regional blocks, NSAIDs, acetaminophen) to promote earlier return of bowel function. Early mobilization and, in select postoperative settings, chewing gum or alvimopan (a peripherally-acting mu-opioid antagonist) can help reduce duration of postoperative ileus. Persistent ileus beyond several days warrants reassessment to exclude an evolving mechanical obstruction or intra-abdominal complication."
     },
     {
-      "id": 418,
+      "id": 422,
       "diagnosis": "Adhesions",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14326,7 +15021,7 @@
       "management": "Initial management for an uncomplicated adhesive small bowel obstruction is conservative: nasogastric decompression, bowel rest, IV fluids, and correction of electrolyte abnormalities, with many cases resolving without surgery. Signs of strangulation, ischemia, peritonitis, or failure to improve with conservative management over 24-48 hours warrant surgical exploration with lysis of adhesions and resection of any non-viable bowel. Recurrent adhesive obstructions are common, and minimally invasive surgical techniques are favored when possible to reduce the risk of forming new adhesions."
     },
     {
-      "id": 419,
+      "id": 423,
       "diagnosis": "Hernia",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14361,7 +15056,7 @@
       "management": "Reducible, asymptomatic hernias can often be managed with elective surgical repair (open or laparoscopic, with mesh in most cases) to prevent future incarceration. An incarcerated but non-strangulated hernia may be attempted to be manually reduced, followed by urgent repair; however, any signs of strangulation (severe pain, overlying skin changes, signs of bowel ischemia or obstruction) require emergent surgical exploration and repair, with resection of any non-viable bowel."
     },
     {
-      "id": 420,
+      "id": 424,
       "diagnosis": "Gallstone Ileus",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14396,7 +15091,7 @@
       "management": "Treatment is surgical, typically with enterolithotomy (removal of the impacted stone through a small bowel incision) to relieve the obstruction; the decision to also address the underlying cholecystoenteric fistula and perform a cholecystectomy at the same time versus a staged approach depends on the patient's overall surgical risk, given that simultaneous repair carries higher perioperative morbidity in this often frail, elderly population. Careful examination of the entire small bowel is necessary to exclude additional stones causing or at risk of causing further obstruction."
     },
     {
-      "id": 421,
+      "id": 425,
       "diagnosis": "Bezoar",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14431,7 +15126,7 @@
       "management": "Small phytobezoars may be treated with enzymatic dissolution (e.g., cellulase or papain) or endoscopic fragmentation and removal. Larger or more compact bezoars, particularly trichobezoars (which do not respond well to enzymatic therapy due to their composition), often require endoscopic removal or, if too large, surgical removal via gastrotomy. Addressing the underlying cause, such as psychiatric treatment for trichotillomania or dietary modification for recurrent phytobezoars, is essential to prevent recurrence."
     },
     {
-      "id": 422,
+      "id": 426,
       "diagnosis": "Intussusception",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14468,7 +15163,7 @@
       "management": "In children without signs of peritonitis or perforation, the first-line treatment is non-operative reduction using an air or contrast enema, which is both diagnostic and therapeutic and successful in the majority of cases. Surgical reduction (or resection if the bowel is non-viable or a pathologic lead point is identified) is reserved for failed enema reduction, signs of peritonitis, or perforation. In adults, given the high likelihood of an underlying structural lead point, surgical resection of the involved segment is generally recommended rather than attempting enema reduction."
     },
     {
-      "id": 423,
+      "id": 427,
       "diagnosis": "Diverticulitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14503,7 +15198,7 @@
       "management": "Uncomplicated diverticulitis in otherwise healthy outpatients can often be managed without antibiotics, with close follow-up, clear liquids advanced as tolerated, and selective antibiotic use based on patient factors and severity. Complicated diverticulitis (abscess, perforation, or in immunocompromised/frail patients) requires antibiotics covering gram-negative and anaerobic organisms, with percutaneous drainage for abscesses larger than 3-4 cm. Recurrent or complicated disease (fistula, stricture, free perforation with peritonitis) warrants surgical resection, ideally elective after the acute episode resolves, though emergent surgery (often with a Hartmann's procedure) is needed for free perforation or failure of medical management."
     },
     {
-      "id": 424,
+      "id": 428,
       "diagnosis": "Appendicitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14538,7 +15233,7 @@
       "management": "The mainstay of treatment is appendectomy (laparoscopic or open), traditionally performed urgently to reduce the risk of perforation, with perioperative antibiotics covering gram-negative and anaerobic organisms. Select cases of uncomplicated appendicitis, particularly in adults, may be managed non-operatively with antibiotics alone, though this carries a risk of recurrence requiring later appendectomy. Perforated appendicitis with a contained abscess may be managed initially with percutaneous drainage and antibiotics (interval appendectomy approach) rather than emergent surgery in a hostile, inflamed surgical field."
     },
     {
-      "id": 425,
+      "id": 429,
       "diagnosis": "Ovarian Torsion",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14573,7 +15268,7 @@
       "management": "Definitive management is surgical, typically via laparoscopy, with detorsion of the ovary attempted first in most cases (even if the ovary appears dusky or hemorrhagic, as ovaries often recover viability surprisingly well after detorsion), followed by cystectomy or oophoropexy if a predisposing mass or cyst is identified. Oophorectomy is reserved for cases with clear, irreversible necrosis or in postmenopausal women with concerning mass features. Prompt diagnosis and treatment are critical, as delayed intervention significantly increases the likelihood of needing to sacrifice the ovary."
     },
     {
-      "id": 426,
+      "id": 430,
       "diagnosis": "HNPCC / Lynch Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14608,7 +15303,7 @@
       "management": "Management centers on intensive cancer surveillance, including colonoscopy starting at a young age (often 20-25) and repeated every 1-2 years given the accelerated adenoma-to-carcinoma progression, along with surveillance for endometrial, ovarian, and other associated cancers. Risk-reducing surgery, such as prophylactic hysterectomy and bilateral salpingo-oophorectomy after childbearing is complete, may be considered. Once colorectal cancer develops, extended colectomy is often favored over segmental resection given the high risk of metachronous tumors, and immunotherapy (checkpoint inhibitors) is particularly effective for these mismatch repair-deficient, MSI-high tumors."
     },
     {
-      "id": 427,
+      "id": 431,
       "diagnosis": "FAP / Attenuated FAP",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14643,7 +15338,7 @@
       "management": "Given the near-certain progression to colorectal cancer, prophylactic colectomy (typically total proctocolectomy with ileal pouch-anal anastomosis, or subtotal colectomy with ileorectal anastomosis depending on rectal polyp burden) is recommended once polyp burden becomes unmanageable endoscopically, usually in the teens to twenties. Upper endoscopic surveillance is also needed given the risk of duodenal and gastric polyps/cancer, and patients require monitoring for extracolonic manifestations such as desmoid tumors and thyroid cancer; attenuated FAP may be managed with more intensive endoscopic polypectomy surveillance before colectomy becomes necessary."
     },
     {
-      "id": 428,
+      "id": 432,
       "diagnosis": "Peutz-Jeghers Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14678,7 +15373,7 @@
       "management": "Management focuses on surveillance endoscopy (upper endoscopy and colonoscopy) and small bowel imaging or capsule endoscopy at regular intervals to detect and remove polyps before they cause obstruction or progress to malignancy, alongside surveillance for the various associated extraintestinal cancers. Symptomatic or large polyps (generally greater than 1-1.5 cm, given the risk of acting as a lead point for intussusception) are removed endoscopically when feasible, with surgery reserved for polyps not amenable to endoscopic resection or for episodes of intussusception/obstruction."
     },
     {
-      "id": 429,
+      "id": 433,
       "diagnosis": "Internal Hemorrhoids",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14713,7 +15408,7 @@
       "management": "First-line management includes increasing dietary fiber and fluid intake, avoiding straining, and topical therapies to reduce symptoms; lower-grade hemorrhoids often respond well to these conservative measures. Office-based procedures such as rubber band ligation, sclerotherapy, or infrared coagulation are used for higher-grade or refractory internal hemorrhoids. Surgical hemorrhoidectomy or stapled hemorrhoidopexy is reserved for large, prolapsing, or refractory hemorrhoids that fail less invasive treatments."
     },
     {
-      "id": 430,
+      "id": 434,
       "diagnosis": "External Hemorrhoids",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14748,7 +15443,7 @@
       "management": "If presenting within 48-72 hours of symptom onset and pain is severe, excision of the thrombosed hemorrhoid under local anesthesia provides rapid symptomatic relief. Beyond this window, or for milder symptoms, conservative management with sitz baths, topical analgesics/anti-inflammatories, stool softeners, and increased fiber intake is preferred, as the thrombosis will gradually resolve on its own, though a residual skin tag may remain."
     },
     {
-      "id": 431,
+      "id": 435,
       "diagnosis": "Anal Fissure",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14783,7 +15478,7 @@
       "management": "First-line treatment focuses on softening stool (increased fiber and fluid intake, stool softeners) and reducing internal sphincter spasm with topical agents such as nitroglycerin or calcium channel blockers (e.g., nifedipine), along with warm sitz baths, which together allow most acute fissures to heal. Botulinum toxin injection into the internal sphincter is used for chronic fissures refractory to topical therapy. Lateral internal sphincterotomy is reserved for fissures that fail medical management, providing durable relief by interrupting the cycle of sphincter spasm, though with a small risk of fecal incontinence."
     },
     {
-      "id": 432,
+      "id": 436,
       "diagnosis": "Pruritis Ani",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14818,7 +15513,7 @@
       "management": "Management begins with addressing reversible contributing factors: improving (but not over-aggressive) hygiene, avoiding dietary triggers, keeping the area dry, and discontinuing harsh soaps, wipes, or topical irritants. Low-potency topical corticosteroids can be used short-term for significant inflammation, though prolonged use should be avoided due to skin thinning. Any underlying cause identified (hemorrhoids, fissure, fistula, infection) should be specifically treated, and persistent or atypical presentations warrant further evaluation, including biopsy, to exclude dermatologic or neoplastic causes."
     },
     {
-      "id": 433,
+      "id": 437,
       "diagnosis": "Adenomatous Polyps",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14853,7 +15548,7 @@
       "management": "All adenomatous polyps identified on colonoscopy should be removed via polypectomy, both for therapeutic purposes (preventing progression to cancer) and to allow histologic characterization. Surveillance colonoscopy intervals are then individualized based on the number, size, and histology of polyps found, ranging from 3 to 10 years, with shorter intervals for higher-risk features (multiple polyps, large size, high-grade dysplasia, villous histology). Polyps too large or technically difficult to remove endoscopically may require surgical resection."
     },
     {
-      "id": 434,
+      "id": 438,
       "diagnosis": "Abscess/Fistula Disease (Perianal)",
       "aliases": [
         "Perianal",
@@ -14891,7 +15586,7 @@
       "management": "Acute abscesses require prompt incision and drainage, which is the priority regardless of whether a fistula is identified at the time. Established fistulas often require a second, staged procedure once acute infection has resolved, with treatment options including fistulotomy (for simple, low fistulas with minimal sphincter involvement), or sphincter-sparing techniques (seton placement, advancement flaps, LIFT procedure) for more complex fistulas at higher risk of incontinence if simply incised. When Crohn's disease is the underlying cause, medical optimization of the IBD (often with biologic therapy) is an essential adjunct to surgical management."
     },
     {
-      "id": 435,
+      "id": 439,
       "diagnosis": "Intra-abdominal Infection (Abscess)",
       "aliases": [
         "Abscess",
@@ -14929,7 +15624,7 @@
       "management": "The cornerstone of treatment is source control, most often achieved with image-guided percutaneous drainage of the abscess when anatomically accessible, combined with broad-spectrum antibiotics covering gram-negative and anaerobic organisms. Abscesses not amenable to percutaneous drainage (due to location, loculation, or multiplicity) or those failing to improve with drainage and antibiotics require surgical exploration and drainage. Identifying and addressing the underlying source (e.g., bowel leak, ongoing perforation) is essential to prevent recurrence."
     },
     {
-      "id": 436,
+      "id": 440,
       "diagnosis": "Cholelithiasis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14966,7 +15661,7 @@
       "management": "Asymptomatic gallstones discovered incidentally generally do not require treatment, as the risk of developing symptoms or complications is relatively low and prophylactic cholecystectomy is not routinely recommended. Exceptions where prophylactic cholecystectomy may be considered include very large stones, a porcelain gallbladder, or particular patient populations at higher risk for gallbladder cancer or complications. Patients should be counseled on the symptoms of biliary colic and counseled to seek care if symptoms develop."
     },
     {
-      "id": 437,
+      "id": 441,
       "diagnosis": "Biliary Colic",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -14997,7 +15692,7 @@
       "management": "Acute episodes are managed symptomatically with analgesics (NSAIDs are often preferred given evidence of efficacy and to avoid masking evolving complications) and antiemetics as needed, with most episodes resolving spontaneously without intervention. Given the significant risk of recurrent symptoms and progression to complications (cholecystitis, choledocholithiasis, gallstone pancreatitis), elective laparoscopic cholecystectomy is generally recommended once a patient has had a symptomatic episode of biliary colic, rather than waiting for a complication to develop."
     },
     {
-      "id": 438,
+      "id": 442,
       "diagnosis": "Acute Cholecystitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15032,7 +15727,7 @@
       "management": "Initial management includes IV fluids, analgesia, and broad-spectrum antibiotics covering enteric gram-negative and anaerobic organisms. Definitive treatment is early laparoscopic cholecystectomy, ideally within 72 hours of symptom onset, as early surgery is associated with lower complication rates and shorter hospital stays compared to delayed surgery. Patients who are poor surgical candidates due to severe illness may be managed initially with percutaneous cholecystostomy tube drainage, with interval cholecystectomy considered once they have recovered."
     },
     {
-      "id": 439,
+      "id": 443,
       "diagnosis": "Choledocholithiasis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15069,7 +15764,7 @@
       "management": "The primary treatment is ERCP with sphincterotomy and stone extraction to relieve the bile duct obstruction, which can be performed prior to or, in some centers, intraoperatively at the time of cholecystectomy. Following successful duct clearance, cholecystectomy is generally recommended (often during the same hospitalization) to prevent recurrent stone migration from the gallbladder, the original source of most common bile duct stones. Antibiotics are not routinely required for uncomplicated choledocholithiasis without signs of infection, but should be promptly added if there is any evidence of progression to cholangitis."
     },
     {
-      "id": 440,
+      "id": 444,
       "diagnosis": "Ascending Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15104,7 +15799,7 @@
       "management": "Initial management includes prompt IV fluid resuscitation, broad-spectrum antibiotics covering enteric gram-negative organisms and anaerobes, and close hemodynamic monitoring given the risk of rapid progression to septic shock. Urgent biliary decompression, most commonly via ERCP with sphincterotomy and stone extraction or stent placement, is essential and should not be delayed in patients who do not rapidly improve with supportive care, as source control of the obstructed, infected biliary system is the definitive treatment; percutaneous transhepatic biliary drainage or surgical decompression are alternatives when ERCP is not feasible."
     },
     {
-      "id": 441,
+      "id": 445,
       "diagnosis": "Gallstone Pancreatitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15139,7 +15834,7 @@
       "management": "Initial management follows standard acute pancreatitis principles: aggressive IV fluid resuscitation, pain control, and early enteral feeding as tolerated. If there is evidence of a persistently impacted stone causing ongoing biliary obstruction or concurrent cholangitis, urgent ERCP with sphincterotomy is indicated to relieve the obstruction. Once the acute pancreatitis episode has resolved, cholecystectomy is recommended during the same hospital admission (rather than delaying to an interval outpatient procedure) to prevent recurrent gallstone-related complications, given the high risk of recurrence if the gallbladder is left in place."
     },
     {
-      "id": 442,
+      "id": 446,
       "diagnosis": "Budd-Chiari Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15174,7 +15869,7 @@
       "management": "Management begins with anticoagulation to prevent thrombus extension and treatment of any underlying hypercoagulable disorder (e.g., cytoreductive therapy for polycythemia vera). For symptomatic outflow obstruction, options include angioplasty or stenting of a focal venous stenosis, and transjugular intrahepatic portosystemic shunt (TIPS) for more diffuse obstruction or refractory ascites. Liver transplantation is reserved for patients who progress to fulminant hepatic failure or decompensated cirrhosis despite these interventions."
     },
     {
-      "id": 443,
+      "id": 447,
       "diagnosis": "Hepatitis B",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15209,7 +15904,7 @@
       "management": "Acute hepatitis B is generally managed supportively, as most immunocompetent adults clear the infection spontaneously. Chronic hepatitis B with evidence of active viral replication and liver inflammation/fibrosis is treated with long-term antiviral therapy, most commonly nucleos(t)ide analogues such as tenofovir or entecavir, which suppress viral replication and reduce progression to cirrhosis and hepatocellular carcinoma, though they rarely achieve a complete cure. All patients with chronic hepatitis B require ongoing surveillance for hepatocellular carcinoma with periodic ultrasound and alpha-fetoprotein testing, and at-risk contacts should receive hepatitis B vaccination."
     },
     {
-      "id": 444,
+      "id": 448,
       "diagnosis": "Hepatitis C",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15244,7 +15939,7 @@
       "management": "The treatment of chronic hepatitis C has been revolutionized by direct-acting antiviral (DAA) regimens (e.g., sofosbuvir-velpatasvir, glecaprevir-pibrentasvir), which achieve cure (sustained virologic response) in the vast majority of patients with a short course of all-oral therapy, regardless of genotype in most modern regimens. All patients with chronic HCV, even after achieving cure, require ongoing monitoring for hepatocellular carcinoma if they have established cirrhosis, since the risk of HCC persists even after viral eradication in this population."
     },
     {
-      "id": 445,
+      "id": 449,
       "diagnosis": "NAFLD",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15279,7 +15974,7 @@
       "management": "The cornerstone of treatment is lifestyle modification, particularly weight loss (typically targeting 7-10% of body weight) through diet and exercise, which can reduce or even reverse hepatic steatosis. Optimizing control of associated metabolic conditions, including diabetes, hypertension, and dyslipidemia, is also important, and GLP-1 receptor agonists have shown benefit for both weight loss and liver fat reduction in this population. Patients should be monitored periodically for progression to steatohepatitis or fibrosis, often using non-invasive markers (elastography, fibrosis scores) to determine the need for further evaluation."
     },
     {
-      "id": 446,
+      "id": 450,
       "diagnosis": "Wilson's Disease",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15314,7 +16009,7 @@
       "management": "First-line treatment is copper chelation therapy with D-penicillamine or trientine, which promotes urinary copper excretion, alongside zinc therapy, which reduces intestinal copper absorption and can be used for maintenance therapy or in presymptomatic/mildly affected patients. Dietary copper restriction (avoiding foods such as shellfish, organ meats, and chocolate) is recommended as an adjunct to medical therapy. Liver transplantation is curative for the underlying metabolic defect and is reserved for patients with acute liver failure or decompensated cirrhosis unresponsive to medical therapy."
     },
     {
-      "id": 447,
+      "id": 451,
       "diagnosis": "Alpha-1-Antitrypsin Deficiency",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15349,7 +16044,7 @@
       "management": "For pulmonary disease, smoking cessation is critical (as smoking dramatically accelerates lung damage in affected individuals), alongside standard COPD management and, in eligible patients with significant deficiency, intravenous augmentation therapy with pooled human alpha-1-antitrypsin to slow progression of emphysema. There is no specific medical therapy to prevent the hepatic accumulation of the misfolded protein; liver disease is managed supportively with standard cirrhosis care, and liver transplantation is curative (replacing the genetically abnormal liver) for those who progress to decompensated cirrhosis or liver failure."
     },
     {
-      "id": 448,
+      "id": 452,
       "diagnosis": "Hemochromatosis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15384,7 +16079,7 @@
       "management": "First-line treatment is therapeutic phlebotomy, performed regularly (often weekly initially) to deplete excess body iron stores, with treatment goals guided by serial ferritin levels, followed by less frequent maintenance phlebotomy once iron stores have normalized. Iron chelation therapy (e.g., deferasirox) is reserved for patients who cannot tolerate phlebotomy, such as those with significant anemia or cardiac dysfunction. Dietary modification (avoiding iron supplements and excessive vitamin C, which enhances iron absorption) and avoidance of raw shellfish (due to increased susceptibility to Vibrio vulnificus infection with iron overload) are also recommended, and family members should be screened given the hereditary nature of the condition."
     },
     {
-      "id": 449,
+      "id": 453,
       "diagnosis": "Autoimmune Hepatitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15419,7 +16114,7 @@
       "management": "First-line treatment is immunosuppression, typically with corticosteroids (prednisone) for induction, often combined with azathioprine both to allow steroid tapering and for long-term maintenance therapy, given the relapsing nature of the disease if treatment is withdrawn prematurely. Most patients require long-term, sometimes lifelong, immunosuppressive therapy to maintain remission, with treatment response monitored via serial transaminases and IgG levels. Liver transplantation is reserved for patients who progress to decompensated cirrhosis or fail to respond to medical therapy, including those presenting with acute liver failure."
     },
     {
-      "id": 450,
+      "id": 454,
       "diagnosis": "Alcohol-Associated Liver Disease",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15454,7 +16149,7 @@
       "management": "The most important intervention at every stage is complete alcohol cessation, ideally with structured support (counseling, pharmacotherapy such as naltrexone or acamprosate, and management of withdrawal) given the risk of life-threatening alcohol withdrawal in dependent patients. Severe alcoholic hepatitis, particularly with a high Maddrey discriminant function, may be treated with corticosteroids to reduce short-term mortality, alongside nutritional support given the frequent presence of malnutrition in this population. Liver transplantation may be considered for select patients with decompensated alcohol-associated cirrhosis, typically requiring a demonstrated period of confirmed abstinence per individual program protocols."
     },
     {
-      "id": 451,
+      "id": 455,
       "diagnosis": "Drug-Induced Liver Injury",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15489,7 +16184,7 @@
       "management": "The cornerstone of management is prompt discontinuation of the offending agent, after which most cases of DILI resolve over days to weeks, though cholestatic injury can take longer to fully normalize than hepatocellular injury. Supportive care is provided as needed, and N-acetylcysteine is specifically indicated for acetaminophen-induced hepatotoxicity given its role as an antidote in that particular etiology. Severe cases progressing to acute liver failure require specialized management and evaluation for liver transplantation, and patients should be counseled to avoid re-exposure to the implicated agent given the risk of more severe recurrent injury."
     },
     {
-      "id": 452,
+      "id": 456,
       "diagnosis": "Gilbert's Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15524,7 +16219,7 @@
       "management": "No treatment is necessary for Gilbert's syndrome, as it is a benign condition with an excellent prognosis and no risk of progression to liver damage. Reassurance is the primary intervention, along with patient education that episodes of mild jaundice may recur during physiologic stress (illness, fasting) but are not harmful. It is important to confirm the diagnosis (normal liver enzymes, normal CBC excluding hemolysis, isolated mild indirect hyperbilirubinemia) to avoid unnecessary further workup or anxiety once the benign nature of the condition is established."
     },
     {
-      "id": 453,
+      "id": 457,
       "diagnosis": "MASH",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15559,7 +16254,7 @@
       "management": "Management centers on aggressive lifestyle modification, with weight loss of at least 7-10% (and ideally more for fibrosis regression) through diet and exercise, alongside optimization of diabetes, dyslipidemia, and hypertension. Resmetirom, a thyroid hormone receptor-beta agonist, is now approved specifically for MASH with fibrosis, and GLP-1 receptor agonists/bariatric surgery have shown significant benefit for both weight loss and histologic improvement. Patients require ongoing monitoring of fibrosis stage (via elastography or biopsy) given the risk of progression to cirrhosis, at which point management shifts toward standard cirrhosis care and surveillance."
     },
     {
-      "id": 454,
+      "id": 458,
       "diagnosis": "Primary Biliary Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15594,7 +16289,7 @@
       "management": "First-line treatment is ursodeoxycholic acid (UDCA), which improves bile flow and significantly slows disease progression in most patients when started early. For patients with an inadequate response to UDCA, obeticholic acid or fibrates (e.g., bezafibrate, used off-label in many regions) may be added as second-line therapy. Pruritus, which can be severe and significantly impair quality of life, is managed with agents such as cholestyramine, rifampin, or newer ileal bile acid transporter inhibitors, and liver transplantation is reserved for patients who progress to decompensated cirrhosis."
     },
     {
-      "id": 455,
+      "id": 459,
       "diagnosis": "Primary Sclerosing Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -15629,7 +16324,7 @@
       "management": "Unlike PBC, there is no medical therapy proven to alter the natural history or slow disease progression in PSC, and ursodeoxycholic acid is not routinely recommended for this purpose, though it may be used for symptomatic cholestasis in some cases. Management instead focuses on surveillance for and treatment of complications, including endoscopic dilation or stenting of dominant biliary strictures, periodic imaging and tumor marker (CA 19-9) surveillance for cholangiocarcinoma, and colonoscopic surveillance for colorectal cancer given the strong IBD association. Liver transplantation is the only definitive treatment for advanced disease, though PSC notably can recur in the transplanted liver."
     },
     {
-      "id": 456,
+      "id": 460,
       "diagnosis": "Acute Kidney Injury (AKI)",
       "aliases": [
         "AKI",
@@ -15667,7 +16362,7 @@
       "management": "IV fluids, discontinue nephrotoxic medications, treat underlying volume depletion."
     },
     {
-      "id": 457,
+      "id": 461,
       "diagnosis": "Chronic Kidney Disease (CKD)",
       "aliases": [
         "CKD",
@@ -15707,7 +16402,7 @@
       "management": "Control BP (ACEi/ARB), treat underlying cause, manage CKD complications, dialysis or transplant for ESRD."
     },
     {
-      "id": 458,
+      "id": 462,
       "diagnosis": "Acute Tubular Necrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -15742,7 +16437,7 @@
       "management": "Supportive care, optimize perfusion, avoid nephrotoxins, dialysis if indicated."
     },
     {
-      "id": 459,
+      "id": 463,
       "diagnosis": "Acute Interstitial Nephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -15777,7 +16472,7 @@
       "management": "Stop offending drug, supportive care, corticosteroids for persistent disease."
     },
     {
-      "id": 460,
+      "id": 464,
       "diagnosis": "Tubular Obstruction",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -15812,7 +16507,7 @@
       "management": "Immediate relief of obstruction with catheterization or urologic intervention."
     },
     {
-      "id": 461,
+      "id": 465,
       "diagnosis": "Nephrotic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -15847,7 +16542,7 @@
       "management": "Treat underlying cause, ACEi/ARB, diuretics, statins, anticoagulation when appropriate."
     },
     {
-      "id": 462,
+      "id": 466,
       "diagnosis": "Nephritic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -15882,7 +16577,7 @@
       "management": "Control blood pressure and fluid status; treat underlying glomerulonephritis; immunosuppression when indicated."
     },
     {
-      "id": 463,
+      "id": 467,
       "diagnosis": "Ureteric stone (unilateral)",
       "aliases": [
         "unilateral",
@@ -15922,7 +16617,7 @@
       "management": "Analgesia, hydration, medical expulsive therapy (tamsulosin), lithotripsy or ureteroscopy for larger stones."
     },
     {
-      "id": 464,
+      "id": 468,
       "diagnosis": "Central Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -15957,7 +16652,7 @@
       "management": "Treat with desmopressin replacement and ensure adequate water intake. Monitor serum sodium closely and address the underlying hypothalamic or pituitary disorder."
     },
     {
-      "id": 465,
+      "id": 469,
       "diagnosis": "Nephrogenic Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -15992,7 +16687,7 @@
       "management": "Address the underlying cause, optimize hydration, and reduce urine output with dietary measures and selected medications. Monitor closely for dehydration and hypernatremia"
     },
     {
-      "id": 466,
+      "id": 470,
       "diagnosis": "Osmotic Demyelination Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16027,7 +16722,7 @@
       "management": "Prevention through careful sodium correction is critical. Provide supportive neurologic care, rehabilitation, and close monitoring for respiratory compromise and long-term deficits."
     },
     {
-      "id": 467,
+      "id": 471,
       "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH)",
       "aliases": [
         "SIADH",
@@ -16065,7 +16760,7 @@
       "management": "Treat the underlying cause and restrict fluids first; if insufficient, escalate to urea or tolvaptan as second-line therapy; and use hypertonic saline emergently for severe symptomatic hyponatremia, with careful sodium correction to avoid osmotic demyelination"
     },
     {
-      "id": 468,
+      "id": 472,
       "diagnosis": "Primary Hyperaldosteronism (Conn's)",
       "aliases": [
         "Conn's",
@@ -16103,7 +16798,7 @@
       "management": "Unilateral disease is typically treated surgically. Bilateral adrenal hyperplasia is managed medically with mineralocorticoid receptor antagonists and cardiovascular risk reduction."
     },
     {
-      "id": 469,
+      "id": 473,
       "diagnosis": "Gitelman Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16141,7 +16836,7 @@
       "management": "Provide lifelong magnesium and potassium supplementation. Encourage liberal salt intake and consider potassium-sparing agents for persistent electrolyte abnormalities or symptoms."
     },
     {
-      "id": 470,
+      "id": 474,
       "diagnosis": "Bartter Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16176,7 +16871,7 @@
       "management": "Correct fluid and electrolyte losses with potassium supplementation and liberal salt intake. NSAIDs and potassium-sparing agents may reduce renal salt wasting"
     },
     {
-      "id": 471,
+      "id": 475,
       "diagnosis": "Methanol Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16211,7 +16906,7 @@
       "management": "Administer fomepizole to inhibit alcohol dehydrogenase, correct acidosis, and perform hemodialysis when indicated. Monitor closely for visual and neurologic injury."
     },
     {
-      "id": 472,
+      "id": 476,
       "diagnosis": "Salicylate Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16246,7 +16941,7 @@
       "management": "Administer activated charcoal when appropriate and alkalinize serum and urine with intravenous bicarbonate. Severe toxicity may require urgent hemodialysis."
     },
     {
-      "id": 473,
+      "id": 477,
       "diagnosis": "Renal Tubular Acidosis Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16281,7 +16976,7 @@
       "management": "Treat with oral alkali therapy and potassium supplementation when needed. Address underlying causes and monitor for nephrolithiasis, nephrocalcinosis, and kidney dysfunction."
     },
     {
-      "id": 474,
+      "id": 478,
       "diagnosis": "Renal Tubular Acidosis Type 2",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16316,7 +17011,7 @@
       "management": "Provide bicarbonate replacement and correct electrolyte abnormalities. Treat the underlying cause and supplement phosphate or vitamin D when bone disease is present."
     },
     {
-      "id": 475,
+      "id": 479,
       "diagnosis": "Renal Tubular Acidosis Type 4",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16351,7 +17046,7 @@
       "management": "Address underlying hypoaldosteronism, discontinue contributing medications when possible, and treat hyperkalemia. Some patients benefit from mineralocorticoid replacement or diuretic therapy."
     },
     {
-      "id": 476,
+      "id": 480,
       "diagnosis": "Saline-Infusion Hyperchloremia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16386,7 +17081,7 @@
       "management": "Reduce or discontinue chloride-rich fluids and consider balanced crystalloids. Monitor acid-base status and renal function while treating the underlying illness."
     },
     {
-      "id": 477,
+      "id": 481,
       "diagnosis": "Urinary Tract Infection",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16421,7 +17116,7 @@
       "management": "First-line treatment of uncomplicated UTI includes nitrofurantoin (100 mg twice daily, 5 days), trimethoprim-sulfamethoxazole (1 DS tablet twice daily, 3 days), or fosfomycin (single 3 g dose); fluoroquinolones are reserved as alternatives."
     },
     {
-      "id": 478,
+      "id": 482,
       "diagnosis": "Acute Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16459,7 +17154,7 @@
       "management": "Initiate appropriate antibiotic therapy and ensure adequate hydration. Hospitalize patients with severe illness, sepsis, obstruction, or inability to tolerate oral medications."
     },
     {
-      "id": 479,
+      "id": 483,
       "diagnosis": "Prostatitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16494,7 +17189,7 @@
       "management": "Ciprofloxacin 500 mg po x 14-30 d or Septra DS 1 tab po BID x 14-30 d. Monitor for urinary retention, abscess formation, and sepsis, with hospitalization for severe disease."
     },
     {
-      "id": 480,
+      "id": 484,
       "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
       "aliases": [
         "BPH",
@@ -16532,7 +17227,7 @@
       "management": "Lifestyle modifications and α₁-blockers provide symptomatic relief. Larger prostates may benefit from 5α-reductase inhibitors, while refractory obstruction may require surgery."
     },
     {
-      "id": 481,
+      "id": 485,
       "diagnosis": "Overactive Bladder (OAB)",
       "aliases": [
         "OAB",
@@ -16573,7 +17268,7 @@
       "management": "Begin with bladder training, fluid management, and pelvic floor exercises. Persistent symptoms may require antimuscarinic therapy, β3-adrenergic agonists, or specialist referral."
     },
     {
-      "id": 482,
+      "id": 486,
       "diagnosis": "Prostate Adenocarcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16611,7 +17306,7 @@
       "management": "Management ranges from active surveillance to surgery, radiation, and androgen deprivation therapy. Advanced disease may require systemic therapy and treatment of metastases."
     },
     {
-      "id": 483,
+      "id": 487,
       "diagnosis": "Renal Cell Carcinoma (RCC)",
       "aliases": [
         "RCC",
@@ -16651,7 +17346,7 @@
       "management": "Localized disease is treated with partial or radical nephrectomy. Advanced disease may require targeted therapy, immunotherapy, and management of metastatic complications."
     },
     {
-      "id": 484,
+      "id": 488,
       "diagnosis": "Testicular Cancer",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16686,7 +17381,7 @@
       "management": "Radical inguinal orchiectomy for diagnosis and treatment. Further management depends on histology and stage and may include surveillance, chemotherapy, or radiation. Never biopsy due to risk of lymphatogenous spread."
     },
     {
-      "id": 485,
+      "id": 489,
       "diagnosis": "Von Hippel-Lindau Syndrome (VHL)",
       "aliases": [
         "VHL",
@@ -16724,7 +17419,7 @@
       "management": "Provide lifelong surveillance for associated tumors with regular imaging and screening. Surgical intervention is often required for symptomatic or high-risk lesions."
     },
     {
-      "id": 486,
+      "id": 490,
       "diagnosis": "Septic Stone",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16759,7 +17454,7 @@
       "management": "Treat as a urologic emergency with immediate broad-spectrum antibiotics and urgent urinary decompression via nephrostomy tube or ureteral stent placement."
     },
     {
-      "id": 487,
+      "id": 491,
       "diagnosis": "Nephrolithiasis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16797,7 +17492,7 @@
       "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
     },
     {
-      "id": 488,
+      "id": 492,
       "diagnosis": "Erectile Dysfunction (ED)",
       "aliases": [
         "ED",
@@ -16835,7 +17530,7 @@
       "management": "Address reversible causes and optimize cardiovascular risk factors. First-line therapy typically involves phosphodiesterase-5 inhibitors, with additional treatments reserved for refractory cases"
     },
     {
-      "id": 489,
+      "id": 493,
       "diagnosis": "Hydrocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16873,7 +17568,7 @@
       "management": "Observe asymptomatic hydroceles. Symptomatic, enlarging, or persistent cases may require surgical hydrocelectomy after excluding underlying infection, malignancy, or hernia."
     },
     {
-      "id": 490,
+      "id": 494,
       "diagnosis": "Epididymal Cyst",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16908,7 +17603,7 @@
       "management": "Reassure and observe asymptomatic lesions. Surgical excision may be considered for persistent pain, significant enlargement, or diagnostic uncertainty after imaging evaluation."
     },
     {
-      "id": 491,
+      "id": 495,
       "diagnosis": "Varicocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16943,7 +17638,7 @@
       "management": "Observe asymptomatic cases. Symptomatic patients or those with infertility may benefit from surgical ligation or percutaneous embolization of the affected veins."
     },
     {
-      "id": 492,
+      "id": 496,
       "diagnosis": "Epididymitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16978,7 +17673,7 @@
       "management": "Treat with pathogen-directed antibiotics, analgesia, scrotal elevation, and rest. Exclude testicular torsion promptly and monitor for abscess or fertility complications"
     },
     {
-      "id": 493,
+      "id": 497,
       "diagnosis": "Orchitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17013,7 +17708,7 @@
       "management": "Provide analgesia, scrotal support, and supportive care. Treat underlying bacterial infection when present and monitor for testicular atrophy or fertility complications."
     },
     {
-      "id": 494,
+      "id": 498,
       "diagnosis": "Indirect Inguinal Hernia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17048,7 +17743,7 @@
       "management": "Elective surgical repair is recommended for symptomatic hernias. Urgent intervention is required for incarceration, strangulation, bowel obstruction, or compromised blood supply."
     },
     {
-      "id": 495,
+      "id": 499,
       "diagnosis": "Testicular Torsion",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17083,7 +17778,7 @@
       "management": "Treat as a surgical emergency with immediate urologic consultation and urgent orchiopexy. Delay in intervention significantly increases the risk of testicular loss."
     },
     {
-      "id": 496,
+      "id": 500,
       "diagnosis": "Hematocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17118,7 +17813,7 @@
       "management": "Obtain urgent scrotal ultrasonography and assess for testicular injury. Small stable hematoceles may be observed, while large or expanding collections require surgery."
     },
     {
-      "id": 497,
+      "id": 501,
       "diagnosis": "Cystitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17153,7 +17848,7 @@
       "management": "Nitrofurantoin, TMP-SMX, or fosfomycin are first-line for uncomplicated cystitis; fluoroquinolones are reserved as alternative agents due to resistance concerns."
     },
     {
-      "id": 498,
+      "id": 502,
       "diagnosis": "Urethritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17188,7 +17883,7 @@
       "management": "Treat with appropriate empiric antibiotics while awaiting test results. Ensure partner notification and treatment, and recommend abstinence until therapy is completed."
     },
     {
-      "id": 499,
+      "id": 503,
       "diagnosis": "Priapism",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17223,7 +17918,7 @@
       "management": "Treat as a urologic emergency with corporal aspiration and intracavernosal sympathomimetic therapy. Address underlying causes promptly to prevent permanent erectile dysfunction"
     },
     {
-      "id": 500,
+      "id": 504,
       "diagnosis": "Paraphimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17258,7 +17953,7 @@
       "management": "Treat as a urologic emergency with prompt manual reduction. Severe cases may require dorsal slit or circumcision to prevent ischemic complications."
     },
     {
-      "id": 501,
+      "id": 505,
       "diagnosis": "Phimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17293,7 +17988,7 @@
       "management": "Treat pathologic cases with topical corticosteroids and gentle stretching. Persistent, recurrent, or severe symptoms may require circumcision or surgical intervention."
     },
     {
-      "id": 502,
+      "id": 506,
       "diagnosis": "Fournier's Gangrene",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17328,7 +18023,7 @@
       "management": "Initiate immediate broad-spectrum antibiotics and aggressive resuscitation. Urgent surgical debridement is essential, often requiring multiple procedures and intensive care support."
     },
     {
-      "id": 503,
+      "id": 507,
       "diagnosis": "Penile Fracture",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17363,7 +18058,7 @@
       "management": "Obtain urgent urologic consultation and perform prompt surgical repair. Evaluate for associated urethral injury and monitor for long-term erectile dysfunction."
     },
     {
-      "id": 505,
+      "id": 509,
       "diagnosis": "Hydronephrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -17401,7 +18096,7 @@
       "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
     },
     {
-      "id": 506,
+      "id": 510,
       "diagnosis": "Emphysematous Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -17439,7 +18134,7 @@
       "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
     },
     {
-      "id": 507,
+      "id": 511,
       "diagnosis": "Urothelial Cell Carcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -17477,7 +18172,7 @@
       "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
     },
     {
-      "id": 508,
+      "id": 512,
       "diagnosis": "Multicystic Renal Dysplasia",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -17512,7 +18207,7 @@
       "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
     },
     {
-      "id": 509,
+      "id": 513,
       "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -17547,7 +18242,7 @@
       "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
     },
     {
-      "id": 510,
+      "id": 514,
       "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -17587,7 +18282,7 @@
       "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
     },
     {
-      "id": 511,
+      "id": 515,
       "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -17628,7 +18323,7 @@
       "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
     },
     {
-      "id": 512,
+      "id": 516,
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
