@@ -404,6 +404,56 @@
       "date": "2026-07-18",
       "diagnosis": "Cryptococcal Pneumonia",
       "id": 362
+    },
+    {
+      "date": "2026-07-19",
+      "diagnosis": "Hospital Associated Pneumonia (HAP)",
+      "id": 351
+    },
+    {
+      "date": "2026-07-20",
+      "diagnosis": "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)",
+      "id": 113
+    },
+    {
+      "date": "2026-07-21",
+      "diagnosis": "Steven-Johnsons Syndrome (SJS)",
+      "id": 111
+    },
+    {
+      "date": "2026-07-22",
+      "diagnosis": "Allergic Asthma",
+      "id": 124
+    },
+    {
+      "date": "2026-07-23",
+      "diagnosis": "Herpes Simplex Virus (HSV)",
+      "id": 122
+    },
+    {
+      "date": "2026-07-24",
+      "diagnosis": "Allergic Contact Dermatitis",
+      "id": 129
+    },
+    {
+      "date": "2026-07-25",
+      "diagnosis": "Anaphylaxis",
+      "id": 127
+    },
+    {
+      "date": "2026-07-26",
+      "diagnosis": "Chronic Spontaneous Urticaria",
+      "id": 135
+    },
+    {
+      "date": "2026-07-27",
+      "diagnosis": "DRESS Syndrome",
+      "id": 132
+    },
+    {
+      "date": "2026-07-28",
+      "diagnosis": "Molluscum Contagiosum",
+      "id": 94
     }
   ],
   "2": [
@@ -850,6 +900,61 @@
       "date": "2026-07-18",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-19",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-20",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-21",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-22",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-23",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-24",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-25",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-26",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-27",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-28",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
       "reset": true
     }
   ]
