@@ -454,6 +454,21 @@
       "date": "2026-07-28",
       "diagnosis": "Molluscum Contagiosum",
       "id": 94
+    },
+    {
+      "date": "2026-07-29",
+      "diagnosis": "Guttate Psoriasis",
+      "id": 94
+    },
+    {
+      "date": "2026-07-30",
+      "diagnosis": "Lichen Planus",
+      "id": 100
+    },
+    {
+      "date": "2026-07-31",
+      "diagnosis": "Scabies",
+      "id": 102
     }
   ],
   "2": [
@@ -956,6 +971,22 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-07-29",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-30",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-31",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
     }
   ]
 }

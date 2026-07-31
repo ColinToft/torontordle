@@ -3613,33 +3613,31 @@
       "clues": [
         {
           "type": "",
-          "text": "",
-          "image": "case-images/lichen-planus-clue1.jpg"
+          "text": "A 46-year-old woman presents with several weeks of intensely itchy purple bumps on her wrists and ankles. She also reports soreness inside her mouth when eating spicy foods"
         },
         {
           "type": "",
-          "text": "A middle-aged adult presents with a reticular oral rash"
+          "text": "She has chronic hepatitis C infection and recently started a new antihypertensive medication"
         },
         {
           "type": "",
-          "text": "The patient has white changes on the inside of the cheeks that do not wipe off."
+          "text": "Examination reveals multiple flat-topped, polygonal, violaceous papules on the flexor wrists and ankles. The buccal mucosa contains delicate white lacy plaques"
         },
         {
           "type": "",
-          "text": "Common sites include wrists, ankles, lower back, and oral mucosa."
+          "text": "Routine laboratory studies are unremarkable. Hepatitis C serology is positive"
         },
         {
           "type": "",
-          "text": "Fine white lacy lines are seen on the surface."
+          "text": "Punch biopsy demonstrates hyperkeratosis, saw-tooth acanthosis, a band-like lymphocytic infiltrate at the dermoepidermal junction, and Civatte (colloid) bodies"
         },
         {
           "type": "",
-          "text": "Wickham striae are present.",
-          "detail": "Image link"
+          "text": "Application of mineral oil reveals fine white reticular lines (Wickham striae) over several of the papules"
         }
       ],
-      "description": "Lichen planus is an inflammatory condition classically described by the 6 Ps. Often presents as pruritic, polygonal, flat-topped, violaceous papules with fine white reticulations (Wickham striae).",
-      "management": "Topical corticosteroids; systemic therapy if severe/widespread."
+      "description": "Lichen planus is a chronic T-cell-mediated inflammatory disorder affecting the skin, oral mucosa, nails, scalp, and genital mucosa. It classically presents with the 6 Ps: pruritic, purple, polygonal, planar (flat-topped), papules, and plaques. Oral lesions appear as lacy white Wickham striae. Associations include hepatitis C infection and certain medications (lichenoid drug eruptions). Most cases resolve spontaneously within 1–2 years, although mucosal disease may persist and carries a small risk of squamous cell carcinoma.",
+      "management": "Treat localized disease with high-potency topical corticosteroids (e.g., clobetasol). Extensive disease may require systemic corticosteroids, tacrolimus, phototherapy, or retinoids. Screen for hepatitis C when appropriate."
     },
     {
       "id": 101,
@@ -14217,7 +14215,1267 @@
       "management": "Discontinue exogenous thyroid hormone and provide propranolol for symptomatic relief. Evaluate for medication errors or factitious disorder when clinically appropriate."
     },
     {
+      "id": 391,
+      "diagnosis": "Complete Androgen Insensitivity syndrome (CAIS)",
+      "aliases": [
+        "CAIS",
+        "Complete Androgen Insensitivity syndrome"
+      ],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 16-year-old adolescent is referred for evaluation of primary amenorrhea despite normal breast development"
+        },
+        {
+          "type": "",
+          "text": "She has always identified as female and has no significant medical history. There is a maternal uncle with infertility of unknown cause"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals normal female external genitalia, Tanner stage V breast development, sparse pubic and axillary hair, and a blind-ending vaginal pouch"
+        },
+        {
+          "type": "",
+          "text": "Karyotype is 46,XY. Testosterone is within the normal adult male range, LH is elevated, FSH is normal or mildly elevated, and estradiol is mildly elevated"
+        },
+        {
+          "type": "",
+          "text": "Pelvic ultrasound demonstrates absence of the uterus and ovaries with intra-abdominal or inguinal testes"
+        },
+        {
+          "type": "",
+          "text": "She reports never requiring hair removal of the axillae or pubic region, despite otherwise normal pubertal breast development"
+        }
+      ],
+      "description": "Complete androgen insensitivity syndrome is an X-linked disorder caused by mutations in the androgen receptor, resulting in complete resistance to androgen action in individuals with a 46,XY karyotype. Patients have normal breast development due to aromatization of testosterone but lack a uterus and have sparse pubic and axillary hair. Diagnosis is established by karyotyping, hormone testing, and pelvic imaging. Complications include infertility and an increased risk of gonadal malignancy if testes remain in situ.",
+      "management": "Perform gonadectomy after completion of puberty, initiate estrogen replacement if indicated, and provide multidisciplinary psychological, reproductive, and genetic counseling."
+    },
+    {
+      "id": 392,
+      "diagnosis": "Partial Androgen Insensitivity Syndrome (PAIS)",
+      "aliases": [
+        "PAIS",
+        "Partial Androgen Insensitivity Syndrome"
+      ],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 15-year-old adolescent presents for evaluation of ambiguous genitalia and delayed pubertal development"
+        },
+        {
+          "type": "",
+          "text": "He was born with hypospadias requiring surgical repair during infancy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals gynecomastia, micropenis, persistent hypospadias, bifid scrotum, and bilateral palpable testes"
+        },
+        {
+          "type": "",
+          "text": "Karyotype is 46,XY. Testosterone is normal or elevated"
+        },
+        {
+          "type": "",
+          "text": "Pelvic ultrasound demonstrates absence of Müllerian structures and bilateral testes"
+        },
+        {
+          "type": "",
+          "text": "LH is elevated, and FSH is normal or mildly increased"
+        }
+      ],
+      "description": "Partial androgen insensitivity syndrome is an X-linked disorder caused by partial dysfunction of the androgen receptor. Individuals with a 46,XY karyotype develop a spectrum of undervirilization ranging from isolated infertility to ambiguous genitalia. Müllerian structures are absent because anti-Müllerian hormone production is preserved. Diagnosis relies on karyotyping, endocrine evaluation, and imaging. Long-term concerns include infertility, psychosocial distress, and increased gonadal tumor risk.",
+      "management": "Management is individualized and may include gender-affirming care, surgical reconstruction when appropriate, hormone therapy, gonadal surveillance or gonadectomy, and genetic counseling."
+    },
+    {
+      "id": 393,
+      "diagnosis": "Gynecomastia",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 17-year-old boy presents because of gradual enlargement of both breasts over the past eight months"
+        },
+        {
+          "type": "",
+          "text": "He denies anabolic steroid use"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm, rubbery, concentric subareolar glandular mass beneath both nipples without skin dimpling, nipple discharge, or axillary lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Serum testosterone, estradiol, LH, FSH, β-hCG, TSH, and prolactin are all within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Breast ultrasonography demonstrates symmetric retroareolar glandular tissue without a suspicious solid mass"
+        },
+        {
+          "type": "",
+          "text": "The breast enlargement is tender to palpation"
+        }
+      ],
+      "description": "Gynecomastia is benign proliferation of male glandular breast tissue caused by an imbalance between estrogenic and androgenic activity. Physiologic forms occur during infancy, puberty, and aging, while pathologic causes include medications, endocrine disorders, chronic liver disease, renal failure, and hormone-secreting tumors. Diagnosis requires exclusion of malignancy and secondary causes. Most pubertal cases resolve spontaneously. Persistent or symptomatic disease may require medical or surgical treatment.",
+      "management": "Treat the underlying cause and discontinue offending medications when possible. Tamoxifen may reduce pain and breast enlargement. Persistent fibrotic gynecomastia may require surgical reduction."
+    },
+    {
       "id": 394,
+      "diagnosis": "Hypergonadotropic hypogonadism",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 24-year-old woman presents with absent menstrual periods, hot flashes, and difficulty conceiving"
+        },
+        {
+          "type": "",
+          "text": "She received pelvic radiation therapy during adolescence for Hodgkin lymphoma"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals vaginal atrophy, reduced breast fullness, and decreased bone mineral density on previous screening"
+        },
+        {
+          "type": "",
+          "text": "FSH and LH are markedly elevated, estradiol is decreased, and anti-Müllerian hormone is undetectable"
+        },
+        {
+          "type": "",
+          "text": "Pelvic ultrasound demonstrates small atrophic ovaries with few or no visible follicles"
+        },
+        {
+          "type": "",
+          "text": "Despite repeated measurements several weeks apart, FSH remains persistently elevated"
+        }
+      ],
+      "description": "Hypergonadotropic hypogonadism results from primary gonadal failure, causing reduced sex steroid production and compensatory elevation of LH and FSH. Causes include gonadal dysgenesis, chemotherapy, radiation, autoimmune disease, genetic disorders, and premature ovarian insufficiency. Patients present with delayed puberty, infertility, amenorrhea, or symptoms of sex hormone deficiency. Diagnosis is established by elevated gonadotropins with low sex steroid concentrations. Complications include osteoporosis, infertility, cardiovascular disease, and reduced quality of life.",
+      "management": "Treat the underlying cause when possible. Initiate estrogen-progestin replacement (or testosterone replacement in affected males), optimize bone health, and provide fertility counseling."
+    },
+    {
+      "id": 395,
+      "diagnosis": "Kallmann Syndrome",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "An 18-year-old boy presents with absent pubertal progression, decreased libido, and lack of facial hair"
+        },
+        {
+          "type": "",
+          "text": "He reports that he has never been able to smell and has no history of chronic illness or prior chemotherapy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals sparse facial and axillary hair, small testes (<4 mL), decreased muscle mass, and eunuchoid body proportions"
+        },
+        {
+          "type": "",
+          "text": "Serum testosterone is decreased. LH and FSH are low or inappropriately normal. Prolactin and thyroid function tests are normal"
+        },
+        {
+          "type": "",
+          "text": "MRI of the brain demonstrates hypoplasia of the olfactory bulbs without a pituitary mass"
+        },
+        {
+          "type": "",
+          "text": "He reports that no male relatives experienced delayed puberty"
+        }
+      ],
+      "description": "Hypogonadotropic hypogonadism results from deficient hypothalamic or pituitary secretion of GnRH or gonadotropins. Causes include congenital disorders (e.g., Kallmann syndrome), pituitary tumors, hyperprolactinemia, chronic systemic disease, and functional hypothalamic suppression. Patients present with delayed puberty, infertility, and symptoms of sex steroid deficiency. Diagnosis is established by low sex steroids with low or inappropriately normal LH and FSH. Complications include infertility, osteoporosis, reduced muscle mass, and psychosocial distress.",
+      "management": "Treat the underlying cause. Initiate testosterone or estrogen/progestin replacement for pubertal induction. Use pulsatile GnRH or gonadotropin therapy when fertility is desired."
+    },
+    {
+      "id": 396,
+      "diagnosis": "Congenital Adrenal Hyperplasia (CAH)",
+      "aliases": [
+        "CAH",
+        "Congenital Adrenal Hyperplasia"
+      ],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 9-day-old newborn is brought to the emergency department with poor feeding, vomiting, lethargy, and progressive weight loss"
+        },
+        {
+          "type": "",
+          "text": "The infant was born at term to healthy parents. Newborn screening results are still pending"
+        },
+        {
+          "type": "",
+          "text": "The infant is hypotensive and dehydrated"
+        },
+        {
+          "type": "",
+          "text": "Hyponatremia, hyperkalemia, hypoglycemia, low cortisol, and markedly elevated 17-hydroxyprogesterone,  are present"
+        },
+        {
+          "type": "",
+          "text": "Pelvic ultrasound demonstrates a normal uterus and ovaries despite virilized external genitalia"
+        },
+        {
+          "type": "",
+          "text": "Plasma renin activity is elevated"
+        }
+      ],
+      "description": "Classic congenital adrenal hyperplasia is an autosomal recessive disorder most commonly caused by 21-hydroxylase deficiency. Impaired cortisol and aldosterone synthesis results in ACTH excess and adrenal androgen overproduction. Females present with ambiguous genitalia, while both sexes may develop neonatal salt-wasting crises. Diagnosis relies on elevated 17-hydroxyprogesterone and newborn screening. Complications include adrenal crisis, infertility, short adult stature, and adrenal rest tumors.",
+      "management": "Treat with hydrocortisone and fludrocortisone, provide sodium supplementation in infancy, educate regarding stress-dose steroids, and treat adrenal crises immediately with IV hydrocortisone and fluids."
+    },
+    {
+      "id": 397,
+      "diagnosis": "Non-classic Congenital Adrenal Hyperplasia (NCAH)",
+      "aliases": [
+        "NCAH",
+        "Non-classic Congenital Adrenal Hyperplasia"
+      ],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 19-year-old woman presents with worsening facial hair growth, irregular menstrual cycles, and treatment-resistant acne"
+        },
+        {
+          "type": "",
+          "text": "Symptoms began during adolescence"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals moderate hirsutism, inflammatory acne, and mild temporal hair thinning without clitoromegaly"
+        },
+        {
+          "type": "",
+          "text": "Basal 17-hydroxyprogesterone is mildly elevated and increases markedly following ACTH stimulation testing"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/non-classic-congenital-adrenal-hyperplasia-ncah-clue5.jpg",
+          "detail": "Transvaginal ultrasound demonstrates normal ovaries without the classic polycystic ovarian morphology",
+          "reference": "https://doi.org/10.53347/rID-31750"
+        },
+        {
+          "type": "",
+          "text": "Testosterone is mildly elevated"
+        }
+      ],
+      "description": "Non-classic congenital adrenal hyperplasia is a milder form of 21-hydroxylase deficiency with partial enzyme activity. Patients typically present during adolescence or adulthood with hyperandrogenic symptoms including hirsutism, acne, menstrual irregularity, and infertility. Unlike classic CAH, cortisol and aldosterone production are generally sufficient. Diagnosis is confirmed with ACTH stimulation testing demonstrating elevated 17-hydroxyprogesterone. Complications include infertility and reduced quality of life due to androgen excess.",
+      "management": "Treat symptomatic patients with combined oral contraceptives and spironolactone for hyperandrogenism. Low-dose glucocorticoids may be used for infertility or persistent symptoms."
+    },
+    {
+      "id": 398,
+      "diagnosis": "Primary Amenorrhea",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 16-year-old girl is referred because she has never had a menstrual period"
+        },
+        {
+          "type": "",
+          "text": "She reports normal growth and development but notes that several classmates began menstruating years ago"
+        },
+        {
+          "type": "",
+          "text": "Breast development is Tanner stage V. External genitalia appear normal, but the vaginal canal ends blindly"
+        },
+        {
+          "type": "",
+          "text": "FSH, LH, estradiol, prolactin, and thyroid function tests are all within normal limits"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/primary-amenorrhea-clue5.jpg",
+          "detail": "Pelvic MRI demonstrates complete absence of the uterus and upper two-thirds of the vagina, with normal ovaries",
+          "reference": "https://doi.org/10.53347/rID-28855"
+        },
+        {
+          "type": "",
+          "text": "She reports cyclic lower abdominal discomfort every month despite never menstruating"
+        }
+      ],
+      "description": "Primary amenorrhea is defined as the absence of menarche by age 15 years or more than three years after the onset of breast development. Causes include Müllerian agenesis, gonadal dysgenesis, androgen insensitivity syndrome, endocrine disorders, and hypothalamic or pituitary disease. Evaluation requires assessment of secondary sexual characteristics, hormone concentrations, karyotyping when indicated, and pelvic imaging. Management depends entirely on the underlying diagnosis and associated reproductive implications.",
+      "management": "Treat the underlying etiology. Management may include hormone replacement, surgical correction of obstructive anomalies, fertility counseling, and multidisciplinary reproductive and psychological support."
+    },
+    {
+      "id": 399,
+      "diagnosis": "Secondary Amenorrhea",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 28-year-old woman presents because she has not had a menstrual period for the past six months after previously having regular monthly cycles"
+        },
+        {
+          "type": "",
+          "text": "She denies pelvic pain and has no history of gynecologic surgery. Multiple home pregnancy tests have been negative"
+        },
+        {
+          "type": "",
+          "text": "Physical examination is unremarkable. Secondary sexual characteristics are fully developed, and pelvic examination is normal"
+        },
+        {
+          "type": "",
+          "text": "Serum β-hCG is negative. TSH and prolactin are within normal limits. Initial evaluation is otherwise unrevealing"
+        },
+        {
+          "type": "",
+          "text": "Pelvic ultrasonography demonstrates a normal-sized uterus with normal ovaries and no structural abnormalities"
+        },
+        {
+          "type": "",
+          "text": "She reports having previously regular menstrual cycles for more than 10 years before the abrupt cessation of menses"
+        }
+      ],
+      "description": "Secondary amenorrhea is defined as the absence of menstruation for at least three consecutive months in women with previously regular cycles, or six months in women with irregular cycles. Common causes include pregnancy, hypothalamic dysfunction, hyperprolactinemia, thyroid disease, premature ovarian insufficiency, polycystic ovary syndrome, and intrauterine adhesions. Evaluation begins with pregnancy testing, followed by endocrine testing and pelvic imaging. Management depends on the underlying etiology.",
+      "management": "Exclude pregnancy first, then treat the underlying cause. Therapy may include hormonal replacement, ovulation induction, surgical intervention, or correction of endocrine disorders."
+    },
+    {
+      "id": 400,
+      "diagnosis": "Asherman's Syndrome",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old woman presents with progressively lighter menstrual periods followed by complete absence of menstruation over the past eight months"
+        },
+        {
+          "type": "",
+          "text": "She underwent dilation and curettage six months earlier for retained products of conception following a miscarriage"
+        },
+        {
+          "type": "",
+          "text": "Physical examination is normal. Pelvic examination reveals no cervical or vaginal abnormalities"
+        },
+        {
+          "type": "",
+          "text": "β-hCG is negative. FSH, LH, estradiol, prolactin, and TSH are all within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Saline infusion sonohysterography demonstrates irregular filling defects within the uterine cavity. Hysteroscopy confirms dense intrauterine adhesions"
+        },
+        {
+          "type": "",
+          "text": "She experiences monthly cramping despite minimal or absent menstrual bleeding"
+        }
+      ],
+      "description": "Asherman's syndrome is characterized by intrauterine adhesions that most commonly develop after uterine instrumentation, particularly dilation and curettage following pregnancy. Patients present with secondary amenorrhea, hypomenorrhea, infertility, or recurrent pregnancy loss. Diagnosis is confirmed by hysteroscopy, the gold standard, or saline infusion sonohysterography. Untreated disease may result in infertility, recurrent miscarriage, abnormal placentation, and chronic pelvic pain.",
+      "management": "Treat with hysteroscopic adhesiolysis, followed by postoperative estrogen therapy and, when indicated, temporary intrauterine balloon placement to reduce adhesion recurrence."
+    },
+    {
+      "id": 401,
+      "diagnosis": "Pancreatic Neuroendocrine Tumour",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 46-year-old woman presents with recurrent episodes of dizziness, diaphoresis, confusion, and palpitations that improve rapidly after eating"
+        },
+        {
+          "type": "",
+          "text": "She has no history of diabetes"
+        },
+        {
+          "type": "",
+          "text": "Physical examination is normal between episodes. During symptomatic episodes, she is diaphoretic and mildly confused"
+        },
+        {
+          "type": "",
+          "text": "During a supervised fast, plasma glucose is 38 mg/dL, with inappropriately elevated insulin, C-peptide, and proinsulin"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/pancreatic-neuroendocrine-tumour-clue5.jpg",
+          "detail": "Axial arterial phase CT demonstrates an arterially peripherally hyper-enhancing mass with some internal central coarse calcifications and central low attenuation within the medial aspect of the pancreatic head",
+          "reference": "https://doi.org/10.53347/rID-53211"
+        },
+        {
+          "type": "",
+          "text": "She reports complete resolution of symptoms within minutes of consuming juice or candy"
+        }
+      ],
+      "description": "Pancreatic neuroendocrine tumors are uncommon neoplasms arising from endocrine cells of the pancreas. Functional tumors produce excess hormones, with insulinoma being the most common. Patients typically present with hormone-related syndromes, while nonfunctional tumors present later with mass effect or metastatic disease. Diagnosis relies on biochemical testing and cross-sectional imaging. Surgical resection is the preferred treatment for localized disease. Advanced disease may require targeted systemic therapy.",
+      "management": "Localized tumors are treated with surgical resection. Unresectable or metastatic disease may require somatostatin analogues, everolimus, sunitinib, peptide receptor radionuclide therapy, or chemotherapy."
+    },
+    {
+      "id": 402,
+      "diagnosis": "Juvenile Granulosa Cell Tumour (JGCT)",
+      "aliases": [
+        "JGCT",
+        "Juvenile Granulosa Cell Tumour"
+      ],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 6-year-old girl is brought to clinic because of breast development and intermittent vaginal bleeding"
+        },
+        {
+          "type": "",
+          "text": "She has no significant medical history. Growth velocity has accelerated over the previous year"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals Tanner stage III breast development without pubic hair. A palpable unilateral adnexal mass is noted"
+        },
+        {
+          "type": "",
+          "text": "Estradiol is markedly elevated. Inhibin B and anti-Müllerian hormone (AMH) are elevated. β-hCG and AFP are normal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/juvenile-granulosa-cell-tumour-jgct-clue5.jpg",
+          "detail": "Coronal CT demonstrates a large well-defined mid-abdominopelvic heterogeneously enhancing solid cystic mass with a \"sponge-like\" appearance",
+          "reference": "https://doi.org/10.53347/rID-194493"
+        },
+        {
+          "type": "",
+          "text": "Bone age radiography demonstrates marked advancement relative to chronological age"
+        }
+      ],
+      "description": "Juvenile granulosa cell tumors are rare estrogen-producing ovarian sex cord-stromal tumors occurring primarily in children and adolescents. Excess estrogen causes isosexual precocious puberty, abnormal uterine bleeding, or menstrual irregularities. Diagnosis is supported by elevated inhibin and AMH levels together with characteristic ovarian imaging. Most tumors are confined to one ovary at presentation and have an excellent prognosis following complete surgical excision.",
+      "management": "Treat with unilateral salpingo-oophorectomy for localized disease. Platinum-based chemotherapy (BEP) is reserved for advanced, recurrent, or high-risk tumors."
+    },
+    {
+      "id": 403,
+      "diagnosis": "Diffuse Hepatic Steatosis",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 52-year-old man presents for routine follow-up after abnormal liver enzymes were identified during an annual health examination. He is otherwise asymptomatic"
+        },
+        {
+          "type": "",
+          "text": "He has type 2 diabetes mellitus and hypertension but proudly reports minimal alcohol consumption"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild hepatomegaly without jaundice, ascites, or peripheral stigmata of chronic liver disease"
+        },
+        {
+          "type": "",
+          "text": "ALT is mildly greater than AST. Hemoglobin A1c is elevated, triglycerides are increased, and hepatitis B and C serologies are negative"
+        },
+        {
+          "type": "",
+          "text": "Abdominal ultrasound demonstrates a diffusely hyperechoic liver with posterior acoustic attenuation, consistent with diffuse fatty infiltration"
+        },
+        {
+          "type": "",
+          "text": "Transient elastography demonstrates minimal liver stiffness despite marked hepatic fat accumulation, suggesting steatosis without advanced fibrosis"
+        }
+      ],
+      "description": "Diffuse hepatic steatosis (MASLD) is characterized by excessive triglyceride accumulation within hepatocytes in patients with metabolic risk factors such as obesity, diabetes, dyslipidemia, and insulin resistance. Most patients are asymptomatic and are diagnosed after incidental liver enzyme abnormalities or imaging findings. Diagnosis requires exclusion of significant alcohol use and other chronic liver diseases. Complications include steatohepatitis (MASH), progressive fibrosis, cirrhosis, hepatocellular carcinoma, and cardiovascular disease.",
+      "management": "Recommend 7–10% weight loss, regular exercise, and treatment of diabetes, dyslipidemia, and hypertension. Consider GLP-1 receptor agonists or bariatric surgery in appropriate patients."
+    },
+    {
+      "id": 404,
+      "diagnosis": "Parathyroid Adenoma",
+      "aliases": [],
+      "category": "Endocrine III",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman presents with recurrent nephrolithiasis, constipation, fatigue, and diffuse bone pain over the past year."
+        },
+        {
+          "type": "",
+          "text": "She has no history of chronic kidney disease"
+        },
+        {
+          "type": "",
+          "text": "Physical examination is largely unremarkable except for mild proximal muscle weakness. There is no palpable neck mass"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is elevated, phosphate is decreased, intact parathyroid hormone (PTH) is elevated, and 24-hour urinary calcium excretion is increased."
+        },
+        {
+          "type": "",
+          "text": "Technetium-99m sestamibi scintigraphy demonstrates persistent focal uptake inferior to the left thyroid lobe. Neck ultrasonography identifies a well-circumscribed hypoechoic lesion in the same location."
+        },
+        {
+          "type": "",
+          "text": "DEXA scanning demonstrates osteopenia predominantly involving the distal one-third radius"
+        }
+      ],
+      "description": "Parathyroid adenoma is the most common cause of primary hyperparathyroidism. Autonomous PTH secretion produces hypercalcemia through increased bone resorption, renal calcium reabsorption, and activation of vitamin D. Patients may present with nephrolithiasis, osteoporosis, neuropsychiatric symptoms, constipation, or incidental hypercalcemia. Diagnosis is established by elevated calcium with an inappropriately elevated PTH and localization imaging prior to surgery. Complications include fractures, chronic kidney disease, nephrocalcinosis, and pancreatitis.",
+      "management": "Definitive treatment is parathyroidectomy for symptomatic or guideline-eligible patients. Encourage hydration, avoid thiazides when possible, and use cinacalcet if surgery is not feasible."
+    },
+    {
+      "id": 405,
+      "diagnosis": "Paget's Disease",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 74-year-old man presents with gradually worsening left hip pain, increasing hat size over several years, and progressive hearing loss"
+        },
+        {
+          "type": "",
+          "text": "He is of Northern European ancestry"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals bowing of the tibia, enlargement of the skull, localized warmth over the left femur, and an antalgic gait"
+        },
+        {
+          "type": "",
+          "text": "Serum alkaline phosphatase is markedly elevated, while calcium, phosphate, and PTH are all within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Plain radiographs demonstrate mixed lytic and sclerotic lesions with cortical thickening and coarse trabeculation. A radionuclide bone scan shows increased uptake involving the skull, pelvis, and left femur"
+        },
+        {
+          "type": "",
+          "text": "During orthopedic surgery, the surgeon notes unexpectedly brisk bleeding from the affected bone"
+        }
+      ],
+      "description": "Paget disease of bone is a focal disorder of accelerated bone remodeling resulting in enlarged, structurally disorganized bone. It most commonly affects the pelvis, femur, spine, and skull in older adults. Patients present with bone pain, deformity, hearing loss, or are diagnosed incidentally after an elevated alkaline phosphatase level. Diagnosis is established by characteristic radiographic findings. Complications include fractures, osteoarthritis, hearing impairment, high-output heart failure (rare), and osteosarcoma.",
+      "management": "Treat symptomatic disease with intravenous zoledronic acid (preferred) or oral bisphosphonates. Provide analgesia and orthopedic intervention for fractures or severe deformity."
+    },
+    {
+      "id": 406,
+      "diagnosis": "Papillary Thyroid Carcinoma",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 34-year-old woman presents after noticing a painless lump in the front of her neck during self-examination"
+        },
+        {
+          "type": "",
+          "text": "She received head and neck radiation for Hodgkin lymphoma during childhood"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm, non-tender 1.8-cm thyroid nodule with a small palpable ipsilateral cervical lymph node"
+        },
+        {
+          "type": "",
+          "text": "TSH, free T4, calcitonin, and serum calcium are all within normal limits."
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/papillary-thyroid-carcinoma-clue5.jpg",
+          "detail": "Thyroid US demonstrates a solid isoechoic lesion in the right lobe of the thyroid, with partial loss of surrounding halo and focal ill-definition of its border posteriorly. Although not shown, irregular margins, microcalcifications, and a taller-than-wide shape are also seen",
+          "reference": "https://doi.org/10.53347/rID-18959"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/papillary-thyroid-carcinoma-clue6.jpg",
+          "detail": "High powered H&E staining of the aspirated mass demonstrates complex, branching, randomly oriented papillae with fibrovascular cores",
+          "reference": "https://www.pathologyoutlines.com/"
+        }
+      ],
+      "description": "Papillary thyroid carcinoma is the most common thyroid malignancy and typically affects younger adults. It is strongly associated with childhood radiation exposure and frequently metastasizes through cervical lymphatics. Most patients present with a painless thyroid nodule. Diagnosis relies on thyroid ultrasound and fine-needle aspiration cytology. Prognosis is excellent, particularly in younger patients. Complications include recurrent laryngeal nerve injury, local recurrence, and cervical nodal metastases.",
+      "management": "Treat with thyroidectomy (extent depends on tumor size and risk), selective central/lateral neck dissection when indicated, radioactive iodine for selected patients, and lifelong TSH-suppressive levothyroxine."
+    },
+    {
+      "id": 407,
+      "diagnosis": "Follicular Thyroid Carcinoma",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman presents with a slowly enlarging painless thyroid nodule discovered during a routine examination"
+        },
+        {
+          "type": "",
+          "text": "She lived in a region with longstanding dietary iodine deficiency before immigrating to Canada"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a solitary, firm thyroid nodule without palpable cervical lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "TSH and free T4 are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Thyroid ultrasound demonstrates a well-circumscribed solid thyroid nodule"
+        },
+        {
+          "type": "",
+          "text": "A staging CT performed after surgery demonstrates multiple pulmonary nodules and a lytic lesion in the proximal femur"
+        }
+      ],
+      "description": "Follicular thyroid carcinoma is the second most common differentiated thyroid cancer and is associated with iodine deficiency. Unlike papillary carcinoma, it more commonly spreads through the bloodstream to bone and lungs. Fine-needle aspiration cannot distinguish follicular adenoma from carcinoma because diagnosis requires demonstration of capsular or vascular invasion after surgical excision. Prognosis is generally favorable when detected early. Distant metastases worsen survival.",
+      "management": "Treat with thyroidectomy, followed by radioactive iodine ablation for appropriate patients. Maintain TSH suppression with levothyroxine and monitor with serum thyroglobulin."
+    },
+    {
+      "id": 408,
+      "diagnosis": "Anaplastic Thyroid Carcinoma",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 79-year-old woman presents with a rapidly enlarging neck mass causing progressive difficulty swallowing and shortness of breath over three weeks"
+        },
+        {
+          "type": "",
+          "text": "She has a longstanding multinodular goiter that had remained stable for decades before this sudden change"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a large fixed thyroid mass with hoarseness, stridor, and palpable cervical lymphadenopathy"
+        },
+        {
+          "type": "",
+          "text": "Thyroid function tests are normal. CBC demonstrates mild anemia."
+        },
+        {
+          "type": "",
+          "text": "Contrast-enhanced CT of the neck demonstrates a large invasive thyroid mass encasing the trachea and carotid sheath with extension into surrounding soft tissues"
+        },
+        {
+          "type": "",
+          "text": "Core biopsy confirms an undifferentiated high-grade malignancy"
+        }
+      ],
+      "description": "Anaplastic thyroid carcinoma is a rare, highly aggressive undifferentiated thyroid malignancy that primarily affects older adults. Patients present with a rapidly enlarging neck mass, compressive symptoms, and extensive local invasion. Most tumors are unresectable at diagnosis and frequently metastasize. Diagnosis is established by biopsy and cross-sectional imaging. Prognosis is extremely poor, with median survival measured in months. Airway compromise is a common cause of morbidity.",
+      "management": "Prioritize airway assessment and stabilization. Treat with multimodal therapy including surgery when feasible, external beam radiation, systemic therapy (including BRAF-targeted therapy for eligible tumors), and palliative care."
+    },
+    {
+      "id": 409,
+      "diagnosis": "Medullary Carcinoma",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 42-year-old woman presents with a painless thyroid nodule and several months of persistent watery diarrhea"
+        },
+        {
+          "type": "",
+          "text": "Her father underwent thyroidectomy in his thirties, and her brother was recently diagnosed with a pheochromocytoma"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm thyroid nodule and multiple palpable ipsilateral cervical lymph nodes. There is no ophthalmopathy"
+        },
+        {
+          "type": "",
+          "text": "Serum calcitonin and CEA are markedly elevated. TSH and free T4 are normal."
+        },
+        {
+          "type": "",
+          "text": "Neck ultrasound demonstrates a solid hypoechoic thyroid nodule with abnormal cervical lymph nodes"
+        },
+        {
+          "type": "",
+          "text": "Fine-needle aspiration shows amyloid deposition within the tumor stroma"
+        }
+      ],
+      "description": "Medullary thyroid carcinoma is a neuroendocrine malignancy arising from parafollicular (C) cells. It occurs sporadically or as part of MEN2 syndromes caused by RET mutations. Tumors secrete calcitonin and may produce CEA and other peptides causing diarrhea. Diagnosis relies on serum calcitonin, ultrasound, and cytology. Patients with hereditary disease require evaluation for pheochromocytoma and hyperparathyroidism. Prognosis depends on stage at diagnosis.",
+      "management": "Treat with total thyroidectomy and central neck dissection. Exclude pheochromocytoma before surgery. Radioactive iodine is ineffective. Perform RET genetic testing for patients and first-degree relatives."
+    },
+    {
+      "id": 410,
+      "diagnosis": "Thyroid Lymphoma",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 71-year-old woman presents with a rapidly enlarging neck mass causing progressive dysphagia and hoarseness over the past month"
+        },
+        {
+          "type": "",
+          "text": "She has a 20-year history of Hashimoto thyroiditis requiring levothyroxine therapy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a diffusely enlarged, firm thyroid gland with mild cervical lymphadenopathy. There is no thyroid tenderness"
+        },
+        {
+          "type": "",
+          "text": "TSH is mildly elevated. Anti-TPO antibodies are strongly positive. LDH is elevated"
+        },
+        {
+          "type": "",
+          "text": "Contrast-enhanced CT demonstrates a homogeneous thyroid mass replacing much of the gland"
+        },
+        {
+          "type": "",
+          "text": "Core needle biopsy reveals diffuse large B-cell lymphoma"
+        }
+      ],
+      "description": "Primary thyroid lymphoma is an uncommon extranodal lymphoma arising within the thyroid, most often diffuse large B-cell lymphoma or MALT lymphoma. It occurs predominantly in older women with longstanding Hashimoto thyroiditis. Patients present with a rapidly enlarging thyroid mass and compressive symptoms. Diagnosis requires core biopsy rather than fine-needle aspiration alone. Prognosis depends on histologic subtype and stage, with many patients responding well to systemic therapy.",
+      "management": "Treat with R-CHOP chemotherapy for diffuse large B-cell lymphoma, often combined with involved-site radiotherapy. Surgery is generally limited to diagnosis or airway management."
+    },
+    {
+      "id": 411,
+      "diagnosis": "Osteoporosis",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 72-year-old woman presents after developing acute mid-back pain while lifting a light grocery bag"
+        },
+        {
+          "type": "",
+          "text": "She underwent menopause at age 44 and has taken oral prednisone for rheumatoid arthritis for the past five years"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals thoracic kyphosis, localized vertebral tenderness, and a documented loss of 6 cm in height over the past decade"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium, phosphate, alkaline phosphatase, PTH, and vitamin D are all within normal limits"
+        },
+        {
+          "type": "",
+          "text": "DEXA demonstrates a T-score of -2.9 at the femoral neck. Spine radiographs reveal an anterior wedge compression fracture of T12"
+        },
+        {
+          "type": "",
+          "text": "She recalls sustaining a distal radius fracture after slipping from standing height several years before her current presentation"
+        }
+      ],
+      "description": "Osteoporosis is a systemic skeletal disorder characterized by reduced bone strength and increased fracture risk. It most commonly affects postmenopausal women and older adults but may result from glucocorticoid therapy or secondary endocrine disorders. Diagnosis is established by fragility fracture or DEXA demonstrating a T-score ≤ -2.5. Common fracture sites include the hip, vertebrae, and distal radius. Hip fractures are associated with substantial morbidity and mortality. Ensure adequate calcium and vitamin D, encourage weight-bearing exercise, and reduce fall risk."
+    },
+    {
+      "id": 412,
+      "diagnosis": "Chronic Kidney Disease - Mineral Bone Disorder (CKD-MBD)",
+      "aliases": [
+        "CKD-MBD",
+        "Chronic Kidney Disease - Mineral Bone Disorder"
+      ],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 63-year-old man receiving hemodialysis presents with diffuse bone pain, worsening muscle weakness, and severe generalized pruritus"
+        },
+        {
+          "type": "",
+          "text": "He has had stage 5 chronic kidney disease secondary to diabetic nephropathy for eight years"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals diffuse bony tenderness and excoriations over the extremities from chronic scratching"
+        },
+        {
+          "type": "",
+          "text": "Serum phosphate is elevated, calcium is low-normal, PTH is markedly elevated, alkaline phosphatase is increased, and 1,25-dihydroxyvitamin D is reduced"
+        },
+        {
+          "type": "",
+          "text": "Hand radiographs demonstrate subperiosteal bone resorption along the radial aspects of the middle phalanges, and lateral spine radiographs show diffuse vascular calcification"
+        },
+        {
+          "type": "",
+          "text": "He develops painful calcified skin nodules that progress to non-healing ulcers, consistent with calciphylaxis"
+        }
+      ],
+      "description": "CKD-MBD is a systemic disorder of mineral and bone metabolism caused by chronic kidney disease. Reduced phosphate excretion and impaired vitamin D activation produce secondary hyperparathyroidism, abnormal bone remodeling, and extraskeletal calcification. Patients develop bone pain, fractures, vascular calcification, and cardiovascular complications. Diagnosis integrates biochemical abnormalities with imaging and clinical findings. Management targets phosphate control, suppression of secondary hyperparathyroidism, and prevention of skeletal and vascular complications.",
+      "management": "Restrict dietary phosphate, prescribe phosphate binders, vitamin D analogues, and calcimimetics (cinacalcet) when indicated. Optimize dialysis and consider parathyroidectomy for refractory disease."
+    },
+    {
+      "id": 413,
+      "diagnosis": "Hypophosphatasia",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 36-year-old woman presents with recurrent foot fractures, chronic bone pain, and progressive difficulty walking over the past several years"
+        },
+        {
+          "type": "",
+          "text": "She reports losing several permanent teeth during adolescence despite good dental hygiene"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals tenderness over both metatarsals and an antalgic gait. Dentition demonstrates premature loss of teeth with otherwise healthy gums"
+        },
+        {
+          "type": "",
+          "text": "Serum alkaline phosphatase is persistently low. Calcium and phosphate are normal. Pyridoxal-5-phosphate (vitamin B6) is markedly elevated"
+        },
+        {
+          "type": "",
+          "text": "Radiographs demonstrate recurrent metatarsal stress fractures with delayed fracture healing and areas of osteomalacia"
+        },
+        {
+          "type": "",
+          "text": "Review of childhood records reveals premature loss of primary teeth with intact tooth roots"
+        }
+      ],
+      "description": "Hypophosphatasia is a rare inherited disorder caused by mutations in the ALPL gene, resulting in deficient tissue-nonspecific alkaline phosphatase activity and impaired skeletal mineralization. Clinical severity ranges from lethal perinatal disease to mild adult-onset stress fractures. Hallmark findings include persistently low alkaline phosphatase, recurrent fractures, poor dentition, and premature tooth loss. Complications include chronic pain, impaired mobility, respiratory failure in severe disease, and disability.",
+      "management": "Treat with asfotase alfa for appropriate pediatric and severe adult cases. Provide orthopedic care, dental follow-up, pain management, and avoid bisphosphonates."
+    },
+    {
+      "id": 414,
+      "diagnosis": "Tumour-induced osteomalacia",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 49-year-old man presents with progressively worsening diffuse bone pain, proximal muscle weakness, and multiple low-impact fractures over two years"
+        },
+        {
+          "type": "",
+          "text": "He has no family history of metabolic bone disease and was previously healthy"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals difficulty rising from a chair without using his arms, proximal muscle weakness, and diffuse skeletal tenderness"
+        },
+        {
+          "type": "",
+          "text": "Serum phosphate is markedly decreased, alkaline phosphatase is elevated, 1,25-dihydroxyvitamin D is reduced, and FGF23 is markedly elevated"
+        },
+        {
+          "type": "",
+          "text": "68Ga-DOTATATE PET/CT localizes a small hypervascular soft tissue mass in the proximal thigh, later confirmed on MRI"
+        },
+        {
+          "type": "",
+          "text": "His bone pain and serum phosphate normalize rapidly after complete surgical excision of the lesion"
+        }
+      ],
+      "description": "Tumour-induced osteomalacia is a rare paraneoplastic syndrome caused by phosphaturic mesenchymal tumors that secrete excess FGF23. Renal phosphate wasting leads to osteomalacia, muscle weakness, fractures, and chronic pain. Patients often experience years of symptoms before the responsible tumor is localized. Diagnosis relies on hypophosphatemia, elevated FGF23, and functional imaging. Complete surgical excision is usually curative.",
+      "management": "Treat with complete surgical resection whenever possible. If unresectable, administer burosumab or oral phosphate with calcitriol, and monitor for complications."
+    },
+    {
+      "id": 415,
+      "diagnosis": "X-linked hypophosphatemic rickets",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 5-year-old boy is evaluated for progressive bowing of both legs and difficulty keeping up with other children while running"
+        },
+        {
+          "type": "",
+          "text": "His mother required multiple orthopedic surgeries for bowed legs during childhood"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals genu varum, short stature, waddling gait, and widening of both wrists"
+        },
+        {
+          "type": "",
+          "text": "Serum phosphate is decreased, alkaline phosphatase is elevated, calcium is normal, and FGF23 is elevated"
+        },
+        {
+          "type": "",
+          "text": "Radiographs of the wrists and knees demonstrate metaphyseal widening, fraying, and cupping consistent with rickets"
+        },
+        {
+          "type": "",
+          "text": "Despite adequate vitamin D supplementation throughout infancy, skeletal deformities continue to progress"
+        }
+      ],
+      "description": "X-linked hypophosphatemic rickets is the most common inherited form of rickets and is caused by mutations in the PHEX gene, resulting in excess FGF23 activity and renal phosphate wasting. Children develop rickets, lower extremity deformities, impaired growth, dental abscesses, and bone pain. Diagnosis is based on characteristic biochemical abnormalities and radiographic findings. Untreated disease leads to persistent skeletal deformity and reduced adult height.",
+      "management": "Treat with burosumab when available. Alternatives include oral phosphate supplementation and calcitriol. Monitor growth, renal function, nephrocalcinosis, and skeletal deformity."
+    },
+    {
+      "id": 416,
+      "diagnosis": "Oncocytic Thyroid Carcinoma",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 67-year-old woman presents with a slowly enlarging painless thyroid nodule noted during a routine examination"
+        },
+        {
+          "type": "",
+          "text": "She has a longstanding multinodular goiter and no history of childhood radiation exposure."
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm solitary thyroid nodule without cervical lymphadenopathy or vocal cord dysfunction"
+        },
+        {
+          "type": "",
+          "text": "TSH and free T4 are within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Ultrasound demonstrates a solid hypoechoic thyroid nodule"
+        },
+        {
+          "type": "",
+          "text": "Diagnostic lobectomy demonstrates capsular and vascular invasion by oncocytic cells."
+        }
+      ],
+      "description": "Oncocytic (Hürthle cell) thyroid carcinoma is a differentiated thyroid cancer composed of mitochondria-rich oncocytic follicular cells. Compared with conventional follicular thyroid carcinoma, it is more likely to metastasize and is often less iodine-avid, reducing the effectiveness of radioactive iodine therapy. Diagnosis requires histologic demonstration of capsular or vascular invasion after surgical excision. Prognosis depends on tumor stage and extent of vascular invasion.",
+      "management": "Treat with thyroidectomy, with lymph node dissection when indicated. Selected patients receive radioactive iodine, although response is often limited. Maintain lifelong TSH suppression with levothyroxine."
+    },
+    {
+      "id": 417,
+      "diagnosis": "Primary Hyperparathyroidism",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 61-year-old woman is referred after routine blood work repeatedly demonstrates elevated serum calcium"
+        },
+        {
+          "type": "",
+          "text": "She reports increasing fatigue, constipation, and recurrent kidney stones."
+        },
+        {
+          "type": "",
+          "text": "Physical examination is unremarkable except for mild proximal muscle weakness"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is elevated, phosphate is decreased, PTH is inappropriately elevated, 25-hydroxyvitamin D is normal, and 24-hour urinary calcium excretion is increased"
+        },
+        {
+          "type": "",
+          "text": "Neck ultrasound demonstrates a well-circumscribed hypoechoic lesion posterior to the inferior pole of the thyroid. Technetium-99m sestamibi scan localizes the same lesion"
+        },
+        {
+          "type": "",
+          "text": "Bone densitometry demonstrates the greatest reduction in bone mineral density at the distal one-third radius"
+        }
+      ],
+      "description": "Primary hyperparathyroidism is most commonly caused by a solitary parathyroid adenoma, resulting in autonomous PTH secretion and hypercalcemia. Patients may present with nephrolithiasis, osteoporosis, gastrointestinal symptoms, neurocognitive complaints, or incidental hypercalcemia. Diagnosis is established by elevated calcium with an inappropriately elevated PTH after excluding secondary causes. Complications include fractures, nephrocalcinosis, chronic kidney disease, and pancreatitis.",
+      "management": "Parathyroidectomy is definitive treatment for symptomatic or guideline-eligible patients. Encourage hydration, optimize vitamin D status, and consider cinacalcet when surgery is contraindicated"
+    },
+    {
+      "id": 418,
+      "diagnosis": "Tertiary Hyperparathyroidism",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 54-year-old woman presents with recurrent nephrolithiasis and worsening bone pain one year after receiving a successful kidney transplant"
+        },
+        {
+          "type": "",
+          "text": "She required hemodialysis for nine years before transplantation because of end-stage kidney disease"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals diffuse skeletal tenderness but an otherwise normal physical examination"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is elevated, phosphate is low-normal, PTH remains markedly elevated, and renal graft function is stable"
+        },
+        {
+          "type": "",
+          "text": "echnetium-99m sestamibi imaging demonstrates diffuse enlargement of all four parathyroid glands"
+        },
+        {
+          "type": "",
+          "text": "Despite restoration of normal kidney function, hypercalcemia persists for months after transplantation"
+        }
+      ],
+      "description": "Tertiary hyperparathyroidism develops after prolonged secondary hyperparathyroidism, when hyperplastic parathyroid glands become autonomously functional. It most commonly occurs in patients with longstanding end-stage kidney disease, particularly after kidney transplantation. Patients develop persistent hypercalcemia despite correction of the original stimulus. Diagnosis is established by elevated calcium with markedly elevated PTH after recovery of renal function. Complications include fractures, nephrolithiasis, and graft dysfunction.",
+      "management": "Treat with cinacalcet for selected patients. Subtotal or total parathyroidectomy with autotransplantation is recommended for persistent symptomatic or refractory disease."
+    },
+    {
+      "id": 419,
+      "diagnosis": "Secondary Hyperparathyroidism",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 59-year-old man with chronic kidney disease presents with diffuse bone pain, muscle weakness, and persistent generalized pruritus"
+        },
+        {
+          "type": "",
+          "text": "He has stage 4 diabetic kidney disease and has not yet started dialysis"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals diffuse skeletal tenderness and multiple excoriations over the extremities."
+        },
+        {
+          "type": "",
+          "text": "PTH is markedly elevated, phosphate is increased, calcium is low-normal, alkaline phosphatase is elevated, and 1,25-dihydroxyvitamin D is decreased"
+        },
+        {
+          "type": "",
+          "text": "Hand radiographs demonstrate subperiosteal bone resorption, and lateral abdominal radiographs demonstrate vascular calcification"
+        },
+        {
+          "type": "",
+          "text": "Following initiation of dialysis and phosphate-lowering therapy, PTH decreases substantially without the development of hypercalcemia"
+        }
+      ],
+      "description": "Secondary hyperparathyroidism is a compensatory increase in PTH secretion caused by chronic hypocalcemic stimuli, most commonly chronic kidney disease or vitamin D deficiency. Persistent phosphate retention and impaired vitamin D activation stimulate parathyroid hyperplasia. Diagnosis relies on elevated PTH without primary autonomous parathyroid function. Complications include renal osteodystrophy, fractures, vascular calcification, and cardiovascular disease.",
+      "management": "Treat the underlying cause with dietary phosphate restriction, phosphate binders, vitamin D analogues, and calcimimetics when appropriate. Optimize kidney disease management"
+    },
+    {
+      "id": 420,
+      "diagnosis": "Familial hypocalciuric hypercalcemia",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 26-year-old woman is referred after incidental hypercalcemia is discovered during a routine employment physical. She feels completely well"
+        },
+        {
+          "type": "",
+          "text": "Her mother and maternal grandfather were both told they had \"high calcium\" but never required treatment"
+        },
+        {
+          "type": "",
+          "text": "Physical examination is entirely normal. There is no history of kidney stones, fractures, or osteoporosis"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is mildly elevated, PTH is normal to mildly elevated, and 24-hour urinary calcium excretion is markedly decreased with a calcium-to-creatinine clearance ratio <0.01"
+        },
+        {
+          "type": "",
+          "text": "Neck ultrasound and sestamibi scan demonstrate no parathyroid adenoma or gland enlargement"
+        },
+        {
+          "type": "",
+          "text": "Her serum calcium has remained essentially unchanged for years, despite receiving no treatment"
+        }
+      ],
+      "description": "Familial hypocalciuric hypercalcemia is an autosomal dominant disorder caused by inactivating mutations of the calcium-sensing receptor. Patients develop lifelong mild hypercalcemia with normal or mildly elevated PTH and characteristically low urinary calcium excretion. Most remain asymptomatic and are frequently misdiagnosed with primary hyperparathyroidism. Diagnosis is confirmed by urinary calcium measurements and, when appropriate, genetic testing. Unlike primary hyperparathyroidism, surgery is not beneficial.",
+      "management": "No treatment is usually required. Reassure patients, avoid unnecessary parathyroidectomy, and offer genetic counseling for affected families."
+    },
+    {
+      "id": 421,
+      "diagnosis": "Milk-alkali syndrome",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 68-year-old woman presents with progressive fatigue, nausea, constipation, and increasing confusion over the past week"
+        },
+        {
+          "type": "",
+          "text": "She has osteoporosis and chronic gastroesophageal reflux disease. She recently began taking large amounts of calcium carbonate for both bone health and dyspepsia"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild dehydration, dry mucous membranes, and diminished deep tendon reflexes. There are no focal neurologic deficits"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is markedly elevated, bicarbonate is elevated, creatinine is increased, PTH is suppressed, and phosphate is low-normal"
+        },
+        {
+          "type": "",
+          "text": "Renal ultrasonography demonstrates bilateral nephrocalcinosis without obstructing calculi"
+        },
+        {
+          "type": "",
+          "text": "A careful medication reconciliation reveals that she has been consuming more than 10 calcium carbonate tablets daily for several months"
+        }
+      ],
+      "description": "Milk-alkali syndrome is caused by excessive ingestion of calcium and absorbable alkali, leading to the classic triad of hypercalcemia, metabolic alkalosis, and acute kidney injury. It has re-emerged with widespread calcium carbonate use for osteoporosis and dyspepsia. Diagnosis is clinical after excluding other causes of hypercalcemia. Untreated disease may progress to permanent renal impairment and nephrocalcinosis, although early recognition usually results in complete recovery.",
+      "management": "Discontinue calcium and alkali supplements, administer intravenous isotonic saline, and correct electrolyte abnormalities. Severe hypercalcemia may require calcitonin or bisphosphonates if persistent."
+    },
+    {
+      "id": 422,
+      "diagnosis": "Parathyroid carcinoma",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 47-year-old man presents with severe fatigue, diffuse bone pain, recurrent nephrolithiasis, and an unintentional 8-kg weight loss"
+        },
+        {
+          "type": "",
+          "text": "He has no history of chronic kidney disease"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals a firm palpable mass inferior to the thyroid gland and marked proximal muscle weakness"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is 17.2 mg/dL (4.3 mmol/L), PTH is more than 10 times the upper limit of normal, alkaline phosphatase is markedly elevated, and phosphate is decreased"
+        },
+        {
+          "type": "",
+          "text": "Neck ultrasound demonstrates a large irregular infiltrative parathyroid mass with invasion of adjacent soft tissues. CT demonstrates ipsilateral recurrent laryngeal nerve involvement"
+        },
+        {
+          "type": "",
+          "text": "He develops recurrent laryngeal nerve palsy with new-onset hoarseness before any neck surgery has been performed"
+        }
+      ],
+      "description": "Parathyroid carcinoma is a rare endocrine malignancy that causes profound primary hyperparathyroidism. Patients typically present with severe hypercalcemia, markedly elevated PTH concentrations, renal disease, and skeletal involvement. Unlike parathyroid adenomas, a palpable neck mass and recurrent laryngeal nerve dysfunction may be present. Diagnosis is often confirmed after surgical resection demonstrating invasive growth. Local recurrence is common and hypercalcemia is the leading cause of mortality.",
+      "management": "Perform en bloc surgical resection of the tumor with the ipsilateral thyroid lobe when feasible. Aggressively manage recurrent hypercalcemia using hydration, cinacalcet, and antiresorptive therapy."
+    },
+    {
+      "id": 423,
+      "diagnosis": "Autoimmune hypoparathyroidism",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 23-year-old woman presents with progressive numbness around her mouth, painful hand cramps, and intermittent muscle spasms"
+        },
+        {
+          "type": "",
+          "text": "She has autoimmune adrenal insufficiency and chronic mucocutaneous candidiasis diagnosed during childhood"
+        },
+        {
+          "type": "",
+          "text": "Examination demonstrates positive Chvostek and Trousseau signs with carpopedal spasm. There are no surgical neck scars"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is decreased, phosphate is elevated, PTH is undetectable, and magnesium is normal."
+        },
+        {
+          "type": "",
+          "text": "Non-contrast CT of the head demonstrates bilateral basal ganglia calcifications"
+        },
+        {
+          "type": "",
+          "text": "She has required treatment for recurrent oral candidiasis since childhood"
+        }
+      ],
+      "description": "Autoimmune hypoparathyroidism results from immune-mediated destruction of the parathyroid glands and commonly occurs as part of autoimmune polyendocrine syndrome type 1 (APS-1). Patients develop hypocalcemia, hyperphosphatemia, and neuromuscular irritability. Diagnosis is established by low calcium with inappropriately low PTH after excluding postsurgical and infiltrative causes. Complications include seizures, cataracts, intracranial calcifications, and cardiac arrhythmias.",
+      "management": "Treat with oral calcium and calcitriol. Correct hypomagnesemia if present and consider recombinant PTH in selected patients with difficult-to-control hypocalcemia."
+    },
+    {
+      "id": 424,
+      "diagnosis": "Pseudohypoparathyroidism",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 14-year-old girl presents with recurrent muscle cramps and tingling in her hands despite taking calcium supplements"
+        },
+        {
+          "type": "",
+          "text": "She has struggled academically and has been significantly shorter than her peers throughout childhood"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals short stature, obesity, round facies, shortening of the fourth and fifth metacarpals, and positive Chvostek sign"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is decreased, phosphate is elevated, and PTH is markedly elevated"
+        },
+        {
+          "type": "",
+          "text": "Hand radiographs demonstrate shortened fourth metacarpals. CT of the head demonstrates basal ganglia calcifications"
+        },
+        {
+          "type": "",
+          "text": "When asked to make a fist, the fourth knuckle is noticeably absent"
+        }
+      ],
+      "description": "Pseudohypoparathyroidism is caused by end-organ resistance to parathyroid hormone, most commonly due to GNAS mutations causing Albright hereditary osteodystrophy. Patients develop hypocalcemia despite elevated circulating PTH. Characteristic skeletal findings include brachydactyly, short stature, obesity, and shortened fourth metacarpals. Diagnosis is established by biochemical evidence of PTH resistance together with characteristic clinical features. Complications include seizures, ectopic calcification, and developmental delay.",
+      "management": "Treat with oral calcium and calcitriol, monitor urinary calcium excretion, and manage associated endocrine abnormalities. Genetic counseling is recommended for affected families."
+    },
+    {
+      "id": 425,
+      "diagnosis": "Hungry bone syndrome",
+      "aliases": [],
+      "category": "Endocrine IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 58-year-old woman develops progressive tingling around her mouth, painful hand cramps, and muscle twitching two days after parathyroid surgery"
+        },
+        {
+          "type": "",
+          "text": "She underwent parathyroidectomy for severe primary hyperparathyroidism after years of recurrent nephrolithiasis, osteoporosis, and markedly elevated alkaline phosphatase"
+        },
+        {
+          "type": "",
+          "text": "Examination demonstrates positive Chvostek and Trousseau signs, carpopedal spasm, and diffuse muscle cramping. The surgical incision is clean and well-healed"
+        },
+        {
+          "type": "",
+          "text": "Serum calcium is markedly decreased, phosphate is decreased or low-normal, magnesium is mildly decreased, PTH remains detectable (or is appropriately low following complete gland excision), and alkaline phosphatase remains elevated"
+        },
+        {
+          "type": "",
+          "text": "Preoperative skeletal radiographs demonstrate osteitis fibrosa cystica with multiple brown tumors and diffuse subperiosteal bone resorption"
+        },
+        {
+          "type": "",
+          "text": "Despite repeated intravenous calcium administration, hypocalcemia persists for several days and requires prolonged high-dose calcium replacement"
+        }
+      ],
+      "description": "Hungry bone syndrome is prolonged hypocalcemia that develops after successful parathyroidectomy in patients with severe hyperparathyroidism. Following abrupt reduction in PTH, previously high-turnover bone rapidly takes up calcium, phosphate, and magnesium for remineralization. Patients develop symptomatic hypocalcemia within days of surgery. Risk factors include severe hyperparathyroidism, markedly elevated alkaline phosphatase, osteitis fibrosa cystica, and large parathyroid adenomas. Recovery may require weeks to months of calcium supplementation.",
+      "management": "Treat with aggressive intravenous calcium for symptomatic hypocalcemia, followed by high-dose oral calcium and calcitriol. Correct magnesium deficiency and monitor serum calcium frequently."
+    },
+    {
+      "id": 427,
       "diagnosis": "Variceal Bleed",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14252,7 +15510,7 @@
       "management": "Variceal bleeding is a medical emergency managed with airway protection, fluid resuscitation, and blood transfusion as needed, alongside IV octreotide (or terlipressin) to reduce splanchnic blood flow and prophylactic antibiotics (e.g., ceftriaxone) to prevent SBP. Endoscopy is performed urgently for band ligation (preferred) or sclerotherapy. If bleeding is refractory, a TIPS procedure or balloon tamponade (e.g., Blakemore tube) may be used as a bridge. For prevention of first bleeding or rebleeding, nonselective beta-blockers (propranolol/nadolol) and serial endoscopic banding are used long-term."
     },
     {
-      "id": 395,
+      "id": 428,
       "diagnosis": "Mallory-Weiss Tear",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14287,7 +15545,7 @@
       "management": "Most cases resolve spontaneously with supportive care, including IV fluids and antiemetics to prevent further retching. Endoscopy is both diagnostic and therapeutic when bleeding is ongoing, using hemoclips, thermal coagulation, or epinephrine injection. PPI therapy is often given to promote healing. Surgery or angiographic embolization is rarely needed and reserved for refractory bleeding."
     },
     {
-      "id": 396,
+      "id": 429,
       "diagnosis": "Boerhaave's syndrome",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14322,7 +15580,7 @@
       "management": "This is a surgical emergency requiring immediate resuscitation with IV fluids, broad-spectrum antibiotics and antifungal coverage, and nothing-by-mouth status with nasogastric decompression. Definitive management is most often surgical primary repair of the perforation with mediastinal and pleural drainage/debridement, though select small, contained leaks in stable patients may be managed with endoscopic clips/stents or conservative therapy. Delay in diagnosis or treatment beyond 24 hours significantly worsens prognosis, underscoring the importance of early recognition in any patient with the classic triad of vomiting, chest pain, and subcutaneous emphysema (Mackler's triad)"
     },
     {
-      "id": 397,
+      "id": 430,
       "diagnosis": "Eosinophilic Esophagitis",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14359,7 +15617,7 @@
       "management": "First-line therapy includes proton pump inhibitors (a subset of patients have PPI-responsive disease), topical swallowed corticosteroids (fluticasone or budesonide), and dietary elimination (empiric 6-food elimination or allergy-testing-directed diets). Dupilumab is approved for refractory cases. Esophageal dilation may be needed for strictures, but is used cautiously due to perforation risk in this inflamed, friable esophagus."
     },
     {
-      "id": 398,
+      "id": 431,
       "diagnosis": "Zenker's Diverticulum",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14394,7 +15652,7 @@
       "management": "Small, asymptomatic diverticula may simply be observed. Symptomatic cases are treated with surgical or endoscopic cricopharyngeal myotomy, which addresses the underlying high-pressure cause, often combined with diverticulum removal (diverticulectomy) or suspension (diverticulopexy) for larger pouches. Endoscopic stapling or laser-assisted myotomy (Dohlman procedure) is a less invasive alternative to open surgery for appropriately sized diverticula, with the goal of relieving dysphagia and reducing aspiration risk."
     },
     {
-      "id": 399,
+      "id": 432,
       "diagnosis": "Gastroesophageal Reflux Disease (GERD)",
       "aliases": [
         "GERD",
@@ -14432,7 +15690,7 @@
       "management": "First-line management includes lifestyle modification (weight loss, avoiding trigger foods, elevating the head of the bed, avoiding meals before lying down) and a trial of proton pump inhibitors. H2 receptor antagonists are an alternative for milder symptoms. Refractory cases warrant endoscopy to exclude complications (erosive esophagitis, Barrett's esophagus, stricture) and may be considered for surgical fundoplication."
     },
     {
-      "id": 400,
+      "id": 433,
       "diagnosis": "Peptic Ulcer Disease",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14467,7 +15725,7 @@
       "management": "Treatment includes acid suppression with PPIs and eradication of H. pylori when present, typically with triple or quadruple therapy regimens (e.g., clarithromycin-based or bismuth-based quadruple therapy depending on resistance patterns). NSAIDs should be discontinued when possible, and gastric ulcers require follow-up endoscopy to confirm healing and exclude malignancy, unlike duodenal ulcers."
     },
     {
-      "id": 401,
+      "id": 434,
       "diagnosis": "Functional Dyspepsia",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14502,7 +15760,7 @@
       "management": "First-line treatment is H. pylori test-and-treat if positive, followed by acid suppression with PPIs. Prokinetic agents (e.g., metoclopramide) may help postprandial distress symptoms, while low-dose tricyclic antidepressants are used for refractory pain-predominant symptoms. Dietary modification (smaller, more frequent low-fat meals) and addressing psychosocial stressors are also important components of management."
     },
     {
-      "id": 402,
+      "id": 435,
       "diagnosis": "Celiac Disease",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14537,7 +15795,7 @@
       "management": "The cornerstone of treatment is a strict, lifelong gluten-free diet, which leads to symptomatic and histologic improvement in most patients. Nutritional deficiencies (iron, folate, vitamin D, calcium, B12) should be assessed and repleted. Patients require monitoring for adherence and response, and refractory celiac disease (persistent symptoms/villous atrophy despite a strict gluten-free diet) warrants further workup for complications such as lymphoma."
     },
     {
-      "id": 403,
+      "id": 436,
       "diagnosis": "Achalasia",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14574,7 +15832,7 @@
       "management": "Treatment options include pneumatic dilation, surgical (Heller) myotomy, and peroral endoscopic myotomy (POEM), all aimed at disrupting the dysfunctional lower esophageal sphincter; myotomy is often paired with a partial fundoplication to reduce subsequent reflux. Botulinum toxin injection into the LES is an option for patients who are poor surgical candidates, though effects are temporary. Pharmacologic therapy (nitrates, calcium channel blockers) is the least effective option and reserved for those unable to undergo more definitive treatment."
     },
     {
-      "id": 404,
+      "id": 437,
       "diagnosis": "Gastroparesis",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14609,7 +15867,7 @@
       "management": "Management begins with dietary modification (small, frequent, low-fat, low-fiber meals) and optimizing glycemic control in diabetic patients. Prokinetic agents (metoclopramide, with caution due to extrapyramidal side effects; or domperidone where available) and antiemetics are used for symptom control. Refractory cases may be considered for gastric electrical stimulation, botulinum toxin injection of the pylorus, or a venting gastrostomy/jejunostomy feeding tube for severe, refractory symptoms."
     },
     {
-      "id": 405,
+      "id": 438,
       "diagnosis": "Barret's Esophagus",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14644,7 +15902,7 @@
       "management": "Management includes ongoing PPI therapy to control reflux and surveillance endoscopy with biopsy at intervals determined by the presence and grade of dysplasia. Non-dysplastic Barrett's is monitored with surveillance endoscopy; low-grade dysplasia may be treated with endoscopic ablation (radiofrequency ablation) or continued surveillance, while high-grade dysplasia or early adenocarcinoma is treated with endoscopic eradication therapy (ablation and/or endoscopic mucosal resection)."
     },
     {
-      "id": 406,
+      "id": 439,
       "diagnosis": "Esophageal Stricture",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14679,7 +15937,7 @@
       "management": "Treatment is primarily with endoscopic dilation (using bougie or balloon dilators), often performed in a series of sessions for durable improvement, combined with high-dose PPI therapy to reduce ongoing acid-related fibrosis and recurrence in peptic strictures. Refractory or recurrent strictures may require intralesional steroid injection, stenting, or, rarely, surgical intervention; any stricture with atypical features should be biopsied to exclude malignancy."
     },
     {
-      "id": 407,
+      "id": 440,
       "diagnosis": "Hiatal Hernia",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14714,7 +15972,7 @@
       "management": "Small, asymptomatic sliding hiatal hernias require no specific treatment beyond standard GERD management (PPIs, lifestyle modification) if reflux symptoms are present. Large or symptomatic paraesophageal hernias, particularly those causing obstruction, bleeding (from Cameron lesions), or with risk of strangulation/volvulus, warrant surgical repair, typically via laparoscopic reduction and crural repair with or without fundoplication."
     },
     {
-      "id": 408,
+      "id": 441,
       "diagnosis": "Esophageal Adenocarcinoma",
       "aliases": [],
       "category": "Gastrointestinal I",
@@ -14749,7 +16007,7 @@
       "management": "Treatment depends on stage: early, localized tumors confined to the mucosa may be treated with endoscopic resection, while locally advanced disease is treated with neoadjuvant chemoradiation followed by surgical esophagectomy. Metastatic disease is managed with palliative chemotherapy, targeted therapy (e.g., trastuzumab for HER2-positive tumors), immunotherapy, and palliative measures for dysphagia such as esophageal stenting."
     },
     {
-      "id": 410,
+      "id": 443,
       "diagnosis": "Norovirus Gastroenteritis",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14784,7 +16042,7 @@
       "management": "Management is entirely supportive, focused on oral or, if necessary, IV rehydration and electrolyte repletion, as the illness is self-limited and there is no specific antiviral therapy. Antiemetics (e.g., ondansetron) can help reduce vomiting and improve oral intake tolerance. Strict hand hygiene (soap and water, since alcohol-based sanitizers are less effective against norovirus) and environmental decontamination with bleach-based disinfectants are essential to prevent further spread in outbreak settings."
     },
     {
-      "id": 411,
+      "id": 444,
       "diagnosis": "Clostridioides difficile infection (C. diff)",
       "aliases": [
         "C. diff",
@@ -14822,7 +16080,7 @@
       "management": "First-line treatment for an initial episode is oral vancomycin or fidaxomicin; metronidazole is now reserved for situations where these are unavailable, due to inferior efficacy. Fulminant disease (ileus, toxic megacolon, shock) requires oral/rectal vancomycin plus IV metronidazole, with surgical consultation for possible colectomy. Recurrent infections may be treated with a prolonged/tapered vancomycin course, fidaxomicin, fecal microbiota transplantation, or bezlotoxumab (a monoclonal antibody against C. diff toxin B) to reduce further recurrence."
     },
     {
-      "id": 412,
+      "id": 445,
       "diagnosis": "Vibrio Cholerae",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14857,7 +16115,7 @@
       "management": "The cornerstone of treatment is aggressive rehydration, using oral rehydration solution for mild-to-moderate cases and IV fluids (e.g., Ringer's lactate) for severe dehydration or shock, with careful correction of electrolyte abnormalities (particularly potassium). Antibiotics (doxycycline, azithromycin, or a fluoroquinolone) shorten the duration of diarrhea and reduce transmission but are secondary to rehydration. Public health measures, including access to clean water and oral cholera vaccines in endemic/outbreak settings, are key to prevention."
     },
     {
-      "id": 413,
+      "id": 446,
       "diagnosis": "Ischemic Colitis",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14892,7 +16150,7 @@
       "management": "Most cases are non-gangrenous and managed conservatively with bowel rest, IV fluids, and correction of the underlying precipitant (e.g., optimizing blood pressure, treating arrhythmia, stopping vasoconstrictive agents); antibiotics may be given to reduce bacterial translocation in moderate cases. Surgical resection is required for signs of transmural infarction, perforation, peritonitis, or failure to improve with conservative management. Long-term, recurrent or refractory segmental disease may progress to stricture formation requiring elective resection."
     },
     {
-      "id": 414,
+      "id": 447,
       "diagnosis": "Chron's Disease",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14927,7 +16185,7 @@
       "management": "Mild disease may be managed with budesonide (particularly effective for ileocecal disease) or 5-ASAs, though these agents are generally less effective than in UC. Moderate-to-severe disease requires corticosteroids for induction of remission, with early introduction of immunomodulators (azathioprine, methotrexate) or biologics (anti-TNF agents, ustekinumab, vedolizumab), often using a top-down, biologic-first approach in patients with high-risk features. Surgery is not curative in Crohn's disease (unlike UC) and is reserved for complications such as strictures (stricturoplasty or resection), abscesses (drainage), or fistulas, with disease recurrence common at the surgical anastomosis site."
     },
     {
-      "id": 415,
+      "id": 448,
       "diagnosis": "Irritable Bowel Syndrome",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14962,7 +16220,7 @@
       "management": "Management is tailored to the predominant bowel pattern: soluble fiber and antispasmodics for general symptom control, loperamide or bile acid sequestrants for diarrhea-predominant IBS, and osmotic laxatives or secretagogues (linaclotide, lubiprostone, plecanatide) for constipation-predominant IBS. A low-FODMAP diet, gut-directed psychotherapy (cognitive behavioral therapy, gut-directed hypnotherapy), and low-dose tricyclic antidepressants are also effective, particularly for pain-predominant symptoms, and reassurance with a strong patient-provider relationship is a key part of long-term management given the chronic, relapsing nature of the condition."
     },
     {
-      "id": 416,
+      "id": 449,
       "diagnosis": "Osmotic Diarrhea",
       "aliases": [],
       "category": "Gastrointestinal II",
@@ -14997,7 +16255,7 @@
       "management": "Management is straightforward: identify and eliminate the offending sweetener, after which symptoms typically resolve within 24-48 hours without further intervention. Supportive care includes oral hydration to replace fluid losses, especially in cases of large-volume diarrhea. No specific testing or medication is usually needed, though a stool osmotic gap calculation can confirm an osmotic mechanism when the diagnosis is unclear, and patient education on reading \"sugar-free\" labels helps prevent recurrence."
     },
     {
-      "id": 417,
+      "id": 450,
       "diagnosis": "Surgical Site Infection",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15032,7 +16290,7 @@
       "management": "Superficial SSIs are managed by opening the incision to allow drainage, local wound care, and packing, often without antibiotics unless there is significant surrounding cellulitis or systemic signs of infection. Deep incisional or organ/space infections typically require imaging to define the extent of infection, percutaneous or surgical drainage of any abscess, and a course of antibiotics tailored to culture results. Prevention strategies include perioperative antibiotic prophylaxis, glycemic control, and meticulous sterile technique."
     },
     {
-      "id": 418,
+      "id": 451,
       "diagnosis": "Ogilvie's Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15067,7 +16325,7 @@
       "management": "Initial management includes bowel rest, nasogastric and rectal tube decompression, correction of electrolyte abnormalities, and minimizing opioids and other motility-impairing medications. If there is no improvement within 24-48 hours and the cecal diameter is significantly enlarged, IV neostigmine (a cholinesterase inhibitor) is used to stimulate colonic motility, with cardiac monitoring for bradycardia. Colonoscopic decompression is used for refractory cases or when neostigmine is contraindicated, and surgery (cecostomy or colectomy) is reserved for impending or actual perforation."
     },
     {
-      "id": 419,
+      "id": 452,
       "diagnosis": "Colorectal Adenocarcinoma",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15102,7 +16360,7 @@
       "management": "Treatment is primarily surgical resection (colectomy or proctectomy with regional lymphadenectomy) for localized disease, with adjuvant chemotherapy (commonly FOLFOX) for stage III or high-risk stage II disease. Rectal cancers often require neoadjuvant chemoradiation prior to surgery to reduce local recurrence. Metastatic disease is managed with systemic chemotherapy, targeted therapy (anti-EGFR or anti-VEGF agents depending on molecular profile), and selective resection of isolated liver or lung metastases when feasible."
     },
     {
-      "id": 420,
+      "id": 453,
       "diagnosis": "Diverticular Stricture",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15137,7 +16395,7 @@
       "management": "Asymptomatic or mildly symptomatic strictures may be managed conservatively with a high-fiber diet and observation once malignancy has been excluded. Symptomatic strictures causing significant obstructive symptoms, or any stricture in which malignancy cannot be confidently excluded, are managed with elective surgical resection of the affected segment. Endoscopic balloon dilation is an option in select cases but carries a higher risk of perforation given the inflamed, fibrotic nature of the tissue."
     },
     {
-      "id": 421,
+      "id": 454,
       "diagnosis": "Volvulus (Sigmoid)",
       "aliases": [
         "Sigmoid",
@@ -15177,7 +16435,7 @@
       "management": "In the absence of signs of ischemia or perforation, initial management is endoscopic (sigmoidoscopic) decompression and detorsion, which is successful in the majority of cases but carries a high rate of recurrence without definitive surgery. Given this high recurrence rate, elective sigmoid resection is generally recommended after successful endoscopic decompression in patients fit for surgery. Signs of strangulation, ischemia, or failed endoscopic decompression mandate emergent surgical resection."
     },
     {
-      "id": 422,
+      "id": 455,
       "diagnosis": "Paralytic Ileus",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15214,7 +16472,7 @@
       "management": "Management is largely supportive: bowel rest with advancement of diet as tolerated, correction of underlying electrolyte abnormalities, and minimizing opioid use in favor of multimodal analgesia (e.g., regional blocks, NSAIDs, acetaminophen) to promote earlier return of bowel function. Early mobilization and, in select postoperative settings, chewing gum or alvimopan (a peripherally-acting mu-opioid antagonist) can help reduce duration of postoperative ileus. Persistent ileus beyond several days warrants reassessment to exclude an evolving mechanical obstruction or intra-abdominal complication."
     },
     {
-      "id": 423,
+      "id": 456,
       "diagnosis": "Adhesions",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15249,7 +16507,7 @@
       "management": "Initial management for an uncomplicated adhesive small bowel obstruction is conservative: nasogastric decompression, bowel rest, IV fluids, and correction of electrolyte abnormalities, with many cases resolving without surgery. Signs of strangulation, ischemia, peritonitis, or failure to improve with conservative management over 24-48 hours warrant surgical exploration with lysis of adhesions and resection of any non-viable bowel. Recurrent adhesive obstructions are common, and minimally invasive surgical techniques are favored when possible to reduce the risk of forming new adhesions."
     },
     {
-      "id": 424,
+      "id": 457,
       "diagnosis": "Hernia",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15284,7 +16542,7 @@
       "management": "Reducible, asymptomatic hernias can often be managed with elective surgical repair (open or laparoscopic, with mesh in most cases) to prevent future incarceration. An incarcerated but non-strangulated hernia may be attempted to be manually reduced, followed by urgent repair; however, any signs of strangulation (severe pain, overlying skin changes, signs of bowel ischemia or obstruction) require emergent surgical exploration and repair, with resection of any non-viable bowel."
     },
     {
-      "id": 425,
+      "id": 458,
       "diagnosis": "Gallstone Ileus",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15319,7 +16577,7 @@
       "management": "Treatment is surgical, typically with enterolithotomy (removal of the impacted stone through a small bowel incision) to relieve the obstruction; the decision to also address the underlying cholecystoenteric fistula and perform a cholecystectomy at the same time versus a staged approach depends on the patient's overall surgical risk, given that simultaneous repair carries higher perioperative morbidity in this often frail, elderly population. Careful examination of the entire small bowel is necessary to exclude additional stones causing or at risk of causing further obstruction."
     },
     {
-      "id": 426,
+      "id": 459,
       "diagnosis": "Bezoar",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15354,7 +16612,7 @@
       "management": "Small phytobezoars may be treated with enzymatic dissolution (e.g., cellulase or papain) or endoscopic fragmentation and removal. Larger or more compact bezoars, particularly trichobezoars (which do not respond well to enzymatic therapy due to their composition), often require endoscopic removal or, if too large, surgical removal via gastrotomy. Addressing the underlying cause, such as psychiatric treatment for trichotillomania or dietary modification for recurrent phytobezoars, is essential to prevent recurrence."
     },
     {
-      "id": 427,
+      "id": 460,
       "diagnosis": "Intussusception",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15391,7 +16649,7 @@
       "management": "In children without signs of peritonitis or perforation, the first-line treatment is non-operative reduction using an air or contrast enema, which is both diagnostic and therapeutic and successful in the majority of cases. Surgical reduction (or resection if the bowel is non-viable or a pathologic lead point is identified) is reserved for failed enema reduction, signs of peritonitis, or perforation. In adults, given the high likelihood of an underlying structural lead point, surgical resection of the involved segment is generally recommended rather than attempting enema reduction."
     },
     {
-      "id": 428,
+      "id": 461,
       "diagnosis": "Diverticulitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15426,7 +16684,7 @@
       "management": "Uncomplicated diverticulitis in otherwise healthy outpatients can often be managed without antibiotics, with close follow-up, clear liquids advanced as tolerated, and selective antibiotic use based on patient factors and severity. Complicated diverticulitis (abscess, perforation, or in immunocompromised/frail patients) requires antibiotics covering gram-negative and anaerobic organisms, with percutaneous drainage for abscesses larger than 3-4 cm. Recurrent or complicated disease (fistula, stricture, free perforation with peritonitis) warrants surgical resection, ideally elective after the acute episode resolves, though emergent surgery (often with a Hartmann's procedure) is needed for free perforation or failure of medical management."
     },
     {
-      "id": 429,
+      "id": 462,
       "diagnosis": "Appendicitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15461,7 +16719,7 @@
       "management": "The mainstay of treatment is appendectomy (laparoscopic or open), traditionally performed urgently to reduce the risk of perforation, with perioperative antibiotics covering gram-negative and anaerobic organisms. Select cases of uncomplicated appendicitis, particularly in adults, may be managed non-operatively with antibiotics alone, though this carries a risk of recurrence requiring later appendectomy. Perforated appendicitis with a contained abscess may be managed initially with percutaneous drainage and antibiotics (interval appendectomy approach) rather than emergent surgery in a hostile, inflamed surgical field."
     },
     {
-      "id": 430,
+      "id": 463,
       "diagnosis": "Ovarian Torsion",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15496,7 +16754,7 @@
       "management": "Definitive management is surgical, typically via laparoscopy, with detorsion of the ovary attempted first in most cases (even if the ovary appears dusky or hemorrhagic, as ovaries often recover viability surprisingly well after detorsion), followed by cystectomy or oophoropexy if a predisposing mass or cyst is identified. Oophorectomy is reserved for cases with clear, irreversible necrosis or in postmenopausal women with concerning mass features. Prompt diagnosis and treatment are critical, as delayed intervention significantly increases the likelihood of needing to sacrifice the ovary."
     },
     {
-      "id": 431,
+      "id": 464,
       "diagnosis": "HNPCC / Lynch Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15531,7 +16789,7 @@
       "management": "Management centers on intensive cancer surveillance, including colonoscopy starting at a young age (often 20-25) and repeated every 1-2 years given the accelerated adenoma-to-carcinoma progression, along with surveillance for endometrial, ovarian, and other associated cancers. Risk-reducing surgery, such as prophylactic hysterectomy and bilateral salpingo-oophorectomy after childbearing is complete, may be considered. Once colorectal cancer develops, extended colectomy is often favored over segmental resection given the high risk of metachronous tumors, and immunotherapy (checkpoint inhibitors) is particularly effective for these mismatch repair-deficient, MSI-high tumors."
     },
     {
-      "id": 432,
+      "id": 465,
       "diagnosis": "FAP / Attenuated FAP",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15566,7 +16824,7 @@
       "management": "Given the near-certain progression to colorectal cancer, prophylactic colectomy (typically total proctocolectomy with ileal pouch-anal anastomosis, or subtotal colectomy with ileorectal anastomosis depending on rectal polyp burden) is recommended once polyp burden becomes unmanageable endoscopically, usually in the teens to twenties. Upper endoscopic surveillance is also needed given the risk of duodenal and gastric polyps/cancer, and patients require monitoring for extracolonic manifestations such as desmoid tumors and thyroid cancer; attenuated FAP may be managed with more intensive endoscopic polypectomy surveillance before colectomy becomes necessary."
     },
     {
-      "id": 433,
+      "id": 466,
       "diagnosis": "Peutz-Jeghers Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15601,7 +16859,7 @@
       "management": "Management focuses on surveillance endoscopy (upper endoscopy and colonoscopy) and small bowel imaging or capsule endoscopy at regular intervals to detect and remove polyps before they cause obstruction or progress to malignancy, alongside surveillance for the various associated extraintestinal cancers. Symptomatic or large polyps (generally greater than 1-1.5 cm, given the risk of acting as a lead point for intussusception) are removed endoscopically when feasible, with surgery reserved for polyps not amenable to endoscopic resection or for episodes of intussusception/obstruction."
     },
     {
-      "id": 434,
+      "id": 467,
       "diagnosis": "Internal Hemorrhoids",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15636,7 +16894,7 @@
       "management": "First-line management includes increasing dietary fiber and fluid intake, avoiding straining, and topical therapies to reduce symptoms; lower-grade hemorrhoids often respond well to these conservative measures. Office-based procedures such as rubber band ligation, sclerotherapy, or infrared coagulation are used for higher-grade or refractory internal hemorrhoids. Surgical hemorrhoidectomy or stapled hemorrhoidopexy is reserved for large, prolapsing, or refractory hemorrhoids that fail less invasive treatments."
     },
     {
-      "id": 435,
+      "id": 468,
       "diagnosis": "External Hemorrhoids",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15671,7 +16929,7 @@
       "management": "If presenting within 48-72 hours of symptom onset and pain is severe, excision of the thrombosed hemorrhoid under local anesthesia provides rapid symptomatic relief. Beyond this window, or for milder symptoms, conservative management with sitz baths, topical analgesics/anti-inflammatories, stool softeners, and increased fiber intake is preferred, as the thrombosis will gradually resolve on its own, though a residual skin tag may remain."
     },
     {
-      "id": 436,
+      "id": 469,
       "diagnosis": "Anal Fissure",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15706,7 +16964,7 @@
       "management": "First-line treatment focuses on softening stool (increased fiber and fluid intake, stool softeners) and reducing internal sphincter spasm with topical agents such as nitroglycerin or calcium channel blockers (e.g., nifedipine), along with warm sitz baths, which together allow most acute fissures to heal. Botulinum toxin injection into the internal sphincter is used for chronic fissures refractory to topical therapy. Lateral internal sphincterotomy is reserved for fissures that fail medical management, providing durable relief by interrupting the cycle of sphincter spasm, though with a small risk of fecal incontinence."
     },
     {
-      "id": 437,
+      "id": 470,
       "diagnosis": "Pruritis Ani",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15741,7 +16999,7 @@
       "management": "Management begins with addressing reversible contributing factors: improving (but not over-aggressive) hygiene, avoiding dietary triggers, keeping the area dry, and discontinuing harsh soaps, wipes, or topical irritants. Low-potency topical corticosteroids can be used short-term for significant inflammation, though prolonged use should be avoided due to skin thinning. Any underlying cause identified (hemorrhoids, fissure, fistula, infection) should be specifically treated, and persistent or atypical presentations warrant further evaluation, including biopsy, to exclude dermatologic or neoplastic causes."
     },
     {
-      "id": 438,
+      "id": 471,
       "diagnosis": "Adenomatous Polyps",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15776,7 +17034,7 @@
       "management": "All adenomatous polyps identified on colonoscopy should be removed via polypectomy, both for therapeutic purposes (preventing progression to cancer) and to allow histologic characterization. Surveillance colonoscopy intervals are then individualized based on the number, size, and histology of polyps found, ranging from 3 to 10 years, with shorter intervals for higher-risk features (multiple polyps, large size, high-grade dysplasia, villous histology). Polyps too large or technically difficult to remove endoscopically may require surgical resection."
     },
     {
-      "id": 439,
+      "id": 472,
       "diagnosis": "Abscess/Fistula Disease (Perianal)",
       "aliases": [
         "Perianal",
@@ -15814,7 +17072,7 @@
       "management": "Acute abscesses require prompt incision and drainage, which is the priority regardless of whether a fistula is identified at the time. Established fistulas often require a second, staged procedure once acute infection has resolved, with treatment options including fistulotomy (for simple, low fistulas with minimal sphincter involvement), or sphincter-sparing techniques (seton placement, advancement flaps, LIFT procedure) for more complex fistulas at higher risk of incontinence if simply incised. When Crohn's disease is the underlying cause, medical optimization of the IBD (often with biologic therapy) is an essential adjunct to surgical management."
     },
     {
-      "id": 440,
+      "id": 473,
       "diagnosis": "Intra-abdominal Infection (Abscess)",
       "aliases": [
         "Abscess",
@@ -15852,7 +17110,7 @@
       "management": "The cornerstone of treatment is source control, most often achieved with image-guided percutaneous drainage of the abscess when anatomically accessible, combined with broad-spectrum antibiotics covering gram-negative and anaerobic organisms. Abscesses not amenable to percutaneous drainage (due to location, loculation, or multiplicity) or those failing to improve with drainage and antibiotics require surgical exploration and drainage. Identifying and addressing the underlying source (e.g., bowel leak, ongoing perforation) is essential to prevent recurrence."
     },
     {
-      "id": 441,
+      "id": 474,
       "diagnosis": "Cholelithiasis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15889,7 +17147,7 @@
       "management": "Asymptomatic gallstones discovered incidentally generally do not require treatment, as the risk of developing symptoms or complications is relatively low and prophylactic cholecystectomy is not routinely recommended. Exceptions where prophylactic cholecystectomy may be considered include very large stones, a porcelain gallbladder, or particular patient populations at higher risk for gallbladder cancer or complications. Patients should be counseled on the symptoms of biliary colic and counseled to seek care if symptoms develop."
     },
     {
-      "id": 442,
+      "id": 475,
       "diagnosis": "Biliary Colic",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15920,7 +17178,7 @@
       "management": "Acute episodes are managed symptomatically with analgesics (NSAIDs are often preferred given evidence of efficacy and to avoid masking evolving complications) and antiemetics as needed, with most episodes resolving spontaneously without intervention. Given the significant risk of recurrent symptoms and progression to complications (cholecystitis, choledocholithiasis, gallstone pancreatitis), elective laparoscopic cholecystectomy is generally recommended once a patient has had a symptomatic episode of biliary colic, rather than waiting for a complication to develop."
     },
     {
-      "id": 443,
+      "id": 476,
       "diagnosis": "Acute Cholecystitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15955,7 +17213,7 @@
       "management": "Initial management includes IV fluids, analgesia, and broad-spectrum antibiotics covering enteric gram-negative and anaerobic organisms. Definitive treatment is early laparoscopic cholecystectomy, ideally within 72 hours of symptom onset, as early surgery is associated with lower complication rates and shorter hospital stays compared to delayed surgery. Patients who are poor surgical candidates due to severe illness may be managed initially with percutaneous cholecystostomy tube drainage, with interval cholecystectomy considered once they have recovered."
     },
     {
-      "id": 444,
+      "id": 477,
       "diagnosis": "Choledocholithiasis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -15992,7 +17250,7 @@
       "management": "The primary treatment is ERCP with sphincterotomy and stone extraction to relieve the bile duct obstruction, which can be performed prior to or, in some centers, intraoperatively at the time of cholecystectomy. Following successful duct clearance, cholecystectomy is generally recommended (often during the same hospitalization) to prevent recurrent stone migration from the gallbladder, the original source of most common bile duct stones. Antibiotics are not routinely required for uncomplicated choledocholithiasis without signs of infection, but should be promptly added if there is any evidence of progression to cholangitis."
     },
     {
-      "id": 445,
+      "id": 478,
       "diagnosis": "Ascending Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16027,7 +17285,7 @@
       "management": "Initial management includes prompt IV fluid resuscitation, broad-spectrum antibiotics covering enteric gram-negative organisms and anaerobes, and close hemodynamic monitoring given the risk of rapid progression to septic shock. Urgent biliary decompression, most commonly via ERCP with sphincterotomy and stone extraction or stent placement, is essential and should not be delayed in patients who do not rapidly improve with supportive care, as source control of the obstructed, infected biliary system is the definitive treatment; percutaneous transhepatic biliary drainage or surgical decompression are alternatives when ERCP is not feasible."
     },
     {
-      "id": 446,
+      "id": 479,
       "diagnosis": "Gallstone Pancreatitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16062,7 +17320,7 @@
       "management": "Initial management follows standard acute pancreatitis principles: aggressive IV fluid resuscitation, pain control, and early enteral feeding as tolerated. If there is evidence of a persistently impacted stone causing ongoing biliary obstruction or concurrent cholangitis, urgent ERCP with sphincterotomy is indicated to relieve the obstruction. Once the acute pancreatitis episode has resolved, cholecystectomy is recommended during the same hospital admission (rather than delaying to an interval outpatient procedure) to prevent recurrent gallstone-related complications, given the high risk of recurrence if the gallbladder is left in place."
     },
     {
-      "id": 447,
+      "id": 480,
       "diagnosis": "Budd-Chiari Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16097,7 +17355,7 @@
       "management": "Management begins with anticoagulation to prevent thrombus extension and treatment of any underlying hypercoagulable disorder (e.g., cytoreductive therapy for polycythemia vera). For symptomatic outflow obstruction, options include angioplasty or stenting of a focal venous stenosis, and transjugular intrahepatic portosystemic shunt (TIPS) for more diffuse obstruction or refractory ascites. Liver transplantation is reserved for patients who progress to fulminant hepatic failure or decompensated cirrhosis despite these interventions."
     },
     {
-      "id": 448,
+      "id": 481,
       "diagnosis": "Hepatitis B",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16132,7 +17390,7 @@
       "management": "Acute hepatitis B is generally managed supportively, as most immunocompetent adults clear the infection spontaneously. Chronic hepatitis B with evidence of active viral replication and liver inflammation/fibrosis is treated with long-term antiviral therapy, most commonly nucleos(t)ide analogues such as tenofovir or entecavir, which suppress viral replication and reduce progression to cirrhosis and hepatocellular carcinoma, though they rarely achieve a complete cure. All patients with chronic hepatitis B require ongoing surveillance for hepatocellular carcinoma with periodic ultrasound and alpha-fetoprotein testing, and at-risk contacts should receive hepatitis B vaccination."
     },
     {
-      "id": 449,
+      "id": 482,
       "diagnosis": "Hepatitis C",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16167,7 +17425,7 @@
       "management": "The treatment of chronic hepatitis C has been revolutionized by direct-acting antiviral (DAA) regimens (e.g., sofosbuvir-velpatasvir, glecaprevir-pibrentasvir), which achieve cure (sustained virologic response) in the vast majority of patients with a short course of all-oral therapy, regardless of genotype in most modern regimens. All patients with chronic HCV, even after achieving cure, require ongoing monitoring for hepatocellular carcinoma if they have established cirrhosis, since the risk of HCC persists even after viral eradication in this population."
     },
     {
-      "id": 450,
+      "id": 483,
       "diagnosis": "NAFLD",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16202,7 +17460,7 @@
       "management": "The cornerstone of treatment is lifestyle modification, particularly weight loss (typically targeting 7-10% of body weight) through diet and exercise, which can reduce or even reverse hepatic steatosis. Optimizing control of associated metabolic conditions, including diabetes, hypertension, and dyslipidemia, is also important, and GLP-1 receptor agonists have shown benefit for both weight loss and liver fat reduction in this population. Patients should be monitored periodically for progression to steatohepatitis or fibrosis, often using non-invasive markers (elastography, fibrosis scores) to determine the need for further evaluation."
     },
     {
-      "id": 451,
+      "id": 484,
       "diagnosis": "Wilson's Disease",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16237,7 +17495,7 @@
       "management": "First-line treatment is copper chelation therapy with D-penicillamine or trientine, which promotes urinary copper excretion, alongside zinc therapy, which reduces intestinal copper absorption and can be used for maintenance therapy or in presymptomatic/mildly affected patients. Dietary copper restriction (avoiding foods such as shellfish, organ meats, and chocolate) is recommended as an adjunct to medical therapy. Liver transplantation is curative for the underlying metabolic defect and is reserved for patients with acute liver failure or decompensated cirrhosis unresponsive to medical therapy."
     },
     {
-      "id": 452,
+      "id": 485,
       "diagnosis": "Alpha-1-Antitrypsin Deficiency",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16272,7 +17530,7 @@
       "management": "For pulmonary disease, smoking cessation is critical (as smoking dramatically accelerates lung damage in affected individuals), alongside standard COPD management and, in eligible patients with significant deficiency, intravenous augmentation therapy with pooled human alpha-1-antitrypsin to slow progression of emphysema. There is no specific medical therapy to prevent the hepatic accumulation of the misfolded protein; liver disease is managed supportively with standard cirrhosis care, and liver transplantation is curative (replacing the genetically abnormal liver) for those who progress to decompensated cirrhosis or liver failure."
     },
     {
-      "id": 453,
+      "id": 486,
       "diagnosis": "Hemochromatosis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16307,7 +17565,7 @@
       "management": "First-line treatment is therapeutic phlebotomy, performed regularly (often weekly initially) to deplete excess body iron stores, with treatment goals guided by serial ferritin levels, followed by less frequent maintenance phlebotomy once iron stores have normalized. Iron chelation therapy (e.g., deferasirox) is reserved for patients who cannot tolerate phlebotomy, such as those with significant anemia or cardiac dysfunction. Dietary modification (avoiding iron supplements and excessive vitamin C, which enhances iron absorption) and avoidance of raw shellfish (due to increased susceptibility to Vibrio vulnificus infection with iron overload) are also recommended, and family members should be screened given the hereditary nature of the condition."
     },
     {
-      "id": 454,
+      "id": 487,
       "diagnosis": "Autoimmune Hepatitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16342,7 +17600,7 @@
       "management": "First-line treatment is immunosuppression, typically with corticosteroids (prednisone) for induction, often combined with azathioprine both to allow steroid tapering and for long-term maintenance therapy, given the relapsing nature of the disease if treatment is withdrawn prematurely. Most patients require long-term, sometimes lifelong, immunosuppressive therapy to maintain remission, with treatment response monitored via serial transaminases and IgG levels. Liver transplantation is reserved for patients who progress to decompensated cirrhosis or fail to respond to medical therapy, including those presenting with acute liver failure."
     },
     {
-      "id": 455,
+      "id": 488,
       "diagnosis": "Alcohol-Associated Liver Disease",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16377,7 +17635,7 @@
       "management": "The most important intervention at every stage is complete alcohol cessation, ideally with structured support (counseling, pharmacotherapy such as naltrexone or acamprosate, and management of withdrawal) given the risk of life-threatening alcohol withdrawal in dependent patients. Severe alcoholic hepatitis, particularly with a high Maddrey discriminant function, may be treated with corticosteroids to reduce short-term mortality, alongside nutritional support given the frequent presence of malnutrition in this population. Liver transplantation may be considered for select patients with decompensated alcohol-associated cirrhosis, typically requiring a demonstrated period of confirmed abstinence per individual program protocols."
     },
     {
-      "id": 456,
+      "id": 489,
       "diagnosis": "Drug-Induced Liver Injury",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16412,7 +17670,7 @@
       "management": "The cornerstone of management is prompt discontinuation of the offending agent, after which most cases of DILI resolve over days to weeks, though cholestatic injury can take longer to fully normalize than hepatocellular injury. Supportive care is provided as needed, and N-acetylcysteine is specifically indicated for acetaminophen-induced hepatotoxicity given its role as an antidote in that particular etiology. Severe cases progressing to acute liver failure require specialized management and evaluation for liver transplantation, and patients should be counseled to avoid re-exposure to the implicated agent given the risk of more severe recurrent injury."
     },
     {
-      "id": 457,
+      "id": 490,
       "diagnosis": "Gilbert's Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16447,7 +17705,7 @@
       "management": "No treatment is necessary for Gilbert's syndrome, as it is a benign condition with an excellent prognosis and no risk of progression to liver damage. Reassurance is the primary intervention, along with patient education that episodes of mild jaundice may recur during physiologic stress (illness, fasting) but are not harmful. It is important to confirm the diagnosis (normal liver enzymes, normal CBC excluding hemolysis, isolated mild indirect hyperbilirubinemia) to avoid unnecessary further workup or anxiety once the benign nature of the condition is established."
     },
     {
-      "id": 458,
+      "id": 491,
       "diagnosis": "MASH",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16482,7 +17740,7 @@
       "management": "Management centers on aggressive lifestyle modification, with weight loss of at least 7-10% (and ideally more for fibrosis regression) through diet and exercise, alongside optimization of diabetes, dyslipidemia, and hypertension. Resmetirom, a thyroid hormone receptor-beta agonist, is now approved specifically for MASH with fibrosis, and GLP-1 receptor agonists/bariatric surgery have shown significant benefit for both weight loss and histologic improvement. Patients require ongoing monitoring of fibrosis stage (via elastography or biopsy) given the risk of progression to cirrhosis, at which point management shifts toward standard cirrhosis care and surveillance."
     },
     {
-      "id": 459,
+      "id": 492,
       "diagnosis": "Primary Biliary Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16517,7 +17775,7 @@
       "management": "First-line treatment is ursodeoxycholic acid (UDCA), which improves bile flow and significantly slows disease progression in most patients when started early. For patients with an inadequate response to UDCA, obeticholic acid or fibrates (e.g., bezafibrate, used off-label in many regions) may be added as second-line therapy. Pruritus, which can be severe and significantly impair quality of life, is managed with agents such as cholestyramine, rifampin, or newer ileal bile acid transporter inhibitors, and liver transplantation is reserved for patients who progress to decompensated cirrhosis."
     },
     {
-      "id": 460,
+      "id": 493,
       "diagnosis": "Primary Sclerosing Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -16552,7 +17810,7 @@
       "management": "Unlike PBC, there is no medical therapy proven to alter the natural history or slow disease progression in PSC, and ursodeoxycholic acid is not routinely recommended for this purpose, though it may be used for symptomatic cholestasis in some cases. Management instead focuses on surveillance for and treatment of complications, including endoscopic dilation or stenting of dominant biliary strictures, periodic imaging and tumor marker (CA 19-9) surveillance for cholangiocarcinoma, and colonoscopic surveillance for colorectal cancer given the strong IBD association. Liver transplantation is the only definitive treatment for advanced disease, though PSC notably can recur in the transplanted liver."
     },
     {
-      "id": 461,
+      "id": 494,
       "diagnosis": "Acute Kidney Injury (AKI)",
       "aliases": [
         "AKI",
@@ -16590,7 +17848,7 @@
       "management": "IV fluids, discontinue nephrotoxic medications, treat underlying volume depletion."
     },
     {
-      "id": 462,
+      "id": 495,
       "diagnosis": "Chronic Kidney Disease (CKD)",
       "aliases": [
         "CKD",
@@ -16630,7 +17888,7 @@
       "management": "Control BP (ACEi/ARB), treat underlying cause, manage CKD complications, dialysis or transplant for ESRD."
     },
     {
-      "id": 463,
+      "id": 496,
       "diagnosis": "Acute Tubular Necrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -16665,7 +17923,7 @@
       "management": "Supportive care, optimize perfusion, avoid nephrotoxins, dialysis if indicated."
     },
     {
-      "id": 464,
+      "id": 497,
       "diagnosis": "Acute Interstitial Nephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -16700,7 +17958,7 @@
       "management": "Stop offending drug, supportive care, corticosteroids for persistent disease."
     },
     {
-      "id": 465,
+      "id": 498,
       "diagnosis": "Tubular Obstruction",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -16735,7 +17993,7 @@
       "management": "Immediate relief of obstruction with catheterization or urologic intervention."
     },
     {
-      "id": 466,
+      "id": 499,
       "diagnosis": "Nephrotic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -16770,7 +18028,7 @@
       "management": "Treat underlying cause, ACEi/ARB, diuretics, statins, anticoagulation when appropriate."
     },
     {
-      "id": 467,
+      "id": 500,
       "diagnosis": "Nephritic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -16805,7 +18063,7 @@
       "management": "Control blood pressure and fluid status; treat underlying glomerulonephritis; immunosuppression when indicated."
     },
     {
-      "id": 468,
+      "id": 501,
       "diagnosis": "Ureteric stone (unilateral)",
       "aliases": [
         "unilateral",
@@ -16845,7 +18103,7 @@
       "management": "Analgesia, hydration, medical expulsive therapy (tamsulosin), lithotripsy or ureteroscopy for larger stones."
     },
     {
-      "id": 469,
+      "id": 502,
       "diagnosis": "Central Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16880,7 +18138,7 @@
       "management": "Treat with desmopressin replacement and ensure adequate water intake. Monitor serum sodium closely and address the underlying hypothalamic or pituitary disorder."
     },
     {
-      "id": 470,
+      "id": 503,
       "diagnosis": "Nephrogenic Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16915,7 +18173,7 @@
       "management": "Address the underlying cause, optimize hydration, and reduce urine output with dietary measures and selected medications. Monitor closely for dehydration and hypernatremia"
     },
     {
-      "id": 471,
+      "id": 504,
       "diagnosis": "Osmotic Demyelination Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -16950,7 +18208,7 @@
       "management": "Prevention through careful sodium correction is critical. Provide supportive neurologic care, rehabilitation, and close monitoring for respiratory compromise and long-term deficits."
     },
     {
-      "id": 472,
+      "id": 505,
       "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH)",
       "aliases": [
         "SIADH",
@@ -16988,7 +18246,7 @@
       "management": "Treat the underlying cause and restrict fluids first; if insufficient, escalate to urea or tolvaptan as second-line therapy; and use hypertonic saline emergently for severe symptomatic hyponatremia, with careful sodium correction to avoid osmotic demyelination"
     },
     {
-      "id": 473,
+      "id": 506,
       "diagnosis": "Primary Hyperaldosteronism (Conn's)",
       "aliases": [
         "Conn's",
@@ -17026,7 +18284,7 @@
       "management": "Unilateral disease is typically treated surgically. Bilateral adrenal hyperplasia is managed medically with mineralocorticoid receptor antagonists and cardiovascular risk reduction."
     },
     {
-      "id": 474,
+      "id": 507,
       "diagnosis": "Gitelman Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17064,7 +18322,7 @@
       "management": "Provide lifelong magnesium and potassium supplementation. Encourage liberal salt intake and consider potassium-sparing agents for persistent electrolyte abnormalities or symptoms."
     },
     {
-      "id": 475,
+      "id": 508,
       "diagnosis": "Bartter Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17099,7 +18357,7 @@
       "management": "Correct fluid and electrolyte losses with potassium supplementation and liberal salt intake. NSAIDs and potassium-sparing agents may reduce renal salt wasting"
     },
     {
-      "id": 476,
+      "id": 509,
       "diagnosis": "Methanol Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17134,7 +18392,7 @@
       "management": "Administer fomepizole to inhibit alcohol dehydrogenase, correct acidosis, and perform hemodialysis when indicated. Monitor closely for visual and neurologic injury."
     },
     {
-      "id": 477,
+      "id": 510,
       "diagnosis": "Salicylate Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17169,7 +18427,7 @@
       "management": "Administer activated charcoal when appropriate and alkalinize serum and urine with intravenous bicarbonate. Severe toxicity may require urgent hemodialysis."
     },
     {
-      "id": 478,
+      "id": 511,
       "diagnosis": "Renal Tubular Acidosis Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17204,7 +18462,7 @@
       "management": "Treat with oral alkali therapy and potassium supplementation when needed. Address underlying causes and monitor for nephrolithiasis, nephrocalcinosis, and kidney dysfunction."
     },
     {
-      "id": 479,
+      "id": 512,
       "diagnosis": "Renal Tubular Acidosis Type 2",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17239,7 +18497,7 @@
       "management": "Provide bicarbonate replacement and correct electrolyte abnormalities. Treat the underlying cause and supplement phosphate or vitamin D when bone disease is present."
     },
     {
-      "id": 480,
+      "id": 513,
       "diagnosis": "Renal Tubular Acidosis Type 4",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17274,7 +18532,7 @@
       "management": "Address underlying hypoaldosteronism, discontinue contributing medications when possible, and treat hyperkalemia. Some patients benefit from mineralocorticoid replacement or diuretic therapy."
     },
     {
-      "id": 481,
+      "id": 514,
       "diagnosis": "Saline-Infusion Hyperchloremia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17309,7 +18567,7 @@
       "management": "Reduce or discontinue chloride-rich fluids and consider balanced crystalloids. Monitor acid-base status and renal function while treating the underlying illness."
     },
     {
-      "id": 482,
+      "id": 515,
       "diagnosis": "Urinary Tract Infection",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17344,7 +18602,7 @@
       "management": "First-line treatment of uncomplicated UTI includes nitrofurantoin (100 mg twice daily, 5 days), trimethoprim-sulfamethoxazole (1 DS tablet twice daily, 3 days), or fosfomycin (single 3 g dose); fluoroquinolones are reserved as alternatives."
     },
     {
-      "id": 483,
+      "id": 516,
       "diagnosis": "Acute Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17382,7 +18640,7 @@
       "management": "Initiate appropriate antibiotic therapy and ensure adequate hydration. Hospitalize patients with severe illness, sepsis, obstruction, or inability to tolerate oral medications."
     },
     {
-      "id": 484,
+      "id": 517,
       "diagnosis": "Prostatitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17417,7 +18675,7 @@
       "management": "Ciprofloxacin 500 mg po x 14-30 d or Septra DS 1 tab po BID x 14-30 d. Monitor for urinary retention, abscess formation, and sepsis, with hospitalization for severe disease."
     },
     {
-      "id": 485,
+      "id": 518,
       "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
       "aliases": [
         "BPH",
@@ -17455,7 +18713,7 @@
       "management": "Lifestyle modifications and α₁-blockers provide symptomatic relief. Larger prostates may benefit from 5α-reductase inhibitors, while refractory obstruction may require surgery."
     },
     {
-      "id": 486,
+      "id": 519,
       "diagnosis": "Overactive Bladder (OAB)",
       "aliases": [
         "OAB",
@@ -17496,7 +18754,7 @@
       "management": "Begin with bladder training, fluid management, and pelvic floor exercises. Persistent symptoms may require antimuscarinic therapy, β3-adrenergic agonists, or specialist referral."
     },
     {
-      "id": 487,
+      "id": 520,
       "diagnosis": "Prostate Adenocarcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17534,7 +18792,7 @@
       "management": "Management ranges from active surveillance to surgery, radiation, and androgen deprivation therapy. Advanced disease may require systemic therapy and treatment of metastases."
     },
     {
-      "id": 488,
+      "id": 521,
       "diagnosis": "Renal Cell Carcinoma (RCC)",
       "aliases": [
         "RCC",
@@ -17574,7 +18832,7 @@
       "management": "Localized disease is treated with partial or radical nephrectomy. Advanced disease may require targeted therapy, immunotherapy, and management of metastatic complications."
     },
     {
-      "id": 489,
+      "id": 522,
       "diagnosis": "Testicular Cancer",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17609,7 +18867,7 @@
       "management": "Radical inguinal orchiectomy for diagnosis and treatment. Further management depends on histology and stage and may include surveillance, chemotherapy, or radiation. Never biopsy due to risk of lymphatogenous spread."
     },
     {
-      "id": 490,
+      "id": 523,
       "diagnosis": "Von Hippel-Lindau Syndrome (VHL)",
       "aliases": [
         "VHL",
@@ -17647,7 +18905,7 @@
       "management": "Provide lifelong surveillance for associated tumors with regular imaging and screening. Surgical intervention is often required for symptomatic or high-risk lesions."
     },
     {
-      "id": 491,
+      "id": 524,
       "diagnosis": "Septic Stone",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17682,7 +18940,7 @@
       "management": "Treat as a urologic emergency with immediate broad-spectrum antibiotics and urgent urinary decompression via nephrostomy tube or ureteral stent placement."
     },
     {
-      "id": 492,
+      "id": 525,
       "diagnosis": "Nephrolithiasis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17720,7 +18978,7 @@
       "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
     },
     {
-      "id": 493,
+      "id": 526,
       "diagnosis": "Erectile Dysfunction (ED)",
       "aliases": [
         "ED",
@@ -17758,7 +19016,7 @@
       "management": "Address reversible causes and optimize cardiovascular risk factors. First-line therapy typically involves phosphodiesterase-5 inhibitors, with additional treatments reserved for refractory cases"
     },
     {
-      "id": 494,
+      "id": 527,
       "diagnosis": "Hydrocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17796,7 +19054,7 @@
       "management": "Observe asymptomatic hydroceles. Symptomatic, enlarging, or persistent cases may require surgical hydrocelectomy after excluding underlying infection, malignancy, or hernia."
     },
     {
-      "id": 495,
+      "id": 528,
       "diagnosis": "Epididymal Cyst",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17831,7 +19089,7 @@
       "management": "Reassure and observe asymptomatic lesions. Surgical excision may be considered for persistent pain, significant enlargement, or diagnostic uncertainty after imaging evaluation."
     },
     {
-      "id": 496,
+      "id": 529,
       "diagnosis": "Varicocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17866,7 +19124,7 @@
       "management": "Observe asymptomatic cases. Symptomatic patients or those with infertility may benefit from surgical ligation or percutaneous embolization of the affected veins."
     },
     {
-      "id": 497,
+      "id": 530,
       "diagnosis": "Epididymitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17901,7 +19159,7 @@
       "management": "Treat with pathogen-directed antibiotics, analgesia, scrotal elevation, and rest. Exclude testicular torsion promptly and monitor for abscess or fertility complications"
     },
     {
-      "id": 498,
+      "id": 531,
       "diagnosis": "Orchitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17936,7 +19194,7 @@
       "management": "Provide analgesia, scrotal support, and supportive care. Treat underlying bacterial infection when present and monitor for testicular atrophy or fertility complications."
     },
     {
-      "id": 499,
+      "id": 532,
       "diagnosis": "Indirect Inguinal Hernia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -17971,7 +19229,7 @@
       "management": "Elective surgical repair is recommended for symptomatic hernias. Urgent intervention is required for incarceration, strangulation, bowel obstruction, or compromised blood supply."
     },
     {
-      "id": 500,
+      "id": 533,
       "diagnosis": "Testicular Torsion",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18006,7 +19264,7 @@
       "management": "Treat as a surgical emergency with immediate urologic consultation and urgent orchiopexy. Delay in intervention significantly increases the risk of testicular loss."
     },
     {
-      "id": 501,
+      "id": 534,
       "diagnosis": "Hematocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18041,7 +19299,7 @@
       "management": "Obtain urgent scrotal ultrasonography and assess for testicular injury. Small stable hematoceles may be observed, while large or expanding collections require surgery."
     },
     {
-      "id": 502,
+      "id": 535,
       "diagnosis": "Cystitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18076,7 +19334,7 @@
       "management": "Nitrofurantoin, TMP-SMX, or fosfomycin are first-line for uncomplicated cystitis; fluoroquinolones are reserved as alternative agents due to resistance concerns."
     },
     {
-      "id": 503,
+      "id": 536,
       "diagnosis": "Urethritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18111,7 +19369,7 @@
       "management": "Treat with appropriate empiric antibiotics while awaiting test results. Ensure partner notification and treatment, and recommend abstinence until therapy is completed."
     },
     {
-      "id": 504,
+      "id": 537,
       "diagnosis": "Priapism",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18146,7 +19404,7 @@
       "management": "Treat as a urologic emergency with corporal aspiration and intracavernosal sympathomimetic therapy. Address underlying causes promptly to prevent permanent erectile dysfunction"
     },
     {
-      "id": 505,
+      "id": 538,
       "diagnosis": "Paraphimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18181,7 +19439,7 @@
       "management": "Treat as a urologic emergency with prompt manual reduction. Severe cases may require dorsal slit or circumcision to prevent ischemic complications."
     },
     {
-      "id": 506,
+      "id": 539,
       "diagnosis": "Phimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18216,7 +19474,7 @@
       "management": "Treat pathologic cases with topical corticosteroids and gentle stretching. Persistent, recurrent, or severe symptoms may require circumcision or surgical intervention."
     },
     {
-      "id": 507,
+      "id": 540,
       "diagnosis": "Fournier's Gangrene",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18251,7 +19509,7 @@
       "management": "Initiate immediate broad-spectrum antibiotics and aggressive resuscitation. Urgent surgical debridement is essential, often requiring multiple procedures and intensive care support."
     },
     {
-      "id": 508,
+      "id": 541,
       "diagnosis": "Penile Fracture",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18286,7 +19544,7 @@
       "management": "Obtain urgent urologic consultation and perform prompt surgical repair. Evaluate for associated urethral injury and monitor for long-term erectile dysfunction."
     },
     {
-      "id": 510,
+      "id": 543,
       "diagnosis": "Hydronephrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -18324,7 +19582,7 @@
       "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
     },
     {
-      "id": 511,
+      "id": 544,
       "diagnosis": "Emphysematous Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -18362,7 +19620,7 @@
       "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
     },
     {
-      "id": 512,
+      "id": 545,
       "diagnosis": "Urothelial Cell Carcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -18400,7 +19658,7 @@
       "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
     },
     {
-      "id": 513,
+      "id": 546,
       "diagnosis": "Multicystic Renal Dysplasia",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -18435,7 +19693,7 @@
       "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
     },
     {
-      "id": 514,
+      "id": 547,
       "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -18470,7 +19728,7 @@
       "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
     },
     {
-      "id": 515,
+      "id": 548,
       "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -18510,7 +19768,7 @@
       "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
     },
     {
-      "id": 516,
+      "id": 549,
       "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -18551,7 +19809,7 @@
       "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
     },
     {
-      "id": 517,
+      "id": 550,
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
