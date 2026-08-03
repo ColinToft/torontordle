@@ -479,6 +479,11 @@
       "date": "2026-08-02",
       "diagnosis": "Hepatitis C",
       "id": 482
+    },
+    {
+      "date": "2026-08-03",
+      "diagnosis": "Wilson's Disease",
+      "id": 484
     }
   ],
   "2": [
@@ -1008,6 +1013,12 @@
       "date": "2026-08-02",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1
+    },
+    {
+      "date": "2026-08-03",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
     }
   ]
 }
