@@ -484,6 +484,11 @@
       "date": "2026-08-03",
       "diagnosis": "Wilson's Disease",
       "id": 484
+    },
+    {
+      "date": "2026-08-04",
+      "diagnosis": "Acute Kidney Injury (AKI)",
+      "id": 493
     }
   ],
   "2": [
@@ -1019,6 +1024,11 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-08-04",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
     }
   ]
 }

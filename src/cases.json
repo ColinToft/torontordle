@@ -17302,7 +17302,7 @@
         },
         {
           "type": "",
-          "text": "Labs show mildly elevated transaminases, and ascitic fluid analysis reveals a high serum-ascites albumin gradient (SAAG) greater than 1.1, consistent with portal hypertension."
+          "text": "Labs show mildly elevated transaminases, and ascitic fluid analysis reveals a high serum-ascites albumin gradient (SAAG) greater than 11 g/L"
         },
         {
           "type": "",
@@ -17337,7 +17337,7 @@
         },
         {
           "type": "",
-          "text": "Labs show markedly elevated AST/ALT (often in the thousands in acute infection), elevated bilirubin."
+          "text": "Labs show markedly elevated AST/ALT, elevated bilirubin."
         },
         {
           "type": "",
@@ -17437,11 +17437,11 @@
         },
         {
           "type": "",
-          "text": "He has a sibling with a similar movement disorder, and his family reports he was previously found to have mildly elevated liver enzymes during a routine exam a couple of years ago that was never fully worked up."
+          "text": "He has a sibling with a similar movement disorder"
         },
         {
           "type": "",
-          "text": "Exam reveals a coarse tremor, dysarthria, and golden-brown rings visible at the periphery of the cornea on slit-lamp examination (Kayser-Fleischer rings)."
+          "text": "Brain MRI shows characteristic T2 hyperintensities in the basal ganglia, particularly the putamen, sometimes described as the \"face of the giant panda\" sign in the midbrain."
         },
         {
           "type": "",
@@ -17449,7 +17449,9 @@
         },
         {
           "type": "",
-          "text": "Brain MRI shows characteristic T2 hyperintensities in the basal ganglia, particularly the putamen, sometimes described as the \"face of the giant panda\" sign in the midbrain."
+          "text": "",
+          "image": "case-images/wilson-s-disease-clue5.jpg",
+          "detail": "Exam reveals a coarse tremor, dysarthria, and golden-brown rings visible at the periphery of the cornea on slit-lamp examination (Kayser-Fleischer rings)."
         },
         {
           "type": "",
