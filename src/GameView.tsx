@@ -15,7 +15,7 @@ import { referenceHref } from './references'
 import { buildShareText, copyShare } from './share'
 import type { UseGame } from './useGame'
 import type { ArchiveDay, Nav } from './App'
-import { loadDailyProgress } from './storage'
+import { loadDayOutcome } from './storage'
 import { fetchCaseStats, percentileBand, type CaseStats } from './statsApi'
 import { Confetti } from './Confetti'
 
@@ -674,8 +674,12 @@ function ArchivesModal({
       ) : (
         <div style={{ maxHeight: '52vh', overflowY: 'auto', display: 'flex', flexDirection: 'column' }}>
           {days.map((d) => {
-            const prog = loadDailyProgress(year, d.date, true)
-            const mark = prog?.status === 'won' ? '🟩' : prog?.status === 'lost' ? '🟥' : '▢'
+            const outcome = loadDayOutcome(year, d.date)
+            const mark = outcome === null ? '▢' : outcome.status === 'won' ? '🟩' : '🟥'
+            const label =
+              outcome === null
+                ? 'not played'
+                : `${outcome.status === 'won' ? 'solved' : 'missed'}${outcome.source === 'archive' ? ' in practice' : ''}`
             return (
               <button
                 key={d.date}
@@ -687,6 +691,7 @@ function ArchivesModal({
                 </span>
                 <span style={{ flex: 1, color: 'var(--ink-soft)', fontSize: 13 }}>{formatHeaderDate(d.date)}</span>
                 <span aria-hidden style={{ fontSize: 13 }}>{mark}</span>
+                <span className="tt-sr-only">{label}</span>
               </button>
             )
           })}

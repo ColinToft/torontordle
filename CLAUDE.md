@@ -22,7 +22,7 @@ Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med studen
 - `src/useGame.ts` — game-state hook, takes the resolved `tCase`, `year`, and `{ dateStr, archive }`. **Archive mode** = practice replay: separate progress slot, never records stats. Exposes **`winTick`**, bumped only when the player diagnoses correctly *in this session* — celebrate off that, never off `status === 'won'` (restoring a finished day sets that during render).
 - `src/GameView.tsx` — UI (header: About / How to Play / Stats / **Year 1 | Year 2** toggle / **Archives**; archive banner + ArchivesModal).
 - `src/Confetti.tsx` — dependency-free canvas confetti on a correct diagnosis (archive replays included). Physics is pure and exported (`spawnCannon`/`advance`/`alphaFor`/`isAlive`) so it's testable without a DOM. Colours read from the `:root` design tokens; honours `prefers-reduced-motion`.
-- `src/storage.ts` — localStorage, **namespaced per year** (`torontordle:y<1|2>:…`): daily + archive progress, aggregate `Stats` (**per-device only**; no server data).
+- `src/storage.ts` — localStorage, **namespaced per year** (`torontordle:y<1|2>:…`): daily + archive progress, aggregate `Stats` (**per-device only**; no server data). A day played live lands in `progress:`, a later replay in `archive:` — **`loadDayOutcome` is the single reader for "how did this day go"**, preferring the live play so a practice replay can't overwrite the record. The Archives list uses it, not a raw slot read.
 - `src/share.ts` — Wordle-style share grid (🟩 right / 🟥 miss / ⬛ unused). `src/types.ts` — core types (`TCase`, `CasesByYear`, `Year`).
 
 ## Gotchas

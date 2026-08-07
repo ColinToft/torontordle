@@ -369,6 +369,126 @@
       "date": "2026-07-11",
       "diagnosis": "Secondary Pneumothorax",
       "id": 348
+    },
+    {
+      "date": "2026-07-12",
+      "diagnosis": "Group A Streptococcus Pharyngitis",
+      "id": 350
+    },
+    {
+      "date": "2026-07-13",
+      "diagnosis": "Ventilator Associated Pneumonia (VAP)",
+      "id": 352
+    },
+    {
+      "date": "2026-07-14",
+      "diagnosis": "Influenza",
+      "id": 354
+    },
+    {
+      "date": "2026-07-15",
+      "diagnosis": "Respiratory Syncytial Virus (RSV)",
+      "id": 356
+    },
+    {
+      "date": "2026-07-16",
+      "diagnosis": "Invasive Pulmonary Aspergillosis",
+      "id": 358
+    },
+    {
+      "date": "2026-07-17",
+      "diagnosis": "Blastomycosis",
+      "id": 360
+    },
+    {
+      "date": "2026-07-18",
+      "diagnosis": "Cryptococcal Pneumonia",
+      "id": 362
+    },
+    {
+      "date": "2026-07-19",
+      "diagnosis": "Hospital Associated Pneumonia (HAP)",
+      "id": 351
+    },
+    {
+      "date": "2026-07-20",
+      "diagnosis": "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)",
+      "id": 113
+    },
+    {
+      "date": "2026-07-21",
+      "diagnosis": "Steven-Johnsons Syndrome (SJS)",
+      "id": 111
+    },
+    {
+      "date": "2026-07-22",
+      "diagnosis": "Allergic Asthma",
+      "id": 124
+    },
+    {
+      "date": "2026-07-23",
+      "diagnosis": "Herpes Simplex Virus (HSV)",
+      "id": 122
+    },
+    {
+      "date": "2026-07-24",
+      "diagnosis": "Allergic Contact Dermatitis",
+      "id": 129
+    },
+    {
+      "date": "2026-07-25",
+      "diagnosis": "Anaphylaxis",
+      "id": 127
+    },
+    {
+      "date": "2026-07-26",
+      "diagnosis": "Chronic Spontaneous Urticaria",
+      "id": 135
+    },
+    {
+      "date": "2026-07-27",
+      "diagnosis": "DRESS Syndrome",
+      "id": 132
+    },
+    {
+      "date": "2026-07-28",
+      "diagnosis": "Molluscum Contagiosum",
+      "id": 94
+    },
+    {
+      "date": "2026-07-29",
+      "diagnosis": "Guttate Psoriasis",
+      "id": 94
+    },
+    {
+      "date": "2026-07-30",
+      "diagnosis": "Lichen Planus",
+      "id": 100
+    },
+    {
+      "date": "2026-07-31",
+      "diagnosis": "Scabies",
+      "id": 102
+    },
+    {
+      "date": "2026-08-01",
+      "diagnosis": "Alcohol-Associated Liver Disease",
+      "id": 488
+    },
+    {
+      "date": "2026-08-02",
+      "diagnosis": "Hepatitis C",
+      "id": 482
+    },
+    {
+      "date": "2026-08-03",
+      "diagnosis": "Wilson's Disease",
+      "id": 484
+    },
+    {
+      "date": "2026-08-04",
+      "diagnosis": "Acute Kidney Injury (AKI)",
+      "id": 493
     }
   ],
   "2": [
@@ -777,6 +897,138 @@
       "date": "2026-07-11",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
+    },
+    {
+      "date": "2026-07-12",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-13",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-14",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-15",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-16",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-17",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-18",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-07-19",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-07-20",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-21",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-22",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-23",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-24",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-25",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-26",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-27",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-28",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-29",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-07-30",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-07-31",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-01",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-08-02",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-03",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-08-04",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
     }
   ]
 }
