@@ -36,3 +36,9 @@ npx wrangler d1 execute torontordle-stats --local --file=./schema.sql
 ```
 
 Point the client at it with `VITE_STATS_API=http://localhost:8787 npm run dev`.
+
+**A plain `npm run dev` sends no stats anywhere.** `VITE_STATS_API` is required
+in dev: with it unset the client disables community stats entirely (and logs a
+line saying so) rather than falling through to the deployed Worker. That
+fall-through used to be the default, so playing a case locally wrote a real row
+into the live numbers.

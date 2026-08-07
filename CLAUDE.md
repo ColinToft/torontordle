@@ -3,9 +3,9 @@
 Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med students. Static Vite + React + TypeScript SPA. Cases (clue text **and** images) are **baked at build time** from a Google Sheet into `src/cases.json` — the client never touches the sheet.
 
 ## Commands
-- `npm run dev` — local dev (http://localhost:5173/)
+- `npm run dev` — local dev (http://localhost:5173/). **Community stats are off** unless you pass `VITE_STATS_API` (see `workers/README.md`): a dev server must never write to the live Worker.
 - `npm run build` — typecheck + Vite build → `dist/`
-- `npm test` — vitest (sheet parser, share, references)
+- `npm test` — vitest (sheet parser, share, references, storage, stats API, confetti physics)
 - `npm run sync-data` — re-bake the bank from the sheet → `src/cases.json` + `public/case-images/` (needs Google OAuth creds; `tsx scripts/sync-data.ts`)
 
 ## Deploy
