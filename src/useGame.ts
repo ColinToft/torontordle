@@ -31,6 +31,10 @@ export function useGame(
   const [guesses, setGuesses] = useState<Guess[]>([])
   const [input, setInput] = useState('')
   const [status, setStatus] = useState<Status>('playing')
+  // Bumped only when the player diagnoses correctly *in this session*. The UI
+  // celebrates off this, not off `status === 'won'`: restoring a finished day
+  // sets that during render, which would re-fire the confetti on every reload.
+  const [winTick, setWinTick] = useState(0)
   const [stats, setStats] = useState<Stats>(() => loadStats(year))
 
   const recordIfDaily = useCallback(
@@ -87,6 +91,7 @@ export function useGame(
 
     if (correct) {
       setStatus('won')
+      setWinTick((n) => n + 1)
       recordIfDaily('won', next.length)
     } else if (next.length >= MAX_GUESSES) {
       setStatus('lost')
@@ -132,6 +137,7 @@ export function useGame(
     input,
     setInput,
     status,
+    winTick,
     cluesRevealed,
     cluesLeft,
     submitGuess,
