@@ -1,9 +1,33 @@
 import type { Year } from './types'
 
-// Community-stats API (Cloudflare Worker). Override for local dev with
-// VITE_STATS_API=http://localhost:8787. All calls fail soft — if the backend
+// Community-stats API (Cloudflare Worker). All calls fail soft — if the backend
 // is down or not yet deployed, the game is unaffected and no banner shows.
-const API_BASE = (import.meta.env.VITE_STATS_API as string | undefined) ?? 'https://torontordle-stats.torontordle.workers.dev'
+export const PROD_STATS_API = 'https://torontordle-stats.torontordle.workers.dev'
+
+/**
+ * Which endpoint this build talks to, or `null` for "call nothing".
+ *
+ * A dev server used to fall through to the production Worker, so finishing a
+ * case locally wrote a real row into the live stats. Dev must now name its
+ * endpoint (`VITE_STATS_API=http://localhost:8787 npm run dev` — see
+ * `workers/README.md`); with none set, community stats are off locally.
+ */
+export function resolveApiBase(env: { DEV?: boolean; VITE_STATS_API?: string }): string | null {
+  const override = env.VITE_STATS_API?.trim()
+  if (override) return override.replace(/\/+$/, '')
+  return env.DEV ? null : PROD_STATS_API
+}
+
+const API_BASE = resolveApiBase(import.meta.env as { DEV?: boolean; VITE_STATS_API?: string })
+
+if (API_BASE === null) {
+  // Loud rather than silent: the stats UI is missing locally by choice, not
+  // because the backend is broken.
+  console.info(
+    '[torontordle] Community stats are disabled in dev. Set VITE_STATS_API to a local Worker ' +
+      `(e.g. http://localhost:8787) to exercise them — ${PROD_STATS_API} is never written from a dev server.`,
+  )
+}
 
 const CID_KEY = 'torontordle:cid'
 function clientId(): string {
@@ -28,6 +52,7 @@ export async function submitResult(p: {
   won: boolean
   guesses: number
 }): Promise<void> {
+  if (API_BASE === null) return
   try {
     await fetch(`${API_BASE}/submit`, {
       method: 'POST',
@@ -48,6 +73,7 @@ export async function submitResult(p: {
 }
 
 export async function fetchCaseStats(p: { year: Year; date: string; diagnosis: string }): Promise<CaseStats | null> {
+  if (API_BASE === null) return null
   try {
     const u = new URL(`${API_BASE}/stats`)
     u.searchParams.set('year', p.year)
