@@ -1,4 +1,4 @@
-import type { DailyProgress, Stats, Year } from './types'
+import type { DailyProgress, Stats, Status, Year } from './types'
 
 // All keys are namespaced by year so Year 1 and Year 2 keep independent
 // progress + stats. `archive:` progress is for replayed past days (practice).
@@ -41,6 +41,20 @@ export function loadDailyProgress(year: Year, dateStr: string, archive = false):
 
 export function saveDailyProgress(year: Year, dateStr: string, progress: DailyProgress, archive = false): void {
   safeWrite((archive ? archiveKey : progressKey)(year, dateStr), progress)
+}
+
+// How a past day should be reported in the Archives list. A day played live
+// lands in the daily slot; replaying it later writes the practice slot. The
+// live play is the record, so it wins — a practice replay can never overwrite
+// it, and only fills the square for a day that was never played for real.
+export type DayOutcome = { status: Exclude<Status, 'playing'>; source: 'daily' | 'archive' }
+
+export function loadDayOutcome(year: Year, dateStr: string): DayOutcome | null {
+  const daily = loadDailyProgress(year, dateStr, false)
+  if (daily && daily.status !== 'playing') return { status: daily.status, source: 'daily' }
+  const replay = loadDailyProgress(year, dateStr, true)
+  if (replay && replay.status !== 'playing') return { status: replay.status, source: 'archive' }
+  return null
 }
 
 export function clearDailyProgress(year: Year, dateStr: string, archive = false): void {
