@@ -17,6 +17,7 @@ import type { UseGame } from './useGame'
 import type { ArchiveDay, Nav } from './App'
 import { loadDayOutcome } from './storage'
 import { fetchCaseStats, percentileBand, type CaseStats } from './statsApi'
+import { Confetti } from './Confetti'
 
 const SERIF = "'Source Serif Pro', Georgia, serif"
 
@@ -67,6 +68,8 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
 
   return (
     <div className="tt-frame" style={styles.frame}>
+      {/* Celebrates a correct diagnosis, practice replays included. */}
+      <Confetti fire={g.winTick} />
       <Header
         day={day}
         headerDate={headerDate}
