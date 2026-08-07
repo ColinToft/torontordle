@@ -23,6 +23,7 @@ Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med studen
 - `src/GameView.tsx` — UI (header: About / How to Play / Stats / **Year 1 | Year 2** toggle / **Archives**; archive banner + ArchivesModal).
 - `src/Confetti.tsx` — dependency-free canvas confetti on a correct diagnosis (archive replays included). Physics is pure and exported (`spawnCannon`/`advance`/`alphaFor`/`isAlive`) so it's testable without a DOM. Colours read from the `:root` design tokens; honours `prefers-reduced-motion`.
 - `src/storage.ts` — localStorage, **namespaced per year** (`torontordle:y<1|2>:…`): daily + archive progress, aggregate `Stats` (**per-device only**; no server data). A day played live lands in `progress:`, a later replay in `archive:` — **`loadDayOutcome` is the single reader for "how did this day go"**, preferring the live play so a practice replay can't overwrite the record. The Archives list uses it, not a raw slot read.
+- `src/statsApi.ts` + `workers/` — the **community-stats backend** (Cloudflare Worker + D1, live). `POST /submit` records one **anonymous** result per finished *daily* game (`client` = a random browser UUID, unique on `(year,date,client)`; archive replays never submit); `GET /stats` returns `{ total, byGuess, lost }` for a case, which drives the Guess Distribution chart and the Top 10/25/50% band. Every call **fails soft** — if the Worker is down the game is unaffected and no banner shows. Override the endpoint for local dev with `VITE_STATS_API`. See `workers/README.md`.
 - `src/share.ts` — Wordle-style share grid (🟩 right / 🟥 miss / ⬛ unused). `src/types.ts` — core types (`TCase`, `CasesByYear`, `Year`).
 
 ## Gotchas
@@ -30,10 +31,10 @@ Daily diagnosis-guessing game (Wordle-style) for Toronto preclerkship med studen
 - All cases (incl. answers) ship in `cases.json` since day-selection is client-side — baking hides the *sheet*, not future answers (that'd need a per-request backend).
 - The sheet must stay "Anyone with link → Viewer" — the sync reads its CSV. (It's never read by the browser, only by `sync-data` in CI.)
 - Do **not** use `drive.files.export` for the XLSX — it 10 MB-caps and the sheet is ~24 MB. Use the `docs.google.com/.../export?format=xlsx` endpoint.
-- Stats/progress are localStorage-only today — cross-user comparison would need a backend.
+- **A player's own** stats and progress are localStorage-only, so they don't follow them across devices and can't be attributed to a person. The community Worker stores only anonymous per-case counts keyed by a random browser id — there is deliberately no identity, so "who played which day" is not answerable without adding accounts. Archive replays are never submitted, so past-day plays don't appear in the community numbers at all.
 
 ## Roadmap
 Planned work lives in the **"Plan for Torontordle"** Google Doc:
 <https://docs.google.com/document/d/1lyxqfa2xXlfUwqiZsCou2rqz6HVxGuqFQTR53-XYco4/edit>
-Done: About, contact, share rebrand, baked-data architecture, **Year 1/2 switcher, progressive unlock (dormant until dates set), 1.5× current-week weighting, no-repeat scheduling, Archives, frozen-history (stable archives across re-bakes)**.
-Still open: the **`Unlock date` column** needs adding to each year tab (first row of each week block, YYYY-MM-DD; carried down) — until then unlock/weighting are inert. And **cross-user comparative stats** (the "top N% today" banner) still needs a backend.
+Done: About, contact, share rebrand, baked-data architecture, **Year 1/2 switcher, progressive unlock (dormant until dates set), 1.5× current-week weighting, no-repeat scheduling, Archives, frozen-history (stable archives across re-bakes), cross-user comparative stats (the "top N% today" band — Worker + D1, shipped Jun 2026), win confetti**.
+Still open: the **`Unlock date` column** needs adding to each year tab (first row of each week block, YYYY-MM-DD; carried down) — until then unlock/weighting are inert. **Per-player identity** (so a player's history follows them across devices, or "who has played which day" becomes answerable) is unbuilt and would need accounts — the anonymous Worker deliberately can't answer it.
