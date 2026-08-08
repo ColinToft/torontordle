@@ -17645,11 +17645,11 @@
       "clues": [
         {
           "type": "",
-          "text": "A 22-year-old college student notices mild yellowing of his eyes during a stressful exam period and finals week, with no other symptoms."
+          "text": "A 22-year-old college student notices mild yellowing of his eyes during a stressful exam period"
         },
         {
           "type": "",
-          "text": "He reports similar, brief episodes of mild jaundice in the past, often during times of illness, fasting, or physical stress, that resolve on their own."
+          "text": "He reports similar, brief episodes of mild jaundice in the past, often during times of illness or physical stress, that resolve on their own."
         },
         {
           "type": "",
@@ -17665,7 +17665,7 @@
         },
         {
           "type": "",
-          "text": "Genetic testing (rarely needed clinically) reveals a polymorphism in the UGT1A1 gene promoter region, leading to reduced (but not absent) activity of the enzyme responsible for bilirubin conjugation"
+          "text": "Genetic testing (rarely needed clinically) reveals a polymorphism in the UGT1A1 gene promoter region, leading to reduced activity of the enzyme responsible for bilirubin conjugation"
         }
       ],
       "description": "Gilbert's syndrome is a common, benign genetic condition caused by reduced activity of the UGT1A1 enzyme, which is responsible for conjugating bilirubin in the liver, leading to mild, fluctuating elevations in unconjugated bilirubin, particularly during periods of fasting, illness, dehydration, or physical exertion. It affects a substantial portion of the general population and is considered a normal variant rather than a disease, with no associated liver damage, fibrosis, or long-term health consequences.",
@@ -17700,7 +17700,7 @@
         },
         {
           "type": "",
-          "text": "Liver biopsy reveals macrovesicular steatosis along with hepatocyte ballooning degeneration, lobular inflammation, and variable pericellular (\"chicken-wire\") fibrosis, distinguishing active steatohepatitis from simple steatosis (NAFLD/MASLD)."
+          "text": "Liver biopsy reveals macrovesicular steatosis along with hepatocyte ballooning degeneration, lobular inflammation, and variable pericellular (\"chicken-wire\") fibrosis"
         }
       ],
       "description": "Metabolic dysfunction-associated steatohepatitis (MASH), the updated terminology for non-alcoholic steatohepatitis (NASH), represents the progressive, inflammatory stage of fatty liver disease in which simple steatosis advances to include hepatocyte injury (ballooning), lobular inflammation, and fibrosis, occurring in the setting of metabolic risk factors such as obesity, type 2 diabetes, and dyslipidemia. Unlike simple steatosis (NAFLD/MASLD), MASH carries a meaningful risk of progression to cirrhosis and hepatocellular carcinoma if the underlying metabolic drivers and fibrosis are not addressed.",
@@ -17778,6 +17778,114 @@
     },
     {
       "id": 493,
+      "diagnosis": "Rotor Syndrome",
+      "aliases": [],
+      "category": "Gastrointestinal IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 20-year-old woman is evaluated for persistent mild jaundice discovered during a pre-employment medical examination. She is otherwise asymptomatic"
+        },
+        {
+          "type": "",
+          "text": "She has had intermittent scleral icterus since childhood. Her younger brother has a similar history"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild scleral icterus without hepatomegaly, abdominal tenderness, or evidence of chronic liver disease"
+        },
+        {
+          "type": "",
+          "text": "Total bilirubin is mildly elevated with a predominance of conjugated bilirubin. AST, ALT, alkaline phosphatase, albumin, and INR are normal"
+        },
+        {
+          "type": "",
+          "text": "",
+          "image": "case-images/rotor-syndrome-clue5.jpg",
+          "detail": "Abdominal US is normal",
+          "reference": "https://doi.org/10.53347/rID-48019"
+        },
+        {
+          "type": "",
+          "text": "Urinary coproporphyrin analysis demonstrates a marked increase in total urinary coproporphyrins with approximately 65% coproporphyrin I"
+        }
+      ],
+      "description": "Rotor syndrome is a rare autosomal recessive disorder caused by mutations affecting the SLCO1B1 and SLCO1B3 hepatic uptake transporters. Impaired hepatic reuptake of conjugated bilirubin produces lifelong benign conjugated hyperbilirubinemia with otherwise normal liver function. Unlike Dubin-Johnson syndrome, the liver is not pigmented. Diagnosis is established by characteristic urinary coproporphyrin excretion patterns after excluding other causes of conjugated hyperbilirubinemia. Prognosis is excellent.",
+      "management": "No treatment is necessary. Reassure patients regarding the benign natural history, avoid unnecessary diagnostic procedures, and monitor only if alternative liver disease is suspected."
+    },
+    {
+      "id": 494,
+      "diagnosis": "Dubin-Johnson Syndrome",
+      "aliases": [],
+      "category": "Gastrointestinal IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 24-year-old man is referred after routine blood work demonstrates persistent jaundice. He reports feeling well and denies abdominal pain, pruritus, or weight loss."
+        },
+        {
+          "type": "",
+          "text": "He has experienced intermittent scleral icterus since adolescence, particularly during periods of illness or stress. Several family members have similar lifelong jaundice"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild scleral icterus without hepatomegaly, ascites, chronic liver disease stigmata and has a negative Castell's sign"
+        },
+        {
+          "type": "",
+          "text": "Total bilirubin is mildly elevated with a predominance of conjugated bilirubin. AST, ALT, alkaline phosphatase, albumin, and INR are all within normal limits"
+        },
+        {
+          "type": "",
+          "text": "Abdominal ultrasonography demonstrates a normal liver and biliary tree."
+        },
+        {
+          "type": "",
+          "text": "Urinary coproporphyrin analysis shows a normal total coproporphyrin level but >80% is coproporphyrin I"
+        }
+      ],
+      "description": "Dubin-Johnson syndrome is a rare autosomal recessive disorder caused by mutations in the ABCC2 (MRP2) transporter, impairing hepatocellular excretion of conjugated bilirubin. Patients develop lifelong benign conjugated hyperbilirubinemia with otherwise normal liver function. Jaundice may worsen during illness, pregnancy, or oral contraceptive use. Diagnosis is supported by urinary coproporphyrin analysis and the characteristic black liver. Prognosis is excellent without progression to chronic liver disease.",
+      "management": "No specific treatment is required. Reassure patients regarding the benign prognosis, avoid unnecessary investigations, and manage factors that may transiently worsen jaundice."
+    },
+    {
+      "id": 495,
+      "diagnosis": "Crigler-Najjar Syndrome Type II",
+      "aliases": [],
+      "category": "Gastrointestinal IV",
+      "unlockDate": null,
+      "clues": [
+        {
+          "type": "",
+          "text": "A 17-year-old boy is referred for evaluation of lifelong intermittent jaundice that becomes more noticeable during illness and fasting"
+        },
+        {
+          "type": "",
+          "text": "He has never experienced abdominal pain or pruritus."
+        },
+        {
+          "type": "",
+          "text": "He has had mild scleral icterus since infancy. His parents are first cousins, and an older sibling has a similar history of jaundice"
+        },
+        {
+          "type": "",
+          "text": "Examination reveals mild scleral icterus without hepatosplenomegaly, abdominal tenderness, or other signs of chronic liver disease. Neurologic examination is normal"
+        },
+        {
+          "type": "",
+          "text": "Total bilirubin is 8.4 mg/dL (144 μmol/L) with a predominance of unconjugated bilirubin. AST, ALT, alkaline phosphatase, albumin, and INR are all within normal limits. Hemolysis studies are negative"
+        },
+        {
+          "type": "",
+          "text": "Abdominal ultrasonography demonstrates a normal liver, gallbladder, and biliary tree. Genetic testing identifies a pathogenic UGT1A1 mutation with reduced enzyme activity"
+        }
+      ],
+      "description": "Crigler–Najjar syndrome type II is a rare autosomal recessive disorder caused by partial deficiency of UDP-glucuronosyltransferase (UGT1A1), resulting in impaired bilirubin conjugation and persistent unconjugated hyperbilirubinemia. Unlike type I, residual enzyme activity is present, making kernicterus uncommon and allowing response to phenobarbital. Patients usually present with lifelong mild to moderate jaundice and otherwise normal liver function. Prognosis is generally excellent with appropriate management.",
+      "management": "Treat with phenobarbital to induce residual UGT1A1 activity. Avoid fasting and medications that increase bilirubin, monitor bilirubin levels, and provide genetic counseling when appropriate."
+    },
+    {
+      "id": 496,
       "diagnosis": "Acute Kidney Injury (AKI)",
       "aliases": [
         "AKI",
@@ -17815,7 +17923,7 @@
       "management": "IV fluids, discontinue nephrotoxic medications, treat underlying volume depletion."
     },
     {
-      "id": 494,
+      "id": 497,
       "diagnosis": "Chronic Kidney Disease (CKD)",
       "aliases": [
         "CKD",
@@ -17855,7 +17963,7 @@
       "management": "Control BP (ACEi/ARB), treat underlying cause, manage CKD complications, dialysis or transplant for ESRD."
     },
     {
-      "id": 495,
+      "id": 498,
       "diagnosis": "Acute Tubular Necrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -17890,7 +17998,7 @@
       "management": "Supportive care, optimize perfusion, avoid nephrotoxins, dialysis if indicated."
     },
     {
-      "id": 496,
+      "id": 499,
       "diagnosis": "Acute Interstitial Nephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -17925,7 +18033,7 @@
       "management": "Stop offending drug, supportive care, corticosteroids for persistent disease."
     },
     {
-      "id": 497,
+      "id": 500,
       "diagnosis": "Tubular Obstruction",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -17960,7 +18068,7 @@
       "management": "Immediate relief of obstruction with catheterization or urologic intervention."
     },
     {
-      "id": 498,
+      "id": 501,
       "diagnosis": "Nephrotic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -17995,7 +18103,7 @@
       "management": "Treat underlying cause, ACEi/ARB, diuretics, statins, anticoagulation when appropriate."
     },
     {
-      "id": 499,
+      "id": 502,
       "diagnosis": "Nephritic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -18030,7 +18138,7 @@
       "management": "Control blood pressure and fluid status; treat underlying glomerulonephritis; immunosuppression when indicated."
     },
     {
-      "id": 500,
+      "id": 503,
       "diagnosis": "Ureteric stone (unilateral)",
       "aliases": [
         "unilateral",
@@ -18070,7 +18178,7 @@
       "management": "Analgesia, hydration, medical expulsive therapy (tamsulosin), lithotripsy or ureteroscopy for larger stones."
     },
     {
-      "id": 501,
+      "id": 504,
       "diagnosis": "Central Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18105,7 +18213,7 @@
       "management": "Treat with desmopressin replacement and ensure adequate water intake. Monitor serum sodium closely and address the underlying hypothalamic or pituitary disorder."
     },
     {
-      "id": 502,
+      "id": 505,
       "diagnosis": "Nephrogenic Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18140,7 +18248,7 @@
       "management": "Address the underlying cause, optimize hydration, and reduce urine output with dietary measures and selected medications. Monitor closely for dehydration and hypernatremia"
     },
     {
-      "id": 503,
+      "id": 506,
       "diagnosis": "Osmotic Demyelination Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18175,7 +18283,7 @@
       "management": "Prevention through careful sodium correction is critical. Provide supportive neurologic care, rehabilitation, and close monitoring for respiratory compromise and long-term deficits."
     },
     {
-      "id": 504,
+      "id": 507,
       "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH)",
       "aliases": [
         "SIADH",
@@ -18213,7 +18321,7 @@
       "management": "Treat the underlying cause and restrict fluids first; if insufficient, escalate to urea or tolvaptan as second-line therapy; and use hypertonic saline emergently for severe symptomatic hyponatremia, with careful sodium correction to avoid osmotic demyelination"
     },
     {
-      "id": 505,
+      "id": 508,
       "diagnosis": "Primary Hyperaldosteronism (Conn's)",
       "aliases": [
         "Conn's",
@@ -18251,7 +18359,7 @@
       "management": "Unilateral disease is typically treated surgically. Bilateral adrenal hyperplasia is managed medically with mineralocorticoid receptor antagonists and cardiovascular risk reduction."
     },
     {
-      "id": 506,
+      "id": 509,
       "diagnosis": "Gitelman Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18289,7 +18397,7 @@
       "management": "Provide lifelong magnesium and potassium supplementation. Encourage liberal salt intake and consider potassium-sparing agents for persistent electrolyte abnormalities or symptoms."
     },
     {
-      "id": 507,
+      "id": 510,
       "diagnosis": "Bartter Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18324,7 +18432,7 @@
       "management": "Correct fluid and electrolyte losses with potassium supplementation and liberal salt intake. NSAIDs and potassium-sparing agents may reduce renal salt wasting"
     },
     {
-      "id": 508,
+      "id": 511,
       "diagnosis": "Methanol Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18359,7 +18467,7 @@
       "management": "Administer fomepizole to inhibit alcohol dehydrogenase, correct acidosis, and perform hemodialysis when indicated. Monitor closely for visual and neurologic injury."
     },
     {
-      "id": 509,
+      "id": 512,
       "diagnosis": "Salicylate Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18394,7 +18502,7 @@
       "management": "Administer activated charcoal when appropriate and alkalinize serum and urine with intravenous bicarbonate. Severe toxicity may require urgent hemodialysis."
     },
     {
-      "id": 510,
+      "id": 513,
       "diagnosis": "Renal Tubular Acidosis Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18429,7 +18537,7 @@
       "management": "Treat with oral alkali therapy and potassium supplementation when needed. Address underlying causes and monitor for nephrolithiasis, nephrocalcinosis, and kidney dysfunction."
     },
     {
-      "id": 511,
+      "id": 514,
       "diagnosis": "Renal Tubular Acidosis Type 2",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18464,7 +18572,7 @@
       "management": "Provide bicarbonate replacement and correct electrolyte abnormalities. Treat the underlying cause and supplement phosphate or vitamin D when bone disease is present."
     },
     {
-      "id": 512,
+      "id": 515,
       "diagnosis": "Renal Tubular Acidosis Type 4",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18499,7 +18607,7 @@
       "management": "Address underlying hypoaldosteronism, discontinue contributing medications when possible, and treat hyperkalemia. Some patients benefit from mineralocorticoid replacement or diuretic therapy."
     },
     {
-      "id": 513,
+      "id": 516,
       "diagnosis": "Saline-Infusion Hyperchloremia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18534,7 +18642,7 @@
       "management": "Reduce or discontinue chloride-rich fluids and consider balanced crystalloids. Monitor acid-base status and renal function while treating the underlying illness."
     },
     {
-      "id": 514,
+      "id": 517,
       "diagnosis": "Urinary Tract Infection",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18569,7 +18677,7 @@
       "management": "First-line treatment of uncomplicated UTI includes nitrofurantoin (100 mg twice daily, 5 days), trimethoprim-sulfamethoxazole (1 DS tablet twice daily, 3 days), or fosfomycin (single 3 g dose); fluoroquinolones are reserved as alternatives."
     },
     {
-      "id": 515,
+      "id": 518,
       "diagnosis": "Acute Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18607,7 +18715,7 @@
       "management": "Initiate appropriate antibiotic therapy and ensure adequate hydration. Hospitalize patients with severe illness, sepsis, obstruction, or inability to tolerate oral medications."
     },
     {
-      "id": 516,
+      "id": 519,
       "diagnosis": "Prostatitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18642,7 +18750,7 @@
       "management": "Ciprofloxacin 500 mg po x 14-30 d or Septra DS 1 tab po BID x 14-30 d. Monitor for urinary retention, abscess formation, and sepsis, with hospitalization for severe disease."
     },
     {
-      "id": 517,
+      "id": 520,
       "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
       "aliases": [
         "BPH",
@@ -18680,7 +18788,7 @@
       "management": "Lifestyle modifications and α₁-blockers provide symptomatic relief. Larger prostates may benefit from 5α-reductase inhibitors, while refractory obstruction may require surgery."
     },
     {
-      "id": 518,
+      "id": 521,
       "diagnosis": "Overactive Bladder (OAB)",
       "aliases": [
         "OAB",
@@ -18721,7 +18829,7 @@
       "management": "Begin with bladder training, fluid management, and pelvic floor exercises. Persistent symptoms may require antimuscarinic therapy, β3-adrenergic agonists, or specialist referral."
     },
     {
-      "id": 519,
+      "id": 522,
       "diagnosis": "Prostate Adenocarcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18759,7 +18867,7 @@
       "management": "Management ranges from active surveillance to surgery, radiation, and androgen deprivation therapy. Advanced disease may require systemic therapy and treatment of metastases."
     },
     {
-      "id": 520,
+      "id": 523,
       "diagnosis": "Renal Cell Carcinoma (RCC)",
       "aliases": [
         "RCC",
@@ -18799,7 +18907,7 @@
       "management": "Localized disease is treated with partial or radical nephrectomy. Advanced disease may require targeted therapy, immunotherapy, and management of metastatic complications."
     },
     {
-      "id": 521,
+      "id": 524,
       "diagnosis": "Testicular Cancer",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18834,7 +18942,7 @@
       "management": "Radical inguinal orchiectomy for diagnosis and treatment. Further management depends on histology and stage and may include surveillance, chemotherapy, or radiation. Never biopsy due to risk of lymphatogenous spread."
     },
     {
-      "id": 522,
+      "id": 525,
       "diagnosis": "Von Hippel-Lindau Syndrome (VHL)",
       "aliases": [
         "VHL",
@@ -18872,7 +18980,7 @@
       "management": "Provide lifelong surveillance for associated tumors with regular imaging and screening. Surgical intervention is often required for symptomatic or high-risk lesions."
     },
     {
-      "id": 523,
+      "id": 526,
       "diagnosis": "Septic Stone",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18907,7 +19015,7 @@
       "management": "Treat as a urologic emergency with immediate broad-spectrum antibiotics and urgent urinary decompression via nephrostomy tube or ureteral stent placement."
     },
     {
-      "id": 524,
+      "id": 527,
       "diagnosis": "Nephrolithiasis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18945,7 +19053,7 @@
       "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
     },
     {
-      "id": 525,
+      "id": 528,
       "diagnosis": "Erectile Dysfunction (ED)",
       "aliases": [
         "ED",
@@ -18983,7 +19091,7 @@
       "management": "Address reversible causes and optimize cardiovascular risk factors. First-line therapy typically involves phosphodiesterase-5 inhibitors, with additional treatments reserved for refractory cases"
     },
     {
-      "id": 526,
+      "id": 529,
       "diagnosis": "Hydrocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19021,7 +19129,7 @@
       "management": "Observe asymptomatic hydroceles. Symptomatic, enlarging, or persistent cases may require surgical hydrocelectomy after excluding underlying infection, malignancy, or hernia."
     },
     {
-      "id": 527,
+      "id": 530,
       "diagnosis": "Epididymal Cyst",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19056,7 +19164,7 @@
       "management": "Reassure and observe asymptomatic lesions. Surgical excision may be considered for persistent pain, significant enlargement, or diagnostic uncertainty after imaging evaluation."
     },
     {
-      "id": 528,
+      "id": 531,
       "diagnosis": "Varicocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19091,7 +19199,7 @@
       "management": "Observe asymptomatic cases. Symptomatic patients or those with infertility may benefit from surgical ligation or percutaneous embolization of the affected veins."
     },
     {
-      "id": 529,
+      "id": 532,
       "diagnosis": "Epididymitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19126,7 +19234,7 @@
       "management": "Treat with pathogen-directed antibiotics, analgesia, scrotal elevation, and rest. Exclude testicular torsion promptly and monitor for abscess or fertility complications"
     },
     {
-      "id": 530,
+      "id": 533,
       "diagnosis": "Orchitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19161,7 +19269,7 @@
       "management": "Provide analgesia, scrotal support, and supportive care. Treat underlying bacterial infection when present and monitor for testicular atrophy or fertility complications."
     },
     {
-      "id": 531,
+      "id": 534,
       "diagnosis": "Indirect Inguinal Hernia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19196,7 +19304,7 @@
       "management": "Elective surgical repair is recommended for symptomatic hernias. Urgent intervention is required for incarceration, strangulation, bowel obstruction, or compromised blood supply."
     },
     {
-      "id": 532,
+      "id": 535,
       "diagnosis": "Testicular Torsion",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19231,7 +19339,7 @@
       "management": "Treat as a surgical emergency with immediate urologic consultation and urgent orchiopexy. Delay in intervention significantly increases the risk of testicular loss."
     },
     {
-      "id": 533,
+      "id": 536,
       "diagnosis": "Hematocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19266,7 +19374,7 @@
       "management": "Obtain urgent scrotal ultrasonography and assess for testicular injury. Small stable hematoceles may be observed, while large or expanding collections require surgery."
     },
     {
-      "id": 534,
+      "id": 537,
       "diagnosis": "Cystitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19301,7 +19409,7 @@
       "management": "Nitrofurantoin, TMP-SMX, or fosfomycin are first-line for uncomplicated cystitis; fluoroquinolones are reserved as alternative agents due to resistance concerns."
     },
     {
-      "id": 535,
+      "id": 538,
       "diagnosis": "Urethritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19336,7 +19444,7 @@
       "management": "Treat with appropriate empiric antibiotics while awaiting test results. Ensure partner notification and treatment, and recommend abstinence until therapy is completed."
     },
     {
-      "id": 536,
+      "id": 539,
       "diagnosis": "Priapism",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19371,7 +19479,7 @@
       "management": "Treat as a urologic emergency with corporal aspiration and intracavernosal sympathomimetic therapy. Address underlying causes promptly to prevent permanent erectile dysfunction"
     },
     {
-      "id": 537,
+      "id": 540,
       "diagnosis": "Paraphimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19406,7 +19514,7 @@
       "management": "Treat as a urologic emergency with prompt manual reduction. Severe cases may require dorsal slit or circumcision to prevent ischemic complications."
     },
     {
-      "id": 538,
+      "id": 541,
       "diagnosis": "Phimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19441,7 +19549,7 @@
       "management": "Treat pathologic cases with topical corticosteroids and gentle stretching. Persistent, recurrent, or severe symptoms may require circumcision or surgical intervention."
     },
     {
-      "id": 539,
+      "id": 542,
       "diagnosis": "Fournier's Gangrene",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19476,7 +19584,7 @@
       "management": "Initiate immediate broad-spectrum antibiotics and aggressive resuscitation. Urgent surgical debridement is essential, often requiring multiple procedures and intensive care support."
     },
     {
-      "id": 540,
+      "id": 543,
       "diagnosis": "Penile Fracture",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19511,7 +19619,7 @@
       "management": "Obtain urgent urologic consultation and perform prompt surgical repair. Evaluate for associated urethral injury and monitor for long-term erectile dysfunction."
     },
     {
-      "id": 542,
+      "id": 545,
       "diagnosis": "Hydronephrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19549,7 +19657,7 @@
       "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
     },
     {
-      "id": 543,
+      "id": 546,
       "diagnosis": "Emphysematous Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19587,7 +19695,7 @@
       "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
     },
     {
-      "id": 544,
+      "id": 547,
       "diagnosis": "Urothelial Cell Carcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19625,7 +19733,7 @@
       "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
     },
     {
-      "id": 545,
+      "id": 548,
       "diagnosis": "Multicystic Renal Dysplasia",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19660,7 +19768,7 @@
       "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
     },
     {
-      "id": 546,
+      "id": 549,
       "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19695,7 +19803,7 @@
       "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
     },
     {
-      "id": 547,
+      "id": 550,
       "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -19735,7 +19843,7 @@
       "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
     },
     {
-      "id": 548,
+      "id": 551,
       "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -19776,7 +19884,7 @@
       "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
     },
     {
-      "id": 549,
+      "id": 552,
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",

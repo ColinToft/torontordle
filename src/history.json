@@ -489,6 +489,26 @@
       "date": "2026-08-04",
       "diagnosis": "Acute Kidney Injury (AKI)",
       "id": 493
+    },
+    {
+      "date": "2026-08-05",
+      "diagnosis": "Acute Tubular Necrosis",
+      "id": 495
+    },
+    {
+      "date": "2026-08-06",
+      "diagnosis": "Autoimmune Hepatitis",
+      "id": 486
+    },
+    {
+      "date": "2026-08-07",
+      "diagnosis": "Gilbert's Syndrome",
+      "id": 489
+    },
+    {
+      "date": "2026-08-08",
+      "diagnosis": "Peutz-Jeghers Syndrome",
+      "id": 465
     }
   ],
   "2": [
@@ -1027,6 +1047,28 @@
     },
     {
       "date": "2026-08-04",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-05",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-08-06",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-07",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-08-08",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1
     }
