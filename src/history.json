@@ -509,6 +509,21 @@
       "date": "2026-08-08",
       "diagnosis": "Peutz-Jeghers Syndrome",
       "id": 465
+    },
+    {
+      "date": "2026-08-09",
+      "diagnosis": "Adenomatous Polyps",
+      "id": 470
+    },
+    {
+      "date": "2026-08-10",
+      "diagnosis": "Schistosomiasis",
+      "id": 215
+    },
+    {
+      "date": "2026-08-11",
+      "diagnosis": "Primary Myelofibrosis",
+      "id": 213
     }
   ],
   "2": [
@@ -1071,6 +1086,23 @@
       "date": "2026-08-08",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1
+    },
+    {
+      "date": "2026-08-09",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-08-10",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-11",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
     }
   ]
 }
