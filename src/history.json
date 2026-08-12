@@ -524,6 +524,11 @@
       "date": "2026-08-11",
       "diagnosis": "Primary Myelofibrosis",
       "id": 213
+    },
+    {
+      "date": "2026-08-12",
+      "diagnosis": "Myelodysplastic Syndrome (MDS)",
+      "id": 220
     }
   ],
   "2": [
@@ -1103,6 +1108,11 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-08-12",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
     }
   ]
 }
