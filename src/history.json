@@ -544,6 +544,41 @@
       "date": "2026-08-15",
       "diagnosis": "Type 1 Von Willebrand Disease (VWD)",
       "id": 205
+    },
+    {
+      "date": "2026-08-16",
+      "diagnosis": "Fat Embolism Syndrome",
+      "id": 212
+    },
+    {
+      "date": "2026-08-17",
+      "diagnosis": "Hemothorax",
+      "id": 210
+    },
+    {
+      "date": "2026-08-18",
+      "diagnosis": "HELLP Syndrome",
+      "id": 199
+    },
+    {
+      "date": "2026-08-19",
+      "diagnosis": "Amegakaryocytic thrombocytopenia",
+      "id": 197
+    },
+    {
+      "date": "2026-08-20",
+      "diagnosis": "Ovarian Torsion",
+      "id": 461
+    },
+    {
+      "date": "2026-08-21",
+      "diagnosis": "FAP / Attenuated FAP",
+      "id": 463
+    },
+    {
+      "date": "2026-08-22",
+      "diagnosis": "External Hemorrhoids",
+      "id": 466
     }
   ],
   "2": [
@@ -1145,6 +1180,44 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-08-16",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-17",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-08-18",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-19",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-08-20",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-08-21",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-08-22",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
     }
   ]
 }

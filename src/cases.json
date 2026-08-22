@@ -16667,23 +16667,23 @@
         },
         {
           "type": "",
-          "text": "She has a known ovarian cyst identified incidentally on a prior pelvic ultrasound, and the pain began suddenly while she was exercising."
+          "text": "The pain began suddenly while she was exercising."
         },
         {
           "type": "",
-          "text": "Exam reveals significant right adnexal tenderness with a palpable, tender adnexal mass on pelvic exam, without signs of peritonitis unless infarction has occurred."
+          "text": "Exam reveals significant right adnexal tenderness with a palpable, tender adnexal mass on pelvic exam, without signs of peritonitis"
         },
         {
           "type": "",
-          "text": "Labs are generally nonspecific; a urine beta-hCG is obtained and is negative, helping exclude an ectopic pregnancy as an alternative diagnosis."
+          "text": "A urine beta-hCG is obtained and is negative"
         },
         {
           "type": "",
-          "text": "Pelvic ultrasound with Doppler shows an enlarged, edematous ovary with absent or markedly diminished blood flow, along with the underlying ovarian mass or cyst serving as the likely predisposing lead point."
+          "text": "Pelvic ultrasound with Doppler shows an enlarged, edematous ovary with absent or markedly diminished blood flow"
         },
         {
           "type": "",
-          "text": "Direct visualization reveals a twisted ovarian pedicle, and histology of a non-viable ovary shows hemorrhagic infarction with diffuse necrosis due to compromised venous and arterial supply."
+          "text": "Direct visualization reveals a twisted ovarian pedicle"
         }
       ],
       "description": "Ovarian torsion occurs when the ovary (often along with the fallopian tube) twists on its vascular pedicle, compromising first venous and then arterial blood flow, most commonly precipitated by an underlying ovarian mass or cyst that increases the ovary's size and mobility. It is a gynecologic emergency, as prolonged torsion leads to ovarian infarction and loss of the ovary, making rapid diagnosis and surgical intervention essential to preserve ovarian function.",
@@ -16733,11 +16733,11 @@
       "clues": [
         {
           "type": "",
-          "text": "A 17-year-old presents for evaluation after a screening colonoscopy, prompted by family history, reveals hundreds of small polyps throughout his colon."
+          "text": "A 17-year-old presents for evaluation after a screening colonoscopy reveals hundreds of small polyps throughout his colon."
         },
         {
           "type": "",
-          "text": "His father was diagnosed with colorectal cancer at age 32 and is known to carry a genetic mutation associated with numerous colonic polyps."
+          "text": "His father was diagnosed with colorectal cancer at age 32"
         },
         {
           "type": "",
@@ -16745,7 +16745,7 @@
         },
         {
           "type": "",
-          "text": "Imaging is not used for primary diagnosis but may identify extracolonic manifestations"
+          "text": "Routine bloodwork shows microcytic anemia"
         },
         {
           "type": "",
@@ -16753,7 +16753,7 @@
         },
         {
           "type": "",
-          "text": "Colonoscopic biopsies reveal hundreds to thousands of tubular adenomas carpeting the colonic mucosa, with histology showing the same adenoma-carcinoma sequence as sporadic polyps but occurring at a vastly accelerated rate and number due to the underlying APC mutation."
+          "text": "Colonoscopic biopsies reveal hundreds to thousands of tubular adenomas carpeting the colonic mucosa"
         }
       ],
       "description": "Familial adenomatous polyposis (FAP) is an autosomal dominant condition caused by germline mutations in the APC tumor suppressor gene, leading to the development of hundreds to thousands of colonic adenomatous polyps beginning in adolescence and a nearly 100% lifetime risk of colorectal cancer by middle age if the colon is not removed. Attenuated FAP is a milder variant with fewer polyps (typically less than 100) and later onset of cancer risk, often due to specific APC mutations or, in some cases, biallelic MUTYH mutations (MUTYH-associated polyposis).",
@@ -16780,7 +16780,7 @@
         },
         {
           "type": "",
-          "text": "Genetic testing reveals a germline mutation in the STK11 (LKB1) gene, confirming the diagnosis."
+          "text": "Genetic testing reveals a germline mutation in the STK11 (LKB1) gene"
         },
         {
           "type": "",
@@ -16788,7 +16788,7 @@
         },
         {
           "type": "",
-          "text": "Biopsy of the polyps reveals hamartomatous polyps with a characteristic arborizing pattern of smooth muscle within the lamina propria, distinguishing them from Lynch or FAP"
+          "text": "Biopsy of the polyps reveals hamartomatous polyps with a characteristic arborizing pattern of smooth muscle within the lamina propria"
         }
       ],
       "description": "Peutz-Jeghers syndrome is an autosomal dominant condition caused by germline mutations in the STK11 (LKB1) tumor suppressor gene, characterized by mucocutaneous pigmented macules (particularly on the lips and buccal mucosa) and hamartomatous polyps throughout the gastrointestinal tract, most densely in the small bowel. While the hamartomatous polyps themselves have a lower malignant potential than adenomas, patients have a significantly increased lifetime risk of GI cancers (especially colorectal) and several extraintestinal cancers (breast, pancreatic, ovarian, testicular), and the polyps frequently cause recurrent small bowel intussusception and obstruction.",
@@ -16807,11 +16807,11 @@
         },
         {
           "type": "",
-          "text": "He has a history of chronic constipation with frequent straining, and reports occasional sensations of tissue protruding from the anus during defecation that resolves on its own."
+          "text": "He has a history of chronic constipation with frequent straining"
         },
         {
           "type": "",
-          "text": "Anoscopy reveals cushion-like vascular structures arising above the dentate line, with no tenderness on exam given the lack of somatic innervation in this region; a prolapsing hemorrhoid may be visible with straining."
+          "text": "Anoscopy reveals cushion-like vascular structures arising above the dentate line"
         },
         {
           "type": "",
@@ -16819,11 +16819,11 @@
         },
         {
           "type": "",
-          "text": "The diagnosis is made by direct visualization (anoscopy) rather than radiographic studies."
+          "text": "They also report occasional sensations of tissue protruding from the anus during defecation that resolves on its own."
         },
         {
           "type": "",
-          "text": "There is no specific tissue pathology requiring biopsy in typical cases; internal hemorrhoids represent dilated, engorged vascular cushions of the normal anal vasculature located above the dentate line, and the diagnosis is one of exclusion after ruling out other causes of bleeding such as colorectal cancer or IBD, particularly in patients with risk factors."
+          "text": "Colonoscopy is performed ruling out colorectal cancer or IBD"
         }
       ],
       "description": "Internal hemorrhoids are enlarged, engorged vascular cushions located above the dentate line, where the mucosa is innervated by the autonomic nervous system, making them characteristically painless even when they bleed or prolapse. They are graded I through IV based on the degree of prolapse, ranging from non-prolapsing (grade I) to permanently prolapsed and irreducible (grade IV), and are a common cause of painless bright red rectal bleeding, particularly with straining or constipation.",
@@ -16850,7 +16850,7 @@
         },
         {
           "type": "",
-          "text": "Labs are not needed for diagnosis, as this is a clinical diagnosis made on visual inspection."
+          "text": "Routine blood is normal"
         },
         {
           "type": "",
@@ -16858,7 +16858,7 @@
         },
         {
           "type": "",
-          "text": "If excised, histology of the thrombosed external hemorrhoid reveals a clot within a dilated venous space of the external hemorrhoidal plexus, located below the dentate line and covered by squamous epithelium, distinguishing it from internal hemorrhoids."
+          "text": "Histology of the thrombosed component reveals a clot within a dilated venous space, located below the dentate line and covered by squamous epithelium"
         }
       ],
       "description": "External hemorrhoids arise from the external hemorrhoidal venous plexus located below the dentate line, an area covered by squamous epithelium with somatic innervation, which explains why thrombosis of an external hemorrhoid causes significant, acute pain, unlike the typically painless bleeding of internal hemorrhoids. Thrombosis occurs when a clot forms within the external hemorrhoidal vein, often precipitated by straining, prolonged sitting, or heavy lifting, causing a tender, bluish, edematous perianal nodule.",
@@ -16873,11 +16873,11 @@
       "clues": [
         {
           "type": "",
-          "text": "A 30-year-old presents with severe, sharp pain during and after bowel movements, along with small amounts of bright red blood on the toilet paper."
+          "text": "A 30-year-old presents with severe, sharp pain during and after bowel movements"
         },
         {
           "type": "",
-          "text": "She has a history of chronic constipation with hard, large-caliber stools, and describes the pain as a tearing sensation followed by a deep ache lasting for hours after defecation."
+          "text": "She has a history of chronic constipation with hard, large-caliber stools"
         },
         {
           "type": "",
@@ -16885,11 +16885,11 @@
         },
         {
           "type": "",
-          "text": "Labs are not needed for diagnosis"
+          "text": "Routine labs are normal"
         },
         {
           "type": "",
-          "text": "Diagnosis is made by direct visual inspection of the perianal area."
+          "text": "She also reports a burning sensation near the anal area"
         },
         {
           "type": "",
@@ -17001,7 +17001,7 @@
         },
         {
           "type": "",
-          "text": "Surgical exploration and histology of the fistula tract reveal a chronic, epithelialized or granulation tissue-lined tract connecting an infected anal crypt gland (the cryptoglandular origin) to the perianal skin, with the original abscess representing the acute infectious process and the fistula representing its chronic sequela."
+          "text": "Surgical exploration and histology of the fistula tract reveal a chronic, epithelialized or granulation tissue-lined tract connecting an infected anal crypt gland (the cryptoglandular origin) to the perianal skin"
         }
       ],
       "description": "Perianal abscess and fistula disease most commonly arise from the cryptoglandular theory of origin, in which infection of an anal crypt gland at the dentate line leads to formation of an abscess that can spread along anatomic planes (perianal, ischiorectal, intersphincteric, or supralevator) and, after spontaneous or surgical drainage, often leaves behind a chronic fistula tract connecting the infected gland to the skin. While most cases are idiopathic/cryptoglandular, Crohn's disease is an important underlying cause to consider, particularly with complex, recurrent, or multiple fistula tracts.",
