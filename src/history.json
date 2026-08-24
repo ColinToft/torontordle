@@ -579,6 +579,16 @@
       "date": "2026-08-22",
       "diagnosis": "External Hemorrhoids",
       "id": 466
+    },
+    {
+      "date": "2026-08-23",
+      "diagnosis": "Pruritis Ani",
+      "id": 468
+    },
+    {
+      "date": "2026-08-24",
+      "diagnosis": "Diverticular Stricture",
+      "id": 451
     }
   ],
   "2": [
@@ -1216,6 +1226,17 @@
     },
     {
       "date": "2026-08-22",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-08-23",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-08-24",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
     }
