@@ -589,6 +589,21 @@
       "date": "2026-08-24",
       "diagnosis": "Diverticular Stricture",
       "id": 451
+    },
+    {
+      "date": "2026-08-25",
+      "diagnosis": "Paralytic Ileus",
+      "id": 453
+    },
+    {
+      "date": "2026-08-26",
+      "diagnosis": "Hernia",
+      "id": 455
+    },
+    {
+      "date": "2026-08-27",
+      "diagnosis": "Bezoar",
+      "id": 457
     }
   ],
   "2": [
@@ -1239,6 +1254,23 @@
       "date": "2026-08-24",
       "diagnosis": "Pyloric Stenosis",
       "id": 2
+    },
+    {
+      "date": "2026-08-25",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-08-26",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-08-27",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
     }
   ]
 }

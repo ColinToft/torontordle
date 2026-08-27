@@ -16444,41 +16444,6 @@
     },
     {
       "id": 455,
-      "diagnosis": "Hernia",
-      "aliases": [],
-      "category": "Gastrointestinal III",
-      "unlockDate": null,
-      "clues": [
-        {
-          "type": "",
-          "text": "A 70-year-old man presents with a painful, bulging mass in his groin that has become tender and is no longer reducible over the past several hours."
-        },
-        {
-          "type": "",
-          "text": "He has a long-standing history of an inguinal hernia that he has previously been able to push back in himself, along with chronic straining from benign prostatic hyperplasia and a chronic cough from COPD."
-        },
-        {
-          "type": "",
-          "text": "Exam reveals a tender, firm, non-reducible groin mass with overlying erythema, along with signs of bowel obstruction (distension, decreased bowel sounds)"
-        },
-        {
-          "type": "",
-          "text": "Early labs are normal but repeat labs reveal a mild leukocytosis and an elevated lactate"
-        },
-        {
-          "type": "",
-          "text": "CT abdomen/pelvis confirms a loop of bowel or other abdominal contents protruding through the fascial defect, with bowel wall thickening, mesenteric fat stranding, or lack of contrast enhancement suggesting strangulation."
-        },
-        {
-          "type": "",
-          "text": "He has a family history of elective surgeries for protruding abdominal masses"
-        }
-      ],
-      "description": "A hernia is the protrusion of an organ or tissue through a weakness or defect in the surrounding muscular or fascial wall, most commonly occurring in the inguinal, femoral, umbilical, or incisional locations. Hernias become clinically concerning when they become incarcerated (irreducible) and especially when strangulated (blood supply to the trapped contents is compromised), which is a surgical emergency due to the risk of bowel ischemia, necrosis, and perforation.",
-      "management": "Reducible, asymptomatic hernias can often be managed with elective surgical repair (open or laparoscopic, with mesh in most cases) to prevent future incarceration. An incarcerated but non-strangulated hernia may be attempted to be manually reduced, followed by urgent repair; however, any signs of strangulation (severe pain, overlying skin changes, signs of bowel ischemia or obstruction) require emergent surgical exploration and repair, with resection of any non-viable bowel."
-    },
-    {
-      "id": 456,
       "diagnosis": "Gallstone Ileus",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16513,7 +16478,7 @@
       "management": "Treatment is surgical, typically with enterolithotomy (removal of the impacted stone through a small bowel incision) to relieve the obstruction; the decision to also address the underlying cholecystoenteric fistula and perform a cholecystectomy at the same time versus a staged approach depends on the patient's overall surgical risk, given that simultaneous repair carries higher perioperative morbidity in this often frail, elderly population. Careful examination of the entire small bowel is necessary to exclude additional stones causing or at risk of causing further obstruction."
     },
     {
-      "id": 457,
+      "id": 456,
       "diagnosis": "Bezoar",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16548,7 +16513,7 @@
       "management": "Small phytobezoars may be treated with enzymatic dissolution (e.g., cellulase or papain) or endoscopic fragmentation and removal. Larger or more compact bezoars, particularly trichobezoars (which do not respond well to enzymatic therapy due to their composition), often require endoscopic removal or, if too large, surgical removal via gastrotomy. Addressing the underlying cause, such as psychiatric treatment for trichotillomania or dietary modification for recurrent phytobezoars, is essential to prevent recurrence."
     },
     {
-      "id": 458,
+      "id": 457,
       "diagnosis": "Intussusception",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16585,7 +16550,7 @@
       "management": "In children without signs of peritonitis or perforation, the first-line treatment is non-operative reduction using an air or contrast enema, which is both diagnostic and therapeutic and successful in the majority of cases. Surgical reduction (or resection if the bowel is non-viable or a pathologic lead point is identified) is reserved for failed enema reduction, signs of peritonitis, or perforation. In adults, given the high likelihood of an underlying structural lead point, surgical resection of the involved segment is generally recommended rather than attempting enema reduction."
     },
     {
-      "id": 459,
+      "id": 458,
       "diagnosis": "Diverticulitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16620,7 +16585,7 @@
       "management": "Uncomplicated diverticulitis in otherwise healthy outpatients can often be managed without antibiotics, with close follow-up, clear liquids advanced as tolerated, and selective antibiotic use based on patient factors and severity. Complicated diverticulitis (abscess, perforation, or in immunocompromised/frail patients) requires antibiotics covering gram-negative and anaerobic organisms, with percutaneous drainage for abscesses larger than 3-4 cm. Recurrent or complicated disease (fistula, stricture, free perforation with peritonitis) warrants surgical resection, ideally elective after the acute episode resolves, though emergent surgery (often with a Hartmann's procedure) is needed for free perforation or failure of medical management."
     },
     {
-      "id": 460,
+      "id": 459,
       "diagnosis": "Appendicitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16655,7 +16620,7 @@
       "management": "The mainstay of treatment is appendectomy (laparoscopic or open), traditionally performed urgently to reduce the risk of perforation, with perioperative antibiotics covering gram-negative and anaerobic organisms. Select cases of uncomplicated appendicitis, particularly in adults, may be managed non-operatively with antibiotics alone, though this carries a risk of recurrence requiring later appendectomy. Perforated appendicitis with a contained abscess may be managed initially with percutaneous drainage and antibiotics (interval appendectomy approach) rather than emergent surgery in a hostile, inflamed surgical field."
     },
     {
-      "id": 461,
+      "id": 460,
       "diagnosis": "Ovarian Torsion",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16690,7 +16655,7 @@
       "management": "Definitive management is surgical, typically via laparoscopy, with detorsion of the ovary attempted first in most cases (even if the ovary appears dusky or hemorrhagic, as ovaries often recover viability surprisingly well after detorsion), followed by cystectomy or oophoropexy if a predisposing mass or cyst is identified. Oophorectomy is reserved for cases with clear, irreversible necrosis or in postmenopausal women with concerning mass features. Prompt diagnosis and treatment are critical, as delayed intervention significantly increases the likelihood of needing to sacrifice the ovary."
     },
     {
-      "id": 462,
+      "id": 461,
       "diagnosis": "HNPCC / Lynch Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16725,7 +16690,7 @@
       "management": "Management centers on intensive cancer surveillance, including colonoscopy starting at a young age (often 20-25) and repeated every 1-2 years given the accelerated adenoma-to-carcinoma progression, along with surveillance for endometrial, ovarian, and other associated cancers. Risk-reducing surgery, such as prophylactic hysterectomy and bilateral salpingo-oophorectomy after childbearing is complete, may be considered. Once colorectal cancer develops, extended colectomy is often favored over segmental resection given the high risk of metachronous tumors, and immunotherapy (checkpoint inhibitors) is particularly effective for these mismatch repair-deficient, MSI-high tumors."
     },
     {
-      "id": 463,
+      "id": 462,
       "diagnosis": "FAP / Attenuated FAP",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16760,7 +16725,7 @@
       "management": "Given the near-certain progression to colorectal cancer, prophylactic colectomy (typically total proctocolectomy with ileal pouch-anal anastomosis, or subtotal colectomy with ileorectal anastomosis depending on rectal polyp burden) is recommended once polyp burden becomes unmanageable endoscopically, usually in the teens to twenties. Upper endoscopic surveillance is also needed given the risk of duodenal and gastric polyps/cancer, and patients require monitoring for extracolonic manifestations such as desmoid tumors and thyroid cancer; attenuated FAP may be managed with more intensive endoscopic polypectomy surveillance before colectomy becomes necessary."
     },
     {
-      "id": 464,
+      "id": 463,
       "diagnosis": "Peutz-Jeghers Syndrome",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16795,7 +16760,7 @@
       "management": "Management focuses on surveillance endoscopy (upper endoscopy and colonoscopy) and small bowel imaging or capsule endoscopy at regular intervals to detect and remove polyps before they cause obstruction or progress to malignancy, alongside surveillance for the various associated extraintestinal cancers. Symptomatic or large polyps (generally greater than 1-1.5 cm, given the risk of acting as a lead point for intussusception) are removed endoscopically when feasible, with surgery reserved for polyps not amenable to endoscopic resection or for episodes of intussusception/obstruction."
     },
     {
-      "id": 465,
+      "id": 464,
       "diagnosis": "Internal Hemorrhoids",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16830,7 +16795,7 @@
       "management": "First-line management includes increasing dietary fiber and fluid intake, avoiding straining, and topical therapies to reduce symptoms; lower-grade hemorrhoids often respond well to these conservative measures. Office-based procedures such as rubber band ligation, sclerotherapy, or infrared coagulation are used for higher-grade or refractory internal hemorrhoids. Surgical hemorrhoidectomy or stapled hemorrhoidopexy is reserved for large, prolapsing, or refractory hemorrhoids that fail less invasive treatments."
     },
     {
-      "id": 466,
+      "id": 465,
       "diagnosis": "External Hemorrhoids",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16865,7 +16830,7 @@
       "management": "If presenting within 48-72 hours of symptom onset and pain is severe, excision of the thrombosed hemorrhoid under local anesthesia provides rapid symptomatic relief. Beyond this window, or for milder symptoms, conservative management with sitz baths, topical analgesics/anti-inflammatories, stool softeners, and increased fiber intake is preferred, as the thrombosis will gradually resolve on its own, though a residual skin tag may remain."
     },
     {
-      "id": 467,
+      "id": 466,
       "diagnosis": "Anal Fissure",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16900,7 +16865,7 @@
       "management": "First-line treatment focuses on softening stool (increased fiber and fluid intake, stool softeners) and reducing internal sphincter spasm with topical agents such as nitroglycerin or calcium channel blockers (e.g., nifedipine), along with warm sitz baths, which together allow most acute fissures to heal. Botulinum toxin injection into the internal sphincter is used for chronic fissures refractory to topical therapy. Lateral internal sphincterotomy is reserved for fissures that fail medical management, providing durable relief by interrupting the cycle of sphincter spasm, though with a small risk of fecal incontinence."
     },
     {
-      "id": 468,
+      "id": 467,
       "diagnosis": "Pruritis Ani",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16935,7 +16900,7 @@
       "management": "Management begins with addressing reversible contributing factors: improving (but not over-aggressive) hygiene, avoiding dietary triggers, keeping the area dry, and discontinuing harsh soaps, wipes, or topical irritants. Low-potency topical corticosteroids can be used short-term for significant inflammation, though prolonged use should be avoided due to skin thinning. Any underlying cause identified (hemorrhoids, fissure, fistula, infection) should be specifically treated, and persistent or atypical presentations warrant further evaluation, including biopsy, to exclude dermatologic or neoplastic causes."
     },
     {
-      "id": 469,
+      "id": 468,
       "diagnosis": "Adenomatous Polyps",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -16970,7 +16935,7 @@
       "management": "All adenomatous polyps identified on colonoscopy should be removed via polypectomy, both for therapeutic purposes (preventing progression to cancer) and to allow histologic characterization. Surveillance colonoscopy intervals are then individualized based on the number, size, and histology of polyps found, ranging from 3 to 10 years, with shorter intervals for higher-risk features (multiple polyps, large size, high-grade dysplasia, villous histology). Polyps too large or technically difficult to remove endoscopically may require surgical resection."
     },
     {
-      "id": 470,
+      "id": 469,
       "diagnosis": "Abscess/Fistula Disease (Perianal)",
       "aliases": [
         "Perianal",
@@ -17008,7 +16973,7 @@
       "management": "Acute abscesses require prompt incision and drainage, which is the priority regardless of whether a fistula is identified at the time. Established fistulas often require a second, staged procedure once acute infection has resolved, with treatment options including fistulotomy (for simple, low fistulas with minimal sphincter involvement), or sphincter-sparing techniques (seton placement, advancement flaps, LIFT procedure) for more complex fistulas at higher risk of incontinence if simply incised. When Crohn's disease is the underlying cause, medical optimization of the IBD (often with biologic therapy) is an essential adjunct to surgical management."
     },
     {
-      "id": 471,
+      "id": 470,
       "diagnosis": "Intra-abdominal Infection (Abscess)",
       "aliases": [
         "Abscess",
@@ -17046,7 +17011,7 @@
       "management": "The cornerstone of treatment is source control, most often achieved with image-guided percutaneous drainage of the abscess when anatomically accessible, combined with broad-spectrum antibiotics covering gram-negative and anaerobic organisms. Abscesses not amenable to percutaneous drainage (due to location, loculation, or multiplicity) or those failing to improve with drainage and antibiotics require surgical exploration and drainage. Identifying and addressing the underlying source (e.g., bowel leak, ongoing perforation) is essential to prevent recurrence."
     },
     {
-      "id": 472,
+      "id": 471,
       "diagnosis": "Cholelithiasis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -17083,7 +17048,7 @@
       "management": "Asymptomatic gallstones discovered incidentally generally do not require treatment, as the risk of developing symptoms or complications is relatively low and prophylactic cholecystectomy is not routinely recommended. Exceptions where prophylactic cholecystectomy may be considered include very large stones, a porcelain gallbladder, or particular patient populations at higher risk for gallbladder cancer or complications. Patients should be counseled on the symptoms of biliary colic and counseled to seek care if symptoms develop."
     },
     {
-      "id": 473,
+      "id": 472,
       "diagnosis": "Biliary Colic",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -17114,7 +17079,7 @@
       "management": "Acute episodes are managed symptomatically with analgesics (NSAIDs are often preferred given evidence of efficacy and to avoid masking evolving complications) and antiemetics as needed, with most episodes resolving spontaneously without intervention. Given the significant risk of recurrent symptoms and progression to complications (cholecystitis, choledocholithiasis, gallstone pancreatitis), elective laparoscopic cholecystectomy is generally recommended once a patient has had a symptomatic episode of biliary colic, rather than waiting for a complication to develop."
     },
     {
-      "id": 474,
+      "id": 473,
       "diagnosis": "Acute Cholecystitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -17149,7 +17114,7 @@
       "management": "Initial management includes IV fluids, analgesia, and broad-spectrum antibiotics covering enteric gram-negative and anaerobic organisms. Definitive treatment is early laparoscopic cholecystectomy, ideally within 72 hours of symptom onset, as early surgery is associated with lower complication rates and shorter hospital stays compared to delayed surgery. Patients who are poor surgical candidates due to severe illness may be managed initially with percutaneous cholecystostomy tube drainage, with interval cholecystectomy considered once they have recovered."
     },
     {
-      "id": 475,
+      "id": 474,
       "diagnosis": "Choledocholithiasis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -17186,7 +17151,7 @@
       "management": "The primary treatment is ERCP with sphincterotomy and stone extraction to relieve the bile duct obstruction, which can be performed prior to or, in some centers, intraoperatively at the time of cholecystectomy. Following successful duct clearance, cholecystectomy is generally recommended (often during the same hospitalization) to prevent recurrent stone migration from the gallbladder, the original source of most common bile duct stones. Antibiotics are not routinely required for uncomplicated choledocholithiasis without signs of infection, but should be promptly added if there is any evidence of progression to cholangitis."
     },
     {
-      "id": 476,
+      "id": 475,
       "diagnosis": "Ascending Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -17221,7 +17186,7 @@
       "management": "Initial management includes prompt IV fluid resuscitation, broad-spectrum antibiotics covering enteric gram-negative organisms and anaerobes, and close hemodynamic monitoring given the risk of rapid progression to septic shock. Urgent biliary decompression, most commonly via ERCP with sphincterotomy and stone extraction or stent placement, is essential and should not be delayed in patients who do not rapidly improve with supportive care, as source control of the obstructed, infected biliary system is the definitive treatment; percutaneous transhepatic biliary drainage or surgical decompression are alternatives when ERCP is not feasible."
     },
     {
-      "id": 477,
+      "id": 476,
       "diagnosis": "Gallstone Pancreatitis",
       "aliases": [],
       "category": "Gastrointestinal III",
@@ -17256,7 +17221,7 @@
       "management": "Initial management follows standard acute pancreatitis principles: aggressive IV fluid resuscitation, pain control, and early enteral feeding as tolerated. If there is evidence of a persistently impacted stone causing ongoing biliary obstruction or concurrent cholangitis, urgent ERCP with sphincterotomy is indicated to relieve the obstruction. Once the acute pancreatitis episode has resolved, cholecystectomy is recommended during the same hospital admission (rather than delaying to an interval outpatient procedure) to prevent recurrent gallstone-related complications, given the high risk of recurrence if the gallbladder is left in place."
     },
     {
-      "id": 478,
+      "id": 477,
       "diagnosis": "Budd-Chiari Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17291,7 +17256,7 @@
       "management": "Management begins with anticoagulation to prevent thrombus extension and treatment of any underlying hypercoagulable disorder (e.g., cytoreductive therapy for polycythemia vera). For symptomatic outflow obstruction, options include angioplasty or stenting of a focal venous stenosis, and transjugular intrahepatic portosystemic shunt (TIPS) for more diffuse obstruction or refractory ascites. Liver transplantation is reserved for patients who progress to fulminant hepatic failure or decompensated cirrhosis despite these interventions."
     },
     {
-      "id": 479,
+      "id": 478,
       "diagnosis": "Hepatitis B",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17326,7 +17291,7 @@
       "management": "Acute hepatitis B is generally managed supportively, as most immunocompetent adults clear the infection spontaneously. Chronic hepatitis B with evidence of active viral replication and liver inflammation/fibrosis is treated with long-term antiviral therapy, most commonly nucleos(t)ide analogues such as tenofovir or entecavir, which suppress viral replication and reduce progression to cirrhosis and hepatocellular carcinoma, though they rarely achieve a complete cure. All patients with chronic hepatitis B require ongoing surveillance for hepatocellular carcinoma with periodic ultrasound and alpha-fetoprotein testing, and at-risk contacts should receive hepatitis B vaccination."
     },
     {
-      "id": 480,
+      "id": 479,
       "diagnosis": "Hepatitis C",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17361,7 +17326,7 @@
       "management": "The treatment of chronic hepatitis C has been revolutionized by direct-acting antiviral (DAA) regimens (e.g., sofosbuvir-velpatasvir, glecaprevir-pibrentasvir), which achieve cure (sustained virologic response) in the vast majority of patients with a short course of all-oral therapy, regardless of genotype in most modern regimens. All patients with chronic HCV, even after achieving cure, require ongoing monitoring for hepatocellular carcinoma if they have established cirrhosis, since the risk of HCC persists even after viral eradication in this population."
     },
     {
-      "id": 481,
+      "id": 480,
       "diagnosis": "Metabolic Associated Steatotic Liver Disease (MASLD)",
       "aliases": [
         "MASLD",
@@ -17399,7 +17364,7 @@
       "management": "The cornerstone of treatment is lifestyle modification, particularly weight loss (typically targeting 7-10% of body weight) through diet and exercise, which can reduce or even reverse hepatic steatosis. Optimizing control of associated metabolic conditions, including diabetes, hypertension, and dyslipidemia, is also important, and GLP-1 receptor agonists have shown benefit for both weight loss and liver fat reduction in this population. Patients should be monitored periodically for progression to steatohepatitis or fibrosis, often using non-invasive markers (elastography, fibrosis scores) to determine the need for further evaluation."
     },
     {
-      "id": 482,
+      "id": 481,
       "diagnosis": "Wilson's Disease",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17436,7 +17401,7 @@
       "management": "First-line treatment is copper chelation therapy with D-penicillamine or trientine, which promotes urinary copper excretion, alongside zinc therapy, which reduces intestinal copper absorption and can be used for maintenance therapy or in presymptomatic/mildly affected patients. Dietary copper restriction (avoiding foods such as shellfish, organ meats, and chocolate) is recommended as an adjunct to medical therapy. Liver transplantation is curative for the underlying metabolic defect and is reserved for patients with acute liver failure or decompensated cirrhosis unresponsive to medical therapy."
     },
     {
-      "id": 483,
+      "id": 482,
       "diagnosis": "Hemochromatosis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17471,7 +17436,7 @@
       "management": "First-line treatment is therapeutic phlebotomy, performed regularly (often weekly initially) to deplete excess body iron stores, with treatment goals guided by serial ferritin levels, followed by less frequent maintenance phlebotomy once iron stores have normalized. Iron chelation therapy (e.g., deferasirox) is reserved for patients who cannot tolerate phlebotomy, such as those with significant anemia or cardiac dysfunction. Dietary modification (avoiding iron supplements and excessive vitamin C, which enhances iron absorption) and avoidance of raw shellfish (due to increased susceptibility to Vibrio vulnificus infection with iron overload) are also recommended, and family members should be screened given the hereditary nature of the condition."
     },
     {
-      "id": 484,
+      "id": 483,
       "diagnosis": "Autoimmune Hepatitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17506,7 +17471,7 @@
       "management": "First-line treatment is immunosuppression, typically with corticosteroids (prednisone) for induction, often combined with azathioprine both to allow steroid tapering and for long-term maintenance therapy, given the relapsing nature of the disease if treatment is withdrawn prematurely. Most patients require long-term, sometimes lifelong, immunosuppressive therapy to maintain remission, with treatment response monitored via serial transaminases and IgG levels. Liver transplantation is reserved for patients who progress to decompensated cirrhosis or fail to respond to medical therapy, including those presenting with acute liver failure."
     },
     {
-      "id": 485,
+      "id": 484,
       "diagnosis": "Alcohol-Associated Liver Disease",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17541,7 +17506,7 @@
       "management": "The most important intervention at every stage is complete alcohol cessation, ideally with structured support (counseling, pharmacotherapy such as naltrexone or acamprosate, and management of withdrawal) given the risk of life-threatening alcohol withdrawal in dependent patients. Severe alcoholic hepatitis, particularly with a high Maddrey discriminant function, may be treated with corticosteroids to reduce short-term mortality, alongside nutritional support given the frequent presence of malnutrition in this population. Liver transplantation may be considered for select patients with decompensated alcohol-associated cirrhosis, typically requiring a demonstrated period of confirmed abstinence per individual program protocols."
     },
     {
-      "id": 486,
+      "id": 485,
       "diagnosis": "Drug-Induced Liver Injury",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17576,7 +17541,7 @@
       "management": "The cornerstone of management is prompt discontinuation of the offending agent, after which most cases of DILI resolve over days to weeks, though cholestatic injury can take longer to fully normalize than hepatocellular injury. Supportive care is provided as needed, and N-acetylcysteine is specifically indicated for acetaminophen-induced hepatotoxicity given its role as an antidote in that particular etiology. Severe cases progressing to acute liver failure require specialized management and evaluation for liver transplantation, and patients should be counseled to avoid re-exposure to the implicated agent given the risk of more severe recurrent injury."
     },
     {
-      "id": 487,
+      "id": 486,
       "diagnosis": "Gilbert's Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17611,7 +17576,7 @@
       "management": "No treatment is necessary for Gilbert's syndrome, as it is a benign condition with an excellent prognosis and no risk of progression to liver damage. Reassurance is the primary intervention, along with patient education that episodes of mild jaundice may recur during physiologic stress (illness, fasting) but are not harmful. It is important to confirm the diagnosis (normal liver enzymes, normal CBC excluding hemolysis, isolated mild indirect hyperbilirubinemia) to avoid unnecessary further workup or anxiety once the benign nature of the condition is established."
     },
     {
-      "id": 488,
+      "id": 487,
       "diagnosis": "MASH",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17646,7 +17611,7 @@
       "management": "Management centers on aggressive lifestyle modification, with weight loss of at least 7-10% (and ideally more for fibrosis regression) through diet and exercise, alongside optimization of diabetes, dyslipidemia, and hypertension. Resmetirom, a thyroid hormone receptor-beta agonist, is now approved specifically for MASH with fibrosis, and GLP-1 receptor agonists/bariatric surgery have shown significant benefit for both weight loss and histologic improvement. Patients require ongoing monitoring of fibrosis stage (via elastography or biopsy) given the risk of progression to cirrhosis, at which point management shifts toward standard cirrhosis care and surveillance."
     },
     {
-      "id": 489,
+      "id": 488,
       "diagnosis": "Primary Biliary Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17681,7 +17646,7 @@
       "management": "First-line treatment is ursodeoxycholic acid (UDCA), which improves bile flow and significantly slows disease progression in most patients when started early. For patients with an inadequate response to UDCA, obeticholic acid or fibrates (e.g., bezafibrate, used off-label in many regions) may be added as second-line therapy. Pruritus, which can be severe and significantly impair quality of life, is managed with agents such as cholestyramine, rifampin, or newer ileal bile acid transporter inhibitors, and liver transplantation is reserved for patients who progress to decompensated cirrhosis."
     },
     {
-      "id": 490,
+      "id": 489,
       "diagnosis": "Primary Sclerosing Cholangitis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17716,7 +17681,7 @@
       "management": "Unlike PBC, there is no medical therapy proven to alter the natural history or slow disease progression in PSC, and ursodeoxycholic acid is not routinely recommended for this purpose, though it may be used for symptomatic cholestasis in some cases. Management instead focuses on surveillance for and treatment of complications, including endoscopic dilation or stenting of dominant biliary strictures, periodic imaging and tumor marker (CA 19-9) surveillance for cholangiocarcinoma, and colonoscopic surveillance for colorectal cancer given the strong IBD association. Liver transplantation is the only definitive treatment for advanced disease, though PSC notably can recur in the transplanted liver."
     },
     {
-      "id": 491,
+      "id": 490,
       "diagnosis": "Rotor Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17754,7 +17719,7 @@
       "management": "No treatment is necessary. Reassure patients regarding the benign natural history, avoid unnecessary diagnostic procedures, and monitor only if alternative liver disease is suspected."
     },
     {
-      "id": 492,
+      "id": 491,
       "diagnosis": "Dubin-Johnson Syndrome",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17789,7 +17754,7 @@
       "management": "No specific treatment is required. Reassure patients regarding the benign prognosis, avoid unnecessary investigations, and manage factors that may transiently worsen jaundice."
     },
     {
-      "id": 493,
+      "id": 492,
       "diagnosis": "Crigler-Najjar Syndrome Type II",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17824,7 +17789,7 @@
       "management": "Treat with phenobarbital to induce residual UGT1A1 activity. Avoid fasting and medications that increase bilirubin, monitor bilirubin levels, and provide genetic counseling when appropriate."
     },
     {
-      "id": 494,
+      "id": 493,
       "diagnosis": "Cirrhosis",
       "aliases": [],
       "category": "Gastrointestinal IV",
@@ -17860,7 +17825,7 @@
       "management": "Treat the underlying cause and prevent complications: spironolactone plus furosemide for ascites, nonselective beta-blockers for variceal prophylaxis, lactulose for encephalopathy, and liver transplantation for decompensated disease."
     },
     {
-      "id": 495,
+      "id": 494,
       "diagnosis": "Hepatocellular Carcinoma (HCC)",
       "aliases": [
         "HCC",
@@ -17901,7 +17866,7 @@
       "management": "HCC management is stage-based: resection, transplant, or ablation for early disease; TACE/TARE (transarterial chemoembolization/transarterial radioembolization) or radiation for intermediate/liver-confined unresectable disease; and systemic immunotherapy-based therapy (atezolizumab-bevacizumab) for advanced disease."
     },
     {
-      "id": 496,
+      "id": 495,
       "diagnosis": "Acute Kidney Injury (AKI)",
       "aliases": [
         "AKI",
@@ -17939,7 +17904,7 @@
       "management": "IV fluids, discontinue nephrotoxic medications, treat underlying volume depletion."
     },
     {
-      "id": 497,
+      "id": 496,
       "diagnosis": "Chronic Kidney Disease (CKD)",
       "aliases": [
         "CKD",
@@ -17979,7 +17944,7 @@
       "management": "Control BP (ACEi/ARB), treat underlying cause, manage CKD complications, dialysis or transplant for ESRD."
     },
     {
-      "id": 498,
+      "id": 497,
       "diagnosis": "Acute Tubular Necrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -18014,7 +17979,7 @@
       "management": "Supportive care, optimize perfusion, avoid nephrotoxins, dialysis if indicated."
     },
     {
-      "id": 499,
+      "id": 498,
       "diagnosis": "Acute Interstitial Nephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -18049,7 +18014,7 @@
       "management": "Stop offending drug, supportive care, corticosteroids for persistent disease."
     },
     {
-      "id": 500,
+      "id": 499,
       "diagnosis": "Tubular Obstruction",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -18084,7 +18049,7 @@
       "management": "Immediate relief of obstruction with catheterization or urologic intervention."
     },
     {
-      "id": 501,
+      "id": 500,
       "diagnosis": "Nephrotic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -18119,7 +18084,7 @@
       "management": "Treat underlying cause, ACEi/ARB, diuretics, statins, anticoagulation when appropriate."
     },
     {
-      "id": 502,
+      "id": 501,
       "diagnosis": "Nephritic Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract I",
@@ -18154,7 +18119,7 @@
       "management": "Control blood pressure and fluid status; treat underlying glomerulonephritis; immunosuppression when indicated."
     },
     {
-      "id": 503,
+      "id": 502,
       "diagnosis": "Ureteric stone (unilateral)",
       "aliases": [
         "unilateral",
@@ -18194,7 +18159,7 @@
       "management": "Analgesia, hydration, medical expulsive therapy (tamsulosin), lithotripsy or ureteroscopy for larger stones."
     },
     {
-      "id": 504,
+      "id": 503,
       "diagnosis": "Central Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18229,7 +18194,7 @@
       "management": "Treat with desmopressin replacement and ensure adequate water intake. Monitor serum sodium closely and address the underlying hypothalamic or pituitary disorder."
     },
     {
-      "id": 505,
+      "id": 504,
       "diagnosis": "Nephrogenic Diabetes Insipidus",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18264,7 +18229,7 @@
       "management": "Address the underlying cause, optimize hydration, and reduce urine output with dietary measures and selected medications. Monitor closely for dehydration and hypernatremia"
     },
     {
-      "id": 506,
+      "id": 505,
       "diagnosis": "Osmotic Demyelination Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18299,7 +18264,7 @@
       "management": "Prevention through careful sodium correction is critical. Provide supportive neurologic care, rehabilitation, and close monitoring for respiratory compromise and long-term deficits."
     },
     {
-      "id": 507,
+      "id": 506,
       "diagnosis": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH)",
       "aliases": [
         "SIADH",
@@ -18337,7 +18302,7 @@
       "management": "Treat the underlying cause and restrict fluids first; if insufficient, escalate to urea or tolvaptan as second-line therapy; and use hypertonic saline emergently for severe symptomatic hyponatremia, with careful sodium correction to avoid osmotic demyelination"
     },
     {
-      "id": 508,
+      "id": 507,
       "diagnosis": "Primary Hyperaldosteronism (Conn's)",
       "aliases": [
         "Conn's",
@@ -18375,7 +18340,7 @@
       "management": "Unilateral disease is typically treated surgically. Bilateral adrenal hyperplasia is managed medically with mineralocorticoid receptor antagonists and cardiovascular risk reduction."
     },
     {
-      "id": 509,
+      "id": 508,
       "diagnosis": "Gitelman Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18413,7 +18378,7 @@
       "management": "Provide lifelong magnesium and potassium supplementation. Encourage liberal salt intake and consider potassium-sparing agents for persistent electrolyte abnormalities or symptoms."
     },
     {
-      "id": 510,
+      "id": 509,
       "diagnosis": "Bartter Syndrome",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18448,7 +18413,7 @@
       "management": "Correct fluid and electrolyte losses with potassium supplementation and liberal salt intake. NSAIDs and potassium-sparing agents may reduce renal salt wasting"
     },
     {
-      "id": 511,
+      "id": 510,
       "diagnosis": "Methanol Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18483,7 +18448,7 @@
       "management": "Administer fomepizole to inhibit alcohol dehydrogenase, correct acidosis, and perform hemodialysis when indicated. Monitor closely for visual and neurologic injury."
     },
     {
-      "id": 512,
+      "id": 511,
       "diagnosis": "Salicylate Poisoning",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18518,7 +18483,7 @@
       "management": "Administer activated charcoal when appropriate and alkalinize serum and urine with intravenous bicarbonate. Severe toxicity may require urgent hemodialysis."
     },
     {
-      "id": 513,
+      "id": 512,
       "diagnosis": "Renal Tubular Acidosis Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18553,7 +18518,7 @@
       "management": "Treat with oral alkali therapy and potassium supplementation when needed. Address underlying causes and monitor for nephrolithiasis, nephrocalcinosis, and kidney dysfunction."
     },
     {
-      "id": 514,
+      "id": 513,
       "diagnosis": "Renal Tubular Acidosis Type 2",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18588,7 +18553,7 @@
       "management": "Provide bicarbonate replacement and correct electrolyte abnormalities. Treat the underlying cause and supplement phosphate or vitamin D when bone disease is present."
     },
     {
-      "id": 515,
+      "id": 514,
       "diagnosis": "Renal Tubular Acidosis Type 4",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18623,7 +18588,7 @@
       "management": "Address underlying hypoaldosteronism, discontinue contributing medications when possible, and treat hyperkalemia. Some patients benefit from mineralocorticoid replacement or diuretic therapy."
     },
     {
-      "id": 516,
+      "id": 515,
       "diagnosis": "Saline-Infusion Hyperchloremia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18658,7 +18623,7 @@
       "management": "Reduce or discontinue chloride-rich fluids and consider balanced crystalloids. Monitor acid-base status and renal function while treating the underlying illness."
     },
     {
-      "id": 517,
+      "id": 516,
       "diagnosis": "Urinary Tract Infection",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18693,7 +18658,7 @@
       "management": "First-line treatment of uncomplicated UTI includes nitrofurantoin (100 mg twice daily, 5 days), trimethoprim-sulfamethoxazole (1 DS tablet twice daily, 3 days), or fosfomycin (single 3 g dose); fluoroquinolones are reserved as alternatives."
     },
     {
-      "id": 518,
+      "id": 517,
       "diagnosis": "Acute Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18731,7 +18696,7 @@
       "management": "Initiate appropriate antibiotic therapy and ensure adequate hydration. Hospitalize patients with severe illness, sepsis, obstruction, or inability to tolerate oral medications."
     },
     {
-      "id": 519,
+      "id": 518,
       "diagnosis": "Prostatitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18766,7 +18731,7 @@
       "management": "Ciprofloxacin 500 mg po x 14-30 d or Septra DS 1 tab po BID x 14-30 d. Monitor for urinary retention, abscess formation, and sepsis, with hospitalization for severe disease."
     },
     {
-      "id": 520,
+      "id": 519,
       "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
       "aliases": [
         "BPH",
@@ -18804,7 +18769,7 @@
       "management": "Lifestyle modifications and α₁-blockers provide symptomatic relief. Larger prostates may benefit from 5α-reductase inhibitors, while refractory obstruction may require surgery."
     },
     {
-      "id": 521,
+      "id": 520,
       "diagnosis": "Overactive Bladder (OAB)",
       "aliases": [
         "OAB",
@@ -18845,7 +18810,7 @@
       "management": "Begin with bladder training, fluid management, and pelvic floor exercises. Persistent symptoms may require antimuscarinic therapy, β3-adrenergic agonists, or specialist referral."
     },
     {
-      "id": 522,
+      "id": 521,
       "diagnosis": "Prostate Adenocarcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18883,7 +18848,7 @@
       "management": "Management ranges from active surveillance to surgery, radiation, and androgen deprivation therapy. Advanced disease may require systemic therapy and treatment of metastases."
     },
     {
-      "id": 523,
+      "id": 522,
       "diagnosis": "Renal Cell Carcinoma (RCC)",
       "aliases": [
         "RCC",
@@ -18923,7 +18888,7 @@
       "management": "Localized disease is treated with partial or radical nephrectomy. Advanced disease may require targeted therapy, immunotherapy, and management of metastatic complications."
     },
     {
-      "id": 524,
+      "id": 523,
       "diagnosis": "Testicular Cancer",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -18958,7 +18923,7 @@
       "management": "Radical inguinal orchiectomy for diagnosis and treatment. Further management depends on histology and stage and may include surveillance, chemotherapy, or radiation. Never biopsy due to risk of lymphatogenous spread."
     },
     {
-      "id": 525,
+      "id": 524,
       "diagnosis": "Von Hippel-Lindau Syndrome (VHL)",
       "aliases": [
         "VHL",
@@ -18996,7 +18961,7 @@
       "management": "Provide lifelong surveillance for associated tumors with regular imaging and screening. Surgical intervention is often required for symptomatic or high-risk lesions."
     },
     {
-      "id": 526,
+      "id": 525,
       "diagnosis": "Septic Stone",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19031,7 +18996,7 @@
       "management": "Treat as a urologic emergency with immediate broad-spectrum antibiotics and urgent urinary decompression via nephrostomy tube or ureteral stent placement."
     },
     {
-      "id": 527,
+      "id": 526,
       "diagnosis": "Nephrolithiasis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19069,7 +19034,7 @@
       "management": "Treat with analgesia, hydration, and medical expulsive therapy when appropriate. Refer for urologic intervention if stones are large, obstructing, infected, or persistent."
     },
     {
-      "id": 528,
+      "id": 527,
       "diagnosis": "Erectile Dysfunction (ED)",
       "aliases": [
         "ED",
@@ -19107,7 +19072,7 @@
       "management": "Address reversible causes and optimize cardiovascular risk factors. First-line therapy typically involves phosphodiesterase-5 inhibitors, with additional treatments reserved for refractory cases"
     },
     {
-      "id": 529,
+      "id": 528,
       "diagnosis": "Hydrocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19145,7 +19110,7 @@
       "management": "Observe asymptomatic hydroceles. Symptomatic, enlarging, or persistent cases may require surgical hydrocelectomy after excluding underlying infection, malignancy, or hernia."
     },
     {
-      "id": 530,
+      "id": 529,
       "diagnosis": "Epididymal Cyst",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19180,7 +19145,7 @@
       "management": "Reassure and observe asymptomatic lesions. Surgical excision may be considered for persistent pain, significant enlargement, or diagnostic uncertainty after imaging evaluation."
     },
     {
-      "id": 531,
+      "id": 530,
       "diagnosis": "Varicocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19215,7 +19180,7 @@
       "management": "Observe asymptomatic cases. Symptomatic patients or those with infertility may benefit from surgical ligation or percutaneous embolization of the affected veins."
     },
     {
-      "id": 532,
+      "id": 531,
       "diagnosis": "Epididymitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19250,7 +19215,7 @@
       "management": "Treat with pathogen-directed antibiotics, analgesia, scrotal elevation, and rest. Exclude testicular torsion promptly and monitor for abscess or fertility complications"
     },
     {
-      "id": 533,
+      "id": 532,
       "diagnosis": "Orchitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19285,7 +19250,7 @@
       "management": "Provide analgesia, scrotal support, and supportive care. Treat underlying bacterial infection when present and monitor for testicular atrophy or fertility complications."
     },
     {
-      "id": 534,
+      "id": 533,
       "diagnosis": "Indirect Inguinal Hernia",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19320,7 +19285,7 @@
       "management": "Elective surgical repair is recommended for symptomatic hernias. Urgent intervention is required for incarceration, strangulation, bowel obstruction, or compromised blood supply."
     },
     {
-      "id": 535,
+      "id": 534,
       "diagnosis": "Testicular Torsion",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19355,7 +19320,7 @@
       "management": "Treat as a surgical emergency with immediate urologic consultation and urgent orchiopexy. Delay in intervention significantly increases the risk of testicular loss."
     },
     {
-      "id": 536,
+      "id": 535,
       "diagnosis": "Hematocele",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19390,7 +19355,7 @@
       "management": "Obtain urgent scrotal ultrasonography and assess for testicular injury. Small stable hematoceles may be observed, while large or expanding collections require surgery."
     },
     {
-      "id": 537,
+      "id": 536,
       "diagnosis": "Cystitis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19425,7 +19390,7 @@
       "management": "Nitrofurantoin, TMP-SMX, or fosfomycin are first-line for uncomplicated cystitis; fluoroquinolones are reserved as alternative agents due to resistance concerns."
     },
     {
-      "id": 538,
+      "id": 537,
       "diagnosis": "Urethritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19460,7 +19425,7 @@
       "management": "Treat with appropriate empiric antibiotics while awaiting test results. Ensure partner notification and treatment, and recommend abstinence until therapy is completed."
     },
     {
-      "id": 539,
+      "id": 538,
       "diagnosis": "Priapism",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19495,7 +19460,7 @@
       "management": "Treat as a urologic emergency with corporal aspiration and intracavernosal sympathomimetic therapy. Address underlying causes promptly to prevent permanent erectile dysfunction"
     },
     {
-      "id": 540,
+      "id": 539,
       "diagnosis": "Paraphimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19530,7 +19495,7 @@
       "management": "Treat as a urologic emergency with prompt manual reduction. Severe cases may require dorsal slit or circumcision to prevent ischemic complications."
     },
     {
-      "id": 541,
+      "id": 540,
       "diagnosis": "Phimosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19565,7 +19530,7 @@
       "management": "Treat pathologic cases with topical corticosteroids and gentle stretching. Persistent, recurrent, or severe symptoms may require circumcision or surgical intervention."
     },
     {
-      "id": 542,
+      "id": 541,
       "diagnosis": "Fournier's Gangrene",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19600,7 +19565,7 @@
       "management": "Initiate immediate broad-spectrum antibiotics and aggressive resuscitation. Urgent surgical debridement is essential, often requiring multiple procedures and intensive care support."
     },
     {
-      "id": 543,
+      "id": 542,
       "diagnosis": "Penile Fracture",
       "aliases": [],
       "category": "Kidney and Urinary Tract II",
@@ -19635,7 +19600,7 @@
       "management": "Obtain urgent urologic consultation and perform prompt surgical repair. Evaluate for associated urethral injury and monitor for long-term erectile dysfunction."
     },
     {
-      "id": 545,
+      "id": 544,
       "diagnosis": "Hydronephrosis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19673,7 +19638,7 @@
       "management": "Relieve urinary obstruction promptly through medical, endoscopic, or surgical intervention. Monitor renal function and address the underlying cause to prevent permanent damage."
     },
     {
-      "id": 546,
+      "id": 545,
       "diagnosis": "Emphysematous Pyelonephritis",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19711,7 +19676,7 @@
       "management": "Initiate urgent resuscitation and broad-spectrum antibiotics. Obtain prompt source control through drainage or nephrectomy when indicated, while closely monitoring for septic shock."
     },
     {
-      "id": 547,
+      "id": 546,
       "diagnosis": "Urothelial Cell Carcinoma",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19749,7 +19714,7 @@
       "management": "Perform cystoscopic resection for diagnosis and staging. Additional intravesical therapy, systemic treatment, or surgery depends on tumor risk and extent"
     },
     {
-      "id": 548,
+      "id": 547,
       "diagnosis": "Multicystic Renal Dysplasia",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19784,7 +19749,7 @@
       "management": "Unilateral multicystic dysplastic kidney (MCDK) is managed conservatively with serial ultrasound surveillance and blood pressure monitoring; most involute spontaneously. Nephrectomy is reserved for failure of involution, mass effect, hypertension, recurrent UTIs, or suspected malignancy."
     },
     {
-      "id": 549,
+      "id": 548,
       "diagnosis": "Dialysis-associated Acquired Cystic Kidney Disease",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
@@ -19819,7 +19784,7 @@
       "management": "Monitor for hematuria, cyst complications, and renal malignancy. Continue renal replacement therapy as indicated and evaluate suspicious lesions with appropriate imaging."
     },
     {
-      "id": 550,
+      "id": 549,
       "diagnosis": "Autosomal Dominant Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -19859,7 +19824,7 @@
       "management": "Control blood pressure, monitor kidney function, and manage complications. Selected patients may benefit from disease-modifying therapy, while advanced disease requires renal replacement therapy."
     },
     {
-      "id": 551,
+      "id": 550,
       "diagnosis": "Autosomal Recessive Polycystic Kidney Disease (PCKD)",
       "aliases": [
         "PCKD",
@@ -19900,7 +19865,7 @@
       "management": "Provide supportive management of renal insufficiency and hypertension while monitoring hepatic complications. Severe disease may ultimately require kidney or combined liver-kidney transplantation."
     },
     {
-      "id": 552,
+      "id": 551,
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "aliases": [],
       "category": "Kidney and Urinary Tract III",
