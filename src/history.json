@@ -604,6 +604,26 @@
       "date": "2026-08-27",
       "diagnosis": "Bezoar",
       "id": 457
+    },
+    {
+      "date": "2026-08-28",
+      "diagnosis": "Budd-Chiari Syndrome",
+      "id": 477
+    },
+    {
+      "date": "2026-08-29",
+      "diagnosis": "Metabolic Associated Steatotic Liver Disease (MASLD)",
+      "id": 480
+    },
+    {
+      "date": "2026-08-30",
+      "diagnosis": "Biliary Colic",
+      "id": 472
+    },
+    {
+      "date": "2026-08-31",
+      "diagnosis": "Abscess/Fistula Disease (Perianal)",
+      "id": 469
     }
   ],
   "2": [
@@ -1270,6 +1290,28 @@
       "date": "2026-08-27",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-08-28",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-08-29",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-08-30",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-08-31",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
       "reset": true
     }
   ]

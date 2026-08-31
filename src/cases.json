@@ -17056,11 +17056,11 @@
       "clues": [
         {
           "type": "",
-          "text": "A 42-year-old woman presents with episodic right upper quadrant and epigastric pain that began after eating a large, fatty meal at dinner."
+          "text": "A 42-year-old woman presents with episodic right upper quadrant and epigastric pain that began after eating a large meal."
         },
         {
           "type": "",
-          "text": "She has had several similar episodes over the past few months, each lasting less than a few hours and resolving spontaneously, with no fever or jaundice during these episodes."
+          "text": "She has had several similar episodes over the past few months, each lasting less than a few hours and resolving spontaneously."
         },
         {
           "type": "",
@@ -17072,7 +17072,7 @@
         },
         {
           "type": "",
-          "text": "The pain worsens after a fatty meal."
+          "text": "She notices that when she eats fast food, the pain tends to particularily worsen."
         }
       ],
       "description": "Biliary colic is the term for the characteristic pain caused by transient obstruction of the cystic duct by a gallstone, typically triggered by gallbladder contraction in response to a fatty meal (via cholecystokinin release), causing episodic right upper quadrant or epigastric pain that resolves once the stone disimpacts and the obstruction relieves. Importantly, biliary colic is uncomplicated by definition, meaning there is no associated infection or inflammation (which would instead indicate acute cholecystitis), and episodes are typically self-limited, lasting from 30 minutes to a few hours.",
