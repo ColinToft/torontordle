@@ -624,6 +624,11 @@
       "date": "2026-08-31",
       "diagnosis": "Abscess/Fistula Disease (Perianal)",
       "id": 469
+    },
+    {
+      "date": "2026-09-01",
+      "diagnosis": "Febrile Neutropenia",
+      "id": 228
     }
   ],
   "2": [
@@ -1313,6 +1318,11 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-09-01",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
     }
   ]
 }
