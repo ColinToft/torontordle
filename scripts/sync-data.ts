@@ -31,14 +31,14 @@ import { fileURLToPath } from 'node:url'
 import {
   buildManifest,
   imageFileName,
-  parseClueNumber,
+  parseImageSlot,
   parseDrawingAnchors,
   parseRels,
   parseWorkbookSheets,
 } from './syncImagesLib.mjs'
 import { parseSheetCsv } from '../src/sheet.ts'
 import { assertAppendOnly, freezeThrough, todayET } from '../src/dailyCase.ts'
-import type { CasesByYear, FrozenDay, HistoryByYear, TCase, Year } from '../src/types.ts'
+import type { CasesByYear, FrozenDay, HistoryByYear, ImageSlot, TCase, Year } from '../src/types.ts'
 
 const SPREADSHEET_ID = '117TT_NYZmtaaMrRUIcQXlFxVqZ0Dl2zFIYqcctUFKGI'
 // One tab per year. Year 1 images keep their bare filenames; Year 2 images are
@@ -166,7 +166,7 @@ async function main() {
     if (diagCol < 0) throw new Error(`Year ${year}: no Diagnosis column in header`)
 
     // Extract this tab's in-cell images.
-    const entries: { diagnosis: string; clueNumber: number; path: string }[] = []
+    const entries: { diagnosis: string; slot: ImageSlot; path: string }[] = []
     const wsTarget = wbSheets.find((s) => s.name === title)
     if (!wsTarget) throw new Error(`"${title}" not found in workbook.xml`)
     const sheetFile = basename(wbRels[wsTarget.rid])
@@ -187,12 +187,13 @@ async function main() {
         ) as Record<string, string>
         for (const a of anchors) {
           const diagnosis = String((values[a.row] ?? [])[diagCol] ?? '').trim()
-          const clueNumber = parseClueNumber(header[a.col])
-          if (!diagnosis || !clueNumber) {
+          const slot = parseImageSlot(header[a.col]) as ImageSlot | null
+          if (!diagnosis || slot === null) {
             skipped++
-            console.warn(`  skip image at (row ${a.row}, col ${a.col}): diagnosis=${diagnosis || '∅'} clue=${clueNumber ?? '∅'}`)
+            console.warn(`  skip image at (row ${a.row}, col ${a.col}): diagnosis=${diagnosis || '∅'} slot=${slot ?? '∅'} (header "${header[a.col] ?? ''}")`)
             continue
           }
+          const slotLabel = slot === 'management' ? 'management' : `clue ${slot}`
           const target = drawingRels[a.embed]
           if (!target) {
             // An image anchor whose media relationship is missing — don't silently
@@ -204,12 +205,12 @@ async function main() {
           const mediaFile = basename(target)
           const srcBuf = readFileSync(join(unzipDir, 'xl', 'media', mediaFile))
           const { buffer, ext } = await compressImage(srcBuf, mediaFile.split('.').pop()!)
-          const fileName = filePrefix + imageFileName(diagnosis, clueNumber, ext)
+          const fileName = filePrefix + imageFileName(diagnosis, slot, ext)
           writeFileSync(join(OUT_IMAGES, fileName), buffer)
           written.add(fileName)
-          entries.push({ diagnosis, clueNumber, path: `case-images/${fileName}` })
+          entries.push({ diagnosis, slot, path: `case-images/${fileName}` })
           const kb = (n: number) => `${Math.round(n / 1024)}KB`
-          console.log(`  ✓ ${diagnosis} · clue ${clueNumber} → ${fileName} (${kb(srcBuf.length)} → ${kb(buffer.length)})`)
+          console.log(`  ✓ ${diagnosis} · ${slotLabel} → ${fileName} (${kb(srcBuf.length)} → ${kb(buffer.length)})`)
         }
       }
     }
@@ -222,12 +223,15 @@ async function main() {
 
     // Fail fast if any extracted image didn't land on a case (name mismatch).
     const attached = new Set<string>()
-    for (const c of cases) for (const clue of c.clues) if (clue.image) attached.add(clue.image)
+    for (const c of cases) {
+      for (const clue of c.clues) if (clue.image) attached.add(clue.image)
+      if (c.management?.image) attached.add(c.management.image)
+    }
     const orphans = entries.filter((e) => !attached.has(e.path))
     if (orphans.length) {
       throw new Error(
         `Year ${year}: ${orphans.length} image(s) couldn't be attached to a case (diagnosis-name mismatch):\n` +
-          orphans.map((o) => `  • ${o.diagnosis} · clue ${o.clueNumber}`).join('\n'),
+          orphans.map((o) => `  • ${o.diagnosis} · ${o.slot === 'management' ? 'management' : `clue ${o.slot}`}`).join('\n'),
       )
     }
 
