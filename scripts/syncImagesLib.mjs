@@ -9,15 +9,23 @@ export function slugify(s) {
     .replace(/^-+|-+$/g, '')
 }
 
-// Asset filename for a case image: e.g. ("Trisomy 21 (Down Syndrome)", 6, "jpg") → "trisomy-21-down-syndrome-clue6.jpg".
-export function imageFileName(diagnosis, clueNumber, ext) {
-  return `${slugify(diagnosis)}-clue${clueNumber}.${ext}`
+// Asset filename for a case image, by slot:
+//   ("Trisomy 21 (Down Syndrome)", 6, "jpg")            → "trisomy-21-down-syndrome-clue6.jpg"
+//   ("Osteoporosis", "management", "jpg")               → "osteoporosis-management.jpg"
+export function imageFileName(diagnosis, slot, ext) {
+  const suffix = slot === 'management' ? 'management' : `clue${slot}`
+  return `${slugify(diagnosis)}-${suffix}.${ext}`
 }
 
-// Which "Clue N" a header cell denotes (the clue column the image sits in). Returns the number or null.
-export function parseClueNumber(headerCell) {
-  const m = String(headerCell ?? '').trim().toLowerCase().match(/^clue ?(\d+)\b/)
-  return m ? Number(m[1]) : null
+// Which image slot a header cell denotes — the column the image sits in.
+// "Clue N …" → N; "Management…" → 'management'; anything else → null (an image
+// there has nowhere to go and the sync warns).
+export function parseImageSlot(headerCell) {
+  const h = String(headerCell ?? '').trim().toLowerCase()
+  const m = h.match(/^clue ?(\d+)\b/)
+  if (m) return Number(m[1])
+  if (/^management\b/.test(h)) return 'management'
+  return null
 }
 
 // Parse an OOXML .rels file into { relationshipId: target }.
@@ -55,12 +63,13 @@ export function parseDrawingAnchors(xml) {
   return anchors
 }
 
-// Assemble the manifest from [{ diagnosis, clueNumber, path }] → { [diagnosis]: { [clueNumber]: path } }.
+// Assemble the manifest from [{ diagnosis, slot, path }] → { [diagnosis]: { [slot]: path } },
+// slot being a clue number ("1".."8") or "management".
 // Keys are sorted so the committed JSON has stable, review-friendly diffs.
 export function buildManifest(entries) {
   const m = {}
-  for (const { diagnosis, clueNumber, path } of entries) {
-    ;(m[diagnosis] ||= {})[String(clueNumber)] = path
+  for (const { diagnosis, slot, path } of entries) {
+    ;(m[diagnosis] ||= {})[String(slot)] = path
   }
   const sorted = {}
   for (const diag of Object.keys(m).sort()) {

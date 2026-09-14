@@ -1,6 +1,6 @@
 import { parseCSV } from './csv'
 import { splitReference } from './references'
-import type { CaseImageManifest, TCase } from './types'
+import type { CaseImageManifest, Management, TCase } from './types'
 
 /**
  * Sheet schema (case-insensitive, header row located automatically — any
@@ -23,7 +23,9 @@ import type { CaseImageManifest, TCase } from './types'
  *                                     silently open a week)
  *   - "Description"                  → study note shown after the case ends
  *   - "Management?" or "Management"  → model answer for the post-case
- *                                     free-text management compare step
+ *                                     management compare step (text; an in-cell
+ *                                     image in this column arrives via the
+ *                                     manifest's "management" slot)
  *   - "Clue 1 type" … "Clue 6 type"  → optional small-caps label per clue
  *   - a "drop down" description column → expandable detail + citation for the
  *                                     clue immediately to its left (associated
@@ -126,9 +128,17 @@ export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCa
 
     const category = lastCategory
     const description = (idxDescription >= 0 ? row[idxDescription] : '')?.trim() || undefined
-    const management = (idxManagement >= 0 ? row[idxManagement] : '')?.trim() || undefined
 
     const caseImages = images[diagnosis] ?? {}
+    const managementText = (idxManagement >= 0 ? row[idxManagement] : '')?.trim()
+    const managementImage = caseImages.management
+    const management: Management | undefined =
+      managementText || managementImage
+        ? {
+            ...(managementText ? { text: managementText } : {}),
+            ...(managementImage ? { image: managementImage } : {}),
+          }
+        : undefined
     const clues = clueCols
       .map(({ n, typeIdx, textIdx, detailIdx }) => {
         const rawDetail = detailIdx >= 0 ? (row[detailIdx] ?? '').trim() : ''

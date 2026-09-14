@@ -77,8 +77,8 @@ describe('parseSheetCsv — live sheet structure', () => {
   })
 
   it('captures the management model answer from the annotated header', () => {
-    expect(cases[0].management).toBe('Early developmental intervention and surveillance.')
-    expect(cases[1].management).toBe('Growth hormone and estrogen replacement.')
+    expect(cases[0].management).toEqual({ text: 'Early developmental intervention and surveillance.' })
+    expect(cases[1].management).toEqual({ text: 'Growth hormone and estrogen replacement.' })
   })
 
   it('attaches a drop-down detail + reference to the clue it follows', () => {
@@ -283,5 +283,52 @@ describe('parseUnlockDate', () => {
 
   it('includes the caller-supplied location in the error', () => {
     expect(() => parseUnlockDate('TBD', ' (row 12)')).toThrow('"TBD" (row 12)')
+  })
+})
+
+describe('parseSheetCsv — management text and/or image', () => {
+  const SHEET = [
+    'Diagnosis,Clue 1,Management? (free text),Week',
+    'Osteoporosis,Fragility fracture in a 68 year old,,Endocrine', // image only (via manifest)
+    'Anaphylaxis,Stridor after a peanut,IM epinephrine,Immunology', // text only
+    'Sepsis,Fever and hypotension,Cultures then antibiotics,Micro', // text + image
+    'Tension Headache,Band-like pain,,Neuro', // neither → no management step
+  ].join('\n')
+  const manifest = {
+    Osteoporosis: { management: 'case-images/osteoporosis-management.jpg' },
+    Sepsis: { '1': 'case-images/sepsis-clue1.jpg', management: 'case-images/sepsis-management.jpg' },
+  }
+  const cases = parseSheetCsv(SHEET, manifest)
+  const by = (d: string) => cases.find((c) => c.diagnosis === d)!
+
+  it('an image in the Management column becomes management.image with no text', () => {
+    expect(by('Osteoporosis').management).toEqual({ image: 'case-images/osteoporosis-management.jpg' })
+  })
+
+  it('text only → { text }', () => {
+    expect(by('Anaphylaxis').management).toEqual({ text: 'IM epinephrine' })
+  })
+
+  it('text and image → both', () => {
+    expect(by('Sepsis').management).toEqual({
+      text: 'Cultures then antibiotics',
+      image: 'case-images/sepsis-management.jpg',
+    })
+  })
+
+  it('neither → management undefined (no management step)', () => {
+    expect(by('Tension Headache').management).toBeUndefined()
+  })
+
+  it('a management image never leaks into the clues, and clue images still attach', () => {
+    expect(by('Osteoporosis').clues.every((c) => c.image === undefined)).toBe(true)
+    expect(by('Sepsis').clues[0].image).toBe('case-images/sepsis-clue1.jpg')
+    expect(by('Sepsis').clues).toHaveLength(1)
+  })
+
+  it('without a manifest, an image-only management step is absent', () => {
+    const plain = parseSheetCsv(SHEET)
+    expect(plain.find((c) => c.diagnosis === 'Osteoporosis')!.management).toBeUndefined()
+    expect(plain.find((c) => c.diagnosis === 'Anaphylaxis')!.management).toEqual({ text: 'IM epinephrine' })
   })
 })

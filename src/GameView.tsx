@@ -8,7 +8,7 @@ import {
   type MouseEvent,
   type ReactNode,
 } from 'react'
-import type { Guess, Stats, TCase, Year } from './types'
+import type { Guess, Management, Stats, TCase, Year } from './types'
 import { dayNumber as computeDayNumber, formatHeaderDate } from './dailyCase'
 import { normalizeAnswer } from './normalize'
 import { namesCase, searchMatches } from './guess'
@@ -550,7 +550,7 @@ function ResultBlock({
 // Post-case learning step: ask how the student would manage the patient, then
 // reveal the model answer to self-compare. Reveal-and-compare only — the draft
 // is ephemeral (intentionally not persisted) and never scored.
-function ManagementPanel({ answer, onReveal }: { answer: string; onReveal: () => void }) {
+function ManagementPanel({ answer, onReveal }: { answer: Management; onReveal: () => void }) {
   const [draft, setDraft] = useState('')
   const [revealed, setRevealed] = useState(false)
 
@@ -592,9 +592,23 @@ function ManagementPanel({ answer, onReveal }: { answer: string; onReveal: () =>
           }}
         >
           <div className="tt-monocaps" style={{ color: 'var(--uoft-navy)' }}>Model answer</div>
-          <p style={{ fontSize: 14, color: 'var(--ink)', marginTop: 6, lineHeight: 1.55 }}>
-            {answer}
-          </p>
+          {answer.text && (
+            <p style={{ fontSize: 14, color: 'var(--ink)', marginTop: 6, lineHeight: 1.55 }}>
+              {answer.text}
+            </p>
+          )}
+          {answer.image && (
+            // A figure (e.g. a guideline algorithm) can be dense — link to the
+            // full-size asset so it can be opened on its own.
+            <a href={import.meta.env.BASE_URL + answer.image} target="_blank" rel="noreferrer">
+              <img
+                src={import.meta.env.BASE_URL + answer.image}
+                alt="Model management answer (figure)"
+                style={styles.managementImage}
+                loading="lazy"
+              />
+            </a>
+          )}
           <p style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 8, lineHeight: 1.5 }}>
             Compare against your own answer — use your judgment.
           </p>
@@ -1120,6 +1134,15 @@ const styles: Record<string, CSSProperties> = {
     fontSize: 16,
     background: 'transparent',
     color: 'var(--ink)',
+  },
+  managementImage: {
+    display: 'block',
+    maxWidth: '100%',
+    height: 'auto',
+    marginTop: 10,
+    border: '1px solid var(--line)',
+    borderRadius: 4,
+    background: '#fff',
   },
   managementInput: {
     width: '100%',
