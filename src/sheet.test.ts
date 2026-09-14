@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { parseSheetCsv } from './sheet'
+import { parseSheetCsv, parseUnlockDate } from './sheet'
 
 // A fixture that reproduces the live sheet's structure: several preamble
 // tables (instructions, author assignments), a scratch example block that
@@ -162,5 +162,126 @@ describe('parseSheetCsv — degenerate input', () => {
 
   it('returns [] for empty input', () => {
     expect(parseSheetCsv('')).toEqual([])
+  })
+})
+
+describe('parseSheetCsv — "Date to Be Opened" column', () => {
+  const SHEET = [
+    '"Date to Be Opened","Week","Clue 1 (chief complaint)","Diagnosis"',
+    '"September 28, 2026","Embryology","clue","Dx A"',
+    '"","","clue","Dx B"', // blank → inherits the block's date
+    '"October 5, 2026","Drugs I","clue","Dx C"',
+    '"","Drugs II","clue","Dx D"', // new week, no date → carries the previous one
+    '"1/11/2027","Cardiovascular I","clue","Dx E"',
+    '"2027-1-25","Cardiovascular II","clue","Dx F"',
+    '"Sept 1 2027","Respiratory I","clue","Dx G"',
+  ].join('\n')
+
+  it('parses long-form, M/D/YYYY and ISO dates to YYYY-MM-DD and carries them down', () => {
+    const cases = parseSheetCsv(SHEET)
+    expect(cases.map((c) => [c.diagnosis, c.unlockDate])).toEqual([
+      ['Dx A', '2026-09-28'],
+      ['Dx B', '2026-09-28'],
+      ['Dx C', '2026-10-05'],
+      ['Dx D', '2026-10-05'],
+      ['Dx E', '2027-01-11'],
+      ['Dx F', '2027-01-25'],
+      ['Dx G', '2027-09-01'],
+    ])
+  })
+
+  it('still recognises the legacy "Unlock date" header', () => {
+    const cases = parseSheetCsv(SHEET.replace('Date to Be Opened', 'Unlock date'))
+    expect(cases[0].unlockDate).toBe('2026-09-28')
+    expect(cases[6].unlockDate).toBe('2027-09-01')
+  })
+
+  it('does not mistake the date column for the Week column', () => {
+    const cases = parseSheetCsv(SHEET)
+    expect(cases[0].category).toBe('Embryology')
+    expect(cases[3].category).toBe('Drugs II')
+  })
+
+  it('leaves unlockDate null when the column is absent', () => {
+    const noCol = [
+      '"Week","Clue 1","Diagnosis"',
+      '"Embryology","clue","Dx A"',
+    ].join('\n')
+    expect(parseSheetCsv(noCol)[0].unlockDate).toBeNull()
+  })
+
+  it('leaves unlockDate null until the first dated row, when the column is present but leads blank', () => {
+    const leadingBlank = [
+      '"Date to Be Opened","Week","Clue 1","Diagnosis"',
+      '"","Embryology","clue","Dx A"',
+      '"October 5, 2026","Drugs I","clue","Dx B"',
+    ].join('\n')
+    expect(parseSheetCsv(leadingBlank).map((c) => c.unlockDate)).toEqual([null, '2026-10-05'])
+  })
+
+  it('throws on an unparseable date, naming the value and row', () => {
+    const bad = [
+      '"Date to Be Opened","Week","Clue 1","Diagnosis"',
+      '"September 28, 2026","Embryology","clue","Dx A"',
+      '"sometime in fall","Drugs I","clue","Dx B"',
+    ].join('\n')
+    expect(() => parseSheetCsv(bad)).toThrow(/Unparseable unlock date "sometime in fall" \(row 3\)/)
+  })
+})
+
+describe('parseUnlockDate', () => {
+  it.each([
+    ['2026-09-28', '2026-09-28'],
+    ['2026-9-8', '2026-09-08'],
+    ['9/28/2026', '2026-09-28'],
+    ['1/4/2027', '2027-01-04'],
+    ['September 28, 2026', '2026-09-28'],
+    ['September 28 2026', '2026-09-28'],
+    ['Sept 28, 2026', '2026-09-28'],
+    ['Sep. 28, 2026', '2026-09-28'],
+    ['sep 28, 2026', '2026-09-28'],
+    ['SEPTEMBER 28, 2026', '2026-09-28'],
+    ['  May 3, 2027  ', '2027-05-03'],
+    ['March 1, 2027', '2027-03-01'],
+    ['Mar 1, 2027', '2027-03-01'],
+    ['Jun 1, 2027', '2027-06-01'],
+    ['Jul 1, 2027', '2027-07-01'],
+    ['February 29, 2028', '2028-02-29'], // leap year
+  ])('parses %j → %s', (raw, expected) => {
+    expect(parseUnlockDate(raw)).toBe(expected)
+  })
+
+  it('parses every month by full name', () => {
+    const names = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December',
+    ]
+    names.forEach((name, i) => {
+      expect(parseUnlockDate(`${name} 15, 2027`)).toBe(`2027-${String(i + 1).padStart(2, '0')}-15`)
+    })
+  })
+
+  it.each([
+    [''],
+    ['   '],
+    ['2026-13-01'], // no month 13
+    ['2026-02-30'], // no Feb 30
+    ['2027-02-29'], // not a leap year
+    ['13/1/2026'], // month 13 in M/D/YYYY
+    ['28/9/2026'], // D/M/YYYY is not supported
+    ['2026/09/28'],
+    ['28 September 2026'], // day-first
+    ['September 2026'], // no day
+    ['Foo 1, 2026'],
+    ['Ma 1, 2026'], // too short to be unambiguous
+    ['September 31, 2026'], // no Sept 31
+    ['sometime in fall'],
+    ['TBD'],
+  ])('throws on %j', (raw) => {
+    expect(() => parseUnlockDate(raw)).toThrow(/Unparseable unlock date/)
+  })
+
+  it('includes the caller-supplied location in the error', () => {
+    expect(() => parseUnlockDate('TBD', ' (row 12)')).toThrow('"TBD" (row 12)')
   })
 })
