@@ -4,7 +4,7 @@ import historyData from './history.json'
 import type { CasesByYear, FrozenDay, HistoryByYear, TCase, Year } from './types'
 import { GameView } from './GameView'
 import { useGame } from './useGame'
-import { buildSchedule, caseForDate, dayNumber, todayET } from './dailyCase'
+import { buildSchedule, caseForDate, dayNumber, formatLongDate, todayET } from './dailyCase'
 
 // The bank is baked at build time by scripts/sync-data.ts — available
 // synchronously, no network/loading state. One case pool per year.
@@ -62,6 +62,15 @@ export default function App() {
     [pool, year, dateStr],
   )
 
+  // The earliest future "Date to Be Opened" — shown when nothing is unlocked yet.
+  const nextUnlock = useMemo(() => {
+    const upcoming = pool
+      .map((c) => c.unlockDate)
+      .filter((d): d is string => d !== null && d > today)
+      .sort()
+    return upcoming[0] ?? null
+  }, [pool, today])
+
   // Past days for the Archives list (most recent first, excluding today).
   const archiveDays = useMemo<ArchiveDay[]>(() => {
     if (!showArchives) return []
@@ -90,6 +99,7 @@ export default function App() {
     return (
       <Splash error nav={nav}>
         No Year {year} case is available yet.
+        {archiveDate === null && nextUnlock && ` The first cases open on ${formatLongDate(nextUnlock)}.`}
       </Splash>
     )
   }

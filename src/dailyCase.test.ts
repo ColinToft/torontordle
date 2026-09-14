@@ -3,6 +3,7 @@ import {
   assertAppendOnly,
   buildSchedule,
   caseForDate,
+  formatLongDate,
   freezeThrough,
   nameSimilarity,
 } from './dailyCase'
@@ -319,5 +320,41 @@ describe('determinism', () => {
     const y1 = buildSchedule(bank, '1', '2026-01-15', [], LAUNCH).map((d) => d.tCase.diagnosis)
     const y2 = buildSchedule(bank, '2', '2026-01-15', [], LAUNCH).map((d) => d.tCase.diagnosis)
     expect(y1).not.toEqual(y2)
+  })
+})
+
+describe('nothing unlocked yet', () => {
+  const bank = [
+    mk(1, 'A', { unlockDate: '2026-01-10' }),
+    mk(2, 'B', { unlockDate: '2026-01-10' }),
+    mk(3, 'C', { unlockDate: '2026-01-17' }),
+  ]
+
+  it('caseForDate is null before the earliest opening date and picks from that day on', () => {
+    expect(caseForDate(bank, '1', '2026-01-09', [], LAUNCH)).toBeNull()
+    const opening = caseForDate(bank, '1', '2026-01-10', [], LAUNCH)
+    expect(opening).not.toBeNull()
+    expect(['A', 'B']).toContain(opening!.diagnosis)
+    expect(caseForDate(bank, '1', '2026-01-16', [], LAUNCH)!.diagnosis).not.toBe('C')
+  })
+
+  it('buildSchedule skips the locked days entirely rather than emitting gaps', () => {
+    const days = buildSchedule(bank, '1', '2026-01-12', [], LAUNCH)
+    expect(days.map((d) => d.date)).toEqual(['2026-01-10', '2026-01-11', '2026-01-12'])
+  })
+
+  it('freezeThrough records nothing for locked days', () => {
+    const h = freezeThrough(bank, '1', [], '2026-01-12', LAUNCH)
+    expect(h.map((d) => d.date)).toEqual(['2026-01-10', '2026-01-11', '2026-01-12'])
+  })
+})
+
+describe('formatLongDate', () => {
+  it.each([
+    ['2026-09-28', 'September 28, 2026'],
+    ['2027-01-04', 'January 4, 2027'],
+    ['2027-12-31', 'December 31, 2027'],
+  ])('%s → %s', (iso, text) => {
+    expect(formatLongDate(iso)).toBe(text)
   })
 })

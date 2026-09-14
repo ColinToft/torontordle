@@ -16,6 +16,11 @@ import type { CaseImageManifest, TCase } from './types'
  *   - "Week" or "Category"           → grouping label; carried down to blank
  *                                     rows beneath the first row of each block
  *   - "Aliases"                      → pipe- or semicolon-separated search terms
+ *   - "Date to Be Opened" / "Unlock…" → the date a week's cases enter the pool;
+ *                                     first row of each block, carried down.
+ *                                     YYYY-MM-DD, M/D/YYYY, or "Month D, YYYY";
+ *                                     anything else throws (fail loud, never
+ *                                     silently open a week)
  *   - "Description"                  → study note shown after the case ends
  *   - "Management?" or "Management"  → model answer for the post-case
  *                                     free-text management compare step
@@ -61,8 +66,8 @@ export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCa
   const idxManagement = findColPrefix(['management'])
   // Optional: the date a week's cases become available. Like Week, it's filled
   // on the first row of each block and carried down. Absent column / blank →
-  // null (always available), so progressive unlock is dormant until populated.
-  const idxUnlock = findColPrefix(['unlock'])
+  // null (always available). The live sheet titles it "Date to Be Opened".
+  const idxUnlock = findColPrefix(['date to be opened', 'unlock'])
   if (idxDiagnosis < 0) return []
 
   // Up to 8 clue columns. The clue body header embeds its type in a trailing
@@ -110,7 +115,7 @@ export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCa
     if (categoryCell) lastCategory = categoryCell
 
     const unlockCell = (idxUnlock >= 0 ? row[idxUnlock] : '')?.trim()
-    if (unlockCell) lastUnlock = normalizeDate(unlockCell)
+    if (unlockCell) lastUnlock = parseUnlockDate(unlockCell, ` (row ${r + 1})`)
 
     const rawDiagnosis = (row[idxDiagnosis] ?? '').trim()
     if (!rawDiagnosis) continue
@@ -147,16 +152,40 @@ export function parseSheetCsv(text: string, images: CaseImageManifest = {}): TCa
   return cases
 }
 
-// Normalize an unlock-date cell to YYYY-MM-DD, or null if unparseable/empty.
-// Accepts ISO (2026-09-08) and M/D/YYYY (gviz often renders date cells this way).
-export function normalizeDate(raw: string): string | null {
+const MONTHS = [
+  'january', 'february', 'march', 'april', 'may', 'june',
+  'july', 'august', 'september', 'october', 'november', 'december',
+]
+
+// Parse a non-empty unlock-date cell to YYYY-MM-DD. Accepts ISO (2026-09-28),
+// M/D/YYYY (how gviz renders date-typed cells), and the long form the authors
+// actually type ("September 28, 2026", "Sept 28 2026", "Sep. 28, 2026").
+// Anything else — or an impossible calendar date — throws: a silent null would
+// quietly make that week always available, which is the one thing this column
+// exists to prevent. `where` is appended to the error for locating the cell.
+export function parseUnlockDate(raw: string, where = ''): string {
   const s = raw.trim()
-  if (!s) return null
+  const fail = (): never => {
+    throw new Error(
+      `Unparseable unlock date ${JSON.stringify(raw)}${where}; expected YYYY-MM-DD, M/D/YYYY, or "Month D, YYYY"`,
+    )
+  }
+  let y: number, m: number, d: number
   const iso = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/)
-  if (iso) return `${iso[1]}-${iso[2].padStart(2, '0')}-${iso[3].padStart(2, '0')}`
   const mdy = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/)
-  if (mdy) return `${mdy[3]}-${mdy[1].padStart(2, '0')}-${mdy[2].padStart(2, '0')}`
-  return null
+  const long = s.match(/^([A-Za-z]{3,})\.?\s+(\d{1,2}),?\s+(\d{4})$/)
+  if (iso) [y, m, d] = [Number(iso[1]), Number(iso[2]), Number(iso[3])]
+  else if (mdy) [y, m, d] = [Number(mdy[3]), Number(mdy[1]), Number(mdy[2])]
+  else if (long) {
+    const name = long[1].toLowerCase()
+    const mi = MONTHS.findIndex((full) => full.startsWith(name))
+    if (mi < 0) return fail()
+    ;[y, m, d] = [Number(long[3]), mi + 1, Number(long[2])]
+  } else return fail()
+  // Reject impossible dates (month 13, Feb 30, …) by round-tripping through UTC.
+  const dt = new Date(Date.UTC(y, m - 1, d))
+  if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== m - 1 || dt.getUTCDate() !== d) return fail()
+  return `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`
 }
 
 // Find the real column-title row. The live sheet stacks several preamble

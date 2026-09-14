@@ -294,6 +294,17 @@ export function dayNumber(dateStr: string, launch: string = LAUNCH_DATE_ET): num
   return Math.max(1, Math.floor(ms / 86_400_000) + 1)
 }
 
+// "YYYY-MM-DD" → "September 28, 2026" (for prose, e.g. the not-yet-open splash).
+export function formatLongDate(dateStr: string): string {
+  const [y, m, d] = dateStr.split('-').map(Number)
+  return new Intl.DateTimeFormat('en-US', {
+    timeZone: 'UTC',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  }).format(new Date(Date.UTC(y, m - 1, d)))
+}
+
 export function formatHeaderDate(dateStr: string): string {
   // dateStr: "YYYY-MM-DD" (already in Toronto local). Format as "Mon Apr 28".
   const [y, m, d] = dateStr.split('-').map(Number)
