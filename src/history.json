@@ -629,6 +629,71 @@
       "date": "2026-09-01",
       "diagnosis": "Febrile Neutropenia",
       "id": 228
+    },
+    {
+      "date": "2026-09-02",
+      "diagnosis": "Multiple Myeloma (MM)",
+      "id": 233
+    },
+    {
+      "date": "2026-09-03",
+      "diagnosis": "Spontaneous Tumour Lysis Syndrome",
+      "id": 231
+    },
+    {
+      "date": "2026-09-04",
+      "diagnosis": "Scurvy",
+      "id": 237
+    },
+    {
+      "date": "2026-09-05",
+      "diagnosis": "Smoldering Multiple Myeloma (SMM)",
+      "id": 235
+    },
+    {
+      "date": "2026-09-06",
+      "diagnosis": "Angina Pectoris",
+      "id": 243
+    },
+    {
+      "date": "2026-09-07",
+      "diagnosis": "Heat Exhaustion",
+      "id": 240
+    },
+    {
+      "date": "2026-09-08",
+      "diagnosis": "Unstable Angina",
+      "id": 247
+    },
+    {
+      "date": "2026-09-09",
+      "diagnosis": "Myocardial Infarction (atypical)",
+      "id": 245
+    },
+    {
+      "date": "2026-09-10",
+      "diagnosis": "Choriocarcinoma",
+      "id": 6
+    },
+    {
+      "date": "2026-09-11",
+      "diagnosis": "Placenta Accreta Spectrum (PAS)",
+      "id": 9
+    },
+    {
+      "date": "2026-09-12",
+      "diagnosis": "Klinefelter's Syndrome",
+      "id": 3
+    },
+    {
+      "date": "2026-09-13",
+      "diagnosis": "Ectopic pregnancy",
+      "id": 7
+    },
+    {
+      "date": "2026-09-14",
+      "diagnosis": "Primary Hyperoxaluria Type 1",
+      "id": 550
     }
   ],
   "2": [
@@ -1323,6 +1388,78 @@
       "date": "2026-09-01",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1
+    },
+    {
+      "date": "2026-09-02",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-09-03",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-09-04",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-09-05",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-09-06",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-09-07",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-09-08",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1,
+      "reset": true
+    },
+    {
+      "date": "2026-09-09",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2
+    },
+    {
+      "date": "2026-09-10",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-11",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-12",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-13",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-14",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
     }
   ]
 }
