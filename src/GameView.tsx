@@ -11,6 +11,7 @@ import {
 import type { Guess, Stats, TCase, Year } from './types'
 import { dayNumber as computeDayNumber, formatHeaderDate } from './dailyCase'
 import { normalizeAnswer } from './normalize'
+import { namesCase, searchMatches } from './guess'
 import { referenceHref } from './references'
 import { buildShareText, copyShare } from './share'
 import type { UseGame } from './useGame'
@@ -285,27 +286,20 @@ function GuessCombobox({ g }: { g: UseGame }) {
     [g.guesses],
   )
 
-  const matches: TCase[] = useMemo(() => {
-    const q = g.input.trim().toLowerCase()
-    return g.cases
-      .filter((c) => !usedSet.has(normalizeAnswer(c.diagnosis)))
-      .filter((c) => {
-        if (!q) return true
-        if (c.diagnosis.toLowerCase().includes(q)) return true
-        return c.aliases.some((a) => a.toLowerCase().includes(q))
-      })
-  }, [g.cases, g.input, usedSet])
+  const matches: TCase[] = useMemo(
+    () =>
+      g.cases
+        .filter((c) => !usedSet.has(normalizeAnswer(c.diagnosis)))
+        .filter((c) => searchMatches(g.input, c)),
+    [g.cases, g.input, usedSet],
+  )
 
-  const isValid = useMemo(() => {
-    const norm = normalizeAnswer(g.input)
-    if (!norm) return false
-    return g.cases.some(
-      (c) =>
-        !usedSet.has(normalizeAnswer(c.diagnosis)) &&
-        (normalizeAnswer(c.diagnosis) === norm ||
-          c.aliases.some((a) => normalizeAnswer(a) === norm)),
-    )
-  }, [g.cases, g.input, usedSet])
+  // Submittable only when the input IS an unused case's canonical name — an
+  // alias alone isn't (Enter then selects the highlighted dropdown match instead).
+  const isValid = useMemo(
+    () => g.cases.some((c) => !usedSet.has(normalizeAnswer(c.diagnosis)) && namesCase(g.input, c)),
+    [g.cases, g.input, usedSet],
+  )
 
   // With nothing typed, Submit becomes a "skip" that reveals the next clue at
   // the cost of one guess — a way out when you have no idea.

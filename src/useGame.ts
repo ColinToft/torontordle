@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { DailyProgress, Guess, Stats, Status, TCase, Year } from './types'
-import { normalizeAnswer } from './normalize'
+import { namesCase } from './guess'
 import {
   clearAll,
   emptyStats,
@@ -81,9 +81,7 @@ export function useGame(
     const trimmed = input.trim()
     if (!trimmed) return
 
-    const norm = normalizeAnswer(trimmed)
-    const target = normalizeAnswer(tCase.diagnosis)
-    const correct = norm === target || tCase.aliases.some((a) => normalizeAnswer(a) === norm)
+    const correct = namesCase(trimmed, tCase)
 
     const next = [...guesses, { text: trimmed, correct }]
     setGuesses(next)

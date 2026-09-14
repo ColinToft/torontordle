@@ -8,12 +8,14 @@ import type { CaseImageManifest, TCase } from './types'
  * prefix, so trailing annotations like "Clue 1 (chief complaint; broad)" are
  * fine. Required columns:
  *   - "Diagnosis?" or "Diagnosis"   → full diagnosis (the parenthetical and the
- *                                     stem are both added as accepted aliases)
+ *                                     stem are both added as aliases — dropdown
+ *                                     search terms, NOT accepted answers; only
+ *                                     the full string is, see src/guess.ts)
  *   - "Clue 1" … "Clue 6"            → clue body text (1–8 supported)
  * Optional columns:
  *   - "Week" or "Category"           → grouping label; carried down to blank
  *                                     rows beneath the first row of each block
- *   - "Aliases"                      → pipe- or semicolon-separated alternates
+ *   - "Aliases"                      → pipe- or semicolon-separated search terms
  *   - "Description"                  → study note shown after the case ends
  *   - "Management?" or "Management"  → model answer for the post-case
  *                                     free-text management compare step
@@ -172,8 +174,8 @@ function findHeaderRow(rows: string[][]): number {
   return -1
 }
 
-// The full string stays the canonical answer (shown to the player); the
-// stem and the parenthetical are added as aliases so either is accepted.
+// The full string is the canonical (and only accepted) answer; the stem and
+// the parenthetical become aliases so typing either finds it in the dropdown.
 // "Trisomy 21 (Down Syndrome)"
 //   → { diagnosis: "Trisomy 21 (Down Syndrome)",
 //       derivedAliases: ["Down Syndrome", "Trisomy 21"] }
