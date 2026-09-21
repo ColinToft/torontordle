@@ -694,6 +694,41 @@
       "date": "2026-09-14",
       "diagnosis": "Primary Hyperoxaluria Type 1",
       "id": 550
+    },
+    {
+      "date": "2026-09-15",
+      "diagnosis": "Trisomy 21 (Down Syndrome)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-16",
+      "diagnosis": "Keloid",
+      "id": 36
+    },
+    {
+      "date": "2026-09-17",
+      "diagnosis": "Full-Thickness Burn",
+      "id": 35
+    },
+    {
+      "date": "2026-09-18",
+      "diagnosis": "Foreign Body Granuloma",
+      "id": 34
+    },
+    {
+      "date": "2026-09-19",
+      "diagnosis": "Pott Disease (Tuberculous Spondylitis)",
+      "id": 33
+    },
+    {
+      "date": "2026-09-20",
+      "diagnosis": "Ulcerative Colitis",
+      "id": 32
+    },
+    {
+      "date": "2026-09-21",
+      "diagnosis": "Crohn's Disease",
+      "id": 31
     }
   ],
   "2": [
@@ -1460,6 +1495,44 @@
       "diagnosis": "Pyloric Stenosis",
       "id": 2,
       "reset": true
+    },
+    {
+      "date": "2026-09-15",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-16",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-17",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-18",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-19",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-20",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-21",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
     }
   ]
 }
