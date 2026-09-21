@@ -187,6 +187,10 @@ export function GameView({ g, nav }: { g: UseGame; nav: Nav }) {
         *Torontordle is for entertainment only and does not constitute medical advice. Consult a healthcare
         professional for health concerns.
         <div style={{ marginTop: 8 }}>
+          Torontordle is independently created by medical students and is not affiliated with or endorsed by the
+          University of Toronto. Cases are independently authored for educational purposes.
+        </div>
+        <div style={{ marginTop: 8 }}>
           Questions, corrections, or feedback?{' '}
           <a href="mailto:contact@torontordle.com" style={styles.contactLink}>contact@torontordle.com</a>
         </div>
@@ -645,10 +649,10 @@ function AboutModal({ onClose }: { onClose: () => void }) {
       </p>
       <p style={{ margin: '14px 0 0', lineHeight: 1.7, color: 'var(--ink)' }}>
         The goal of Torontordle is not only to reinforce previously learned material, but also to promote
-        long-term retention and strengthen clinical reasoning skills over time. As students progress through
-        different curriculum blocks, the cases are designed to build on foundational knowledge, encourage
-        integration across disciplines, and support the development of diagnostic and management-based thinking
-        in an engaging, low-stakes format in preparation for shadowing opportunities and clerkship.
+        long-term retention and strengthen clinical reasoning skills over time. The cases are designed to build
+        on foundational knowledge, encourage integration across disciplines, and support the development of
+        diagnostic and management-based thinking in an engaging, low-stakes format in preparation for shadowing
+        opportunities and clerkship.
       </p>
     </Modal>
   )
