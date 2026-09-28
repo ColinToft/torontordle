@@ -729,6 +729,41 @@
       "date": "2026-09-21",
       "diagnosis": "Crohn's Disease",
       "id": 31
+    },
+    {
+      "date": "2026-09-22",
+      "diagnosis": "Acute Gout",
+      "id": 30
+    },
+    {
+      "date": "2026-09-23",
+      "diagnosis": "Acute Appendicitis",
+      "id": 29
+    },
+    {
+      "date": "2026-09-24",
+      "diagnosis": "Monosomy X (Turner's Syndrome)",
+      "id": 2
+    },
+    {
+      "date": "2026-09-25",
+      "diagnosis": "Hyperemesis gravidarum",
+      "id": 4
+    },
+    {
+      "date": "2026-09-26",
+      "diagnosis": "Diabetic Nephropathy",
+      "id": 28
+    },
+    {
+      "date": "2026-09-27",
+      "diagnosis": "Systemic Lupus Erythematosus (Lupus Nephritis)",
+      "id": 27
+    },
+    {
+      "date": "2026-09-28",
+      "diagnosis": "Cutaneous T-Cell Lymphoma (Mycosis Fungoides)",
+      "id": 55
     }
   ],
   "2": [
@@ -1533,6 +1568,45 @@
       "date": "2026-09-21",
       "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
       "id": 1
+    },
+    {
+      "date": "2026-09-22",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-23",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-24",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-25",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-26",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
+    },
+    {
+      "date": "2026-09-27",
+      "diagnosis": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+      "id": 1
+    },
+    {
+      "date": "2026-09-28",
+      "diagnosis": "Pyloric Stenosis",
+      "id": 2,
+      "reset": true
     }
   ]
 }
